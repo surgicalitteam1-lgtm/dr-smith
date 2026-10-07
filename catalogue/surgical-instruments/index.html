@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse Dr. Smith's Surgical Instruments range for hospitals, ICUs and clinics.">
+    <meta name="theme-color" content="#eaf4ff">
+    <title>Surgical Instruments | Dr. Smith Catalogue</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Questrial:wght@400&display=swap" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../../assets/css/main.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+
+    <link href="../css/catalogue.css" rel="stylesheet">
+</head>
+
+<body class="catalogue-page">
+    <header id="header" class="header header--minimal d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+            <a href="../../index.html" class="logo d-flex align-items-center" aria-label="Dr. Smith home">
+                <img src="../../assets/img/logo.png?v=2" alt="Dr. Smith logo">
+                <h1 class="sitename">Dr. Smith</h1>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="catalogue-hero catalogue-hero--compact">
+            <div class="container">
+                <nav class="catalogue-breadcrumb" aria-label="Breadcrumb">
+                    <a href="../../index.html">Home</a>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="../index.html#catalogue">Catalogue</a>
+                    <i class="bi bi-chevron-right"></i>
+                    <span aria-current="page">Surgical Instruments</span>
+                </nav>
+                <div class="row align-items-center">
+                    <div class="col-lg-9">
+                        <span class="catalogue-eyebrow">Precision surgical tools</span>
+                        <h1>Surgical Instruments</h1>
+                        <p>Specialized surgical instrument sets for general surgery, gynecology, orthopedics, ENT, microsurgery, and tungsten carbide instruments.</p>
+                        <a class="catalogue-button catalogue-button--ghost" href="../index.html#catalogue">
+                            <i class="bi bi-arrow-left"></i> Back to full catalogue
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalogue-section">
+            <div class="container">
+                <header class="catalogue-heading">
+                    <span class="catalogue-eyebrow">Our range</span>
+                    <h2>Browse Surgical Instruments</h2>
+                    <p>Specialized surgical instrument sets for general surgery, gynecology, orthopedics, ENT, microsurgery, and tungsten carbide instruments.</p>
+                </header>
+                <p class="catalogue-count">Showing <strong>6</strong> products</p>
+
+                <div class="category-search-wrapper mb-4" style="max-width: 500px;">
+                    <div class="input-group">
+                        <span class="input-group-text bg-white border-end-0"><i class="bi bi-search text-muted"></i></span>
+                        <input type="text" id="categoryProductSearch" class="form-control border-start-0 ps-0" placeholder="Filter surgical instruments..." aria-label="Filter products">
+                    </div>
+                </div>
+                <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var searchInput = document.getElementById('categoryProductSearch');
+                    if (searchInput) {
+                        searchInput.addEventListener('input', function() {
+                            var query = this.value.toLowerCase().trim();
+                            var items = document.querySelectorAll('.catalogue-grid-item');
+                            var count = 0;
+                            items.forEach(function(item) {
+                                var title = item.getAttribute('data-title') || '';
+                                var badge = item.getAttribute('data-badge') || '';
+                                if (!query || title.includes(query) || badge.includes(query)) {
+                                    item.style.display = '';
+                                    count++;
+                                } else {
+                                    item.style.display = 'none';
+                                }
+                            });
+                            var countElem = document.querySelector('.catalogue-count strong');
+                            if (countElem) {
+                                countElem.textContent = count;
+                            }
+                        });
+                    }
+                });
+                </script>
+                <div class="row g-4" id="products-grid">
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="gynecology surgical instruments set" data-badge="gynecology">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Gynecology Surgical Instruments Set on Instagram" title="View on Instagram">
+                                    <img src="gyne-instruments-set.png" alt="Gynecology Surgical Instruments Set" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Gynecology</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Precision surgical tools</span>
+                                <h3>Gynecology Surgical Instruments Set</h3>
+                                <p>Complete obstetric and gynecological surgical instrument set organized in a heavy-duty zippered sterilization pouch.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Includes speculums, uterine sounds, curettes, and sponge forceps</li>
+                                <li>Manufactured from corrosion-resistant surgical stainless steel</li>
+                                <li>Fully autoclavable with satin anti-glare finish</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Gynecology%20Surgical%20Instruments%20Set">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="general surgery instrument set" data-badge="general surgery">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View General Surgery Instrument Set on Instagram" title="View on Instagram">
+                                    <img src="general-instrument-set.png" alt="General Surgery Instrument Set" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">General Surgery</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Precision surgical tools</span>
+                                <h3>General Surgery Instrument Set</h3>
+                                <p>Comprehensive standard major operating set containing scalpel handles, artery forceps, tissue forceps, retractors and needle holders.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Complete assortment of haemostatic forceps, clamps & retractors</li>
+                                <li>Premium forged stainless steel with tempered working tips</li>
+                                <li>Supplied with organized stainless steel sterilization tray</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=General%20Surgery%20Instrument%20Set">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="macro / micro surgical instrument set" data-badge="microsurgery">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Macro / Micro Surgical Instrument Set on Instagram" title="View on Instagram">
+                                    <img src="macro-instrument-set.png" alt="Macro / Micro Surgical Instrument Set" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Microsurgery</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Precision surgical tools</span>
+                                <h3>Macro / Micro Surgical Instrument Set</h3>
+                                <p>Ultra-fine tipped instruments engineered for fine tissue dissection, plastic surgery and vascular anastomosis.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Spring forceps, micro needle holders and precision fine scissors</li>
+                                <li>Featherlight balanced handles preventing hand fatigue</li>
+                                <li>Tungsten carbide tips ensuring exceptional grip</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Macro%20/%20Micro%20Surgical%20Instrument%20Set">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="e.n.t surgical instrument set" data-badge="ent surgery">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View E.N.T Surgical Instrument Set on Instagram" title="View on Instagram">
+                                    <img src="ent-instrument-set.png" alt="E.N.T Surgical Instrument Set" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">ENT Surgery</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Precision surgical tools</span>
+                                <h3>E.N.T Surgical Instrument Set</h3>
+                                <p>Specialized ear, nose, and throat surgical instruments including nasal specula, forceps, elevators, and tuning forks.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Complete set for myringotomy, tonsillectomy and rhinoplasty</li>
+                                <li>Precision mirror finish and satin anti-reflective options</li>
+                                <li>Complies with international ISO and CE surgical norms</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=E.N.T%20Surgical%20Instrument%20Set">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="orthopedic surgery instrument set" data-badge="orthopedics">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Orthopedic Surgery Instrument Set on Instagram" title="View on Instagram">
+                                    <img src="orthopedic-instrument-set.png" alt="Orthopedic Surgery Instrument Set" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Orthopedics</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Precision surgical tools</span>
+                                <h3>Orthopedic Surgery Instrument Set</h3>
+                                <p>Heavy-duty orthopedic surgical tools including bone holding forceps, bone cutters, chisels, gouges and osteotomes.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Forged from premium hardened chrome stainless steel</li>
+                                <li>High-leverage compound joint cutters and bone rongeurs</li>
+                                <li>Reinforced striking heads on osteotomes and bone mallets</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Orthopedic%20Surgery%20Instrument%20Set">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="t.c (tungsten carbide) instrument set" data-badge="tungsten carbide">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View T.C (Tungsten Carbide) Instrument Set on Instagram" title="View on Instagram">
+                                    <img src="tc-instrument-set.png" alt="T.C (Tungsten Carbide) Instrument Set" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Tungsten Carbide</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Precision surgical tools</span>
+                                <h3>T.C (Tungsten Carbide) Instrument Set</h3>
+                                <p>Premium gold-handled tungsten carbide needle holders and scissors offering superior wear resistance and prolonged sharpness.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Gold-plated ring handles indicating genuine TC inserts</li>
+                                <li>Cross-serrated jaws for slip-free suture control</li>
+                                <li>Diamond-cut jaw edges maintaining cutting sharpness up to 5x longer</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=T.C%20%28Tungsten%20Carbide%29%20Instrument%20Set">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="catalogue-section">
+            <div class="container">
+                <div class="catalogue-cta d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4">
+                    <div>
+                        <h2>Can't find what you're looking for?</h2>
+                        <p>Share your requirements and our team will recommend the best fit from our full range.</p>
+                    </div>
+                    <a class="catalogue-button flex-shrink-0" href="../../contact-form/index.html">
+                        Contact our team <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer position-relative light-background">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-lg-4">
+                    <div class="footer-content">
+                        <a href="../../index.html" class="logo d-flex align-items-center mb-4">
+                            <span class="sitename">Dr. Smith</span>
+                        </a>
+                        <p class="mb-4">Dr. Smith provides medical equipment, healthcare infrastructure and patient-focused solutions.</p>
+                        <div class="catalogue-footer-logo">
+                            <a href="../../index.html" aria-label="Dr. Smith home">
+                                <img src="../../assets/img/logo.png?v=2" alt="Dr. Smith">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <div class="footer-links">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="../index.html#catalogue"><i class="bi bi-chevron-right"></i> Catalogue</a></li>
+                            <li><a href="../beds/index.html"><i class="bi bi-chevron-right"></i> Hospital Beds</a></li>
+                            <li><a href="../ot-lights/index.html"><i class="bi bi-chevron-right"></i> OT Lights</a></li>
+                            <li><a href="../autoclaves/index.html"><i class="bi bi-chevron-right"></i> Autoclaves</a></li>
+                            <li><a href="../surgical-instruments/index.html"><i class="bi bi-chevron-right"></i> Surgical Instruments</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <div class="footer-links">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="../../index.html#about"><i class="bi bi-chevron-right"></i> About Us</a></li>
+                            <li><a href="../../contact-form/index.html"><i class="bi bi-chevron-right"></i> Contact</a></li>
+                            <li><a href="../../privacy.html"><i class="bi bi-chevron-right"></i> Privacy Policy</a></li>
+                            <li><a href="../../terms.html"><i class="bi bi-chevron-right"></i> Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-contact">
+                        <h4>Contact Us</h4>
+                        <p>Plot No. 75/02, Shri Sai Complex, GF, Opp. Nimity Building - 108, Behind-IGL CNG Pump, Kapashera Border, New Delhi - 110037</p>
+                        <p class="mt-3"><strong>Phone:</strong> <span>+91 9599081020</span></p>
+                        <p><strong>Email:</strong> <span>info@drsmith.co.in</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="copyright">
+                            <p>© <span>Copyright</span> <strong class="px-1 sitename">Dr. Smith</strong> <span>All Rights Reserved</span></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="footer-bottom-links">
+                            <a href="../../privacy.html">Privacy Policy</a>
+                            <a href="../../terms.html">Terms of Service</a>
+                            <a href="../../contact-form/index.html">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to top">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</body>
+
+</html>
