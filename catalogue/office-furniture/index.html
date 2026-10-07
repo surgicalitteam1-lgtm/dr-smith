@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse Dr. Smith's Office Furniture range for hospitals, ICUs and clinics.">
+    <meta name="theme-color" content="#eaf4ff">
+    <title>Office Furniture | Dr. Smith Catalogue</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Questrial:wght@400&display=swap" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../../assets/css/main.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+
+    <link href="../css/catalogue.css" rel="stylesheet">
+</head>
+
+<body class="catalogue-page">
+    <header id="header" class="header header--minimal d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+            <a href="../../index.html" class="logo d-flex align-items-center" aria-label="Dr. Smith home">
+                <img src="../../assets/img/logo.png?v=2" alt="Dr. Smith logo">
+                <h1 class="sitename">Dr. Smith</h1>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="catalogue-hero catalogue-hero--compact">
+            <div class="container">
+                <nav class="catalogue-breadcrumb" aria-label="Breadcrumb">
+                    <a href="../../index.html">Home</a>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="../index.html#catalogue">Catalogue</a>
+                    <i class="bi bi-chevron-right"></i>
+                    <span aria-current="page">Office Furniture</span>
+                </nav>
+                <div class="row align-items-center">
+                    <div class="col-lg-9">
+                        <span class="catalogue-eyebrow">Hospital administration & office</span>
+                        <h1>Office Furniture</h1>
+                        <p>Executive director desks, doctor consultation tables, high-back leatherette boss chairs, and ergonomic mesh staff seating.</p>
+                        <a class="catalogue-button catalogue-button--ghost" href="../index.html#catalogue">
+                            <i class="bi bi-arrow-left"></i> Back to full catalogue
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalogue-section">
+            <div class="container">
+                <header class="catalogue-heading">
+                    <span class="catalogue-eyebrow">Our range</span>
+                    <h2>Browse Office Furniture</h2>
+                    <p>Executive director desks, doctor consultation tables, high-back leatherette boss chairs, and ergonomic mesh staff seating.</p>
+                </header>
+                <p class="catalogue-count">Showing <strong>14</strong> products</p>
+
+                <div class="category-search-wrapper mb-4" style="max-width: 500px;">
+                    <div class="input-group">
+                        <span class="input-group-text bg-white border-end-0"><i class="bi bi-search text-muted"></i></span>
+                        <input type="text" id="categoryProductSearch" class="form-control border-start-0 ps-0" placeholder="Filter office furniture..." aria-label="Filter products">
+                    </div>
+                </div>
+                <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var searchInput = document.getElementById('categoryProductSearch');
+                    if (searchInput) {
+                        searchInput.addEventListener('input', function() {
+                            var query = this.value.toLowerCase().trim();
+                            var items = document.querySelectorAll('.catalogue-grid-item');
+                            var count = 0;
+                            items.forEach(function(item) {
+                                var title = item.getAttribute('data-title') || '';
+                                var badge = item.getAttribute('data-badge') || '';
+                                if (!query || title.includes(query) || badge.includes(query)) {
+                                    item.style.display = '';
+                                    count++;
+                                } else {
+                                    item.style.display = 'none';
+                                }
+                            });
+                            var countElem = document.querySelector('.catalogue-count strong');
+                            if (countElem) {
+                                countElem.textContent = count;
+                            }
+                        });
+                    }
+                });
+                </script>
+                <div class="row g-4" id="products-grid">
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="executive director l-shape desk" data-badge="executive suite">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Executive Director L-Shape Desk on Instagram" title="View on Instagram">
+                                    <img src="executive-boss-desk-l.png" alt="Executive Director L-Shape Desk" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Executive Suite</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Hospital administration & office</span>
+                                <h3>Executive Director L-Shape Desk</h3>
+                                <p>Premium contemporary L-shaped executive table with side return credenza, three lockable drawers and wire management raceways.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Engineered wood top with natural woodgrain laminate finish</li>
+                                <li>Integrated side runner unit with drawers and sliding storage</li>
+                                <li>Concealed cable grommets and bevelled edge detailing</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Executive%20Director%20L-Shape%20Desk">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="modern executive office desk" data-badge="modern director">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Modern Executive Office Desk on Instagram" title="View on Instagram">
+                                    <img src="executive-modern-desk.png" alt="Modern Executive Office Desk" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Modern Director</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Hospital administration & office</span>
+                                <h3>Modern Executive Office Desk</h3>
+                                <p>Sleek dual-tone executive office desk with modesty panel, multi-drawer pedestal and premium leather blotter inlay.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Wide desktop surface ideal for computer and executive paperwork</li>
+                                <li>Dual-tone designer finish with soft-closing drawer runners</li>
+                                <li>Scratch-resistant and stain-resistant melamine protective coat</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Modern%20Executive%20Office%20Desk">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="managerial wooden office desk" data-badge="managerial">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Managerial Wooden Office Desk on Instagram" title="View on Instagram">
+                                    <img src="manager-office-desk.png" alt="Managerial Wooden Office Desk" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Managerial</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Hospital administration & office</span>
+                                <h3>Managerial Wooden Office Desk</h3>
+                                <p>Robust wooden manager desk with full modesty panel and sturdy side pedestal drawers for hospital administration offices.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Solid particle board construction with PVC edge binding</li>
+                                <li>Full modesty panel offering privacy and structural stability</li>
+                                <li>Equipped with central key lock for all pedestal drawers</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Managerial%20Wooden%20Office%20Desk">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dual tone executive desk" data-badge="administrative">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dual Tone Executive Desk on Instagram" title="View on Instagram">
+                                    <img src="dual-tone-executive-desk.png" alt="Dual Tone Executive Desk" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Administrative</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Hospital administration & office</span>
+                                <h3>Dual Tone Executive Desk</h3>
+                                <p>Clean-lined two-tone office table with metal modesty accents and three utility storage drawers.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Contrasting modern colour scheme suited for hospital clinics</li>
+                                <li>Smooth telescopic drawer channels with metallic handles</li>
+                                <li>Levelling glide feet compensating for uneven floors</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dual%20Tone%20Executive%20Desk">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="doctor consultation desk" data-badge="doctor opd">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Doctor Consultation Desk on Instagram" title="View on Instagram">
+                                    <img src="compact-consultation-desk.png" alt="Doctor Consultation Desk" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Doctor OPD</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Hospital administration & office</span>
+                                <h3>Doctor Consultation Desk</h3>
+                                <p>Compact consulting table tailored for doctor OPD consultation rooms, nurses stations and clinic offices.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Space-saving footprint with right-hand drawer storage</li>
+                                <li>Wipe-clean melamine top resistant to hospital disinfectants</li>
+                                <li>Heavy-gauge metal legs with powder coat finish</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Doctor%20Consultation%20Desk">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="administrative workstation desk" data-badge="workstation">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Administrative Workstation Desk on Instagram" title="View on Instagram">
+                                    <img src="admin-workstation-desk.png" alt="Administrative Workstation Desk" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Workstation</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Hospital administration & office</span>
+                                <h3>Administrative Workstation Desk</h3>
+                                <p>Traditional executive desk featuring dual-sided drawer pedestals for maximum file and document archiving.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Twin pedestal units providing 6 storage drawers</li>
+                                <li>Spacious top working surface with central lock</li>
+                                <li>Rich wood veneer finish with rounded safety corners</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Administrative%20Workstation%20Desk">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="high-back executive boss chair (black)" data-badge="boss high-back">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View High-Back Executive Boss Chair (Black) on Instagram" title="View on Instagram">
+                                    <img src="boss-chair-black.png" alt="High-Back Executive Boss Chair (Black)" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Boss High-Back</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Hospital administration & office</span>
+                                <h3>High-Back Executive Boss Chair (Black)</h3>
+                                <p>Ergonomic high-back director chair upholstered in rich black leatherette with thick padded armrests and tilt-lock mechanism.</p>
+                                <ul class="catalogue-card__details">
+                                <li>High-back ergonomic contour with integrated headrest pillow</li>
+                                <li>Class-4 pneumatic gas lift for smooth seat height elevation</li>
+                                <li>Chrome plated 5-star base with heavy-duty twin castors</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=High-Back%20Executive%20Boss%20Chair%20%28Black%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="modern ergonomic director chair" data-badge="director chair">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Modern Ergonomic Director Chair on Instagram" title="View on Instagram">
+                                    <img src="boss-chair-ergonomic.png" alt="Modern Ergonomic Director Chair" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Director Chair</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Hospital administration & office</span>
+                                <h3>Modern Ergonomic Director Chair</h3>
+                                <p>Contemporary executive swivel armchair featuring segmented lumbar cushioning and waterfall seat edge design.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Segmented backrest providing targeted lumbar support</li>
+                                <li>Synchro-tilt recline mechanism with multi-position lock</li>
+                                <li>Soft padded armrest pads protecting elbows and wrists</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Modern%20Ergonomic%20Director%20Chair">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="quilted executive boss chair (burgundy)" data-badge="luxury boss">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Quilted Executive Boss Chair (Burgundy) on Instagram" title="View on Instagram">
+                                    <img src="boss-chair-burgundy.png" alt="Quilted Executive Boss Chair (Burgundy)" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Luxury Boss</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Hospital administration & office</span>
+                                <h3>Quilted Executive Boss Chair (Burgundy)</h3>
+                                <p>Luxurious quilted leatherette boss chair in elegant burgundy brown with diamond pattern stitching.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Diamond quilted upholstery with high-resilience foam</li>
+                                <li>Heavy-duty torsion bar tilt mechanism with tension adjust</li>
+                                <li>Sturdy polished chrome armrests and star wheelbase</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Quilted%20Executive%20Boss%20Chair%20%28Burgundy%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="premium brown leather boss chair" data-badge="leather boss">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Premium Brown Leather Boss Chair on Instagram" title="View on Instagram">
+                                    <img src="boss-chair-brown.png" alt="Premium Brown Leather Boss Chair" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Leather Boss</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Hospital administration & office</span>
+                                <h3>Premium Brown Leather Boss Chair</h3>
+                                <p>Classic executive armchair upholstered in premium brown leather with deep cushioning and high lumbar contour.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Supple brown leatherette upholstery with double stitched seams</li>
+                                <li>Ergonomic curved armrests with cushioned top caps</li>
+                                <li>360-degree swivel with smooth nylon hooded castors</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Premium%20Brown%20Leather%20Boss%20Chair">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="mesh mid-back ergonomic office chair" data-badge="breathable mesh">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Mesh Mid-Back Ergonomic Office Chair on Instagram" title="View on Instagram">
+                                    <img src="office-chair-mesh-mid.png" alt="Mesh Mid-Back Ergonomic Office Chair" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Breathable Mesh</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Hospital administration & office</span>
+                                <h3>Mesh Mid-Back Ergonomic Office Chair</h3>
+                                <p>Breathable mesh back task chair with adjustable lumbar cushion and moulded foam seat for long clinic working hours.</p>
+                                <ul class="catalogue-card__details">
+                                <li>High-tensile breathable mesh back preventing perspiration</li>
+                                <li>Adjustable lumbar support pad and contoured seat foam</li>
+                                <li>Pneumatic height adjustment with tilt tension spring</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Mesh%20Mid-Back%20Ergonomic%20Office%20Chair">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="high-back breathable mesh chair" data-badge="high-back mesh">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View High-Back Breathable Mesh Chair on Instagram" title="View on Instagram">
+                                    <img src="office-chair-mesh-high.png" alt="High-Back Breathable Mesh Chair" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">High-Back Mesh</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Hospital administration & office</span>
+                                <h3>High-Back Breathable Mesh Chair</h3>
+                                <p>High-back mesh executive chair featuring full spinal support, fixed armrests and durable nylon 5-prong base.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Full-height mesh backrest accommodating taller users</li>
+                                <li>Heavy-duty butterfly mechanism with recline lock</li>
+                                <li>Abrasion-resistant fabric seat upholstery</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=High-Back%20Breathable%20Mesh%20Chair">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="executive mesh swivel chair" data-badge="ergonomic mesh">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Executive Mesh Swivel Chair on Instagram" title="View on Instagram">
+                                    <img src="office-chair-mesh-swivel.png" alt="Executive Mesh Swivel Chair" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Ergonomic Mesh</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Hospital administration & office</span>
+                                <h3>Executive Mesh Swivel Chair</h3>
+                                <p>Modern ergonomic workstation chair engineered for hospital receptionists, OPD nurses and clinical administrative staff.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Controured S-curve backrest supporting natural posture</li>
+                                <li>Padded waterfall seat cushion relieving thigh pressure</li>
+                                <li>Smooth rolling antistatic twin castors</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Executive%20Mesh%20Swivel%20Chair">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="ergonomic task & staff chair" data-badge="task chair">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Ergonomic Task & Staff Chair on Instagram" title="View on Instagram">
+                                    <img src="office-chair-task.png" alt="Ergonomic Task & Staff Chair" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Task Chair</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Hospital administration & office</span>
+                                <h3>Ergonomic Task & Staff Chair</h3>
+                                <p>Reliable everyday staff task chair with ventilated mesh back, curved polypropylene armrests and sturdy swivel pedestal.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Heavy-duty gas cylinder supporting up to 120 kg weight</li>
+                                <li>Reinforced polypropylene armrests and back frame</li>
+                                <li>Durable nylon base with 360-degree silent swivelling</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Ergonomic%20Task%20%26%20Staff%20Chair">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="catalogue-section">
+            <div class="container">
+                <div class="catalogue-cta d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4">
+                    <div>
+                        <h2>Can't find what you're looking for?</h2>
+                        <p>Share your requirements and our team will recommend the best fit from our full range.</p>
+                    </div>
+                    <a class="catalogue-button flex-shrink-0" href="../../contact-form/index.html">
+                        Contact our team <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer position-relative light-background">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-lg-4">
+                    <div class="footer-content">
+                        <a href="../../index.html" class="logo d-flex align-items-center mb-4">
+                            <span class="sitename">Dr. Smith</span>
+                        </a>
+                        <p class="mb-4">Dr. Smith provides medical equipment, healthcare infrastructure and patient-focused solutions.</p>
+                        <div class="catalogue-footer-logo">
+                            <a href="../../index.html" aria-label="Dr. Smith home">
+                                <img src="../../assets/img/logo.png?v=2" alt="Dr. Smith">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <div class="footer-links">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="../index.html#catalogue"><i class="bi bi-chevron-right"></i> Catalogue</a></li>
+                            <li><a href="../beds/index.html"><i class="bi bi-chevron-right"></i> Hospital Beds</a></li>
+                            <li><a href="../ot-lights/index.html"><i class="bi bi-chevron-right"></i> OT Lights</a></li>
+                            <li><a href="../autoclaves/index.html"><i class="bi bi-chevron-right"></i> Autoclaves</a></li>
+                            <li><a href="../surgical-instruments/index.html"><i class="bi bi-chevron-right"></i> Surgical Instruments</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <div class="footer-links">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="../../index.html#about"><i class="bi bi-chevron-right"></i> About Us</a></li>
+                            <li><a href="../../contact-form/index.html"><i class="bi bi-chevron-right"></i> Contact</a></li>
+                            <li><a href="../../privacy.html"><i class="bi bi-chevron-right"></i> Privacy Policy</a></li>
+                            <li><a href="../../terms.html"><i class="bi bi-chevron-right"></i> Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-contact">
+                        <h4>Contact Us</h4>
+                        <p>Plot No. 75/02, Shri Sai Complex, GF, Opp. Nimity Building - 108, Behind-IGL CNG Pump, Kapashera Border, New Delhi - 110037</p>
+                        <p class="mt-3"><strong>Phone:</strong> <span>+91 9599081020</span></p>
+                        <p><strong>Email:</strong> <span>info@drsmith.co.in</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="copyright">
+                            <p>© <span>Copyright</span> <strong class="px-1 sitename">Dr. Smith</strong> <span>All Rights Reserved</span></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="footer-bottom-links">
+                            <a href="../../privacy.html">Privacy Policy</a>
+                            <a href="../../terms.html">Terms of Service</a>
+                            <a href="../../contact-form/index.html">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to top">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse Dr. Smith's Modular OT range for hospitals, ICUs and clinics.">
+    <meta name="theme-color" content="#eaf4ff">
+    <title>Modular OT | Dr. Smith Catalogue</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Questrial:wght@400&display=swap" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../../assets/css/main.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+
+    <link href="../css/catalogue.css" rel="stylesheet">
+</head>
+
+<body class="catalogue-page">
+    <header id="header" class="header header--minimal d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+            <a href="../../index.html" class="logo d-flex align-items-center" aria-label="Dr. Smith home">
+                <img src="../../assets/img/logo.png?v=2" alt="Dr. Smith logo">
+                <h1 class="sitename">Dr. Smith</h1>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="catalogue-hero catalogue-hero--compact">
+            <div class="container">
+                <nav class="catalogue-breadcrumb" aria-label="Breadcrumb">
+                    <a href="../../index.html">Home</a>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="../index.html#catalogue">Catalogue</a>
+                    <i class="bi bi-chevron-right"></i>
+                    <span aria-current="page">Modular OT</span>
+                </nav>
+                <div class="row align-items-center">
+                    <div class="col-lg-9">
+                        <span class="catalogue-eyebrow">Surgical infrastructure</span>
+                        <h1>Modular OT</h1>
+                        <p>Prefabricated modular operating theatres, laminar airflow ceilings, surgical pendants, hermetic doors, and medical gas pipeline systems.</p>
+                        <a class="catalogue-button catalogue-button--ghost" href="../index.html#catalogue">
+                            <i class="bi bi-arrow-left"></i> Back to full catalogue
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalogue-section">
+            <div class="container">
+                <header class="catalogue-heading">
+                    <span class="catalogue-eyebrow">Our range</span>
+                    <h2>Browse Modular OT</h2>
+                    <p>Prefabricated modular operating theatres, laminar airflow ceilings, surgical pendants, hermetic doors, and medical gas pipeline systems.</p>
+                </header>
+                <p class="catalogue-count">Showing <strong>24</strong> products</p>
+
+                <div class="category-search-wrapper mb-4" style="max-width: 500px;">
+                    <div class="input-group">
+                        <span class="input-group-text bg-white border-end-0"><i class="bi bi-search text-muted"></i></span>
+                        <input type="text" id="categoryProductSearch" class="form-control border-start-0 ps-0" placeholder="Filter modular ot..." aria-label="Filter products">
+                    </div>
+                </div>
+                <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var searchInput = document.getElementById('categoryProductSearch');
+                    if (searchInput) {
+                        searchInput.addEventListener('input', function() {
+                            var query = this.value.toLowerCase().trim();
+                            var items = document.querySelectorAll('.catalogue-grid-item');
+                            var count = 0;
+                            items.forEach(function(item) {
+                                var title = item.getAttribute('data-title') || '';
+                                var badge = item.getAttribute('data-badge') || '';
+                                if (!query || title.includes(query) || badge.includes(query)) {
+                                    item.style.display = '';
+                                    count++;
+                                } else {
+                                    item.style.display = 'none';
+                                }
+                            });
+                            var countElem = document.querySelector('.catalogue-count strong');
+                            if (countElem) {
+                                countElem.textContent = count;
+                            }
+                        });
+                    }
+                });
+                </script>
+                <div class="row g-4" id="products-grid">
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="modular ot wall & ceiling panel systems" data-badge="modular panels">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Modular OT Wall & Ceiling Panel Systems on Instagram" title="View on Instagram">
+                                    <img src="modular-ot-wall-ceiling.png" alt="Modular OT Wall & Ceiling Panel Systems" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Modular Panels</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Surgical infrastructure</span>
+                                <h3>Modular OT Wall & Ceiling Panel Systems</h3>
+                                <p>Prefabricated antibacterial modular operating theatre wall and ceiling panels available in stainless steel and HPL finishes.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Constructed from 0.8mm SS 304 or high-pressure compact laminate (HPL)</li>
+                                <li>Infilled with high-density polyurethane (PUF) or rockwool insulation</li>
+                                <li>Seamless antibacterial joints compliant with NABH sterility norms</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Modular%20OT%20Wall%20%26%20Ceiling%20Panel%20Systems">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="laminar airflow ceiling with hepa diffusers" data-badge="laminar flow">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Laminar Airflow Ceiling with HEPA Diffusers on Instagram" title="View on Instagram">
+                                    <img src="laminar-airflow-ceiling.png" alt="Laminar Airflow Ceiling with HEPA Diffusers" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Laminar Flow</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Surgical infrastructure</span>
+                                <h3>Laminar Airflow Ceiling with HEPA Diffusers</h3>
+                                <p>Ultra-clean laminar airflow distribution ceiling system creating unidirectional positive-pressure sterile air over the surgical field.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Fitted with Class H14 HEPA filters (99.997% efficiency at 0.3 micron)</li>
+                                <li>Monofilament polyester screen producing uniform air velocity (0.45 m/s)</li>
+                                <li>Central preparation for surgical lighting suspension column</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Laminar%20Airflow%20Ceiling%20with%20HEPA%20Diffusers">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="hermetically sealing sliding ot doors" data-badge="hermetic doors">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Hermetically Sealing Sliding OT Doors on Instagram" title="View on Instagram">
+                                    <img src="hermetic-sliding-door.png" alt="Hermetically Sealing Sliding OT Doors" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Hermetic Doors</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Surgical infrastructure</span>
+                                <h3>Hermetically Sealing Sliding OT Doors</h3>
+                                <p>Motorized hermetic sliding surgical room doors maintaining differential air pressure with hands-free optical proximity sensors.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Track profile drops down and presses tightly against frame upon closure</li>
+                                <li>Microprocessor automation with touchless elbow/foot wave sensors</li>
+                                <li>Integrated flush double-glazed radiation shielding lead-glass window</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Hermetically%20Sealing%20Sliding%20OT%20Doors">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="surgeon control panel (samsung touch screen)" data-badge="touch control">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Surgeon Control Panel (Samsung Touch Screen) on Instagram" title="View on Instagram">
+                                    <img src="surgeon-control-panel.png" alt="Surgeon Control Panel (Samsung Touch Screen)" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Touch Control</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Surgical infrastructure</span>
+                                <h3>Surgeon Control Panel (Samsung Touch Screen)</h3>
+                                <p>Microprocessor touch screen surgeon master panel controlling OT room lighting, gas alarms, HEPA pressure, clocks and ventilation.</p>
+                                <ul class="catalogue-card__details">
+                                <li>High-resolution industrial touch screen interface</li>
+                                <li>Controls room lights, laminar airflow, UV lamps and temperature/humidity</li>
+                                <li>Integrated elapsed surgical time clock, real time clock, and medical gas alarms</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Surgeon%20Control%20Panel%20%28Samsung%20Touch%20Screen%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dynamic & static cleanroom pass box" data-badge="pass box">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dynamic & Static Cleanroom Pass Box on Instagram" title="View on Instagram">
+                                    <img src="modular-ot-pass-box.png" alt="Dynamic & Static Cleanroom Pass Box" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Pass Box</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Surgical infrastructure</span>
+                                <h3>Dynamic & Static Cleanroom Pass Box</h3>
+                                <p>Stainless steel cleanroom transfer hatch with mechanical or electronic door interlock preventing cross-contamination.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Full AISI 304 grade stainless steel interior and exterior</li>
+                                <li>Electronic door interlocking system ensuring only one door opens at a time</li>
+                                <li>Equipped with germicidal UV lamp with automatic timer cutoff</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dynamic%20%26%20Static%20Cleanroom%20Pass%20Box">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="flush mounted led x-ray viewer" data-badge="led illuminator">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Flush Mounted LED X-Ray Viewer on Instagram" title="View on Instagram">
+                                    <img src="flush-mounted-led-xray-viewer.png" alt="Flush Mounted LED X-Ray Viewer" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">LED Illuminator</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Surgical infrastructure</span>
+                                <h3>Flush Mounted LED X-Ray Viewer</h3>
+                                <p>Surgical wall flush-mounted LED X-ray film illuminator with digital dimming control and automatic film sensor.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Flush wall mounting profile for cleanroom sterility</li>
+                                <li>Ultra-uniform flicker-free LED backlight with stepless dimmer</li>
+                                <li>Automatic film activation sensor and separate bank controls</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Flush%20Mounted%20LED%20X-Ray%20Viewer">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="cleanroom led peripheral luminaries" data-badge="cleanroom lights">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Cleanroom LED Peripheral Luminaries on Instagram" title="View on Instagram">
+                                    <img src="led-peripheral-luminaries.png" alt="Cleanroom LED Peripheral Luminaries" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Cleanroom Lights</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Surgical infrastructure</span>
+                                <h3>Cleanroom LED Peripheral Luminaries</h3>
+                                <p>Flush ceiling-mounted IP65 cleanroom LED light fittings delivering high-CRI, flicker-free ambient illumination.</p>
+                                <ul class="catalogue-card__details">
+                                <li>IP65 waterproof and dustproof front fascia gasket</li>
+                                <li>High colour rendering index (CRI > 90) for accurate tissue color</li>
+                                <li>Energy efficient driver with bottom-opening diffuser for easy maintenance</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Cleanroom%20LED%20Peripheral%20Luminaries">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="automatic medical gas manifold system (oxygen / n2o)" data-badge="gas plant">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Automatic Medical Gas Manifold System (Oxygen / N2O) on Instagram" title="View on Instagram">
+                                    <img src="manifold-system-gas.png" alt="Automatic Medical Gas Manifold System (Oxygen / N2O)" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Gas Plant</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Surgical infrastructure</span>
+                                <h3>Automatic Medical Gas Manifold System (Oxygen / N2O)</h3>
+                                <p>Fully automatic high-pressure cylinder manifold system with automatic changeover between primary and secondary banks.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Automatic electronic changeover with pneumatic backup</li>
+                                <li>Digital display monitoring bank pressure and pipeline pressure</li>
+                                <li>Heavy-duty brass high-pressure headers with non-return valves</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Automatic%20Medical%20Gas%20Manifold%20System%20%28Oxygen%20/%20N2O%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="automatic gas control panel (digital / analog)" data-badge="pipeline control">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Automatic Gas Control Panel (Digital / Analog) on Instagram" title="View on Instagram">
+                                    <img src="automatic-gas-control-panel.png" alt="Automatic Gas Control Panel (Digital / Analog)" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Pipeline Control</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Surgical infrastructure</span>
+                                <h3>Automatic Gas Control Panel (Digital / Analog)</h3>
+                                <p>Centralized medical gas line pressure control cabinet with dual line regulators and audio-visual fault alarms.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Dual redundant pressure regulators for continuous gas supply</li>
+                                <li>High-accuracy analog and digital pressure sensors</li>
+                                <li>BMS interface with dry contact outputs</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Automatic%20Gas%20Control%20Panel%20%28Digital%20/%20Analog%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="semi-automatic oxygen supply system" data-badge="oxygen bank">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Semi-Automatic Oxygen Supply System on Instagram" title="View on Instagram">
+                                    <img src="oxygen-semi-automatic-panel.png" alt="Semi-Automatic Oxygen Supply System" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Oxygen Bank</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Surgical infrastructure</span>
+                                <h3>Semi-Automatic Oxygen Supply System</h3>
+                                <p>Compact semi-automatic medical gas changeover station designed for nursing homes, clinics and secondary hospital backup.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Mechanical pressure-differential changeover valve</li>
+                                <li>Clear high-visibility pressure gauges for both banks</li>
+                                <li>Complies with Indian pharmacopoeia and hospital safety rules</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Semi-Automatic%20Oxygen%20Supply%20System">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="s-2 (v) movable surgical ceiling pendant" data-badge="ot pendant">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View S-2 (V) Movable Surgical Ceiling Pendant on Instagram" title="View on Instagram">
+                                    <img src="ot-pendant-s2-movable.png" alt="S-2 (V) Movable Surgical Ceiling Pendant" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">OT Pendant</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Surgical infrastructure</span>
+                                <h3>S-2 (V) Movable Surgical Ceiling Pendant</h3>
+                                <p>Ceiling-suspended articulated surgical pendant with 330-degree rotation and ergonomic service console.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Horizontal arm length: 600mm / 800mm with smooth ball bearings</li>
+                                <li>Pneumatic or friction brake system preventing unwanted drift</li>
+                                <li>Integrated gas terminal units and emergency electrical sockets</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=S-2%20%28V%29%20Movable%20Surgical%20Ceiling%20Pendant">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="s-4 (v) 800 rigid single arm ot pendant" data-badge="surgical pendant">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View S-4 (V) 800 Rigid Single Arm OT Pendant on Instagram" title="View on Instagram">
+                                    <img src="ot-pendant-s4-v800.png" alt="S-4 (V) 800 Rigid Single Arm OT Pendant" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Surgical Pendant</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Surgical infrastructure</span>
+                                <h3>S-4 (V) 800 Rigid Single Arm OT Pendant</h3>
+                                <p>Heavy-capacity surgical ceiling pendant designed to support endoscopy stacks, diathermy units and patient monitors.</p>
+                                <ul class="catalogue-card__details">
+                                <li>800mm heavy-load articulated suspension arm</li>
+                                <li>Multiple height-adjustable stainless steel instrument shelves</li>
+                                <li>High load carrying capacity up to 180 kg</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=S-4%20%28V%29%20800%20Rigid%20Single%20Arm%20OT%20Pendant">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="media bridge (ot / icu bridge system)" data-badge="icu bridge">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Media Bridge (OT / ICU Bridge System) on Instagram" title="View on Instagram">
+                                    <img src="media-bridge-ot-icu.png" alt="Media Bridge (OT / ICU Bridge System)" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">ICU Bridge</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Surgical infrastructure</span>
+                                <h3>Media Bridge (OT / ICU Bridge System)</h3>
+                                <p>Ceiling-mounted horizontal media bridge providing mobile fluid management, electrical feeds and gas delivery across bed bays.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Modular horizontal track spanning single or multi-bed bays</li>
+                                <li>Gliding equipment carriers with pneumatic position lock</li>
+                                <li>Eliminates floor clutter in intensive care environments</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Media%20Bridge%20%28OT%20/%20ICU%20Bridge%20System%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="laparoscopic movable pendant s-5 (h)" data-badge="lapro pendant">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Laparoscopic Movable Pendant S-5 (H) on Instagram" title="View on Instagram">
+                                    <img src="laparoscopic-movable-pendant-s5.png" alt="Laparoscopic Movable Pendant S-5 (H)" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Lapro Pendant</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Surgical infrastructure</span>
+                                <h3>Laparoscopic Movable Pendant S-5 (H)</h3>
+                                <p>Dedicated laparoscopic surgery pendant with oversized shelves for camera processor, light source, insufflator, and CO2 bottle holder.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Dual articulated arms with total reach of 1400 mm</li>
+                                <li>Heavy-duty gas spring or motorized height adjustment</li>
+                                <li>Integrated cable management ducting preventing tangled cords</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Laparoscopic%20Movable%20Pendant%20S-5%20%28H%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="motorized ceiling surgical pendant" data-badge="motorized lift">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Motorized Ceiling Surgical Pendant on Instagram" title="View on Instagram">
+                                    <img src="motorized-ceiling-pendant.png" alt="Motorized Ceiling Surgical Pendant" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Motorized Lift</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Surgical infrastructure</span>
+                                <h3>Motorized Ceiling Surgical Pendant</h3>
+                                <p>Electrically motorized ceiling pendant with fingertip push-button vertical height elevation and 340-degree rotational swing.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Smooth whisper-quiet motorized vertical lift (stroke 500mm)</li>
+                                <li>Pneumatic braking system controlled from ergonomic handle</li>
+                                <li>Multi-tiered shelves with medical drawer units</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Motorized%20Ceiling%20Surgical%20Pendant">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="medical gas alarm panel (digital lcd)" data-badge="gas alarm">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Medical Gas Alarm Panel (Digital LCD) on Instagram" title="View on Instagram">
+                                    <img src="medical-gas-alarm-digital.png" alt="Medical Gas Alarm Panel (Digital LCD)" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Gas Alarm</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Surgical infrastructure</span>
+                                <h3>Medical Gas Alarm Panel (Digital LCD)</h3>
+                                <p>Microprocessor multi-gas digital alarm panel displaying real-time pipeline pressure with audible and visual fault indicators.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Monitors up to 6 gas services (O2, N2O, Air 4, Air 7, Vac, CO2)</li>
+                                <li>High/low pressure programmable alarm thresholds with mute button</li>
+                                <li>RS-485 Modbus communication interface for hospital BMS integration</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Medical%20Gas%20Alarm%20Panel%20%28Digital%20LCD%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="medical gas alarm panel (analog gauge)" data-badge="gas alarm">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Medical Gas Alarm Panel (Analog Gauge) on Instagram" title="View on Instagram">
+                                    <img src="medical-gas-alarm-analog.png" alt="Medical Gas Alarm Panel (Analog Gauge)" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Gas Alarm</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Surgical infrastructure</span>
+                                <h3>Medical Gas Alarm Panel (Analog Gauge)</h3>
+                                <p>Robust analog gauge gas alarm panel providing fail-safe mechanical pressure reading and electronic audio-visual alerts.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Individual high-precision pressure gauges for each gas line</li>
+                                <li>Flashing LED fault beacons with high-decibel piezo buzzer</li>
+                                <li>Enclosed in powder-coated mild steel recessed enclosure</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Medical%20Gas%20Alarm%20Panel%20%28Analog%20Gauge%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="central master medical gas alarm" data-badge="central alarm">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Central Master Medical Gas Alarm on Instagram" title="View on Instagram">
+                                    <img src="master-gas-alarm.png" alt="Central Master Medical Gas Alarm" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Central Alarm</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Surgical infrastructure</span>
+                                <h3>Central Master Medical Gas Alarm</h3>
+                                <p>Central hospital plant alarm station displaying primary, secondary, and reserve cylinder bank status and vacuum pump operation.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Full plant status monitoring for manifolds, liquid O2, and compressors</li>
+                                <li>Multi-channel warning lights and audible horn</li>
+                                <li>Conforms to ISO 7396-1 and HTM 02-01 standards</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Central%20Master%20Medical%20Gas%20Alarm">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="nurse call system master station (e-fl07)" data-badge="nurse call">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Nurse Call System Master Station (E-FL07) on Instagram" title="View on Instagram">
+                                    <img src="nurse-call-system-efl07.png" alt="Nurse Call System Master Station (E-FL07)" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Nurse Call</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Surgical infrastructure</span>
+                                <h3>Nurse Call System Master Station (E-FL07)</h3>
+                                <p>Two-way digital nurse call communication master station with bed identification display, priority alerts, and handset intercom.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Two-way audio intercom between nurse desk and patient handsets</li>
+                                <li>Clear LED numeric bed number display with emergency call flashing</li>
+                                <li>Supports bathroom emergency pull cords and staff presence indicators</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Nurse%20Call%20System%20Master%20Station%20%28E-FL07%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="medical gas outlet bs standard (model: amber)" data-badge="gas terminal">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Medical Gas Outlet BS Standard (Model: Amber) on Instagram" title="View on Instagram">
+                                    <img src="gas-outlet-bs-amber.png" alt="Medical Gas Outlet BS Standard (Model: Amber)" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Gas Terminal</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Surgical infrastructure</span>
+                                <h3>Medical Gas Outlet BS Standard (Model: Amber)</h3>
+                                <p>British Standard (BS 5682) front-loaded gas terminal unit with colour-coded self-sealing probe.</p>
+                                <ul class="catalogue-card__details">
+                                <li>BS 5682 standard gas specific indexing preventing cross-connection</li>
+                                <li>Front-loaded quick connect mechanism with secondary check valve</li>
+                                <li>High-durability brass body with colour-coded fascia ring</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Medical%20Gas%20Outlet%20BS%20Standard%20%28Model%3A%20Amber%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="medical gas outlet pb standard (model: sapphire)" data-badge="gas terminal">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Medical Gas Outlet PB Standard (Model: Sapphire) on Instagram" title="View on Instagram">
+                                    <img src="gas-outlet-pb-sapphire.png" alt="Medical Gas Outlet PB Standard (Model: Sapphire)" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Gas Terminal</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Surgical infrastructure</span>
+                                <h3>Medical Gas Outlet PB Standard (Model: Sapphire)</h3>
+                                <p>Puritan Bennett (PB) standard front-loaded medical gas outlet terminal unit.</p>
+                                <ul class="catalogue-card__details">
+                                <li>PB pin-indexed gas-specific connector</li>
+                                <li>Robust stainless steel faceplate with smooth release collar</li>
+                                <li>100% factory pressure and leak tested to 10 bar</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Medical%20Gas%20Outlet%20PB%20Standard%20%28Model%3A%20Sapphire%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="medical gas outlet parkodex with probe" data-badge="gas terminal">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Medical Gas Outlet Parkodex with Probe on Instagram" title="View on Instagram">
+                                    <img src="gas-outlet-parkodex.png" alt="Medical Gas Outlet Parkodex with Probe" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Gas Terminal</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Surgical infrastructure</span>
+                                <h3>Medical Gas Outlet Parkodex with Probe</h3>
+                                <p>Hook loose type Parkodex medical gas terminal socket with positive locking latch.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Hook-latch retention mechanism for secure probe retention</li>
+                                <li>Gas-specific quick coupling preventing operator errors</li>
+                                <li>Integrated maintenance isolation valve</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Medical%20Gas%20Outlet%20Parkodex%20with%20Probe">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="medical gas outlet din standard (model: jasper)" data-badge="gas terminal">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Medical Gas Outlet DIN Standard (Model: Jasper) on Instagram" title="View on Instagram">
+                                    <img src="gas-outlet-din-jasper.png" alt="Medical Gas Outlet DIN Standard (Model: Jasper)" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Gas Terminal</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Surgical infrastructure</span>
+                                <h3>Medical Gas Outlet DIN Standard (Model: Jasper)</h3>
+                                <p>German DIN 13260-2 compliant terminal unit for wall, ceiling pendant or bed head trunking installations.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Conforms to DIN 13260-2 European hospital standards</li>
+                                <li>Push-to-connect and push-to-release dual-action safety ring</li>
+                                <li>Durable nickel-plated brass valve block</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Medical%20Gas%20Outlet%20DIN%20Standard%20%28Model%3A%20Jasper%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="avsu area zonal gas valve box" data-badge="pipeline isolation">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View AVSU Area Zonal Gas Valve Box on Instagram" title="View on Instagram">
+                                    <img src="avsu-zonal-valve-box.png" alt="AVSU Area Zonal Gas Valve Box" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Pipeline Isolation</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Surgical infrastructure</span>
+                                <h3>AVSU Area Zonal Gas Valve Box</h3>
+                                <p>Area Valve Service Unit (AVSU) providing local isolation and pressure monitoring of medical gases for hospital wards and OTs.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Multi-gas configuration: Oxygen, Nitrous Oxide, Air 4, Air 7, Vacuum</li>
+                                <li>Emergency break-glass access window with dual lock keys</li>
+                                <li>Complies with HTM 02-01 & NFPA 99 medical gas codes</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=AVSU%20Area%20Zonal%20Gas%20Valve%20Box">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="catalogue-section">
+            <div class="container">
+                <div class="catalogue-cta d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4">
+                    <div>
+                        <h2>Can't find what you're looking for?</h2>
+                        <p>Share your requirements and our team will recommend the best fit from our full range.</p>
+                    </div>
+                    <a class="catalogue-button flex-shrink-0" href="../../contact-form/index.html">
+                        Contact our team <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer position-relative light-background">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-lg-4">
+                    <div class="footer-content">
+                        <a href="../../index.html" class="logo d-flex align-items-center mb-4">
+                            <span class="sitename">Dr. Smith</span>
+                        </a>
+                        <p class="mb-4">Dr. Smith provides medical equipment, healthcare infrastructure and patient-focused solutions.</p>
+                        <div class="catalogue-footer-logo">
+                            <a href="../../index.html" aria-label="Dr. Smith home">
+                                <img src="../../assets/img/logo.png?v=2" alt="Dr. Smith">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <div class="footer-links">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="../index.html#catalogue"><i class="bi bi-chevron-right"></i> Catalogue</a></li>
+                            <li><a href="../beds/index.html"><i class="bi bi-chevron-right"></i> Hospital Beds</a></li>
+                            <li><a href="../ot-lights/index.html"><i class="bi bi-chevron-right"></i> OT Lights</a></li>
+                            <li><a href="../autoclaves/index.html"><i class="bi bi-chevron-right"></i> Autoclaves</a></li>
+                            <li><a href="../surgical-instruments/index.html"><i class="bi bi-chevron-right"></i> Surgical Instruments</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <div class="footer-links">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="../../index.html#about"><i class="bi bi-chevron-right"></i> About Us</a></li>
+                            <li><a href="../../contact-form/index.html"><i class="bi bi-chevron-right"></i> Contact</a></li>
+                            <li><a href="../../privacy.html"><i class="bi bi-chevron-right"></i> Privacy Policy</a></li>
+                            <li><a href="../../terms.html"><i class="bi bi-chevron-right"></i> Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-contact">
+                        <h4>Contact Us</h4>
+                        <p>Plot No. 75/02, Shri Sai Complex, GF, Opp. Nimity Building - 108, Behind-IGL CNG Pump, Kapashera Border, New Delhi - 110037</p>
+                        <p class="mt-3"><strong>Phone:</strong> <span>+91 9599081020</span></p>
+                        <p><strong>Email:</strong> <span>info@drsmith.co.in</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="copyright">
+                            <p>© <span>Copyright</span> <strong class="px-1 sitename">Dr. Smith</strong> <span>All Rights Reserved</span></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="footer-bottom-links">
+                            <a href="../../privacy.html">Privacy Policy</a>
+                            <a href="../../terms.html">Terms of Service</a>
+                            <a href="../../contact-form/index.html">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to top">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</body>
+
+</html>

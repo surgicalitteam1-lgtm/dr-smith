@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse Dr. Smith's OT Table's range for hospitals, ICUs and clinics.">
+    <meta name="theme-color" content="#eaf4ff">
+    <title>OT Table's | Dr. Smith Catalogue</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Questrial:wght@400&display=swap" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../../assets/css/main.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+
+    <link href="../css/catalogue.css" rel="stylesheet">
+</head>
+
+<body class="catalogue-page">
+    <header id="header" class="header header--minimal d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+            <a href="../../index.html" class="logo d-flex align-items-center" aria-label="Dr. Smith home">
+                <img src="../../assets/img/logo.png?v=2" alt="Dr. Smith logo">
+                <h1 class="sitename">Dr. Smith</h1>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="catalogue-hero catalogue-hero--compact">
+            <div class="container">
+                <nav class="catalogue-breadcrumb" aria-label="Breadcrumb">
+                    <a href="../../index.html">Home</a>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="../index.html#catalogue">Catalogue</a>
+                    <i class="bi bi-chevron-right"></i>
+                    <span aria-current="page">OT Table's</span>
+                </nav>
+                <div class="row align-items-center">
+                    <div class="col-lg-9">
+                        <span class="catalogue-eyebrow">Surgical infrastructure</span>
+                        <h1>OT Table's</h1>
+                        <p>Electro-hydraulic and manual operating tables, C-arm compatible radiotranslucent surgical tables, and orthopedic attachments.</p>
+                        <a class="catalogue-button catalogue-button--ghost" href="../index.html#catalogue">
+                            <i class="bi bi-arrow-left"></i> Back to full catalogue
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalogue-section">
+            <div class="container">
+                <header class="catalogue-heading">
+                    <span class="catalogue-eyebrow">Our range</span>
+                    <h2>Browse OT Table's</h2>
+                    <p>Electro-hydraulic and manual operating tables, C-arm compatible radiotranslucent surgical tables, and orthopedic attachments.</p>
+                </header>
+                <p class="catalogue-count">Showing <strong>6</strong> products</p>
+
+                <div class="category-search-wrapper mb-4" style="max-width: 500px;">
+                    <div class="input-group">
+                        <span class="input-group-text bg-white border-end-0"><i class="bi bi-search text-muted"></i></span>
+                        <input type="text" id="categoryProductSearch" class="form-control border-start-0 ps-0" placeholder="Filter ot table's..." aria-label="Filter products">
+                    </div>
+                </div>
+                <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var searchInput = document.getElementById('categoryProductSearch');
+                    if (searchInput) {
+                        searchInput.addEventListener('input', function() {
+                            var query = this.value.toLowerCase().trim();
+                            var items = document.querySelectorAll('.catalogue-grid-item');
+                            var count = 0;
+                            items.forEach(function(item) {
+                                var title = item.getAttribute('data-title') || '';
+                                var badge = item.getAttribute('data-badge') || '';
+                                if (!query || title.includes(query) || badge.includes(query)) {
+                                    item.style.display = '';
+                                    count++;
+                                } else {
+                                    item.style.display = 'none';
+                                }
+                            });
+                            var countElem = document.querySelector('.catalogue-count strong');
+                            if (countElem) {
+                                countElem.textContent = count;
+                            }
+                        });
+                    }
+                });
+                </script>
+                <div class="row g-4" id="products-grid">
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="ot table electric + manual top slide with central locking (deluxe)" data-badge="electric deluxe">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View OT Table Electric + Manual Top Slide with Central Locking (Deluxe) on Instagram" title="View on Instagram">
+                                    <img src="ot-table-electric-top-slide-deluxe.png" alt="OT Table Electric + Manual Top Slide with Central Locking (Deluxe)" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Electric Deluxe</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Surgical infrastructure</span>
+                                <h3>OT Table Electric + Manual Top Slide with Central Locking (Deluxe)</h3>
+                                <p>Flagship multi-position operating table featuring motorized longitudinal top slide for complete radiolucent C-arm access without patient repositioning.</p>
+                                <ul class="catalogue-card__details">
+                                <li>5-sectional radiotranslucent top for C-arm intensifier</li>
+                                <li>Longitudinal top slide with six motorized functions</li>
+                                <li>Heavy hygienic stainless steel base with central locking</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=OT%20Table%20Electric%20%2B%20Manual%20Top%20Slide%20with%20Central%20Locking%20%28Deluxe%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="ot table electric manual (eco model)" data-badge="electric eco">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View OT Table Electric Manual (Eco Model) on Instagram" title="View on Instagram">
+                                    <img src="ot-table-electric-manual-eco.png" alt="OT Table Electric Manual (Eco Model)" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Electric Eco</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Surgical infrastructure</span>
+                                <h3>OT Table Electric Manual (Eco Model)</h3>
+                                <p>Motorized five-function operating table with remote handset and manual backup for essential surgical workflows.</p>
+                                <ul class="catalogue-card__details">
+                                <li>5-sectional stainless steel radiotranslucent top</li>
+                                <li>Remote control handset with manual override</li>
+                                <li>Smooth rolling castors with floor locking system</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=OT%20Table%20Electric%20Manual%20%28Eco%20Model%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="ot table semi electric c-arm" data-badge="semi electric">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View OT Table Semi Electric C-Arm on Instagram" title="View on Instagram">
+                                    <img src="ot-table-semi-electric-carm.png" alt="OT Table Semi Electric C-Arm" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Semi Electric</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Surgical infrastructure</span>
+                                <h3>OT Table Semi Electric C-Arm</h3>
+                                <p>Semi-electric operating table combining motorized height elevation with stepless mechanical articulation and built-in kidney bridge.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Centric column made of high-grade stainless steel</li>
+                                <li>Interchangeable leg and head sections with inbuilt kidney bridge</li>
+                                <li>Smooth stepless articulation for precise patient positioning</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=OT%20Table%20Semi%20Electric%20C-Arm">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="ot table c-arm hydraulic" data-badge="c-arm hydraulic">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View OT Table C-Arm Hydraulic on Instagram" title="View on Instagram">
+                                    <img src="ot-table-carm-hydraulic.png" alt="OT Table C-Arm Hydraulic" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">C-Arm Hydraulic</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Surgical infrastructure</span>
+                                <h3>OT Table C-Arm Hydraulic</h3>
+                                <p>Heavy-duty hydraulic surgical table with full C-arm fluoroscopy compatibility and leakproof foot pump drive.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Hydraulic foot pedal elevation mechanism</li>
+                                <li>High stability stainless steel centric base</li>
+                                <li>Detachable head, pelvic and leg sections</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=OT%20Table%20C-Arm%20Hydraulic">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="ot table general (hydraulic)" data-badge="hydraulic">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View OT Table General (Hydraulic) on Instagram" title="View on Instagram">
+                                    <img src="ot-table-general-hydraulic.png" alt="OT Table General (Hydraulic)" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Hydraulic</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Surgical infrastructure</span>
+                                <h3>OT Table General (Hydraulic)</h3>
+                                <p>Reliable workhorse surgical table powered by a durable heavy-duty leak-proof hydraulic pump with double cylinder.</p>
+                                <ul class="catalogue-card__details">
+                                <li>5-sectional radiotranslucent stainless steel table top</li>
+                                <li>Double cylinder concealed hydraulic chamber</li>
+                                <li>Eccentrically positioned top for maximum access</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=OT%20Table%20General%20%28Hydraulic%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="orthopedic & neurosurgical table attachments" data-badge="table attachments">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Orthopedic & Neurosurgical Table Attachments on Instagram" title="View on Instagram">
+                                    <img src="ortho-neuro-attachments.png" alt="Orthopedic & Neurosurgical Table Attachments" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Table Attachments</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Surgical infrastructure</span>
+                                <h3>Orthopedic & Neurosurgical Table Attachments</h3>
+                                <p>Modular surgical table attachments including Mayfield skull clamps, orthopedic traction frames and leg positioners.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Mayfield-type 3-pin cranial fixation head clamp with torque knob</li>
+                                <li>Traction extension device with pelvic rest for hip fractures</li>
+                                <li>Precision stainless steel clamps fitting all standard side rails</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Orthopedic%20%26%20Neurosurgical%20Table%20Attachments">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="catalogue-section">
+            <div class="container">
+                <div class="catalogue-cta d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4">
+                    <div>
+                        <h2>Can't find what you're looking for?</h2>
+                        <p>Share your requirements and our team will recommend the best fit from our full range.</p>
+                    </div>
+                    <a class="catalogue-button flex-shrink-0" href="../../contact-form/index.html">
+                        Contact our team <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer position-relative light-background">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-lg-4">
+                    <div class="footer-content">
+                        <a href="../../index.html" class="logo d-flex align-items-center mb-4">
+                            <span class="sitename">Dr. Smith</span>
+                        </a>
+                        <p class="mb-4">Dr. Smith provides medical equipment, healthcare infrastructure and patient-focused solutions.</p>
+                        <div class="catalogue-footer-logo">
+                            <a href="../../index.html" aria-label="Dr. Smith home">
+                                <img src="../../assets/img/logo.png?v=2" alt="Dr. Smith">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <div class="footer-links">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="../index.html#catalogue"><i class="bi bi-chevron-right"></i> Catalogue</a></li>
+                            <li><a href="../beds/index.html"><i class="bi bi-chevron-right"></i> Hospital Beds</a></li>
+                            <li><a href="../ot-lights/index.html"><i class="bi bi-chevron-right"></i> OT Lights</a></li>
+                            <li><a href="../autoclaves/index.html"><i class="bi bi-chevron-right"></i> Autoclaves</a></li>
+                            <li><a href="../surgical-instruments/index.html"><i class="bi bi-chevron-right"></i> Surgical Instruments</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <div class="footer-links">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="../../index.html#about"><i class="bi bi-chevron-right"></i> About Us</a></li>
+                            <li><a href="../../contact-form/index.html"><i class="bi bi-chevron-right"></i> Contact</a></li>
+                            <li><a href="../../privacy.html"><i class="bi bi-chevron-right"></i> Privacy Policy</a></li>
+                            <li><a href="../../terms.html"><i class="bi bi-chevron-right"></i> Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-contact">
+                        <h4>Contact Us</h4>
+                        <p>Plot No. 75/02, Shri Sai Complex, GF, Opp. Nimity Building - 108, Behind-IGL CNG Pump, Kapashera Border, New Delhi - 110037</p>
+                        <p class="mt-3"><strong>Phone:</strong> <span>+91 9599081020</span></p>
+                        <p><strong>Email:</strong> <span>info@drsmith.co.in</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="copyright">
+                            <p>© <span>Copyright</span> <strong class="px-1 sitename">Dr. Smith</strong> <span>All Rights Reserved</span></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="footer-bottom-links">
+                            <a href="../../privacy.html">Privacy Policy</a>
+                            <a href="../../terms.html">Terms of Service</a>
+                            <a href="../../contact-form/index.html">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to top">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</body>
+
+</html>
