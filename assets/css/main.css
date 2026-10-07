@@ -495,14 +495,9 @@ h6 {
     display: block !important;
   }
 
-  /* Right-side button group: WhatsApp + Hamburger */
-  .navmenu {
-    display: flex !important;
-    align-items: center !important;
-    margin-left: auto !important;
-    margin-right: 0 !important;
-    padding: 0 !important;
-    flex-shrink: 0 !important;
+  /* Direct mobile header bar: Hamburger toggle on right, navmenu hidden until toggled */
+  body:not(.mobile-nav-active) .navmenu {
+    display: none !important;
   }
 
   .mobile-nav-toggle {
@@ -521,7 +516,7 @@ h6 {
     transition: all 0.2s ease !important;
     z-index: 9999 !important;
     flex-shrink: 0 !important;
-    margin-left: 8px !important;
+    margin-left: auto !important;
     margin-right: 0 !important;
     position: relative !important;
   }
@@ -531,77 +526,32 @@ h6 {
     color: var(--accent-color, #2563eb) !important;
   }
 
-  /* When drawer is closed on mobile, show the WhatsApp button in the header bar */
-  body:not(.mobile-nav-active) .navmenu ul {
-    display: flex !important;
-    align-items: center !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    list-style: none !important;
-  }
-
-  body:not(.mobile-nav-active) .navmenu ul li {
-    display: none !important;
-  }
-
-  body:not(.mobile-nav-active) .navmenu ul li:has(.nav-whatsapp-btn),
-  body:not(.mobile-nav-active) .navmenu ul li:last-child {
-    display: flex !important;
-    align-items: center !important;
-  }
-
-  body:not(.mobile-nav-active) .navmenu .nav-whatsapp-btn {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 38px !important;
-    height: 38px !important;
-    padding: 0 !important;
-    border-radius: 10px !important;
-    background: #25D366 !important;
-    color: #ffffff !important;
-    box-shadow: 0 3px 10px rgba(37, 211, 102, 0.3) !important;
-    text-decoration: none !important;
-    flex-shrink: 0 !important;
-  }
-
-  body:not(.mobile-nav-active) .navmenu .nav-whatsapp-btn i {
-    font-size: 19px !important;
-    color: #ffffff !important;
-    margin: 0 !important;
-  }
-
   /* When Mobile Menu is Active (Drawer Open) */
   body.mobile-nav-active {
-    overflow: hidden;
+    overflow: auto;
   }
 
   body.mobile-nav-active::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: rgba(15, 23, 42, 0.55);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    z-index: 9998;
-    transition: all 0.3s ease;
+    display: none !important;
   }
 
   body.mobile-nav-active .navmenu {
     position: fixed !important;
-    top: 68px !important;
+    top: 66px !important;
     left: 14px !important;
     right: 14px !important;
-    max-height: calc(100vh - 84px) !important;
+    max-height: calc(100vh - 80px) !important;
     background: #ffffff !important;
-    border-radius: 20px !important;
-    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.2) !important;
+    border-radius: 18px !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15) !important;
     border: 1px solid rgba(0, 0, 0, 0.08) !important;
     padding: 16px 14px !important;
     overflow-y: auto !important;
     z-index: 9999 !important;
     display: block !important;
-    animation: mobileMenuSlideDown 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    animation: mobileMenuSlideDown 0.25s ease-out forwards;
   }
 
   body.mobile-nav-active .navmenu ul {
@@ -1910,6 +1860,33 @@ section,
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
   box-shadow: 0 12px 35px color-mix(in srgb, var(--accent-color), transparent 60%);
   transform: scale(1.1);
+}
+
+.hero .btn-hero-whatsapp {
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  font-weight: 600;
+  font-size: 14.5px;
+  padding: 12px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+  transition: all 0.3s ease;
+}
+
+.hero .btn-hero-whatsapp i {
+  font-size: 19px;
+  line-height: 1;
+}
+
+.hero .btn-hero-whatsapp:hover {
+  background: linear-gradient(135deg, #20ba5a 0%, #0d7367 100%);
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.45);
 }
 
 .hero .hero-image {
@@ -4022,16 +3999,16 @@ section,
        Mobile Header & Navbar Theme
        ============================================================ */
     @media (max-width: 767.98px) {
-      /* Main Header Bar - fixed at top with clean backdrop blur on scroll */
+      /* Main Header Bar - fixed at top with clean solid background */
       #header.header {
         position: fixed !important;
         top: 0 !important;
         left: 0 !important;
         right: 0 !important;
         width: 100% !important;
-        background: rgba(255, 255, 255, 0.95) !important;
-        backdrop-filter: blur(12px) !important;
-        -webkit-backdrop-filter: blur(12px) !important;
+        background: #ffffff !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05) !important;
         border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
         padding: 10px 0 !important;
