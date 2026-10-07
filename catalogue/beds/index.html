@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse Dr. Smith's Hospital Beds range for hospitals, ICUs and clinics.">
+    <meta name="theme-color" content="#eaf4ff">
+    <title>Hospital Beds | Dr. Smith Catalogue</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Questrial:wght@400&display=swap" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../../assets/css/main.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+
+    <link href="../css/catalogue.css" rel="stylesheet">
+</head>
+
+<body class="catalogue-page">
+    <header id="header" class="header header--minimal d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+            <a href="../../index.html" class="logo d-flex align-items-center" aria-label="Dr. Smith home">
+                <img src="../../assets/img/logo.png?v=2" alt="Dr. Smith logo">
+                <h1 class="sitename">Dr. Smith</h1>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="catalogue-hero catalogue-hero--compact">
+            <div class="container">
+                <nav class="catalogue-breadcrumb" aria-label="Breadcrumb">
+                    <a href="../../index.html">Home</a>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="../index.html#catalogue">Catalogue</a>
+                    <i class="bi bi-chevron-right"></i>
+                    <span aria-current="page">Hospital Beds</span>
+                </nav>
+                <div class="row align-items-center">
+                    <div class="col-lg-9">
+                        <span class="catalogue-eyebrow">Hospital furniture</span>
+                        <h1>Hospital Beds</h1>
+                        <p>Manual, electric and multi-functional ICU hospital beds, Fowler beds, semi-Fowler beds, paediatric beds and neonatal bassinets.</p>
+                        <a class="catalogue-button catalogue-button--ghost" href="../index.html#catalogue">
+                            <i class="bi bi-arrow-left"></i> Back to full catalogue
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalogue-section">
+            <div class="container">
+                <header class="catalogue-heading">
+                    <span class="catalogue-eyebrow">Our range</span>
+                    <h2>Browse Hospital Beds</h2>
+                    <p>Manual, electric and multi-functional ICU hospital beds, Fowler beds, semi-Fowler beds, paediatric beds and neonatal bassinets.</p>
+                </header>
+                <p class="catalogue-count">Showing <strong>13</strong> products</p>
+
+                <div class="category-search-wrapper mb-4" style="max-width: 500px;">
+                    <div class="input-group">
+                        <span class="input-group-text bg-white border-end-0"><i class="bi bi-search text-muted"></i></span>
+                        <input type="text" id="categoryProductSearch" class="form-control border-start-0 ps-0" placeholder="Filter hospital beds..." aria-label="Filter products">
+                    </div>
+                </div>
+                <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var searchInput = document.getElementById('categoryProductSearch');
+                    if (searchInput) {
+                        searchInput.addEventListener('input', function() {
+                            var query = this.value.toLowerCase().trim();
+                            var items = document.querySelectorAll('.catalogue-grid-item');
+                            var count = 0;
+                            items.forEach(function(item) {
+                                var title = item.getAttribute('data-title') || '';
+                                var badge = item.getAttribute('data-badge') || '';
+                                if (!query || title.includes(query) || badge.includes(query)) {
+                                    item.style.display = '';
+                                    count++;
+                                } else {
+                                    item.style.display = 'none';
+                                }
+                            });
+                            var countElem = document.querySelector('.catalogue-count strong');
+                            if (countElem) {
+                                countElem.textContent = count;
+                            }
+                        });
+                    }
+                });
+                </script>
+                <div class="row g-4" id="products-grid">
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="five function electric icu bed (imported)" data-badge="electric icu">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Five Function Electric ICU Bed (Imported) on Instagram" title="View on Instagram">
+                                    <img src="icu-bed-5-function-electric.png" alt="Five Function Electric ICU Bed (Imported)" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Electric ICU</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Hospital furniture</span>
+                                <h3>Five Function Electric ICU Bed (Imported)</h3>
+                                <p>Motorised five-function imported hospital ICU bed with ABS head/foot panels, four-section split side railings with degree indicators, and CPR release.</p>
+                                <ul class="catalogue-card__details">
+                                <li>5 electric motorized functions with nurse control panel</li>
+                                <li>ABS head and foot boards with angle degree indicator</li>
+                                <li>125mm central locking twin castors & CPR release</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Five%20Function%20Electric%20ICU%20Bed%20%28Imported%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="five function electric icu bed (deluxe)" data-badge="electric deluxe">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Five Function Electric ICU Bed (Deluxe) on Instagram" title="View on Instagram">
+                                    <img src="icu-bed-5-function-godrej-electric.png" alt="Five Function Electric ICU Bed (Deluxe)" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Electric Deluxe</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Hospital furniture</span>
+                                <h3>Five Function Electric ICU Bed (Deluxe)</h3>
+                                <p>Heavy-duty rectangular CRCA frame with four-sectional CRCA sheet top, electric actuator backrest, knee-rest, and Trendelenburg.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Motorized height, backrest, knee-rest & Trendelenburg</li>
+                                <li>ABS moulded head and foot panels with safety side rails</li>
+                                <li>Pre-treated epoxy powder coated with 125mm castors</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Five%20Function%20Electric%20ICU%20Bed%20%28Deluxe%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="five function manual icu bed (deluxe)" data-badge="manual deluxe">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Five Function Manual ICU Bed (Deluxe) on Instagram" title="View on Instagram">
+                                    <img src="icu-bed-5-function-manual.png" alt="Five Function Manual ICU Bed (Deluxe)" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Manual Deluxe</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Hospital furniture</span>
+                                <h3>Five Function Manual ICU Bed (Deluxe)</h3>
+                                <p>Manual ICU bed offering complete positioning via smooth crank mechanism, foldable aluminium railings and heavy steel frame.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Smooth folding crank mechanisms for all 5 functions</li>
+                                <li>ABS moulded removable head and foot boards</li>
+                                <li>Collapsible aluminium alloy protective side safety rails</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Five%20Function%20Manual%20ICU%20Bed%20%28Deluxe%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="three function electric icu bed (deluxe)" data-badge="electric 3-function">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Three Function Electric ICU Bed (Deluxe) on Instagram" title="View on Instagram">
+                                    <img src="icu-bed-3-function-electric.png" alt="Three Function Electric ICU Bed (Deluxe)" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Electric 3-Function</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Hospital furniture</span>
+                                <h3>Three Function Electric ICU Bed (Deluxe)</h3>
+                                <p>Motorised three-function ICU bed for powered backrest, knee rest and overall height adjustments at the push of a handset button.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Dual actuator motors for backrest & knee-rest elevation</li>
+                                <li>ABS tuck-away safety side rails with angle indicators</li>
+                                <li>Battery backup capability with emergency manual release</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Three%20Function%20Electric%20ICU%20Bed%20%28Deluxe%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="semi fowler bed manual (eco model)" data-badge="semi fowler">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Semi Fowler Bed Manual (Eco Model) on Instagram" title="View on Instagram">
+                                    <img src="semi-fowler-bed-manual.png" alt="Semi Fowler Bed Manual (Eco Model)" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Semi Fowler</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Hospital furniture</span>
+                                <h3>Semi Fowler Bed Manual (Eco Model)</h3>
+                                <p>Two-section manual ward bed with smooth crank backrest elevation, powder coated panel headboards and IV pole mount.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Uniformly perforated two-sectional CRCA sheet top</li>
+                                <li>Backrest adjustment via smooth foldaway crank handle</li>
+                                <li>Pre-treated and epoxy powder coated finish</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Semi%20Fowler%20Bed%20Manual%20%28Eco%20Model%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="fowler bed (2 crank manual)" data-badge="manual fowler">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Fowler Bed (2 Crank Manual) on Instagram" title="View on Instagram">
+                                    <img src="fowler-bed-2-crank-manual.png" alt="Fowler Bed (2 Crank Manual)" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Manual Fowler</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Hospital furniture</span>
+                                <h3>Fowler Bed (2 Crank Manual)</h3>
+                                <p>Standard general ward Fowler bed featuring dual crank mechanisms for independent backrest and knee rest positioning.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Two-crank mechanism for backrest & knee rest elevation</li>
+                                <li>ABS moulded removable head and foot panels</li>
+                                <li>Collapsible side safety railings with brake castors</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Fowler%20Bed%20%282%20Crank%20Manual%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="fowler bed electric" data-badge="electric fowler">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Fowler Bed Electric on Instagram" title="View on Instagram">
+                                    <img src="fowler-bed-electric.png" alt="Fowler Bed Electric" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Electric Fowler</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Hospital furniture</span>
+                                <h3>Fowler Bed Electric</h3>
+                                <p>Powered Fowler ward bed with wired handheld remote, smooth electric actuators, and robust steel chassis.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Motorized backrest and knee-rest positioning via handheld remote</li>
+                                <li>Detachable ABS head & foot boards for emergency access</li>
+                                <li>Epoxy powder-coated finish resistant to hospital disinfectants</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Fowler%20Bed%20Electric">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="plain ward bed (manual deluxe)" data-badge="general ward">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Plain Ward Bed (Manual Deluxe) on Instagram" title="View on Instagram">
+                                    <img src="plain-ward-bed-manual.png" alt="Plain Ward Bed (Manual Deluxe)" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">General Ward</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Hospital furniture</span>
+                                <h3>Plain Ward Bed (Manual Deluxe)</h3>
+                                <p>Sturdy general ward patient bed with tubular steel framework, perforated sheet top, and corner IV pole provision.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Heavy-duty CRCA tubular framework with epoxy finish</li>
+                                <li>Perforated sheet mattress platform for ventilation</li>
+                                <li>Fitted with rubber stump feet and IV rod mounts</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Plain%20Ward%20Bed%20%28Manual%20Deluxe%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="plain bed (eco model)" data-badge="ward bed">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Plain Bed (Eco Model) on Instagram" title="View on Instagram">
+                                    <img src="plain-bed-manual.png" alt="Plain Bed (Eco Model)" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Ward Bed</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Hospital furniture</span>
+                                <h3>Plain Bed (Eco Model)</h3>
+                                <p>Cost-effective patient recovery bed with powder-coated pipe head/foot bows and durable steel sleep surface.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Overall size: 220 L x 100 W x 60 H cm</li>
+                                <li>Powder coated moulded head and foot panels</li>
+                                <li>High load-bearing rectangular CRCA frame construction</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Plain%20Bed%20%28Eco%20Model%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="pediatric hospital bed" data-badge="pediatric">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Pediatric Hospital Bed on Instagram" title="View on Instagram">
+                                    <img src="pediatric-bed.png" alt="Pediatric Hospital Bed" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Pediatric</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Hospital furniture</span>
+                                <h3>Pediatric Hospital Bed</h3>
+                                <p>Child-safe pediatric patient bed with full-length drop-down safety side railings preventing accidental falls.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Dimensions: 137 L x 76 W x 60 H cm</li>
+                                <li>Tubular head and foot bows of equal height with vertical bars</li>
+                                <li>Drop-down type ABS safety railings with child-safe locks</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Pediatric%20Hospital%20Bed">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="baby bassinet (imported acrylic)" data-badge="maternity bassinet">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Baby Bassinet (Imported Acrylic) on Instagram" title="View on Instagram">
+                                    <img src="baby-bassinet-imported.png" alt="Baby Bassinet (Imported Acrylic)" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Maternity Bassinet</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Hospital furniture</span>
+                                <h3>Baby Bassinet (Imported Acrylic)</h3>
+                                <p>Neonatal acrylic bassinet on height-adjustable aluminium trolley with Trendelenburg tilt and smooth swiveling wheels.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Clear medical-grade acrylic crib with Trendelenburg tilt</li>
+                                <li>Height adjustable aluminium column with accessory basket</li>
+                                <li>Swivel castor wheels with independent brake locks</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Baby%20Bassinet%20%28Imported%20Acrylic%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="baby bassinet (indian tubular)" data-badge="newborn crib">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Baby Bassinet (Indian Tubular) on Instagram" title="View on Instagram">
+                                    <img src="baby-bassinet-indian.png" alt="Baby Bassinet (Indian Tubular)" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Newborn Crib</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Hospital furniture</span>
+                                <h3>Baby Bassinet (Indian Tubular)</h3>
+                                <p>Durable tubular steel baby bassinet with wire mesh basket and lower utility diaper tray for maternity wards.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Removable wire-mesh newborn basket with rounded safety rims</li>
+                                <li>Tubular steel trolley on 50mm swivel wheels with brakes</li>
+                                <li>Epoxy powder coated finish easy to sanitize</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Baby%20Bassinet%20%28Indian%20Tubular%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="hospital baby cradle" data-badge="baby cradle">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Hospital Baby Cradle on Instagram" title="View on Instagram">
+                                    <img src="baby-cradle-hospital.png" alt="Hospital Baby Cradle" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Baby Cradle</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Hospital furniture</span>
+                                <h3>Hospital Baby Cradle</h3>
+                                <p>Smooth swinging hospital baby cradle crafted from cold-rolled steel with protective epoxy powder finish.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Overall size: 36" L x 15" W x 39" H</li>
+                                <li>Wire-mesh hanging cradle (19mm x 1.22mm CRC tube with 5mm wire)</li>
+                                <li>Pre-treated epoxy powder coated stand with PVC leg stumps</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Hospital%20Baby%20Cradle">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="catalogue-section">
+            <div class="container">
+                <div class="catalogue-cta d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4">
+                    <div>
+                        <h2>Can't find what you're looking for?</h2>
+                        <p>Share your requirements and our team will recommend the best fit from our full range.</p>
+                    </div>
+                    <a class="catalogue-button flex-shrink-0" href="../../contact-form/index.html">
+                        Contact our team <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer position-relative light-background">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-lg-4">
+                    <div class="footer-content">
+                        <a href="../../index.html" class="logo d-flex align-items-center mb-4">
+                            <span class="sitename">Dr. Smith</span>
+                        </a>
+                        <p class="mb-4">Dr. Smith provides medical equipment, healthcare infrastructure and patient-focused solutions.</p>
+                        <div class="catalogue-footer-logo">
+                            <a href="../../index.html" aria-label="Dr. Smith home">
+                                <img src="../../assets/img/logo.png?v=2" alt="Dr. Smith">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <div class="footer-links">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="../index.html#catalogue"><i class="bi bi-chevron-right"></i> Catalogue</a></li>
+                            <li><a href="../beds/index.html"><i class="bi bi-chevron-right"></i> Hospital Beds</a></li>
+                            <li><a href="../ot-lights/index.html"><i class="bi bi-chevron-right"></i> OT Lights</a></li>
+                            <li><a href="../autoclaves/index.html"><i class="bi bi-chevron-right"></i> Autoclaves</a></li>
+                            <li><a href="../surgical-instruments/index.html"><i class="bi bi-chevron-right"></i> Surgical Instruments</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <div class="footer-links">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="../../index.html#about"><i class="bi bi-chevron-right"></i> About Us</a></li>
+                            <li><a href="../../contact-form/index.html"><i class="bi bi-chevron-right"></i> Contact</a></li>
+                            <li><a href="../../privacy.html"><i class="bi bi-chevron-right"></i> Privacy Policy</a></li>
+                            <li><a href="../../terms.html"><i class="bi bi-chevron-right"></i> Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-contact">
+                        <h4>Contact Us</h4>
+                        <p>Plot No. 75/02, Shri Sai Complex, GF, Opp. Nimity Building - 108, Behind-IGL CNG Pump, Kapashera Border, New Delhi - 110037</p>
+                        <p class="mt-3"><strong>Phone:</strong> <span>+91 9599081020</span></p>
+                        <p><strong>Email:</strong> <span>info@drsmith.co.in</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="copyright">
+                            <p>© <span>Copyright</span> <strong class="px-1 sitename">Dr. Smith</strong> <span>All Rights Reserved</span></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="footer-bottom-links">
+                            <a href="../../privacy.html">Privacy Policy</a>
+                            <a href="../../terms.html">Terms of Service</a>
+                            <a href="../../contact-form/index.html">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to top">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</body>
+
+</html>
