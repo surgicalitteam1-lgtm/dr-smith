@@ -1,0 +1,17 @@
+# Robots.txt for Dr. Smith (drsmith.co.in)
+User-agent: *
+Allow: /
+Disallow: /assets/vendor/
+
+# Block aggressive AI scrapers and bandwidth harvesters
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
