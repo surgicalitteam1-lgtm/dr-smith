@@ -216,8 +216,12 @@ h6 {
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
-/* Desktop Navigation */
-@media (min-width: 1200px) {
+/* Desktop & Tablet Navigation (768px and up) */
+@media (min-width: 768px) {
+  .mobile-nav-toggle {
+    display: none !important;
+  }
+
   .navmenu {
     padding: 0;
   }
@@ -283,24 +287,6 @@ h6 {
     font-weight: 600;
   }
 
-  .navmenu ul li:last-child a {
-    background: var(--accent-color);
-    color: #ffffff !important;
-    font-weight: 600;
-    padding: 7px 18px;
-    border-radius: 50px;
-    margin-left: 8px;
-    box-shadow: 0 3px 10px color-mix(in srgb, var(--accent-color), transparent 65%);
-    transition: all 0.25s ease;
-  }
-
-  .navmenu ul li:last-child a:hover {
-    background: color-mix(in srgb, var(--accent-color), black 12%);
-    color: #ffffff !important;
-    transform: translateY(-1px);
-    box-shadow: 0 5px 14px color-mix(in srgb, var(--accent-color), transparent 50%);
-  }
-
   .navmenu .dropdown ul {
     margin: 0;
     padding: 10px 0;
@@ -358,129 +344,150 @@ h6 {
   }
 }
 
-/* Mobile Navigation */
-@media (max-width: 1199px) {
+/* Specific Tablet adjustments to fit all nav items and WhatsApp icon cleanly */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #header .container-fluid,
+  #header .container-xl {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    flex-wrap: nowrap !important;
+  }
+  .header .logo {
+    gap: 6px;
+    flex-shrink: 0;
+  }
+  .header .logo img {
+    width: 38px;
+    height: 40px;
+  }
+  .header .logo h1 {
+    font-size: 16px;
+    margin: 0;
+  }
+  .header .logo .logo-slogan {
+    display: none;
+  }
+  .navmenu {
+    flex-shrink: 0;
+  }
+  .navmenu ul {
+    gap: 1px !important;
+    flex-wrap: nowrap !important;
+  }
+  .navmenu ul li {
+    flex-shrink: 0;
+  }
+  .navmenu a,
+  .navmenu a:focus {
+    font-size: 11px;
+    padding: 5px 6px;
+    letter-spacing: -0.2px;
+  }
+  .navmenu .nav-whatsapp-btn,
+  .navmenu ul li:last-child a.nav-whatsapp-btn {
+    padding: 4px 6px !important;
+    margin-left: 2px !important;
+    display: inline-flex !important;
+    flex-shrink: 0 !important;
+  }
+  .navmenu .nav-whatsapp-btn i,
+  .navmenu ul li:last-child a.nav-whatsapp-btn i {
+    font-size: 20px !important;
+    color: #25D366 !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #header .container-fluid,
+  #header .container-xl {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+    flex-wrap: nowrap !important;
+  }
+  .header .logo {
+    flex-shrink: 0;
+  }
+  .header .logo img {
+    width: 48px;
+    height: 50px;
+  }
+  .header .logo h1 {
+    font-size: 18px;
+  }
+  .header .logo .logo-slogan {
+    font-size: 7.5px;
+  }
+  .navmenu {
+    flex-shrink: 0;
+  }
+  .navmenu ul {
+    gap: 3px !important;
+    flex-wrap: nowrap !important;
+  }
+  .navmenu ul li {
+    flex-shrink: 0;
+  }
+  .navmenu a,
+  .navmenu a:focus {
+    font-size: 12.5px;
+    padding: 6px 8px;
+  }
+  .navmenu .nav-whatsapp-btn,
+  .navmenu ul li:last-child a.nav-whatsapp-btn {
+    padding: 5px 8px !important;
+    margin-left: 4px !important;
+    display: inline-flex !important;
+    flex-shrink: 0 !important;
+  }
+  .navmenu .nav-whatsapp-btn i,
+  .navmenu ul li:last-child a.nav-whatsapp-btn i {
+    font-size: 22px !important;
+    color: #25D366 !important;
+  }
+}
+
+/* Mobile Navigation (under 768px only) */
+@media (max-width: 767.98px) {
   .mobile-nav-toggle {
-    color: var(--nav-color);
-    font-size: 28px;
-    line-height: 0;
-    margin-right: 10px;
-    cursor: pointer;
-    transition: color 0.3s;
+    display: none !important;
   }
 
   .navmenu {
-    padding: 0;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
     z-index: 9997;
   }
 
   .navmenu ul {
-    display: none;
-    list-style: none;
-    position: absolute;
-    inset: 60px 20px 20px 20px;
-    padding: 10px 0;
-    margin: 0;
-    border-radius: 6px;
-    background-color: var(--nav-mobile-background-color);
-    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-    box-shadow: none;
-    overflow-y: auto;
-    transition: 0.3s;
-    z-index: 9998;
+    display: flex !important;
+    position: static !important;
+    inset: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    background-color: transparent !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+    list-style: none !important;
+    align-items: center !important;
   }
 
-  .navmenu a,
-  .navmenu a:focus {
-    color: var(--nav-dropdown-color);
-    padding: 10px 20px;
-    font-family: var(--nav-font);
-    font-size: 17px;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    white-space: nowrap;
-    transition: 0.3s;
+  /* In mobile view, hide all nav items except the WhatsApp icon */
+  .navmenu ul li {
+    display: none !important;
   }
 
-  .navmenu a i,
-  .navmenu a:focus i {
-    font-size: 12px;
-    line-height: 0;
-    margin-left: 5px;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    transition: 0.3s;
-    background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
-  }
-
-  .navmenu a i:hover,
-  .navmenu a:focus i:hover {
-    background-color: var(--accent-color);
-    color: var(--contrast-color);
-  }
-
-  .navmenu a:hover,
-  .navmenu .active,
-  .navmenu .active:focus {
-    color: var(--nav-dropdown-hover-color);
-  }
-
-  .navmenu .active i,
-  .navmenu .active:focus i {
-    background-color: var(--accent-color);
-    color: var(--contrast-color);
-    transform: rotate(180deg);
-  }
-
-  .navmenu .dropdown ul {
-    position: static;
-    display: none;
-    z-index: 99;
-    padding: 10px 0;
-    margin: 10px 20px;
-    background-color: var(--nav-dropdown-background-color);
-    transition: all 0.5s ease-in-out;
-  }
-
-  .navmenu .dropdown ul ul {
-    background-color: rgba(33, 37, 41, 0.1);
-  }
-
-  .navmenu .dropdown>.dropdown-active {
-    display: block;
-    background-color: rgba(33, 37, 41, 0.03);
+  .navmenu ul li:has(.nav-whatsapp-btn),
+  .navmenu ul li:last-child {
+    display: flex !important;
+    align-items: center !important;
   }
 
   .mobile-nav-active {
-    overflow: hidden;
-  }
-
-  .mobile-nav-active .mobile-nav-toggle {
-    color: #fff;
-    position: absolute;
-    font-size: 32px;
-    top: 15px;
-    right: 15px;
-    margin-right: 0;
-    z-index: 9999;
-  }
-
-  .mobile-nav-active .navmenu {
-    position: fixed;
-    overflow: hidden;
-    inset: 0;
-    background: rgba(33, 37, 41, 0.8);
-    transition: 0.3s;
-  }
-
-  .mobile-nav-active .navmenu>ul {
-    display: block;
+    overflow: auto;
   }
 }
 
@@ -3824,7 +3831,7 @@ section,
        Mobile & Tablet Only: Complete Blue Theme for Navbar
        (Screens up to 1199px)
        ============================================================ */
-    @media (max-width: 1199px) {
+    @media (max-width: 767.98px) {
       /* Main Header Bar - positioned absolutely so it stays at the top and does not remain fixed while scrolling */
       #header.header {
         position: absolute !important;
@@ -3842,23 +3849,14 @@ section,
         transition: opacity 0.3s ease, transform 0.3s ease !important;
       }
 
-      /* Hide header completely when scrolling down in mobile and tablet view */
-      body:not(.mobile-nav-active).scrolled #header.header,
-      body:not(.mobile-nav-active).header-hidden #header.header {
+      /* Hide header completely when scrolling down in mobile view */
+      body.scrolled #header.header,
+      body.header-hidden #header.header {
         display: none !important;
         opacity: 0 !important;
         visibility: hidden !important;
         pointer-events: none !important;
         transform: translateY(-100%) !important;
-      }
-
-      /* Keep header and controls active when mobile navigation menu is opened */
-      body.mobile-nav-active #header.header {
-        display: flex !important;
-        opacity: 1 !important;
-        visibility: visible !important;
-        pointer-events: auto !important;
-        transform: none !important;
       }
 
       /* Logo title in dark slate for clean visibility */
@@ -3869,87 +3867,44 @@ section,
         letter-spacing: 0.3px !important;
       }
 
-      /* Hamburger menu toggle button in dark slate */
+      /* Hide mobile nav toggle completely */
       #header .mobile-nav-toggle {
-        color: #344761 !important;
-        font-size: 30px !important;
+        display: none !important;
+      }
+
+      /* Navmenu on mobile: simple inline container for WhatsApp icon only */
+      .navmenu {
         display: flex !important;
         align-items: center !important;
-        justify-content: center !important;
+        padding: 0 !important;
+        background: transparent !important;
       }
 
-      /* Mobile dropdown menu container - themed in soft site blue with blue border */
       .navmenu ul {
-        background-color: #eaf4ff !important;
-        border: 2px solid #5c99ee !important;
-        border-radius: 16px !important;
-        box-shadow: 0 15px 40px rgba(15, 45, 95, 0.25) !important;
-        padding: 16px 12px !important;
-        inset: 70px 16px 20px 16px !important;
-        overflow-y: auto !important;
-        -webkit-overflow-scrolling: touch !important;
-        max-height: calc(100vh - 90px) !important;
-      }
-
-      /* Navigation links */
-      .navmenu a,
-      .navmenu a:focus {
-        color: #243c5a !important;
-        font-size: 16px !important;
-        font-weight: 600 !important;
-        padding: 12px 18px !important;
-        border-radius: 10px !important;
-        margin-bottom: 6px !important;
-        transition: all 0.25s ease !important;
+        display: flex !important;
+        position: static !important;
+        inset: auto !important;
+        background: transparent !important;
         background-color: transparent !important;
+        border: none !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow: visible !important;
+        max-height: none !important;
+        list-style: none !important;
+        align-items: center !important;
       }
 
-      /* Active & hover links in website accent blue (#5c99ee) */
-      .navmenu a:hover,
-      .navmenu li:hover > a,
-      .navmenu .active,
-      .navmenu .active:focus {
-        color: #ffffff !important;
-        background: #5c99ee !important;
-        box-shadow: 0 4px 14px rgba(92, 153, 238, 0.35) !important;
+      .navmenu ul li {
+        display: none !important;
       }
 
-      /* "Contact Us" CTA button in mobile menu */
-      .navmenu ul li:last-child a {
-        background: #ffffff !important;
-        color: #5c99ee !important;
-        border: 2px solid #5c99ee !important;
-        font-weight: 700 !important;
-        text-align: center !important;
-        justify-content: center !important;
-        margin-top: 12px !important;
-        box-shadow: 0 4px 12px rgba(92, 153, 238, 0.15) !important;
-      }
-
-      .navmenu ul li:last-child a:hover,
-      .navmenu ul li:last-child a.active {
-        background: #5c99ee !important;
-        color: #ffffff !important;
-        border-color: transparent !important;
-      }
-
-      /* Fullscreen backdrop overlay in deep navy blue */
-      .mobile-nav-active .navmenu {
-        background: rgba(11, 28, 54, 0.8) !important;
-        backdrop-filter: blur(6px) !important;
-        -webkit-backdrop-filter: blur(6px) !important;
-      }
-
-      /* Close X icon when menu is open */
-      .mobile-nav-active .mobile-nav-toggle {
-        color: #ffffff !important;
-        background: #5c99ee !important;
-        width: 42px !important;
-        height: 42px !important;
-        border-radius: 50% !important;
-        top: 15px !important;
-        right: 18px !important;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25) !important;
+      .navmenu ul li:has(.nav-whatsapp-btn),
+      .navmenu ul li:last-child {
+        display: flex !important;
+        align-items: center !important;
       }
     }
 
@@ -4311,6 +4266,80 @@ section,
   font-family: var(--heading-font);
   font-size: 1.25rem;
   font-weight: 700;
+}
+
+/* Header WhatsApp Icon (Transparent & Minimal) */
+.navmenu .nav-whatsapp-btn,
+.navmenu ul li:last-child a.nav-whatsapp-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: auto !important;
+  height: auto !important;
+  padding: 6px 10px !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  color: #25D366 !important;
+  box-shadow: none !important;
+  border: none !important;
+  margin-left: 6px !important;
+  transition: transform 0.2s ease, opacity 0.2s ease, color 0.2s ease !important;
+  text-decoration: none !important;
+}
+
+.navmenu .nav-whatsapp-btn i,
+.navmenu ul li:last-child a.nav-whatsapp-btn i {
+  font-size: 24px !important;
+  line-height: 1 !important;
+  margin: 0 !important;
+  color: #25D366 !important;
+  transition: transform 0.2s ease, color 0.2s ease !important;
+}
+
+.navmenu .nav-whatsapp-btn:hover,
+.navmenu ul li:last-child a.nav-whatsapp-btn:hover {
+  background: transparent !important;
+  background-color: transparent !important;
+  color: #20ba5a !important;
+  box-shadow: none !important;
+  transform: scale(1.1) !important;
+}
+
+.navmenu .nav-whatsapp-btn:hover i,
+.navmenu ul li:last-child a.nav-whatsapp-btn:hover i {
+  color: #20ba5a !important;
+}
+
+@media (max-width: 767.98px) {
+  .navmenu ul li .nav-whatsapp-btn,
+  .navmenu ul li:last-child a.nav-whatsapp-btn {
+    width: auto !important;
+    height: auto !important;
+    padding: 6px 8px !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    color: #25D366 !important;
+    border: none !important;
+    box-shadow: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 38px 0 0 !important;
+    text-decoration: none !important;
+  }
+
+  .navmenu ul li .nav-whatsapp-btn i,
+  .navmenu ul li:last-child a.nav-whatsapp-btn i {
+    font-size: 26px !important;
+    margin: 0 !important;
+    width: auto !important;
+    height: auto !important;
+    background: transparent !important;
+    color: #25D366 !important;
+    line-height: 1 !important;
+  }
 }
 
 
