@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Dr. Smith | Surgical Wholesale Mart Pvt. Ltd.</title>
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <!-- Importing Inter font to match the theme -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons (with Subresource Integrity verification) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Site Header -->
+    <header>
+        <a class="logo" href="../index.html" aria-label="Dr. Smith home">
+            <img src="../assets/img/logo.png?v=2" onerror="this.onerror=null; this.src='../catalogue/img/logo.png?v=2';" alt="Dr. Smith logo" width="62" height="64">
+            <div>Dr. Smith</div>
+        </a>
+    </header>
+
+    <!-- Main Contact Content -->
+    <main class="contact-container">
+        
+        <!-- Left Side: Information -->
+        <div class="contact-info">
+            <h1>Contact Dr. Smith <br><span>Medical Equipment &amp; Hospital Solutions</span></h1>
+            <p>Whether you need information about our turnkey hospital infrastructure, high-quality medical equipment, or just want to say hello, our team is ready to answer all your questions.</p>
+            
+            <div class="info-cards">
+                <div class="info-card">
+                    <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="info-content">
+                        <h3>Corporate Office</h3>
+                        <p>Plot No. 75/02, Shri Sai Complex, Ground Floor, Opposite Nimity Building - 108, Behind IGL CNG Pump, Kapashera Border, New Delhi - 110037, India</p>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="info-content">
+                        <h3>Email Us</h3>
+                        <p><a href="mailto:info@drsmith.co.in">info@drsmith.co.in</a></p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
+                    <div class="info-content">
+                        <h3>Call Us</h3>
+                        <p>Toll-free: 1800 891 7466<br>Mob: +91-9310726927, +91-9205544064, +91-9599081020-22</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side: Contact Form -->
+        <div class="contact-form-wrapper">
+            <h2>Send us a message</h2>
+            <form id="contactForm" novalidate>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="New Website Enquiry | Dr. Smith">
+                <input type="hidden" name="_template" value="table">
+                <input type="text" name="_honey" class="honeypot-field">
+                
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="First Name" placeholder="Enter your name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="Last Name" placeholder="Enter your last name" required> 
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="contact">Enter your e-mail address</label>
+                        <input type="email" id="contact" name="Email" placeholder="Email address" required autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" data-lpignore="true" inputmode="email">
+                        <div class="error-message" id="contactError">Enter a valid email address from a non-temporary email provider.</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="Phone Number" placeholder="mobile number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Inquiry Type</label>
+                        <select id="subject" name="Inquiry Type" required>
+                            <option value="" disabled selected>Select a department...</option>
+                            <option value="Retail / Single Unit sales">Retail / Single Unit sales</option>
+                            <option value="Bulk Sourcing">Bulk Sourcing</option>
+                            <option value="Whole infrastructure projects">Whole infrastructure projects</option>
+                            <option value="MediAid Patient Assistance">MediAid Patient Assistance</option>
+                            <option value="Other / General Inquiry">Other / General Inquiry</option>
+                            <option value="Doctor">Doctor</option>
+                            <option value="Individual">Individual</option>
+                            <option value="Wholesaler">Wholesaler</option>
+                            <option value="Distributor">Distributor</option>
+                            <option value="Hospital">Hospital</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="Message" placeholder="How can we help you today?" required></textarea>
+                    </div>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="consent" required>
+                    <label for="consent">I agree that Dr. Smith may use my details to respond to my enquiry. See our <a href="../privacy.html">privacy policy</a> for contact information.</label>
+                </div>
+
+                <div class="status-alert" id="submissionStatus" role="status" aria-live="polite"></div>
+
+                <button type="submit" class="submit-btn" id="submitBtn">
+                    <span class="btn-text">SEND ENQUIRY</span>
+                    <i class="fa-solid fa-paper-plane btn-icon"></i>
+                    <div class="spinner" id="btnSpinner"></div>
+                </button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Contact form validation -->
+    <script src="script.js"></script>
+</body>
+</html>

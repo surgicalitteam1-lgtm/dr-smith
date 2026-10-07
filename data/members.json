@@ -1,0 +1,29 @@
+[
+  {
+    "id": "lucky",
+    "passHash": "7c1ac036a476bd1a0e9840dea83df0509c02b1581a880aac092bae11b078a12a",
+    "name": "Lucky",
+    "department": "Administration",
+    "role": "Administrator",
+    "organization": "Dr. Smith Healthcare",
+    "status": "Active"
+  },
+  {
+    "id": "ritu",
+    "passHash": "355288819dd5e8a988165b5a674a13099365c94dd549a9cc8222ec42238a066e",
+    "name": "Ritu",
+    "department": "Export Department",
+    "role": "Head of Export Department",
+    "organization": "Dr. Smith Healthcare",
+    "status": "Active"
+  },
+  {
+    "id": "admin",
+    "passHash": "bc30d3b94b6baf9224b7ad35ea56fb5a1c2c20aee168f8686c790b1d063a1851",
+    "name": "Admin",
+    "department": "IT & System Security",
+    "role": "Administrator",
+    "organization": "Dr. Smith Healthcare",
+    "status": "Active"
+  }
+]
