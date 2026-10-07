@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse Dr. Smith's IVD Products range for hospitals, ICUs and clinics.">
+    <meta name="theme-color" content="#eaf4ff">
+    <title>IVD Products | Dr. Smith Catalogue</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Questrial:wght@400&display=swap" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../../assets/css/main.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+
+    <link href="../css/catalogue.css" rel="stylesheet">
+</head>
+
+<body class="catalogue-page">
+    <header id="header" class="header header--minimal d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+            <a href="../../index.html" class="logo d-flex align-items-center" aria-label="Dr. Smith home">
+                <img src="../../assets/img/logo.png?v=2" alt="Dr. Smith logo">
+                <h1 class="sitename">Dr. Smith</h1>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="catalogue-hero catalogue-hero--compact">
+            <div class="container">
+                <nav class="catalogue-breadcrumb" aria-label="Breadcrumb">
+                    <a href="../../index.html">Home</a>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="../index.html#catalogue">Catalogue</a>
+                    <i class="bi bi-chevron-right"></i>
+                    <span aria-current="page">IVD Products</span>
+                </nav>
+                <div class="row align-items-center">
+                    <div class="col-lg-9">
+                        <span class="catalogue-eyebrow">In-vitro diagnostics & laboratory</span>
+                        <h1>IVD Products</h1>
+                        <p>Automated clinical analyzers, 3-part & 5-part hematology counters, electrolyte analyzers, ABG machines, and ELISA readers.</p>
+                        <a class="catalogue-button catalogue-button--ghost" href="../index.html#catalogue">
+                            <i class="bi bi-arrow-left"></i> Back to full catalogue
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalogue-section">
+            <div class="container">
+                <header class="catalogue-heading">
+                    <span class="catalogue-eyebrow">Our range</span>
+                    <h2>Browse IVD Products</h2>
+                    <p>Automated clinical analyzers, 3-part & 5-part hematology counters, electrolyte analyzers, ABG machines, and ELISA readers.</p>
+                </header>
+                <p class="catalogue-count">Showing <strong>5</strong> products</p>
+
+                <div class="category-search-wrapper mb-4" style="max-width: 500px;">
+                    <div class="input-group">
+                        <span class="input-group-text bg-white border-end-0"><i class="bi bi-search text-muted"></i></span>
+                        <input type="text" id="categoryProductSearch" class="form-control border-start-0 ps-0" placeholder="Filter ivd products..." aria-label="Filter products">
+                    </div>
+                </div>
+                <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var searchInput = document.getElementById('categoryProductSearch');
+                    if (searchInput) {
+                        searchInput.addEventListener('input', function() {
+                            var query = this.value.toLowerCase().trim();
+                            var items = document.querySelectorAll('.catalogue-grid-item');
+                            var count = 0;
+                            items.forEach(function(item) {
+                                var title = item.getAttribute('data-title') || '';
+                                var badge = item.getAttribute('data-badge') || '';
+                                if (!query || title.includes(query) || badge.includes(query)) {
+                                    item.style.display = '';
+                                    count++;
+                                } else {
+                                    item.style.display = 'none';
+                                }
+                            });
+                            var countElem = document.querySelector('.catalogue-count strong');
+                            if (countElem) {
+                                countElem.textContent = count;
+                            }
+                        });
+                    }
+                });
+                </script>
+                <div class="row g-4" id="products-grid">
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="automated hematology analyzer (cbc)" data-badge="hematology">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Automated Hematology Analyzer (CBC) on Instagram" title="View on Instagram">
+                                    <img src="hematology-analyzer.png" alt="Automated Hematology Analyzer (CBC)" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Hematology</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">In-vitro diagnostics & laboratory</span>
+                                <h3>Automated Hematology Analyzer (CBC)</h3>
+                                <p>Automated multi-parameter cell counter delivering rapid 3-part / 5-part differential complete blood counts with minimal sample volume.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Throughput: up to 60 samples per hour with touch screen display</li>
+                                <li>Parameters: 21 reporting parameters plus 3 colour histograms</li>
+                                <li>Micro-sampling technology requiring only 10-20 µL whole blood</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Automated%20Hematology%20Analyzer%20%28CBC%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="automated electrolyte analyzer" data-badge="electrolytes">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Automated Electrolyte Analyzer on Instagram" title="View on Instagram">
+                                    <img src="electrolyte-analyzer.png" alt="Automated Electrolyte Analyzer" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Electrolytes</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">In-vitro diagnostics & laboratory</span>
+                                <h3>Automated Electrolyte Analyzer</h3>
+                                <p>Ion-selective electrode (ISE) analyzer measuring K+, Na+, Cl-, Ca++, and pH in serum, plasma and whole blood.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Maintenance-free ion selective electrodes with long lifespan</li>
+                                <li>Fast testing cycle: results ready in under 60 seconds</li>
+                                <li>Automatic two-point calibration and liquid level detection</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Automated%20Electrolyte%20Analyzer">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="arterial blood gas (abg) machine" data-badge="blood gas abg">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Arterial Blood Gas (ABG) Machine on Instagram" title="View on Instagram">
+                                    <img src="abg-machine.png" alt="Arterial Blood Gas (ABG) Machine" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Blood Gas ABG</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">In-vitro diagnostics & laboratory</span>
+                                <h3>Arterial Blood Gas (ABG) Machine</h3>
+                                <p>Critical care blood gas analyzer delivering rapid pH, pCO2, pO2 and electrolyte measurements for ICU and emergency triage.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Comprehensive blood gas, electrolyte and metabolite profiling</li>
+                                <li>Integrated thermal printer and intuitive touch screen operation</li>
+                                <li>Reagent cartridge system for simplified maintenance and operation</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Arterial%20Blood%20Gas%20%28ABG%29%20Machine">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="semi-automated biochemistry analyzer" data-badge="biochemistry">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Semi-Automated Biochemistry Analyzer on Instagram" title="View on Instagram">
+                                    <img src="biochemistry-analyzer.png" alt="Semi-Automated Biochemistry Analyzer" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Biochemistry</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">In-vitro diagnostics & laboratory</span>
+                                <h3>Semi-Automated Biochemistry Analyzer</h3>
+                                <p>Photometric clinical chemistry analyzer with built-in flow cell, quartz halogen lamp, and onboard thermal printer.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Wavelength range: 340 nm to 670 nm with high precision filters</li>
+                                <li>Large liquid crystal display with alphanumeric membrane keyboard</li>
+                                <li>Supports End-Point, Fixed-Time, Kinetic and Bichromatic chemistries</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Semi-Automated%20Biochemistry%20Analyzer">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="elisa microplate reader & washer" data-badge="elisa suite">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View ELISA Microplate Reader & Washer on Instagram" title="View on Instagram">
+                                    <img src="elisa-reader-washer.png" alt="ELISA Microplate Reader & Washer" loading="lazy">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">ELISA Suite</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">In-vitro diagnostics & laboratory</span>
+                                <h3>ELISA Microplate Reader & Washer</h3>
+                                <p>Microplate photometer and 96-well automated plate washer for immunoassays, infectious disease screening and hormonal assays.</p>
+                                <ul class="catalogue-card__details">
+                                <li>8-channel optical measurement system for standard 96-well microplates</li>
+                                <li>8-needle and 12-needle manifold washer with automatic bottom washing</li>
+                                <li>Comprehensive onboard curve fitting software and data storage</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=ELISA%20Microplate%20Reader%20%26%20Washer">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="catalogue-section">
+            <div class="container">
+                <div class="catalogue-cta d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4">
+                    <div>
+                        <h2>Can't find what you're looking for?</h2>
+                        <p>Share your requirements and our team will recommend the best fit from our full range.</p>
+                    </div>
+                    <a class="catalogue-button flex-shrink-0" href="../../contact-form/index.html">
+                        Contact our team <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer position-relative light-background">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-lg-4">
+                    <div class="footer-content">
+                        <a href="../../index.html" class="logo d-flex align-items-center mb-4">
+                            <span class="sitename">Dr. Smith</span>
+                        </a>
+                        <p class="mb-4">Dr. Smith provides medical equipment, healthcare infrastructure and patient-focused solutions.</p>
+                        <div class="catalogue-footer-logo">
+                            <a href="../../index.html" aria-label="Dr. Smith home">
+                                <img src="../../assets/img/logo.png?v=2" alt="Dr. Smith">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <div class="footer-links">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="../index.html#catalogue"><i class="bi bi-chevron-right"></i> Catalogue</a></li>
+                            <li><a href="../beds/index.html"><i class="bi bi-chevron-right"></i> Hospital Beds</a></li>
+                            <li><a href="../ot-lights/index.html"><i class="bi bi-chevron-right"></i> OT Lights</a></li>
+                            <li><a href="../autoclaves/index.html"><i class="bi bi-chevron-right"></i> Autoclaves</a></li>
+                            <li><a href="../surgical-instruments/index.html"><i class="bi bi-chevron-right"></i> Surgical Instruments</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <div class="footer-links">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="../../index.html#about"><i class="bi bi-chevron-right"></i> About Us</a></li>
+                            <li><a href="../../contact-form/index.html"><i class="bi bi-chevron-right"></i> Contact</a></li>
+                            <li><a href="../../privacy.html"><i class="bi bi-chevron-right"></i> Privacy Policy</a></li>
+                            <li><a href="../../terms.html"><i class="bi bi-chevron-right"></i> Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-contact">
+                        <h4>Contact Us</h4>
+                        <p>Plot No. 75/02, Shri Sai Complex, GF, Opp. Nimity Building - 108, Behind-IGL CNG Pump, Kapashera Border, New Delhi - 110037</p>
+                        <p class="mt-3"><strong>Phone:</strong> <span>+91 9599081020</span></p>
+                        <p><strong>Email:</strong> <span>info@drsmith.co.in</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="copyright">
+                            <p>© <span>Copyright</span> <strong class="px-1 sitename">Dr. Smith</strong> <span>All Rights Reserved</span></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="footer-bottom-links">
+                            <a href="../../privacy.html">Privacy Policy</a>
+                            <a href="../../terms.html">Terms of Service</a>
+                            <a href="../../contact-form/index.html">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to top">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</body>
+
+</html>
