@@ -1,0 +1,385 @@
+/**
+ * Dr. Smith Healthcare - Admin Portal & Secure Access Styles
+ * Professional Medical Corporate Theme
+ */
+
+/* ============================================================
+   1. Admin Header & Utility Buttons
+   ============================================================ */
+.admin-login-btn {
+  font-family: var(--default-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
+  font-size: 0.82rem;
+  font-weight: 600;
+  border-radius: 24px;
+  padding: 6px 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(135deg, #5c99ee 0%, #3b7ee0 100%);
+  color: #ffffff !important;
+  border: none;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 3px 10px rgba(92, 153, 238, 0.3);
+  white-space: nowrap;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.admin-login-btn i {
+  font-size: 0.88rem;
+  transition: transform 0.2s ease;
+}
+
+.admin-login-btn:hover {
+  background: linear-gradient(135deg, #4b89e3 0%, #2f72d4 100%);
+  color: #ffffff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 15px rgba(92, 153, 238, 0.45);
+}
+
+.admin-login-btn:active {
+  transform: translateY(0);
+}
+
+/* Admin User Button (Logged In State) */
+.admin-user-btn {
+  font-family: var(--default-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
+  font-size: 0.82rem;
+  font-weight: 600;
+  border-radius: 24px;
+  padding: 5px 14px 5px 11px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: #f0fdf4;
+  color: #166534;
+  border: 1.5px solid #86efac;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(34, 197, 94, 0.12);
+  cursor: pointer;
+}
+
+.admin-user-btn:hover,
+.admin-user-btn:focus {
+  background-color: #dcfce7;
+  color: #14532d;
+  border-color: #4ade80;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.2);
+}
+
+.admin-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #22c55e;
+  display: inline-block;
+  box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.25);
+  animation: adminPulse 2s infinite ease-in-out;
+}
+
+@keyframes adminPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.85;
+  }
+}
+
+/* ============================================================
+   2. Mobile Admin Button Placement (< 768px)
+   ============================================================ */
+.admin-mobile-slot {
+  display: inline-flex;
+  align-items: center;
+}
+
+.admin-mobile-slot .admin-login-btn {
+  font-size: 0.78rem;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+.admin-mobile-slot .admin-user-btn {
+  font-size: 0.78rem;
+  padding: 5px 12px 5px 10px;
+  border-radius: 20px;
+}
+
+/* ============================================================
+   3. Admin Dropdown Menu
+   ============================================================ */
+.admin-dropdown-menu {
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 12px 36px rgba(52, 71, 97, 0.14);
+  min-width: 230px;
+  max-width: calc(100vw - 28px);
+  padding: 8px;
+  margin-top: 8px !important;
+  animation: adminDropdownFade 0.2s ease;
+  z-index: 1050;
+}
+
+@keyframes adminDropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.admin-dropdown-menu .dropdown-item {
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: background 0.15s ease;
+}
+
+.admin-dropdown-menu .dropdown-item:hover {
+  background-color: #f1f5f9;
+}
+
+.admin-dropdown-menu .dropdown-item.text-danger:hover {
+  background-color: #fef2f2;
+}
+
+/* Mobile responsive adjustments for modals */
+@media (max-width: 576px) {
+  .modal-dialog {
+    margin: 12px;
+  }
+}
+
+/* ============================================================
+   4. VIP Executive Welcome Banner
+   ============================================================ */
+.admin-vip-banner {
+  animation: adminFadeIn 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+}
+
+@keyframes adminFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.admin-vip-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f6faff 100%);
+  border: 1px solid rgba(92, 153, 238, 0.3);
+  border-left: 5px solid var(--accent-color, #5c99ee);
+  border-radius: 18px;
+  padding: 16px 22px;
+  box-shadow: 0 8px 26px rgba(52, 71, 97, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+.admin-vip-card::after {
+  content: "";
+  position: absolute;
+  right: -50px;
+  top: -50px;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(92, 153, 238, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.admin-vip-main {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+  min-width: 0;
+}
+
+.admin-vip-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #eaf4ff 0%, #d8ecff 100%);
+  color: var(--accent-color, #5c99ee);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+  box-shadow: 0 3px 12px rgba(92, 153, 238, 0.25);
+  border: 1px solid rgba(92, 153, 238, 0.25);
+}
+
+.admin-vip-info {
+  min-width: 0;
+  flex: 1;
+}
+
+.admin-vip-tags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+
+.admin-vip-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #1e40af;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  padding: 3px 10px;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.admin-vip-dept {
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: #0369a1;
+  background: #f0f9ff;
+  border: 1px solid #bae6fd;
+  padding: 3px 10px;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.admin-vip-greeting {
+  font-family: var(--heading-font, "Questrial", sans-serif);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--heading-color, #344761);
+  margin: 0 0 4px 0;
+  line-height: 1.3;
+}
+
+.admin-vip-name {
+  color: var(--accent-color, #5c99ee);
+}
+
+.admin-vip-wave {
+  display: inline-block;
+  transform-origin: 70% 70%;
+  animation: adminWave 2.5s infinite;
+}
+
+@keyframes adminWave {
+  0%, 60%, 100% { transform: rotate(0deg); }
+  10%, 30% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  40% { transform: rotate(-4deg); }
+}
+
+.admin-vip-meta {
+  font-size: 0.82rem;
+  color: var(--default-color, #535d6b);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  line-height: 1.4;
+}
+
+.admin-vip-role {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.admin-vip-sep {
+  opacity: 0.45;
+}
+
+.admin-vip-status {
+  color: #15803d;
+  font-weight: 500;
+}
+
+.admin-vip-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.admin-vip-actions .btn {
+  font-size: 0.82rem;
+  padding: 7px 16px;
+  border-radius: 24px;
+}
+
+/* Responsive adjustments for Mobile (< 768px) */
+@media (max-width: 767.98px) {
+  .admin-vip-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 14px 16px;
+    border-radius: 16px;
+    gap: 14px;
+  }
+
+  .admin-vip-main {
+    width: 100%;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .admin-vip-avatar {
+    width: 42px;
+    height: 42px;
+    font-size: 1.25rem;
+    margin-top: 2px;
+  }
+
+  .admin-vip-greeting {
+    font-size: 1.15rem;
+  }
+
+  .admin-vip-actions {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px;
+    border-top: 1px solid rgba(92, 153, 238, 0.18);
+    padding-top: 12px;
+  }
+
+  .admin-vip-actions .btn {
+    flex: 1;
+    justify-content: center;
+    padding: 8px 12px;
+  }
+
+  .admin-vip-actions .admin-signout-btn {
+    flex: 0 0 auto;
+    padding: 8px 14px;
+  }
+}
+
+/* Ensure admin-only elements are completely hidden when logged out */
+.admin-only.d-none {
+  display: none !important;
+}
