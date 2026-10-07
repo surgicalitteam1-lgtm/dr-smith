@@ -11,8 +11,8 @@
 }
 
 .turnkey-hero {
-  padding: 130px 0 70px;
-  background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 50%, #fef3c7 100%);
+  padding: 135px 0 75px;
+  background: linear-gradient(180deg, #fff7ed 0%, #ffedd5 45%, #fef3c7 75%, #ffffff 100%);
   position: relative;
   overflow: hidden;
 }

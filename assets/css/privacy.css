@@ -123,9 +123,9 @@
        Privacy Page Custom Theme & Layout Styling
        ============================================================ */
     .privacy-hero-banner {
-      background: linear-gradient(135deg, #eaf4ff 0%, #d8eaff 100%);
-      padding: 120px 0 60px;
-      border-bottom: 1px solid rgba(92, 153, 238, 0.25);
+      background: linear-gradient(180deg, #eaf4ff 0%, #d8eaff 60%, #ffffff 100%);
+      padding: 130px 0 65px;
+      border-bottom: 1px solid rgba(92, 153, 238, 0.15);
     }
 
     .privacy-badge-cluster {

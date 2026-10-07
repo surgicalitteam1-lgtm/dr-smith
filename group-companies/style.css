@@ -10,8 +10,8 @@
 }
 
 .companies-hero {
-  padding: 130px 0 70px;
-  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 50%, #eff6ff 100%);
+  padding: 135px 0 75px;
+  background: linear-gradient(180deg, #f0fdf4 0%, #dcfce7 45%, #eff6ff 75%, #ffffff 100%);
   position: relative;
   overflow: hidden;
 }

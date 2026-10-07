@@ -12,8 +12,8 @@
 }
 
 .products-hero {
-  padding: 130px 0 70px;
-  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #fff1f2 100%);
+  padding: 135px 0 75px;
+  background: linear-gradient(180deg, #f0f9ff 0%, #e0f2fe 45%, #fff1f2 75%, #ffffff 100%);
   position: relative;
   overflow: hidden;
 }
