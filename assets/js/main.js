@@ -57,20 +57,40 @@
    * Toggles the mobile menu on and off when clicking the hamburger button.
    * Switches the hamburger icon between list (bi-list) and close (bi-x).
    */
-  const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
+  const mobileNavToggleBtns = document.querySelectorAll('.mobile-nav-toggle');
 
   function toggleMobileNav() {
-    document.querySelector('body').classList.toggle('mobile-nav-active');
-    if (mobileNavToggleBtn) {
-      mobileNavToggleBtn.classList.toggle('bi-list');
-      mobileNavToggleBtn.classList.toggle('bi-x');
+    const isOpening = !document.body.classList.contains('mobile-nav-active');
+    document.body.classList.toggle('mobile-nav-active');
+    mobileNavToggleBtns.forEach(btn => {
+      if (isOpening) {
+        btn.classList.remove('bi-list');
+        btn.classList.add('bi-x');
+      } else {
+        btn.classList.remove('bi-x');
+        btn.classList.add('bi-list');
+      }
+    });
+  }
+
+  mobileNavToggleBtns.forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      toggleMobileNav();
+    });
+  });
+
+  // Close mobile nav when tapping outside the menu container
+  document.addEventListener('click', function(e) {
+    if (document.body.classList.contains('mobile-nav-active')) {
+      const navmenu = document.querySelector('#navmenu');
+      const isClickInsideMenu = navmenu && navmenu.contains(e.target);
+      const isClickOnToggle = Array.from(mobileNavToggleBtns).some(btn => btn.contains(e.target));
+      if (!isClickInsideMenu && !isClickOnToggle) {
+        toggleMobileNav();
+      }
     }
-  }
-
-  if (mobileNavToggleBtn) {
-    mobileNavToggleBtn.addEventListener('click', toggleMobileNav);
-  }
-
+  });
 
   /**
    * 3. Mobile Navigation Auto-Close on Anchor Click

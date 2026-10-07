@@ -1,0 +1,187 @@
+/* Custom Styles for Medical Products Page - Clinical Precision Cyan & Life-Saving Vitality Red Theme */
+
+:root {
+  --products-primary: #0284c7;
+  --products-primary-dark: #0369a1;
+  --products-primary-deep: #0f172a;
+  --products-accent: #2563eb;
+  --products-vital: #e11d48;
+  --products-vital-dark: #be123c;
+  --products-bg-subtle: #f0f9ff;
+  --products-surface: #ffffff;
+}
+
+.products-hero {
+  padding: 130px 0 70px;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #fff1f2 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.products-hero::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  right: -15%;
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(2, 132, 199, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+  pointer-events: none;
+}
+
+.products-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(225, 29, 72, 0.1);
+  color: var(--products-vital);
+  padding: 6px 16px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 0.88rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid rgba(225, 29, 72, 0.25);
+}
+
+.products-hero h1 {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: var(--products-primary-deep);
+  line-height: 1.25;
+  margin-bottom: 1.2rem;
+}
+
+.products-hero h1 span {
+  color: var(--products-primary);
+  background: linear-gradient(135deg, #0284c7 0%, #e11d48 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.products-hero .lead {
+  font-size: 1.15rem;
+  color: #334155;
+  max-width: 660px;
+  line-height: 1.7;
+}
+
+.category-showcase-card {
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid rgba(37, 99, 235, 0.15);
+  box-shadow: 0 10px 30px rgba(30, 58, 138, 0.04);
+  padding: 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.category-showcase-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(37, 99, 235, 0.14);
+  border-color: rgba(37, 99, 235, 0.45);
+}
+
+.category-icon-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.15), rgba(2, 132, 199, 0.08));
+  color: var(--products-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.65rem;
+  margin-bottom: 22px;
+  transition: transform 0.3s ease;
+}
+
+.category-showcase-card:hover .category-icon-box {
+  transform: scale(1.1) rotate(5deg);
+  background: var(--products-primary);
+  color: #ffffff;
+}
+
+.category-showcase-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--products-primary-deep);
+  margin-bottom: 12px;
+}
+
+.category-showcase-card p {
+  font-size: 0.92rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.category-link-btn {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--products-primary);
+  font-weight: 700;
+  font-size: 0.92rem;
+  text-decoration: none;
+  transition: gap 0.25s ease, color 0.25s ease;
+}
+
+.category-link-btn:hover {
+  color: var(--products-primary-dark);
+  gap: 10px;
+}
+
+.btn-products-primary {
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  color: #ffffff !important;
+  border-radius: 50px;
+  padding: 12px 28px;
+  font-weight: 700;
+  border: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35);
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-products-primary:hover {
+  background: linear-gradient(135deg, #e11d48 0%, #be123c 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(225, 29, 72, 0.4);
+  color: #ffffff !important;
+}
+
+.btn-products-outline {
+  background: transparent;
+  color: var(--products-primary) !important;
+  border-radius: 50px;
+  padding: 12px 28px;
+  font-weight: 700;
+  border: 2px solid var(--products-primary);
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-products-outline:hover {
+  background: var(--products-primary);
+  color: #ffffff !important;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 767.98px) {
+  .products-hero h1 {
+    font-size: 2rem;
+  }
+  body.mobile-nav-active .navmenu ul li a.active {
+    background: rgba(2, 132, 199, 0.1) !important;
+    color: var(--products-primary) !important;
+    border-color: rgba(2, 132, 199, 0.3) !important;
+  }
+}

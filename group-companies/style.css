@@ -1,0 +1,201 @@
+/* Custom Styles for Group Companies Page - Organic Growth Emerald & Enterprise Mint Theme */
+
+:root {
+  --company-primary: #059669;
+  --company-primary-dark: #047857;
+  --company-primary-deep: #064e3b;
+  --company-accent: #10b981;
+  --company-bg-subtle: #f0fdf4;
+  --company-surface: #ffffff;
+}
+
+.companies-hero {
+  padding: 130px 0 70px;
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 50%, #eff6ff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.companies-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--company-primary-dark);
+  padding: 6px 16px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 0.88rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.companies-hero h1 {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: var(--company-primary-deep);
+  line-height: 1.25;
+  margin-bottom: 1.2rem;
+}
+
+.companies-hero h1 span {
+  color: var(--company-primary);
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.companies-hero .lead {
+  font-size: 1.15rem;
+  color: #374151;
+  max-width: 660px;
+  line-height: 1.7;
+}
+
+.company-profile-card {
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid rgba(16, 185, 129, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  padding: 35px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.35s ease;
+  position: relative;
+}
+
+.company-profile-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(16, 185, 129, 0.12);
+  border-color: rgba(16, 185, 129, 0.4);
+}
+
+.company-icon-circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(16, 185, 129, 0.05));
+  color: #059669;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  margin-bottom: 22px;
+}
+
+.company-profile-card h3 {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.company-tagline {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #059669;
+  margin-bottom: 15px;
+}
+
+.company-profile-card p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.65;
+  margin-bottom: 20px;
+}
+
+.company-highlights-list {
+  list-style: none;
+  padding: 0;
+  margin: auto 0 0 0;
+}
+
+.company-highlights-list li {
+  font-size: 0.9rem;
+  color: #374151;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.company-highlights-list li i {
+  color: #10b981;
+  font-size: 1rem;
+}
+
+.ecosystem-banner-card {
+  background: linear-gradient(135deg, #064e3b 0%, #065f46 100%);
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 45px;
+  box-shadow: 0 15px 35px rgba(6, 78, 59, 0.2);
+}
+
+.ecosystem-banner-card h3 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.ecosystem-banner-card p {
+  color: #d1fae5;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.btn-group-primary {
+  background: var(--company-primary);
+  color: #ffffff !important;
+  border-radius: 50px;
+  padding: 12px 28px;
+  font-weight: 700;
+  border: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(5, 150, 105, 0.35);
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-group-primary:hover {
+  background: var(--company-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(5, 150, 105, 0.45);
+}
+
+.btn-group-outline {
+  background: transparent;
+  color: var(--company-primary) !important;
+  border-radius: 50px;
+  padding: 12px 28px;
+  font-weight: 700;
+  border: 2px solid var(--company-primary);
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-group-outline:hover {
+  background: var(--company-primary);
+  color: #ffffff !important;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 767.98px) {
+  .companies-hero h1 {
+    font-size: 2rem;
+  }
+  .company-profile-card {
+    padding: 25px;
+  }
+  .ecosystem-banner-card {
+    padding: 25px;
+  }
+  body.mobile-nav-active .navmenu ul li a.active {
+    background: rgba(5, 150, 105, 0.1) !important;
+    color: var(--company-primary) !important;
+    border-color: rgba(5, 150, 105, 0.3) !important;
+  }
+}
