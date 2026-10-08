@@ -163,6 +163,40 @@
   window.addEventListener('load', toggleScrollTop);
   document.addEventListener('scroll', toggleScrollTop);
 
+  /**
+   * 6b. Mobile & Tablet Sticky Bottom Action Bar
+   * Reveals sticky Send Enquiry & WhatsApp action bar only after the original hero
+   * buttons are scrolled out of view by more than 50%.
+   */
+  const stickyBottomBar = document.querySelector('.mobile-sticky-actions');
+  const heroOriginalActions = document.querySelector('.hero-contact-whatsapp-row') || document.querySelector('.hero-actions');
+
+  function toggleStickyActions() {
+    if (!stickyBottomBar) return;
+
+    if (heroOriginalActions) {
+      const rect = heroOriginalActions.getBoundingClientRect();
+      // More than 50% of original buttons hidden past the top of viewport:
+      const isMoreThanHalfHidden = rect.bottom < (rect.height * 0.5);
+      if (isMoreThanHalfHidden) {
+        stickyBottomBar.classList.add('active');
+      } else {
+        stickyBottomBar.classList.remove('active');
+      }
+    } else {
+      // Fallback for subpages without hero action row
+      if (window.scrollY > 250) {
+        stickyBottomBar.classList.add('active');
+      } else {
+        stickyBottomBar.classList.remove('active');
+      }
+    }
+  }
+
+  window.addEventListener('load', toggleStickyActions);
+  document.addEventListener('scroll', toggleStickyActions, { passive: true });
+  window.addEventListener('resize', toggleStickyActions, { passive: true });
+
 
   /**
    * 7. Swiper Carousel Sliders Initialization

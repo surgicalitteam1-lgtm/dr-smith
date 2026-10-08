@@ -1585,6 +1585,101 @@ textarea::placeholder {
 }
 
 /*--------------------------------------------------------------
+# Mobile & Tablet Sticky Bottom Action Bar
+--------------------------------------------------------------*/
+.mobile-sticky-actions {
+  display: none;
+}
+
+@media (max-width: 1199.98px) {
+  .mobile-sticky-actions {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9998;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 10px 16px max(12px, env(safe-area-inset-bottom, 12px)) 16px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-top: 1px solid rgba(92, 153, 238, 0.2);
+    box-shadow: 0 -6px 25px rgba(15, 23, 42, 0.1);
+    transform: translateY(115%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s ease;
+  }
+
+  .mobile-sticky-actions.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .sticky-action-btn {
+    flex: 1;
+    max-width: 260px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 0 16px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .sticky-btn-enquiry {
+    background: var(--orange-accent, #ea580c);
+    color: #ffffff !important;
+    border: none;
+    box-shadow: 0 4px 14px rgba(234, 88, 12, 0.32);
+  }
+
+  .sticky-btn-enquiry:hover,
+  .sticky-btn-enquiry:active {
+    background: var(--orange-accent-hover, #c2410c);
+    color: #ffffff !important;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(234, 88, 12, 0.45);
+  }
+
+  .sticky-btn-whatsapp {
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    color: #ffffff !important;
+    border: none;
+    box-shadow: 0 4px 14px rgba(37, 211, 102, 0.32);
+  }
+
+  .sticky-btn-whatsapp:hover,
+  .sticky-btn-whatsapp:active {
+    background: linear-gradient(135deg, #20ba5a 0%, #0d7367 100%);
+    color: #ffffff !important;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(37, 211, 102, 0.45);
+  }
+
+  .sticky-action-btn i {
+    font-size: 17px;
+    line-height: 1;
+  }
+
+  /* Lift scroll-top button above sticky action bar on mobile & tablet */
+  .scroll-top {
+    bottom: 74px !important;
+    right: 16px !important;
+  }
+}
+
+/*--------------------------------------------------------------
 # Global Page Titles & Breadcrumbs
 --------------------------------------------------------------*/
 .page-title {
