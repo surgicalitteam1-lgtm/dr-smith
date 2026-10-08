@@ -2365,32 +2365,16 @@ section,
 # Why Choose Us Integrated Showcase
 --------------------------------------------------------------*/
 .why-choose-wrapper {
-  background: transparent !important;
-  background-color: transparent !important;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   margin-top: 25px;
-  border: none !important;
-  box-shadow: none !important;
 }
 
 .why-choose-img {
   max-width: 900px;
   width: 100%;
   height: auto;
-  object-fit: contain;
-  background: transparent !important;
-  background-color: transparent !important;
-  border: none !important;
-  outline: none !important;
-  box-shadow: none !important;
   display: block;
   margin: 0 auto;
-  filter: drop-shadow(0 15px 35px rgba(92, 153, 238, 0.08));
-  transition: transform 0.3s ease;
 }
 
 @media (max-width: 768px) {
