@@ -24,7 +24,7 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/css/main.css?v=8.6" rel="stylesheet">
+  <link href="assets/css/main.css?v=8.9" rel="stylesheet">
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
@@ -72,93 +72,124 @@
 
         <!-- Unified Featured Medical Equipment & Product Showcase Section -->
         <div id="equipment-showcase" class="equipment-showcase-container mb-4">
-          <div class="d-flex align-items-center justify-content-between mb-2 px-2">
-            <span class="equipment-badge"><i class="bi bi-shield-check me-1"></i> Certified Healthcare Products</span>
+          <div class="d-flex align-items-center justify-content-end mb-2 px-2">
             <div class="equipment-nav-actions d-none d-md-flex align-items-center gap-2">
               <button type="button" class="equipment-nav-btn equipment-prev-btn" id="equipment-prev-btn" aria-label="Scroll Left"><i class="bi bi-chevron-left"></i></button>
               <button type="button" class="equipment-nav-btn equipment-next-btn" id="equipment-next-btn" aria-label="Scroll Right"><i class="bi bi-chevron-right"></i></button>
-              <a href="catalogue/index.html" class="btn-view-all-equipment ms-2">View All Equipment <i class="bi bi-arrow-right"></i></a>
+              <a href="catalogue/index.html" class="btn-view-all-equipment ms-2">View All Categories <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
 
           <div class="equipment-carousel-wrapper" id="equipment-carousel">
             <div class="equipment-track">
 
-              <!-- Equipment 1 (High-Res Studio Lead) -->
+              <!-- Category 1: Hospital & Ward Furniture -->
+              <a href="catalogue/furniture/index.html" class="equipment-card">
+                <div class="equipment-visual">
+                  <img src="assets/img/categories/cat-furniture.png" alt="Hospital &amp; Ward Furniture" class="equipment-img" loading="eager">
+                  <span class="equipment-tag"><i class="bi bi-hospital me-1"></i> Ward Infrastructure</span>
+                </div>
+                <div class="equipment-body">
+                  <h3 class="equipment-name">Hospital &amp; Ward Furniture</h3>
+                  <p class="equipment-desc">Motorized ICU beds, fowler beds, bedside lockers, patient transfer trolleys &amp; ward seating.</p>
+                  <div class="equipment-footer">
+                    <span class="equipment-link-text">Browse Category</span>
+                    <i class="bi bi-arrow-right equipment-arrow"></i>
+                  </div>
+                </div>
+              </a>
+
+              <!-- Category 2: Critical Care & OT Equipment -->
+              <a href="catalogue/equipments/index.html" class="equipment-card">
+                <div class="equipment-visual">
+                  <img src="assets/img/categories/cat-equipments.png" alt="Critical Care &amp; OT Equipment" class="equipment-img" loading="lazy">
+                  <span class="equipment-tag"><i class="bi bi-heart-pulse me-1"></i> Critical Care &amp; OT</span>
+                </div>
+                <div class="equipment-body">
+                  <h3 class="equipment-name">Critical Care &amp; OT Equipment</h3>
+                  <p class="equipment-desc">Anesthesia workstations, ICU ventilators, electro-hydraulic OT tables &amp; surgical lighting.</p>
+                  <div class="equipment-footer">
+                    <span class="equipment-link-text">Browse Category</span>
+                    <i class="bi bi-arrow-right equipment-arrow"></i>
+                  </div>
+                </div>
+              </a>
+
+              <!-- Category 3: Modular Operation Theatres -->
               <a href="catalogue/modular-ot/index.html" class="equipment-card">
                 <div class="equipment-visual">
-                  <img src="assets/img/hero-slides/1.jpg" onerror="this.onerror=null; this.src='main web products preview/1.jpg';" alt="Modular Operation Theatres" class="equipment-img" loading="eager">
-                  <span class="equipment-tag"><i class="bi bi-hospital me-1"></i> OT Solutions</span>
+                  <img src="assets/img/categories/cat-ot.jpg" alt="Modular Operation Theatres" class="equipment-img" loading="lazy">
+                  <span class="equipment-tag"><i class="bi bi-building me-1"></i> Turnkey Infrastructure</span>
                 </div>
                 <div class="equipment-body">
                   <h3 class="equipment-name">Modular Operation Theatres</h3>
-                  <p class="equipment-desc">Laminar airflow surgical suites with antimicrobial wall panels &amp; integrated surgical infrastructure.</p>
+                  <p class="equipment-desc">Pre-fabricated laminar airflow surgical rooms, cleanroom panels &amp; hermetic door systems.</p>
                   <div class="equipment-footer">
-                    <span class="equipment-link-text">Explore System</span>
+                    <span class="equipment-link-text">Browse Category</span>
                     <i class="bi bi-arrow-right equipment-arrow"></i>
                   </div>
                 </div>
               </a>
 
-              <!-- Equipment 2 (High-Res Studio Lead) -->
-              <a href="catalogue/anesthesia-workstation/index.html" class="equipment-card">
+              <!-- Category 4: Surgical & Laparoscopy Tools -->
+              <a href="catalogue/instruments/index.html" class="equipment-card">
                 <div class="equipment-visual">
-                  <img src="assets/img/hero-slides/2.png" onerror="this.onerror=null; this.src='main web products preview/2.png';" alt="Critical Care & Anesthesia Workstations" class="equipment-img" loading="lazy">
-                  <span class="equipment-tag"><i class="bi bi-heart-pulse me-1"></i> Critical Care</span>
+                  <img src="assets/img/categories/cat-instruments.png" alt="Surgical &amp; Laparoscopy Tools" class="equipment-img" loading="lazy">
+                  <span class="equipment-tag"><i class="bi bi-scissors me-1"></i> Surgical Precision</span>
                 </div>
                 <div class="equipment-body">
-                  <h3 class="equipment-name">Anesthesia Workstations</h3>
-                  <p class="equipment-desc">Multi-gas delivery units with integrated smart ventilator &amp; comprehensive vitals monitoring.</p>
+                  <h3 class="equipment-name">Surgical &amp; Laparoscopy Tools</h3>
+                  <p class="equipment-desc">High-grade German stainless steel surgical instruments, laparoscopy towers &amp; endoscopic sets.</p>
                   <div class="equipment-footer">
-                    <span class="equipment-link-text">Explore System</span>
+                    <span class="equipment-link-text">Browse Category</span>
                     <i class="bi bi-arrow-right equipment-arrow"></i>
                   </div>
                 </div>
               </a>
 
-              <!-- Equipment 3 (High-Res Studio Lead) -->
-              <a href="catalogue/ot-tables/index.html" class="equipment-card">
+              <!-- Category 5: Radiology & Diagnostic Systems -->
+              <a href="catalogue/radiology-equipments/index.html" class="equipment-card">
                 <div class="equipment-visual">
-                  <img src="assets/img/hero-slides/3.png" onerror="this.onerror=null; this.src='main web products preview/3.png';" alt="Electro-Hydraulic OT Tables" class="equipment-img" loading="lazy">
-                  <span class="equipment-tag"><i class="bi bi-activity me-1"></i> Surgical Systems</span>
+                  <img src="assets/img/categories/cat-radiology.png" alt="Radiology &amp; Diagnostic Systems" class="equipment-img" loading="lazy">
+                  <span class="equipment-tag"><i class="bi bi-activity me-1"></i> Diagnostics &amp; Imaging</span>
                 </div>
                 <div class="equipment-body">
-                  <h3 class="equipment-name">Electro-Hydraulic OT Tables</h3>
-                  <p class="equipment-desc">Multi-position motorized operating tables engineered for diverse specialty surgical interventions.</p>
+                  <h3 class="equipment-name">Radiology &amp; Diagnostic Systems</h3>
+                  <p class="equipment-desc">High-frequency C-Arm systems, digital radiography X-ray machines, color Doppler ultrasound &amp; ECG.</p>
                   <div class="equipment-footer">
-                    <span class="equipment-link-text">Explore System</span>
+                    <span class="equipment-link-text">Browse Category</span>
                     <i class="bi bi-arrow-right equipment-arrow"></i>
                   </div>
                 </div>
               </a>
 
-              <!-- Equipment 4 (High-Res Studio Lead) -->
-              <a href="catalogue/beds/index.html" class="equipment-card">
+              <!-- Category 6: Neonatal & Infant Care -->
+              <a href="catalogue/nic-machines/index.html" class="equipment-card">
                 <div class="equipment-visual">
-                  <img src="assets/img/hero-slides/4.png" onerror="this.onerror=null; this.src='main web products preview/4.png';" alt="Advanced Hospital Furniture & ICU Beds" class="equipment-img" loading="lazy">
-                  <span class="equipment-tag"><i class="bi bi-bezier me-1"></i> Hospital Furniture</span>
+                  <img src="assets/img/categories/cat-nic.png" alt="Neonatal &amp; Infant Care (NIC)" class="equipment-img" loading="lazy">
+                  <span class="equipment-tag"><i class="bi bi-shield-heart me-1"></i> NICU &amp; Pediatric</span>
                 </div>
                 <div class="equipment-body">
-                  <h3 class="equipment-name">Motorized ICU &amp; Ward Beds</h3>
-                  <p class="equipment-desc">Full electric multi-position patient beds with nurse control panels &amp; cardiac chair positioning.</p>
+                  <h3 class="equipment-name">Neonatal &amp; Infant Care (NIC)</h3>
+                  <p class="equipment-desc">Microprocessor radiant baby warmers, infant phototherapy units &amp; neonatal intensive care systems.</p>
                   <div class="equipment-footer">
-                    <span class="equipment-link-text">Explore System</span>
+                    <span class="equipment-link-text">Browse Category</span>
                     <i class="bi bi-arrow-right equipment-arrow"></i>
                   </div>
                 </div>
               </a>
 
-              <!-- Equipment 5 (High-Res Studio Lead) -->
-              <a href="catalogue/ventilators/index.html" class="equipment-card">
+              <!-- Category 7: Sterilization & Autoclaves -->
+              <a href="catalogue/autoclaves/index.html" class="equipment-card">
                 <div class="equipment-visual">
-                  <img src="assets/img/hero-slides/5.png" onerror="this.onerror=null; this.src='main web products preview/5.png';" alt="ICU Ventilator & Critical Care Systems" class="equipment-img" loading="lazy">
-                  <span class="equipment-tag"><i class="bi bi-lungs me-1"></i> Emergency &amp; ICU</span>
+                  <img src="assets/img/categories/cat-sterilization.png" alt="Sterilization &amp; Autoclaves" class="equipment-img" loading="lazy">
+                  <span class="equipment-tag"><i class="bi bi-shield-check me-1"></i> Infection Control</span>
                 </div>
                 <div class="equipment-body">
-                  <h3 class="equipment-name">ICU Ventilator Systems</h3>
-                  <p class="equipment-desc">Invasive &amp; non-invasive smart respiratory support for adult, pediatric &amp; critical neonatal care.</p>
+                  <h3 class="equipment-name">Sterilization &amp; Autoclaves</h3>
+                  <p class="equipment-desc">Horizontal cylindrical autoclaves, high-pressure steam sterilizers &amp; CSSD ultrasonic cleaners.</p>
                   <div class="equipment-footer">
-                    <span class="equipment-link-text">Explore System</span>
+                    <span class="equipment-link-text">Browse Category</span>
                     <i class="bi bi-arrow-right equipment-arrow"></i>
                   </div>
                 </div>
