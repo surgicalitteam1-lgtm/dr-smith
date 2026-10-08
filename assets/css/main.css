@@ -50,26 +50,33 @@
 }
 
 /*--------------------------------------------------------------
-# Global Text Selection & Highlighting (Original Blue Theme)
+# Global Text Selection & Highlighting (#5c99ee)
 --------------------------------------------------------------*/
 ::selection,
-*::selection {
-  background-color: #dbeafe !important;
-  color: #1e40af !important;
+*::selection,
+body *::selection {
+  background-color: #5c99ee !important;
+  background: #5c99ee !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
 }
 
 ::-moz-selection,
-*::-moz-selection {
-  background-color: #dbeafe !important;
-  color: #1e40af !important;
+*::-moz-selection,
+body *::-moz-selection {
+  background-color: #5c99ee !important;
+  background: #5c99ee !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
 }
 
 mark,
 .mark,
 .highlight,
 .text-highlight {
-  background-color: rgba(92, 153, 238, 0.15) !important;
-  color: #3b82f6 !important;
+  background-color: #5c99ee !important;
+  background: #5c99ee !important;
+  color: #ffffff !important;
   padding: 0.12em 0.35em;
   border-radius: 4px;
   font-weight: 600;
