@@ -269,7 +269,7 @@
 }
 
 .admin-vip-greeting {
-  font-family: var(--heading-font, "Questrial", sans-serif);
+  font-family: var(--heading-font, "Plus Jakarta Sans", sans-serif);
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--heading-color, #344761);
