@@ -16,13 +16,13 @@
   --background-color: #eaf4ff; /* Background color for the entire website, including individual sections */
   --default-color: #535d6b; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #344761; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #ea580c; /* Primary brand warm orange - Main Priority Theme Color */
-  --accent-color-hover: #c2410c; /* Deep rich orange on hover */
+  --accent-color: #5c99ee; /* Primary brand medical blue - Original Blue Theme */
+  --accent-color-hover: #4085e6; /* Deep rich blue on hover */
   --primary-blue: #5c99ee; /* Secondary medical blue */
   --primary-blue-hover: #4085e6;
-  --orange-accent: #ea580c;
-  --orange-accent-hover: #c2410c;
-  --highlight-color: #ea580c; /* Primary vibrant orange highlight */
+  --orange-accent: #ea580c; /* Action buttons priority orange */
+  --orange-accent-hover: #c2410c; /* Deep rich orange on button hover */
+  --highlight-color: #5c99ee; /* Original medical blue text highlight */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements */
   --contrast-color: #ffffff; /* Contrast color for text */
 }
@@ -30,11 +30,11 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: rgba(83, 93, 107, 0.875);  /* The default color of the main navmenu links */
-  --nav-hover-color: #ea580c; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #5c99ee; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #535d6b; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #ea580c; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #5c99ee; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -50,26 +50,26 @@
 }
 
 /*--------------------------------------------------------------
-# Global Text Selection & Highlighting (Lead Orange Theme)
+# Global Text Selection & Highlighting (Original Blue Theme)
 --------------------------------------------------------------*/
 ::selection,
 *::selection {
-  background-color: #fed7aa !important;
-  color: #7c2d12 !important;
+  background-color: #dbeafe !important;
+  color: #1e40af !important;
 }
 
 ::-moz-selection,
 *::-moz-selection {
-  background-color: #fed7aa !important;
-  color: #7c2d12 !important;
+  background-color: #dbeafe !important;
+  color: #1e40af !important;
 }
 
 mark,
 .mark,
 .highlight,
 .text-highlight {
-  background-color: rgba(234, 88, 12, 0.14) !important;
-  color: #ea580c !important;
+  background-color: rgba(92, 153, 238, 0.15) !important;
+  color: #3b82f6 !important;
   padding: 0.12em 0.35em;
   border-radius: 4px;
   font-weight: 600;
@@ -77,11 +77,11 @@ mark,
 
 .text-accent-highlight,
 .highlight-text {
-  color: #ea580c !important;
+  color: #5c99ee !important;
 }
 
 :focus-visible {
-  outline: 2px solid #ea580c;
+  outline: 2px solid #5c99ee;
   outline-offset: 2px;
 }
 
@@ -89,8 +89,8 @@ mark,
 input:focus,
 select:focus,
 textarea:focus {
-  border-color: #ea580c;
-  box-shadow: 0 0 0 0.25rem rgba(234, 88, 12, 0.25);
+  border-color: #5c99ee;
+  box-shadow: 0 0 0 0.25rem rgba(92, 153, 238, 0.25);
 }
 
 /*--------------------------------------------------------------
@@ -1250,7 +1250,7 @@ body.scrolled .header {
   font-size: 14px;
   padding: 80px 0 0;
   position: relative;
-  border-top: 3px solid var(--accent-color, #ea580c);
+  border-top: 3px solid var(--accent-color, #5c99ee);
 }
 
 .footer .footer-content .logo {
@@ -1300,7 +1300,7 @@ body.scrolled .header {
   width: 36px;
   height: 2.5px;
   border-radius: 2px;
-  background: var(--highlight-color, #ea580c);
+  background: var(--highlight-color, #5c99ee);
 }
 
 .footer .footer-links ul {
@@ -1330,13 +1330,13 @@ body.scrolled .header {
 }
 
 .footer .footer-links ul a:hover {
-  color: var(--highlight-color, #ea580c);
+  color: var(--highlight-color, #5c99ee);
 }
 
 .footer .footer-links ul a i {
   margin-right: 8px;
   font-size: 12px;
-  color: var(--highlight-color, #ea580c);
+  color: var(--highlight-color, #5c99ee);
 }
 
 .footer .footer-contact .contact-item {
@@ -1525,7 +1525,7 @@ textarea::placeholder {
   right: 18px;
   bottom: 18px;
   z-index: 99999;
-  background: var(--accent-color, #ea580c);
+  background: var(--orange-accent, #ea580c);
   width: 44px;
   height: 44px;
   border-radius: 50px;
@@ -1543,7 +1543,7 @@ textarea::placeholder {
 }
 
 .scroll-top:hover {
-  background: var(--accent-color-hover, #c2410c);
+  background: var(--orange-accent-hover, #c2410c);
   color: var(--contrast-color);
   transform: translateY(-3px);
   box-shadow: 0 8px 22px rgba(234, 88, 12, 0.45);
@@ -1631,7 +1631,7 @@ section,
 }
 
 .section-title h2 span {
-  color: var(--highlight-color, #ea580c);
+  color: var(--highlight-color, #5c99ee);
   font-weight: 600;
 }
 
@@ -1684,7 +1684,8 @@ section,
 }
 
 .hero .hero-content {
-  padding-right: 20px;
+  padding-right: 0;
+  width: 100%;
 }
 
 @media (max-width: 991px) {
@@ -1695,22 +1696,21 @@ section,
     padding: 10px 15px 20px 15px;
   }
   .hero .hero-content {
-    padding-right: 0;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 }
 
 .hero-badge {
-  background: rgba(234, 88, 12, 0.08);
-  color: var(--accent-color, #ea580c);
+  background: rgba(92, 153, 238, 0.08);
+  color: var(--primary-blue, #5c99ee);
   font-size: 11.5px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.8px;
   padding: 6px 14px;
   border-radius: 50px;
-  border: 1px solid rgba(234, 88, 12, 0.22);
+  border: 1px solid rgba(92, 153, 238, 0.22);
   width: fit-content;
 }
 
@@ -1729,7 +1729,7 @@ section,
 }
 
 .hero .hero-content h1 span {
-  color: var(--highlight-color, #ea580c);
+  color: var(--highlight-color, #5c99ee);
   position: relative;
 }
 
@@ -1740,7 +1740,7 @@ section,
   left: 0;
   width: 100%;
   height: 3px;
-  background: var(--highlight-color, #ea580c);
+  background: var(--highlight-color, #5c99ee);
   border-radius: 1px;
   opacity: 0.8;
 }
@@ -1933,9 +1933,9 @@ section,
 }
 
 .hero-showcase-nav-btn:hover {
-  background: var(--accent-color, #ea580c);
+  background: var(--orange-accent, #ea580c);
   color: #ffffff;
-  border-color: var(--accent-color, #ea580c);
+  border-color: var(--orange-accent, #ea580c);
   box-shadow: 0 4px 16px rgba(234, 88, 12, 0.35);
   transform: translateY(-50%) scale(1.08);
 }
@@ -1988,12 +1988,12 @@ section,
 
 .hero-showcase-pagination .swiper-pagination-bullet-active {
   width: 26px;
-  background: var(--accent-color, #ea580c);
+  background: var(--orange-accent, #ea580c);
   box-shadow: 0 2px 10px rgba(234, 88, 12, 0.45);
 }
 
 .hero .hero-content h1 span {
-  color: var(--highlight-color, #ea580c);
+  color: var(--highlight-color, #5c99ee);
   position: relative;
 }
 
@@ -2004,7 +2004,7 @@ section,
   left: 0;
   width: 100%;
   height: 3px;
-  background: var(--highlight-color, #ea580c);
+  background: var(--highlight-color, #5c99ee);
   border-radius: 1px;
   opacity: 0.8;
 }
@@ -2077,7 +2077,7 @@ section,
 }
 
 .hero .btn-primary {
-  background: var(--accent-color, #ea580c);
+  background: var(--orange-accent, #ea580c);
   color: #ffffff !important;
   padding: 12px 30px;
   border-radius: 50px;
@@ -2087,7 +2087,7 @@ section,
   letter-spacing: 0.6px;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   box-shadow: 0 8px 24px rgba(234, 88, 12, 0.32);
-  border: 2px solid var(--accent-color, #ea580c);
+  border: 2px solid var(--orange-accent, #ea580c);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -2095,17 +2095,17 @@ section,
 }
 
 .hero .btn-primary:hover {
-  background: var(--accent-color-hover, #c2410c);
-  border-color: var(--accent-color-hover, #c2410c);
+  background: var(--orange-accent-hover, #c2410c);
+  border-color: var(--orange-accent-hover, #c2410c);
   color: #ffffff !important;
   box-shadow: 0 12px 28px rgba(234, 88, 12, 0.45);
   transform: translateY(-2px);
 }
 
 .btn-hero-contact {
-  color: var(--accent-color, #ea580c) !important;
+  color: var(--orange-accent, #ea580c) !important;
   background: #ffffff;
-  border: 2px solid var(--accent-color, #ea580c);
+  border: 2px solid var(--orange-accent, #ea580c);
   padding: 10px 22px;
   border-radius: 50px;
   font-weight: 600;
@@ -2120,7 +2120,7 @@ section,
 }
 
 .btn-hero-contact:hover {
-  background: var(--accent-color, #ea580c);
+  background: var(--orange-accent, #ea580c);
   color: #ffffff !important;
   transform: translateY(-2px);
   box-shadow: 0 8px 22px rgba(234, 88, 12, 0.35);
@@ -2255,8 +2255,8 @@ section,
 .equipment-badge {
   display: inline-flex;
   align-items: center;
-  background: rgba(234, 88, 12, 0.08);
-  color: var(--highlight-color, #ea580c);
+  background: rgba(92, 153, 238, 0.08);
+  color: var(--highlight-color, #5c99ee);
   font-size: 11.5px;
   font-weight: 700;
   padding: 5px 14px;
@@ -2264,7 +2264,7 @@ section,
   letter-spacing: 0.6px;
   text-transform: uppercase;
   margin-bottom: 10px;
-  border: 1px solid rgba(234, 88, 12, 0.22);
+  border: 1px solid rgba(92, 153, 238, 0.22);
 }
 
 .equipment-title {
@@ -2305,9 +2305,9 @@ section,
 }
 
 .equipment-nav-btn:hover {
-  background: var(--accent-color, #ea580c);
+  background: var(--orange-accent, #ea580c);
   color: #ffffff;
-  border-color: var(--accent-color, #ea580c);
+  border-color: var(--orange-accent, #ea580c);
   transform: scale(1.08);
   box-shadow: 0 6px 18px rgba(234, 88, 12, 0.32);
 }
@@ -2318,7 +2318,7 @@ section,
   gap: 8px;
   font-size: 13.5px;
   font-weight: 700;
-  color: var(--accent-color, #ea580c);
+  color: var(--orange-accent, #ea580c);
   background: #ffffff;
   padding: 10px 22px;
   border-radius: 50px;
@@ -2330,8 +2330,8 @@ section,
 }
 
 .btn-view-all-equipment:hover {
-  background: var(--accent-color, #ea580c);
-  color: #ffffff;
+  background: var(--orange-accent, #ea580c);
+  color: #ffffff !important;
   box-shadow: 0 6px 20px rgba(234, 88, 12, 0.35);
   transform: translateY(-2px);
 }
@@ -2380,8 +2380,8 @@ section,
 
 .equipment-card:hover {
   transform: translateY(-9px);
-  box-shadow: 0 20px 40px -4px rgba(234, 88, 12, 0.16), 0 8px 16px -2px rgba(15, 23, 42, 0.04);
-  border-color: rgba(234, 88, 12, 0.4);
+  box-shadow: 0 20px 40px -4px rgba(92, 153, 238, 0.16), 0 8px 16px -2px rgba(15, 23, 42, 0.04);
+  border-color: rgba(92, 153, 238, 0.4);
   text-decoration: none;
 }
 
@@ -2420,9 +2420,9 @@ section,
 .equipment-tag {
   font-size: 11px;
   font-weight: 700;
-  color: var(--accent-color, #ea580c);
-  background: rgba(234, 88, 12, 0.08);
-  border: 1px solid rgba(234, 88, 12, 0.2);
+  color: var(--primary-blue, #5c99ee);
+  background: rgba(92, 153, 238, 0.08);
+  border: 1px solid rgba(92, 153, 238, 0.2);
   padding: 4px 11px;
   border-radius: 50px;
   white-space: nowrap;
@@ -2454,7 +2454,7 @@ section,
 }
 
 .equipment-card:hover .equipment-name {
-  color: var(--highlight-color, #ea580c);
+  color: var(--highlight-color, #5c99ee);
 }
 
 .equipment-desc {
@@ -2477,12 +2477,12 @@ section,
   border-top: 1px solid rgba(226, 232, 240, 0.85);
   font-size: 13.5px;
   font-weight: 700;
-  color: var(--accent-color, #ea580c);
+  color: var(--primary-blue, #5c99ee);
   transition: color 0.2s ease;
 }
 
 .equipment-card:hover .equipment-footer {
-  color: var(--highlight-color, #ea580c);
+  color: var(--highlight-color, #5c99ee);
 }
 
 .equipment-arrow {
@@ -2493,7 +2493,7 @@ section,
 
 .equipment-card:hover .equipment-arrow {
   transform: translateX(6px);
-  color: var(--highlight-color, #ea580c);
+  color: var(--highlight-color, #5c99ee);
 }
 
 @media (max-width: 768px) {
@@ -2630,7 +2630,7 @@ section,
   font-size: 3rem;
   font-weight: 300;
   margin-bottom: 8px;
-  color: var(--highlight-color, #ea580c);
+  color: var(--highlight-color, #5c99ee);
   line-height: 1;
 }
 
@@ -2651,22 +2651,24 @@ section,
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  background: transparent;
-  border: 2px solid var(--accent-color);
-  color: var(--accent-color);
-  padding: 16px 32px;
+  background: var(--orange-accent, #ea580c);
+  border: 2px solid var(--orange-accent, #ea580c);
+  color: #ffffff;
+  padding: 14px 30px;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 50px;
   transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(234, 88, 12, 0.28);
 }
 
 .about .btn-cta:hover {
-  background: var(--accent-color);
-  color: var(--contrast-color);
+  background: var(--orange-accent-hover, #c2410c);
+  border-color: var(--orange-accent-hover, #c2410c);
+  color: #ffffff;
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px color-mix(in srgb, var(--accent-color), transparent 60%);
+  box-shadow: 0 10px 28px rgba(234, 88, 12, 0.42);
 }
 
 .about .btn-cta i {
@@ -2695,24 +2697,24 @@ section,
 
 .services .service-card:hover {
   transform: translateY(-5px);
-  border-color: rgba(234, 88, 12, 0.45);
-  box-shadow: 0 12px 30px rgba(234, 88, 12, 0.16);
+  border-color: rgba(92, 153, 238, 0.45);
+  box-shadow: 0 12px 30px rgba(92, 153, 238, 0.16);
 }
 
 .services .service-card:hover .service-icon {
-  background: var(--orange-accent, #ea580c);
+  background: var(--accent-color, #5c99ee);
   color: var(--contrast-color);
-  border-color: var(--orange-accent, #ea580c);
+  border-color: var(--accent-color, #5c99ee);
   transform: scale(1.08);
-  box-shadow: 0 6px 18px rgba(234, 88, 12, 0.3);
+  box-shadow: 0 6px 18px rgba(92, 153, 238, 0.3);
 }
 
 .services .service-icon {
   width: 64px;
   height: 64px;
-  background: rgba(234, 88, 12, 0.1);
-  color: var(--accent-color, #ea580c);
-  border: 1px solid rgba(234, 88, 12, 0.2);
+  background: rgba(92, 153, 238, 0.1);
+  color: var(--accent-color, #5c99ee);
+  border: 1px solid rgba(92, 153, 238, 0.2);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -2943,7 +2945,7 @@ section,
   width: 70px;
   height: 70px;
   background-color: var(--surface-color);
-  border: 2px solid var(--accent-color, #ea580c);
+  border: 2px solid var(--accent-color, #5c99ee);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -2952,22 +2954,22 @@ section,
   position: relative;
   z-index: 1;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 4px 14px rgba(234, 88, 12, 0.15);
+  box-shadow: 0 4px 14px rgba(92, 153, 238, 0.15);
 }
 
 .how-we-work .step-circle span {
   font-family: var(--heading-font);
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--highlight-color, #ea580c);
+  color: var(--highlight-color, #5c99ee);
   transition: all 0.3s ease-in-out;
 }
 
 .how-we-work .step-item:hover .step-circle {
-  background: var(--accent-color, #ea580c);
-  border-color: var(--accent-color, #ea580c);
+  background: var(--accent-color, #5c99ee);
+  border-color: var(--accent-color, #5c99ee);
   transform: scale(1.1);
-  box-shadow: 0 8px 24px rgba(234, 88, 12, 0.35);
+  box-shadow: 0 8px 24px rgba(92, 153, 238, 0.35);
 }
 
 .how-we-work .step-item:hover .step-circle span {
@@ -3085,8 +3087,8 @@ section,
 }
 
 .tabs .tabs-header .nav-tabs .nav-link.active {
-  background: var(--accent-color, #ea580c);
-  box-shadow: 0 6px 20px rgba(234, 88, 12, 0.3);
+  background: var(--accent-color, #5c99ee);
+  box-shadow: 0 6px 20px rgba(92, 153, 238, 0.3);
 }
 
 .tabs .tabs-header .nav-tabs .nav-link.active .tab-content-preview .tab-number {
@@ -3264,7 +3266,7 @@ section,
   display: block;
   font-size: 28px;
   font-weight: 300;
-  color: var(--highlight-color, #ea580c);
+  color: var(--highlight-color, #5c99ee);
   line-height: 1;
   margin-bottom: 4px;
 }

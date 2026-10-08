@@ -24,7 +24,7 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/css/main.css?v=8.4" rel="stylesheet">
+  <link href="assets/css/main.css?v=8.6" rel="stylesheet">
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
@@ -66,159 +66,140 @@
     <section id="hero" class="hero section">
 
       <div class="container">
-        <div class="row align-items-center gy-4">
-          <div class="col-lg-6">
-            <div class="hero-content">
-              <!-- <div class="hero-badge mb-3 d-inline-flex align-items-center gap-2"> -->
-                <!-- <i class="bi bi-patch-check-fill"></i> -->
-                <!-- <span>Certified Healthcare Manufacturer &amp; Exporter</span> -->
-              <!-- </div> -->
-              <h1>Dr. Smith <span>Medical Equipment &amp; Hospital Solutions</span></h1>
-              <p>Empowering modern healthcare with 60+ years of trusted excellence. We manufacture and supply certified
-                hospital furniture, advanced medical devices, and complete turnkey hospital infrastructure worldwide.</p>
-              <div class="hero-actions d-flex flex-wrap align-items-center gap-3 justify-content-center justify-content-lg-start">
-                <a href="catalogue/index.html" class="btn-primary">Explore Our Catalogue</a>
-                <div class="hero-contact-whatsapp-row d-flex align-items-center gap-2">
-                  <a href="contact-form/index.html" class="btn-hero-contact d-inline-flex align-items-center gap-2">
-                    <i class="bi bi-envelope-fill"></i>
-                    <span>Send Enquiry</span>
-                  </a>
-                  <a href="https://wa.me/919999999999" class="btn-hero-whatsapp d-lg-none d-inline-flex align-items-center gap-2" aria-label="WhatsApp Us" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <span>WhatsApp</span>
-                  </a>
-                </div>
-              </div>
+        <div class="hero-content text-center mb-3">
+          <h1>Dr. Smith <span>Medical Equipment &amp; Hospital Solutions</span></h1>
+        </div>
 
-              <!-- Quick Trust Indicators -->
-              <div class="hero-trust-indicators mt-4 pt-3 d-flex align-items-center gap-4 border-top">
-                <div class="trust-item">
-                  <span class="trust-num">60+</span>
-                  <span class="trust-label">Years Heritage</span>
-                </div>
-                <div class="trust-item">
-                  <span class="trust-num">500+</span>
-                  <span class="trust-label">Turnkey Projects</span>
-                </div>
-                <div class="trust-item">
-                  <span class="trust-num">100%</span>
-                  <span class="trust-label">ISO &amp; CE Certified</span>
-                </div>
-              </div>
+        <!-- Unified Featured Medical Equipment & Product Showcase Section -->
+        <div id="equipment-showcase" class="equipment-showcase-container mb-4">
+          <div class="d-flex align-items-center justify-content-between mb-2 px-2">
+            <span class="equipment-badge"><i class="bi bi-shield-check me-1"></i> Certified Healthcare Products</span>
+            <div class="equipment-nav-actions d-none d-md-flex align-items-center gap-2">
+              <button type="button" class="equipment-nav-btn equipment-prev-btn" id="equipment-prev-btn" aria-label="Scroll Left"><i class="bi bi-chevron-left"></i></button>
+              <button type="button" class="equipment-nav-btn equipment-next-btn" id="equipment-next-btn" aria-label="Scroll Right"><i class="bi bi-chevron-right"></i></button>
+              <a href="catalogue/index.html" class="btn-view-all-equipment ms-2">View All Equipment <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
 
-          <div class="col-lg-6">
-            <div class="hero-image text-center">
-              <img src="assets/img/illustration/illustration-28.webp" class="img-fluid floating" alt="Dr. Smith Medical Equipment & Hospital Solutions">
+          <div class="equipment-carousel-wrapper" id="equipment-carousel">
+            <div class="equipment-track">
+
+              <!-- Equipment 1 (High-Res Studio Lead) -->
+              <a href="catalogue/modular-ot/index.html" class="equipment-card">
+                <div class="equipment-visual">
+                  <img src="assets/img/hero-slides/1.jpg" onerror="this.onerror=null; this.src='main web products preview/1.jpg';" alt="Modular Operation Theatres" class="equipment-img" loading="eager">
+                  <span class="equipment-tag"><i class="bi bi-hospital me-1"></i> OT Solutions</span>
+                </div>
+                <div class="equipment-body">
+                  <h3 class="equipment-name">Modular Operation Theatres</h3>
+                  <p class="equipment-desc">Laminar airflow surgical suites with antimicrobial wall panels &amp; integrated surgical infrastructure.</p>
+                  <div class="equipment-footer">
+                    <span class="equipment-link-text">Explore System</span>
+                    <i class="bi bi-arrow-right equipment-arrow"></i>
+                  </div>
+                </div>
+              </a>
+
+              <!-- Equipment 2 (High-Res Studio Lead) -->
+              <a href="catalogue/anesthesia-workstation/index.html" class="equipment-card">
+                <div class="equipment-visual">
+                  <img src="assets/img/hero-slides/2.png" onerror="this.onerror=null; this.src='main web products preview/2.png';" alt="Critical Care & Anesthesia Workstations" class="equipment-img" loading="lazy">
+                  <span class="equipment-tag"><i class="bi bi-heart-pulse me-1"></i> Critical Care</span>
+                </div>
+                <div class="equipment-body">
+                  <h3 class="equipment-name">Anesthesia Workstations</h3>
+                  <p class="equipment-desc">Multi-gas delivery units with integrated smart ventilator &amp; comprehensive vitals monitoring.</p>
+                  <div class="equipment-footer">
+                    <span class="equipment-link-text">Explore System</span>
+                    <i class="bi bi-arrow-right equipment-arrow"></i>
+                  </div>
+                </div>
+              </a>
+
+              <!-- Equipment 3 (High-Res Studio Lead) -->
+              <a href="catalogue/ot-tables/index.html" class="equipment-card">
+                <div class="equipment-visual">
+                  <img src="assets/img/hero-slides/3.png" onerror="this.onerror=null; this.src='main web products preview/3.png';" alt="Electro-Hydraulic OT Tables" class="equipment-img" loading="lazy">
+                  <span class="equipment-tag"><i class="bi bi-activity me-1"></i> Surgical Systems</span>
+                </div>
+                <div class="equipment-body">
+                  <h3 class="equipment-name">Electro-Hydraulic OT Tables</h3>
+                  <p class="equipment-desc">Multi-position motorized operating tables engineered for diverse specialty surgical interventions.</p>
+                  <div class="equipment-footer">
+                    <span class="equipment-link-text">Explore System</span>
+                    <i class="bi bi-arrow-right equipment-arrow"></i>
+                  </div>
+                </div>
+              </a>
+
+              <!-- Equipment 4 (High-Res Studio Lead) -->
+              <a href="catalogue/beds/index.html" class="equipment-card">
+                <div class="equipment-visual">
+                  <img src="assets/img/hero-slides/4.png" onerror="this.onerror=null; this.src='main web products preview/4.png';" alt="Advanced Hospital Furniture & ICU Beds" class="equipment-img" loading="lazy">
+                  <span class="equipment-tag"><i class="bi bi-bezier me-1"></i> Hospital Furniture</span>
+                </div>
+                <div class="equipment-body">
+                  <h3 class="equipment-name">Motorized ICU &amp; Ward Beds</h3>
+                  <p class="equipment-desc">Full electric multi-position patient beds with nurse control panels &amp; cardiac chair positioning.</p>
+                  <div class="equipment-footer">
+                    <span class="equipment-link-text">Explore System</span>
+                    <i class="bi bi-arrow-right equipment-arrow"></i>
+                  </div>
+                </div>
+              </a>
+
+              <!-- Equipment 5 (High-Res Studio Lead) -->
+              <a href="catalogue/ventilators/index.html" class="equipment-card">
+                <div class="equipment-visual">
+                  <img src="assets/img/hero-slides/5.png" onerror="this.onerror=null; this.src='main web products preview/5.png';" alt="ICU Ventilator & Critical Care Systems" class="equipment-img" loading="lazy">
+                  <span class="equipment-tag"><i class="bi bi-lungs me-1"></i> Emergency &amp; ICU</span>
+                </div>
+                <div class="equipment-body">
+                  <h3 class="equipment-name">ICU Ventilator Systems</h3>
+                  <p class="equipment-desc">Invasive &amp; non-invasive smart respiratory support for adult, pediatric &amp; critical neonatal care.</p>
+                  <div class="equipment-footer">
+                    <span class="equipment-link-text">Explore System</span>
+                    <i class="bi bi-arrow-right equipment-arrow"></i>
+                  </div>
+                </div>
+              </a>
+
             </div>
+          </div>
+        </div>
+
+        <div class="hero-actions d-flex flex-wrap align-items-center gap-3 justify-content-center">
+          <a href="catalogue/index.html" class="btn-primary">Explore Our Catalogue</a>
+          <div class="hero-contact-whatsapp-row d-flex align-items-center gap-2">
+            <a href="contact-form/index.html" class="btn-hero-contact d-inline-flex align-items-center gap-2">
+              <i class="bi bi-envelope-fill"></i>
+              <span>Send Enquiry</span>
+            </a>
+            <a href="https://wa.me/919999999999" class="btn-hero-whatsapp d-lg-none d-inline-flex align-items-center gap-2" aria-label="WhatsApp Us" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Trust Indicators -->
+        <div class="hero-trust-indicators mt-4 pt-3 d-flex align-items-center justify-content-center gap-4 border-top">
+          <div class="trust-item text-center">
+            <span class="trust-num">60+</span>
+            <span class="trust-label">Years Heritage</span>
+          </div>
+          <div class="trust-item text-center">
+            <span class="trust-num">500+</span>
+            <span class="trust-label">Turnkey Projects</span>
+          </div>
+          <div class="trust-item text-center">
+            <span class="trust-num">100%</span>
+            <span class="trust-label">ISO &amp; CE Certified</span>
           </div>
         </div>
       </div>
 
     </section><!-- /Hero Section -->
-
-    <!-- Unified Featured Medical Equipment & Product Showcase Section -->
-    <section id="equipment-showcase" class="equipment-showcase section">
-      <div class="container section-header d-flex flex-wrap align-items-end justify-content-between mb-4">
-        <div>
-          <span class="equipment-badge"><i class="bi bi-shield-check me-1"></i> Certified Healthcare Products</span>
-          <h2 class="equipment-title">Featured Medical Equipment &amp; Solutions</h2>
-          <p class="equipment-subtitle mb-0">High-precision diagnostic systems, surgical infrastructure, critical care units &amp; certified hospital furniture.</p>
-        </div>
-        <div class="equipment-nav-actions d-none d-md-flex align-items-center gap-2">
-          <button type="button" class="equipment-nav-btn equipment-prev-btn" id="equipment-prev-btn" aria-label="Scroll Left"><i class="bi bi-chevron-left"></i></button>
-          <button type="button" class="equipment-nav-btn equipment-next-btn" id="equipment-next-btn" aria-label="Scroll Right"><i class="bi bi-chevron-right"></i></button>
-          <a href="catalogue/index.html" class="btn-view-all-equipment ms-2">View All Equipment <i class="bi bi-arrow-right"></i></a>
-        </div>
-      </div>
-
-      <div class="equipment-carousel-wrapper" id="equipment-carousel">
-        <div class="equipment-track">
-
-          <!-- Equipment 1 (High-Res Studio Lead) -->
-          <a href="catalogue/modular-ot/index.html" class="equipment-card">
-            <div class="equipment-visual">
-              <img src="assets/img/hero-slides/1.jpg" onerror="this.onerror=null; this.src='main web products preview/1.jpg';" alt="Modular Operation Theatres" class="equipment-img" loading="eager">
-              <span class="equipment-tag"><i class="bi bi-hospital me-1"></i> OT Solutions</span>
-            </div>
-            <div class="equipment-body">
-              <h3 class="equipment-name">Modular Operation Theatres</h3>
-              <p class="equipment-desc">Laminar airflow surgical suites with antimicrobial wall panels &amp; integrated surgical infrastructure.</p>
-              <div class="equipment-footer">
-                <span class="equipment-link-text">Explore System</span>
-                <i class="bi bi-arrow-right equipment-arrow"></i>
-              </div>
-            </div>
-          </a>
-
-          <!-- Equipment 2 (High-Res Studio Lead) -->
-          <a href="catalogue/anesthesia-workstation/index.html" class="equipment-card">
-            <div class="equipment-visual">
-              <img src="assets/img/hero-slides/2.png" onerror="this.onerror=null; this.src='main web products preview/2.png';" alt="Critical Care & Anesthesia Workstations" class="equipment-img" loading="lazy">
-              <span class="equipment-tag"><i class="bi bi-heart-pulse me-1"></i> Critical Care</span>
-            </div>
-            <div class="equipment-body">
-              <h3 class="equipment-name">Anesthesia Workstations</h3>
-              <p class="equipment-desc">Multi-gas delivery units with integrated smart ventilator &amp; comprehensive vitals monitoring.</p>
-              <div class="equipment-footer">
-                <span class="equipment-link-text">Explore System</span>
-                <i class="bi bi-arrow-right equipment-arrow"></i>
-              </div>
-            </div>
-          </a>
-
-          <!-- Equipment 3 (High-Res Studio Lead) -->
-          <a href="catalogue/ot-tables/index.html" class="equipment-card">
-            <div class="equipment-visual">
-              <img src="assets/img/hero-slides/3.png" onerror="this.onerror=null; this.src='main web products preview/3.png';" alt="Electro-Hydraulic OT Tables" class="equipment-img" loading="lazy">
-              <span class="equipment-tag"><i class="bi bi-activity me-1"></i> Surgical Systems</span>
-            </div>
-            <div class="equipment-body">
-              <h3 class="equipment-name">Electro-Hydraulic OT Tables</h3>
-              <p class="equipment-desc">Multi-position motorized operating tables engineered for diverse specialty surgical interventions.</p>
-              <div class="equipment-footer">
-                <span class="equipment-link-text">Explore System</span>
-                <i class="bi bi-arrow-right equipment-arrow"></i>
-              </div>
-            </div>
-          </a>
-
-          <!-- Equipment 4 (High-Res Studio Lead) -->
-          <a href="catalogue/beds/index.html" class="equipment-card">
-            <div class="equipment-visual">
-              <img src="assets/img/hero-slides/4.png" onerror="this.onerror=null; this.src='main web products preview/4.png';" alt="Advanced Hospital Furniture & ICU Beds" class="equipment-img" loading="lazy">
-              <span class="equipment-tag"><i class="bi bi-bezier me-1"></i> Hospital Furniture</span>
-            </div>
-            <div class="equipment-body">
-              <h3 class="equipment-name">Motorized ICU &amp; Ward Beds</h3>
-              <p class="equipment-desc">Full electric multi-position patient beds with nurse control panels &amp; cardiac chair positioning.</p>
-              <div class="equipment-footer">
-                <span class="equipment-link-text">Explore System</span>
-                <i class="bi bi-arrow-right equipment-arrow"></i>
-              </div>
-            </div>
-          </a>
-
-          <!-- Equipment 5 (High-Res Studio Lead) -->
-          <a href="catalogue/ventilators/index.html" class="equipment-card">
-            <div class="equipment-visual">
-              <img src="assets/img/hero-slides/5.png" onerror="this.onerror=null; this.src='main web products preview/5.png';" alt="ICU Ventilator & Critical Care Systems" class="equipment-img" loading="lazy">
-              <span class="equipment-tag"><i class="bi bi-lungs me-1"></i> Emergency &amp; ICU</span>
-            </div>
-            <div class="equipment-body">
-              <h3 class="equipment-name">ICU Ventilator Systems</h3>
-              <p class="equipment-desc">Invasive &amp; non-invasive smart respiratory support for adult, pediatric &amp; critical neonatal care.</p>
-              <div class="equipment-footer">
-                <span class="equipment-link-text">Explore System</span>
-                <i class="bi bi-arrow-right equipment-arrow"></i>
-              </div>
-            </div>
-          </a>
-
-        </div>
-      </div>
-    </section><!-- /Featured Equipment Showcase Section -->
 
     <!-- Temporary Visual Divider Banner Section -->
     <section class="section py-3 py-md-4" id="showcase-divider-banner">
