@@ -400,10 +400,13 @@
         gap = 120;
       } else if (viewportWidth >= 640) {
         slidesPerView = 4;
-        gap = 80;
+        gap = 60;
       } else if (viewportWidth >= 480) {
         slidesPerView = 3;
-        gap = 60;
+        gap = 45;
+      } else {
+        slidesPerView = 2.5;
+        gap = 30;
       }
 
       // Calculate width for each slide
@@ -586,9 +589,7 @@
     let singleSetWidth = 0;
     let currentOffset = 0;
     let baseSpeed = 0.048; // Cruise speed (pixels per millisecond, ~45px/s)
-    let effectiveSpeed = baseSpeed;
     let isDragging = false;
-    let isHovered = false;
     let hasMoved = false;
     let dragStartX = 0;
     let dragStartOffset = 0;
@@ -690,10 +691,6 @@
     window.addEventListener('touchend', onPointerUp, { passive: true });
     window.addEventListener('touchcancel', onPointerUp, { passive: true });
 
-    // Smooth Hover Ease
-    container.addEventListener('mouseenter', () => { isHovered = true; });
-    container.addEventListener('mouseleave', () => { isHovered = false; });
-
     // Trackpad / Wheel Horizontal Scroll
     container.addEventListener('wheel', (e) => {
       const delta = e.deltaX !== 0 ? e.deltaX : e.deltaY;
@@ -725,10 +722,6 @@
       lastTimestamp = timestamp;
 
       if (!isDragging) {
-        // Smooth hover transition
-        const targetSpeed = isHovered ? 0 : baseSpeed;
-        effectiveSpeed += (targetSpeed - effectiveSpeed) * 0.08;
-
         // Apply impulse (glide for next/prev/wheel)
         if (Math.abs(impulse) > 0.5) {
           currentOffset += impulse * 0.12;
@@ -745,8 +738,8 @@
           dragVelocity = 0;
         }
 
-        // Continuous cruise speed
-        currentOffset += effectiveSpeed * dt;
+        // Continuous uninterrupted cruise speed
+        currentOffset += baseSpeed * dt;
         currentOffset = wrapOffset(currentOffset);
         render();
       }
