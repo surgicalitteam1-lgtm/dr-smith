@@ -2015,6 +2015,15 @@ section,
     margin-bottom: 12px;
     padding: 0 4px;
   }
+  .hero-clients-divider {
+    display: block;
+    width: 100%;
+    max-width: 1140px;
+    height: 2px;
+    margin: 15px auto 0 auto;
+    background: linear-gradient(90deg, transparent 0%, rgba(92, 153, 238, 0.18) 15%, rgba(92, 153, 238, 0.85) 50%, rgba(92, 153, 238, 0.18) 85%, transparent 100%);
+    border-radius: 999px;
+  }
 }
 
 /* Integrated Hero Showcase Card Canvas */
