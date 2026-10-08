@@ -1276,11 +1276,11 @@ body.scrolled .header {
 --------------------------------------------------------------*/
 .footer {
   color: var(--default-color);
-  background: var(--background-color);
+  background: linear-gradient(180deg, #eaf4ff 0%, #e0efff 100%);
   font-size: 14px;
   padding: 80px 0 0;
   position: relative;
-  border-top: 3px solid var(--accent-color, #5c99ee);
+  border-top: 1px solid rgba(92, 153, 238, 0.22);
 }
 
 .footer .footer-content .logo {
@@ -1788,7 +1788,7 @@ section,
   overflow: hidden;
   display: flex;
   align-items: center;
-  background: linear-gradient(180deg, #f0f7ff 0%, #ffffff 100%);
+  background: linear-gradient(180deg, #f0f7ff 0%, #eaf4ff 100%);
 }
 
 .hero::before {
@@ -2358,6 +2358,47 @@ section,
   50% {
     transform: translate(-50%, -50%) scale(1.1);
     opacity: 0.1;
+  }
+}
+
+/*--------------------------------------------------------------
+# Why Choose Us Integrated Showcase
+--------------------------------------------------------------*/
+.why-choose-wrapper {
+  background: transparent !important;
+  background-color: transparent !important;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 25px;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.why-choose-img {
+  max-width: 900px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(0 15px 35px rgba(92, 153, 238, 0.08));
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .why-choose-wrapper {
+    margin-top: 15px;
+  }
+  .why-choose-img {
+    max-width: 100%;
   }
 }
 
@@ -4700,41 +4741,7 @@ section,
 /* ============================================================
    Mobile Header & Navbar Theme (Extracted from index.html)
    ============================================================ */
-/* ============================================================
-       Mobile Header & Navbar Theme
-       ============================================================ */
-    @media (max-width: 767.98px) {
-      /* Main Header Bar - 100% transparent at top, letting the hero colors flow through */
-      #header.header {
-        position: fixed !important;
-        top: 0 !important;
-        left: 0 !important;
-        right: 0 !important;
-        width: 100% !important;
-        background: transparent !important;
-        background-color: transparent !important;
-        box-shadow: none !important;
-        border-bottom: 1px solid transparent !important;
-        padding: 12px 0 !important;
-        z-index: 9997 !important;
-        transition: all 0.3s ease !important;
-      }
 
-      body.scrolled #header.header {
-        background: rgba(255, 255, 255, 0.96) !important;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06) !important;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
-        padding: 10px 0 !important;
-      }
-
-      /* Logo title in dark slate for clean visibility */
-      #header .logo h1,
-      #header .sitename {
-        color: #344761 !important;
-        font-weight: 700 !important;
-        letter-spacing: 0.3px !important;
-      }
-    }
 
     @media (max-width: 768px) {
       #clients .swiper-slide img {
