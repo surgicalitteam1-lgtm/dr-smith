@@ -10,10 +10,16 @@
 }
 
 .about-page-hero {
-  padding: 135px 0 75px;
+  padding: 100px 0 60px;
   background: linear-gradient(180deg, #eef2ff 0%, #e0e7ff 45%, #fef3c7 75%, #ffffff 100%);
   position: relative;
   overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .about-page-hero {
+    padding: 85px 0 45px;
+  }
 }
 
 .about-page-hero::before {

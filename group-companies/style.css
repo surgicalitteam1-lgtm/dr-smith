@@ -10,10 +10,16 @@
 }
 
 .companies-hero {
-  padding: 135px 0 75px;
+  padding: 100px 0 60px;
   background: linear-gradient(180deg, #f0fdf4 0%, #dcfce7 45%, #eff6ff 75%, #ffffff 100%);
   position: relative;
   overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .companies-hero {
+    padding: 85px 0 45px;
+  }
 }
 
 .companies-hero-badge {

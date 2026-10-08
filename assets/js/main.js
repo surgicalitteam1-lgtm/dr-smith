@@ -504,9 +504,173 @@
 
   // Initialize clients slider when DOM is ready
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initClientsSlider);
+    document.addEventListener('DOMContentLoaded', () => {
+      initClientsSlider();
+      initCategoriesCarousel();
+    });
   } else {
     initClientsSlider();
+    initCategoriesCarousel();
+  }
+
+
+  /**
+   * 13. Categories Showcase Interactive Auto-Scrolling Carousel (Left-to-Right)
+   * Continuously scrolls category cards seamlessly from left to right.
+   * Supports:
+   * - Interactive touch drag / swipe on mobile
+   * - Mouse drag with inertia on desktop
+   * - Trackpad / mouse wheel horizontal scrolling
+   * - Hover pause for reading cards without unwanted clicks on drag
+   * - Seamless 60fps infinite looping with requestAnimationFrame
+   */
+  function initCategoriesCarousel() {
+    const container = document.querySelector('#categories-carousel');
+    const track = container ? container.querySelector('.categories-track') : null;
+
+    if (!container || !track || container.dataset.ready) return;
+    container.dataset.ready = '1';
+
+    // Duplicate slides to create an infinite seamless loop
+    const originalCards = Array.from(track.children);
+    if (!originalCards.length) return;
+
+    originalCards.forEach((card) => {
+      const clone = card.cloneNode(true);
+      clone.setAttribute('aria-hidden', 'true');
+      track.appendChild(clone);
+    });
+
+    // Carousel state
+    let totalSetWidth = 0;
+    let scrollOffset = 0;
+    let isDragging = false;
+    let isHovered = false;
+    let hasMoved = false;
+    let dragStartX = 0;
+    let dragStartOffset = 0;
+    let velocity = 0;
+    let lastX = 0;
+    let lastTime = 0;
+    let lastTimestamp = null;
+    const baseSpeed = -0.055; // Negative speed moves items continuously from left to right
+
+    function calculateWidths() {
+      let width = 0;
+      for (let i = 0; i < originalCards.length; i++) {
+        const item = track.children[i];
+        if (!item) continue;
+        const style = window.getComputedStyle(item);
+        const marginRight = parseFloat(style.marginRight) || 0;
+        const gap = parseFloat(window.getComputedStyle(track).gap) || 16;
+        width += item.offsetWidth + (marginRight || gap);
+      }
+      totalSetWidth = width;
+    }
+
+    function normalizeOffset(val) {
+      if (totalSetWidth <= 0) return 0;
+      return ((val % totalSetWidth) + totalSetWidth) % totalSetWidth;
+    }
+
+    function render() {
+      track.style.transform = `translate3d(${-scrollOffset}px, 0, 0)`;
+    }
+
+    // Touch and mouse pointer handlers
+    function onPointerDown(e) {
+      isDragging = true;
+      hasMoved = false;
+      dragStartX = (e.touches && e.touches[0] ? e.touches[0].clientX : e.clientX) || 0;
+      dragStartOffset = scrollOffset;
+      lastX = dragStartX;
+      lastTime = performance.now();
+      velocity = 0;
+      container.style.cursor = 'grabbing';
+    }
+
+    function onPointerMove(e) {
+      if (!isDragging) return;
+      const currentX = (e.touches && e.touches[0] ? e.touches[0].clientX : e.clientX) || 0;
+      const deltaX = currentX - dragStartX;
+
+      if (Math.abs(deltaX) > 5) {
+        hasMoved = true;
+      }
+
+      const now = performance.now();
+      const dt = now - lastTime;
+      if (dt > 0) {
+        velocity = -(currentX - lastX) / dt;
+        lastX = currentX;
+        lastTime = now;
+      }
+
+      scrollOffset = normalizeOffset(dragStartOffset - deltaX);
+      render();
+    }
+
+    function onPointerUp() {
+      if (!isDragging) return;
+      isDragging = false;
+      container.style.cursor = 'grab';
+    }
+
+    // Prevent navigation click when user was dragging
+    container.addEventListener('click', function(e) {
+      if (hasMoved) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
+    }, true);
+
+    // Mouse Events
+    container.addEventListener('mousedown', onPointerDown);
+    window.addEventListener('mousemove', onPointerMove);
+    window.addEventListener('mouseup', onPointerUp);
+
+    // Touch Events
+    container.addEventListener('touchstart', onPointerDown, { passive: true });
+    window.addEventListener('touchmove', onPointerMove, { passive: true });
+    window.addEventListener('touchend', onPointerUp, { passive: true });
+    window.addEventListener('touchcancel', onPointerUp, { passive: true });
+
+    // Hover detection (pauses auto-scroll so user can interact comfortably)
+    container.addEventListener('mouseenter', () => { isHovered = true; });
+    container.addEventListener('mouseleave', () => { isHovered = false; });
+
+    // Wheel horizontal scrolling
+    container.addEventListener('wheel', (e) => {
+      const delta = e.deltaX !== 0 ? e.deltaX : e.deltaY;
+      scrollOffset = normalizeOffset(scrollOffset + delta * 0.75);
+      render();
+    }, { passive: true });
+
+    // 60fps animation loop
+    function loop(timestamp) {
+      if (!lastTimestamp) lastTimestamp = timestamp;
+      const dt = Math.min(timestamp - lastTimestamp, 50);
+      lastTimestamp = timestamp;
+
+      if (!isDragging) {
+        // Inertia release damping
+        if (Math.abs(velocity) > 0.01) {
+          scrollOffset = normalizeOffset(scrollOffset + velocity * dt);
+          velocity *= 0.94;
+        } else if (!isHovered) {
+          // Continuous left-to-right auto drift
+          scrollOffset = normalizeOffset(scrollOffset + baseSpeed * dt);
+        }
+        render();
+      }
+
+      requestAnimationFrame(loop);
+    }
+
+    calculateWidths();
+    window.addEventListener('load', calculateWidths);
+    window.addEventListener('resize', calculateWidths);
+    requestAnimationFrame(loop);
   }
 
 

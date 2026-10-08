@@ -11,10 +11,16 @@
 }
 
 .mission-hero {
-  padding: 135px 0 75px;
+  padding: 100px 0 60px;
   background: linear-gradient(180deg, #fdf4ff 0%, #fae8ff 45%, #fff1f2 75%, #ffffff 100%);
   position: relative;
   overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .mission-hero {
+    padding: 85px 0 45px;
+  }
 }
 
 .mission-hero::before {
