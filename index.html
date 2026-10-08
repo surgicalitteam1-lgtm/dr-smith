@@ -24,7 +24,7 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/css/main.css?v=7.4" rel="stylesheet">
+  <link href="assets/css/main.css?v=7.7" rel="stylesheet">
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
@@ -61,6 +61,75 @@
   </header>
 
   <main class="main">
+
+    <!-- Product Hero Full-Scale Showcase Slider (Under Header) -->
+    <section id="product-hero-showcase" class="product-hero-showcase">
+      <div class="product-hero-container">
+        <div class="swiper init-swiper product-hero-slider">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 800,
+              "autoplay": {
+                "delay": 4500,
+                "disableOnInteraction": false
+              },
+              "slidesPerView": 1,
+              "effect": "fade",
+              "fadeEffect": {
+                "crossFade": true
+              },
+              "pagination": {
+                "el": ".product-hero-pagination",
+                "clickable": true
+              },
+              "navigation": {
+                "nextEl": ".product-hero-next",
+                "prevEl": ".product-hero-prev"
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide product-hero-slide">
+              <div class="product-hero-slide-inner">
+                <img src="assets/img/hero-slides/1.jpg" onerror="this.onerror=null; this.src='main web products preview/1.jpg';" alt="Dr. Smith Medical Product Showcase 1" class="product-hero-img" loading="eager">
+              </div>
+            </div>
+            <div class="swiper-slide product-hero-slide">
+              <div class="product-hero-slide-inner">
+                <img src="assets/img/hero-slides/2.png" onerror="this.onerror=null; this.src='main web products preview/2.png';" alt="Dr. Smith Medical Product Showcase 2" class="product-hero-img" loading="lazy">
+              </div>
+            </div>
+            <div class="swiper-slide product-hero-slide">
+              <div class="product-hero-slide-inner">
+                <img src="assets/img/hero-slides/3.png" onerror="this.onerror=null; this.src='main web products preview/3.png';" alt="Dr. Smith Medical Product Showcase 3" class="product-hero-img" loading="lazy">
+              </div>
+            </div>
+            <div class="swiper-slide product-hero-slide">
+              <div class="product-hero-slide-inner">
+                <img src="assets/img/hero-slides/4.png" onerror="this.onerror=null; this.src='main web products preview/4.png';" alt="Dr. Smith Medical Product Showcase 4" class="product-hero-img" loading="lazy">
+              </div>
+            </div>
+            <div class="swiper-slide product-hero-slide">
+              <div class="product-hero-slide-inner">
+                <img src="assets/img/hero-slides/5.png" onerror="this.onerror=null; this.src='main web products preview/5.png';" alt="Dr. Smith Medical Product Showcase 5" class="product-hero-img" loading="lazy">
+              </div>
+            </div>
+          </div>
+
+          <!-- Glass Navigation Arrows -->
+          <div class="product-hero-nav-btn product-hero-prev" aria-label="Previous Slide">
+            <i class="bi bi-chevron-left"></i>
+          </div>
+          <div class="product-hero-nav-btn product-hero-next" aria-label="Next Slide">
+            <i class="bi bi-chevron-right"></i>
+          </div>
+
+          <!-- Apple Style Pagination Bullets -->
+          <div class="swiper-pagination product-hero-pagination"></div>
+        </div>
+      </div>
+    </section><!-- /Product Hero Showcase -->
 
     <!-- Hero Section -->
     <section id="hero" class="hero section">
