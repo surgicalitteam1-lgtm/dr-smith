@@ -1693,11 +1693,11 @@ section,
   font-weight: 700;
   line-height: 1.3;
   letter-spacing: -0.2px;
-  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  background-image: linear-gradient(to right, #ec77ab 0%, #7873f5 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  color: #a6c1ee;
+  color: #7873f5;
   width: fit-content;
 }
 
