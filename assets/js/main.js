@@ -502,21 +502,21 @@
     requestAnimationFrame(animationLoop);
   }
 
-  // Initialize clients slider when DOM is ready
+  // Initialize sliders when DOM is ready
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => {
       initClientsSlider();
-      initCategoriesCarousel();
+      initEquipmentCarousel();
     });
   } else {
     initClientsSlider();
-    initCategoriesCarousel();
+    initEquipmentCarousel();
   }
 
 
   /**
-   * 13. Categories Showcase Interactive Auto-Scrolling Carousel (Left-to-Right)
-   * Continuously scrolls category cards seamlessly from left to right.
+   * 13. Featured Equipment Interactive Auto-Scrolling Carousel (Right-to-Left)
+   * Continuously scrolls equipment cards seamlessly from right to left.
    * Supports:
    * - Interactive touch drag / swipe on mobile
    * - Mouse drag with inertia on desktop
@@ -524,9 +524,9 @@
    * - Hover pause for reading cards without unwanted clicks on drag
    * - Seamless 60fps infinite looping with requestAnimationFrame
    */
-  function initCategoriesCarousel() {
-    const container = document.querySelector('#categories-carousel');
-    const track = container ? container.querySelector('.categories-track') : null;
+  function initEquipmentCarousel() {
+    const container = document.querySelector('#equipment-carousel, #categories-carousel');
+    const track = container ? container.querySelector('.equipment-track, .categories-track') : null;
 
     if (!container || !track || container.dataset.ready) return;
     container.dataset.ready = '1';
@@ -553,7 +553,7 @@
     let lastX = 0;
     let lastTime = 0;
     let lastTimestamp = null;
-    const baseSpeed = -0.055; // Negative speed moves items continuously from left to right
+    const baseSpeed = 0.055; // Positive speed moves items continuously from right to left
 
     function calculateWidths() {
       let width = 0;
