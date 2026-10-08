@@ -444,7 +444,7 @@ body.scrolled .header {
   .header .logo .sitename {
     font-size: 19px !important;
     font-weight: 800 !important;
-    color: #0f172a !important;
+    color: #535d6b !important;
     line-height: 1.1 !important;
     white-space: nowrap !important;
     overflow: hidden !important;
@@ -481,7 +481,7 @@ body.scrolled .header {
     height: 38px !important;
     font-size: 22px !important;
     line-height: 1 !important;
-    color: #1e293b !important;
+    color: #535d6b !important;
     background: rgba(255, 255, 255, 0.9) !important;
     border: 1px solid rgba(92, 153, 238, 0.25) !important;
     border-radius: 10px !important;
@@ -553,7 +553,7 @@ body.scrolled .header {
     padding: 12px 16px !important;
     font-size: 15px !important;
     font-weight: 600 !important;
-    color: #1e293b !important;
+    color: #535d6b !important;
     background: #f8fafc !important;
     border-radius: 12px !important;
     border: 1px solid rgba(0, 0, 0, 0.04) !important;
@@ -1933,7 +1933,7 @@ section,
 .hero-trust-indicators .trust-num {
   font-size: 20px;
   font-weight: 700;
-  color: #0f172a;
+  color: #535d6b;
   line-height: 1.1;
   margin-bottom: 2px;
 }
@@ -2181,7 +2181,7 @@ section,
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  color: #1e293b;
+  color: #535d6b;
   font-size: 16px;
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   user-select: none;
@@ -2559,7 +2559,7 @@ section,
 .equipment-title {
   font-size: 30px;
   font-weight: 800;
-  color: #0f172a;
+  color: var(--heading-color, #344761);
   margin-bottom: 6px;
   letter-spacing: -0.02em;
 }
@@ -2583,7 +2583,7 @@ section,
   border-radius: 50%;
   border: 1.5px solid rgba(226, 232, 240, 1);
   background: #ffffff;
-  color: #1e293b;
+  color: #535d6b;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4106,12 +4106,12 @@ section,
 .office-directory .info-content p {
   font-size: 0.88rem;
   line-height: 1.45;
-  color: #334155;
+  color: #535d6b;
   margin: 0;
 }
 
 .office-directory .info-content p a {
-  color: #1e293b;
+  color: #535d6b;
   font-weight: 600;
   text-decoration: none;
   transition: color 0.2s ease;
