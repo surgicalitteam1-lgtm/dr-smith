@@ -1693,11 +1693,7 @@ section,
   font-weight: 700;
   line-height: 1.3;
   letter-spacing: -0.2px;
-  background: linear-gradient(120deg, #581825 0%, #701a2b 50%, #881337 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: #701a2b;
+  color: #a6acff;
   width: fit-content;
 }
 
