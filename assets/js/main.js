@@ -557,6 +557,10 @@
    * - Trackpad / mouse wheel horizontal scrolling
    * - Hover pause for reading cards without unwanted clicks on drag
    * - Seamless 60fps infinite looping with requestAnimationFrame
+  /**
+   * 13. Featured Equipment / Categories Smooth Auto-Scrolling Carousel
+   * High-precision 60fps infinite marquee with momentum physics, smooth hover deceleration,
+   * touch drag/swipe, and gliding navigation buttons.
    */
   function initEquipmentCarousel() {
     const container = document.querySelector('#equipment-carousel, #categories-carousel');
@@ -565,61 +569,78 @@
     if (!container || !track || container.dataset.ready) return;
     container.dataset.ready = '1';
 
-    // Duplicate slides to create an infinite seamless loop
     const originalCards = Array.from(track.children);
-    if (!originalCards.length) return;
+    const originalCount = originalCards.length;
+    if (originalCount === 0) return;
 
-    originalCards.forEach((card) => {
-      const clone = card.cloneNode(true);
-      clone.setAttribute('aria-hidden', 'true');
-      track.appendChild(clone);
-    });
+    // Append 2 clone sets for a triple-buffer infinite loop (Original + Clone 1 + Clone 2)
+    for (let set = 0; set < 2; set++) {
+      originalCards.forEach((card) => {
+        const clone = card.cloneNode(true);
+        clone.setAttribute('aria-hidden', 'true');
+        track.appendChild(clone);
+      });
+    }
 
-    // Carousel state
-    let totalSetWidth = 0;
-    let scrollOffset = 0;
+    // Engine Physics State
+    let singleSetWidth = 0;
+    let currentOffset = 0;
+    let baseSpeed = 0.048; // Cruise speed (pixels per millisecond, ~45px/s)
+    let effectiveSpeed = baseSpeed;
     let isDragging = false;
     let isHovered = false;
     let hasMoved = false;
     let dragStartX = 0;
     let dragStartOffset = 0;
-    let velocity = 0;
-    let lastX = 0;
-    let lastTime = 0;
+    let dragVelocity = 0;
+    let lastDragX = 0;
+    let lastDragTime = 0;
+    let impulse = 0; // Smooth impulse for Next/Prev buttons
     let lastTimestamp = null;
-    const baseSpeed = 0.055; // Positive speed moves items continuously from right to left
 
-    function calculateWidths() {
-      let width = 0;
-      for (let i = 0; i < originalCards.length; i++) {
+    function updateWidths() {
+      if (track.children.length > originalCount && track.children[originalCount]) {
+        const firstCardLeft = track.children[0].offsetLeft;
+        const cloneCardLeft = track.children[originalCount].offsetLeft;
+        const measured = cloneCardLeft - firstCardLeft;
+        if (measured > 100) {
+          singleSetWidth = measured;
+          return;
+        }
+      }
+
+      // Fallback calculation
+      let total = 0;
+      for (let i = 0; i < originalCount; i++) {
         const item = track.children[i];
         if (!item) continue;
-        const style = window.getComputedStyle(item);
-        const marginRight = parseFloat(style.marginRight) || 0;
-        const gap = parseFloat(window.getComputedStyle(track).gap) || 16;
-        width += item.offsetWidth + (marginRight || gap);
+        const gap = parseFloat(window.getComputedStyle(track).gap) || 24;
+        total += item.offsetWidth + gap;
       }
-      totalSetWidth = width;
-    }
-
-    function normalizeOffset(val) {
-      if (totalSetWidth <= 0) return 0;
-      return ((val % totalSetWidth) + totalSetWidth) % totalSetWidth;
+      singleSetWidth = total > 0 ? total : 2500;
     }
 
     function render() {
-      track.style.transform = `translate3d(${-scrollOffset}px, 0, 0)`;
+      track.style.transform = `translate3d(${-currentOffset.toFixed(2)}px, 0, 0)`;
     }
 
-    // Touch and mouse pointer handlers
+    function wrapOffset(val) {
+      if (singleSetWidth <= 0) return val;
+      while (val >= singleSetWidth) val -= singleSetWidth;
+      while (val < 0) val += singleSetWidth;
+      return val;
+    }
+
+    // Pointer Interaction (Mouse & Touch)
     function onPointerDown(e) {
       isDragging = true;
       hasMoved = false;
+      impulse = 0;
+      dragVelocity = 0;
       dragStartX = (e.touches && e.touches[0] ? e.touches[0].clientX : e.clientX) || 0;
-      dragStartOffset = scrollOffset;
-      lastX = dragStartX;
-      lastTime = performance.now();
-      velocity = 0;
+      dragStartOffset = currentOffset;
+      lastDragX = dragStartX;
+      lastDragTime = performance.now();
       container.style.cursor = 'grabbing';
     }
 
@@ -628,19 +649,19 @@
       const currentX = (e.touches && e.touches[0] ? e.touches[0].clientX : e.clientX) || 0;
       const deltaX = currentX - dragStartX;
 
-      if (Math.abs(deltaX) > 5) {
+      if (Math.abs(deltaX) > 6) {
         hasMoved = true;
       }
 
       const now = performance.now();
-      const dt = now - lastTime;
+      const dt = now - lastDragTime;
       if (dt > 0) {
-        velocity = -(currentX - lastX) / dt;
-        lastX = currentX;
-        lastTime = now;
+        dragVelocity = -(currentX - lastDragX) / dt;
+        lastDragX = currentX;
+        lastDragTime = now;
       }
 
-      scrollOffset = normalizeOffset(dragStartOffset - deltaX);
+      currentOffset = wrapOffset(dragStartOffset - deltaX);
       render();
     }
 
@@ -650,7 +671,7 @@
       container.style.cursor = 'grab';
     }
 
-    // Prevent navigation click when user was dragging
+    // Prevent navigation clicks if user dragged the cards
     container.addEventListener('click', function(e) {
       if (hasMoved) {
         e.preventDefault();
@@ -658,73 +679,88 @@
       }
     }, true);
 
-    // Mouse Events
+    // Mouse Listeners
     container.addEventListener('mousedown', onPointerDown);
     window.addEventListener('mousemove', onPointerMove);
     window.addEventListener('mouseup', onPointerUp);
 
-    // Touch Events
+    // Touch Listeners
     container.addEventListener('touchstart', onPointerDown, { passive: true });
     window.addEventListener('touchmove', onPointerMove, { passive: true });
     window.addEventListener('touchend', onPointerUp, { passive: true });
     window.addEventListener('touchcancel', onPointerUp, { passive: true });
 
-    // Hover detection (pauses auto-scroll so user can interact comfortably)
+    // Smooth Hover Ease
     container.addEventListener('mouseenter', () => { isHovered = true; });
     container.addEventListener('mouseleave', () => { isHovered = false; });
 
-    // Wheel horizontal scrolling
+    // Trackpad / Wheel Horizontal Scroll
     container.addEventListener('wheel', (e) => {
       const delta = e.deltaX !== 0 ? e.deltaX : e.deltaY;
-      scrollOffset = normalizeOffset(scrollOffset + delta * 0.75);
-      render();
+      impulse += delta * 0.8;
     }, { passive: true });
 
-    // 60fps animation loop
-    function loop(timestamp) {
-      if (!lastTimestamp) lastTimestamp = timestamp;
-      const dt = Math.min(timestamp - lastTimestamp, 50);
-      lastTimestamp = timestamp;
-
-      if (!isDragging) {
-        // Inertia release damping
-        if (Math.abs(velocity) > 0.01) {
-          scrollOffset = normalizeOffset(scrollOffset + velocity * dt);
-          velocity *= 0.94;
-        } else if (!isHovered) {
-          // Continuous left-to-right auto drift
-          scrollOffset = normalizeOffset(scrollOffset + baseSpeed * dt);
-        }
-        render();
-      }
-
-      requestAnimationFrame(loop);
-    }
-
-    // Prev / Next Navigation Buttons
+    // Gliding Navigation Buttons
     const prevBtn = document.querySelector('#equipment-prev-btn');
     const nextBtn = document.querySelector('#equipment-next-btn');
+    const cardStep = 374; // Standard card width (350px) + gap (24px)
+
     if (prevBtn) {
       prevBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        velocity = -0.6;
-        scrollOffset = normalizeOffset(scrollOffset - 320);
-        render();
+        impulse -= cardStep;
       });
     }
     if (nextBtn) {
       nextBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        velocity = 0.6;
-        scrollOffset = normalizeOffset(scrollOffset + 320);
-        render();
+        impulse += cardStep;
       });
     }
 
-    calculateWidths();
-    window.addEventListener('load', calculateWidths);
-    window.addEventListener('resize', calculateWidths);
-    requestAnimationFrame(loop);
+    // Main 60fps Render Loop
+    function animationLoop(timestamp) {
+      if (!lastTimestamp) lastTimestamp = timestamp;
+      const dt = Math.min(timestamp - lastTimestamp, 40); // Cap frame delta to prevent jumps
+      lastTimestamp = timestamp;
+
+      if (!isDragging) {
+        // Smooth hover transition
+        const targetSpeed = isHovered ? 0 : baseSpeed;
+        effectiveSpeed += (targetSpeed - effectiveSpeed) * 0.08;
+
+        // Apply impulse (glide for next/prev/wheel)
+        if (Math.abs(impulse) > 0.5) {
+          currentOffset += impulse * 0.12;
+          impulse *= 0.86;
+        } else {
+          impulse = 0;
+        }
+
+        // Apply drag inertia release
+        if (Math.abs(dragVelocity) > 0.01) {
+          currentOffset += dragVelocity * dt;
+          dragVelocity *= 0.92;
+        } else {
+          dragVelocity = 0;
+        }
+
+        // Continuous cruise speed
+        currentOffset += effectiveSpeed * dt;
+        currentOffset = wrapOffset(currentOffset);
+        render();
+      }
+
+      requestAnimationFrame(animationLoop);
+    }
+
+    updateWidths();
+    window.addEventListener('load', () => {
+      updateWidths();
+      setTimeout(updateWidths, 300);
+    });
+    window.addEventListener('resize', updateWidths);
+    requestAnimationFrame(animationLoop);
   }
 
 
