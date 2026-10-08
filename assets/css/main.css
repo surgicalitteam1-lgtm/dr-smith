@@ -1843,22 +1843,26 @@ section,
   }
 }
 
-.hero .hero-content h1 {
-  font-size: 38px;
+.hero h1,
+.hero .hero-title {
+  font-size: 40px;
   font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 20px;
+  line-height: 1.22;
+  margin-bottom: 18px;
+  color: var(--heading-color);
 }
 
-.hero .hero-content h1 span {
+.hero h1 span,
+.hero .hero-title span {
   color: var(--highlight-color, #5c99ee);
   position: relative;
 }
 
-.hero .hero-content h1 span::after {
+.hero h1 span::after,
+.hero .hero-title span::after {
   content: "";
   position: absolute;
-  bottom: -5px;
+  bottom: -4px;
   left: 0;
   width: 100%;
   height: 3px;
@@ -1867,23 +1871,36 @@ section,
   opacity: 0.8;
 }
 
-@media (max-width: 768px) {
-  .hero .hero-content h1 {
-    font-size: 30px;
+@media (max-width: 991px) {
+  .hero h1,
+  .hero .hero-title {
+    font-size: 32px;
   }
 }
 
 @media (max-width: 576px) {
-  .hero .hero-content h1 {
+  .hero h1,
+  .hero .hero-title {
     font-size: 25px;
   }
 }
 
+.hero-subtitle,
 .hero .hero-content p {
   font-size: 15.5px;
-  line-height: 1.6;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-  margin-bottom: 30px;
+  line-height: 1.65;
+  color: color-mix(in srgb, var(--default-color), transparent 15%);
+  margin-bottom: 24px;
+  max-width: 520px;
+}
+
+@media (max-width: 991px) {
+  .hero-subtitle,
+  .hero .hero-content p {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* Quick Trust Indicators */
@@ -1917,6 +1934,52 @@ section,
   color: #64748b;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+}
+
+/* Desktop-specific polish for PC View (min-width: 992px) */
+@media (min-width: 992px) {
+  .hero {
+    padding: 125px 0 60px 0;
+  }
+  .hero-left-col {
+    padding-right: clamp(15px, 2.5vw, 40px);
+  }
+  .hero-title {
+    font-size: clamp(36px, 3.2vw, 44px);
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  .hero-subtitle {
+    font-size: 16.5px;
+    line-height: 1.68;
+    margin-bottom: 28px;
+    max-width: 540px;
+  }
+  .hero-trust-indicators {
+    gap: 22px !important;
+    margin-bottom: 30px !important;
+  }
+  .hero-trust-indicators .trust-item:not(:last-child) {
+    padding-right: 22px;
+    border-right: 1.5px solid rgba(92, 153, 238, 0.25);
+  }
+  .hero-trust-indicators .trust-num {
+    font-size: 24px;
+  }
+  .hero-trust-indicators .trust-label {
+    font-size: 12px;
+  }
+  .hero-right-col .why-choose-wrapper {
+    padding-left: 10px;
+  }
+  .hero-right-col .why-choose-img {
+    max-width: 580px;
+  }
+  #equipment-showcase {
+    margin-top: 35px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(92, 153, 238, 0.18);
+  }
 }
 
 /* Integrated Hero Showcase Card Canvas */
@@ -2363,21 +2426,30 @@ section,
 --------------------------------------------------------------*/
 .why-choose-wrapper {
   width: 100%;
-  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
 }
 
 .why-choose-img {
-  max-width: 900px;
+  max-width: 530px;
   width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .why-choose-wrapper {
     margin-top: 15px;
   }
+  .why-choose-img {
+    max-width: 440px;
+  }
+}
+
+@media (max-width: 576px) {
   .why-choose-img {
     max-width: 100%;
   }
