@@ -1862,6 +1862,12 @@ section,
   white-space: nowrap;
 }
 
+@media (min-width: 992px) {
+  .btn-hero-whatsapp {
+    display: none !important;
+  }
+}
+
 .btn-hero-whatsapp i {
   font-size: 18px;
   line-height: 1;
