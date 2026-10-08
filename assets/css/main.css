@@ -150,61 +150,69 @@ h6 {
 }
 
 .header .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
   line-height: 1;
   text-decoration: none;
 }
 
 .header .logo img {
-  max-height: 56px;
+  max-height: 54px;
   width: auto;
   flex-shrink: 0;
-  margin-right: 12px;
-  transition: transform 0.2s ease;
+  margin-right: 0;
+  transition: transform 0.25s ease;
 }
 
 .header .logo:hover img {
-  transform: scale(1.02);
+  transform: scale(1.03);
 }
 
 .header .logo .logo-brand {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 2px;
 }
 
 .header .logo h1,
 .header .logo .sitename {
-  font-size: 23px;
+  font-size: 24px;
   margin: 0;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--heading-color);
-  line-height: 1.15;
-  letter-spacing: 0.3px;
+  line-height: 1.1;
+  letter-spacing: -0.2px;
 }
 
 .header .logo .logo-slogan {
-  font-size: 9px;
+  font-size: 9.5px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 1.3px;
+  letter-spacing: 1.4px;
   color: var(--accent-color);
-  margin-top: 3px;
-  line-height: 1;
+  margin-top: 2px;
+  line-height: 1.2;
   font-family: var(--nav-font);
   white-space: nowrap;
 }
 
 @media (max-width: 576px) {
+  .header .logo {
+    gap: 9px;
+  }
   .header .logo img {
-    max-height: 48px;
+    max-height: 44px;
   }
   .header .logo h1,
   .header .logo .sitename {
-    font-size: 20px;
+    font-size: 19px;
   }
   .header .logo .logo-slogan {
     font-size: 8px;
     letter-spacing: 0.8px;
+    margin-top: 1px;
   }
 }
 
@@ -221,8 +229,8 @@ body.scrolled .header {
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
-/* Desktop & Tablet Navigation (768px and up) */
-@media (min-width: 768px) {
+/* Desktop Navigation (1200px and up) */
+@media (min-width: 1200px) {
   .mobile-nav-toggle {
     display: none !important;
   }
@@ -349,111 +357,8 @@ body.scrolled .header {
   }
 }
 
-/* Specific Tablet adjustments to fit all nav items and WhatsApp icon cleanly */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  #header .container-fluid,
-  #header .container-xl {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-    flex-wrap: nowrap !important;
-  }
-  .header .logo {
-    gap: 6px;
-    flex-shrink: 0;
-  }
-  .header .logo img {
-    width: 38px;
-    height: 40px;
-  }
-  .header .logo h1 {
-    font-size: 16px;
-    margin: 0;
-  }
-  .header .logo .logo-slogan {
-    display: none;
-  }
-  .navmenu {
-    flex-shrink: 0;
-  }
-  .navmenu ul {
-    gap: 1px !important;
-    flex-wrap: nowrap !important;
-  }
-  .navmenu ul li {
-    flex-shrink: 0;
-  }
-  .navmenu a,
-  .navmenu a:focus {
-    font-size: 11px;
-    padding: 5px 6px;
-    letter-spacing: -0.2px;
-  }
-  .navmenu .nav-whatsapp-btn,
-  .navmenu ul li:last-child a.nav-whatsapp-btn {
-    padding: 4px 6px !important;
-    margin-left: 2px !important;
-    display: inline-flex !important;
-    flex-shrink: 0 !important;
-  }
-  .navmenu .nav-whatsapp-btn i,
-  .navmenu ul li:last-child a.nav-whatsapp-btn i {
-    font-size: 20px !important;
-    color: #25D366 !important;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  #header .container-fluid,
-  #header .container-xl {
-    padding-left: 14px !important;
-    padding-right: 14px !important;
-    flex-wrap: nowrap !important;
-  }
-  .header .logo {
-    flex-shrink: 0;
-  }
-  .header .logo img {
-    width: 48px;
-    height: 50px;
-  }
-  .header .logo h1 {
-    font-size: 18px;
-  }
-  .header .logo .logo-slogan {
-    font-size: 7.5px;
-  }
-  .navmenu {
-    flex-shrink: 0;
-  }
-  .navmenu ul {
-    gap: 3px !important;
-    flex-wrap: nowrap !important;
-  }
-  .navmenu ul li {
-    flex-shrink: 0;
-  }
-  .navmenu a,
-  .navmenu a:focus {
-    font-size: 12.5px;
-    padding: 6px 8px;
-  }
-  .navmenu .nav-whatsapp-btn,
-  .navmenu ul li:last-child a.nav-whatsapp-btn {
-    padding: 5px 8px !important;
-    margin-left: 4px !important;
-    display: inline-flex !important;
-    flex-shrink: 0 !important;
-  }
-  .navmenu .nav-whatsapp-btn i,
-  .navmenu ul li:last-child a.nav-whatsapp-btn i {
-    font-size: 22px !important;
-    color: #25D366 !important;
-  }
-}
-
-/* Mobile Navigation (under 768px) */
-/* Mobile Navigation (under 768px) */
-@media (max-width: 767.98px) {
+/* Mobile & Tablet Navigation (under 1200px - all phones portrait/landscape and tablets) */
+@media (max-width: 1199.98px) {
   #header.header {
     padding: 10px 0 !important;
   }
@@ -473,13 +378,13 @@ body.scrolled .header {
   .header .logo {
     display: flex !important;
     align-items: center !important;
-    gap: 8px !important;
-    max-width: calc(100% - 105px) !important;
+    gap: 10px !important;
+    max-width: calc(100% - 70px) !important;
     flex-shrink: 1 !important;
   }
 
   .header .logo img {
-    max-height: 42px !important;
+    max-height: 44px !important;
     width: auto !important;
     margin-right: 0 !important;
     flex-shrink: 0 !important;
@@ -487,16 +392,19 @@ body.scrolled .header {
 
   .header .logo h1,
   .header .logo .sitename {
-    font-size: 18px !important;
-    line-height: 1.15 !important;
+    font-size: 19px !important;
+    font-weight: 800 !important;
+    line-height: 1.1 !important;
     white-space: nowrap !important;
     overflow: hidden !important;
     text-overflow: ellipsis !important;
   }
 
   .header .logo .logo-slogan {
-    font-size: 7.5px !important;
-    letter-spacing: 0.6px !important;
+    font-size: 8px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.9px !important;
+    margin-top: 2px !important;
     display: block !important;
   }
 
