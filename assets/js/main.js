@@ -667,6 +667,26 @@
       requestAnimationFrame(loop);
     }
 
+    // Prev / Next Navigation Buttons
+    const prevBtn = document.querySelector('#equipment-prev-btn');
+    const nextBtn = document.querySelector('#equipment-next-btn');
+    if (prevBtn) {
+      prevBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        velocity = -0.6;
+        scrollOffset = normalizeOffset(scrollOffset - 320);
+        render();
+      });
+    }
+    if (nextBtn) {
+      nextBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        velocity = 0.6;
+        scrollOffset = normalizeOffset(scrollOffset + 320);
+        render();
+      });
+    }
+
     calculateWidths();
     window.addEventListener('load', calculateWidths);
     window.addEventListener('resize', calculateWidths);

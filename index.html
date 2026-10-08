@@ -24,7 +24,7 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/css/main.css?v=7.8" rel="stylesheet">
+  <link href="assets/css/main.css?v=8.0" rel="stylesheet">
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
@@ -66,9 +66,13 @@
     <section id="hero" class="hero section">
 
       <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center gy-4">
           <div class="col-lg-6">
             <div class="hero-content">
+              <div class="hero-badge mb-3 d-inline-flex align-items-center gap-2">
+                <i class="bi bi-patch-check-fill"></i>
+                <span>Certified Healthcare Manufacturer &amp; Exporter</span>
+              </div>
               <h1>Dr. Smith <span>Medical Equipment &amp; Hospital Solutions</span></h1>
               <p>Empowering modern healthcare with 60+ years of trusted excellence. We manufacture and supply certified
                 hospital furniture, advanced medical devices, and complete turnkey hospital infrastructure worldwide.</p>
@@ -85,11 +89,28 @@
                   </a>
                 </div>
               </div>
+
+              <!-- Quick Trust Indicators -->
+              <div class="hero-trust-indicators mt-4 pt-3 d-flex align-items-center gap-4 border-top">
+                <div class="trust-item">
+                  <span class="trust-num">60+</span>
+                  <span class="trust-label">Years Heritage</span>
+                </div>
+                <div class="trust-item">
+                  <span class="trust-num">500+</span>
+                  <span class="trust-label">Turnkey Projects</span>
+                </div>
+                <div class="trust-item">
+                  <span class="trust-num">100%</span>
+                  <span class="trust-label">ISO &amp; CE Certified</span>
+                </div>
+              </div>
             </div>
           </div>
+
           <div class="col-lg-6">
-            <div class="hero-image">
-              <img src="assets/img/illustration/illustration-28.webp" class="img-fluid floating" alt="Dr. Smith">
+            <div class="hero-image text-center">
+              <img src="assets/img/illustration/illustration-28.webp" class="img-fluid floating" alt="Dr. Smith Medical Equipment & Hospital Solutions">
             </div>
           </div>
         </div>
@@ -97,101 +118,33 @@
 
     </section><!-- /Hero Section -->
 
-    <!-- Product Hero Full-Scale Showcase Slider (Under Hero Content) -->
-    <section id="product-hero-showcase" class="product-hero-showcase">
-      <div class="product-hero-container">
-        <div class="swiper init-swiper product-hero-slider">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 800,
-              "autoplay": {
-                "delay": 4500,
-                "disableOnInteraction": false
-              },
-              "slidesPerView": 1,
-              "effect": "fade",
-              "fadeEffect": {
-                "crossFade": true
-              },
-              "pagination": {
-                "el": ".product-hero-pagination",
-                "clickable": true
-              },
-              "navigation": {
-                "nextEl": ".product-hero-next",
-                "prevEl": ".product-hero-prev"
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-            <div class="swiper-slide product-hero-slide">
-              <div class="product-hero-slide-inner">
-                <img src="assets/img/hero-slides/1.jpg" onerror="this.onerror=null; this.src='main web products preview/1.jpg';" alt="Dr. Smith Medical Product Showcase 1" class="product-hero-img" loading="eager">
-              </div>
-            </div>
-            <div class="swiper-slide product-hero-slide">
-              <div class="product-hero-slide-inner">
-                <img src="assets/img/hero-slides/2.png" onerror="this.onerror=null; this.src='main web products preview/2.png';" alt="Dr. Smith Medical Product Showcase 2" class="product-hero-img" loading="lazy">
-              </div>
-            </div>
-            <div class="swiper-slide product-hero-slide">
-              <div class="product-hero-slide-inner">
-                <img src="assets/img/hero-slides/3.png" onerror="this.onerror=null; this.src='main web products preview/3.png';" alt="Dr. Smith Medical Product Showcase 3" class="product-hero-img" loading="lazy">
-              </div>
-            </div>
-            <div class="swiper-slide product-hero-slide">
-              <div class="product-hero-slide-inner">
-                <img src="assets/img/hero-slides/4.png" onerror="this.onerror=null; this.src='main web products preview/4.png';" alt="Dr. Smith Medical Product Showcase 4" class="product-hero-img" loading="lazy">
-              </div>
-            </div>
-            <div class="swiper-slide product-hero-slide">
-              <div class="product-hero-slide-inner">
-                <img src="assets/img/hero-slides/5.png" onerror="this.onerror=null; this.src='main web products preview/5.png';" alt="Dr. Smith Medical Product Showcase 5" class="product-hero-img" loading="lazy">
-              </div>
-            </div>
-          </div>
-
-          <!-- Glass Navigation Arrows -->
-          <div class="product-hero-nav-btn product-hero-prev" aria-label="Previous Slide">
-            <i class="bi bi-chevron-left"></i>
-          </div>
-          <div class="product-hero-nav-btn product-hero-next" aria-label="Next Slide">
-            <i class="bi bi-chevron-right"></i>
-          </div>
-
-          <!-- Apple Style Pagination Bullets -->
-          <div class="swiper-pagination product-hero-pagination"></div>
-        </div>
-      </div>
-    </section><!-- /Product Hero Showcase -->
-
-    <!-- Featured Equipment Showcase Section -->
+    <!-- Unified Featured Medical Equipment & Product Showcase Section -->
     <section id="equipment-showcase" class="equipment-showcase section">
       <div class="container section-header d-flex flex-wrap align-items-end justify-content-between mb-4">
         <div>
           <span class="equipment-badge"><i class="bi bi-shield-check me-1"></i> Certified Healthcare Products</span>
-          <!-- <h2 class="equipment-title">Featured Medical Equipment &amp; Solutions</h2> -->
-          <!-- <p class="equipment-subtitle mb-0">High-precision diagnostic systems, surgical infrastructure, critical care units &amp; certified hospital furniture.</p> -->
+          <h2 class="equipment-title">Featured Medical Equipment &amp; Solutions</h2>
+          <p class="equipment-subtitle mb-0">High-precision diagnostic systems, surgical infrastructure, critical care units &amp; certified hospital furniture.</p>
         </div>
         <div class="equipment-nav-actions d-none d-md-flex align-items-center gap-2">
-          <a href="catalogue/index.html" class="btn-view-all-equipment">View All Equipment <i class="bi bi-arrow-right"></i></a>
+          <button type="button" class="equipment-nav-btn equipment-prev-btn" id="equipment-prev-btn" aria-label="Scroll Left"><i class="bi bi-chevron-left"></i></button>
+          <button type="button" class="equipment-nav-btn equipment-next-btn" id="equipment-next-btn" aria-label="Scroll Right"><i class="bi bi-chevron-right"></i></button>
+          <a href="catalogue/index.html" class="btn-view-all-equipment ms-2">View All Equipment <i class="bi bi-arrow-right"></i></a>
         </div>
       </div>
 
       <div class="equipment-carousel-wrapper" id="equipment-carousel">
         <div class="equipment-track">
 
-          <!-- Equipment 1 -->
+          <!-- Equipment 1 (High-Res Studio Lead) -->
           <a href="catalogue/modular-ot/index.html" class="equipment-card">
             <div class="equipment-visual">
-              <img src="catalogue/img/banner 1.jpg" alt="Modular Operation Theatres" class="equipment-img" loading="lazy" onerror="this.style.display='none';">
-              <span class="equipment-emoji" aria-hidden="true">🏥</span>
+              <img src="assets/img/hero-slides/1.jpg" onerror="this.onerror=null; this.src='main web products preview/1.jpg';" alt="Modular Operation Theatres" class="equipment-img" loading="eager">
               <span class="equipment-tag">OT Solutions</span>
             </div>
             <div class="equipment-body">
               <h3 class="equipment-name">Modular Operation Theatres</h3>
-              <p class="equipment-desc">Laminar airflow surgical suites with antimicrobial wall panels.</p>
+              <p class="equipment-desc">Laminar airflow surgical suites with antimicrobial wall panels &amp; integrated surgical infrastructure.</p>
               <div class="equipment-footer">
                 <span class="equipment-link-text">View Details</span>
                 <i class="bi bi-arrow-right equipment-arrow"></i>
@@ -199,11 +152,10 @@
             </div>
           </a>
 
-          <!-- Equipment 2 -->
+          <!-- Equipment 2 (High-Res Studio Lead) -->
           <a href="catalogue/anesthesia-workstation/index.html" class="equipment-card">
             <div class="equipment-visual">
-              <img src="catalogue/img/products/anaesthesia-workstation.jpg" alt="Anesthesia Workstations" class="equipment-img" loading="lazy" onerror="this.style.display='none';">
-              <span class="equipment-emoji" aria-hidden="true">🫁</span>
+              <img src="assets/img/hero-slides/2.png" onerror="this.onerror=null; this.src='main web products preview/2.png';" alt="Critical Care & Anesthesia Workstations" class="equipment-img" loading="lazy">
               <span class="equipment-tag">Critical Care</span>
             </div>
             <div class="equipment-body">
@@ -216,12 +168,43 @@
             </div>
           </a>
 
-          <!-- Equipment 3 -->
+          <!-- Equipment 3 (High-Res Studio Lead) -->
+          <a href="catalogue/ot-tables/index.html" class="equipment-card">
+            <div class="equipment-visual">
+              <img src="assets/img/hero-slides/3.png" onerror="this.onerror=null; this.src='main web products preview/3.png';" alt="Electro-Hydraulic OT Tables" class="equipment-img" loading="lazy">
+              <span class="equipment-tag">Surgical Systems</span>
+            </div>
+            <div class="equipment-body">
+              <h3 class="equipment-name">Electro-Hydraulic OT Tables</h3>
+              <p class="equipment-desc">Multi-position motorized operating tables engineered for diverse surgical specialties.</p>
+              <div class="equipment-footer">
+                <span class="equipment-link-text">View Details</span>
+                <i class="bi bi-arrow-right equipment-arrow"></i>
+              </div>
+            </div>
+          </a>
+
+          <!-- Equipment 4 (High-Res Studio Lead) -->
+          <a href="catalogue/beds/index.html" class="equipment-card">
+            <div class="equipment-visual">
+              <img src="assets/img/hero-slides/4.png" onerror="this.onerror=null; this.src='main web products preview/4.png';" alt="Advanced Hospital Furniture & ICU Beds" class="equipment-img" loading="lazy">
+              <span class="equipment-tag">Hospital Furniture</span>
+            </div>
+            <div class="equipment-body">
+              <h3 class="equipment-name">Motorized ICU &amp; Ward Beds</h3>
+              <p class="equipment-desc">Full electric multi-position patient beds with nurse control panels &amp; cardiac chair positioning.</p>
+              <div class="equipment-footer">
+                <span class="equipment-link-text">View Details</span>
+                <i class="bi bi-arrow-right equipment-arrow"></i>
+              </div>
+            </div>
+          </a>
+
+          <!-- Equipment 5 (High-Res Studio Lead) -->
           <a href="catalogue/ventilators/index.html" class="equipment-card">
             <div class="equipment-visual">
-              <img src="catalogue/img/products/oxygen-concentrator.jpg" alt="ICU Ventilator Systems" class="equipment-img" loading="lazy" onerror="this.style.display='none';">
-              <span class="equipment-emoji" aria-hidden="true">💨</span>
-              <span class="equipment-tag">Critical Care</span>
+              <img src="assets/img/hero-slides/5.png" onerror="this.onerror=null; this.src='main web products preview/5.png';" alt="ICU Ventilator & Critical Care Systems" class="equipment-img" loading="lazy">
+              <span class="equipment-tag">Emergency &amp; ICU</span>
             </div>
             <div class="equipment-body">
               <h3 class="equipment-name">ICU Ventilator Systems</h3>
@@ -243,23 +226,6 @@
             <div class="equipment-body">
               <h3 class="equipment-name">LED Surgical OT Lights</h3>
               <p class="equipment-desc">Shadowless ceiling &amp; mobile luminaires with high CRI output.</p>
-              <div class="equipment-footer">
-                <span class="equipment-link-text">View Details</span>
-                <i class="bi bi-arrow-right equipment-arrow"></i>
-              </div>
-            </div>
-          </a>
-
-          <!-- Equipment 5 -->
-          <a href="catalogue/ot-tables/index.html" class="equipment-card">
-            <div class="equipment-visual">
-              <img src="catalogue/img/products/operating-table.jpg" alt="Electro-Hydraulic OT Tables" class="equipment-img" loading="lazy" onerror="this.style.display='none';">
-              <span class="equipment-emoji" aria-hidden="true">🔬</span>
-              <span class="equipment-tag">Surgical</span>
-            </div>
-            <div class="equipment-body">
-              <h3 class="equipment-name">Electro-Hydraulic OT Tables</h3>
-              <p class="equipment-desc">Multi-position operating tables engineered for diverse surgical specialties.</p>
               <div class="equipment-footer">
                 <span class="equipment-link-text">View Details</span>
                 <i class="bi bi-arrow-right equipment-arrow"></i>
@@ -379,23 +345,6 @@
             <div class="equipment-body">
               <h3 class="equipment-name">Steam Autoclaves &amp; CSSD</h3>
               <p class="equipment-desc">High-pressure automated vacuum steam sterilizers for surgical instrument reprocessing.</p>
-              <div class="equipment-footer">
-                <span class="equipment-link-text">View Details</span>
-                <i class="bi bi-arrow-right equipment-arrow"></i>
-              </div>
-            </div>
-          </a>
-
-          <!-- Equipment 13 -->
-          <a href="catalogue/beds/index.html" class="equipment-card">
-            <div class="equipment-visual">
-              <img src="catalogue/img/products/five-function-icu-bed.jpg" alt="5-Function Motorized ICU Beds" class="equipment-img" loading="lazy" onerror="this.style.display='none';">
-              <span class="equipment-emoji" aria-hidden="true">🛏️</span>
-              <span class="equipment-tag">Hospital Furniture</span>
-            </div>
-            <div class="equipment-body">
-              <h3 class="equipment-name">5-Function Motorized ICU Beds</h3>
-              <p class="equipment-desc">Full electric multi-position patient beds with nurse control &amp; cardiac chair.</p>
               <div class="equipment-footer">
                 <span class="equipment-link-text">View Details</span>
                 <i class="bi bi-arrow-right equipment-arrow"></i>
@@ -1180,7 +1129,7 @@
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js?v=3.9"></script>
+  <script src="assets/js/main.js?v=4.0"></script>
 
 </body>
 
