@@ -2015,14 +2015,33 @@ section,
     margin-bottom: 12px;
     padding: 0 4px;
   }
+}
+
+/* Elegant Gradient Shaded Blue Divider (All Devices) */
+.hero-clients-divider {
+  display: block;
+  width: 100%;
+  max-width: 1140px;
+  height: 2px;
+  margin: 15px auto 0 auto;
+  background: linear-gradient(90deg, transparent 0%, rgba(92, 153, 238, 0.18) 15%, rgba(92, 153, 238, 0.85) 50%, rgba(92, 153, 238, 0.18) 85%, transparent 100%);
+  border-radius: 999px;
+}
+
+@media (max-width: 991px) {
   .hero-clients-divider {
-    display: block;
-    width: 100%;
-    max-width: 1140px;
-    height: 2px;
-    margin: 15px auto 0 auto;
-    background: linear-gradient(90deg, transparent 0%, rgba(92, 153, 238, 0.18) 15%, rgba(92, 153, 238, 0.85) 50%, rgba(92, 153, 238, 0.18) 85%, transparent 100%);
-    border-radius: 999px;
+    max-width: 92%;
+    height: 1.5px;
+    margin: 12px auto 0 auto;
+    background: linear-gradient(90deg, transparent 0%, rgba(92, 153, 238, 0.22) 12%, rgba(92, 153, 238, 0.8) 50%, rgba(92, 153, 238, 0.22) 88%, transparent 100%);
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-clients-divider {
+    max-width: 88%;
+    height: 1.5px;
+    margin: 8px auto 0 auto;
   }
 }
 
