@@ -1651,7 +1651,7 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   .apple-nav-actions {
     gap: 10px;
     margin-left: auto;
-    margin-right: 22px !important;
+    margin-right: 6px !important;
     flex-shrink: 0;
   }
   .apple-nav-circle-btn {
@@ -1715,7 +1715,7 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   }
   .apple-nav-actions {
     gap: 8px;
-    margin-right: 20px !important;
+    margin-right: 4px !important;
   }
   .apple-nav-circle-btn {
     width: 42px !important;
@@ -1752,7 +1752,7 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   }
   .apple-nav-actions {
     gap: 6px;
-    margin-right: 16px !important;
+    margin-right: 2px !important;
   }
   .apple-nav-circle-btn {
     width: 38px !important;
