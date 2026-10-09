@@ -535,6 +535,20 @@ body.apple-mobile-menu-open {
   z-index: 2;
 }
 
+.apple-hero-img {
+  max-width: 100%;
+  width: 100%;
+  max-height: 460px;
+  object-fit: cover;
+  border-radius: 24px;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.22);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.apple-hero-unit:hover .apple-hero-img {
+  transform: scale(1.015);
+}
+
 .apple-promo-media {
   margin-top: auto;
   width: 100%;
@@ -545,15 +559,16 @@ body.apple-mobile-menu-open {
 }
 
 .apple-promo-img {
-  max-width: 90%;
-  max-height: 280px;
-  object-fit: contain;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.12));
 }
 
 .apple-promo-card:hover .apple-promo-img {
-  transform: translateY(-6px) scale(1.03);
+  transform: translateY(-4px) scale(1.02);
 }
 
 /* ============================================================
