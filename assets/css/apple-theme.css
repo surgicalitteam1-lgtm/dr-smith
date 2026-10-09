@@ -1676,14 +1676,14 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
     max-width: calc(100vw - 28px) !important;
   }
   
-  /* Compact Hero for Tablet & Mobile (50% balanced clearance) */
+  /* Compact Hero for Tablet & Mobile (Refined Clearance) */
   .hero-split-section {
-    padding-top: 91px !important;
+    padding-top: 88px !important;
     padding-bottom: 40px !important;
   }
   .subpage-hero-section,
   .catalogue-hero {
-    padding-top: 92px !important;
+    padding-top: 90px !important;
   }
   .hero-left-col {
     margin-top: 0 !important;
@@ -1772,14 +1772,14 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
     max-width: calc(100vw - 20px) !important;
   }
   
-  /* Compact Hero for Mobile Screens (50% balanced clearance) */
+  /* Compact Hero for Mobile Screens (Refined Clearance) */
   .hero-split-section {
-    padding-top: 86px !important;
+    padding-top: 84px !important;
     padding-bottom: 28px !important;
   }
   .subpage-hero-section,
   .catalogue-hero {
-    padding-top: 88px !important;
+    padding-top: 86px !important;
   }
   .hero-left-col {
     margin-top: 0 !important;
