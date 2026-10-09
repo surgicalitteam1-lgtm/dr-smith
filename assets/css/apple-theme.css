@@ -95,7 +95,7 @@ body.apple-body {
   height: 36px;
   object-fit: contain;
   display: block;
-  filter: drop-shadow(0 0 10px rgba(0, 163, 255, 0.7));
+  filter: none;
 }
 
 .apple-nav-brand-text {
@@ -158,7 +158,7 @@ body.apple-body {
   height: 2px;
   background: #00A3FF;
   border-radius: 2px;
-  box-shadow: 0 0 10px rgba(0, 163, 255, 0.9);
+  box-shadow: none;
 }
 
 .apple-nav-actions {
@@ -187,7 +187,7 @@ body.apple-body {
   background: rgba(0, 163, 255, 0.2);
   border-color: #00A3FF;
   color: #ffffff;
-  box-shadow: 0 0 14px rgba(0, 163, 255, 0.5);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   transform: scale(1.05);
 }
 
@@ -221,7 +221,7 @@ body.apple-body {
   visibility: hidden;
   transform: translateY(-10px);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.8), 0 0 30px rgba(0, 163, 255, 0.15);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.85);
 }
 
 body.apple-mobile-menu-open .apple-mobile-drawer {
@@ -245,7 +245,7 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   text-decoration: none;
   font-size: 15px;
   font-weight: 500;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: none !important;
 }
 
 .apple-mobile-cta-box {
@@ -273,11 +273,8 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   position: relative;
   padding-top: 130px;
   padding-bottom: 80px;
-  background: 
-    radial-gradient(ellipse 75% 60% at 78% 22%, rgba(0, 163, 255, 0.15) 0%, rgba(3, 7, 18, 0) 70%),
-    radial-gradient(ellipse 50% 50% at 18% 18%, rgba(0, 113, 227, 0.1) 0%, rgba(3, 7, 18, 0) 65%),
-    linear-gradient(180deg, #030712 0%, #061126 42%, #040918 80%, #030712 100%);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background: #030712;
+  border-bottom: none !important;
   overflow: hidden;
 }
 
@@ -293,7 +290,7 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   padding: 6px 16px;
   border-radius: 980px;
   margin-bottom: 22px;
-  box-shadow: 0 0 14px rgba(0, 163, 255, 0.15);
+  box-shadow: none;
 }
 
 .hero-final-title {
@@ -328,14 +325,14 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   padding: 13px 28px;
   border-radius: 980px;
   text-decoration: none;
-  box-shadow: 0 4px 22px rgba(0, 163, 255, 0.45);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
   transition: all 0.25s ease;
   border: none;
 }
 
 .btn-hero-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(0, 163, 255, 0.7);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
   color: #ffffff !important;
 }
 
@@ -387,7 +384,7 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   position: relative;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8), 0 0 30px rgba(0, 163, 255, 0.15);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.85);
   border: 1px solid rgba(0, 163, 255, 0.25);
 }
 
@@ -403,7 +400,7 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
 .featured-products-section {
   padding: 70px 0;
   background: #030712;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: none !important;
 }
 
 .featured-section-title {
@@ -438,7 +435,7 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   background: rgba(0, 163, 255, 0.15);
   border-color: #00A3FF;
   color: #ffffff;
-  box-shadow: 0 0 16px rgba(0, 163, 255, 0.3);
+  box-shadow: none;
 }
 
 .featured-carousel-wrapper {
@@ -469,7 +466,7 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   background: #00A3FF;
   color: #ffffff;
   border-color: #00A3FF;
-  box-shadow: 0 0 18px rgba(0, 163, 255, 0.7);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
   transform: scale(1.08);
 }
 
@@ -488,7 +485,7 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
 
 .product-white-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 45px rgba(0, 163, 255, 0.3);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5);
 }
 
 .product-img-box {
@@ -569,14 +566,14 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   width: 24px;
   border-radius: 980px;
   background: #00A3FF;
-  box-shadow: 0 0 12px rgba(0, 163, 255, 0.8);
+  box-shadow: none;
 }
 
 /* 4. WHY CHOOSE US */
 .why-choose-section {
   padding: 70px 0;
-  background: radial-gradient(circle at 50% 50%, #061122 0%, #030712 80%);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background: #030712;
+  border-bottom: none !important;
 }
 
 .why-eyebrow-line {
@@ -628,7 +625,7 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   justify-content: center;
   font-size: 24px;
   color: #00A3FF;
-  box-shadow: 0 0 20px rgba(0, 163, 255, 0.2);
+  box-shadow: none;
   transition: all 0.3s ease;
   margin-bottom: 16px;
 }
@@ -636,7 +633,7 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
 .why-feature-box:hover .why-icon-circle {
   transform: scale(1.1);
   background: rgba(0, 163, 255, 0.2);
-  box-shadow: 0 0 30px rgba(0, 163, 255, 0.45);
+  box-shadow: none;
 }
 
 .why-box-title {
@@ -657,7 +654,7 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
 .about-overview-section {
   padding: 70px 0;
   background: #030712;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: none !important;
 }
 
 .about-video-box {
@@ -665,7 +662,7 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   border-radius: 20px;
   overflow: hidden;
   height: 250px;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(0, 163, 255, 0.2);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7);
 }
 
 .about-video-box img {
@@ -690,7 +687,7 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   justify-content: center;
   color: #ffffff;
   font-size: 22px;
-  box-shadow: 0 0 30px rgba(0, 163, 255, 0.8);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
   cursor: pointer;
   transition: all 0.25s ease;
   text-decoration: none;
@@ -738,13 +735,13 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   padding: 9px 22px;
   border-radius: 980px;
   text-decoration: none;
-  box-shadow: 0 4px 16px rgba(0, 163, 255, 0.35);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
   transition: all 0.25s ease;
 }
 
 .btn-cyan-pill:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(0, 163, 255, 0.6);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
   color: #ffffff !important;
 }
 
@@ -814,7 +811,7 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.8), 0 0 30px rgba(0, 163, 255, 0.15);
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.85);
 }
 
 .cta-icon-box {
@@ -829,7 +826,7 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  box-shadow: 0 0 16px rgba(0, 163, 255, 0.25);
+  box-shadow: none;
 }
 
 .cta-glass-title {
@@ -875,7 +872,7 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   border: 1px solid rgba(0, 163, 255, 0.3);
   border-radius: 24px;
   padding: 32px;
-  box-shadow: 0 32px 64px rgba(0, 0, 0, 0.6), 0 0 40px rgba(0, 163, 255, 0.2);
+  box-shadow: 0 32px 64px rgba(0, 0, 0, 0.8);
   z-index: 10001;
   opacity: 0;
   visibility: hidden;
@@ -944,7 +941,7 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
 .apple-drawer-form input:focus,
 .apple-drawer-form textarea:focus {
   border-color: #00A3FF;
-  box-shadow: 0 0 10px rgba(0, 163, 255, 0.3);
+  box-shadow: none;
 }
 
 .apple-btn-pill {
@@ -960,14 +957,14 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   border-radius: 980px;
   text-decoration: none;
   border: none;
-  box-shadow: 0 4px 18px rgba(0, 163, 255, 0.4);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
   cursor: pointer;
   transition: all 0.25s ease;
 }
 
 .apple-btn-pill:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(0, 163, 255, 0.6);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
 }
 
 /* RESPONSIVE MEDIA QUERIES */
@@ -1034,5 +1031,43 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   .hero-trust-chip {
     font-size: 11.5px;
     padding: 6px 12px;
+  }
+}
+
+
+/* Dedicated Mobile Zero-Line Override */
+@media (max-width: 991px) {
+  .apple-globalnav,
+  .apple-globalnav-inner,
+  .hero-split-section,
+  .featured-products-section,
+  .why-choose-section,
+  .about-overview-section,
+  .cta-banner-section {
+    border: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .apple-globalnav {
+    height: 56px;
+    border: none !important;
+    border-bottom: none !important;
+  }
+  .apple-globalnav-inner {
+    height: 56px;
+    padding: 0 12px;
+    border: none !important;
+    border-bottom: none !important;
+  }
+  .hero-split-section {
+    padding-top: 76px !important;
+    padding-bottom: 30px !important;
+    border: none !important;
+    border-bottom: none !important;
   }
 }
