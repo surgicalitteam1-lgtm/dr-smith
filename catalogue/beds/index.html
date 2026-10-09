@@ -1,19 +1,19 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Browse Dr. Smith's Hospital Beds range for hospitals, ICUs and clinics.">
-    <meta name="theme-color" content="#eaf4ff">
-    <title>Hospital Beds | Dr. Smith Catalogue</title>
+    <meta name="description" content="Browse Dr. Smith's full Hospital Beds range: 7-function & 5-function electric ICU beds, motorized Fowler beds, manual crank beds, ward beds and pediatric cribs.">
+    <meta name="theme-color" content="#fff7ed">
+    <title>Hospital Beds &amp; ICU Beds | Dr. Smith Catalogue</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="../../assets/css/main.css" rel="stylesheet">
+    <link href="../../assets/css/main.css?v=12.8" rel="stylesheet">
     <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
     <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
 
@@ -38,13 +38,15 @@
                     <i class="bi bi-chevron-right"></i>
                     <a href="../index.html#catalogue">Catalogue</a>
                     <i class="bi bi-chevron-right"></i>
+                    <a href="../furniture/index.html">Hospital Furniture</a>
+                    <i class="bi bi-chevron-right"></i>
                     <span aria-current="page">Hospital Beds</span>
                 </nav>
                 <div class="row align-items-center">
                     <div class="col-lg-9">
-                        <span class="catalogue-eyebrow">Hospital furniture</span>
-                        <h1>Hospital Beds</h1>
-                        <p>Manual, electric and multi-functional ICU hospital beds, Fowler beds, semi-Fowler beds, paediatric beds and neonatal bassinets.</p>
+                        <span class="catalogue-eyebrow">Healthcare Infrastructure &amp; Clinical Furniture</span>
+                        <h1>Hospital Beds &amp; ICU Beds</h1>
+                        <p>Complete manufacturing lineup of 7-function &amp; 5-function motorized electric ICU beds, multi-position Fowler beds, semi-Fowler ward beds, plain patient beds, and pediatric cribs.</p>
                         <a class="catalogue-button catalogue-button--ghost" href="../index.html#catalogue">
                             <i class="bi bi-arrow-left"></i> Back to full catalogue
                         </a>
@@ -56,16 +58,16 @@
         <section class="catalogue-section">
             <div class="container">
                 <header class="catalogue-heading">
-                    <span class="catalogue-eyebrow">Our range</span>
-                    <h2>Browse Hospital Beds</h2>
-                    <p>Manual, electric and multi-functional ICU hospital beds, Fowler beds, semi-Fowler beds, paediatric beds and neonatal bassinets.</p>
+                    <span class="catalogue-eyebrow">Complete Lineup</span>
+                    <h2>Browse All Hospital Beds</h2>
+                    <p>Engineered for high-dependency ICUs, recovery rooms, general wards, and private patient suites with ISO &amp; CE quality standards.</p>
                 </header>
-                <p class="catalogue-count">Showing <strong>13</strong> products</p>
+                <p class="catalogue-count">Showing <strong>21</strong> products</p>
 
                 <div class="category-search-wrapper mb-4" style="max-width: 500px;">
                     <div class="input-group">
                         <span class="input-group-text bg-white border-end-0"><i class="bi bi-search text-muted"></i></span>
-                        <input type="text" id="categoryProductSearch" class="form-control border-start-0 ps-0" placeholder="Filter hospital beds..." aria-label="Filter products">
+                        <input type="text" id="categoryProductSearch" class="form-control border-start-0 ps-0" placeholder="Filter beds by name, function, electric/manual..." aria-label="Filter products">
                     </div>
                 </div>
                 <script>
@@ -77,9 +79,10 @@
                             var items = document.querySelectorAll('.catalogue-grid-item');
                             var count = 0;
                             items.forEach(function(item) {
-                                var title = item.getAttribute('data-title') || '';
-                                var badge = item.getAttribute('data-badge') || '';
-                                if (!query || title.includes(query) || badge.includes(query)) {
+                                var title = (item.getAttribute('data-title') || '').toLowerCase();
+                                var badge = (item.getAttribute('data-badge') || '').toLowerCase();
+                                var text = item.textContent.toLowerCase();
+                                if (!query || title.includes(query) || badge.includes(query) || text.includes(query)) {
                                     item.style.display = '';
                                     count++;
                                 } else {
@@ -94,375 +97,508 @@
                     }
                 });
                 </script>
+
                 <div class="row g-4" id="products-grid">
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="five function electric icu bed (imported)" data-badge="electric icu">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Five Function Electric ICU Bed (Imported) on Instagram" title="View on Instagram">
-                                    <img src="icu-bed-5-function-electric.png" alt="Five Function Electric ICU Bed (Imported)" loading="lazy">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Electric ICU</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Hospital furniture</span>
-                                <h3>Five Function Electric ICU Bed (Imported)</h3>
-                                <p>Motorised five-function imported hospital ICU bed with ABS head/foot panels, four-section split side railings with degree indicators, and CPR release.</p>
-                                <ul class="catalogue-card__details">
-                                <li>5 electric motorized functions with nurse control panel</li>
-                                <li>ABS head and foot boards with angle degree indicator</li>
-                                <li>125mm central locking twin castors & CPR release</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Five%20Function%20Electric%20ICU%20Bed%20%28Imported%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="five function electric icu bed (deluxe)" data-badge="electric deluxe">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Five Function Electric ICU Bed (Deluxe) on Instagram" title="View on Instagram">
-                                    <img src="icu-bed-5-function-godrej-electric.png" alt="Five Function Electric ICU Bed (Deluxe)" loading="lazy">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Electric Deluxe</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Hospital furniture</span>
-                                <h3>Five Function Electric ICU Bed (Deluxe)</h3>
-                                <p>Heavy-duty rectangular CRCA frame with four-sectional CRCA sheet top, electric actuator backrest, knee-rest, and Trendelenburg.</p>
-                                <ul class="catalogue-card__details">
-                                <li>Motorized height, backrest, knee-rest & Trendelenburg</li>
-                                <li>ABS moulded head and foot panels with safety side rails</li>
-                                <li>Pre-treated epoxy powder coated with 125mm castors</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Five%20Function%20Electric%20ICU%20Bed%20%28Deluxe%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="five function manual icu bed (deluxe)" data-badge="manual deluxe">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Five Function Manual ICU Bed (Deluxe) on Instagram" title="View on Instagram">
-                                    <img src="icu-bed-5-function-manual.png" alt="Five Function Manual ICU Bed (Deluxe)" loading="lazy">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Manual Deluxe</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Hospital furniture</span>
-                                <h3>Five Function Manual ICU Bed (Deluxe)</h3>
-                                <p>Manual ICU bed offering complete positioning via smooth crank mechanism, foldable aluminium railings and heavy steel frame.</p>
-                                <ul class="catalogue-card__details">
-                                <li>Smooth folding crank mechanisms for all 5 functions</li>
-                                <li>ABS moulded removable head and foot boards</li>
-                                <li>Collapsible aluminium alloy protective side safety rails</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Five%20Function%20Manual%20ICU%20Bed%20%28Deluxe%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="three function electric icu bed (deluxe)" data-badge="electric 3-function">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Three Function Electric ICU Bed (Deluxe) on Instagram" title="View on Instagram">
-                                    <img src="icu-bed-3-function-electric.png" alt="Three Function Electric ICU Bed (Deluxe)" loading="lazy">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Electric 3-Function</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Hospital furniture</span>
-                                <h3>Three Function Electric ICU Bed (Deluxe)</h3>
-                                <p>Motorised three-function ICU bed for powered backrest, knee rest and overall height adjustments at the push of a handset button.</p>
-                                <ul class="catalogue-card__details">
-                                <li>Dual actuator motors for backrest & knee-rest elevation</li>
-                                <li>ABS tuck-away safety side rails with angle indicators</li>
-                                <li>Battery backup capability with emergency manual release</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Three%20Function%20Electric%20ICU%20Bed%20%28Deluxe%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="semi fowler bed manual (eco model)" data-badge="semi fowler">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Semi Fowler Bed Manual (Eco Model) on Instagram" title="View on Instagram">
-                                    <img src="semi-fowler-bed-manual.png" alt="Semi Fowler Bed Manual (Eco Model)" loading="lazy">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Semi Fowler</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Hospital furniture</span>
-                                <h3>Semi Fowler Bed Manual (Eco Model)</h3>
-                                <p>Two-section manual ward bed with smooth crank backrest elevation, powder coated panel headboards and IV pole mount.</p>
-                                <ul class="catalogue-card__details">
-                                <li>Uniformly perforated two-sectional CRCA sheet top</li>
-                                <li>Backrest adjustment via smooth foldaway crank handle</li>
-                                <li>Pre-treated and epoxy powder coated finish</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Semi%20Fowler%20Bed%20Manual%20%28Eco%20Model%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="fowler bed (2 crank manual)" data-badge="manual fowler">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Fowler Bed (2 Crank Manual) on Instagram" title="View on Instagram">
-                                    <img src="fowler-bed-2-crank-manual.png" alt="Fowler Bed (2 Crank Manual)" loading="lazy">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Manual Fowler</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Hospital furniture</span>
-                                <h3>Fowler Bed (2 Crank Manual)</h3>
-                                <p>Standard general ward Fowler bed featuring dual crank mechanisms for independent backrest and knee rest positioning.</p>
-                                <ul class="catalogue-card__details">
-                                <li>Two-crank mechanism for backrest & knee rest elevation</li>
-                                <li>ABS moulded removable head and foot panels</li>
-                                <li>Collapsible side safety railings with brake castors</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Fowler%20Bed%20%282%20Crank%20Manual%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="fowler bed electric" data-badge="electric fowler">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Fowler Bed Electric on Instagram" title="View on Instagram">
-                                    <img src="fowler-bed-electric.png" alt="Fowler Bed Electric" loading="lazy">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Electric Fowler</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Hospital furniture</span>
-                                <h3>Fowler Bed Electric</h3>
-                                <p>Powered Fowler ward bed with wired handheld remote, smooth electric actuators, and robust steel chassis.</p>
-                                <ul class="catalogue-card__details">
-                                <li>Motorized backrest and knee-rest positioning via handheld remote</li>
-                                <li>Detachable ABS head & foot boards for emergency access</li>
-                                <li>Epoxy powder-coated finish resistant to hospital disinfectants</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Fowler%20Bed%20Electric">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="plain ward bed (manual deluxe)" data-badge="general ward">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Plain Ward Bed (Manual Deluxe) on Instagram" title="View on Instagram">
-                                    <img src="plain-ward-bed-manual.png" alt="Plain Ward Bed (Manual Deluxe)" loading="lazy">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">General Ward</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Hospital furniture</span>
-                                <h3>Plain Ward Bed (Manual Deluxe)</h3>
-                                <p>Sturdy general ward patient bed with tubular steel framework, perforated sheet top, and corner IV pole provision.</p>
-                                <ul class="catalogue-card__details">
-                                <li>Heavy-duty CRCA tubular framework with epoxy finish</li>
-                                <li>Perforated sheet mattress platform for ventilation</li>
-                                <li>Fitted with rubber stump feet and IV rod mounts</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Plain%20Ward%20Bed%20%28Manual%20Deluxe%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="plain bed (eco model)" data-badge="ward bed">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Plain Bed (Eco Model) on Instagram" title="View on Instagram">
-                                    <img src="plain-bed-manual.png" alt="Plain Bed (Eco Model)" loading="lazy">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Ward Bed</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Hospital furniture</span>
-                                <h3>Plain Bed (Eco Model)</h3>
-                                <p>Cost-effective patient recovery bed with powder-coated pipe head/foot bows and durable steel sleep surface.</p>
-                                <ul class="catalogue-card__details">
-                                <li>Overall size: 220 L x 100 W x 60 H cm</li>
-                                <li>Powder coated moulded head and foot panels</li>
-                                <li>High load-bearing rectangular CRCA frame construction</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Plain%20Bed%20%28Eco%20Model%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="pediatric hospital bed" data-badge="pediatric">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Pediatric Hospital Bed on Instagram" title="View on Instagram">
-                                    <img src="pediatric-bed.png" alt="Pediatric Hospital Bed" loading="lazy">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Pediatric</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Hospital furniture</span>
-                                <h3>Pediatric Hospital Bed</h3>
-                                <p>Child-safe pediatric patient bed with full-length drop-down safety side railings preventing accidental falls.</p>
-                                <ul class="catalogue-card__details">
-                                <li>Dimensions: 137 L x 76 W x 60 H cm</li>
-                                <li>Tubular head and foot bows of equal height with vertical bars</li>
-                                <li>Drop-down type ABS safety railings with child-safe locks</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Pediatric%20Hospital%20Bed">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="baby bassinet (imported acrylic)" data-badge="maternity bassinet">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Baby Bassinet (Imported Acrylic) on Instagram" title="View on Instagram">
-                                    <img src="baby-bassinet-imported.png" alt="Baby Bassinet (Imported Acrylic)" loading="lazy">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Maternity Bassinet</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Hospital furniture</span>
-                                <h3>Baby Bassinet (Imported Acrylic)</h3>
-                                <p>Neonatal acrylic bassinet on height-adjustable aluminium trolley with Trendelenburg tilt and smooth swiveling wheels.</p>
-                                <ul class="catalogue-card__details">
-                                <li>Clear medical-grade acrylic crib with Trendelenburg tilt</li>
-                                <li>Height adjustable aluminium column with accessory basket</li>
-                                <li>Swivel castor wheels with independent brake locks</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Baby%20Bassinet%20%28Imported%20Acrylic%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="baby bassinet (indian tubular)" data-badge="newborn crib">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Baby Bassinet (Indian Tubular) on Instagram" title="View on Instagram">
-                                    <img src="baby-bassinet-indian.png" alt="Baby Bassinet (Indian Tubular)" loading="lazy">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Newborn Crib</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Hospital furniture</span>
-                                <h3>Baby Bassinet (Indian Tubular)</h3>
-                                <p>Durable tubular steel baby bassinet with wire mesh basket and lower utility diaper tray for maternity wards.</p>
-                                <ul class="catalogue-card__details">
-                                <li>Removable wire-mesh newborn basket with rounded safety rims</li>
-                                <li>Tubular steel trolley on 50mm swivel wheels with brakes</li>
-                                <li>Epoxy powder coated finish easy to sanitize</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Baby%20Bassinet%20%28Indian%20Tubular%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="hospital baby cradle" data-badge="baby cradle">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Hospital Baby Cradle on Instagram" title="View on Instagram">
-                                    <img src="baby-cradle-hospital.png" alt="Hospital Baby Cradle" loading="lazy">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Baby Cradle</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Hospital furniture</span>
-                                <h3>Hospital Baby Cradle</h3>
-                                <p>Smooth swinging hospital baby cradle crafted from cold-rolled steel with protective epoxy powder finish.</p>
-                                <ul class="catalogue-card__details">
-                                <li>Overall size: 36" L x 15" W x 39" H</li>
-                                <li>Wire-mesh hanging cradle (19mm x 1.22mm CRC tube with 5mm wire)</li>
-                                <li>Pre-treated epoxy powder coated stand with PVC leg stumps</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Hospital%20Baby%20Cradle">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                </div>
 
-            </div>
-        </section>
-
-        <section class="catalogue-section">
-            <div class="container">
-                <div class="catalogue-cta d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4">
-                    <div>
-                        <h2>Can't find what you're looking for?</h2>
-                        <p>Share your requirements and our team will recommend the best fit from our full range.</p>
+                    <!-- Product 1 -->
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="7 function luxury motorized electric icu bed embedded rail nurse controls" data-badge="Electric ICU">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <img src="icu-bed-7-function-luxury-electric.png" alt="7-Function Luxury Motorized Electric ICU Bed" loading="lazy">
+                            </div>
+                            <span class="catalogue-card__badge">Electric ICU &bull; 7-Function</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Critical Care Infrastructure</span>
+                                <h3>7-Function Luxury Electric ICU Bed</h3>
+                                <p>State-of-the-art motorized critical care bed with embedded dual-side patient and nurse controls, cardiac chair position, and central locking castors.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>7 motorized functions: Backrest, Knee rest, Hi-Low, Trendelenburg / Rev. Trendelenburg, Cardiac chair &amp; Lateral tilt</li>
+                                    <li>Split 4-piece ABS fold-down side rails with embedded digital angle indicators &amp; nurse control panel</li>
+                                    <li>Emergency CPR quick-release, central braking system, and integrated telescopic IV pole</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=7-Function%20Luxury%20Electric%20ICU%20Bed">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
                     </div>
-                    <a class="catalogue-button flex-shrink-0" href="../../contact-form/index.html">
-                        Contact our team <i class="bi bi-arrow-right"></i>
-                    </a>
+
+                    <!-- Product 2 -->
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="5 function motorized electric icu bed abs panels railings" data-badge="Electric ICU">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <img src="icu-bed-5-function-electric-abs.png" alt="5-Function Motorized Electric ICU Bed" loading="lazy">
+                            </div>
+                            <span class="catalogue-card__badge">Electric ICU &bull; 5-Function</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Critical Care Infrastructure</span>
+                                <h3>5-Function Motorized Electric ICU Bed</h3>
+                                <p>Premium electric ICU bed featuring detachable ABS head/foot panels, full 4-section perforated mattress platform, and remote pendant control.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Motorized backrest (0-75°), knee rest (0-45°), Hi-Low elevation (450-750mm), and Trendelenburg / Reverse Trendelenburg (±12°)</li>
+                                    <li>4-piece tuck-away ABS side safety barriers with built-in angle gauges</li>
+                                    <li>Handset remote control with nurse lockout and heavy-duty 125mm castors with individual brakes</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=5-Function%20Motorized%20Electric%20ICU%20Bed">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="3 function electric fowler bed collapsible safety rails" data-badge="Electric Fowler">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <img src="fowler-bed-3-function-electric-collapsible.png" alt="3-Function Electric Fowler Bed" loading="lazy">
+                            </div>
+                            <span class="catalogue-card__badge">Electric Fowler &bull; 3-Function</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Ward &amp; High Dependency</span>
+                                <h3>3-Function Electric Fowler Bed</h3>
+                                <p>Motorized multi-position Fowler bed equipped with linear actuators and full-length collapsible aluminum safety side rails.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Electric backrest, knee rest, and variable height adjustment operated via wired remote controller</li>
+                                    <li>Full-length drop-down collapsible aluminum alloy protective safety barriers</li>
+                                    <li>4-section perforated sheet top with anti-microbial epoxy powder coated framework</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=3-Function%20Electric%20Fowler%20Bed">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="5 function mechanical icu bed 5 crank abs rails mattress" data-badge="Manual ICU">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <img src="icu-bed-5-function-mechanical-abs.png" alt="5-Function Mechanical ICU Bed" loading="lazy">
+                            </div>
+                            <span class="catalogue-card__badge">Manual ICU &bull; 5-Crank</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Critical Care Infrastructure</span>
+                                <h3>5-Function Mechanical ICU Bed</h3>
+                                <p>Heavy-duty 5-crank mechanical ICU bed complete with high-density medical mattress, ABS head/foot boards, and full ABS guard rails.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>5 independent smooth-folding stainless steel crank handles for complete manual articulation</li>
+                                    <li>Detachable molded ABS head and foot boards with integrated bumper wheels</li>
+                                    <li>Supplied with multi-section PU-covered medical mattress and IV pole sockets</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=5-Function%20Mechanical%20ICU%20Bed">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="deluxe 2 function manual fowler bed collapsible railings" data-badge="Manual Fowler">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <img src="fowler-bed-2-function-deluxe-mechanical.png" alt="Deluxe 2-Function Manual Fowler Bed" loading="lazy">
+                            </div>
+                            <span class="catalogue-card__badge">Manual Fowler &bull; 2-Crank</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Ward &amp; Recovery Care</span>
+                                <h3>Deluxe 2-Function Manual Fowler Bed</h3>
+                                <p>Deluxe two-crank Fowler bed designed for general wards, private recovery rooms, and nursing care facilities.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Independent mechanical adjustment for backrest and knee rest sections via foldable cranks</li>
+                                    <li>Full-length collapsible aluminum alloy side rails with safety push-button release</li>
+                                    <li>Removable ABS head &amp; foot boards with integrated color-coded corner buffers</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Deluxe%202-Function%20Manual%20Fowler%20Bed">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="3 function electric icu ward bed abs side rails" data-badge="Electric ICU">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <img src="icu-bed-3-function-electric-abs.png" alt="3-Function Electric ICU / Ward Bed" loading="lazy">
+                            </div>
+                            <span class="catalogue-card__badge">Electric ICU &bull; 3-Function</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">ICU &amp; Semi-ICU</span>
+                                <h3>3-Function Electric ICU / Ward Bed</h3>
+                                <p>Motorized 3-function bed offering ergonomic patient positioning with intuitive remote pendant control and 4-piece ABS railings.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Electric actuator control for backrest, knee elevation, and overall bed height</li>
+                                    <li>4 split ABS safety side rails with angle level indicators</li>
+                                    <li>Rigid rectangular tube framework with diagonal wheel braking system</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=3-Function%20Electric%20ICU%20Bed">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Product 7 -->
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="electric fowler bed wired remote full collapsible rails" data-badge="Electric Fowler">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <img src="fowler-bed-electric-deluxe-collapsible.png" alt="Electric Fowler Bed with Collapsible Rails" loading="lazy">
+                            </div>
+                            <span class="catalogue-card__badge">Electric Fowler &bull; Motorized</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Specialty &amp; Ward Care</span>
+                                <h3>Electric Fowler Bed with Collapsible Rails</h3>
+                                <p>Modern motorized Fowler bed with easy-to-use patient pendant and full drop-down aluminum safety barriers.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Linear actuators for quiet and vibration-free back and leg elevation</li>
+                                    <li>Drop-down aluminum side rails providing unrestricted patient access</li>
+                                    <li>ABS head and foot boards with integrated chart holder and IV sockets</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Electric%20Fowler%20Bed%20with%20Collapsible%20Rails">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Product 8 -->
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="3 crank manual icu bed abs bows 4 piece side rails" data-badge="Manual ICU">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <img src="icu-bed-3-crank-manual-abs.png" alt="3-Crank Manual ICU Bed" loading="lazy">
+                            </div>
+                            <span class="catalogue-card__badge">Manual ICU &bull; 3-Crank</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">ICU &amp; Step-Down Unit</span>
+                                <h3>3-Crank Manual ICU Bed</h3>
+                                <p>Robust mechanical ICU bed featuring 3 folding screw-crank mechanisms for essential clinical positioning.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>3 manual cranks for backrest (0-75°), knee rest (0-45°), and variable height adjustment</li>
+                                    <li>4-piece tuck-away ABS side barriers with embedded angle indicators</li>
+                                    <li>125mm deluxe swivel castors with diagonal wheel locks</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=3-Crank%20Manual%20ICU%20Bed">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Product 9 -->
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="3 crank mechanical fowler bed high density mattress" data-badge="Manual Fowler">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <img src="fowler-bed-3-crank-manual-mattress.png" alt="3-Crank Mechanical Fowler Bed with Mattress" loading="lazy">
+                            </div>
+                            <span class="catalogue-card__badge">Manual Fowler &bull; 3-Crank</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Ward &amp; Nursing Care</span>
+                                <h3>3-Crank Mechanical Fowler Bed with Mattress</h3>
+                                <p>Comprehensive 3-crank mechanical bed supplied with high-density waterproof mattress and protective aluminum side rails.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Smooth crank-operated backrest, upper-leg rest, and height elevation</li>
+                                    <li>Heavy-duty collapsible aluminum guard rails with quick latch</li>
+                                    <li>Complete with 4-inch high-resilience medical foam mattress</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=3-Crank%20Mechanical%20Fowler%20Bed%20with%20Mattress">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Product 10 -->
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="electric semi fowler bed handset controller collapsible rails" data-badge="Electric Semi-Fowler">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <img src="semi-fowler-bed-electric-collapsible.png" alt="Electric Semi-Fowler Bed" loading="lazy">
+                            </div>
+                            <span class="catalogue-card__badge">Electric Semi-Fowler &bull; Motorized</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Post-Operative &amp; Ward</span>
+                                <h3>Electric Semi-Fowler Bed</h3>
+                                <p>Motorized semi-Fowler bed engineered for effortless single-touch backrest elevation with collapsible aluminum side rails.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Electric motor actuator controlled via compact ergonomic handheld remote</li>
+                                    <li>Collapsible aluminum alloy safety railings for patient security</li>
+                                    <li>ABS bows with safety locks and 100mm individual brake castors</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Electric%20Semi-Fowler%20Bed">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Product 11 -->
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="2 crank manual fowler bed wooden laminated abs panels" data-badge="Manual Fowler">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <img src="fowler-bed-2-crank-wooden-abs.png" alt="2-Crank Manual Fowler Bed (Wooden ABS Panels)" loading="lazy">
+                            </div>
+                            <span class="catalogue-card__badge">Manual Fowler &bull; 2-Crank</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Deluxe Private Ward</span>
+                                <h3>2-Crank Fowler Bed (Wooden ABS Panels)</h3>
+                                <p>Elegant manual Fowler bed with warm wooden-finish ABS head and foot boards designed for premium private room aesthetics.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>2 independent folding crank handles for back and knee section adjustments</li>
+                                    <li>Aesthetic wooden laminate inserts in molded ABS head &amp; foot panels</li>
+                                    <li>Heavy-gauge mild steel frame with anti-rust epoxy powder coating</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=2-Crank%20Fowler%20Bed%20(Wooden%20ABS%20Panels)">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Product 12 -->
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="2 crank manual fowler bed stainless steel bows" data-badge="Manual Fowler">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <img src="fowler-bed-2-crank-ss-bows.png" alt="2-Crank Manual Fowler Bed with Stainless Steel Bows" loading="lazy">
+                            </div>
+                            <span class="catalogue-card__badge">Manual Fowler &bull; SS Bows</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Hospital General Ward</span>
+                                <h3>2-Crank Fowler Bed (Stainless Steel Bows)</h3>
+                                <p>Durable two-crank Fowler bed with tubular stainless steel head and foot bows with laminated center panels.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>High-grade stainless steel head and foot bows with laminated center inserts</li>
+                                    <li>Dual mechanical screw cranks with concealed folding mechanism</li>
+                                    <li>Perforated 4-section CRC sheet top with swivel brake castors</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=2-Crank%20Fowler%20Bed%20(SS%20Bows)">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Product 13 -->
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="2 crank hospital fowler bed tubular ms bows" data-badge="Manual Fowler">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <img src="fowler-bed-2-crank-tubular-ms.png" alt="2-Crank Hospital Fowler Bed (Tubular MS Bows)" loading="lazy">
+                            </div>
+                            <span class="catalogue-card__badge">Manual Fowler &bull; MS Bows</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">General &amp; Institutional Ward</span>
+                                <h3>2-Crank Fowler Bed (Tubular MS Bows)</h3>
+                                <p>Standard rugged two-crank Fowler bed with welded mild steel tubular head and foot bows for long-lasting ward durability.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>2-crank adjustment for backrest and upper-leg rest elevation</li>
+                                    <li>Full mild-steel tubular construction with vertical tube reinforcement</li>
+                                    <li>Durable pre-treated epoxy powder coated white finish with fixed rubber leg boots</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=2-Crank%20Fowler%20Bed%20(Tubular%20MS)">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Product 14 -->
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="1 crank deluxe semi fowler bed abs bows blue inlay" data-badge="Semi-Fowler">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <img src="semi-fowler-bed-1-crank-abs-bows.png" alt="1-Crank Deluxe Semi-Fowler Bed (ABS Bows)" loading="lazy">
+                            </div>
+                            <span class="catalogue-card__badge">Semi-Fowler &bull; 1-Crank</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Hospital Ward</span>
+                                <h3>1-Crank Deluxe Semi-Fowler Bed (ABS Bows)</h3>
+                                <p>Single-crank manual semi-Fowler bed with molded ABS head and foot bows and distinctive blue laminate paneling.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Smooth-operating single crank handle for backrest elevation (0-75°)</li>
+                                    <li>Quick-release detachable ABS head and foot boards with bumper corners</li>
+                                    <li>Sturdy 2-section perforated steel sheet platform with IV pole sockets</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=1-Crank%20Deluxe%20Semi-Fowler%20Bed%20(ABS%20Bows)">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Product 15 -->
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="1 crank semi fowler bed wooden finish abs panels" data-badge="Semi-Fowler">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <img src="semi-fowler-bed-1-crank-wooden-abs.png" alt="1-Crank Semi-Fowler Bed (Wooden Finish ABS)" loading="lazy">
+                            </div>
+                            <span class="catalogue-card__badge">Semi-Fowler &bull; 1-Crank</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Deluxe Ward &amp; Clinic</span>
+                                <h3>1-Crank Semi-Fowler Bed (Wooden Finish ABS)</h3>
+                                <p>Semi-Fowler patient bed featuring warm wooden-finish ABS panels and smooth mechanical backrest adjustment.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Concealed folding crank for effortless backrest elevation</li>
+                                    <li>Molded ABS bows with wooden finish decorative laminate</li>
+                                    <li>High load-bearing frame with PVC protective stump feet</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=1-Crank%20Semi-Fowler%20Bed%20(Wooden%20Finish%20ABS)">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Product 16 -->
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="1 crank semi fowler bed stainless steel bows" data-badge="Semi-Fowler">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <img src="semi-fowler-bed-1-crank-ss-bows.png" alt="1-Crank Semi-Fowler Bed (SS Bows)" loading="lazy">
+                            </div>
+                            <span class="catalogue-card__badge">Semi-Fowler &bull; SS Bows</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">General Ward &amp; Nursing</span>
+                                <h3>1-Crank Semi-Fowler Bed (Stainless Steel Bows)</h3>
+                                <p>Single-crank semi-Fowler bed featuring hygienic stainless steel tubular head/foot bows with blue laminate.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Mechanical backrest adjustment via foldable chrome-plated crank handle</li>
+                                    <li>Stainless steel tubular bows with laminated decorative panels</li>
+                                    <li>Heavy-gauge CRCA sheet top with uniform perforations for mattress aeration</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=1-Crank%20Semi-Fowler%20Bed%20(SS%20Bows)">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Product 17 -->
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="1 crank manual semi fowler bed ms tubular bows" data-badge="Semi-Fowler">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <img src="semi-fowler-bed-1-crank-tubular-ms.png" alt="1-Crank Manual Semi-Fowler Bed (MS Tubular)" loading="lazy">
+                            </div>
+                            <span class="catalogue-card__badge">Semi-Fowler &bull; MS Bows</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Standard Ward</span>
+                                <h3>1-Crank Semi-Fowler Bed (MS Tubular Bows)</h3>
+                                <p>Economical single-crank semi-Fowler bed with all-MS tubular head and foot ends for standard inpatient wards.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Single screw mechanism for backrest inclination</li>
+                                    <li>Heavy-duty welded MS tubular head and foot frames</li>
+                                    <li>Epoxy powder coated frame with non-marking rubber base stumps</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=1-Crank%20Semi-Fowler%20Bed%20(MS%20Tubular)">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Product 18 -->
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="plain hospital ward bed molded abs bows wooden inlay" data-badge="Plain Ward Bed">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <img src="plain-ward-bed-abs-bows.png" alt="Plain Hospital Ward Bed (ABS Bows)" loading="lazy">
+                            </div>
+                            <span class="catalogue-card__badge">Plain Ward Bed &bull; ABS Bows</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">General Ward &amp; Inpatient</span>
+                                <h3>Plain Hospital Ward Bed (ABS Bows)</h3>
+                                <p>Fixed-height general ward bed with modern molded ABS head and foot boards featuring wooden laminate inserts.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Slotted/strip steel mattress platform for enhanced airflow and hygiene</li>
+                                    <li>Detachable ABS bows with safety corner bumpers</li>
+                                    <li>Heavy-duty tubular support legs with non-marking rubber feet</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Plain%20Hospital%20Ward%20Bed%20(ABS%20Bows)">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Product 19 -->
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="plain hospital bed stainless steel tubular bows" data-badge="Plain Ward Bed">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <img src="plain-ward-bed-ss-bows.png" alt="Plain Hospital Bed (SS Bows)" loading="lazy">
+                            </div>
+                            <span class="catalogue-card__badge">Plain Ward Bed &bull; SS Bows</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Standard Ward</span>
+                                <h3>Plain Hospital Bed (SS Tubular Bows)</h3>
+                                <p>Rigid plain hospital bed with stainless steel tubular bows and perforated CRCA sheet mattress platform.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>High grade SS tubular head and foot bows with vertical reinforcement bars</li>
+                                    <li>Flat perforated sheet top designed for standard hospital mattresses</li>
+                                    <li>Pre-treated and electrostatic powder coated steel framework</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Plain%20Hospital%20Bed%20(SS%20Bows)">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Product 20 -->
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="standard plain general ward bed heavy duty all ms frame" data-badge="Plain Ward Bed">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <img src="plain-ward-bed-general-ms.png" alt="Standard Plain General Ward Bed" loading="lazy">
+                            </div>
+                            <span class="catalogue-card__badge">Plain Ward Bed &bull; All-MS</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Institutional &amp; General Ward</span>
+                                <h3>Standard Plain General Ward Bed</h3>
+                                <p>Classic institutional plain hospital bed with full mild steel tubular construction and epoxy powder coat finish.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Sturdy welded MS vertical tubular head and foot bows</li>
+                                    <li>Rigid one-piece CRCA flat steel top</li>
+                                    <li>Long-lasting anti-microbial epoxy powder coated white finish</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Standard%20Plain%20General%20Ward%20Bed">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Product 21 -->
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="pediatric hospital bed child crib cradle protective rails" data-badge="Pediatric Bed">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <img src="pediatric-crib-bed-hospital.png" alt="Pediatric Hospital Bed / Child Crib Cradle" loading="lazy">
+                            </div>
+                            <span class="catalogue-card__badge">Pediatric Bed &bull; Child Crib</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Pediatrics &amp; Maternity</span>
+                                <h3>Pediatric Hospital Bed / Child Crib Cradle</h3>
+                                <p>Pediatric hospital bed with full-height drop-down side protective bars designed for infant and child clinical safety.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Full-surround vertical protective bars with smooth slide-down side railings</li>
+                                    <li>Perforated ventilated steel mattress base</li>
+                                    <li>Smooth-finished powder coated baby-friendly frame with non-slip base stumps</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Pediatric%20Hospital%20Bed%20/%20Child%20Crib%20Cradle">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+
                 </div>
             </div>
         </section>
     </main>
 
-    <footer id="footer" class="footer position-relative light-background">
-        <div class="container">
-            <div class="row gy-5">
-                <div class="col-lg-4">
-                    <div class="footer-content">
-                        <a href="../../index.html" class="logo d-flex align-items-center mb-4">
-                            <span class="sitename">Dr. Smith</span>
-                        </a>
-                        <p class="mb-4">Dr. Smith provides medical equipment, healthcare infrastructure and patient-focused solutions.</p>
-                        <div class="catalogue-footer-logo">
-                            <a href="../../index.html" aria-label="Dr. Smith home">
-                                <img src="../../assets/img/logo.png?v=2" alt="Dr. Smith">
-                            </a>
-                        </div>
+    <footer id="footer" class="footer">
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <a href="../../index.html" class="logo d-flex align-items-center">
+                        <span class="sitename">Dr. Smith</span>
+                    </a>
+                    <div class="footer-contact pt-3">
+                        <p><strong>Global Head Office:</strong><br>Plot No. 75/02, Shri Sai Complex, GF<br>Kapashera Border, New Delhi &ndash; 110037, India</p>
+                        <p class="mt-2"><strong>Overseas Head Office (UAE):</strong><br>Q4-223, SAIF Zone, Sharjah, UAE</p>
+                        <p class="mt-3"><strong>Phone:</strong> <span><a href="tel:18008917466">1800 891 7466</a> (Toll-Free)</span></p>
+                        <p><strong>Email:</strong> <span><a href="mailto:info@drsmith.co.in">info@drsmith.co.in</a></span></p>
                     </div>
                 </div>
-                <div class="col-lg-2 col-6">
-                    <div class="footer-links">
-                        <h4>Explore</h4>
-                        <ul>
-                            <li><a href="../index.html#catalogue"><i class="bi bi-chevron-right"></i> Catalogue</a></li>
-                            <li><a href="../beds/index.html"><i class="bi bi-chevron-right"></i> Hospital Beds</a></li>
-                            <li><a href="../ot-lights/index.html"><i class="bi bi-chevron-right"></i> OT Lights</a></li>
-                            <li><a href="../autoclaves/index.html"><i class="bi bi-chevron-right"></i> Autoclaves</a></li>
-                            <li><a href="../surgical-instruments/index.html"><i class="bi bi-chevron-right"></i> Surgical Instruments</a></li>
-                        </ul>
-                    </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="../../index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
+                        <li><a href="../../about-us/index.html"><i class="bi bi-chevron-right"></i> About Us</a></li>
+                        <li><a href="../../turnkey-projects/index.html"><i class="bi bi-chevron-right"></i> Turnkey Projects</a></li>
+                        <li><a href="../../medical-products/index.html"><i class="bi bi-chevron-right"></i> Medical Products</a></li>
+                        <li><a href="../../mission-values/index.html"><i class="bi bi-chevron-right"></i> Mission &amp; Values</a></li>
+                        <li><a href="../../group-companies/index.html"><i class="bi bi-chevron-right"></i> Group Companies</a></li>
+                        <li><a href="../../contact-form/index.html"><i class="bi bi-chevron-right"></i> Contact</a></li>
+                    </ul>
                 </div>
-                <div class="col-lg-2 col-6">
-                    <div class="footer-links">
-                        <h4>Company</h4>
-                        <ul>
-                            <li><a href="../../index.html#about"><i class="bi bi-chevron-right"></i> About Us</a></li>
-                            <li><a href="../../contact-form/index.html"><i class="bi bi-chevron-right"></i> Contact</a></li>
-                            <li><a href="../../privacy.html"><i class="bi bi-chevron-right"></i> Privacy Policy</a></li>
-                            <li><a href="../../terms.html"><i class="bi bi-chevron-right"></i> Terms of Service</a></li>
-                        </ul>
-                    </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Our Categories</h4>
+                    <ul>
+                        <li><a href="../index.html#catalogue"><i class="bi bi-chevron-right"></i> Full Catalogue</a></li>
+                        <li><a href="index.html"><i class="bi bi-chevron-right"></i> Hospital Beds</a></li>
+                        <li><a href="../ot-tables/index.html"><i class="bi bi-chevron-right"></i> OT Tables</a></li>
+                        <li><a href="../ot-lights/index.html"><i class="bi bi-chevron-right"></i> OT Lights</a></li>
+                        <li><a href="../autoclaves/index.html"><i class="bi bi-chevron-right"></i> Autoclaves</a></li>
+                        <li><a href="../surgical-instruments/index.html"><i class="bi bi-chevron-right"></i> Surgical Instruments</a></li>
+                    </ul>
                 </div>
-                <div class="col-lg-4">
-                    <div class="footer-contact">
-                        <h4>Contact Us</h4>
-                        <p>Plot No. 75/02, Shri Sai Complex, GF, Opp. Nimity Building - 108, Behind-IGL CNG Pump, Kapashera Border, New Delhi - 110037</p>
-                        <p class="mt-3"><strong>Phone:</strong> <span>+91 9599081020</span></p>
-                        <p><strong>Email:</strong> <span>info@drsmith.co.in</span></p>
-                    </div>
+
+                <div class="col-lg-4 col-md-12 footer-newsletter">
+                    <h4>Dr. Smith Quality Assurance</h4>
+                    <p>Manufacturing and supplying ISO 9001:2015, ISO 13485:2016, CE &amp; FDA certified hospital beds and turnkey healthcare infrastructure worldwide.</p>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="copyright">
-                            <p>© <span>Copyright</span> <strong class="px-1 sitename">Dr. Smith</strong> <span>All Rights Reserved</span></p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="footer-bottom-links">
-                            <a href="../../privacy.html">Privacy Policy</a>
-                            <a href="../../terms.html">Terms of Service</a>
-                            <a href="../../contact-form/index.html">Contact</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+        <div class="container copyright text-center mt-4">
+            <p>&copy; <span>Copyright</span> <strong class="px-1 sitename">Dr. Smith</strong> <span>All Rights Reserved</span></p>
         </div>
     </footer>
 
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to top">
-        <i class="bi bi-arrow-up-short"></i>
-    </a>
-
     <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../../assets/js/main.js"></script>
 </body>
 
 </html>

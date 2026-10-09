@@ -1,38 +1,25 @@
 /**
- * Contact & Enquiry Page Stylesheet
+ * Contact & Enquiry Page Stylesheet - Orange Theme
  * 
  * Styles for the responsive split-screen contact form modal/page.
- * 
- * TABLE OF CONTENTS:
- * 1. Theme Color & Font Variables
- * 2. Reset & Base Page Layout
- * 3. Minimal Brand Header & Logo
- * 4. Split-Screen Layout (Left: Info, Right: Form)
- * 5. Left Column: Company Info & Contact Cards
- * 6. Right Column: Form Container & Input Fields
- * 7. Checkbox Group & Privacy Link
- * 8. Submit Button & Loading Spinner
- * 9. Validation Errors & Feedback Alerts
- * 10. Anti-Spam Honeypot Field
- * 11. Responsive Breakpoints (Tablets & Mobile)
  */
 
 /* ============================================================
    1. Theme Color & Font Variables
    ============================================================ */
 :root {
-    --bg-color: #f2f7ff;                                        /* Soft light-blue background tint */
-    --bg-gradient: linear-gradient(135deg, #f2f7ff 0%, #e5f0ff 100%); /* Subtle diagonal background gradient */
-    --primary-blue: #598df5;                                    /* Primary action blue */
-    --primary-hover: #4578db;                                   /* Darker blue on button hover */
+    --bg-color: #fff7ed;                                        /* Soft light-orange background tint */
+    --bg-gradient: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%); /* Subtle diagonal background gradient */
+    --primary-blue: #ea580c;                                    /* Primary action orange */
+    --primary-hover: #c2410c;                                   /* Darker orange on button hover */
     --text-dark: #1e293b;                                       /* Dark slate color for headings */
-    --text-gray: #64748b;                                       /* Muted gray for body text */
+    --text-gray: #535d6b;                                       /* Text color */
     --white: #ffffff;                                           /* Clean white for card backgrounds */
-    --border-color: #cbd5e1;                                    /* Neutral input border */
-    --error-color: #ef4444;                                     /* Error red for validation */
-    --success-color: #10b981;                                   /* Success green for confirmations */
-    --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-    --shadow-lg: 0 20px 40px -5px rgba(0, 0, 0, 0.08);          /* Soft floating card drop-shadow */
+    --border-color: #fed7aa;                                    /* Neutral input border */
+    --error-color: #ea580c;                                     /* Error orange for validation */
+    --success-color: #ea580c;                                   /* Confirmations */
+    --shadow-sm: 0 4px 6px -1px rgba(234, 88, 12, 0.05), 0 2px 4px -1px rgba(234, 88, 12, 0.03);
+    --shadow-lg: 0 20px 40px -5px rgba(234, 88, 12, 0.08);     /* Soft floating card drop-shadow */
     --font-main: 'Inter', sans-serif;                           /* Clean modern typeface */
 }
 
@@ -180,6 +167,7 @@ header {
     padding: 40px;
     border-radius: 20px;
     box-shadow: var(--shadow-lg);
+    border: 1px solid rgba(234, 88, 12, 0.12);
 }
 
 .contact-form-wrapper h2 {
@@ -221,7 +209,7 @@ textarea {
     font-family: var(--font-main);
     font-size: 0.95rem;
     color: var(--text-dark);
-    background: #f8fafc;
+    background: #fffaf5;
     transition: all 0.3s ease;
     outline: none;
 }
@@ -237,7 +225,7 @@ select:focus,
 textarea:focus {
     background: var(--white);
     border-color: var(--primary-blue);
-    box-shadow: 0 0 0 4px rgba(89, 141, 245, 0.15);
+    box-shadow: 0 0 0 4px rgba(234, 88, 12, 0.15);
 }
 
 textarea {
@@ -293,13 +281,13 @@ textarea {
     align-items: center;
     gap: 10px;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 14px rgba(89, 141, 245, 0.3);
+    box-shadow: 0 4px 14px rgba(234, 88, 12, 0.3);
 }
 
 .submit-btn:hover {
     background: var(--primary-hover);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(89, 141, 245, 0.4);
+    box-shadow: 0 6px 20px rgba(234, 88, 12, 0.4);
 }
 
 .submit-btn:active {
@@ -348,15 +336,15 @@ textarea {
 }
 
 .status-alert.success {
-    background-color: #ecfdf5;
-    color: #065f46;
-    border: 1px solid #a7f3d0;
+    background-color: #fff7ed;
+    color: #c2410c;
+    border: 1px solid #fed7aa;
 }
 
 .status-alert.error {
-    background-color: #fef2f2;
-    color: #991b1b;
-    border: 1px solid #fecaca;
+    background-color: #fff7ed;
+    color: #ea580c;
+    border: 1px solid #fed7aa;
 }
 
 /* ============================================================

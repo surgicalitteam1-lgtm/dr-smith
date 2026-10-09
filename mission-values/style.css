@@ -1,18 +1,18 @@
-/* Custom Styles for Mission & Values Page - Visionary Royal Violet & Compassionate Rose Theme */
+/* Custom Styles for Mission & Values Page - Unified Orange Theme */
 
 :root {
-  --mission-primary: #7c3aed;
-  --mission-primary-dark: #6d28d9;
-  --mission-primary-deep: #4c1d95;
-  --mission-accent: #db2777;
-  --mission-accent-light: #f472b6;
-  --mission-bg-subtle: #fdf4ff;
+  --mission-primary: #ea580c;
+  --mission-primary-dark: #c2410c;
+  --mission-primary-deep: #7c2d12;
+  --mission-accent: #f97316;
+  --mission-accent-light: #fed7aa;
+  --mission-bg-subtle: #fff7ed;
   --mission-surface: #ffffff;
 }
 
 .mission-hero {
   padding: 100px 0 60px;
-  background: linear-gradient(180deg, #fdf4ff 0%, #fae8ff 45%, #fff1f2 75%, #ffffff 100%);
+  background: linear-gradient(180deg, #fff7ed 0%, #ffedd5 45%, #fffaf5 75%, #ffffff 100%);
   position: relative;
   overflow: hidden;
 }
@@ -31,7 +31,7 @@
   width: 550px;
   height: 550px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(124, 58, 237, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+  background: radial-gradient(circle, rgba(234, 88, 12, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
   pointer-events: none;
 }
 
@@ -39,14 +39,14 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(124, 58, 237, 0.12);
+  background: rgba(234, 88, 12, 0.12);
   color: var(--mission-primary-dark);
   padding: 6px 16px;
   border-radius: 30px;
   font-weight: 700;
   font-size: 0.88rem;
   margin-bottom: 1.2rem;
-  border: 1px solid rgba(124, 58, 237, 0.25);
+  border: 1px solid rgba(234, 88, 12, 0.25);
 }
 
 .mission-hero h1 {
@@ -59,14 +59,14 @@
 
 .mission-hero h1 span {
   color: var(--mission-primary);
-  background: linear-gradient(135deg, #7c3aed 0%, #db2777 100%);
+  background: linear-gradient(135deg, #ea580c 0%, #f97316 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .mission-hero .lead {
   font-size: 1.15rem;
-  color: #4b5563;
+  color: #535d6b;
   max-width: 660px;
   line-height: 1.7;
 }
@@ -74,7 +74,7 @@
 .value-pillar-card {
   background: #ffffff;
   border-radius: 20px;
-  border: 1px solid rgba(124, 58, 237, 0.15);
+  border: 1px solid rgba(234, 88, 12, 0.15);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
   padding: 35px;
   height: 100%;
@@ -85,8 +85,8 @@
 
 .value-pillar-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(124, 58, 237, 0.15);
-  border-color: rgba(124, 58, 237, 0.45);
+  box-shadow: 0 20px 40px rgba(234, 88, 12, 0.15);
+  border-color: rgba(234, 88, 12, 0.45);
 }
 
 .pillar-number-badge {
@@ -102,7 +102,7 @@
   width: 60px;
   height: 60px;
   border-radius: 16px;
-  background: linear-gradient(135deg, rgba(124, 58, 237, 0.15), rgba(219, 39, 119, 0.1));
+  background: linear-gradient(135deg, rgba(234, 88, 12, 0.15), rgba(249, 115, 22, 0.1));
   color: var(--mission-primary);
   display: flex;
   align-items: center;
@@ -127,7 +127,7 @@
 
 .value-pillar-card p {
   font-size: 0.95rem;
-  color: #4b5563;
+  color: #535d6b;
   line-height: 1.65;
   margin-bottom: 20px;
 }
@@ -135,9 +135,9 @@
 .accreditations-strip {
   background: #ffffff;
   border-radius: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(234, 88, 12, 0.12);
   padding: 40px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 10px 30px rgba(234, 88, 12, 0.04);
 }
 
 .cert-badge-item {
@@ -149,7 +149,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #fdf4ff;
+  background: #fff7ed;
   color: var(--mission-primary);
   display: inline-flex;
   align-items: center;
@@ -167,26 +167,26 @@
 
 .cert-badge-item span {
   font-size: 0.85rem;
-  color: #6b7280;
+  color: #535d6b;
 }
 
 .btn-mission-primary {
-  background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+  background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
   color: #ffffff !important;
   border-radius: 50px;
   padding: 12px 28px;
   font-weight: 700;
   border: none;
   transition: all 0.25s ease;
-  box-shadow: 0 4px 14px rgba(124, 58, 237, 0.35);
+  box-shadow: 0 4px 14px rgba(234, 88, 12, 0.35);
   display: inline-flex;
   align-items: center;
 }
 
 .btn-mission-primary:hover {
-  background: linear-gradient(135deg, #db2777 0%, #be185d 100%);
+  background: linear-gradient(135deg, #c2410c 0%, #9a3412 100%);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(219, 39, 119, 0.4);
+  box-shadow: 0 6px 20px rgba(234, 88, 12, 0.45);
 }
 
 .btn-mission-outline {
@@ -212,8 +212,8 @@
     font-size: 2rem;
   }
   body.mobile-nav-active .navmenu ul li a.active {
-    background: rgba(124, 58, 237, 0.1) !important;
+    background: rgba(234, 88, 12, 0.1) !important;
     color: var(--mission-primary) !important;
-    border-color: rgba(124, 58, 237, 0.3) !important;
+    border-color: rgba(234, 88, 12, 0.3) !important;
   }
 }

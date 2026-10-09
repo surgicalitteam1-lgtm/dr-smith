@@ -1,17 +1,17 @@
-/* Custom Styles for Group Companies Page - Organic Growth Emerald & Enterprise Mint Theme */
+/* Custom Styles for Group Companies Page - Orange Enterprise Theme */
 
 :root {
-  --company-primary: #059669;
-  --company-primary-dark: #047857;
-  --company-primary-deep: #064e3b;
-  --company-accent: #10b981;
-  --company-bg-subtle: #f0fdf4;
+  --company-primary: #ea580c;
+  --company-primary-dark: #c2410c;
+  --company-primary-deep: #7c2d12;
+  --company-accent: #f97316;
+  --company-bg-subtle: #fff7ed;
   --company-surface: #ffffff;
 }
 
 .companies-hero {
   padding: 100px 0 60px;
-  background: linear-gradient(180deg, #f0fdf4 0%, #dcfce7 45%, #eff6ff 75%, #ffffff 100%);
+  background: linear-gradient(180deg, #fff7ed 0%, #ffedd5 45%, #fffaf5 75%, #ffffff 100%);
   position: relative;
   overflow: hidden;
 }
@@ -26,14 +26,14 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(16, 185, 129, 0.15);
+  background: rgba(234, 88, 12, 0.12);
   color: var(--company-primary-dark);
   padding: 6px 16px;
   border-radius: 30px;
   font-weight: 700;
   font-size: 0.88rem;
   margin-bottom: 1.2rem;
-  border: 1px solid rgba(16, 185, 129, 0.25);
+  border: 1px solid rgba(234, 88, 12, 0.25);
 }
 
 .companies-hero h1 {
@@ -46,14 +46,14 @@
 
 .companies-hero h1 span {
   color: var(--company-primary);
-  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  background: linear-gradient(135deg, #ea580c 0%, #f97316 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .companies-hero .lead {
   font-size: 1.15rem;
-  color: #374151;
+  color: #535d6b;
   max-width: 660px;
   line-height: 1.7;
 }
@@ -61,7 +61,7 @@
 .company-profile-card {
   background: #ffffff;
   border-radius: 20px;
-  border: 1px solid rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(234, 88, 12, 0.15);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
   padding: 35px;
   height: 100%;
@@ -73,16 +73,16 @@
 
 .company-profile-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(16, 185, 129, 0.12);
-  border-color: rgba(16, 185, 129, 0.4);
+  box-shadow: 0 20px 40px rgba(234, 88, 12, 0.12);
+  border-color: rgba(234, 88, 12, 0.4);
 }
 
 .company-icon-circle {
   width: 64px;
   height: 64px;
   border-radius: 18px;
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(16, 185, 129, 0.05));
-  color: #059669;
+  background: linear-gradient(135deg, rgba(234, 88, 12, 0.15), rgba(249, 115, 22, 0.08));
+  color: #ea580c;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,13 +100,13 @@
 .company-tagline {
   font-size: 0.95rem;
   font-weight: 600;
-  color: #059669;
+  color: #ea580c;
   margin-bottom: 15px;
 }
 
 .company-profile-card p {
   font-size: 0.95rem;
-  color: #4b5563;
+  color: #535d6b;
   line-height: 1.65;
   margin-bottom: 20px;
 }
@@ -119,7 +119,7 @@
 
 .company-highlights-list li {
   font-size: 0.9rem;
-  color: #374151;
+  color: #535d6b;
   margin-bottom: 10px;
   display: flex;
   align-items: center;
@@ -127,16 +127,16 @@
 }
 
 .company-highlights-list li i {
-  color: #10b981;
+  color: #ea580c;
   font-size: 1rem;
 }
 
 .ecosystem-banner-card {
-  background: linear-gradient(135deg, #064e3b 0%, #065f46 100%);
+  background: linear-gradient(135deg, #7c2d12 0%, #9a3412 100%);
   color: #ffffff;
   border-radius: 20px;
   padding: 45px;
-  box-shadow: 0 15px 35px rgba(6, 78, 59, 0.2);
+  box-shadow: 0 15px 35px rgba(124, 45, 18, 0.2);
 }
 
 .ecosystem-banner-card h3 {
@@ -147,7 +147,7 @@
 }
 
 .ecosystem-banner-card p {
-  color: #d1fae5;
+  color: #ffedd5;
   font-size: 1.05rem;
   line-height: 1.7;
 }
@@ -160,7 +160,7 @@
   font-weight: 700;
   border: none;
   transition: all 0.25s ease;
-  box-shadow: 0 4px 14px rgba(5, 150, 105, 0.35);
+  box-shadow: 0 4px 14px rgba(234, 88, 12, 0.35);
   display: inline-flex;
   align-items: center;
 }
@@ -168,7 +168,7 @@
 .btn-group-primary:hover {
   background: var(--company-primary-dark);
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(5, 150, 105, 0.45);
+  box-shadow: 0 6px 18px rgba(234, 88, 12, 0.45);
 }
 
 .btn-group-outline {
@@ -200,8 +200,8 @@
     padding: 25px;
   }
   body.mobile-nav-active .navmenu ul li a.active {
-    background: rgba(5, 150, 105, 0.1) !important;
+    background: rgba(234, 88, 12, 0.1) !important;
     color: var(--company-primary) !important;
-    border-color: rgba(5, 150, 105, 0.3) !important;
+    border-color: rgba(234, 88, 12, 0.3) !important;
   }
 }
