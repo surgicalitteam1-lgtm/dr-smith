@@ -17,8 +17,8 @@
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
 
-  <link href="../assets/css/apple-theme.css?v=39.0" rel="stylesheet">
-  <link href="css/catalogue.css?v=39.0" rel="stylesheet">
+  <link href="../assets/css/apple-theme.css?v=40.0" rel="stylesheet">
+  <link href="css/catalogue.css?v=40.0" rel="stylesheet">
   <link href="../assets/css/admin-portal.css?v=23.0" rel="stylesheet">
 </head>
 
@@ -62,9 +62,7 @@
       <!-- Action Utilities -->
       <div class="apple-nav-actions">
         <!-- Search Circle Button -->
-        <a href="../catalogue/index.html" class="apple-nav-circle-btn" aria-label="Search Medical Catalogue" title="Search Catalogue">
-          <i class="bi bi-search"></i>
-        </a>
+        <button type="button" class="apple-nav-circle-btn" onclick="openGlobalSearch();" aria-label="Search Medical Catalogue" title="Search Catalogue"><i class="bi bi-search"></i></button>
 
         <!-- WhatsApp Circle Button -->
         <a href="https://wa.me/919999999999" class="apple-nav-circle-btn apple-nav-circle-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" title="WhatsApp Direct">
@@ -1090,5 +1088,6 @@
       }
     }, { passive: true });
   </script>
+  <script src="../assets/js/global-search.js?v=40.0"></script>
 </body>
 </html>
