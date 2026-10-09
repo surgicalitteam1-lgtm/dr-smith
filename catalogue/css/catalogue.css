@@ -1,955 +1,605 @@
 /**
- * Dr. Smith Product Catalogue Stylesheet
- * 
- * Styles for the main catalogue index and individual category/product pages.
- * 
- * TABLE OF CONTENTS:
- * 1. Page Layout & Base Styles
- * 2. Header & Scroll Auto-Hide
- * 3. Minimal Header for Sub-pages
- * 4. Hero Banner & Breadcrumbs
- * 5. Button Components
- * 6. Content Sections & Filter Toolbar
- * 7. Product Cards & Image Frame
- * 8. Details, Specifications & Badges
- * 9. Empty State Notification
- * 10. Range Showcases & Support Cards
- * 11. Call-to-Action (CTA) Banner
- * 12. Bed Catalogue Detail Page
- * 13. Bed Category Selection Tiles
- * 14. Top-Level Category Navigation Cards
- * 15. Mobile & Tablet Responsive Queries
+ * Dr. Smith Product Catalogue Stylesheet (Dark Theme v36.0)
+ * Modern Apple-inspired dark aesthetic (#030712) for medical catalogue
  */
 
-/* ============================================================
-   1. Page Layout & Base Styles (Apple Design Language)
-   ============================================================ */
+:root {
+  --catalogue-bg: #030712;
+  --catalogue-card-bg: rgba(255, 255, 255, 0.03);
+  --catalogue-border: rgba(255, 255, 255, 0.08);
+  --catalogue-border-hover: rgba(0, 163, 255, 0.4);
+  --catalogue-accent: #00A3FF;
+  --catalogue-text: #f1f5f9;
+  --catalogue-muted: #94a3b8;
+  --catalogue-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  --catalogue-shadow-hover: 0 20px 45px rgba(0, 163, 255, 0.2);
+}
+
+/* Base Body & Layout */
+body.catalogue-page,
 .catalogue-page {
-    --catalogue-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
-    --catalogue-border: rgba(0, 0, 0, 0.08);
-    padding-top: 44px;
-    background-color: #ffffff;
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  background-color: #030712 !important;
+  color: var(--catalogue-text) !important;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
 }
 
-.catalogue-page .header {
-    --background-color: rgba(255, 255, 255, 0.82);
-    background-color: rgba(255, 255, 255, 0.82) !important;
-    backdrop-filter: saturate(180%) blur(20px) !important;
-    -webkit-backdrop-filter: saturate(180%) blur(20px) !important;
-    box-shadow: none !important;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
-    transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease !important;
+main {
+  background-color: #030712 !important;
+  min-height: 100vh;
 }
 
 /* ============================================================
-   2. Header & Scroll Auto-Hide (Hides header when scrolling)
-   ============================================================ */
-body.catalogue-page.scrolled #header.header,
-body.catalogue-page.header-hidden #header.header,
-body.scrolled #header.header,
-body.header-hidden #header.header,
-.catalogue-page.scrolled #header.header,
-.catalogue-page.header-hidden #header.header,
-.scrolled #header.header,
-.header-hidden #header.header {
-    display: none !important;
-    opacity: 0 !important;
-    visibility: hidden !important;
-    pointer-events: none !important;
-    transform: translateY(-100%) !important;
-}
-
-/* Header styles on mobile/tablet screens (< 1200px) */
-@media (max-width: 1199px) {
-    .catalogue-page #header.header {
-        background: rgba(255, 255, 255, 0.9) !important;
-        backdrop-filter: blur(15px) !important;
-        box-shadow: none !important;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
-        padding: 10px 0 !important;
-    }
-
-    .catalogue-page #header .logo h1,
-    .catalogue-page #header .sitename {
-        color: #1d1d1f !important;
-        font-weight: 600 !important;
-        letter-spacing: -0.02em !important;
-    }
-}
-
-/* ============================================================
-   3. Minimal Header for Sub-pages
-   ============================================================ */
-.header--minimal .container-fluid {
-    justify-content: flex-start;
-}
-
-.header--minimal .logo {
-    transition: opacity 0.2s ease;
-}
-
-.header--minimal .logo:hover {
-    opacity: 0.8;
-}
-
-/* ============================================================
-   4. Hero Banner & Breadcrumbs (Apple Clean Aesthetic)
+   HERO BANNER & BREADCRUMBS
    ============================================================ */
 .catalogue-hero {
-    position: relative;
-    overflow: hidden;
-    padding: 64px 0 52px;
-    background: #f5f5f7;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  position: relative;
+  overflow: hidden;
+  padding: 130px 0 60px !important;
+  background: radial-gradient(circle at 50% 0%, #081226 0%, #030712 80%) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .catalogue-hero--compact {
-    padding: 44px 0 38px;
-}
-
-.catalogue-breadcrumb {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 16px;
-    color: #86868b;
-    font-size: 12px;
-    letter-spacing: -0.01em;
-}
-
-.catalogue-breadcrumb a {
-    color: #1d1d1f;
-    font-weight: 400;
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-
-.catalogue-breadcrumb a:hover {
-    color: #0071e3;
-}
-
-.catalogue-breadcrumb .bi {
-    font-size: 10px;
-    opacity: 0.5;
-}
-
-.catalogue-breadcrumb span[aria-current] {
-    color: #0071e3;
-    font-weight: 500;
+  padding: 110px 0 45px !important;
 }
 
 .catalogue-eyebrow {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    margin-bottom: 10px;
-    color: #0071e3;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  color: #00A3FF !important;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: rgba(0, 163, 255, 0.08);
+  border: 1px solid rgba(0, 163, 255, 0.25);
+  padding: 5px 16px;
+  border-radius: 980px;
 }
 
 .catalogue-hero h1 {
-    max-width: 720px;
-    margin-bottom: 12px;
-    font-size: clamp(2.2rem, 4.5vw, 3.4rem);
-    font-weight: 700;
-    letter-spacing: -0.03em;
-    color: #1d1d1f;
-    line-height: 1.1;
-}
-
-.catalogue-hero--compact h1 {
-    font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: #ffffff !important;
+  line-height: 1.15;
+  margin-bottom: 16px;
 }
 
 .catalogue-hero h1 span {
-    color: #0071e3;
+  color: #00A3FF !important;
+  background: none !important;
+  -webkit-text-fill-color: initial !important;
 }
 
 .catalogue-hero p {
-    max-width: 640px;
-    margin-bottom: 24px;
-    font-size: 17px;
-    line-height: 1.45;
-    color: #86868b;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #94A3B8 !important;
+  max-width: 680px;
+  margin-bottom: 24px;
+}
+
+.catalogue-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  color: #64748B;
+  font-size: 13px;
+}
+
+.catalogue-breadcrumb a {
+  color: #94A3B8;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.catalogue-breadcrumb a:hover {
+  color: #00A3FF;
+}
+
+.catalogue-breadcrumb .bi {
+  font-size: 11px;
+  opacity: 0.6;
+}
+
+.catalogue-breadcrumb span[aria-current] {
+  color: #00A3FF;
+  font-weight: 600;
 }
 
 /* ============================================================
-   5. Button Components (Apple Pill Buttons)
+   SEARCH BAR & CATEGORY FILTERS
    ============================================================ */
-.catalogue-button {
-    display: inline-flex;
-    min-height: 40px;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    padding: 9px 20px;
-    border: 1px solid #0071e3;
-    border-radius: 980px;
-    background: #0071e3;
-    color: #ffffff !important;
-    font-size: 14px;
-    font-weight: 500;
-    text-decoration: none !important;
-    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+.category-search-wrapper,
+.catalogue-search-box {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 980px;
+  padding: 4px 16px;
+  transition: all 0.25s ease;
 }
 
-.catalogue-button:hover {
-    border-color: #0077ed;
-    background: #0077ed;
-    color: #ffffff !important;
-    transform: scale(1.02);
+.category-search-wrapper:focus-within,
+.catalogue-search-box:focus-within {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: #00A3FF;
+  box-shadow: 0 0 16px rgba(0, 163, 255, 0.3);
 }
 
-.catalogue-button--ghost {
-    border: 1px solid rgba(0, 0, 0, 0.16);
-    background: #ffffff;
-    color: #1d1d1f !important;
+.category-search-wrapper input,
+.catalogue-search-box input,
+#category-filter-search,
+#categoryProductSearch {
+  background: transparent !important;
+  border: none !important;
+  color: #ffffff !important;
+  font-size: 14.5px;
+  box-shadow: none !important;
 }
 
-.catalogue-button--ghost:hover {
-    border-color: rgba(0, 0, 0, 0.32);
-    background: #f5f5f7;
-    color: #1d1d1f !important;
+.category-search-wrapper input::placeholder,
+.catalogue-search-box input::placeholder,
+#category-filter-search::placeholder,
+#categoryProductSearch::placeholder {
+  color: #64748B !important;
 }
 
-/* ============================================================
-   6. Content Sections & Filter Toolbar
-   ============================================================ */
-.catalogue-section {
-    padding: 76px 0;
-}
-
-.catalogue-section--surface {
-    background: var(--surface-color);
-}
-
-.catalogue-section--tight {
-    padding: 48px 0 76px;
-}
-
-.catalogue-heading {
-    max-width: 690px;
-    margin: 0 auto 34px;
-    text-align: center;
-}
-
-.catalogue-heading h2 {
-    margin-bottom: 12px;
-    font-size: clamp(1.9rem, 3vw, 2.55rem);
-}
-
-.catalogue-heading p {
-    margin: 0;
-    line-height: 1.75;
-}
-
-/* Category Filter Buttons Row */
-.catalogue-filters {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin: 0 0 34px;
-    padding: 0;
-    list-style: none;
-}
-
-.catalogue-filter {
-    display: inline-flex;
-    align-items: center;
-    gap: 7px;
-    padding: 9px 18px;
-    border: 1px solid var(--catalogue-border);
-    border-radius: 30px;
-    background: var(--surface-color);
-    color: var(--default-color);
-    cursor: pointer;
-    font-family: var(--nav-font);
-    font-size: 0.88rem;
-    font-weight: 600;
-    transition: background-color 0.2s, border-color 0.2s, color 0.2s, transform 0.2s;
-}
-
-.catalogue-filter .catalogue-filter__count {
-    padding: 1px 7px;
-    border-radius: 20px;
-    background: color-mix(in srgb, var(--accent-color), transparent 85%);
-    color: var(--accent-color);
-    font-size: 0.74rem;
-}
-
-.catalogue-filter:hover {
-    border-color: var(--accent-color);
-    transform: translateY(-1px);
-}
-
-.catalogue-filter.is-active {
-    border-color: var(--accent-color);
-    background: var(--accent-color);
-    color: var(--contrast-color);
-}
-
-.catalogue-filter.is-active .catalogue-filter__count {
-    background: rgba(255, 255, 255, 0.25);
-    color: var(--contrast-color);
-}
-
-/* ============================================================
-   7. Product Cards & Image Frame (Apple Bento Style)
-   ============================================================ */
-.catalogue-card {
-    position: relative;
-    height: 100%;
-    overflow: hidden;
-    border: 1px solid rgba(0, 0, 0, 0.06);
-    border-radius: 24px;
-    background: #f5f5f7;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02);
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-}
-
-.catalogue-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.06);
-}
-
-.catalogue-card[hidden] {
-    display: none !important;
-}
-
-.catalogue-card > a {
-    display: block;
-}
-
-.catalogue-card__image {
-    position: relative;
-    min-height: 240px;
-    background-color: #ffffff;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
-}
-
-.catalogue-card__image--icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: none !important;
-    background-color: #ffffff;
-}
-
-.catalogue-card__image--icon i {
-    font-size: 3.1rem;
-    color: #0071e3;
-}
-
-.catalogue-card__image--photo {
-    overflow: hidden;
-}
-
-/* Clickable product image link (redirection to Instagram showcase) */
-.catalogue-card__image-link {
-    display: block;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.catalogue-card__image--photo img {
-    display: block;
-    width: 100%;
-    height: 240px;
-    object-fit: contain;
-    background: #ffffff;
-    padding: 16px;
-    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    cursor: pointer;
-}
-
-.catalogue-card:hover .catalogue-card__image--photo img {
-    transform: scale(1.04);
-}
-
-/* ============================================================
-   8. Details, Specifications & Badges (Apple Minimalist)
-   ============================================================ */
-.catalogue-card__body {
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-.catalogue-card__body h3 {
-    font-size: 19px;
-    font-weight: 600;
-    letter-spacing: -0.015em;
-    color: #1d1d1f;
-    margin-bottom: 8px;
-}
-
-.catalogue-card__body p {
-    font-size: 14px;
-    color: #86868b;
-    line-height: 1.45;
-    margin-bottom: 16px;
-}
-
-.catalogue-card__badge {
-    position: absolute;
-    top: 14px;
-    left: 14px;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 5px 12px;
-    border-radius: 980px;
-    background: rgba(29, 29, 31, 0.8);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    color: #ffffff;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.02em;
-    z-index: 2;
-}
-
-.catalogue-card__badge--accent {
-    right: 14px;
-    left: auto;
-    background: #0071e3;
-}
-
-.catalogue-card__actions {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px 18px;
-    margin-top: auto;
-}
-
-.catalogue-card__link {
-    color: #0071e3;
-    font-size: 14px;
-    font-weight: 400;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    transition: color 0.2s ease, transform 0.2s ease;
-}
-
-.catalogue-card__link:hover {
-    color: #0077ed;
-    text-decoration: underline;
-}
-
-.catalogue-card__link i {
-    font-size: 11px;
-    transition: transform 0.2s ease;
-}
-
-.catalogue-card__link:hover i {
-    transform: translateX(3px);
-}
-
-.catalogue-card__link--btn {
-    border: none;
-    background: none;
-    padding: 0;
-    color: #0071e3;
-    cursor: pointer;
-}
-
-.catalogue-card__link--btn:hover {
-    text-decoration: underline;
+.category-search-wrapper .input-group-text,
+.catalogue-search-box .input-group-text {
+  background: transparent !important;
+  border: none !important;
+  color: #00A3FF !important;
+  font-size: 16px;
 }
 
 .catalogue-count {
-    margin: -18px 0 28px;
-    text-align: center;
-    color: #86868b;
-    font-size: 14px;
+  color: #94A3B8 !important;
+  font-size: 14px;
 }
 
 .catalogue-count strong {
-    color: var(--heading-color);
+  color: #00A3FF !important;
 }
 
 /* ============================================================
-   9. Empty State Notification
+   BUTTONS & PILL CONTROLS
    ============================================================ */
-.catalogue-empty {
-    display: none;
-    padding: 56px 20px;
-    border: 1px dashed var(--catalogue-border);
-    border-radius: 12px;
-    text-align: center;
-    color: var(--default-color);
+.catalogue-button {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 24px;
+  border: 1px solid #00A3FF;
+  border-radius: 980px;
+  background: #00A3FF;
+  color: #ffffff !important;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 14px rgba(0, 163, 255, 0.3);
 }
 
-.catalogue-empty.is-visible {
-    display: block;
+.catalogue-button:hover {
+  background: #0084d6;
+  border-color: #0084d6;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 163, 255, 0.45);
 }
 
-.catalogue-empty i {
-    margin-bottom: 10px;
-    font-size: 2rem;
-    color: var(--accent-color);
+.catalogue-button--ghost {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff !important;
+  box-shadow: none;
 }
 
-.catalogue-grid-item {
-    transition: opacity 0.25s ease;
+.catalogue-button--ghost:hover {
+  border-color: #00A3FF;
+  background: rgba(0, 163, 255, 0.12);
+  color: #00A3FF !important;
+  transform: translateY(-2px);
 }
 
-.catalogue-gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 14px;
+/* ============================================================
+   SECTIONS & SURFACES
+   ============================================================ */
+.catalogue-section {
+  padding: 70px 0;
+  background: #030712 !important;
 }
 
-.catalogue-gallery-grid figure {
-    margin: 0;
-    overflow: hidden;
-    border: 1px solid var(--catalogue-border);
-    border-radius: 8px;
-    background: color-mix(in srgb, var(--accent-color), white 94%);
+.catalogue-section--surface {
+  background: #030712 !important;
 }
 
-.catalogue-gallery-grid img {
-    display: block;
-    width: 100%;
-    height: 140px;
-    object-fit: contain;
-    background: #f3f6fa;
+/* ============================================================
+   CATEGORY TILES & CARDS (HIGH-END DARK GLASS)
+   ============================================================ */
+.category-card-box {
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  backdrop-filter: blur(10px);
 }
 
-.catalogue-gallery-grid figcaption {
-    padding: 8px 10px 10px;
-    color: var(--default-color);
-    font-size: 0.78rem;
-    text-align: center;
+.category-card-box:hover {
+  transform: translateY(-6px) !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-color: rgba(0, 163, 255, 0.4) !important;
+  box-shadow: 0 20px 45px rgba(0, 163, 255, 0.18) !important;
+}
+
+.category-card-box .card-body {
+  background: transparent !important;
+}
+
+.category-card-box h3 {
+  color: #ffffff !important;
+  font-weight: 700;
+}
+
+.category-card-box p {
+  color: #94A3B8 !important;
+}
+
+.category-card-box .cat-icon-box {
+  background: rgba(0, 163, 255, 0.12) !important;
+  color: #00A3FF !important;
+  border: 1px solid rgba(0, 163, 255, 0.25);
+}
+
+.category-card-box .badge {
+  background: rgba(0, 163, 255, 0.1) !important;
+  color: #38bdf8 !important;
+  border: 1px solid rgba(0, 163, 255, 0.25) !important;
+}
+
+.category-card-box .badge.bg-light {
+  background: rgba(255, 255, 255, 0.06) !important;
+  color: #CBD5E1 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.category-card-box .btn-outline-primary {
+  border: 1px solid rgba(0, 163, 255, 0.4) !important;
+  color: #00A3FF !important;
+  background: rgba(0, 163, 255, 0.06) !important;
+  border-radius: 980px !important;
+  transition: all 0.25s ease;
+}
+
+.category-card-box:hover .btn-outline-primary {
+  background: #00A3FF !important;
+  color: #ffffff !important;
+  border-color: #00A3FF !important;
+  box-shadow: 0 4px 14px rgba(0, 163, 255, 0.4);
+}
+
+/* ============================================================
+   PRODUCT CARDS (FOR SUBCATEGORY PAGES)
+   Clean White Image Display inside Dark Glass Card Container
+   ============================================================ */
+.catalogue-card {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 20px !important;
+  background: rgba(255, 255, 255, 0.03) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35) !important;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.3s ease !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.catalogue-card:hover {
+  transform: translateY(-6px) !important;
+  border-color: rgba(0, 163, 255, 0.4) !important;
+  box-shadow: 0 18px 40px rgba(0, 163, 255, 0.18) !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+}
+
+.catalogue-card__image {
+  position: relative;
+  min-height: 220px;
+  background-color: #ffffff !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px 16px 0 0;
+  overflow: hidden;
+  padding: 12px;
+}
+
+.catalogue-card__image--photo img,
+.catalogue-card__image--zoomable img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  background: #ffffff;
+  padding: 12px;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.catalogue-card:hover .catalogue-card__image--photo img,
+.catalogue-card:hover .catalogue-card__image--zoomable img {
+  transform: scale(1.05);
 }
 
 .catalogue-card__body {
-    padding: 20px 21px 22px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background: transparent !important;
+}
+
+.catalogue-card__body h3,
+.catalogue-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: #ffffff !important;
+  margin-bottom: 8px;
+}
+
+.catalogue-card__body p,
+.catalogue-card p {
+  font-size: 13.5px;
+  color: #94A3B8 !important;
+  line-height: 1.55;
+  margin-bottom: 16px;
 }
 
 .catalogue-card__category {
-    display: inline-block;
-    margin-bottom: 8px;
-    color: var(--accent-color);
-    font-family: var(--nav-font);
-    font-size: 0.72rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #00A3FF !important;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
-.catalogue-card h3 {
-    margin: 0 0 9px;
-    font-size: 1.2rem;
+.catalogue-card__badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 980px;
+  background: rgba(3, 7, 18, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #00A3FF;
+  border: 1px solid rgba(0, 163, 255, 0.3);
+  font-size: 11px;
+  font-weight: 600;
+  z-index: 2;
 }
 
-.catalogue-card p {
-    margin: 0 0 15px;
-    font-size: 0.93rem;
-    line-height: 1.65;
+.catalogue-card__badge--accent {
+  right: 14px;
+  left: auto;
+  background: #00A3FF;
+  color: #ffffff;
+  border: none;
 }
 
 .catalogue-card__details {
-    margin: 0 0 18px;
-    padding-left: 19px;
-    color: var(--default-color);
-    font-size: 0.84rem;
-    line-height: 1.55;
+  margin: 0 0 18px;
+  padding-left: 18px;
+  color: #CBD5E1 !important;
+  font-size: 13px;
+  line-height: 1.5;
 }
 
 .catalogue-card__details li + li {
-    margin-top: 6px;
+  margin-top: 6px;
 }
 
-.catalogue-card .catalogue-card__source {
-    margin: 14px 0 0;
-    color: color-mix(in srgb, var(--default-color), transparent 32%);
-    font-size: 0.75rem;
+.catalogue-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .catalogue-card__link {
-    display: inline-flex;
-    align-items: center;
-    gap: 7px;
-    font-family: var(--nav-font);
-    font-size: 0.9rem;
-    font-weight: 600;
+  color: #00A3FF !important;
+  font-size: 13.5px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
 }
 
-/* ============================================================
-   10. Range Showcases & Support Cards
-   ============================================================ */
-.catalogue-banners img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    min-height: 210px;
-    border-radius: 10px;
-    object-fit: cover;
-    box-shadow: var(--catalogue-shadow);
+.catalogue-card__link:hover {
+  color: #38bdf8 !important;
+  transform: translateX(3px);
 }
 
-.catalogue-range {
-    height: 100%;
-    padding: 24px;
-    border: 1px solid var(--catalogue-border);
-    border-radius: 10px;
-    background: var(--surface-color);
-    box-shadow: var(--catalogue-shadow);
-}
-
-.catalogue-range h3 {
-    margin-bottom: 7px;
-    font-size: 1.35rem;
-}
-
-.catalogue-range > p {
-    margin-bottom: 18px;
-    font-size: 0.92rem;
-    line-height: 1.65;
-}
-
-.catalogue-range__items {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 11px;
-}
-
-.catalogue-range__item {
-    min-width: 0;
-    color: var(--default-color);
-    font-size: 0.78rem;
-    line-height: 1.4;
-    text-align: center;
-}
-
-.catalogue-range__item img,
-.catalogue-range__item .catalogue-range__icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 72px;
-    margin-bottom: 7px;
-    border-radius: 6px;
-    object-fit: contain;
-    background: color-mix(in srgb, var(--accent-color), white 94%);
-}
-
-.catalogue-range__item img {
-    object-fit: cover;
-    background: #f3f6fa;
-}
-
-.catalogue-range__item .catalogue-range__icon i {
-    font-size: 1.4rem;
-    color: color-mix(in srgb, var(--accent-color), black 8%);
-}
-
-.catalogue-support-card {
-    height: 100%;
-    overflow: hidden;
-    border: 1px solid var(--catalogue-border);
-    border-radius: 10px;
-    background: var(--surface-color);
-}
-
-.catalogue-support-card__icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 110px;
-    background: color-mix(in srgb, var(--accent-color), white 92%);
-    font-size: 2.2rem;
-    color: color-mix(in srgb, var(--accent-color), black 8%);
-}
-
-.catalogue-support-card img {
-    display: block;
-    width: 100%;
-    height: 190px;
-    object-fit: cover;
-}
-
-.catalogue-support-card__body {
-    padding: 20px;
-}
-
-.catalogue-support-card h3 {
-    margin-bottom: 8px;
-    font-size: 1.2rem;
-}
-
-.catalogue-support-card p {
-    margin: 0;
-    font-size: 0.93rem;
-    line-height: 1.7;
-}
-
-/* ============================================================
-   11. Call-to-Action (CTA) Banner
-   ============================================================ */
-.catalogue-cta {
-    padding: 40px;
-    border-radius: 12px;
-    background: linear-gradient(120deg, var(--heading-color), color-mix(in srgb, var(--heading-color), var(--accent-color) 38%));
-    color: var(--contrast-color);
-}
-
-.catalogue-cta h2 {
-    margin-bottom: 8px;
-    color: var(--contrast-color);
-}
-
-.catalogue-cta p {
-    margin: 0;
-    color: color-mix(in srgb, var(--contrast-color), transparent 12%);
-    line-height: 1.7;
-}
-
-.catalogue-cta .catalogue-button {
-    border-color: var(--surface-color);
-    background: var(--surface-color);
-    color: var(--heading-color);
-}
-
-.catalogue-cta .catalogue-button:hover {
-    background: var(--background-color);
-}
-
-.catalogue-footer-logo img {
-    max-width: 130px;
-    height: auto;
-}
-
-.catalogue-footer-payment {
-    max-width: 150px;
-    height: auto;
-}
-
-/* ============================================================
-   12. Bed Catalogue Detail Page
-   ============================================================ */
-.bed-card__specs {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 7px;
-    margin: 0 0 16px;
-    padding: 0;
-    list-style: none;
-}
-
-.bed-card__specs li {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    padding: 4px 10px;
-    border-radius: 20px;
-    background: color-mix(in srgb, var(--accent-color), white 92%);
-    color: var(--heading-color);
-    font-size: 0.74rem;
-    font-weight: 600;
-}
-
-.bed-card__specs i {
-    color: var(--accent-color);
-    font-size: 0.78rem;
-}
-
-.catalogue-card__image--zoomable {
-    cursor: zoom-in;
-}
-
-.catalogue-card__image--zoomable img {
-    display: block;
-    width: 100%;
-    height: 260px;
-    min-height: 230px;
-    object-fit: contain;
-    background: #fff;
-    padding: 14px;
-    transition: transform 0.35s ease;
-}
-
-.catalogue-card:hover .catalogue-card__image--zoomable img {
-    transform: scale(1.04);
-}
-
-/* ============================================================
-   13. Bed Category Selection Tiles
-   ============================================================ */
-.bed-category-select {
-    margin-bottom: 8px;
-}
-
+/* Bed Category Tiles */
 .bed-category-tile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    gap: 10px;
-    padding: 18px 16px 20px;
-    border: 1px solid color-mix(in srgb, var(--accent-color), transparent 80%);
-    border-radius: 16px;
-    background: #fff;
-    cursor: pointer;
-    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 18px !important;
+  padding: 16px;
+  transition: all 0.25s ease;
 }
 
-.bed-category-tile:hover,
-.bed-category-tile:focus-visible {
-    transform: translateY(-4px);
-    border-color: var(--accent-color);
-    box-shadow: 0 14px 28px -16px color-mix(in srgb, var(--accent-color), transparent 55%);
+.bed-category-tile:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.06) !important;
+  border-color: rgba(0, 163, 255, 0.4) !important;
 }
 
 .bed-category-tile__image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 140px;
-    background: color-mix(in srgb, var(--accent-color), white 94%);
-    border-radius: 12px;
-    overflow: hidden;
-}
-
-.bed-category-tile__image img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    padding: 10px;
+  background: #ffffff !important;
+  border-radius: 12px;
 }
 
 .bed-category-tile__label {
-    font-weight: 700;
-    font-size: 1.05rem;
-    color: var(--heading-color, #111);
+  color: #ffffff !important;
 }
 
 .bed-category-tile__count {
-    font-size: 0.85rem;
-    padding: 2px 10px;
-    border-radius: 20px;
-    background: color-mix(in srgb, var(--accent-color), transparent 85%);
-    color: var(--accent-color);
+  background: rgba(0, 163, 255, 0.12) !important;
+  color: #38bdf8 !important;
 }
 
-.bed-results__back {
-    margin-bottom: 20px;
+.bed-card__specs li {
+  background: rgba(255, 255, 255, 0.06) !important;
+  color: #CBD5E1 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* ============================================================
-   14. Top-Level Category Navigation Cards (Main Catalogue Page)
-   ============================================================ */
-.category-nav-grid {
-    margin-bottom: 8px;
+.bed-card__specs i {
+  color: #00A3FF !important;
 }
 
-.category-nav-tile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    gap: 10px;
-    padding: 22px 12px 18px;
-    border: 1px solid color-mix(in srgb, var(--accent-color), transparent 80%);
-    border-radius: 16px;
-    background: #fff;
-    text-decoration: none;
-    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+/* Support Cards */
+.catalogue-support-card {
+  height: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 18px !important;
+  background: rgba(255, 255, 255, 0.03) !important;
+  padding: 24px;
+  transition: all 0.3s ease;
 }
 
-.category-nav-tile:hover,
-.category-nav-tile:focus-visible {
-    transform: translateY(-4px);
-    border-color: var(--accent-color);
-    box-shadow: 0 14px 28px -16px color-mix(in srgb, var(--accent-color), transparent 55%);
-    text-decoration: none;
+.catalogue-support-card:hover {
+  border-color: rgba(0, 163, 255, 0.4) !important;
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.05) !important;
 }
 
-.category-nav-tile__icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: color-mix(in srgb, var(--accent-color), white 92%);
+.catalogue-support-card__icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
+  background: rgba(0, 163, 255, 0.12) !important;
+  color: #00A3FF !important;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
 }
 
-.category-nav-tile__icon i {
-    font-size: 1.6rem;
-    color: color-mix(in srgb, var(--accent-color), black 8%);
+.catalogue-support-card h3 {
+  color: #ffffff !important;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 8px;
 }
 
-.category-nav-tile__label {
-    font-weight: 700;
-    font-size: 0.92rem;
-    line-height: 1.3;
-    color: var(--heading-color, #111);
+.catalogue-support-card p {
+  color: #94A3B8 !important;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
 }
 
-/* ============================================================
-   15. Mobile & Tablet Responsive Media Queries
-   ============================================================ */
-@media (max-width: 767px) {
-    .bed-category-tile__image {
-        height: 110px;
-    }
-
-    .catalogue-page {
-        padding-top: 82px;
-    }
-
-    .catalogue-hero {
-        padding: 58px 0 52px;
-    }
-
-    .catalogue-hero--compact {
-        padding: 40px 0 36px;
-    }
-
-    .catalogue-section {
-        padding: 56px 0;
-    }
-
-    .catalogue-card__image {
-        min-height: 210px;
-    }
-
-    .catalogue-cta {
-        padding: 28px 22px;
-    }
+/* Call to Action Banner */
+.catalogue-cta {
+  padding: 44px;
+  border-radius: 24px;
+  background: radial-gradient(circle at 0% 0%, rgba(0, 163, 255, 0.15) 0%, rgba(3, 7, 18, 0.95) 100%), rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(0, 163, 255, 0.3) !important;
+  color: #ffffff !important;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.5);
 }
 
-.catalogue-nav-hint {
-    display: block;
-    margin: 28px auto 0;
-    padding: 10px 16px;
-    text-align: center;
-    color: color-mix(in srgb, var(--default-color), transparent 25%);
-    font-family: var(--nav-font);
-    font-size: 0.95rem;
-    clear: both;
+.catalogue-cta h2 {
+  color: #ffffff !important;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.catalogue-cta p {
+  color: #94A3B8 !important;
+  font-size: 15px;
+  margin: 0;
+}
+
+/* Marketplace Filter Pills */
+.marketplace-filter-pill {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #94A3B8;
+  border-radius: 980px;
+  padding: 8px 18px;
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.marketplace-filter-pill.active,
+.marketplace-filter-pill:hover {
+  background: rgba(0, 163, 255, 0.15);
+  border-color: #00A3FF;
+  color: #ffffff;
+}
+
+/* Admin Banner Dark */
+#adminVipBanner .admin-vip-card {
+  background: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(0, 163, 255, 0.3) !important;
+  border-radius: 16px;
+  padding: 20px;
+  color: #ffffff;
+}
+
+.admin-login-btn {
+  background: rgba(0, 163, 255, 0.12) !important;
+  border: 1px solid rgba(0, 163, 255, 0.3) !important;
+  color: #38bdf8 !important;
+  border-radius: 980px;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* No Results Banner */
+#no-category-results div {
+  background: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: #CBD5E1;
+}
+
+#no-category-results h5 {
+  color: #ffffff !important;
+}
+
+/* Responsive Overrides */
+@media (max-width: 991px) {
+  .catalogue-hero {
+    padding: 110px 0 45px !important;
+  }
+  .catalogue-hero h1 {
+    font-size: 2.2rem;
+  }
 }

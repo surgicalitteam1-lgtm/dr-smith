@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Browse Dr. Smith's Autoclaves range for hospitals, ICUs and clinics.">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#030712">
     <title>Autoclaves | Dr. Smith Catalogue</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,22 +13,97 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="../../assets/css/main.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
     <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
 
-    <link href="../css/catalogue.css" rel="stylesheet">
+    <link href="../css/catalogue.css?v=36.0" rel="stylesheet">
+  <link href="../../assets/css/apple-theme.css?v=36.0" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
-<body class="catalogue-page">
-    <header id="header" class="header header--minimal d-flex align-items-center fixed-top">
-        <div class="container-fluid container-xl position-relative d-flex align-items-center">
-            <a href="../../index.html" class="logo d-flex align-items-center" aria-label="Dr. Smith home">
-                <img src="../../assets/img/logo.png?v=2" alt="Dr. Smith logo">
-                <h1 class="sitename">Dr. Smith</h1>
-            </a>
+<body class="apple-body catalogue-page">
+  <!-- ============================================================
+       1. GLOBAL NAVIGATION HEADER
+       ============================================================ -->
+  <nav class="apple-globalnav" aria-label="Global">
+    <div class="apple-globalnav-inner">
+      
+      <!-- Brand & Corporate Identity -->
+      <a href="../../index.html" class="apple-nav-brand" aria-label="Dr. Smith Hospital Solutions">
+        <div class="brand-asterisk-icon">
+          <img src="../../assets/img/logo.png?v=11.0" alt="Dr. Smith Emblem Logo" class="apple-nav-logo-img" width="36" height="36">
         </div>
-    </header>
+        <div class="apple-nav-brand-text">
+          <span class="apple-nav-brand-title">Dr. Smith</span>
+          <span class="apple-nav-brand-subtitle">HOSPITAL SOLUTIONS</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="apple-nav-links">
+        <li class="apple-nav-item">
+          <a href="../../index.html" class="apple-nav-link">Home</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../../catalogue/index.html" class="apple-nav-link nav-active">Products</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../../turnkey-projects/index.html" class="apple-nav-link">Turnkey Solutions</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../../about-us/index.html" class="apple-nav-link">About Us</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../../contact-form/index.html" class="apple-nav-link">Contact</a>
+        </li>
+      </ul>
+
+      <!-- Action Utilities -->
+      <div class="apple-nav-actions">
+        <!-- Search Circle Button -->
+        <a href="../../catalogue/index.html" class="apple-nav-circle-btn" aria-label="Search Medical Catalogue" title="Search Catalogue">
+          <i class="bi bi-search"></i>
+        </a>
+
+        <!-- WhatsApp Circle Button -->
+        <a href="https://wa.me/919999999999" class="apple-nav-circle-btn apple-nav-circle-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" title="WhatsApp Direct">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <!-- Menu Toggle Button -->
+        <button type="button" class="apple-nav-circle-btn" id="apple-mobile-menu-btn" aria-label="Toggle Navigation Menu" title="Menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Drawer Overlay -->
+  <div class="apple-mobile-drawer" id="apple-mobile-drawer">
+    <ul class="apple-mobile-links">
+      <li><a href="../../index.html">Home <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+      <li><a href="../../catalogue/index.html">Products Catalogue <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+      <li><a href="../../turnkey-projects/index.html">Turnkey Hospital Setup <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+      <li><a href="../../catalogue/modular-ot/index.html">Modular Operation Theatres <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+      <li><a href="../../about-us/index.html">About Dr. Smith <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+      <li><a href="../../contact-form/index.html">Global Offices &amp; Contact <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+    </ul>
+    
+    <div class="apple-mobile-cta-box">
+      <button type="button" class="apple-btn-pill w-100 py-3" onclick="openAppleDrawer('Turnkey Consultation');">
+        <i class="bi bi-building me-2"></i> Request Project Consultation
+      </button>
+      <a href="tel:18008917466" class="btn btn-outline-light rounded-pill py-2 w-100 text-center">
+        <i class="bi bi-telephone-fill me-2 text-primary"></i> Call Toll-Free: 1800 891 7466
+      </a>
+      <a href="https://wa.me/919999999999" class="btn btn-success rounded-pill py-2 w-100 text-center" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp me-2"></i> WhatsApp Consultation Desk
+      </a>
+    </div>
+  </div>
+
+      
 
     <main>
         <section class="catalogue-hero catalogue-hero--compact">
@@ -55,11 +130,7 @@
 
         <section class="catalogue-section">
             <div class="container">
-                <header class="catalogue-heading">
-                    <span class="catalogue-eyebrow">Our range</span>
-                    <h2>Browse Autoclaves</h2>
-                    <p>High-pressure saturated steam sterilizers including table-top dental autoclaves, portable vertical cookers, horizontal autoclaves, and low-temperature ETO sterilizers.</p>
-                </header>
+                  
                 <p class="catalogue-count">Showing <strong>9</strong> products</p>
 
                 <div class="category-search-wrapper mb-4" style="max-width: 500px;">
@@ -304,74 +375,210 @@
         </section>
     </main>
 
-    <footer id="footer" class="footer position-relative light-background">
-        <div class="container">
-            <div class="row gy-5">
-                <div class="col-lg-4">
-                    <div class="footer-content">
-                        <a href="../../index.html" class="logo d-flex align-items-center mb-4">
-                            <span class="sitename">Dr. Smith</span>
-                        </a>
-                        <p class="mb-4">Dr. Smith provides medical equipment, healthcare infrastructure and patient-focused solutions.</p>
-                        <div class="catalogue-footer-logo">
-                            <a href="../../index.html" aria-label="Dr. Smith home">
-                                <img src="../../assets/img/logo.png?v=2" alt="Dr. Smith">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-6">
-                    <div class="footer-links">
-                        <h4>Explore</h4>
-                        <ul>
-                            <li><a href="../index.html#catalogue"><i class="bi bi-chevron-right"></i> Catalogue</a></li>
-                            <li><a href="../beds/index.html"><i class="bi bi-chevron-right"></i> Hospital Beds</a></li>
-                            <li><a href="../ot-lights/index.html"><i class="bi bi-chevron-right"></i> OT Lights</a></li>
-                            <li><a href="../autoclaves/index.html"><i class="bi bi-chevron-right"></i> Autoclaves</a></li>
-                            <li><a href="../surgical-instruments/index.html"><i class="bi bi-chevron-right"></i> Surgical Instruments</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-6">
-                    <div class="footer-links">
-                        <h4>Company</h4>
-                        <ul>
-                            <li><a href="../../index.html#about"><i class="bi bi-chevron-right"></i> About Us</a></li>
-                            <li><a href="../../contact-form/index.html"><i class="bi bi-chevron-right"></i> Contact</a></li>
-                            <li><a href="../../privacy.html"><i class="bi bi-chevron-right"></i> Privacy Policy</a></li>
-                            <li><a href="../../terms.html"><i class="bi bi-chevron-right"></i> Terms of Service</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="footer-contact">
-                        <h4>Contact Us</h4>
-                        <p>Plot No. 75/02, Shri Sai Complex, GF, Opp. Nimity Building - 108, Behind-IGL CNG Pump, Kapashera Border, New Delhi - 110037</p>
-                        <p class="mt-3"><strong>Phone:</strong> <span>+91 9599081020</span></p>
-                        <p><strong>Email:</strong> <span>info@drsmith.co.in</span></p>
-                    </div>
-                </div>
-            </div>
+      <!-- ============================================================
+       GLOBAL DIRECTORY FOOTER
+       ============================================================ -->
+  
+
+  <!-- Drawer Modal -->
+    <!-- ============================================================
+       GLOBAL DIRECTORY FOOTER
+       ============================================================ -->
+  <footer class="apple-globalfooter">
+    <div class="apple-footer-inner">
+      
+      <!-- Notes / Footnotes -->
+      <div class="apple-footer-notes">
+        <ol>
+          <li>Medical equipment specifications, turnkey timelines, and compliance standards (ISO 9001:2015, ISO 13485:2016, CE, FDA) depend on specific project scopes and customized clinical configurations.</li>
+          <li>Turnkey hospital infrastructure engineering timelines depend on architectural blueprints, local regulatory clearances, and civil site readiness.</li>
+          <li>Principal Global Head Office located at Kapashera Border, New Delhi; Manufacturing Plant at METL, Jhajjar, Haryana; Overseas Head Office at SAIF Zone, Sharjah, UAE.</li>
+        </ol>
+      </div>
+
+      <!-- Directory Columns -->
+      <div class="apple-footer-directory">
+
+        <!-- Col 1: Turnkey Solutions -->
+        <div class="apple-footer-col">
+          <h4>Turnkey Solutions</h4>
+          <ul>
+            <li><a href="../../turnkey-projects/index.html">500-Bedded Hospital Setup</a></li>
+            <li><a href="../../catalogue/modular-ot/index.html">Modular OT Construction</a></li>
+            <li><a href="../../turnkey-projects/index.html">Medical Gas Pipeline (MGPS)</a></li>
+            <li><a href="../../turnkey-projects/index.html">Hospital Architecture &amp; MEP</a></li>
+            <li><a href="../../turnkey-projects/index.html">Government &amp; Global Tenders</a></li>
+          </ul>
         </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="copyright">
-                            <p>© <span>Copyright</span> <strong class="px-1 sitename">Dr. Smith</strong> <span>All Rights Reserved</span></p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="footer-bottom-links">
-                            <a href="../../privacy.html">Privacy Policy</a>
-                            <a href="../../terms.html">Terms of Service</a>
-                            <a href="../../contact-form/index.html">Contact</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+        <!-- Col 2: Group Ecosystem -->
+        <div class="apple-footer-col">
+          <h4>Group Ecosystem</h4>
+          <ul>
+            <li><a href="../../about-us/index.html">Dr. Smith Healthcare</a></li>
+            <li><a href="../../catalogue/index.html">Surgihub Surgical Devices</a></li>
+            <li><a href="../../catalogue/index.html">Surgical Mall of India (SMPL)</a></li>
+            <li><a href="../../catalogue/index.html">MediAid Patient Care</a></li>
+            <li><a href="../../catalogue/index.html">Orbit Mahajan Diagnostics</a></li>
+          </ul>
         </div>
-    </footer>
+
+        <!-- Col 3: Product Catalogue -->
+        <div class="apple-footer-col">
+          <h4>Product Catalogue</h4>
+          <ul>
+            <li><a href="../../catalogue/beds/index.html">Hospital &amp; ICU Beds</a></li>
+            <li><a href="../../catalogue/modular-ot/index.html">Modular OT Suites</a></li>
+            <li><a href="../../catalogue/patient-monitor/index.html">Critical Care &amp; Monitors</a></li>
+            <li><a href="../../catalogue/ventilators/index.html">ICU Ventilators</a></li>
+            <li><a href="../../catalogue/index.html">Full 50+ Categories</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Global Directory -->
+        <div class="apple-footer-col">
+          <h4>Global Presence</h4>
+          <ul>
+            <li><a href="../../contact-form/index.html">New Delhi Head Office (India)</a></li>
+            <li><a href="../../contact-form/index.html">Jhajjar Manufacturing Plant</a></li>
+            <li><a href="../../contact-form/index.html">Sharjah Overseas Office (UAE)</a></li>
+            <li><a href="../../contact-form/index.html">Kenya &amp; Nigeria Desks</a></li>
+            <li><a href="../../contact-form/index.html">Patna, Kolkata, Varanasi Marts</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Compliance & Values -->
+        <div class="apple-footer-col">
+          <h4>Corporate &amp; Quality</h4>
+          <ul>
+            <li><a href="../../about-us/index.html">About 60+ Years Heritage</a></li>
+            <li><a href="../../mission-values/index.html">Mission &amp; Values</a></li>
+            <li><a href="../../about-us/index.html#team">Executive Leadership</a></li>
+            <li><a href="../../privacy.html">Privacy Policy</a></li>
+            <li><a href="../../terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Legal & Country -->
+      <div class="apple-footer-bottom">
+        <div class="apple-footer-copyright">
+          Copyright &copy; 2026 Dr. Smith Healthcare Solutions (Surgical Wholesale Mart Pvt. Ltd.). All rights reserved. An ISO 9001:2015, ISO 13485:2016, CE &amp; FDA Certified Company.
+        </div>
+        <div class="apple-footer-legal-links">
+          <a href="../../privacy.html">Privacy Policy</a>
+          <a href="../../terms.html">Terms of Use</a>
+          <a href="../../contact-form/index.html">Regulatory Compliance</a>
+          <a href="../../catalogue/index.html">Site Map</a>
+        </div>
+        <div class="apple-footer-country">
+          <a href="../../contact-form/index.html" class="text-decoration-none text-muted"><i class="bi bi-globe me-1"></i> India (English)</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Drawer Modal -->
+  <div class="apple-drawer-overlay" id="apple-drawer-overlay" onclick="if(event.target===this) closeAppleDrawer();">
+    <div class="apple-drawer-content">
+      <button type="button" class="apple-drawer-close" onclick="closeAppleDrawer();" aria-label="Close">
+        <i class="bi bi-x-lg"></i>
+      </button>
+      
+      <div style="text-align: center; margin-bottom: 24px;">
+        <span class="apple-shelf-badge">Dr. Smith Turnkey &amp; Procurement Desk</span>
+        <h3 style="font-size: 24px; font-weight: 700; margin-top: 8px;">Request Project Consultation</h3>
+        <p style="font-size: 14px; color: var(--apple-text-secondary); margin: 0;">Speak directly with our healthcare architects &amp; hospital engineering experts.</p>
+      </div>
+
+      <form class="apple-drawer-form" onsubmit="handleAppleQuoteSubmit(event);">
+        <div class="form-group">
+          <label>Scope of Interest</label>
+          <input type="text" id="drawer-product-name" value="Turnkey Hospital Setup" readonly style="background: rgba(255,255,255,0.08); font-weight: 600;">
+        </div>
+
+        <div class="row g-2">
+          <div class="col-md-6 form-group">
+            <label>Your Full Name *</label>
+            <input type="text" placeholder="Dr. / Mr. / Ms." required>
+          </div>
+          <div class="col-md-6 form-group">
+            <label>Hospital / Institution Name *</label>
+            <input type="text" placeholder="Hospital / Organization Name" required>
+          </div>
+        </div>
+
+        <div class="row g-2">
+          <div class="col-md-6 form-group">
+            <label>Official Email *</label>
+            <input type="email" placeholder="name@hospital.com" required>
+          </div>
+          <div class="col-md-6 form-group">
+            <label>Phone / WhatsApp *</label>
+            <input type="tel" placeholder="+91 99999 99999" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Project Scope &amp; Requirements</label>
+          <textarea rows="3" placeholder="Specify turnkey bed capacity, modular OT requirement, MGPS pipeline, or equipment procurement details..."></textarea>
+        </div>
+
+        <button type="submit" class="apple-btn-pill w-100 mt-2" style="padding: 14px;">Submit Consultation Request</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script>
+    function openAppleDrawer(scopeName) {
+      if (scopeName) {
+        const scopeInput = document.getElementById('drawer-product-name');
+        if (scopeInput) scopeInput.value = scopeName;
+      }
+      document.getElementById('apple-drawer-overlay').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeAppleDrawer() {
+      document.getElementById('apple-drawer-overlay').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    function handleAppleQuoteSubmit(e) {
+      e.preventDefault();
+      alert('Thank you! Your project consultation request has been received.');
+      closeAppleDrawer();
+    }
+    const mobileMenuBtn = document.getElementById('apple-mobile-menu-btn');
+    if (mobileMenuBtn) {
+      mobileMenuBtn.addEventListener('click', function() {
+        document.body.classList.toggle('apple-mobile-menu-open');
+        const icon = mobileMenuBtn.querySelector('i');
+        if (document.body.classList.contains('apple-mobile-menu-open')) {
+          icon.classList.remove('bi-list');
+          icon.classList.add('bi-x-lg');
+        } else {
+          icon.classList.remove('bi-x-lg');
+          icon.classList.add('bi-list');
+        }
+      });
+    }
+    document.querySelectorAll('.apple-mobile-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.body.classList.remove('apple-mobile-menu-open');
+      });
+    });
+    window.addEventListener('scroll', function() {
+      const nav = document.querySelector('.apple-globalnav');
+      if (nav) {
+        if (window.scrollY > 30) nav.classList.add('nav-scrolled');
+        else nav.classList.remove('nav-scrolled');
+      }
+    }, { passive: true });
+  </script>
+
 
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to top">
         <i class="bi bi-arrow-up-short"></i>

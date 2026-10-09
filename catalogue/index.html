@@ -2,920 +2,1093 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore Dr. Smith's catalogue of hospital furniture, medical equipment, surgical instruments and laboratory equipment.">
-    <meta name="theme-color" content="#ffffff">
-    <title>Dr. Smith Medical Equipment Catalogue</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Dr. Smith's comprehensive medical catalogue: hospital furniture, critical care equipment, modular operation theatres, surgical instruments, and radiology devices.">
+  <meta name="theme-color" content="#030712">
+  <title>Medical Equipment &amp; Hospital Furniture Catalogue | Dr. Smith</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="../assets/css/main.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
-    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
 
-    <link href="css/catalogue.css" rel="stylesheet">
-    <link href="../assets/css/admin-portal.css?v=22.0" rel="stylesheet">
+  <link href="../assets/css/apple-theme.css?v=36.0" rel="stylesheet">
+  <link href="css/catalogue.css?v=36.0" rel="stylesheet">
+  <link href="../assets/css/admin-portal.css?v=23.0" rel="stylesheet">
 </head>
 
-<body class="catalogue-page">
-    <header id="header" class="header header--minimal d-flex align-items-center fixed-top">
-        <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-            <a href="../index.html" class="logo d-flex align-items-center" aria-label="Dr. Smith home">
-                <img src="../assets/img/logo.png?v=2" onerror="this.onerror=null; this.src='img/logo.png?v=2';" alt="Dr. Smith logo" width="62" height="64">
-                <h1 class="sitename">Dr. Smith</h1>
+<body class="apple-body catalogue-page">
+  <!-- ============================================================
+       1. GLOBAL NAVIGATION HEADER
+       ============================================================ -->
+  <nav class="apple-globalnav" aria-label="Global">
+    <div class="apple-globalnav-inner">
+      
+      <!-- Brand & Corporate Identity -->
+      <a href="../index.html" class="apple-nav-brand" aria-label="Dr. Smith Hospital Solutions">
+        <div class="brand-asterisk-icon">
+          <img src="../assets/img/logo.png?v=11.0" alt="Dr. Smith Emblem Logo" class="apple-nav-logo-img" width="36" height="36">
+        </div>
+        <div class="apple-nav-brand-text">
+          <span class="apple-nav-brand-title">Dr. Smith</span>
+          <span class="apple-nav-brand-subtitle">HOSPITAL SOLUTIONS</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="apple-nav-links">
+        <li class="apple-nav-item">
+          <a href="../index.html" class="apple-nav-link">Home</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../catalogue/index.html" class="apple-nav-link nav-active">Products</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../turnkey-projects/index.html" class="apple-nav-link">Turnkey Solutions</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../about-us/index.html" class="apple-nav-link">About Us</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../contact-form/index.html" class="apple-nav-link">Contact</a>
+        </li>
+      </ul>
+
+      <!-- Action Utilities -->
+      <div class="apple-nav-actions">
+        <!-- Search Circle Button -->
+        <a href="../catalogue/index.html" class="apple-nav-circle-btn" aria-label="Search Medical Catalogue" title="Search Catalogue">
+          <i class="bi bi-search"></i>
+        </a>
+
+        <!-- WhatsApp Circle Button -->
+        <a href="https://wa.me/919999999999" class="apple-nav-circle-btn apple-nav-circle-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" title="WhatsApp Direct">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <!-- Menu Toggle Button -->
+        <button type="button" class="apple-nav-circle-btn" id="apple-mobile-menu-btn" aria-label="Toggle Navigation Menu" title="Menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Drawer Overlay -->
+  <div class="apple-mobile-drawer" id="apple-mobile-drawer">
+    <ul class="apple-mobile-links">
+      <li><a href="../index.html">Home <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+      <li><a href="../catalogue/index.html">Products Catalogue <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+      <li><a href="../turnkey-projects/index.html">Turnkey Hospital Setup <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+      <li><a href="../catalogue/modular-ot/index.html">Modular Operation Theatres <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+      <li><a href="../about-us/index.html">About Dr. Smith <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+      <li><a href="../contact-form/index.html">Global Offices &amp; Contact <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+    </ul>
+    
+    <div class="apple-mobile-cta-box">
+      <button type="button" class="apple-btn-pill w-100 py-3" onclick="openAppleDrawer('Turnkey Consultation');">
+        <i class="bi bi-building me-2"></i> Request Project Consultation
+      </button>
+      <a href="tel:18008917466" class="btn btn-outline-light rounded-pill py-2 w-100 text-center">
+        <i class="bi bi-telephone-fill me-2 text-primary"></i> Call Toll-Free: 1800 891 7466
+      </a>
+      <a href="https://wa.me/919999999999" class="btn btn-success rounded-pill py-2 w-100 text-center" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp me-2"></i> WhatsApp Consultation Desk
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ============================================================
+         HERO SECTION
+         ============================================================ -->
+    <section class="catalogue-hero">
+      <div class="container">
+        <!-- Mobile View Only: Admin Button under header -->
+        <div class="d-flex d-md-none justify-content-start mb-3" id="adminMobileLoginRow">
+          <div class="admin-mobile-slot">
+            <button type="button" class="admin-login-btn admin-login-trigger" data-bs-toggle="modal" data-bs-target="#adminAuthModal" title="Administrator Login">
+              <i class="bi bi-shield-lock-fill me-1"></i>
+              <span>Admin Login</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Member Greeting Banner (Visible only when logged in as admin/member) -->
+        <div id="adminVipBanner" class="admin-vip-banner admin-only d-none mb-4" role="region" aria-label="Member Welcome">
+          <div class="admin-vip-card">
+            <div class="admin-vip-main">
+              <div class="admin-vip-avatar">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <div class="admin-vip-info">
+                <div class="admin-vip-tags">
+                  <span class="admin-vip-dept">
+                    <i class="bi bi-building me-1"></i><span id="adminVipDeptText">Administration</span>
+                  </span>
+                </div>
+                <h3 class="admin-vip-greeting text-white">
+                  Hello, <span class="admin-vip-name" id="adminVipNameText">Member</span> <span class="admin-vip-wave">👋</span>
+                </h3>
+                <div class="admin-vip-meta">
+                  <span class="admin-vip-role"><i class="bi bi-person-badge me-1"></i><span id="adminVipRoleText">Administrator</span></span>
+                  <span class="admin-vip-sep">•</span>
+                  <span class="admin-vip-org" id="adminVipOrgText">Dr. Smith Healthcare</span>
+                  <span class="admin-vip-sep d-none d-sm-inline">•</span>
+                  <span class="admin-vip-status d-none d-sm-inline-flex align-items-center">
+                    <span class="admin-status-dot me-1"></span> Authorized Contributor
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="admin-vip-actions">
+              <button type="button" class="btn btn-sm btn-primary header-action-upload-btn d-inline-flex align-items-center gap-1" title="Upload New Equipment">
+                <i class="bi bi-cloud-arrow-up-fill"></i>
+                <span>Upload Equipment</span>
+              </button>
+              <button type="button" class="btn btn-sm btn-outline-danger admin-signout-btn d-inline-flex align-items-center gap-1" title="Sign Out of Portal">
+                <i class="bi bi-box-arrow-right"></i>
+                <span class="d-none d-sm-inline">Sign Out</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-lg-9">
+            <span class="catalogue-eyebrow"><i class="bi bi-shield-check"></i> Complete Hospital Equipment Solutions</span>
+            <h1>One-Stop Solutions for <span>Hospital-Related Needs.</span></h1>
+            <p>Explore high-precision critical care devices, hospital beds, surgical instruments, modular operation theatres, medical gas pipeline systems, and complete healthcare infrastructure.</p>
+            <div class="d-flex flex-wrap gap-3 mt-3">
+              <a class="catalogue-button" href="#catalogue">
+                Browse Full Catalogue <i class="bi bi-arrow-down ms-1"></i>
+              </a>
+              <button type="button" class="catalogue-button catalogue-button--ghost" onclick="openAppleDrawer('Hospital Equipment Package');">
+                <i class="bi bi-file-earmark-spreadsheet me-1"></i> Request Quote / BOM
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         MAIN DEPARTMENT CATEGORIES SECTION
+         ============================================================ -->
+    <section id="catalogue" class="catalogue-section">
+      <div class="container">
+        <!-- Live Real-Time Search Bar -->
+        <div class="row justify-content-center mb-4">
+          <div class="col-md-8 col-lg-6">
+            <div class="category-search-wrapper d-flex align-items-center shadow-sm">
+              <span class="input-group-text"><i class="bi bi-search"></i></span>
+              <input type="text" id="category-filter-search" class="form-control" placeholder="Search categories (e.g. Equipments, Beds, OT, Ultrasound)..." aria-label="Search product categories">
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <p class="catalogue-count mb-0">Showing <strong id="category-results-count">6</strong> main categories (42 total ranges)</p>
+          <a href="../medical-products/index.html" class="text-decoration-none small text-info"><i class="bi bi-grid-3x3-gap me-1"></i> View Products Grid</a>
+        </div>
+
+        <div class="row g-4" id="parent-category-grid">
+          <!-- 1. Equipments -->
+          <div class="col-md-6 col-lg-4 category-box-col" data-title="equipments" data-keywords="anesthesia workstation autoclaves bipap cpap blood bank cautery machine defibrillator aed dialysis machine ecg ivd lapro modular ot ot lights patient monitor scrub station small general equipment suction machine syringe infusion ventilators">
+            <div class="card h-100 category-card-box position-relative">
+              <div class="card-body p-4 d-flex flex-column">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <div class="cat-icon-box" style="width: 54px; height: 54px; border-radius: 14px; font-size: 1.5rem; display: flex; align-items: center; justify-content: center;">
+                    <i class="bi bi-gear-wide-connected"></i>
+                  </div>
+                  <span class="badge">19 Subcategories</span>
+                </div>
+                <span class="text-uppercase fw-bold text-muted mb-1" style="font-size: 0.72rem; letter-spacing: 0.8px;">Critical Care &amp; OT</span>
+                <h3 class="h4 fw-bold mb-2">Equipments</h3>
+                <p class="small flex-grow-1 mb-3" style="line-height: 1.6;">High-precision critical care, anesthesia, monitoring, diagnostic, and surgical operating theatre equipment.</p>
+                <div class="mb-3 pt-2" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                  <small class="text-muted d-block mb-1" style="font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600;">Includes:</small>
+                  <div class="d-flex flex-wrap gap-1">
+                    <span class="badge bg-light">Anesthesia</span>
+                    <span class="badge bg-light">OT Lights</span>
+                    <span class="badge bg-light">Ventilators</span>
+                    <span class="badge bg-light">+16 more</span>
+                  </div>
+                </div>
+                <a href="equipments/index.html" class="btn btn-outline-primary fw-semibold w-100 py-2 d-flex align-items-center justify-content-center stretched-link">
+                  Browse Equipments <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Hospital Furniture -->
+          <div class="col-md-6 col-lg-4 category-box-col" data-title="hospital furniture" data-keywords="abs panels bed side locker cabinets examination gynecology hospital beds pediatric beds hospital furniture hospital trolley office furniture ot tables over bed table revolving stool special category chair stretcher trolley three seater ward furniture wheelchairs">
+            <div class="card h-100 category-card-box position-relative">
+              <div class="card-body p-4 d-flex flex-column">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <div class="cat-icon-box" style="width: 54px; height: 54px; border-radius: 14px; font-size: 1.5rem; display: flex; align-items: center; justify-content: center;">
+                    <i class="bi bi-hospital"></i>
+                  </div>
+                  <span class="badge">17 Subcategories</span>
+                </div>
+                <span class="text-uppercase fw-bold text-muted mb-1" style="font-size: 0.72rem; letter-spacing: 0.8px;">Healthcare Infrastructure</span>
+                <h3 class="h4 fw-bold mb-2">Hospital Furniture</h3>
+                <p class="small flex-grow-1 mb-3" style="line-height: 1.6;">Hospital beds, examination couches, patient ward furniture, medical trolleys, lockers, and specialized seating.</p>
+                <div class="mb-3 pt-2" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                  <small class="text-muted d-block mb-1" style="font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600;">Includes:</small>
+                  <div class="d-flex flex-wrap gap-1">
+                    <span class="badge bg-light">Hospital Beds</span>
+                    <span class="badge bg-light">Pediatric Beds</span>
+                    <span class="badge bg-light">OT Tables</span>
+                    <span class="badge bg-light">+14 more</span>
+                  </div>
+                </div>
+                <a href="furniture/index.html" class="btn btn-outline-primary fw-semibold w-100 py-2 d-flex align-items-center justify-content-center stretched-link">
+                  Browse Hospital Furniture <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Instruments -->
+          <div class="col-md-6 col-lg-4 category-box-col" data-title="instruments" data-keywords="hollowares items surgical instruments gyne general macro ent orthopedic tc scissors forceps trays">
+            <div class="card h-100 category-card-box position-relative">
+              <div class="card-body p-4 d-flex flex-column">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <div class="cat-icon-box" style="width: 54px; height: 54px; border-radius: 14px; font-size: 1.5rem; display: flex; align-items: center; justify-content: center;">
+                    <i class="bi bi-scissors"></i>
+                  </div>
+                  <span class="badge">2 Subcategories</span>
+                </div>
+                <span class="text-uppercase fw-bold text-muted mb-1" style="font-size: 0.72rem; letter-spacing: 0.8px;">Precision Surgical Tools</span>
+                <h3 class="h4 fw-bold mb-2">Instruments</h3>
+                <p class="small flex-grow-1 mb-3" style="line-height: 1.6;">Specialized surgical instrument sets, tungsten carbide precision instruments, and stainless steel hospital hollowware.</p>
+                <div class="mb-3 pt-2" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                  <small class="text-muted d-block mb-1" style="font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600;">Includes:</small>
+                  <div class="d-flex flex-wrap gap-1">
+                    <span class="badge bg-light">Surgical Instruments</span>
+                    <span class="badge bg-light">Hollowares Items</span>
+                  </div>
+                </div>
+                <a href="instruments/index.html" class="btn btn-outline-primary fw-semibold w-100 py-2 d-flex align-items-center justify-content-center stretched-link">
+                  Browse Instruments <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Disposables -->
+          <div class="col-md-6 col-lg-4 category-box-col" data-title="disposables" data-keywords="biobin cleaning disposables foot operated biobin scrubs fogger disinfection waste management">
+            <div class="card h-100 category-card-box position-relative">
+              <div class="card-body p-4 d-flex flex-column">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <div class="cat-icon-box" style="width: 54px; height: 54px; border-radius: 14px; font-size: 1.5rem; display: flex; align-items: center; justify-content: center;">
+                    <i class="bi bi-box-seam"></i>
+                  </div>
+                  <span class="badge">2 Subcategories</span>
+                </div>
+                <span class="text-uppercase fw-bold text-muted mb-1" style="font-size: 0.72rem; letter-spacing: 0.8px;">Hygiene &amp; Sanitation</span>
+                <h3 class="h4 fw-bold mb-2">Disposables</h3>
+                <p class="small flex-grow-1 mb-3" style="line-height: 1.6;">Biomedical waste management equipment, hospital disinfection foggers, and protective medical scrub attire.</p>
+                <div class="mb-3 pt-2" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                  <small class="text-muted d-block mb-1" style="font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600;">Includes:</small>
+                  <div class="d-flex flex-wrap gap-1">
+                    <span class="badge bg-light">Biobin &amp; Cleaning</span>
+                    <span class="badge bg-light">Medical Disposables</span>
+                  </div>
+                </div>
+                <a href="medical-disposables/index.html" class="btn btn-outline-primary fw-semibold w-100 py-2 d-flex align-items-center justify-content-center stretched-link">
+                  Browse Disposables <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. NIC Machines -->
+          <div class="col-md-6 col-lg-4 category-box-col" data-title="nic machines" data-keywords="baby warmer infant radiant warmer phototherapy neonatal incubator">
+            <div class="card h-100 category-card-box position-relative">
+              <div class="card-body p-4 d-flex flex-column">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <div class="cat-icon-box" style="width: 54px; height: 54px; border-radius: 14px; font-size: 1.5rem; display: flex; align-items: center; justify-content: center;">
+                    <i class="bi bi-thermometer-sun"></i>
+                  </div>
+                  <span class="badge">1 Subcategory</span>
+                </div>
+                <span class="text-uppercase fw-bold text-muted mb-1" style="font-size: 0.72rem; letter-spacing: 0.8px;">Neonatal &amp; Infant Care</span>
+                <h3 class="h4 fw-bold mb-2">NIC Machines</h3>
+                <p class="small flex-grow-1 mb-3" style="line-height: 1.6;">Advanced infant radiant warmers, open care phototherapy stations, and servo-controlled neonatal incubators.</p>
+                <div class="mb-3 pt-2" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                  <small class="text-muted d-block mb-1" style="font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600;">Includes:</small>
+                  <div class="d-flex flex-wrap gap-1">
+                    <span class="badge bg-light">Baby Warmer</span>
+                    <span class="badge bg-light">Phototherapy</span>
+                  </div>
+                </div>
+                <a href="nic-machines/index.html" class="btn btn-outline-primary fw-semibold w-100 py-2 d-flex align-items-center justify-content-center stretched-link">
+                  Browse NIC Machines <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Radiology Equipments -->
+          <div class="col-md-6 col-lg-4 category-box-col" data-title="radiology equipments" data-keywords="c arm machine ultrasound doppler fluoroscopy imaging scanner x-ray">
+            <div class="card h-100 category-card-box position-relative">
+              <div class="card-body p-4 d-flex flex-column">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <div class="cat-icon-box" style="width: 54px; height: 54px; border-radius: 14px; font-size: 1.5rem; display: flex; align-items: center; justify-content: center;">
+                    <i class="bi bi-broadcast-pin"></i>
+                  </div>
+                  <span class="badge">2 Subcategories</span>
+                </div>
+                <span class="text-uppercase fw-bold text-muted mb-1" style="font-size: 0.72rem; letter-spacing: 0.8px;">Diagnostic Imaging</span>
+                <h3 class="h4 fw-bold mb-2">Radiology Equipments</h3>
+                <p class="small flex-grow-1 mb-3" style="line-height: 1.6;">High-frequency surgical C-arm fluoroscopy systems and multi-frequency color Doppler ultrasound workstations.</p>
+                <div class="mb-3 pt-2" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                  <small class="text-muted d-block mb-1" style="font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600;">Includes:</small>
+                  <div class="d-flex flex-wrap gap-1">
+                    <span class="badge bg-light">C Arm Machine</span>
+                    <span class="badge bg-light">Ultrasound Workstations</span>
+                  </div>
+                </div>
+                <a href="radiology-equipments/index.html" class="btn btn-outline-primary fw-semibold w-100 py-2 d-flex align-items-center justify-content-center stretched-link">
+                  Browse Radiology Equipments <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div id="no-category-results" class="col-12 text-center py-5 d-none">
+            <div class="p-4 rounded-4 d-inline-block">
+              <i class="bi bi-search text-muted fs-2 mb-2 d-block"></i>
+              <h5 class="fw-bold mb-1">No categories match your search</h5>
+              <p class="text-muted small mb-0">Try searching for terms like <em>"Equipments"</em>, <em>"Beds"</em>, <em>"OT"</em>, or <em>"Ultrasound"</em>.</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="catalogue-nav-hint text-center mt-4 text-muted">Select a category box above to explore its product ranges, or <a href="events/index.html" class="text-info">view our exhibitions &amp; store openings</a>.</p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         TURNKEY CAPABILITY & INFRASTRUCTURE BENTO
+         ============================================================ -->
+    <section class="catalogue-section catalogue-section--surface">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <article class="catalogue-support-card">
+              <div class="catalogue-support-card__icon"><i class="bi bi-building-gear"></i></div>
+              <div class="catalogue-support-card__body">
+                <h3>Hospital Construction</h3>
+                <p>End-to-end hospital construction from architectural blueprints and civil engineering to MEP services and interiors compliant with NABH norms.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="catalogue-support-card">
+              <div class="catalogue-support-card__icon"><i class="bi bi-droplet"></i></div>
+              <div class="catalogue-support-card__body">
+                <h3>Medical Gas &amp; Modular O.T.</h3>
+                <p>Turnkey planning, HTM 02-01 compliant medical gas pipeline (MGPS) systems, and prefabricated laminar airflow modular operating theatre suites.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="catalogue-support-card">
+              <div class="catalogue-support-card__icon"><i class="bi bi-headset"></i></div>
+              <div class="catalogue-support-card__body">
+                <h3>Service &amp; Support</h3>
+                <p>All clinical equipment is manufactured to institutional specifications and includes our signature one-year complimentary warranty &amp; technical service.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         VERIFIED COMMUNITY EQUIPMENT LISTINGS SECTION
+         ============================================================ -->
+    <section id="marketplace" class="catalogue-section" style="border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06);">
+      <div class="container">
+        <div class="text-center mb-4">
+          <span class="subpage-hero-badge"><i class="bi bi-patch-check-fill"></i> Dr. Smith Verified Registry</span>
+          <h2 class="text-white fw-bold">Live Inventory &amp; Departmental Listings</h2>
+          <p class="text-muted small">Real-time equipment submissions verified by Dr. Smith clinical engineers.</p>
+        </div>
+
+        <!-- Category Filter Pills -->
+        <div class="d-flex flex-wrap justify-content-center gap-2 mb-4" id="marketplace-category-filters">
+          <button type="button" class="marketplace-filter-pill active" data-category="all">
+            All Categories
+          </button>
+          <button type="button" class="marketplace-filter-pill" data-category="Hospital & ICU Beds">
+            Hospital &amp; ICU Beds
+          </button>
+          <button type="button" class="marketplace-filter-pill" data-category="Diagnostic & Imaging">
+            Diagnostic &amp; Imaging
+          </button>
+          <button type="button" class="marketplace-filter-pill" data-category="Modular OT & OT Lights">
+            Modular OT
+          </button>
+          <button type="button" class="marketplace-filter-pill" data-category="Anesthesia & Respiratory">
+            Anesthesia &amp; Respiratory
+          </button>
+          <button type="button" class="marketplace-filter-pill" data-category="Surgical & Laparoscopy">
+            Surgical Instruments
+          </button>
+          <button type="button" class="marketplace-filter-pill" data-category="Autoclaves & Sterilization">
+            Autoclaves
+          </button>
+          <button type="button" class="marketplace-filter-pill" data-category="Hospital Furniture">
+            Ward Furniture
+          </button>
+        </div>
+
+        <div class="row" id="approved-listings-grid">
+          <div class="col-12 text-center py-5">
+            <div class="spinner-border text-info" role="status">
+              <span class="visually-hidden">Loading listings...</span>
+            </div>
+            <p class="text-muted mt-2 small">Loading verified listings...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CTA BANNER
+         ============================================================ -->
+    <section class="catalogue-section">
+      <div class="container">
+        <div class="catalogue-cta d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4">
+          <div>
+            <h2>Looking for a Customized Healthcare Solution?</h2>
+            <p>Share your equipment BOM or architectural scope with our hospital engineers for turnkey planning.</p>
+          </div>
+          <div class="d-flex gap-2 flex-wrap">
+            <button type="button" class="catalogue-button flex-shrink-0" onclick="openAppleDrawer('Complete Hospital Turnkey');">
+              Request Project Consultation <i class="bi bi-arrow-right ms-1"></i>
+            </button>
+            <a class="catalogue-button catalogue-button--ghost flex-shrink-0" href="../contact-form/index.html">
+              Contact Global Offices
             </a>
-            <!-- PC and Tablet View Only (Header) -->
-            <div class="d-none d-md-flex align-items-center gap-2">
-                <div class="admin-header-slot">
-                    <button type="button" class="admin-login-btn admin-login-trigger" data-bs-toggle="modal" data-bs-target="#adminAuthModal" title="Administrator Login">
-                        <i class="bi bi-shield-lock-fill"></i>
-                        <span>Admin Login</span>
-                    </button>
-                </div>
-            </div>
+          </div>
         </div>
-    </header>
+      </div>
+    </section>
 
-    <main>
-        <section class="catalogue-hero">
-            <div class="container">
-                <!-- Mobile View Only: Admin Button under header directly on main content background (Left aligned) -->
-                <div class="d-flex d-md-none justify-content-start mb-3" id="adminMobileLoginRow">
-                    <div class="admin-mobile-slot">
-                        <button type="button" class="admin-login-btn admin-login-trigger" data-bs-toggle="modal" data-bs-target="#adminAuthModal" title="Administrator Login">
-                            <i class="bi bi-shield-lock-fill"></i>
-                            <span>Admin Login</span>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Member Greeting Banner (Visible only when logged in as admin/member) -->
-                <div id="adminVipBanner" class="admin-vip-banner admin-only d-none mb-4" role="region" aria-label="Member Welcome">
-                    <div class="admin-vip-card">
-                        <div class="admin-vip-main">
-                            <div class="admin-vip-avatar">
-                                <i class="bi bi-shield-check"></i>
-                            </div>
-                            <div class="admin-vip-info">
-                                <div class="admin-vip-tags">
-                                    <span class="admin-vip-dept">
-                                        <i class="bi bi-building me-1"></i><span id="adminVipDeptText">Administration</span>
-                                    </span>
-                                </div>
-                                <h3 class="admin-vip-greeting">
-                                    Hello, <span class="admin-vip-name" id="adminVipNameText">Member</span> <span class="admin-vip-wave">👋</span>
-                                </h3>
-                                <div class="admin-vip-meta">
-                                    <span class="admin-vip-role"><i class="bi bi-person-badge me-1"></i><span id="adminVipRoleText">Administrator</span></span>
-                                    <span class="admin-vip-sep">•</span>
-                                    <span class="admin-vip-org" id="adminVipOrgText">Dr. Smith Healthcare</span>
-                                    <span class="admin-vip-sep d-none d-sm-inline">•</span>
-                                    <span class="admin-vip-status d-none d-sm-inline-flex align-items-center">
-                                        <span class="admin-status-dot me-1"></span> Authorized Contributor
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="admin-vip-actions">
-                            <button type="button" class="btn btn-sm btn-primary header-action-upload-btn d-inline-flex align-items-center gap-1" title="Upload New Equipment">
-                                <i class="bi bi-cloud-arrow-up-fill"></i>
-                                <span>Upload Equipment</span>
-                            </button>
-                            <button type="button" class="btn btn-sm btn-outline-danger admin-signout-btn d-inline-flex align-items-center gap-1" title="Sign Out of Portal">
-                                <i class="bi bi-box-arrow-right"></i>
-                                <span class="d-none d-sm-inline">Sign Out</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row align-items-center">
-                    <div class="col-lg-9">
-                        <span class="catalogue-eyebrow">Dr. Smith</span>
-                        <h1>One-stop solutions for <span>hospital-related needs.</span></h1>
-                        <p>Explore hospital furniture, medical equipment, surgical instruments, laboratory products, medical gas pipeline systems and turnkey hospital solutions from Dr. Smith.</p>
-                        <div class="d-flex flex-wrap gap-2 mt-3">
-                            <a class="catalogue-button" href="#catalogue">
-                                Browse the catalogue <i class="bi bi-arrow-down"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="catalogue" class="catalogue-section">
-            <div class="container">
-                <header class="catalogue-heading">
-                    <span class="catalogue-eyebrow">Our range</span>
-                    <h2>Browse the Catalogue</h2>
-                    <p>Choose a category below to browse that product range. Contact our team to confirm current specifications, availability and pricing.</p>
-                </header>
-
-                <div class="row justify-content-center mb-4">
-                    <div class="col-md-7 col-lg-5">
-                        <div class="input-group input-group-lg shadow-sm">
-                            <span class="input-group-text bg-white border-end-0 text-primary"><i class="bi bi-search"></i></span>
-                            <input type="text" id="category-filter-search" class="form-control border-start-0" placeholder="Search categories (e.g. Equipments, Beds, OT, Ultrasound)..." aria-label="Search product categories">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                    <p class="catalogue-count mb-0">Showing <strong id="category-results-count">6</strong> main categories (42 total ranges)</p>
-                </div>
-
-                <style>
-                .category-card-box {
-                    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease !important;
-                }
-                .category-card-box:hover {
-                    transform: translateY(-5px);
-                    box-shadow: 0 12px 28px rgba(0, 113, 227, 0.14) !important;
-                    border-color: rgba(0, 113, 227, 0.4) !important;
-                }
-                .category-card-box:hover .btn-outline-primary {
-                    background-color: #0071e3;
-                    color: #ffffff;
-                }
-                </style>
-
-                <div class="row g-4" id="parent-category-grid">
-                    <div class="col-md-6 col-lg-4 category-box-col" data-title="equipments" data-keywords="anesthesia workstation autoclaves bipap cpap blood bank cautery machine defibrillator aed dialysis machine ecg ivd lapro modular ot ot lights patient monitor scrub station small general equipment suction machine syringe infusion ventilators">
-                        <div class="card h-100 shadow-sm border-0 category-card-box position-relative" style="border-radius: 14px; overflow: hidden; background: #ffffff; border: 1px solid rgba(0,0,0,0.08) !important; box-shadow: 0 4px 16px rgba(0,0,0,0.06); transition: all 0.3s ease;">
-                            <div class="card-body p-4 d-flex flex-column">
-                                <div class="d-flex align-items-center justify-content-between mb-3">
-                                    <div class="cat-icon-box" style="width: 58px; height: 58px; border-radius: 12px; background: linear-gradient(135deg, rgba(0, 113, 227, 0.12), rgba(0, 113, 227, 0.22)); color: #0071e3; font-size: 1.6rem; display: flex; align-items: center; justify-content: center;">
-                                        <i class="bi bi-gear-wide-connected"></i>
-                                    </div>
-                                    <span class="badge" style="background: rgba(0, 113, 227, 0.08); color: #0071e3; border: 1px solid rgba(0, 113, 227, 0.25); font-weight: 600; font-size: 0.8rem; padding: 6px 12px; border-radius: 20px;">19 Subcategories</span>
-                                </div>
-                                <span class="text-uppercase fw-bold text-muted mb-1" style="font-size: 0.72rem; letter-spacing: 0.8px;">Critical Care & OT</span>
-                                <h3 class="h4 fw-bold text-dark mb-2">Equipments</h3>
-                                <p class="text-muted small flex-grow-1 mb-3" style="line-height: 1.6;">High-precision critical care, anesthesia, monitoring, diagnostic, and surgical operating theatre equipment.</p>
-                                <div class="mb-3 pt-2 border-top">
-                                    <small class="text-muted d-block mb-1" style="font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600;">Includes:</small>
-                                    <div class="d-flex flex-wrap">
-                                        <span class="badge bg-light text-secondary border me-1 mb-1" style="font-weight: 500; font-size: 0.75rem;">Anesthesia</span><span class="badge bg-light text-secondary border me-1 mb-1" style="font-weight: 500; font-size: 0.75rem;">OT Lights</span><span class="badge bg-light text-secondary border me-1 mb-1" style="font-weight: 500; font-size: 0.75rem;">Ventilators</span><span class="badge bg-light text-secondary border me-1 mb-1" style="font-weight: 500; font-size: 0.75rem;">+16 more</span>
-                                    </div>
-                                </div>
-                                <a href="equipments/index.html" class="btn btn-outline-primary fw-semibold w-100 py-2 d-flex align-items-center justify-content-center stretched-link" style="border-radius: 8px; font-size: 0.92rem;">
-                                    Browse Equipments <i class="bi bi-arrow-right ms-2"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 category-box-col" data-title="hospital furniture" data-keywords="abs panels bed side locker cabinets examination gynecology hospital beds pediatric beds hospital furniture hospital trolley office furniture ot tables over bed table revolving stool special category chair stretcher trolley three seater ward furniture wheelchairs">
-                        <div class="card h-100 shadow-sm border-0 category-card-box position-relative" style="border-radius: 14px; overflow: hidden; background: #ffffff; border: 1px solid rgba(0,0,0,0.08) !important; box-shadow: 0 4px 16px rgba(0,0,0,0.06); transition: all 0.3s ease;">
-                            <div class="card-body p-4 d-flex flex-column">
-                                <div class="d-flex align-items-center justify-content-between mb-3">
-                                    <div class="cat-icon-box" style="width: 58px; height: 58px; border-radius: 12px; background: linear-gradient(135deg, rgba(0, 113, 227, 0.12), rgba(0, 113, 227, 0.22)); color: #0071e3; font-size: 1.6rem; display: flex; align-items: center; justify-content: center;">
-                                        <i class="bi bi-hospital"></i>
-                                    </div>
-                                    <span class="badge" style="background: rgba(0, 113, 227, 0.08); color: #0071e3; border: 1px solid rgba(0, 113, 227, 0.25); font-weight: 600; font-size: 0.8rem; padding: 6px 12px; border-radius: 20px;">17 Subcategories</span>
-                                </div>
-                                <span class="text-uppercase fw-bold text-muted mb-1" style="font-size: 0.72rem; letter-spacing: 0.8px;">Healthcare Infrastructure</span>
-                                <h3 class="h4 fw-bold text-dark mb-2">Hospital Furniture</h3>
-                                <p class="text-muted small flex-grow-1 mb-3" style="line-height: 1.6;">Hospital beds, examination couches, patient ward furniture, medical trolleys, lockers, and specialized seating.</p>
-                                <div class="mb-3 pt-2 border-top">
-                                    <small class="text-muted d-block mb-1" style="font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600;">Includes:</small>
-                                    <div class="d-flex flex-wrap">
-                                        <span class="badge bg-light text-secondary border me-1 mb-1" style="font-weight: 500; font-size: 0.75rem;">Hospital Beds</span><span class="badge bg-light text-secondary border me-1 mb-1" style="font-weight: 500; font-size: 0.75rem;">Pediatric Beds</span><span class="badge bg-light text-secondary border me-1 mb-1" style="font-weight: 500; font-size: 0.75rem;">OT Tables</span><span class="badge bg-light text-secondary border me-1 mb-1" style="font-weight: 500; font-size: 0.75rem;">+14 more</span>
-                                    </div>
-                                </div>
-                                <a href="furniture/index.html" class="btn btn-outline-primary fw-semibold w-100 py-2 d-flex align-items-center justify-content-center stretched-link" style="border-radius: 8px; font-size: 0.92rem;">
-                                    Browse Hospital Furniture <i class="bi bi-arrow-right ms-2"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 category-box-col" data-title="instruments" data-keywords="hollowares items surgical instruments gyne general macro ent orthopedic tc scissors forceps trays">
-                        <div class="card h-100 shadow-sm border-0 category-card-box position-relative" style="border-radius: 14px; overflow: hidden; background: #ffffff; border: 1px solid rgba(0,0,0,0.08) !important; box-shadow: 0 4px 16px rgba(0,0,0,0.06); transition: all 0.3s ease;">
-                            <div class="card-body p-4 d-flex flex-column">
-                                <div class="d-flex align-items-center justify-content-between mb-3">
-                                    <div class="cat-icon-box" style="width: 58px; height: 58px; border-radius: 12px; background: linear-gradient(135deg, rgba(0, 113, 227, 0.12), rgba(0, 113, 227, 0.22)); color: #0071e3; font-size: 1.6rem; display: flex; align-items: center; justify-content: center;">
-                                        <i class="bi bi-scissors"></i>
-                                    </div>
-                                    <span class="badge" style="background: rgba(0, 113, 227, 0.08); color: #0071e3; border: 1px solid rgba(0, 113, 227, 0.25); font-weight: 600; font-size: 0.8rem; padding: 6px 12px; border-radius: 20px;">2 Subcategories</span>
-                                </div>
-                                <span class="text-uppercase fw-bold text-muted mb-1" style="font-size: 0.72rem; letter-spacing: 0.8px;">Precision Surgical Tools</span>
-                                <h3 class="h4 fw-bold text-dark mb-2">Instruments</h3>
-                                <p class="text-muted small flex-grow-1 mb-3" style="line-height: 1.6;">Specialized surgical instrument sets, tungsten carbide precision instruments, and stainless steel hospital hollowware.</p>
-                                <div class="mb-3 pt-2 border-top">
-                                    <small class="text-muted d-block mb-1" style="font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600;">Includes:</small>
-                                    <div class="d-flex flex-wrap">
-                                        <span class="badge bg-light text-secondary border me-1 mb-1" style="font-weight: 500; font-size: 0.75rem;">Surgical Instruments</span><span class="badge bg-light text-secondary border me-1 mb-1" style="font-weight: 500; font-size: 0.75rem;">Hollowares Items</span>
-                                    </div>
-                                </div>
-                                <a href="instruments/index.html" class="btn btn-outline-primary fw-semibold w-100 py-2 d-flex align-items-center justify-content-center stretched-link" style="border-radius: 8px; font-size: 0.92rem;">
-                                    Browse Instruments <i class="bi bi-arrow-right ms-2"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 category-box-col" data-title="disposables" data-keywords="biobin cleaning disposables foot operated biobin scrubs fogger disinfection waste management">
-                        <div class="card h-100 shadow-sm border-0 category-card-box position-relative" style="border-radius: 14px; overflow: hidden; background: #ffffff; border: 1px solid rgba(0,0,0,0.08) !important; box-shadow: 0 4px 16px rgba(0,0,0,0.06); transition: all 0.3s ease;">
-                            <div class="card-body p-4 d-flex flex-column">
-                                <div class="d-flex align-items-center justify-content-between mb-3">
-                                    <div class="cat-icon-box" style="width: 58px; height: 58px; border-radius: 12px; background: linear-gradient(135deg, rgba(0, 113, 227, 0.12), rgba(0, 113, 227, 0.22)); color: #0071e3; font-size: 1.6rem; display: flex; align-items: center; justify-content: center;">
-                                        <i class="bi bi-box-seam"></i>
-                                    </div>
-                                    <span class="badge" style="background: rgba(0, 113, 227, 0.08); color: #0071e3; border: 1px solid rgba(0, 113, 227, 0.25); font-weight: 600; font-size: 0.8rem; padding: 6px 12px; border-radius: 20px;">2 Subcategories</span>
-                                </div>
-                                <span class="text-uppercase fw-bold text-muted mb-1" style="font-size: 0.72rem; letter-spacing: 0.8px;">Hygiene & Sanitation</span>
-                                <h3 class="h4 fw-bold text-dark mb-2">Disposables</h3>
-                                <p class="text-muted small flex-grow-1 mb-3" style="line-height: 1.6;">Biomedical waste management equipment, hospital disinfection foggers, and protective medical scrub attire.</p>
-                                <div class="mb-3 pt-2 border-top">
-                                    <small class="text-muted d-block mb-1" style="font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600;">Includes:</small>
-                                    <div class="d-flex flex-wrap">
-                                        <span class="badge bg-light text-secondary border me-1 mb-1" style="font-weight: 500; font-size: 0.75rem;">Biobin & Cleaning</span><span class="badge bg-light text-secondary border me-1 mb-1" style="font-weight: 500; font-size: 0.75rem;">Medical Disposables</span>
-                                    </div>
-                                </div>
-                                <a href="medical-disposables/index.html" class="btn btn-outline-primary fw-semibold w-100 py-2 d-flex align-items-center justify-content-center stretched-link" style="border-radius: 8px; font-size: 0.92rem;">
-                                    Browse Disposables <i class="bi bi-arrow-right ms-2"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 category-box-col" data-title="nic machines" data-keywords="baby warmer infant radiant warmer phototherapy neonatal incubator">
-                        <div class="card h-100 shadow-sm border-0 category-card-box position-relative" style="border-radius: 14px; overflow: hidden; background: #ffffff; border: 1px solid rgba(0,0,0,0.08) !important; box-shadow: 0 4px 16px rgba(0,0,0,0.06); transition: all 0.3s ease;">
-                            <div class="card-body p-4 d-flex flex-column">
-                                <div class="d-flex align-items-center justify-content-between mb-3">
-                                    <div class="cat-icon-box" style="width: 58px; height: 58px; border-radius: 12px; background: linear-gradient(135deg, rgba(0, 113, 227, 0.12), rgba(0, 113, 227, 0.22)); color: #0071e3; font-size: 1.6rem; display: flex; align-items: center; justify-content: center;">
-                                        <i class="bi bi-thermometer-sun"></i>
-                                    </div>
-                                    <span class="badge" style="background: rgba(0, 113, 227, 0.08); color: #0071e3; border: 1px solid rgba(0, 113, 227, 0.25); font-weight: 600; font-size: 0.8rem; padding: 6px 12px; border-radius: 20px;">1 Subcategory</span>
-                                </div>
-                                <span class="text-uppercase fw-bold text-muted mb-1" style="font-size: 0.72rem; letter-spacing: 0.8px;">Neonatal & Infant Care</span>
-                                <h3 class="h4 fw-bold text-dark mb-2">NIC Machines</h3>
-                                <p class="text-muted small flex-grow-1 mb-3" style="line-height: 1.6;">Advanced infant radiant warmers, open care phototherapy stations, and servo-controlled neonatal incubators.</p>
-                                <div class="mb-3 pt-2 border-top">
-                                    <small class="text-muted d-block mb-1" style="font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600;">Includes:</small>
-                                    <div class="d-flex flex-wrap">
-                                        <span class="badge bg-light text-secondary border me-1 mb-1" style="font-weight: 500; font-size: 0.75rem;">Baby Warmer</span><span class="badge bg-light text-secondary border me-1 mb-1" style="font-weight: 500; font-size: 0.75rem;">Phototherapy</span>
-                                    </div>
-                                </div>
-                                <a href="nic-machines/index.html" class="btn btn-outline-primary fw-semibold w-100 py-2 d-flex align-items-center justify-content-center stretched-link" style="border-radius: 8px; font-size: 0.92rem;">
-                                    Browse NIC Machines <i class="bi bi-arrow-right ms-2"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 category-box-col" data-title="radiology equipments" data-keywords="c arm machine ultrasound doppler fluoroscopy imaging scanner x-ray">
-                        <div class="card h-100 shadow-sm border-0 category-card-box position-relative" style="border-radius: 14px; overflow: hidden; background: #ffffff; border: 1px solid rgba(0,0,0,0.08) !important; box-shadow: 0 4px 16px rgba(0,0,0,0.06); transition: all 0.3s ease;">
-                            <div class="card-body p-4 d-flex flex-column">
-                                <div class="d-flex align-items-center justify-content-between mb-3">
-                                    <div class="cat-icon-box" style="width: 58px; height: 58px; border-radius: 12px; background: linear-gradient(135deg, rgba(0, 113, 227, 0.12), rgba(0, 113, 227, 0.22)); color: #0071e3; font-size: 1.6rem; display: flex; align-items: center; justify-content: center;">
-                                        <i class="bi bi-broadcast-pin"></i>
-                                    </div>
-                                    <span class="badge" style="background: rgba(0, 113, 227, 0.08); color: #0071e3; border: 1px solid rgba(0, 113, 227, 0.25); font-weight: 600; font-size: 0.8rem; padding: 6px 12px; border-radius: 20px;">2 Subcategories</span>
-                                </div>
-                                <span class="text-uppercase fw-bold text-muted mb-1" style="font-size: 0.72rem; letter-spacing: 0.8px;">Diagnostic Imaging</span>
-                                <h3 class="h4 fw-bold text-dark mb-2">Radiology Equipments</h3>
-                                <p class="text-muted small flex-grow-1 mb-3" style="line-height: 1.6;">High-frequency surgical C-arm fluoroscopy systems and multi-frequency color Doppler ultrasound workstations.</p>
-                                <div class="mb-3 pt-2 border-top">
-                                    <small class="text-muted d-block mb-1" style="font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600;">Includes:</small>
-                                    <div class="d-flex flex-wrap">
-                                        <span class="badge bg-light text-secondary border me-1 mb-1" style="font-weight: 500; font-size: 0.75rem;">C Arm Machine</span><span class="badge bg-light text-secondary border me-1 mb-1" style="font-weight: 500; font-size: 0.75rem;">Ultrasound Workstations</span>
-                                    </div>
-                                </div>
-                                <a href="radiology-equipments/index.html" class="btn btn-outline-primary fw-semibold w-100 py-2 d-flex align-items-center justify-content-center stretched-link" style="border-radius: 8px; font-size: 0.92rem;">
-                                    Browse Radiology Equipments <i class="bi bi-arrow-right ms-2"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="no-category-results" class="col-12 text-center py-5 d-none">
-                        <div class="p-4 rounded-3 bg-light border d-inline-block">
-                            <i class="bi bi-search text-muted fs-2 mb-2 d-block"></i>
-                            <h5 class="fw-bold text-dark mb-1">No categories match your search</h5>
-                            <p class="text-muted small mb-0">Try searching for terms like <em>"Equipments"</em>, <em>"Beds"</em>, <em>"OT"</em>, or <em>"Ultrasound"</em>.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <script>
-                // -------------------------------------------------------------
-                // Live Real-Time Category Search Filter
-                // Filters the 6 main category boxes by matching the search query
-                // against category title, keywords attribute, and card content.
-                // -------------------------------------------------------------
-                document.addEventListener('DOMContentLoaded', function() {
-                    var searchInput = document.getElementById('category-filter-search');
-                    var countElem = document.getElementById('category-results-count');
-                    var noResultsElem = document.getElementById('no-category-results');
-
-                    if (searchInput) {
-                        searchInput.addEventListener('input', function() {
-                            var query = this.value.toLowerCase().trim();
-                            var categoryCards = document.querySelectorAll('.category-box-col');
-                            var visibleCount = 0;
-
-                            // Show or hide each category card based on match
-                            categoryCards.forEach(function(card) {
-                                var title = (card.getAttribute('data-title') || '').toLowerCase();
-                                var keywords = (card.getAttribute('data-keywords') || '').toLowerCase();
-                                var text = card.textContent.toLowerCase();
-
-                                var isMatch = !query || title.includes(query) || keywords.includes(query) || text.includes(query);
-                                card.style.display = isMatch ? '' : 'none';
-
-                                if (isMatch) visibleCount++;
-                            });
-
-                            // Update visible category count display
-                            if (countElem) {
-                                countElem.textContent = visibleCount;
-                            }
-
-                            // Toggle "no matching categories found" banner
-                            if (noResultsElem) {
-                                noResultsElem.classList.toggle('d-none', visibleCount > 0);
-                            }
-                        });
-                    }
-                });
-                </script>
-
-                <p class="catalogue-nav-hint text-center mt-4">Select a category box above to explore its product ranges, or <a href="events/index.html">view our exhibitions &amp; store openings</a>.</p>
-            </div>
-        </section>
-
-        <section class="catalogue-section catalogue-section--surface catalogue-banners">
-            <div class="container">
-                <header class="catalogue-heading">
-                    <span class="catalogue-eyebrow">Built around your needs</span>
-                    <h2>Solutions for Every Care Setting</h2>
-                    <p>From individual product requirements to larger facility projects, connect with our team to discuss your needs.</p>
-                </header>
-                <div class="row g-4">
-                    <div class="col-md-6">
-                        <img src="img/banner 1.jpg" alt="Dr. Smith healthcare solutions">
-                    </div>
-                    <div class="col-md-6">
-                        <img src="img/banner 2.jpg" alt="Dr. Smith medical catalogue">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="catalogue-section catalogue-section--surface">
-            <div class="container">
-                <header class="catalogue-heading">
-                    <span class="catalogue-eyebrow">How we help</span>
-                    <h2>Support for Your Requirements</h2>
-                    <p>Our team can help you navigate the catalogue and discuss the next steps for your healthcare project.</p>
-                </header>
-                <div class="row g-4">
-                    <div class="col-md-4">
-                        <article class="catalogue-support-card">
-                            <div class="catalogue-support-card__icon"><i class="bi bi-building-gear"></i></div>
-                            <div class="catalogue-support-card__body">
-                                <h3>Hospital Construction</h3>
-                                <p>End-to-end hospital construction from design and civil works to MEP services and interiors, as per NABH norms.</p>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-md-4">
-                        <article class="catalogue-support-card">
-                            <div class="catalogue-support-card__icon"><i class="bi bi-droplet"></i></div>
-                            <div class="catalogue-support-card__body">
-                                <h3>Medical Gas &amp; Modular O.T.</h3>
-                                <p>Planning, design, supply and installation solutions for medical gas pipeline systems and modular operating theatres.</p>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-md-4">
-                        <article class="catalogue-support-card">
-                            <div class="catalogue-support-card__icon"><i class="bi bi-headset"></i></div>
-                            <div class="catalogue-support-card__body">
-                                <h3>Service &amp; Support</h3>
-                                <p>Products are made to customer needs and specifications and include one year of free service after purchase.</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Verified Community Equipment Section -->
-        <section id="marketplace" class="catalogue-section bg-white" style="border-top: 1px solid rgba(0,0,0,0.06); border-bottom: 1px solid rgba(0,0,0,0.06);">
-            <div class="container">
-                <header class="catalogue-heading">
-                    <span class="catalogue-eyebrow">Community &amp; Verified Listings</span>
-                    <h2>Verified Equipment Marketplace</h2>
-                    <p>Pre-owned, certified, and doctor-submitted hospital equipment verified by Dr. Smith.</p>
-                </header>
-
-                <!-- Category Filter Pills -->
-                <div class="d-flex flex-wrap justify-content-center gap-2 mb-4" id="marketplace-category-filters">
-                    <button type="button" class="marketplace-filter-pill active" data-category="all">
-                        All Categories
-                    </button>
-                    <button type="button" class="marketplace-filter-pill" data-category="Hospital & ICU Beds">
-                        Hospital &amp; ICU Beds
-                    </button>
-                    <button type="button" class="marketplace-filter-pill" data-category="Diagnostic & Imaging">
-                        Diagnostic &amp; Imaging
-                    </button>
-                    <button type="button" class="marketplace-filter-pill" data-category="Modular OT & OT Lights">
-                        Modular OT
-                    </button>
-                    <button type="button" class="marketplace-filter-pill" data-category="Anesthesia & Respiratory">
-                        Anesthesia &amp; Respiratory
-                    </button>
-                    <button type="button" class="marketplace-filter-pill" data-category="Surgical & Laparoscopy">
-                        Surgical Instruments
-                    </button>
-                    <button type="button" class="marketplace-filter-pill" data-category="Autoclaves & Sterilization">
-                        Autoclaves
-                    </button>
-                    <button type="button" class="marketplace-filter-pill" data-category="Hospital Furniture">
-                        Ward Furniture
-                    </button>
-                </div>
-
-                <div class="row" id="approved-listings-grid">
-                    <div class="col-12 text-center py-5">
-                        <div class="spinner-border text-primary" role="status">
-                            <span class="visually-hidden">Loading listings...</span>
-                        </div>
-                        <p class="text-muted mt-2 small">Loading verified listings...</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="catalogue-section">
-            <div class="container">
-                <div class="catalogue-cta d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4">
-                    <div>
-                        <h2>Looking for a specific solution?</h2>
-                        <p>Share your requirements with our team and we’ll help you find the right next step.</p>
-                    </div>
-                    <a class="catalogue-button flex-shrink-0" href="../contact-form/index.html">
-                        Contact our team <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Admin-Only Equipment Upload Banner (Hidden from normal visitors, visible only when logged in as admin) -->
-        <section class="catalogue-section pt-0 pb-4 admin-only d-none" id="adminEquipmentUploadSection">
-            <div class="container">
-                <div class="p-4 p-md-5 rounded-4 border bg-white shadow-sm d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3" style="border-left: 5px solid var(--accent-color) !important;">
-                    <div>
-                        <span class="badge bg-primary text-white px-3 py-1 rounded-pill mb-2 fw-semibold">
-                            <i class="bi bi-cloud-arrow-up me-1"></i> Authorized Equipment Uploader
-                        </span>
-                        <h3 class="fw-bold mb-1" style="font-family: var(--heading-font); color: var(--heading-color); font-size: 1.25rem;">
-                            Equipment Upload &amp; Inventory Submissions
-                        </h3>
-                        <p class="text-muted mb-0 small" style="max-width: 680px;">
-                            You are logged in with administrator privileges. Submit new hospital devices and surgical equipment to the catalogue queue.
-                        </p>
-                    </div>
-                    <div class="flex-shrink-0">
-                        <button type="button" class="btn btn-primary px-4 py-2 rounded-pill fw-semibold shadow-sm" data-bs-toggle="modal" data-bs-target="#uploadListingModal">
-                            <i class="bi bi-cloud-arrow-up me-1"></i> Upload Equipment
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer id="footer" class="footer position-relative light-background">
-        <div class="container">
-            <div class="row gy-5">
-                <div class="col-lg-4">
-                    <div class="footer-content">
-                        <a href="../index.html" class="logo d-flex align-items-center mb-4">
-                            <span class="sitename">Dr. Smith</span>
-                        </a>
-                        <p class="mb-4">Dr. Smith provides medical equipment, healthcare infrastructure and patient-focused solutions.</p>
-                        <div class="catalogue-footer-logo">
-                            <a href="../index.html" aria-label="Dr. Smith home">
-                                <img src="../assets/img/logo.png?v=2" onerror="this.onerror=null; this.src='img/logo.png?v=2';" alt="Dr. Smith" width="62" height="64">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-6">
-                    <div class="footer-links">
-                        <h4>Explore</h4>
-                        <ul>
-                            <li><a href="#catalogue"><i class="bi bi-chevron-right"></i> All Categories</a></li>
-                            <li><a href="equipments/index.html"><i class="bi bi-chevron-right"></i> Equipments</a></li>
-                            <li><a href="furniture/index.html"><i class="bi bi-chevron-right"></i> Hospital Furniture</a></li>
-                            <li><a href="instruments/index.html"><i class="bi bi-chevron-right"></i> Instruments</a></li>
-                            <li><a href="medical-disposables/index.html"><i class="bi bi-chevron-right"></i> Disposables</a></li>
-                            <li><a href="radiology-equipments/index.html"><i class="bi bi-chevron-right"></i> Radiology</a></li>
-                            <li><a href="events/index.html"><i class="bi bi-chevron-right"></i> Exhibitions &amp; Events</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-6">
-                    <div class="footer-links">
-                        <h4>Company</h4>
-                        <ul>
-                            <li><a href="../index.html#about"><i class="bi bi-chevron-right"></i> About Us</a></li>
-                            <li><a href="../index.html#services"><i class="bi bi-chevron-right"></i> Turnkey Projects</a></li>
-                            <li><a href="../index.html#tabs"><i class="bi bi-chevron-right"></i> Patient Services</a></li>
-                            <li><a href="../contact-form/index.html"><i class="bi bi-chevron-right"></i> Contact Us</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="footer-contact">
-                        <h4>Get in Touch</h4>
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="bi bi-telephone"></i></div>
-                            <div class="contact-info"><p>1800 891 7466</p></div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="bi bi-envelope"></i></div>
-                            <div class="contact-info"><p><a href="mailto:info@drsmith.co.in">info@drsmith.co.in</a></p></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Admin-Only Equipment Upload Banner -->
+    <section class="catalogue-section pt-0 pb-4 admin-only d-none" id="adminEquipmentUploadSection">
+      <div class="container">
+        <div class="dark-glass-card d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3" style="border-left: 5px solid #00A3FF !important;">
+          <div>
+            <span class="badge bg-primary text-white px-3 py-1 rounded-pill mb-2 fw-semibold">
+              <i class="bi bi-cloud-arrow-up me-1"></i> Authorized Equipment Uploader
+            </span>
+            <h3 class="fw-bold mb-1 text-white" style="font-size: 1.25rem;">
+              Equipment Upload &amp; Inventory Submissions
+            </h3>
+            <p class="text-muted mb-0 small" style="max-width: 680px;">
+              You are logged in with administrator privileges. Submit new hospital devices and surgical equipment to the catalogue queue.
+            </p>
+          </div>
+          <div class="flex-shrink-0">
+            <button type="button" class="btn btn-primary px-4 py-2 rounded-pill fw-semibold shadow-sm" data-bs-toggle="modal" data-bs-target="#uploadListingModal">
+              <i class="bi bi-cloud-arrow-up me-1"></i> Upload Equipment
+            </button>
+          </div>
         </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="copyright">
-                            <p>© <span>Copyright</span> <strong class="px-1 sitename">Dr. Smith</strong> <span>All Rights Reserved</span></p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="footer-bottom-links">
-                            <a href="../privacy.html">Privacy Policy</a>
-                            <a href="../terms.html">Terms of Service</a>
-                            <a href="../contact-form/index.html">Contact</a>
-                            <a href="#" class="admin-only d-none" data-bs-toggle="modal" data-bs-target="#uploadListingModal"><i class="bi bi-cloud-arrow-up me-1"></i> Upload Equipment</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       GLOBAL DIRECTORY FOOTER
+       ============================================================ -->
+  <footer class="apple-globalfooter">
+    <div class="apple-footer-inner">
+      
+      <!-- Notes / Footnotes -->
+      <div class="apple-footer-notes">
+        <ol>
+          <li>Medical equipment specifications, turnkey timelines, and compliance standards (ISO 9001:2015, ISO 13485:2016, CE, FDA) depend on specific project scopes and customized clinical configurations.</li>
+          <li>Turnkey hospital infrastructure engineering timelines depend on architectural blueprints, local regulatory clearances, and civil site readiness.</li>
+          <li>Principal Global Head Office located at Kapashera Border, New Delhi; Manufacturing Plant at METL, Jhajjar, Haryana; Overseas Head Office at SAIF Zone, Sharjah, UAE.</li>
+        </ol>
+      </div>
+
+      <!-- Directory Columns -->
+      <div class="apple-footer-directory">
+
+        <!-- Col 1: Turnkey Solutions -->
+        <div class="apple-footer-col">
+          <h4>Turnkey Solutions</h4>
+          <ul>
+            <li><a href="../turnkey-projects/index.html">500-Bedded Hospital Setup</a></li>
+            <li><a href="../catalogue/modular-ot/index.html">Modular OT Construction</a></li>
+            <li><a href="../turnkey-projects/index.html">Medical Gas Pipeline (MGPS)</a></li>
+            <li><a href="../turnkey-projects/index.html">Hospital Architecture &amp; MEP</a></li>
+            <li><a href="../turnkey-projects/index.html">Government &amp; Global Tenders</a></li>
+          </ul>
         </div>
-    </footer>
 
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to top">
-        <i class="bi bi-arrow-up-short"></i>
-    </a>
-
-    <!-- Admin Login Modal -->
-    <div class="modal fade" id="adminAuthModal" tabindex="-1" aria-labelledby="adminAuthModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" style="max-width: 440px;">
-            <div class="modal-content border-0 shadow-lg" style="border-radius: 18px; overflow: hidden;">
-                <div class="modal-header border-0 pb-0 pt-4 px-4 d-flex justify-content-between align-items-center">
-                    <span class="badge rounded-pill bg-light text-primary border px-3 py-1 fw-semibold small">
-                        <i class="bi bi-shield-lock me-1"></i> Admin Portal
-                    </span>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body p-4 pt-2">
-                    <div class="text-center mb-4">
-                        <div class="mb-3" style="width: 60px; height: 60px; border-radius: 50%; background: #ffffff; color: var(--accent-color, #0071e3); display: inline-flex; align-items: center; justify-content: center; font-size: 1.7rem;">
-                            <i class="bi bi-shield-lock-fill"></i>
-                        </div>
-                        <h4 class="fw-bold text-dark mb-1" id="adminAuthModalLabel" style="font-family: var(--heading-font);">Administrator Login</h4>
-                        <p class="text-muted small mb-0" style="line-height: 1.5;">
-                            Authorized Dr. Smith administrators and department heads may sign in to upload equipment for catalogue review.
-                        </p>
-                    </div>
-
-                    <div id="adminAuthAlert" class="alert alert-danger d-none py-2 px-3 small rounded-3 mb-3"></div>
-
-                    <form id="adminLoginForm" action="javascript:void(0);" onsubmit="return false;" autocomplete="off">
-                        <div class="mb-3">
-                            <label for="adminIdInput" class="form-label fw-semibold small text-dark">Admin / Member ID <span class="text-danger">*</span></label>
-                            <div class="input-group">
-                                <span class="input-group-text bg-white border-end-0 text-muted"><i class="bi bi-person-badge"></i></span>
-                                <input type="text" class="form-control border-start-0" id="adminIdInput" placeholder="Enter your ID" required autocomplete="username">
-                            </div>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="adminPassInput" class="form-label fw-semibold small text-dark">Password / Access Pass <span class="text-danger">*</span></label>
-                            <div class="input-group">
-                                <span class="input-group-text bg-white border-end-0 text-muted"><i class="bi bi-key"></i></span>
-                                <input type="password" class="form-control border-start-0 border-end-0" id="adminPassInput" placeholder="Enter your access pass" required autocomplete="current-password">
-                                <button class="btn btn-outline-secondary border-start-0" type="button" id="adminTogglePassBtn" title="Toggle password visibility">
-                                    <i class="bi bi-eye"></i>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="d-grid mt-4">
-                            <button type="button" id="adminLoginSubmitBtn" class="btn btn-primary py-2 fw-semibold rounded-pill shadow-sm">
-                                <span id="adminLoginSpinner" class="spinner-border spinner-border-sm me-2 d-none" role="status"></span>
-                                <span id="adminLoginSubmitText"><i class="bi bi-unlock me-1"></i> Sign In to Upload Portal</span>
-                            </button>
-                        </div>
-
-                        <div class="text-center mt-3">
-                            <small class="text-muted" style="font-size: 0.75rem;">
-                                <i class="bi bi-lock me-1"></i> Standard visitors do not require login. For credential issues, contact administration.
-                            </small>
-                        </div>
-                    </form>
-                </div>
-            </div>
+        <!-- Col 2: Group Ecosystem -->
+        <div class="apple-footer-col">
+          <h4>Group Ecosystem</h4>
+          <ul>
+            <li><a href="../about-us/index.html">Dr. Smith Healthcare</a></li>
+            <li><a href="../catalogue/index.html">Surgihub Surgical Devices</a></li>
+            <li><a href="../catalogue/index.html">Surgical Mall of India (SMPL)</a></li>
+            <li><a href="../catalogue/index.html">MediAid Patient Care</a></li>
+            <li><a href="../catalogue/index.html">Orbit Mahajan Diagnostics</a></li>
+          </ul>
         </div>
+
+        <!-- Col 3: Product Catalogue -->
+        <div class="apple-footer-col">
+          <h4>Product Catalogue</h4>
+          <ul>
+            <li><a href="../catalogue/beds/index.html">Hospital &amp; ICU Beds</a></li>
+            <li><a href="../catalogue/modular-ot/index.html">Modular OT Suites</a></li>
+            <li><a href="../catalogue/patient-monitor/index.html">Critical Care &amp; Monitors</a></li>
+            <li><a href="../catalogue/ventilators/index.html">ICU Ventilators</a></li>
+            <li><a href="../catalogue/index.html">Full 50+ Categories</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Global Directory -->
+        <div class="apple-footer-col">
+          <h4>Global Presence</h4>
+          <ul>
+            <li><a href="../contact-form/index.html">New Delhi Head Office (India)</a></li>
+            <li><a href="../contact-form/index.html">Jhajjar Manufacturing Plant</a></li>
+            <li><a href="../contact-form/index.html">Sharjah Overseas Office (UAE)</a></li>
+            <li><a href="../contact-form/index.html">Kenya &amp; Nigeria Desks</a></li>
+            <li><a href="../contact-form/index.html">Patna, Kolkata, Varanasi Marts</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Compliance & Values -->
+        <div class="apple-footer-col">
+          <h4>Corporate &amp; Quality</h4>
+          <ul>
+            <li><a href="../about-us/index.html">About 60+ Years Heritage</a></li>
+            <li><a href="../mission-values/index.html">Mission &amp; Values</a></li>
+            <li><a href="../about-us/index.html#team">Executive Leadership</a></li>
+            <li><a href="../privacy.html">Privacy Policy</a></li>
+            <li><a href="../terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Legal & Country -->
+      <div class="apple-footer-bottom">
+        <div class="apple-footer-copyright">
+          Copyright &copy; 2026 Dr. Smith Healthcare Solutions (Surgical Wholesale Mart Pvt. Ltd.). All rights reserved. An ISO 9001:2015, ISO 13485:2016, CE &amp; FDA Certified Company.
+        </div>
+        <div class="apple-footer-legal-links">
+          <a href="../privacy.html">Privacy Policy</a>
+          <a href="../terms.html">Terms of Use</a>
+          <a href="../contact-form/index.html">Regulatory Compliance</a>
+          <a href="../catalogue/index.html">Site Map</a>
+        </div>
+        <div class="apple-footer-country">
+          <a href="../contact-form/index.html" class="text-decoration-none text-muted"><i class="bi bi-globe me-1"></i> India (English)</a>
+        </div>
+      </div>
+
     </div>
+  </footer>
 
-    <!-- Upload Listing Modal (2-Step Guided Wizard) -->
-    <div class="modal fade" id="uploadListingModal" tabindex="-1" aria-labelledby="uploadListingModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content border-0 shadow-lg" style="border-radius: 16px; overflow: hidden;">
-                <div class="modal-header wizard-modal-header">
-                    <h5 class="modal-title fw-bold" id="uploadListingModalLabel">
-                        <i class="bi bi-cloud-arrow-up me-2"></i> Upload Equipment For Review
-                    </h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+  <!-- Drawer Modal -->
+  <div class="apple-drawer-overlay" id="apple-drawer-overlay" onclick="if(event.target===this) closeAppleDrawer();">
+    <div class="apple-drawer-content">
+      <button type="button" class="apple-drawer-close" onclick="closeAppleDrawer();" aria-label="Close">
+        <i class="bi bi-x-lg"></i>
+      </button>
+      
+      <div style="text-align: center; margin-bottom: 24px;">
+        <span class="subpage-hero-badge">Dr. Smith Turnkey &amp; Procurement Desk</span>
+        <h3 style="font-size: 24px; font-weight: 700; margin-top: 8px; color: #ffffff;">Request Project Consultation</h3>
+        <p style="font-size: 14px; color: #94A3B8; margin: 0;">Speak directly with our healthcare architects &amp; hospital engineering experts.</p>
+      </div>
 
-                <!-- Wizard Step Indicators -->
-                <div class="d-flex align-items-center justify-content-center py-2 px-3 border-bottom" style="background: #f8fafc;" id="wizardStepIndicatorsBar">
-                    <div class="wizard-step-item active d-flex align-items-center" id="stepAuthIndicator">
-                        <span class="badge rounded-circle bg-primary me-2 px-2 py-1" id="stepAuthBadge"><i class="bi bi-shield-lock"></i></span>
-                        <span class="fw-bold small text-primary" id="stepAuthText">Member Auth</span>
-                    </div>
-                    <div class="mx-3 text-muted small"><i class="bi bi-chevron-right"></i></div>
-                    <div class="wizard-step-item d-flex align-items-center text-muted" id="step1Indicator">
-                        <span class="badge rounded-circle bg-secondary me-2 px-2 py-1" id="step1Badge">1</span>
-                        <span class="fw-semibold small" id="step1Text">1. Select Category</span>
-                    </div>
-                    <div class="mx-3 text-muted small"><i class="bi bi-chevron-right"></i></div>
-                    <div class="wizard-step-item d-flex align-items-center text-muted" id="step2Indicator">
-                        <span class="badge rounded-circle bg-secondary me-2 px-2 py-1" id="step2Badge">2</span>
-                        <span class="fw-semibold small" id="step2Text">2. Item Details &amp; Photos</span>
-                    </div>
-                </div>
-
-                <div class="modal-body p-4" id="wizardModalContentArea">
-                    <div id="listingStatusMsg" class="d-none"></div>
-
-                    <!-- Verified Member Status Banner (Visible when logged in) -->
-                    <div id="memberAuthBanner" class="d-none align-items-center justify-content-between p-2 px-3 mb-3 rounded-3" style="background: #f0fdf4; border: 1px solid #bbf7d0;">
-                        <div class="small text-success d-flex align-items-center">
-                            <i class="bi bi-shield-check me-2 fs-6"></i>
-                            <span>Authorized Member: <strong id="activeMemberName">Member</strong> (<span id="activeMemberId">ID</span>)</span>
-                        </div>
-                        <button type="button" class="btn btn-link btn-sm text-danger text-decoration-none p-0" id="memberSignOutBtn" style="font-size: 0.8rem;">
-                            <i class="bi bi-box-arrow-right me-1"></i>Sign Out
-                        </button>
-                    </div>
-
-                    <!-- STEP 0: MEMBER AUTHENTICATION SCREEN -->
-                    <div id="wizardStepAuth">
-                        <div class="text-center mb-4">
-                            <div class="mb-3" style="width: 58px; height: 58px; border-radius: 50%; background: #ffffff; color: var(--accent-color); display: inline-flex; align-items: center; justify-content: center; font-size: 1.6rem;">
-                                <i class="bi bi-shield-lock"></i>
-                            </div>
-                            <h5 class="fw-bold text-dark mb-1" style="font-family: var(--heading-font);">Authorized Member Verification</h5>
-                            <p class="text-muted small" style="max-width: 480px; margin: 0 auto;">
-                                The equipment upload queue is restricted to authorized Dr. Smith healthcare partners, hospital administrators, and registered members. Please enter your Member ID and Password to proceed.
-                            </p>
-                        </div>
-
-                        <div id="memberAuthAlert" class="alert alert-danger d-none py-2 px-3 small rounded-3 mb-3"></div>
-
-                        <form id="memberLoginForm" action="javascript:void(0);" onsubmit="return false;" style="max-width: 400px; margin: 0 auto;">
-                            <div class="mb-3">
-                                <label for="memberIdInput" class="form-label fw-semibold small">Member ID <span class="text-danger">*</span></label>
-                                <div class="input-group">
-                                    <span class="input-group-text bg-white"><i class="bi bi-person-badge text-muted"></i></span>
-                                    <input type="text" class="form-control" id="memberIdInput" placeholder="Enter your Member ID" required autocomplete="username">
-                                </div>
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="memberPassInput" class="form-label fw-semibold small">Password / Access Pass <span class="text-danger">*</span></label>
-                                <div class="input-group">
-                                    <span class="input-group-text bg-white"><i class="bi bi-key text-muted"></i></span>
-                                    <input type="password" class="form-control" id="memberPassInput" placeholder="Enter your access pass" required autocomplete="current-password">
-                                    <button class="btn btn-outline-secondary" type="button" id="togglePassVisibility" title="Toggle password visibility">
-                                        <i class="bi bi-eye"></i>
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div class="d-grid mt-4">
-                                <button type="button" id="memberLoginBtn" class="btn btn-primary py-2 fw-semibold">
-                                    <span id="memberLoginSpinner" class="spinner-border spinner-border-sm me-2 d-none" role="status"></span>
-                                    <span id="memberLoginBtnText"><i class="bi bi-unlock me-1"></i> Verify &amp; Unlock Portal</span>
-                                </button>
-                            </div>
-
-                            <div class="text-center mt-3">
-                                <small class="text-muted" style="font-size: 0.75rem;">
-                                    <i class="bi bi-info-circle me-1"></i> Don't have an authorized ID yet? Contact <a href="mailto:info@drsmith.co.in">info@drsmith.co.in</a>.
-                                </small>
-                            </div>
-                        </form>
-                    </div>
-
-                    <!-- STEP 1: CATEGORY SELECTION FIRST -->
-                    <div id="wizardStep1" class="d-none">
-                        <div class="text-center mb-4">
-                            <h5 class="fw-bold text-dark mb-1" style="font-family: var(--heading-font);">Step 1: In which category do you want to add this item?</h5>
-                            <p class="text-muted small">Choose the department or category below to proceed with your equipment details:</p>
-                        </div>
-
-                        <div class="row g-3">
-                            <div class="col-sm-6 col-md-4">
-                                <div class="wizard-category-card h-100 d-flex flex-column align-items-center text-center" data-category="Hospital & ICU Beds">
-                                    <div class="cat-icon"><i class="bi bi-hospital"></i></div>
-                                    <h6 class="fw-bold mb-1 small text-dark">Hospital &amp; ICU Beds</h6>
-                                    <p class="text-muted mb-0" style="font-size: 0.72rem;">Motorized, manual &amp; Fowler beds</p>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6 col-md-4">
-                                <div class="wizard-category-card h-100 d-flex flex-column align-items-center text-center" data-category="Diagnostic & Imaging">
-                                    <div class="cat-icon"><i class="bi bi-display"></i></div>
-                                    <h6 class="fw-bold mb-1 small text-dark">Diagnostic &amp; Imaging</h6>
-                                    <p class="text-muted mb-0" style="font-size: 0.72rem;">Ultrasound, C-Arm, ECG, Monitors</p>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6 col-md-4">
-                                <div class="wizard-category-card h-100 d-flex flex-column align-items-center text-center" data-category="Modular OT & OT Lights">
-                                    <div class="cat-icon"><i class="bi bi-brightness-high"></i></div>
-                                    <h6 class="fw-bold mb-1 small text-dark">Modular OT &amp; Lights</h6>
-                                    <p class="text-muted mb-0" style="font-size: 0.72rem;">OT tables, LED ceiling lights, panels</p>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6 col-md-4">
-                                <div class="wizard-category-card h-100 d-flex flex-column align-items-center text-center" data-category="Anesthesia & Respiratory">
-                                    <div class="cat-icon"><i class="bi bi-heart-pulse"></i></div>
-                                    <h6 class="fw-bold mb-1 small text-dark">Anesthesia &amp; Resp.</h6>
-                                    <p class="text-muted mb-0" style="font-size: 0.72rem;">Workstations, ventilators, pumps</p>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6 col-md-4">
-                                <div class="wizard-category-card h-100 d-flex flex-column align-items-center text-center" data-category="Surgical & Laparoscopy">
-                                    <div class="cat-icon"><i class="bi bi-scissors"></i></div>
-                                    <h6 class="fw-bold mb-1 small text-dark">Surgical &amp; Laparo</h6>
-                                    <p class="text-muted mb-0" style="font-size: 0.72rem;">Surgical sets, towers, endoscopy</p>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6 col-md-4">
-                                <div class="wizard-category-card h-100 d-flex flex-column align-items-center text-center" data-category="Autoclaves & Sterilization">
-                                    <div class="cat-icon"><i class="bi bi-shield-check"></i></div>
-                                    <h6 class="fw-bold mb-1 small text-dark">Autoclaves &amp; Steril.</h6>
-                                    <p class="text-muted mb-0" style="font-size: 0.72rem;">Sterilizers, foggers, chambers</p>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6 col-md-4">
-                                <div class="wizard-category-card h-100 d-flex flex-column align-items-center text-center" data-category="Hospital Furniture">
-                                    <div class="cat-icon"><i class="bi bi-archive"></i></div>
-                                    <h6 class="fw-bold mb-1 small text-dark">Hospital Furniture</h6>
-                                    <p class="text-muted mb-0" style="font-size: 0.72rem;">Lockers, tables, stretchers, chairs</p>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6 col-md-4">
-                                <div class="wizard-category-card h-100 d-flex flex-column align-items-center text-center" data-category="Medical Gas Pipeline (MGPS)">
-                                    <div class="cat-icon"><i class="bi bi-lungs"></i></div>
-                                    <h6 class="fw-bold mb-1 small text-dark">Medical Gas (MGPS)</h6>
-                                    <p class="text-muted mb-0" style="font-size: 0.72rem;">Outlets, alarm panels, valves</p>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6 col-md-4">
-                                <div class="wizard-category-card h-100 d-flex flex-column align-items-center text-center" data-category="Other Medical Equipment">
-                                    <div class="cat-icon"><i class="bi bi-gear-wide-connected"></i></div>
-                                    <h6 class="fw-bold mb-1 small text-dark">Other Equipment</h6>
-                                    <p class="text-muted mb-0" style="font-size: 0.72rem;">General devices &amp; clinical supplies</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="text-center mt-3 text-muted small">
-                            <i class="bi bi-hand-index-thumb"></i> Click any category box above to proceed to Step 2
-                        </div>
-                    </div>
-
-                    <!-- STEP 2: ITEM DETAILS & PHOTO (HIDDEN UNTIL CATEGORY IS SELECTED) -->
-                    <div id="wizardStep2" class="d-none">
-                        <div class="d-flex align-items-center justify-content-between p-3 mb-3 rounded-3" style="background: #ffffff; border: 1px solid #e5e5ea;">
-                            <div>
-                                <small class="text-muted d-block text-uppercase fw-semibold" style="font-size: 0.7rem; letter-spacing: 0.5px;">Target Category:</small>
-                                <div class="fw-bold text-primary fs-6" id="chosenCategoryBadge">Selected Category</div>
-                            </div>
-                            <button type="button" class="btn btn-sm btn-outline-primary" id="backToStep1Btn">
-                                <i class="bi bi-arrow-left me-1"></i> Change Category
-                            </button>
-                        </div>
-
-                        <div class="alert alert-info border-0 d-flex align-items-center mb-3 py-2 px-3" style="background-color: #f5f5f7; color: #005bb5; border-radius: 8px;">
-                            <i class="bi bi-shield-check fs-5 me-2"></i>
-                            <div class="small">
-                                <strong>Admin Approval:</strong> Items must be approved by Dr. Smith administrators before going live.
-                            </div>
-                        </div>
-
-                        <form id="listingSubmissionForm">
-                            <input type="hidden" id="listingCategory" value="">
-
-                            <div class="row g-3">
-                                <div class="col-md-7">
-                                    <label for="listingName" class="form-label fw-semibold small">Equipment Name / Model <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control form-control-sm" id="listingName" placeholder="e.g. Philips ClearVue 350 Ultrasound" required>
-                                </div>
-
-                                <div class="col-md-5">
-                                    <label for="listingPrice" class="form-label fw-semibold small">Asking Price / Pricing Note</label>
-                                    <input type="text" class="form-control form-control-sm" id="listingPrice" placeholder="e.g. $2,400 or Contact for Quote">
-                                </div>
-
-                                <div class="col-12">
-                                    <label for="listingContact" class="form-label fw-semibold small">Your Phone or Email <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control form-control-sm" id="listingContact" placeholder="e.g. doctor@hospital.com or +1..." required>
-                                    <div class="form-text text-muted" style="font-size: 0.72rem;">
-                                        <i class="bi bi-lock-fill"></i> Private: Visible only to Dr. Smith admins in your secure Airtable.
-                                    </div>
-                                </div>
-
-                                <div class="col-12">
-                                    <label for="listingDescription" class="form-label fw-semibold small">Description &amp; Condition Details <span class="text-danger">*</span></label>
-                                    <textarea class="form-control form-control-sm" id="listingDescription" rows="3" placeholder="Condition, manufacturing year, working status, included probes or accessories..." required></textarea>
-                                </div>
-
-                                <div class="col-12">
-                                    <label for="listingImage" class="form-label fw-semibold small">Product Photo (JPG/PNG/WEBP, max 10MB)</label>
-                                    <input class="form-control form-control-sm" type="file" id="listingImage" accept="image/jpeg,image/png,image/webp">
-                                    <div id="imagePreviewContainer" class="mt-2 d-none">
-                                        <img id="listingImagePreview" src="#" alt="Preview" class="img-thumbnail" style="max-height: 120px; border-radius: 8px;">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="d-flex justify-content-between align-items-center mt-4 pt-3 border-top">
-                                <button type="button" class="btn btn-outline-secondary btn-sm" id="backToStep1Btn2" onclick="document.getElementById('backToStep1Btn').click();">
-                                    <i class="bi bi-arrow-left me-1"></i> Back to Categories
-                                </button>
-                                <div class="d-flex gap-2">
-                                    <button type="button" class="btn btn-light btn-sm" data-bs-dismiss="modal">Cancel</button>
-                                    <button type="submit" id="submitListingBtn" class="btn btn-primary px-4 btn-sm">
-                                        <span id="submitSpinner" class="spinner-border spinner-border-sm me-2 d-none" role="status" aria-hidden="true"></span>
-                                        <span id="submitText">Send Listing Request</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-
-                    <!-- STEP SUCCESS: CONFIRMATION SCREEN -->
-                    <div id="wizardSuccessStep" class="d-none text-center py-4">
-                        <div class="mb-3" style="width: 72px; height: 72px; border-radius: 50%; background: #d1e7dd; color: #0f5132; display: inline-flex; align-items: center; justify-content: center; font-size: 2.4rem;">
-                            <i class="bi bi-check2-circle"></i>
-                        </div>
-                        <h4 class="fw-bold text-success mb-2" style="font-family: var(--heading-font);">Request Submitted Successfully!</h4>
-                        <div class="mb-2">
-                            <span class="badge px-3 py-2 fs-6" style="background: var(--accent-color); color: #fff;" id="successCategoryBadge">
-                                Category
-                            </span>
-                        </div>
-                        <div class="small text-muted mb-3" id="successSubmitterInfo">
-                            Submitted by: <strong>Member</strong>
-                        </div>
-                        <p class="text-muted mb-4 small" style="max-width: 480px; margin: 0 auto; line-height: 1.6;">
-                            Your equipment listing request has been submitted to the Dr. Smith administrator queue. Once reviewed and approved, it will be automatically published into the verified equipment catalogue!
-                        </p>
-                        <div class="d-flex justify-content-center gap-2">
-                            <button type="button" class="btn btn-outline-primary btn-sm px-3" id="uploadAnotherBtn">
-                                <i class="bi bi-plus-circle me-1"></i> Upload Another Item
-                            </button>
-                            <button type="button" class="btn btn-secondary btn-sm px-3" data-bs-dismiss="modal">
-                                Done / Close
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <form class="apple-drawer-form" onsubmit="handleAppleQuoteSubmit(event);">
+        <div class="form-group mb-3">
+          <label class="form-label text-muted small">Scope of Interest</label>
+          <input type="text" id="drawer-product-name" value="Turnkey Hospital Setup" readonly class="form-control" style="background: rgba(255,255,255,0.08); color: #fff; font-weight: 600;">
         </div>
-    </div>
 
-    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/main.js"></script>
-    <script src="../assets/js/security-guard.js?v=26.0"></script>
-    <script src="../assets/js/admin-portal.js?v=26.0"></script>
-    <script src="../assets/js/airtable-marketplace.js?v=26.0"></script>
+        <div class="row g-2 mb-3">
+          <div class="col-md-6 form-group">
+            <label class="form-label text-muted small">Your Full Name *</label>
+            <input type="text" class="form-control" placeholder="Dr. / Mr. / Ms." required>
+          </div>
+          <div class="col-md-6 form-group">
+            <label class="form-label text-muted small">Hospital / Institution Name *</label>
+            <input type="text" class="form-control" placeholder="Hospital / Organization Name" required>
+          </div>
+        </div>
+
+        <div class="row g-2 mb-3">
+          <div class="col-md-6 form-group">
+            <label class="form-label text-muted small">Official Email *</label>
+            <input type="email" class="form-control" placeholder="name@hospital.com" required>
+          </div>
+          <div class="col-md-6 form-group">
+            <label class="form-label text-muted small">Phone / WhatsApp *</label>
+            <input type="tel" class="form-control" placeholder="+91 99999 99999" required>
+          </div>
+        </div>
+
+        <div class="form-group mb-4">
+          <label class="form-label text-muted small">Project Scope &amp; Requirements</label>
+          <textarea class="form-control" rows="3" placeholder="Specify turnkey bed capacity, modular OT requirement, MGPS pipeline, or equipment procurement details..."></textarea>
+        </div>
+
+        <button type="submit" class="catalogue-button w-100 py-3" style="font-size: 15px;">Submit Consultation Request</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Admin Login Modal -->
+  <div class="modal fade" id="adminAuthModal" tabindex="-1" aria-labelledby="adminAuthModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" style="max-width: 440px;">
+      <div class="modal-content border-0 shadow-lg" style="border-radius: 20px; overflow: hidden; background: #0b1329; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff;">
+        <div class="modal-header border-0 pb-0 pt-4 px-4 d-flex justify-content-between align-items-center">
+          <span class="badge rounded-pill bg-info text-dark px-3 py-1 fw-semibold small">
+            <i class="bi bi-shield-lock me-1"></i> Admin Portal
+          </span>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4 pt-2">
+          <div class="text-center mb-4">
+            <div class="mb-3" style="width: 60px; height: 60px; border-radius: 50%; background: rgba(0, 163, 255, 0.15); color: #00A3FF; display: inline-flex; align-items: center; justify-content: center; font-size: 1.7rem; border: 1px solid rgba(0, 163, 255, 0.3);">
+              <i class="bi bi-shield-lock-fill"></i>
+            </div>
+            <h4 class="fw-bold text-white mb-1" id="adminAuthModalLabel">Administrator Login</h4>
+            <p class="text-muted small mb-0" style="line-height: 1.5;">
+              Authorized Dr. Smith administrators and department heads may sign in to upload equipment for catalogue review.
+            </p>
+          </div>
+
+          <div id="adminAuthAlert" class="alert alert-danger d-none py-2 px-3 small rounded-3 mb-3"></div>
+
+          <form id="adminLoginForm" action="javascript:void(0);" onsubmit="return false;" autocomplete="off">
+            <div class="mb-3">
+              <label for="adminIdInput" class="form-label fw-semibold small text-light">Admin / Member ID <span class="text-danger">*</span></label>
+              <div class="input-group">
+                <span class="input-group-text bg-dark border-secondary text-muted"><i class="bi bi-person-badge"></i></span>
+                <input type="text" class="form-control bg-dark text-white border-secondary" id="adminIdInput" placeholder="Enter your ID" required autocomplete="username">
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="adminPassInput" class="form-label fw-semibold small text-light">Password / Access Pass <span class="text-danger">*</span></label>
+              <div class="input-group">
+                <span class="input-group-text bg-dark border-secondary text-muted"><i class="bi bi-key"></i></span>
+                <input type="password" class="form-control bg-dark text-white border-secondary" id="adminPassInput" placeholder="Enter your access pass" required autocomplete="current-password">
+                <button class="btn btn-outline-secondary" type="button" id="adminTogglePassBtn" title="Toggle password visibility">
+                  <i class="bi bi-eye text-light"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="d-grid mt-4">
+              <button type="button" id="adminLoginSubmitBtn" class="catalogue-button py-2 fw-semibold w-100">
+                <span id="adminLoginSpinner" class="spinner-border spinner-border-sm me-2 d-none" role="status"></span>
+                <span id="adminLoginSubmitText"><i class="bi bi-unlock me-1"></i> Sign In to Upload Portal</span>
+              </button>
+            </div>
+
+            <div class="text-center mt-3">
+              <small class="text-muted" style="font-size: 0.75rem;">
+                <i class="bi bi-lock me-1"></i> Standard visitors do not require login. For credential issues, contact administration.
+              </small>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Upload Listing Modal (2-Step Guided Wizard) -->
+  <div class="modal fade" id="uploadListingModal" tabindex="-1" aria-labelledby="uploadListingModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 shadow-lg" style="border-radius: 20px; overflow: hidden; background: #0b1329; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff;">
+        <div class="modal-header wizard-modal-header" style="background: rgba(0, 163, 255, 0.1); border-bottom: 1px solid rgba(255,255,255,0.08);">
+          <h5 class="modal-title fw-bold text-white" id="uploadListingModalLabel">
+            <i class="bi bi-cloud-arrow-up me-2 text-info"></i> Upload Equipment For Review
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <!-- Wizard Step Indicators -->
+        <div class="d-flex align-items-center justify-content-center py-2 px-3 border-bottom" style="background: rgba(255,255,255,0.02); border-color: rgba(255,255,255,0.06) !important;" id="wizardStepIndicatorsBar">
+          <div class="wizard-step-item active d-flex align-items-center" id="stepAuthIndicator">
+            <span class="badge rounded-circle bg-primary me-2 px-2 py-1" id="stepAuthBadge"><i class="bi bi-shield-lock"></i></span>
+            <span class="fw-bold small text-info" id="stepAuthText">Member Auth</span>
+          </div>
+          <div class="mx-3 text-muted small"><i class="bi bi-chevron-right"></i></div>
+          <div class="wizard-step-item d-flex align-items-center text-muted" id="step1Indicator">
+            <span class="badge rounded-circle bg-secondary me-2 px-2 py-1" id="step1Badge">1</span>
+            <span class="fw-semibold small" id="step1Text">1. Select Category</span>
+          </div>
+          <div class="mx-3 text-muted small"><i class="bi bi-chevron-right"></i></div>
+          <div class="wizard-step-item d-flex align-items-center text-muted" id="step2Indicator">
+            <span class="badge rounded-circle bg-secondary me-2 px-2 py-1" id="step2Badge">2</span>
+            <span class="fw-semibold small" id="step2Text">2. Item Details &amp; Photos</span>
+          </div>
+        </div>
+
+        <div class="modal-body p-4" id="wizardModalContentArea">
+          <div id="listingStatusMsg" class="d-none"></div>
+
+          <!-- Verified Member Status Banner (Visible when logged in) -->
+          <div id="memberAuthBanner" class="d-none align-items-center justify-content-between p-2 px-3 mb-3 rounded-3" style="background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.3);">
+            <div class="small text-success d-flex align-items-center">
+              <i class="bi bi-shield-check me-2 fs-6"></i>
+              <span>Authorized Member: <strong id="activeMemberName">Member</strong> (<span id="activeMemberId">ID</span>)</span>
+            </div>
+            <button type="button" class="btn btn-link btn-sm text-danger text-decoration-none p-0" id="memberSignOutBtn" style="font-size: 0.8rem;">
+              <i class="bi bi-box-arrow-right me-1"></i>Sign Out
+            </button>
+          </div>
+
+          <!-- STEP 0: MEMBER AUTHENTICATION SCREEN -->
+          <div id="wizardStepAuth">
+            <div class="text-center mb-4">
+              <div class="mb-3" style="width: 58px; height: 58px; border-radius: 50%; background: rgba(0, 163, 255, 0.15); color: #00A3FF; display: inline-flex; align-items: center; justify-content: center; font-size: 1.6rem; border: 1px solid rgba(0, 163, 255, 0.3);">
+                <i class="bi bi-shield-lock"></i>
+              </div>
+              <h5 class="fw-bold text-white mb-1">Authorized Member Verification</h5>
+              <p class="text-muted small" style="max-width: 480px; margin: 0 auto;">
+                The equipment upload queue is restricted to authorized Dr. Smith healthcare partners, hospital administrators, and registered members. Please enter your Member ID and Password to proceed.
+              </p>
+            </div>
+
+            <div id="memberAuthAlert" class="alert alert-danger d-none py-2 px-3 small rounded-3 mb-3"></div>
+
+            <form id="memberLoginForm" action="javascript:void(0);" onsubmit="return false;" style="max-width: 400px; margin: 0 auto;">
+              <div class="mb-3">
+                <label for="memberIdInput" class="form-label fw-semibold small text-light">Member ID <span class="text-danger">*</span></label>
+                <div class="input-group">
+                  <span class="input-group-text bg-dark border-secondary text-muted"><i class="bi bi-person-badge"></i></span>
+                  <input type="text" class="form-control bg-dark text-white border-secondary" id="memberIdInput" placeholder="Enter your Member ID" required autocomplete="username">
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="memberPassInput" class="form-label fw-semibold small text-light">Password / Access Pass <span class="text-danger">*</span></label>
+                <div class="input-group">
+                  <span class="input-group-text bg-dark border-secondary text-muted"><i class="bi bi-key"></i></span>
+                  <input type="password" class="form-control bg-dark text-white border-secondary" id="memberPassInput" placeholder="Enter your access pass" required autocomplete="current-password">
+                  <button class="btn btn-outline-secondary" type="button" id="togglePassVisibility" title="Toggle password visibility">
+                    <i class="bi bi-eye text-light"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="d-grid mt-4">
+                <button type="button" id="memberLoginBtn" class="catalogue-button py-2 fw-semibold w-100">
+                  <span id="memberLoginSpinner" class="spinner-border spinner-border-sm me-2 d-none" role="status"></span>
+                  <span id="memberLoginBtnText"><i class="bi bi-unlock me-1"></i> Verify &amp; Unlock Portal</span>
+                </button>
+              </div>
+
+              <div class="text-center mt-3">
+                <small class="text-muted" style="font-size: 0.75rem;">
+                  <i class="bi bi-info-circle me-1"></i> Don't have an authorized ID yet? Contact <a href="mailto:info@drsmith.co.in" class="text-info">info@drsmith.co.in</a>.
+                </small>
+              </div>
+            </form>
+          </div>
+
+          <!-- STEP 1: CATEGORY SELECTION FIRST -->
+          <div id="wizardStep1" class="d-none">
+            <div class="text-center mb-4">
+              <h5 class="fw-bold text-white mb-1">Step 1: Choose Department / Category</h5>
+              <p class="text-muted small">Choose the department or category below to proceed with your equipment details:</p>
+            </div>
+
+            <div class="row g-3">
+              <div class="col-sm-6 col-md-4">
+                <div class="wizard-category-card dark-glass-card h-100 d-flex flex-column align-items-center text-center p-3" data-category="Hospital & ICU Beds" style="cursor: pointer;">
+                  <div class="cat-icon text-info fs-3 mb-2"><i class="bi bi-hospital"></i></div>
+                  <h6 class="fw-bold mb-1 small text-white">Hospital &amp; ICU Beds</h6>
+                  <p class="text-muted mb-0" style="font-size: 0.72rem;">Motorized, manual &amp; Fowler beds</p>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4">
+                <div class="wizard-category-card dark-glass-card h-100 d-flex flex-column align-items-center text-center p-3" data-category="Diagnostic & Imaging" style="cursor: pointer;">
+                  <div class="cat-icon text-info fs-3 mb-2"><i class="bi bi-display"></i></div>
+                  <h6 class="fw-bold mb-1 small text-white">Diagnostic &amp; Imaging</h6>
+                  <p class="text-muted mb-0" style="font-size: 0.72rem;">Ultrasound, C-Arm, ECG, Monitors</p>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4">
+                <div class="wizard-category-card dark-glass-card h-100 d-flex flex-column align-items-center text-center p-3" data-category="Modular OT & OT Lights" style="cursor: pointer;">
+                  <div class="cat-icon text-info fs-3 mb-2"><i class="bi bi-brightness-high"></i></div>
+                  <h6 class="fw-bold mb-1 small text-white">Modular OT &amp; Lights</h6>
+                  <p class="text-muted mb-0" style="font-size: 0.72rem;">OT tables, LED ceiling lights, panels</p>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4">
+                <div class="wizard-category-card dark-glass-card h-100 d-flex flex-column align-items-center text-center p-3" data-category="Anesthesia & Respiratory" style="cursor: pointer;">
+                  <div class="cat-icon text-info fs-3 mb-2"><i class="bi bi-heart-pulse"></i></div>
+                  <h6 class="fw-bold mb-1 small text-white">Anesthesia &amp; Resp.</h6>
+                  <p class="text-muted mb-0" style="font-size: 0.72rem;">Workstations, ventilators, pumps</p>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4">
+                <div class="wizard-category-card dark-glass-card h-100 d-flex flex-column align-items-center text-center p-3" data-category="Surgical & Laparoscopy" style="cursor: pointer;">
+                  <div class="cat-icon text-info fs-3 mb-2"><i class="bi bi-scissors"></i></div>
+                  <h6 class="fw-bold mb-1 small text-white">Surgical &amp; Laparo</h6>
+                  <p class="text-muted mb-0" style="font-size: 0.72rem;">Surgical sets, towers, endoscopy</p>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4">
+                <div class="wizard-category-card dark-glass-card h-100 d-flex flex-column align-items-center text-center p-3" data-category="Autoclaves & Sterilization" style="cursor: pointer;">
+                  <div class="cat-icon text-info fs-3 mb-2"><i class="bi bi-shield-check"></i></div>
+                  <h6 class="fw-bold mb-1 small text-white">Autoclaves &amp; Steril.</h6>
+                  <p class="text-muted mb-0" style="font-size: 0.72rem;">Sterilizers, foggers, chambers</p>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4">
+                <div class="wizard-category-card dark-glass-card h-100 d-flex flex-column align-items-center text-center p-3" data-category="Hospital Furniture" style="cursor: pointer;">
+                  <div class="cat-icon text-info fs-3 mb-2"><i class="bi bi-archive"></i></div>
+                  <h6 class="fw-bold mb-1 small text-white">Hospital Furniture</h6>
+                  <p class="text-muted mb-0" style="font-size: 0.72rem;">Lockers, tables, stretchers, chairs</p>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4">
+                <div class="wizard-category-card dark-glass-card h-100 d-flex flex-column align-items-center text-center p-3" data-category="Medical Gas Pipeline (MGPS)" style="cursor: pointer;">
+                  <div class="cat-icon text-info fs-3 mb-2"><i class="bi bi-lungs"></i></div>
+                  <h6 class="fw-bold mb-1 small text-white">Medical Gas (MGPS)</h6>
+                  <p class="text-muted mb-0" style="font-size: 0.72rem;">Outlets, alarm panels, valves</p>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4">
+                <div class="wizard-category-card dark-glass-card h-100 d-flex flex-column align-items-center text-center p-3" data-category="Other Medical Equipment" style="cursor: pointer;">
+                  <div class="cat-icon text-info fs-3 mb-2"><i class="bi bi-gear-wide-connected"></i></div>
+                  <h6 class="fw-bold mb-1 small text-white">Other Equipment</h6>
+                  <p class="text-muted mb-0" style="font-size: 0.72rem;">General devices &amp; clinical supplies</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center mt-3 text-muted small">
+              <i class="bi bi-hand-index-thumb text-info me-1"></i> Click any category box above to proceed to Step 2
+            </div>
+          </div>
+
+          <!-- STEP 2: ITEM DETAILS & PHOTO -->
+          <div id="wizardStep2" class="d-none">
+            <div class="d-flex align-items-center justify-content-between p-3 mb-3 rounded-3" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
+              <div>
+                <small class="text-muted d-block text-uppercase fw-semibold" style="font-size: 0.7rem; letter-spacing: 0.5px;">Target Category:</small>
+                <div class="fw-bold text-info fs-6" id="chosenCategoryBadge">Selected Category</div>
+              </div>
+              <button type="button" class="btn btn-sm btn-outline-info" id="backToStep1Btn">
+                <i class="bi bi-arrow-left me-1"></i> Change Category
+              </button>
+            </div>
+
+            <div class="alert alert-info border-0 d-flex align-items-center mb-3 py-2 px-3" style="background-color: rgba(0, 163, 255, 0.15); color: #38bdf8; border-radius: 8px;">
+              <i class="bi bi-shield-check fs-5 me-2"></i>
+              <div class="small">
+                <strong>Admin Approval:</strong> Items must be approved by Dr. Smith administrators before going live.
+              </div>
+            </div>
+
+            <form id="listingSubmissionForm">
+              <input type="hidden" id="listingCategory" value="">
+
+              <div class="row g-3">
+                <div class="col-md-7">
+                  <label for="listingName" class="form-label fw-semibold small text-light">Equipment Name / Model <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control form-control-sm bg-dark text-white border-secondary" id="listingName" placeholder="e.g. Philips ClearVue 350 Ultrasound" required>
+                </div>
+
+                <div class="col-md-5">
+                  <label for="listingPrice" class="form-label fw-semibold small text-light">Asking Price / Pricing Note</label>
+                  <input type="text" class="form-control form-control-sm bg-dark text-white border-secondary" id="listingPrice" placeholder="e.g. Contact for Quote">
+                </div>
+
+                <div class="col-12">
+                  <label for="listingContact" class="form-label fw-semibold small text-light">Your Phone or Email <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control form-control-sm bg-dark text-white border-secondary" id="listingContact" placeholder="e.g. doctor@hospital.com or +91..." required>
+                  <div class="form-text text-muted" style="font-size: 0.72rem;">
+                    <i class="bi bi-lock-fill"></i> Private: Visible only to Dr. Smith admins in your secure queue.
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="listingDescription" class="form-label fw-semibold small text-light">Description &amp; Condition Details <span class="text-danger">*</span></label>
+                  <textarea class="form-control form-control-sm bg-dark text-white border-secondary" id="listingDescription" rows="3" placeholder="Condition, manufacturing year, working status, included probes or accessories..." required></textarea>
+                </div>
+
+                <div class="col-12">
+                  <label for="listingImage" class="form-label fw-semibold small text-light">Product Photo (JPG/PNG/WEBP, max 10MB)</label>
+                  <input class="form-control form-control-sm bg-dark text-white border-secondary" type="file" id="listingImage" accept="image/jpeg,image/png,image/webp">
+                  <div id="imagePreviewContainer" class="mt-2 d-none">
+                    <img id="listingImagePreview" src="#" alt="Preview" class="img-thumbnail" style="max-height: 120px; border-radius: 8px;">
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-between align-items-center mt-4 pt-3 border-top border-secondary">
+                <button type="button" class="btn btn-outline-secondary btn-sm" id="backToStep1Btn2" onclick="document.getElementById('backToStep1Btn').click();">
+                  <i class="bi bi-arrow-left me-1"></i> Back to Categories
+                </button>
+                <div class="d-flex gap-2">
+                  <button type="button" class="btn btn-outline-light btn-sm" data-bs-dismiss="modal">Cancel</button>
+                  <button type="submit" id="submitListingBtn" class="catalogue-button py-1 px-4 btn-sm">
+                    <span id="submitSpinner" class="spinner-border spinner-border-sm me-2 d-none" role="status" aria-hidden="true"></span>
+                    <span id="submitText">Send Listing Request</span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- STEP SUCCESS: CONFIRMATION SCREEN -->
+          <div id="wizardSuccessStep" class="d-none text-center py-4">
+            <div class="mb-3" style="width: 72px; height: 72px; border-radius: 50%; background: rgba(16, 185, 129, 0.15); color: #10b981; display: inline-flex; align-items: center; justify-content: center; font-size: 2.4rem; border: 1px solid rgba(16, 185, 129, 0.3);">
+              <i class="bi bi-check2-circle"></i>
+            </div>
+            <h4 class="fw-bold text-white mb-2">Request Submitted Successfully!</h4>
+            <div class="mb-2">
+              <span class="badge px-3 py-2 fs-6 bg-info text-dark" id="successCategoryBadge">
+                Category
+              </span>
+            </div>
+            <div class="small text-muted mb-3" id="successSubmitterInfo">
+              Submitted by: <strong>Member</strong>
+            </div>
+            <p class="text-muted mb-4 small" style="max-width: 480px; margin: 0 auto; line-height: 1.6;">
+              Your equipment listing request has been submitted to the Dr. Smith administrator queue. Once reviewed and approved, it will be automatically published into the verified equipment catalogue!
+            </p>
+            <div class="d-flex justify-content-center gap-2">
+              <button type="button" class="btn btn-outline-info btn-sm px-3" id="uploadAnotherBtn">
+                <i class="bi bi-plus-circle me-1"></i> Upload Another Item
+              </button>
+              <button type="button" class="btn btn-secondary btn-sm px-3" data-bs-dismiss="modal">
+                Done / Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/security-guard.js?v=26.0"></script>
+  <script src="../assets/js/admin-portal.js?v=26.0"></script>
+  <script src="../assets/js/airtable-marketplace.js?v=26.0"></script>
+
+  <script>
+    // Live category search filter
+    document.addEventListener('DOMContentLoaded', function() {
+      var searchInput = document.getElementById('category-filter-search');
+      var countElem = document.getElementById('category-results-count');
+      var noResultsElem = document.getElementById('no-category-results');
+
+      if (searchInput) {
+        searchInput.addEventListener('input', function() {
+          var query = this.value.toLowerCase().trim();
+          var categoryCards = document.querySelectorAll('.category-box-col');
+          var visibleCount = 0;
+
+          categoryCards.forEach(function(card) {
+            var title = (card.getAttribute('data-title') || '').toLowerCase();
+            var keywords = (card.getAttribute('data-keywords') || '').toLowerCase();
+            var text = card.textContent.toLowerCase();
+
+            var isMatch = !query || title.includes(query) || keywords.includes(query) || text.includes(query);
+            card.style.display = isMatch ? '' : 'none';
+
+            if (isMatch) visibleCount++;
+          });
+
+          if (countElem) {
+            countElem.textContent = visibleCount;
+          }
+
+          if (noResultsElem) {
+            noResultsElem.classList.toggle('d-none', visibleCount > 0);
+          }
+        });
+      }
+    });
+
+    // Drawer Consultation Form Logic
+    function openAppleDrawer(scopeName) {
+      if (scopeName) {
+        const scopeInput = document.getElementById('drawer-product-name');
+        if (scopeInput) scopeInput.value = scopeName;
+      }
+      document.getElementById('apple-drawer-overlay').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeAppleDrawer() {
+      document.getElementById('apple-drawer-overlay').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    function handleAppleQuoteSubmit(e) {
+      e.preventDefault();
+      alert('Thank you! Your consultation request has been received.');
+      closeAppleDrawer();
+    }
+
+    // Mobile Drawer Navigation
+    const mobileMenuBtn = document.getElementById('apple-mobile-menu-btn');
+    if (mobileMenuBtn) {
+      mobileMenuBtn.addEventListener('click', function() {
+        document.body.classList.toggle('apple-mobile-menu-open');
+        const icon = mobileMenuBtn.querySelector('i');
+        if (document.body.classList.contains('apple-mobile-menu-open')) {
+          icon.classList.remove('bi-list');
+          icon.classList.add('bi-x-lg');
+        } else {
+          icon.classList.remove('bi-x-lg');
+          icon.classList.add('bi-list');
+        }
+      });
+    }
+    document.querySelectorAll('.apple-mobile-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.body.classList.remove('apple-mobile-menu-open');
+      });
+    });
+    window.addEventListener('scroll', function() {
+      const nav = document.querySelector('.apple-globalnav');
+      if (nav) {
+        if (window.scrollY > 30) nav.classList.add('nav-scrolled');
+        else nav.classList.remove('nav-scrolled');
+      }
+    }, { passive: true });
+  </script>
 </body>
-
 </html>

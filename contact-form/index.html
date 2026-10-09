@@ -1,134 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Dr. Smith</title>
-    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
-    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
-    <!-- Importing Inter font to match the theme -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome for Icons (with Subresource Integrity verification) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="theme-color" content="#030712">
+  <title>Contact Us &amp; Global Offices | Dr. Smith</title>
+  <meta name="description" content="Contact Dr. Smith Corporate Global Head Office (New Delhi), Jhajjar Manufacturing Plant, UAE SAIF Zone Office, and pan-India service centres.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="../assets/css/apple-theme.css?v=36.0" rel="stylesheet">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
 </head>
-<body>
 
-    <!-- Site Header -->
-    <header>
-        <a class="logo" href="../index.html" aria-label="Dr. Smith home">
-            <img src="../assets/img/logo.png?v=2" onerror="this.onerror=null; this.src='../catalogue/img/logo.png?v=2';" alt="Dr. Smith logo" width="62" height="64">
-            <div>Dr. Smith</div>
+<body class="apple-body">
+  <!-- ============================================================
+       1. GLOBAL NAVIGATION HEADER
+       ============================================================ -->
+  <nav class="apple-globalnav" aria-label="Global">
+    <div class="apple-globalnav-inner">
+      
+      <!-- Brand & Corporate Identity -->
+      <a href="../index.html" class="apple-nav-brand" aria-label="Dr. Smith Hospital Solutions">
+        <div class="brand-asterisk-icon">
+          <img src="../assets/img/logo.png?v=11.0" alt="Dr. Smith Emblem Logo" class="apple-nav-logo-img" width="36" height="36">
+        </div>
+        <div class="apple-nav-brand-text">
+          <span class="apple-nav-brand-title">Dr. Smith</span>
+          <span class="apple-nav-brand-subtitle">HOSPITAL SOLUTIONS</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="apple-nav-links">
+        <li class="apple-nav-item">
+          <a href="../index.html" class="apple-nav-link">Home</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../catalogue/index.html" class="apple-nav-link">Products</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../turnkey-projects/index.html" class="apple-nav-link">Turnkey Solutions</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../about-us/index.html" class="apple-nav-link">About Us</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../contact-form/index.html" class="apple-nav-link nav-active">Contact</a>
+        </li>
+      </ul>
+
+      <!-- Action Utilities -->
+      <div class="apple-nav-actions">
+        <!-- Search Circle Button -->
+        <a href="../catalogue/index.html" class="apple-nav-circle-btn" aria-label="Search Medical Catalogue" title="Search Catalogue">
+          <i class="bi bi-search"></i>
         </a>
-    </header>
 
-    <!-- Main Contact Content -->
-    <main class="contact-container">
+        <!-- WhatsApp Circle Button -->
+        <a href="https://wa.me/919999999999" class="apple-nav-circle-btn apple-nav-circle-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" title="WhatsApp Direct">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <!-- Menu Toggle Button -->
+        <button type="button" class="apple-nav-circle-btn" id="apple-mobile-menu-btn" aria-label="Toggle Navigation Menu" title="Menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Drawer Overlay -->
+  <div class="apple-mobile-drawer" id="apple-mobile-drawer">
+    <ul class="apple-mobile-links">
+      <li><a href="../index.html">Home <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+      <li><a href="../catalogue/index.html">Products Catalogue <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+      <li><a href="../turnkey-projects/index.html">Turnkey Hospital Setup <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+      <li><a href="../catalogue/modular-ot/index.html">Modular Operation Theatres <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+      <li><a href="../about-us/index.html">About Dr. Smith <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+      <li><a href="../contact-form/index.html">Global Offices &amp; Contact <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+    </ul>
+    
+    <div class="apple-mobile-cta-box">
+      <button type="button" class="apple-btn-pill w-100 py-3" onclick="openAppleDrawer('Turnkey Consultation');">
+        <i class="bi bi-building me-2"></i> Request Project Consultation
+      </button>
+      <a href="tel:18008917466" class="btn btn-outline-light rounded-pill py-2 w-100 text-center">
+        <i class="bi bi-telephone-fill me-2 text-primary"></i> Call Toll-Free: 1800 891 7466
+      </a>
+      <a href="https://wa.me/919999999999" class="btn btn-success rounded-pill py-2 w-100 text-center" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp me-2"></i> WhatsApp Consultation Desk
+      </a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="subpage-hero-section">
+    <div class="container">
+      <span class="subpage-hero-badge"><i class="bi bi-headset"></i> 24/7 Global Consultation &amp; Support</span>
+      <h1 class="subpage-hero-title">Connect with Dr. Smith Experts</h1>
+      <p class="subpage-hero-desc">Reach our hospital engineering consultants, export desks, manufacturing facilities, or toll-free national customer care.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form & Directory Section -->
+  <section class="contact-dark-container">
+    <div class="container">
+      <div class="row g-5">
         
-        <!-- Left Side: Information -->
-        <div class="contact-info">
-            <h1>Contact Dr. Smith <br><span>Medical Equipment &amp; Hospital Solutions</span></h1>
-            <p>Whether you need information about our turnkey hospital infrastructure, high-quality medical equipment, or just want to say hello, our team is ready to answer all your questions.</p>
-            
-            <div class="info-cards">
-                <div class="info-card">
-                    <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
-                    <div class="info-content">
-                        <h3>Global Head Office</h3>
-                        <p>Plot No. 75/02, Shri Sai Complex, Ground Floor, Opposite Nimity Building - 108, Behind IGL CNG Pump, Kapashera Border, New Delhi - 110037, India</p>
-                    </div>
-                </div>
-                
-                <div class="info-card">
-                    <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
-                    <div class="info-content">
-                        <h3>Email Us</h3>
-                        <p><a href="mailto:info@drsmith.co.in">info@drsmith.co.in</a></p>
-                    </div>
-                </div>
+        <!-- Left: Office Directory -->
+        <div class="col-lg-5">
+          
+          <div class="contact-info-card">
+            <h4 class="text-white font-weight-bold mb-2"><i class="bi bi-buildings-fill text-primary me-2"></i> Corporate Global Head Office</h4>
+            <p class="text-muted small mb-2">Plot No. 75/02, Shri Sai Complex, Ground Floor, Opp. Nimity Building - 108, Behind-IGL CNG Pump, Kapashera Border, New Delhi &ndash; 110037, India.</p>
+            <p class="text-muted small mb-1"><strong>Toll-Free:</strong> 1800 891 7466</p>
+            <p class="text-muted small mb-1"><strong>Phone:</strong> +91-9599081020 / 21 / 22</p>
+            <p class="text-muted small mb-0"><strong>Email:</strong> info@drsmith.co.in</p>
+          </div>
 
-                <div class="info-card">
-                    <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
-                    <div class="info-content">
-                        <h3>Call Us</h3>
-                        <p>Toll-free: 1800 891 7466<br>Mob: +91-9310726927, +91-9205544064, +91-9599081020-22</p>
-                    </div>
-                </div>
-            </div>
+          <div class="contact-info-card">
+            <h4 class="text-white font-weight-bold mb-2"><i class="bi bi-gear-wide-connected text-primary me-2"></i> Primary Manufacturing Plant</h4>
+            <p class="text-muted small mb-2">Plot No. 20, Street No. H, Sector 2B, Model Economic Township Limited (METL), Village Dadri Toe, Tehsil Badli, District Jhajjar, Haryana (India).</p>
+            <p class="text-muted small mb-0">CNC fabrication, robotic welding &amp; automated cleanroom assembly.</p>
+          </div>
+
+          <div class="contact-info-card">
+            <h4 class="text-white font-weight-bold mb-2"><i class="bi bi-globe2 text-primary me-2"></i> Overseas Office (UAE)</h4>
+            <p class="text-muted small mb-2">Q4-223, Warehouse Number, SAIF Zone, Sharjah, United Arab Emirates.</p>
+            <p class="text-muted small mb-0"><strong>Export Inquiries:</strong> +91-9310726927, +91-9205544064</p>
+          </div>
+
+          <div class="contact-info-card">
+            <h4 class="text-white font-weight-bold mb-2"><i class="bi bi-geo-alt-fill text-primary me-2"></i> Regional Marts &amp; Service Hubs</h4>
+            <p class="text-muted small mb-1">&bull; <strong>Patna Mart:</strong> Yadav Bhawan, Zero Mile Badi Pahan, Patna - 800030</p>
+            <p class="text-muted small mb-1">&bull; <strong>Kolkata Mart:</strong> Garia Boral Main Road, 24 Parganas, Kolkata - 700103</p>
+            <p class="text-muted small mb-1">&bull; <strong>Varanasi Mall:</strong> Varanasi, Uttar Pradesh</p>
+            <p class="text-muted small mb-0">&bull; <strong>Service Hubs:</strong> Maharashtra | Hyderabad | Guwahati | Punjab</p>
+          </div>
+
         </div>
 
-        <!-- Right Side: Contact Form -->
-        <div class="contact-form-wrapper">
-            <h2>Send us a message</h2>
-            <form id="contactForm" novalidate>
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_subject" value="New Website Enquiry | Dr. Smith">
-                <input type="hidden" name="_template" value="table">
-                <input type="text" name="_honey" class="honeypot-field">
-                
-                <div class="form-grid">
-                    <div class="form-group">
-                        <label for="firstName">First Name</label>
-                        <input type="text" id="firstName" name="First Name" placeholder="Enter your name" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="lastName">Last Name</label>
-                        <input type="text" id="lastName" name="Last Name" placeholder="Enter your last name" required> 
-                    </div>
+        <!-- Right: Consultation Form -->
+        <div class="col-lg-7">
+          <div class="contact-dark-form">
+            <span class="about-pill-label mb-2">Direct Inquiry</span>
+            <h3 class="text-white font-weight-bold mb-3">Request Official Quotation or Consultation</h3>
+            <p class="text-muted small mb-4">Our senior biomedical engineers and hospital planners will review your requirement and provide a detailed quotation within 24 business hours.</p>
 
-                    <div class="form-group full-width">
-                        <label for="contact">Enter your e-mail address</label>
-                        <input type="email" id="contact" name="Email" placeholder="Email address" required autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" data-lpignore="true" inputmode="email">
-                        <div class="error-message" id="contactError">Enter a valid email address from a non-temporary email provider.</div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="Phone Number" placeholder="mobile number" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="subject">Inquiry Type</label>
-                        <select id="subject" name="Inquiry Type" required>
-                            <option value="" disabled selected>Select a department...</option>
-                            <option value="Retail / Single Unit sales">Retail / Single Unit sales</option>
-                            <option value="Bulk Sourcing">Bulk Sourcing</option>
-                            <option value="Whole infrastructure projects">Whole infrastructure projects</option>
-                            <option value="MediAid Patient Assistance">MediAid Patient Assistance</option>
-                            <option value="Other / General Inquiry">Other / General Inquiry</option>
-                            <option value="Doctor">Doctor</option>
-                            <option value="Individual">Individual</option>
-                            <option value="Wholesaler">Wholesaler</option>
-                            <option value="Distributor">Distributor</option>
-                            <option value="Hospital">Hospital</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group full-width">
-                        <label for="message">Your Message</label>
-                        <textarea id="message" name="Message" placeholder="How can we help you today?" required></textarea>
-                    </div>
+            <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been received.'); this.reset();">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label">Full Name *</label>
+                  <input type="text" class="form-control" placeholder="Dr. / Mr. / Ms." required>
                 </div>
-
-                <div class="checkbox-group">
-                    <input type="checkbox" id="consent" required>
-                    <label for="consent">I agree that Dr. Smith may use my details to respond to my enquiry. See our <a href="../privacy.html">privacy policy</a> for contact information.</label>
+                <div class="col-md-6">
+                  <label class="form-label">Hospital / Organization *</label>
+                  <input type="text" class="form-control" placeholder="Hospital / Company Name" required>
                 </div>
-
-                <div class="status-alert" id="submissionStatus" role="status" aria-live="polite"></div>
-
-                <button type="submit" class="submit-btn" id="submitBtn">
-                    <span class="btn-text">SEND ENQUIRY</span>
-                    <i class="fa-solid fa-paper-plane btn-icon"></i>
-                    <div class="spinner" id="btnSpinner"></div>
-                </button>
+                <div class="col-md-6">
+                  <label class="form-label">Official Email Address *</label>
+                  <input type="email" class="form-control" placeholder="name@hospital.com" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Phone / WhatsApp Number *</label>
+                  <input type="tel" class="form-control" placeholder="+91 99999 99999" required>
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Scope of Interest *</label>
+                  <select class="form-select" required>
+                    <option value="" selected disabled>Select requirement category...</option>
+                    <option value="Turnkey Hospital Setup">Turnkey Hospital Setup (50 to 500+ Beds)</option>
+                    <option value="Modular Operation Theatre">Modular Operation Theatre (Cleanroom &amp; Laminar Airflow)</option>
+                    <option value="Medical Gas Pipeline">Medical Gas Pipeline (MGPS Manifolds &amp; Panels)</option>
+                    <option value="ICU & Hospital Furniture">ICU &amp; Hospital Furniture (Electric Beds, OT Tables)</option>
+                    <option value="Critical Care Devices">Critical Care Devices (Ventilators, Monitors, Defibrillators)</option>
+                    <option value="International Export">International Export &amp; Tenders</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Project Scope &amp; Specifications</label>
+                  <textarea class="form-control" rows="4" placeholder="Detail your project requirements, bed capacity, delivery timelines, or target tender specifications..."></textarea>
+                </div>
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn-cyan-pill w-100 py-3">Submit Consultation Request <i class="bi bi-arrow-right ms-2"></i></button>
+                </div>
+              </div>
             </form>
+          </div>
         </div>
-    </main>
 
-    <!-- Contact form validation -->
-    <script src="script.js"></script>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       GLOBAL DIRECTORY FOOTER
+       ============================================================ -->
+  <footer class="apple-globalfooter">
+    <div class="apple-footer-inner">
+      
+      <!-- Notes / Footnotes -->
+      <div class="apple-footer-notes">
+        <ol>
+          <li>Medical equipment specifications, turnkey timelines, and compliance standards (ISO 9001:2015, ISO 13485:2016, CE, FDA) depend on specific project scopes and customized clinical configurations.</li>
+          <li>Turnkey hospital infrastructure engineering timelines depend on architectural blueprints, local regulatory clearances, and civil site readiness.</li>
+          <li>Principal Global Head Office located at Kapashera Border, New Delhi; Manufacturing Plant at METL, Jhajjar, Haryana; Overseas Head Office at SAIF Zone, Sharjah, UAE.</li>
+        </ol>
+      </div>
+
+      <!-- Directory Columns -->
+      <div class="apple-footer-directory">
+
+        <!-- Col 1: Turnkey Solutions -->
+        <div class="apple-footer-col">
+          <h4>Turnkey Solutions</h4>
+          <ul>
+            <li><a href="../turnkey-projects/index.html">500-Bedded Hospital Setup</a></li>
+            <li><a href="../catalogue/modular-ot/index.html">Modular OT Construction</a></li>
+            <li><a href="../turnkey-projects/index.html">Medical Gas Pipeline (MGPS)</a></li>
+            <li><a href="../turnkey-projects/index.html">Hospital Architecture &amp; MEP</a></li>
+            <li><a href="../turnkey-projects/index.html">Government &amp; Global Tenders</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 2: Group Ecosystem -->
+        <div class="apple-footer-col">
+          <h4>Group Ecosystem</h4>
+          <ul>
+            <li><a href="../about-us/index.html">Dr. Smith Healthcare</a></li>
+            <li><a href="../catalogue/index.html">Surgihub Surgical Devices</a></li>
+            <li><a href="../catalogue/index.html">Surgical Mall of India (SMPL)</a></li>
+            <li><a href="../catalogue/index.html">MediAid Patient Care</a></li>
+            <li><a href="../catalogue/index.html">Orbit Mahajan Diagnostics</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Product Catalogue -->
+        <div class="apple-footer-col">
+          <h4>Product Catalogue</h4>
+          <ul>
+            <li><a href="../catalogue/icu-beds/index.html">Hospital &amp; ICU Beds</a></li>
+            <li><a href="../catalogue/modular-ot/index.html">Modular OT Suites</a></li>
+            <li><a href="../catalogue/patient-monitor/index.html">Critical Care &amp; Monitors</a></li>
+            <li><a href="../catalogue/ventilators/index.html">ICU Ventilators</a></li>
+            <li><a href="../catalogue/index.html">Full 50+ Categories</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Global Directory -->
+        <div class="apple-footer-col">
+          <h4>Global Presence</h4>
+          <ul>
+            <li><a href="../contact-form/index.html">New Delhi Head Office (India)</a></li>
+            <li><a href="../contact-form/index.html">Jhajjar Manufacturing Plant</a></li>
+            <li><a href="../contact-form/index.html">Sharjah Overseas Office (UAE)</a></li>
+            <li><a href="../contact-form/index.html">Kenya &amp; Nigeria Desks</a></li>
+            <li><a href="../contact-form/index.html">Patna, Kolkata, Varanasi Marts</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Compliance & Values -->
+        <div class="apple-footer-col">
+          <h4>Corporate &amp; Quality</h4>
+          <ul>
+            <li><a href="../about-us/index.html">About 60+ Years Heritage</a></li>
+            <li><a href="../mission-values/index.html">Mission &amp; Values</a></li>
+            <li><a href="../about-us/index.html#team">Executive Leadership</a></li>
+            <li><a href="../privacy.html">Privacy Policy</a></li>
+            <li><a href="../terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Legal & Country -->
+      <div class="apple-footer-bottom">
+        <div class="apple-footer-copyright">
+          Copyright &copy; 2026 Dr. Smith Healthcare Solutions (Surgical Wholesale Mart Pvt. Ltd.). All rights reserved.
+        </div>
+        <div class="apple-footer-legal-links">
+          <a href="../privacy.html">Privacy Policy</a>
+          <a href="../terms.html">Terms of Use</a>
+          <a href="../contact-form/index.html">Sales Policy</a>
+          <a href="../contact-form/index.html">Legal</a>
+          <a href="../catalogue/index.html">Site Map</a>
+        </div>
+        <div class="apple-footer-country">
+          <a href="../contact-form/index.html" class="text-decoration-none text-muted"><i class="bi bi-globe me-1"></i> India (English)</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Drawer Modal -->
+  <div class="apple-drawer-overlay" id="apple-drawer-overlay" onclick="if(event.target===this) closeAppleDrawer();">
+    <div class="apple-drawer-content">
+      <button type="button" class="apple-drawer-close" onclick="closeAppleDrawer();" aria-label="Close">
+        <i class="bi bi-x-lg"></i>
+      </button>
+      
+      <div style="text-align: center; margin-bottom: 24px;">
+        <span class="apple-shelf-badge">Dr. Smith Turnkey &amp; Procurement Desk</span>
+        <h3 style="font-size: 24px; font-weight: 700; margin-top: 8px;">Request Project Consultation</h3>
+        <p style="font-size: 14px; color: var(--apple-text-secondary); margin: 0;">Speak directly with our healthcare architects &amp; hospital engineering experts.</p>
+      </div>
+
+      <form class="apple-drawer-form" onsubmit="handleAppleQuoteSubmit(event);">
+        <div class="form-group">
+          <label>Scope of Interest</label>
+          <input type="text" id="drawer-product-name" value="Turnkey Hospital Setup" readonly style="background: rgba(255,255,255,0.08); font-weight: 600;">
+        </div>
+
+        <div class="row g-2">
+          <div class="col-md-6 form-group">
+            <label>Your Full Name *</label>
+            <input type="text" placeholder="Dr. / Mr. / Ms." required>
+          </div>
+          <div class="col-md-6 form-group">
+            <label>Hospital / Institution Name *</label>
+            <input type="text" placeholder="Hospital / Organization Name" required>
+          </div>
+        </div>
+
+        <div class="row g-2">
+          <div class="col-md-6 form-group">
+            <label>Official Email *</label>
+            <input type="email" placeholder="name@hospital.com" required>
+          </div>
+          <div class="col-md-6 form-group">
+            <label>Phone / WhatsApp *</label>
+            <input type="tel" placeholder="+91 99999 99999" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Project Scope &amp; Requirements</label>
+          <textarea rows="3" placeholder="Specify turnkey bed capacity, modular OT requirement, MGPS pipeline, or equipment procurement details..."></textarea>
+        </div>
+
+        <button type="submit" class="apple-btn-pill w-100 mt-2" style="padding: 14px;">Submit Consultation Request</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script>
+    function openAppleDrawer(scopeName) {
+      if (scopeName) {
+        const scopeInput = document.getElementById('drawer-product-name');
+        if (scopeInput) scopeInput.value = scopeName;
+      }
+      document.getElementById('apple-drawer-overlay').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeAppleDrawer() {
+      document.getElementById('apple-drawer-overlay').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    function handleAppleQuoteSubmit(e) {
+      e.preventDefault();
+      alert('Thank you! Your project consultation request has been received.');
+      closeAppleDrawer();
+    }
+    const mobileMenuBtn = document.getElementById('apple-mobile-menu-btn');
+    if (mobileMenuBtn) {
+      mobileMenuBtn.addEventListener('click', function() {
+        document.body.classList.toggle('apple-mobile-menu-open');
+        const icon = mobileMenuBtn.querySelector('i');
+        if (document.body.classList.contains('apple-mobile-menu-open')) {
+          icon.classList.remove('bi-list');
+          icon.classList.add('bi-x-lg');
+        } else {
+          icon.classList.remove('bi-x-lg');
+          icon.classList.add('bi-list');
+        }
+      });
+    }
+    document.querySelectorAll('.apple-mobile-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.body.classList.remove('apple-mobile-menu-open');
+      });
+    });
+    window.addEventListener('scroll', function() {
+      const nav = document.querySelector('.apple-globalnav');
+      if (nav) {
+        if (window.scrollY > 30) nav.classList.add('nav-scrolled');
+        else nav.classList.remove('nav-scrolled');
+      }
+    }, { passive: true });
+  </script>
+
 </body>
 </html>

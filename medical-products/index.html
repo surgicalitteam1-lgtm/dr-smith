@@ -1,308 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta name="theme-color" content="#ffffff">
-  <title>Medical Products &amp; Healthcare Equipment | Dr. Smith</title>
-  <meta name="description"
-    content="Browse Dr. Smith's comprehensive range of ISO &amp; CE-certified medical products: hospital beds, modular OT lights, anesthesia workstations, MGPS, and surgical instruments.">
-  <meta name="keywords"
-    content="Medical products, hospital beds, anesthesia workstation, surgical instruments, autoclave sterilizer, patient monitor">
-
+  <meta name="theme-color" content="#030712">
+  <title>Medical Products &amp; Equipment Range | Dr. Smith</title>
+  <meta name="description" content="Explore Dr. Smith medical product lines: ICU beds, OT lights, tables, anesthesia workstations, autoclave sterilizers, and diagnostic devices.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
-  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="../assets/css/main.css?v=3.5" rel="stylesheet">
-  <link href="style.css?v=3.5" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="../assets/css/apple-theme.css?v=36.0" rel="stylesheet">
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
 </head>
 
-<body>
-
-  <!-- Header -->
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="../index.html" class="logo d-flex align-items-center">
-        <img src="../assets/img/logo.png?v=2" onerror="this.onerror=null; this.src='../catalogue/img/logo.png?v=2';"
-          alt="Dr. Smith logo" width="62" height="64">
-        <div class="logo-brand d-flex flex-column">
-          <h1 class="sitename">Dr. Smith</h1>
-          <span class="logo-slogan">Excellence In Healthcare Solutions</span>
+<body class="apple-body">
+  <!-- ============================================================
+       1. GLOBAL NAVIGATION HEADER
+       ============================================================ -->
+  <nav class="apple-globalnav" aria-label="Global">
+    <div class="apple-globalnav-inner">
+      
+      <!-- Brand & Corporate Identity -->
+      <a href="../index.html" class="apple-nav-brand" aria-label="Dr. Smith Hospital Solutions">
+        <div class="brand-asterisk-icon">
+          <img src="../assets/img/logo.png?v=11.0" alt="Dr. Smith Emblem Logo" class="apple-nav-logo-img" width="36" height="36">
+        </div>
+        <div class="apple-nav-brand-text">
+          <span class="apple-nav-brand-title">Dr. Smith</span>
+          <span class="apple-nav-brand-subtitle">HOSPITAL SOLUTIONS</span>
         </div>
       </a>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../about-us/index.html">About Us</a></li>
-          <li><a href="../turnkey-projects/index.html">Turnkey Projects</a></li>
-          <li><a href="index.html" class="active">Medical Products</a></li>
-          <li><a href="../group-companies/index.html">Group Companies</a></li>
-          <li><a href="../mission-values/index.html">Mission &amp; Values</a></li>
-          <li><a href="#" class="nav-whatsapp-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></li>
-        </ul>
-      </nav>
+      <!-- Navigation Links -->
+      <ul class="apple-nav-links">
+        <li class="apple-nav-item">
+          <a href="../index.html" class="apple-nav-link">Home</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../catalogue/index.html" class="apple-nav-link nav-active">Products</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../turnkey-projects/index.html" class="apple-nav-link">Turnkey Solutions</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../about-us/index.html" class="apple-nav-link">About Us</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../contact-form/index.html" class="apple-nav-link">Contact</a>
+        </li>
+      </ul>
 
-      <div class="mobile-nav-toggle d-xl-none bi bi-list"></div>
+      <!-- Action Utilities -->
+      <div class="apple-nav-actions">
+        <!-- Search Circle Button -->
+        <a href="../catalogue/index.html" class="apple-nav-circle-btn" aria-label="Search Medical Catalogue" title="Search Catalogue">
+          <i class="bi bi-search"></i>
+        </a>
+
+        <!-- WhatsApp Circle Button -->
+        <a href="https://wa.me/919999999999" class="apple-nav-circle-btn apple-nav-circle-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" title="WhatsApp Direct">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <!-- Menu Toggle Button -->
+        <button type="button" class="apple-nav-circle-btn" id="apple-mobile-menu-btn" aria-label="Toggle Navigation Menu" title="Menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+
     </div>
-  </header>
+  </nav>
 
-  <main class="main">
+  <!-- Mobile Menu Drawer Overlay -->
+  <div class="apple-mobile-drawer" id="apple-mobile-drawer">
+    <ul class="apple-mobile-links">
+      <li><a href="../index.html">Home <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+      <li><a href="../catalogue/index.html">Products Catalogue <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+      <li><a href="../turnkey-projects/index.html">Turnkey Hospital Setup <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+      <li><a href="../catalogue/modular-ot/index.html">Modular Operation Theatres <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+      <li><a href="../about-us/index.html">About Dr. Smith <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+      <li><a href="../contact-form/index.html">Global Offices &amp; Contact <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+    </ul>
+    
+    <div class="apple-mobile-cta-box">
+      <button type="button" class="apple-btn-pill w-100 py-3" onclick="openAppleDrawer('Turnkey Consultation');">
+        <i class="bi bi-building me-2"></i> Request Project Consultation
+      </button>
+      <a href="tel:18008917466" class="btn btn-outline-light rounded-pill py-2 w-100 text-center">
+        <i class="bi bi-telephone-fill me-2 text-primary"></i> Call Toll-Free: 1800 891 7466
+      </a>
+      <a href="https://wa.me/919999999999" class="btn btn-success rounded-pill py-2 w-100 text-center" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp me-2"></i> WhatsApp Consultation Desk
+      </a>
+    </div>
+  </div>
 
-    <!-- Products Hero -->
-    <section class="products-hero">
-      <div class="container">
-        <div class="row align-items-center gy-4">
-          <div class="col-lg-7">
-            <span class="products-hero-badge"><i class="bi bi-shield-check"></i> Certified Medical Devices &amp; Equipment</span>
-            <h1>Medical Products &amp; <span>Healthcare Equipment</span></h1>
-            <p class="lead">Manufacturer, exporter, and supplier of ISO 9001, ISO 13485, and CE-certified hospital furniture, OT setups, anesthesia workstations, gas pipelines, and surgical devices.</p>
-          </div>
-          <div class="col-lg-5">
-            <div class="p-4 bg-white rounded-4 shadow-sm border">
-              <label for="productCategorySearch" class="form-label font-weight-bold text-dark mb-2"><i class="bi bi-search me-1 text-primary"></i> Search Product Categories</label>
-              <input type="text" id="productCategorySearch" class="form-control form-control-lg rounded-pill px-3" placeholder="e.g. ICU beds, anesthesia, autoclave...">
-              <small class="text-muted mt-2 d-block">Quickly find equipment lines or browse the categories below.</small>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Product Showcase Grid -->
-    <section class="section">
-      <div class="container section-title">
-        <h2>Primary Medical Equipment Categories</h2>
-        <p>Engineered to international clinical standards with customizable dimensions, motors, and specifications.</p>
-      </div>
-
-      <div class="container">
-        <div class="row g-4">
-
-          <!-- 1. Beds -->
-          <div class="col-lg-3 col-md-6 product-grid-col">
-            <div class="category-showcase-card">
-              <div class="category-icon-box"><i class="bi bi-hospital"></i></div>
-              <h3>Hospital &amp; ICU Beds</h3>
-              <p>5 &amp; 7-function motorized ICU beds, manual &amp; electric Fowler beds, CPR quick release, and ABS side-rails.</p>
-              <a href="../catalogue/beds/index.html" class="category-link-btn">
-                View Hospital Beds <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- 2. Modular OT -->
-          <div class="col-lg-3 col-md-6 product-grid-col">
-            <div class="category-showcase-card">
-              <div class="category-icon-box"><i class="bi bi-brightness-high"></i></div>
-              <h3>Modular OT &amp; Lights</h3>
-              <p>Turnkey NABH modular theatres, laminar air ceilings, surgeon control panels, and shadowless LED OT lights.</p>
-              <a href="../catalogue/modular-ot/index.html" class="category-link-btn">
-                View Modular OT <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- 3. MGPS -->
-          <div class="col-lg-3 col-md-6 product-grid-col">
-            <div class="category-showcase-card">
-              <div class="category-icon-box"><i class="bi bi-lungs"></i></div>
-              <h3>Medical Gas Pipeline</h3>
-              <p>BS/DIN gas outlets, automatic manifolds, digital alarm panels, zone valve boxes, and vacuum regulators.</p>
-              <a href="../catalogue/index.html" class="category-link-btn">
-                View MGPS Solutions <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- 4. Anesthesia -->
-          <div class="col-lg-3 col-md-6 product-grid-col">
-            <div class="category-showcase-card">
-              <div class="category-icon-box"><i class="bi bi-heart-pulse"></i></div>
-              <h3>Anesthesia &amp; Respiratory</h3>
-              <p>Prestige anesthesia workstations, integrated ventilators, vaporizers, syringe pumps, BiPAP, and CPAP devices.</p>
-              <a href="../catalogue/anesthesia-workstation/index.html" class="category-link-btn">
-                View Workstations <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- 5. Surgical Instruments -->
-          <div class="col-lg-3 col-md-6 product-grid-col">
-            <div class="category-showcase-card">
-              <div class="category-icon-box"><i class="bi bi-scissors"></i></div>
-              <h3>Surgical &amp; Laparoscopy</h3>
-              <p>General surgery, Orthopedic, Gynecology, ENT &amp; Urology instrument sets with high-definition camera units.</p>
-              <a href="../catalogue/surgical-instruments/index.html" class="category-link-btn">
-                View Instruments <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- 6. Autoclaves -->
-          <div class="col-lg-3 col-md-6 product-grid-col">
-            <div class="category-showcase-card">
-              <div class="category-icon-box"><i class="bi bi-shield-check"></i></div>
-              <h3>Autoclaves &amp; Sterilization</h3>
-              <p>Vertical &amp; horizontal autoclaves, triple-walled high-pressure sterilizers, E.T.O sterilizers, and formalin chambers.</p>
-              <a href="../catalogue/autoclaves/index.html" class="category-link-btn">
-                View Autoclaves <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- 7. Diagnostics -->
-          <div class="col-lg-3 col-md-6 product-grid-col">
-            <div class="category-showcase-card">
-              <div class="category-icon-box"><i class="bi bi-display"></i></div>
-              <h3>Diagnostic &amp; Imaging</h3>
-              <p>High-frequency C-Arm machines, multi-para patient monitors, 2D/3D diagnostic ultrasound scanners, and ECG machines.</p>
-              <a href="../catalogue/c-arm-machine/index.html" class="category-link-btn">
-                View Diagnostics <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- 8. Ward Furniture -->
-          <div class="col-lg-3 col-md-6 product-grid-col">
-            <div class="category-showcase-card">
-              <div class="category-icon-box"><i class="bi bi-archive"></i></div>
-              <h3>Hospital &amp; Ward Furniture</h3>
-              <p>Bedside lockers, overbed tables, emergency stretchers, crash carts, wheelchairs, and stainless steel scrub sinks.</p>
-              <a href="../catalogue/hospital-furniture/index.html" class="category-link-btn">
-                View Ward Furniture <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Full Catalogue Hub CTA -->
-    <section class="section light-background text-center py-5">
-      <div class="container">
-        <h3 class="font-weight-bold mb-3">Explore Our Complete 43+ Category Master Catalogue</h3>
-        <p class="text-muted mb-4 max-w-700 mx-auto">Access downloadable product technical datasheets, interactive 3D model renderings, model numbers, and bulk healthcare procurement quotes.</p>
-        <div class="d-flex flex-wrap justify-content-center gap-3">
-          <a href="../catalogue/index.html" class="btn btn-products-primary px-4 py-3 rounded-pill font-weight-bold shadow-sm">
-            <i class="bi bi-grid-3x3-gap-fill me-2"></i>Open Full Catalogue (43+ Categories)
-          </a>
-          <a href="../contact-form/index.html" class="btn btn-products-outline px-4 py-3 rounded-pill font-weight-bold">
-            <i class="bi bi-file-earmark-text-fill me-2"></i>Request Product Quotation
-          </a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer id="footer" class="footer position-relative light-background">
+  <!-- Hero Section -->
+  <section class="subpage-hero-section">
     <div class="container">
-      <div class="row gy-5">
-        <div class="col-lg-4">
-          <div class="footer-content">
-            <a href="../index.html" class="logo d-flex align-items-center mb-4">
-              <span class="sitename">Dr. Smith</span>
-            </a>
-            <p class="mb-4">Dr. Smith is committed to delivering dependable medical infrastructure, trusted healthcare solutions, and patient-first services across India and global markets.</p>
-            <div class="newsletter-form">
-              <h5>Product Enquiries</h5>
-              <p>For product and service enquiries, email <a href="mailto:info@drsmith.co.in">info@drsmith.co.in</a>.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-6">
-          <div class="footer-links">
-            <h4>Company</h4>
-            <ul>
-              <li><a href="../about-us/index.html"><i class="bi bi-chevron-right"></i> About Us</a></li>
-              <li><a href="../turnkey-projects/index.html"><i class="bi bi-chevron-right"></i> Turnkey Projects</a></li>
-              <li><a href="index.html"><i class="bi bi-chevron-right"></i> Medical Products</a></li>
-              <li><a href="../mission-values/index.html"><i class="bi bi-chevron-right"></i> Mission &amp; Values</a></li>
-              <li><a href="../group-companies/index.html"><i class="bi bi-chevron-right"></i> Group Companies</a></li>
-              <li><a href="../contact-form/index.html"><i class="bi bi-chevron-right"></i> Contact</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-6">
-          <div class="footer-links">
-            <h4>Solutions</h4>
-            <ul>
-              <li><a href="../catalogue/modular-ot/index.html"><i class="bi bi-chevron-right"></i> Modular OT</a></li>
-              <li><a href="../catalogue/hospital-furniture/index.html"><i class="bi bi-chevron-right"></i> Hospital Furniture</a></li>
-              <li><a href="../catalogue/index.html"><i class="bi bi-chevron-right"></i> Medical Equipment</a></li>
-              <li><a href="../catalogue/surgical-instruments/index.html"><i class="bi bi-chevron-right"></i> Surgical Instruments</a></li>
-              <li><a href="../catalogue/ivd-products/index.html"><i class="bi bi-chevron-right"></i> Laboratory Equipment</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-lg-4">
-          <div class="footer-contact">
-            <h4>Get in Touch</h4>
-            <div class="contact-item">
-              <div class="contact-icon"><i class="bi bi-buildings"></i></div>
-              <div class="contact-info"><p><strong>Global Head Office:</strong><br>Plot No. 75/02, Shri Sai Complex, GF<br>Kapashera Border, New Delhi &ndash; 110037, India</p></div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon"><i class="bi bi-geo-alt"></i></div>
-              <div class="contact-info"><p><strong>Overseas Head Office (UAE):</strong><br>Q4-223, SAIF Zone, Sharjah, UAE</p></div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon"><i class="bi bi-telephone"></i></div>
-              <div class="contact-info"><p><a href="tel:18008917466">1800 891 7466</a> (Toll-Free)</p></div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon"><i class="bi bi-envelope"></i></div>
-              <div class="contact-info"><p><a href="mailto:info@drsmith.co.in">info@drsmith.co.in</a></p></div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <span class="subpage-hero-badge"><i class="bi bi-shield-check"></i> ISO 13485 &amp; CE Certified Range</span>
+      <h1 class="subpage-hero-title">Medical Equipment &amp; Clinical Furniture</h1>
+      <p class="subpage-hero-desc">Over 50 specialized categories of hospital furniture, surgical operating suites, life support equipment, sterilization systems, and radiology diagnostics.</p>
     </div>
+  </section>
 
-    <div class="footer-bottom">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class="copyright">
-              <p>© <span>Copyright</span> <strong class="px-1 sitename">Dr. Smith</strong> <span>All Rights Reserved</span></p>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="footer-bottom-links">
-              <a href="../privacy.html">Privacy Policy</a>
-              <a href="../terms.html">Terms of Service</a>
-              <a href="../contact-form/index.html">Contact</a>
-            </div>
+  <!-- Products Department Grid -->
+  <section class="py-5" style="background: #030712;">
+    <div class="container">
+      <div class="row g-4 mb-5">
+        
+        <!-- Category 1: Hospital & ICU Beds -->
+        <div class="col-lg-4 col-md-6">
+          <div class="dark-glass-card">
+            <span class="about-pill-label mb-2">Hospital Furniture</span>
+            <h3 class="text-white font-weight-bold mb-2">Hospital &amp; ICU Beds</h3>
+            <p class="text-muted small mb-3">5-Function electric ICU beds (SWM-11000/01), manual crank beds (SWM-11003), fowler beds, and pediatric cribs with ABS panels.</p>
+            <a href="../catalogue/beds/index.html" class="btn-cyan-pill">View Bed Models <i class="bi bi-arrow-right ms-1"></i></a>
           </div>
         </div>
+
+        <!-- Category 2: Modular OT Cleanrooms -->
+        <div class="col-lg-4 col-md-6">
+          <div class="dark-glass-card">
+            <span class="about-pill-label mb-2">Surgical Suites</span>
+            <h3 class="text-white font-weight-bold mb-2">Modular OT &amp; Cleanrooms</h3>
+            <p class="text-muted small mb-3">Laminar airflow diffusers, hermetic automatic sliding doors, 21" digital surgeon touch panels, and flush LED X-Ray viewers.</p>
+            <a href="../catalogue/modular-ot/index.html" class="btn-cyan-pill">Explore OT Systems <i class="bi bi-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+
+        <!-- Category 3: OT Tables & Lights -->
+        <div class="col-lg-4 col-md-6">
+          <div class="dark-glass-card">
+            <span class="about-pill-label mb-2">Operating Room</span>
+            <h3 class="text-white font-weight-bold mb-2">Surgical Lights &amp; Tables</h3>
+            <p class="text-muted small mb-3">Dual-dome LED shadowless lights with HD camera (SWM-11023) and C-Arm compatible electro-hydraulic OT tables (SWM-11029).</p>
+            <a href="../catalogue/ot-tables/index.html" class="btn-cyan-pill">OT Tables &amp; Lights <i class="bi bi-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+
+        <!-- Category 4: Anesthesia & Critical Care -->
+        <div class="col-lg-4 col-md-6">
+          <div class="dark-glass-card">
+            <span class="about-pill-label mb-2">Intensive Care</span>
+            <h3 class="text-white font-weight-bold mb-2">Anesthesia &amp; Life Support</h3>
+            <p class="text-muted small mb-3">Prestige-I anesthesia workstations, ICU ventilators, 5-para patient monitors, defibrillators, and syringe infusion pumps.</p>
+            <a href="../catalogue/anesthesia-workstation/index.html" class="btn-cyan-pill">Anesthesia Range <i class="bi bi-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+
+        <!-- Category 5: Autoclaves & Sterilization -->
+        <div class="col-lg-4 col-md-6">
+          <div class="dark-glass-card">
+            <span class="about-pill-label mb-2">CSSD &amp; Hygiene</span>
+            <h3 class="text-white font-weight-bold mb-2">Autoclaves &amp; Sterilizers</h3>
+            <p class="text-muted small mb-3">Vertical/horizontal high pressure triple-walled autoclaves, dental tabletop autoclaves, and ETO gas sterilizers.</p>
+            <a href="../catalogue/autoclaves/index.html" class="btn-cyan-pill">Sterilization Range <i class="bi bi-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+
+        <!-- Category 6: Diagnostic & C-Arm -->
+        <div class="col-lg-4 col-md-6">
+          <div class="dark-glass-card">
+            <span class="about-pill-label mb-2">Radiology &amp; Imaging</span>
+            <h3 class="text-white font-weight-bold mb-2">C-Arm, X-Ray &amp; Ultrasound</h3>
+            <p class="text-muted small mb-3">High-frequency C-Arm fluoroscopy machines, mobile digital X-Ray units, CT/MRI scan equipment, and 4D ultrasound scanners.</p>
+            <a href="../catalogue/c-arm-machine/index.html" class="btn-cyan-pill">Radiology Range <i class="bi bi-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+
       </div>
+
+      <!-- Quick Catalogue Access Banner -->
+      <div class="text-center pt-4">
+        <a href="../catalogue/index.html" class="btn-cyan-pill px-5 py-3">Explore Complete 50+ Product Catalogue <i class="bi bi-arrow-right ms-2"></i></a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       GLOBAL DIRECTORY FOOTER
+       ============================================================ -->
+  <footer class="apple-globalfooter">
+    <div class="apple-footer-inner">
+      
+      <!-- Notes / Footnotes -->
+      <div class="apple-footer-notes">
+        <ol>
+          <li>Medical equipment specifications, turnkey timelines, and compliance standards (ISO 9001:2015, ISO 13485:2016, CE, FDA) depend on specific project scopes and customized clinical configurations.</li>
+          <li>Turnkey hospital infrastructure engineering timelines depend on architectural blueprints, local regulatory clearances, and civil site readiness.</li>
+          <li>Principal Global Head Office located at Kapashera Border, New Delhi; Manufacturing Plant at METL, Jhajjar, Haryana; Overseas Head Office at SAIF Zone, Sharjah, UAE.</li>
+        </ol>
+      </div>
+
+      <!-- Directory Columns -->
+      <div class="apple-footer-directory">
+
+        <!-- Col 1: Turnkey Solutions -->
+        <div class="apple-footer-col">
+          <h4>Turnkey Solutions</h4>
+          <ul>
+            <li><a href="../turnkey-projects/index.html">500-Bedded Hospital Setup</a></li>
+            <li><a href="../catalogue/modular-ot/index.html">Modular OT Construction</a></li>
+            <li><a href="../turnkey-projects/index.html">Medical Gas Pipeline (MGPS)</a></li>
+            <li><a href="../turnkey-projects/index.html">Hospital Architecture &amp; MEP</a></li>
+            <li><a href="../turnkey-projects/index.html">Government &amp; Global Tenders</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 2: Group Ecosystem -->
+        <div class="apple-footer-col">
+          <h4>Group Ecosystem</h4>
+          <ul>
+            <li><a href="../about-us/index.html">Dr. Smith Healthcare</a></li>
+            <li><a href="../catalogue/index.html">Surgihub Surgical Devices</a></li>
+            <li><a href="../catalogue/index.html">Surgical Mall of India (SMPL)</a></li>
+            <li><a href="../catalogue/index.html">MediAid Patient Care</a></li>
+            <li><a href="../catalogue/index.html">Orbit Mahajan Diagnostics</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Product Catalogue -->
+        <div class="apple-footer-col">
+          <h4>Product Catalogue</h4>
+          <ul>
+            <li><a href="../catalogue/icu-beds/index.html">Hospital &amp; ICU Beds</a></li>
+            <li><a href="../catalogue/modular-ot/index.html">Modular OT Suites</a></li>
+            <li><a href="../catalogue/patient-monitor/index.html">Critical Care &amp; Monitors</a></li>
+            <li><a href="../catalogue/ventilators/index.html">ICU Ventilators</a></li>
+            <li><a href="../catalogue/index.html">Full 50+ Categories</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Global Directory -->
+        <div class="apple-footer-col">
+          <h4>Global Presence</h4>
+          <ul>
+            <li><a href="../contact-form/index.html">New Delhi Head Office (India)</a></li>
+            <li><a href="../contact-form/index.html">Jhajjar Manufacturing Plant</a></li>
+            <li><a href="../contact-form/index.html">Sharjah Overseas Office (UAE)</a></li>
+            <li><a href="../contact-form/index.html">Kenya &amp; Nigeria Desks</a></li>
+            <li><a href="../contact-form/index.html">Patna, Kolkata, Varanasi Marts</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Compliance & Values -->
+        <div class="apple-footer-col">
+          <h4>Corporate &amp; Quality</h4>
+          <ul>
+            <li><a href="../about-us/index.html">About 60+ Years Heritage</a></li>
+            <li><a href="../mission-values/index.html">Mission &amp; Values</a></li>
+            <li><a href="../about-us/index.html#team">Executive Leadership</a></li>
+            <li><a href="../privacy.html">Privacy Policy</a></li>
+            <li><a href="../terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Legal & Country -->
+      <div class="apple-footer-bottom">
+        <div class="apple-footer-copyright">
+          Copyright &copy; 2026 Dr. Smith Healthcare Solutions (Surgical Wholesale Mart Pvt. Ltd.). All rights reserved.
+        </div>
+        <div class="apple-footer-legal-links">
+          <a href="../privacy.html">Privacy Policy</a>
+          <a href="../terms.html">Terms of Use</a>
+          <a href="../contact-form/index.html">Sales Policy</a>
+          <a href="../contact-form/index.html">Legal</a>
+          <a href="../catalogue/index.html">Site Map</a>
+        </div>
+        <div class="apple-footer-country">
+          <a href="../contact-form/index.html" class="text-decoration-none text-muted"><i class="bi bi-globe me-1"></i> India (English)</a>
+        </div>
+      </div>
+
     </div>
   </footer>
 
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  <div id="preloader"></div>
+  <!-- Drawer Modal -->
+  <div class="apple-drawer-overlay" id="apple-drawer-overlay" onclick="if(event.target===this) closeAppleDrawer();">
+    <div class="apple-drawer-content">
+      <button type="button" class="apple-drawer-close" onclick="closeAppleDrawer();" aria-label="Close">
+        <i class="bi bi-x-lg"></i>
+      </button>
+      
+      <div style="text-align: center; margin-bottom: 24px;">
+        <span class="apple-shelf-badge">Dr. Smith Turnkey &amp; Procurement Desk</span>
+        <h3 style="font-size: 24px; font-weight: 700; margin-top: 8px;">Request Project Consultation</h3>
+        <p style="font-size: 14px; color: var(--apple-text-secondary); margin: 0;">Speak directly with our healthcare architects &amp; hospital engineering experts.</p>
+      </div>
+
+      <form class="apple-drawer-form" onsubmit="handleAppleQuoteSubmit(event);">
+        <div class="form-group">
+          <label>Scope of Interest</label>
+          <input type="text" id="drawer-product-name" value="Turnkey Hospital Setup" readonly style="background: rgba(255,255,255,0.08); font-weight: 600;">
+        </div>
+
+        <div class="row g-2">
+          <div class="col-md-6 form-group">
+            <label>Your Full Name *</label>
+            <input type="text" placeholder="Dr. / Mr. / Ms." required>
+          </div>
+          <div class="col-md-6 form-group">
+            <label>Hospital / Institution Name *</label>
+            <input type="text" placeholder="Hospital / Organization Name" required>
+          </div>
+        </div>
+
+        <div class="row g-2">
+          <div class="col-md-6 form-group">
+            <label>Official Email *</label>
+            <input type="email" placeholder="name@hospital.com" required>
+          </div>
+          <div class="col-md-6 form-group">
+            <label>Phone / WhatsApp *</label>
+            <input type="tel" placeholder="+91 99999 99999" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Project Scope &amp; Requirements</label>
+          <textarea rows="3" placeholder="Specify turnkey bed capacity, modular OT requirement, MGPS pipeline, or equipment procurement details..."></textarea>
+        </div>
+
+        <button type="submit" class="apple-btn-pill w-100 mt-2" style="padding: 14px;">Submit Consultation Request</button>
+      </form>
+    </div>
+  </div>
 
   <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="../assets/js/main.js?v=3.5"></script>
-  <script src="script.js?v=3.5"></script>
+  <script>
+    function openAppleDrawer(scopeName) {
+      if (scopeName) {
+        const scopeInput = document.getElementById('drawer-product-name');
+        if (scopeInput) scopeInput.value = scopeName;
+      }
+      document.getElementById('apple-drawer-overlay').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeAppleDrawer() {
+      document.getElementById('apple-drawer-overlay').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    function handleAppleQuoteSubmit(e) {
+      e.preventDefault();
+      alert('Thank you! Your project consultation request has been received.');
+      closeAppleDrawer();
+    }
+    const mobileMenuBtn = document.getElementById('apple-mobile-menu-btn');
+    if (mobileMenuBtn) {
+      mobileMenuBtn.addEventListener('click', function() {
+        document.body.classList.toggle('apple-mobile-menu-open');
+        const icon = mobileMenuBtn.querySelector('i');
+        if (document.body.classList.contains('apple-mobile-menu-open')) {
+          icon.classList.remove('bi-list');
+          icon.classList.add('bi-x-lg');
+        } else {
+          icon.classList.remove('bi-x-lg');
+          icon.classList.add('bi-list');
+        }
+      });
+    }
+    document.querySelectorAll('.apple-mobile-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.body.classList.remove('apple-mobile-menu-open');
+      });
+    });
+    window.addEventListener('scroll', function() {
+      const nav = document.querySelector('.apple-globalnav');
+      if (nav) {
+        if (window.scrollY > 30) nav.classList.add('nav-scrolled');
+        else nav.classList.remove('nav-scrolled');
+      }
+    }, { passive: true });
+  </script>
+
 </body>
 </html>

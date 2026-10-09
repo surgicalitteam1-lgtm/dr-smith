@@ -1,292 +1,441 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#030712">
   <title>About Us | Dr. Smith - 60+ Years of Healthcare Excellence</title>
-  <meta name="description"
-    content="Learn about Dr. Smith, our 60+ years heritage in medical equipment manufacturing, export, turnkey hospital solutions, and clinical innovation.">
-  <meta name="keywords"
-    content="About Dr. Smith, hospital equipment manufacturer, medical furniture supplier, turnkey hospital infrastructure">
-
+  <meta name="description" content="Learn about Dr. Smith (Surgical Wholesale Mart Pvt. Ltd.), our 60+ years legacy, executive leadership, manufacturing plant, and global healthcare infrastructure.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
-  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="../assets/css/main.css?v=3.5" rel="stylesheet">
-  <link href="style.css?v=3.5" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="../assets/css/apple-theme.css?v=36.0" rel="stylesheet">
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
 </head>
 
-<body>
-
-  <!-- Header -->
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="../index.html" class="logo d-flex align-items-center">
-        <img src="../assets/img/logo.png?v=2" onerror="this.onerror=null; this.src='../catalogue/img/logo.png?v=2';"
-          alt="Dr. Smith logo" width="62" height="64">
-        <div class="logo-brand d-flex flex-column">
-          <h1 class="sitename">Dr. Smith</h1>
-          <span class="logo-slogan">Excellence In Healthcare Solutions</span>
+<body class="apple-body">
+  <!-- ============================================================
+       1. GLOBAL NAVIGATION HEADER
+       ============================================================ -->
+  <nav class="apple-globalnav" aria-label="Global">
+    <div class="apple-globalnav-inner">
+      
+      <!-- Brand & Corporate Identity -->
+      <a href="../index.html" class="apple-nav-brand" aria-label="Dr. Smith Hospital Solutions">
+        <div class="brand-asterisk-icon">
+          <img src="../assets/img/logo.png?v=11.0" alt="Dr. Smith Emblem Logo" class="apple-nav-logo-img" width="36" height="36">
+        </div>
+        <div class="apple-nav-brand-text">
+          <span class="apple-nav-brand-title">Dr. Smith</span>
+          <span class="apple-nav-brand-subtitle">HOSPITAL SOLUTIONS</span>
         </div>
       </a>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="index.html" class="active">About Us</a></li>
-          <li><a href="../turnkey-projects/index.html">Turnkey Projects</a></li>
-          <li><a href="../medical-products/index.html">Medical Products</a></li>
-          <li><a href="../group-companies/index.html">Group Companies</a></li>
-          <li><a href="../mission-values/index.html">Mission &amp; Values</a></li>
-          <li><a href="#" class="nav-whatsapp-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></li>
-        </ul>
-      </nav>
+      <!-- Navigation Links -->
+      <ul class="apple-nav-links">
+        <li class="apple-nav-item">
+          <a href="../index.html" class="apple-nav-link">Home</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../catalogue/index.html" class="apple-nav-link">Products</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../turnkey-projects/index.html" class="apple-nav-link">Turnkey Solutions</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../about-us/index.html" class="apple-nav-link nav-active">About Us</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../contact-form/index.html" class="apple-nav-link">Contact</a>
+        </li>
+      </ul>
 
-      <div class="mobile-nav-toggle d-xl-none bi bi-list"></div>
+      <!-- Action Utilities -->
+      <div class="apple-nav-actions">
+        <!-- Search Circle Button -->
+        <a href="../catalogue/index.html" class="apple-nav-circle-btn" aria-label="Search Medical Catalogue" title="Search Catalogue">
+          <i class="bi bi-search"></i>
+        </a>
+
+        <!-- WhatsApp Circle Button -->
+        <a href="https://wa.me/919999999999" class="apple-nav-circle-btn apple-nav-circle-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" title="WhatsApp Direct">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <!-- Menu Toggle Button -->
+        <button type="button" class="apple-nav-circle-btn" id="apple-mobile-menu-btn" aria-label="Toggle Navigation Menu" title="Menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+
     </div>
-  </header>
+  </nav>
 
-  <main class="main">
+  <!-- Mobile Menu Drawer Overlay -->
+  <div class="apple-mobile-drawer" id="apple-mobile-drawer">
+    <ul class="apple-mobile-links">
+      <li><a href="../index.html">Home <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+      <li><a href="../catalogue/index.html">Products Catalogue <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+      <li><a href="../turnkey-projects/index.html">Turnkey Hospital Setup <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+      <li><a href="../catalogue/modular-ot/index.html">Modular Operation Theatres <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+      <li><a href="../about-us/index.html">About Dr. Smith <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+      <li><a href="../contact-form/index.html">Global Offices &amp; Contact <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+    </ul>
+    
+    <div class="apple-mobile-cta-box">
+      <button type="button" class="apple-btn-pill w-100 py-3" onclick="openAppleDrawer('Turnkey Consultation');">
+        <i class="bi bi-building me-2"></i> Request Project Consultation
+      </button>
+      <a href="tel:18008917466" class="btn btn-outline-light rounded-pill py-2 w-100 text-center">
+        <i class="bi bi-telephone-fill me-2 text-primary"></i> Call Toll-Free: 1800 891 7466
+      </a>
+      <a href="https://wa.me/919999999999" class="btn btn-success rounded-pill py-2 w-100 text-center" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp me-2"></i> WhatsApp Consultation Desk
+      </a>
+    </div>
+  </div>
 
-    <!-- About Hero Section -->
-    <section class="about-page-hero">
-      <div class="container">
-        <div class="row align-items-center gy-4">
-          <div class="col-lg-7">
-            <span class="about-hero-badge"><i class="bi bi-award-fill"></i> 60+ Years Healthcare Legacy</span>
-            <h1>Corporate Overview &amp; <span>Strategic Vision</span></h1>
-            <p class="lead">Dr. Smith manufactures, exports, and supplies medical equipment and turnkey hospital solutions, empowering healthcare facilities globally with precision engineering and trusted clinical support.</p>
-          </div>
-          <div class="col-lg-5">
-            <div class="about-highlight-box">
-              <h3 class="h4 text-primary font-weight-bold mb-3">Core Heritage Metrics</h3>
-              <div class="stats-row">
-                <div class="stat-item">
-                  <h3><span data-purecounter-start="0" data-purecounter-end="60" data-purecounter-duration="1"
-                      class="purecounter"></span>+</h3>
-                  <p>Parent Company Experience</p>
-                </div>
-                <div class="stat-item">
-                  <h3><span data-purecounter-start="0" data-purecounter-end="35" data-purecounter-duration="1"
-                      class="purecounter"></span>+</h3>
-                  <p>Chairman's Healthcare Experience</p>
-                </div>
-                <div class="stat-item">
-                  <h3><span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1"
-                      class="purecounter"></span></h3>
-                  <p>Year of Free Product Service</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Detailed About Story Section -->
-    <section class="about section">
-      <div class="container">
-        <div class="row align-items-center gy-5">
-          <div class="col-lg-6">
-            <div class="about-image about-image-clean">
-              <img src="../assets/img/about/about-portrait-4.webp" alt="Dr. Smith Manufacturing & Excellence" class="img-fluid rounded-4 shadow-sm">
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="content">
-              <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill font-weight-bold mb-3">Our Legacy & Operations</span>
-              <h2 class="mb-3">6 Decades of Trust, Quality & Innovation</h2>
-              <p class="lead">Dr. Smith operates under the guidance of a Jalandhar-based parent company with more than 60 years of experience in trading, importing and exporting medical instruments and equipment.</p>
-              <p>As an integrated manufacturer, exporter, and supplier, we provide hospital furniture, advanced medical devices, surgical instruments, diagnostic equipment, and complete turnkey hospital projects worldwide.</p>
-              <p>Every product is manufactured to rigorous technical standards and customized to clients’ clinical needs. We back our craftsmanship with one year of comprehensive free service and round-the-clock technical support.</p>
-
-              <div class="legacy-timeline-card mt-4">
-                <h4 class="h5 font-weight-bold text-dark">ISO & CE Certified Manufacturing</h4>
-                <p class="text-muted small mb-0">Adhering to ISO 9001:2015, ISO 13485:2016 (Medical Devices), GMP, CE, and FDA safety benchmarks.</p>
-              </div>
-              <div class="legacy-timeline-card">
-                <h4 class="h5 font-weight-bold text-dark">End-to-End Hospital Infrastructure</h4>
-                <p class="text-muted small mb-0">From architectural NABH modular operation theatre design to medical gas piping and ICU setups.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Key Strengths Grid -->
-    <section class="section light-background">
-      <div class="container section-title">
-        <h2>Why Healthcare Providers Choose Dr. Smith</h2>
-        <p>Combining world-class engineering with patient-centric values to deliver unmatched clinical value.</p>
-      </div>
-
-      <div class="container">
-        <div class="heritage-pill-grid">
-          <div class="heritage-pill-card">
-            <div class="pill-icon"><i class="bi bi-shield-check"></i></div>
-            <h4>Accredited Standards</h4>
-            <p>100% certified clinical compliance ensuring safety in critical surgical environments.</p>
-          </div>
-          <div class="heritage-pill-card">
-            <div class="pill-icon"><i class="bi bi-gear-wide-connected"></i></div>
-            <h4>Custom Engineering</h4>
-            <p>Tailored hospital furniture and medical gas layouts customized to your space.</p>
-          </div>
-          <div class="heritage-pill-card">
-            <div class="pill-icon"><i class="bi bi-globe-americas"></i></div>
-            <h4>Global Export Network</h4>
-            <p>Supplying reputable private hospitals, nursing homes, and government institutions worldwide.</p>
-          </div>
-          <div class="heritage-pill-card">
-            <div class="pill-icon"><i class="bi bi-headset"></i></div>
-            <h4>Reliable After-Sales</h4>
-            <p>Dedicated engineers offering prompt installation, warranty maintenance, and spare parts.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Leadership Quote -->
-    <section class="section">
-      <div class="container">
-        <div class="leadership-quote-card">
-          <blockquote>
-            "Our vision has always been grounded in the belief that reliable medical infrastructure is the foundation of quality healthcare. We combine decades of manufacturing mastery with modern technological innovation to support healthcare heroes around the globe."
-          </blockquote>
-          <div class="author-meta">
-            <h5>Executive Leadership</h5>
-            <span>Dr. Smith Healthcare Solutions &amp; Group Companies</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Call To Action -->
-    <section class="section text-center py-5">
-      <div class="container">
-        <h3 class="mb-3 font-weight-bold">Ready to Elevate Your Healthcare Facility?</h3>
-        <p class="text-muted mb-4 max-w-600 mx-auto">Explore our complete product catalogue or consult with our hospital turnkey project experts today.</p>
-        <div class="d-flex flex-wrap justify-content-center gap-3">
-          <a href="../catalogue/index.html" class="btn-about-primary">
-            <i class="bi bi-grid-3x3-gap me-2"></i>Browse 43+ Product Catalogue
-          </a>
-          <a href="../contact-form/index.html" class="btn-about-outline">
-            <i class="bi bi-envelope me-2"></i>Contact Us
-          </a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer id="footer" class="footer position-relative light-background">
+  <!-- Hero Section -->
+  <section class="subpage-hero-section">
     <div class="container">
-      <div class="row gy-5">
-        <div class="col-lg-4">
-          <div class="footer-content">
-            <a href="../index.html" class="logo d-flex align-items-center mb-4">
-              <span class="sitename">Dr. Smith</span>
-            </a>
-            <p class="mb-4">Dr. Smith is committed to delivering dependable medical infrastructure, trusted healthcare solutions, and patient-first services across India and global markets.</p>
-            <div class="newsletter-form">
-              <h5>Product Enquiries</h5>
-              <p>For product and service enquiries, email <a href="mailto:info@drsmith.co.in">info@drsmith.co.in</a>.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-6">
-          <div class="footer-links">
-            <h4>Company</h4>
-            <ul>
-              <li><a href="index.html"><i class="bi bi-chevron-right"></i> About Us</a></li>
-              <li><a href="../turnkey-projects/index.html"><i class="bi bi-chevron-right"></i> Turnkey Projects</a></li>
-              <li><a href="../medical-products/index.html"><i class="bi bi-chevron-right"></i> Medical Products</a></li>
-              <li><a href="../mission-values/index.html"><i class="bi bi-chevron-right"></i> Mission &amp; Values</a></li>
-              <li><a href="../group-companies/index.html"><i class="bi bi-chevron-right"></i> Group Companies</a></li>
-              <li><a href="../contact-form/index.html"><i class="bi bi-chevron-right"></i> Contact</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-6">
-          <div class="footer-links">
-            <h4>Solutions</h4>
-            <ul>
-              <li><a href="../catalogue/modular-ot/index.html"><i class="bi bi-chevron-right"></i> Modular OT</a></li>
-              <li><a href="../catalogue/hospital-furniture/index.html"><i class="bi bi-chevron-right"></i> Hospital Furniture</a></li>
-              <li><a href="../catalogue/index.html"><i class="bi bi-chevron-right"></i> Medical Equipment</a></li>
-              <li><a href="../catalogue/surgical-instruments/index.html"><i class="bi bi-chevron-right"></i> Surgical Instruments</a></li>
-              <li><a href="../catalogue/ivd-products/index.html"><i class="bi bi-chevron-right"></i> Laboratory Equipment</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-lg-4">
-          <div class="footer-contact">
-            <h4>Get in Touch</h4>
-            <div class="contact-item">
-              <div class="contact-icon"><i class="bi bi-buildings"></i></div>
-              <div class="contact-info"><p><strong>Global Head Office:</strong><br>Plot No. 75/02, Shri Sai Complex, GF<br>Kapashera Border, New Delhi &ndash; 110037, India</p></div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon"><i class="bi bi-geo-alt"></i></div>
-              <div class="contact-info"><p><strong>Overseas Head Office (UAE):</strong><br>Q4-223, SAIF Zone, Sharjah, UAE</p></div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon"><i class="bi bi-telephone"></i></div>
-              <div class="contact-info"><p><a href="tel:18008917466">1800 891 7466</a> (Toll-Free)</p></div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon"><i class="bi bi-envelope"></i></div>
-              <div class="contact-info"><p><a href="mailto:info@drsmith.co.in">info@drsmith.co.in</a></p></div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <span class="subpage-hero-badge"><i class="bi bi-award-fill"></i> 60+ Years Healthcare Heritage</span>
+      <h1 class="subpage-hero-title">Pioneering Indian Medical Engineering</h1>
+      <p class="subpage-hero-desc">Established under the guidance of our Jalandhar-based parent company with over six decades of excellence in medical device manufacturing, hospital turnkey setup, and global healthcare exports.</p>
     </div>
+  </section>
 
-    <div class="footer-bottom">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class="copyright">
-              <p>© <span>Copyright</span> <strong class="px-1 sitename">Dr. Smith</strong> <span>All Rights Reserved</span></p>
+  <!-- Overview Section -->
+  <section class="py-5" style="background: #030712;">
+    <div class="container">
+      <div class="row g-4 align-items-center mb-5">
+        <div class="col-lg-6">
+          <div class="dark-glass-card">
+            <span class="about-pill-label mb-2">Corporate Profile</span>
+            <h2 class="text-white font-weight-bold mb-3">Surgical Wholesale Mart Pvt. Ltd.</h2>
+            <p class="text-muted mb-3">Surgical Wholesale Mart Pvt. Ltd. (Dr. Smith) is one of the renowned healthcare enterprises in India, providing complete end-to-end solutions for hospital construction, modular operation theatres, medical gas pipelines, and over 50 specialized categories of hospital furniture and clinical devices.</p>
+            <p class="text-muted mb-4">We are certified under <strong>ISO 9001:2015, ISO 13485:2016, ISO 14001:2015, OHSAS 45001:2018, BIFMA, GMP, CE, and US FDA conformity</strong>. We manufacture products tailored to evolving clinical trends and back every installation with our signature one-year complimentary service warranty.</p>
+            <div class="d-flex gap-3 flex-wrap">
+              <a href="../turnkey-projects/index.html" class="btn-cyan-pill">Explore Turnkey Projects <i class="bi bi-arrow-right ms-1"></i></a>
+              <a href="../catalogue/index.html" class="btn-outline-pill-cyan">Browse Catalogue <i class="bi bi-arrow-right ms-1"></i></a>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="footer-bottom-links">
-              <a href="../privacy.html">Privacy Policy</a>
-              <a href="../terms.html">Terms of Service</a>
-              <a href="../contact-form/index.html">Contact</a>
+        </div>
+        <div class="col-lg-6">
+          <div class="dark-glass-card">
+            <h3 class="text-white font-weight-bold mb-4">Heritage Key Metrics</h3>
+            <div class="row g-4 text-center">
+              <div class="col-6">
+                <div class="stat-number mb-1" style="font-size: 36px;">60+</div>
+                <div class="text-muted small">Years Parent Company Legacy</div>
+              </div>
+              <div class="col-6">
+                <div class="stat-number mb-1" style="font-size: 36px;">35+</div>
+                <div class="text-muted small">Years Chairman Industry Experience</div>
+              </div>
+              <div class="col-6">
+                <div class="stat-number mb-1" style="font-size: 36px;">500+</div>
+                <div class="text-muted small">Hospital Setup Track Record</div>
+              </div>
+              <div class="col-6">
+                <div class="stat-number mb-1" style="font-size: 36px;">25+</div>
+                <div class="text-muted small">Global Export Countries</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Leadership Grid -->
+      <div class="mb-5 pt-4" id="team">
+        <div class="text-center mb-5">
+          <span class="about-pill-label mb-2">Executive Leadership</span>
+          <h2 class="section-dark-title">Meet Our Leadership Team</h2>
+          <p class="section-dark-subhead">Experienced professionals guiding clinical innovation, project finance, and nationwide distribution.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Chairman -->
+          <div class="col-lg-4 col-md-6">
+            <div class="apple-team-card h-100">
+              <div class="apple-team-avatar">KM</div>
+              <div class="apple-team-info">
+                <h4>Mr. Kamal Kant Mahajan</h4>
+                <span class="apple-team-role">Chairman</span>
+                <p class="apple-team-bio">Over 35 years of work experience in the healthcare industry, offering value for money and highest quality products/solutions for hospitals and doctors. Grew the company from scratch with dedicated nationwide support.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CEO -->
+          <div class="col-lg-4 col-md-6">
+            <div class="apple-team-card h-100">
+              <div class="apple-team-avatar">DM</div>
+              <div class="apple-team-info">
+                <h4>Ms. Danjali Mahajan</h4>
+                <span class="apple-team-role">CEO &amp; Finance / Export Head</span>
+                <p class="apple-team-bio">Spearheading financial planning and analysis, project finance, business process improvement, and global export compliance across international health ministries.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CMO -->
+          <div class="col-lg-4 col-md-6">
+            <div class="apple-team-card h-100">
+              <div class="apple-team-avatar">NM</div>
+              <div class="apple-team-info">
+                <h4>Mr. Naman Mahajan</h4>
+                <span class="apple-team-role">Chief Marketing Officer</span>
+                <p class="apple-team-bio">Highly experienced professional in sales and marketing, leading product innovation, client relationship management, institutional tenders, and multinational trade expansion.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Infrastructure & Domestic Expansion -->
+      <div class="pt-4 mb-5">
+        <div class="text-center mb-5">
+          <span class="about-pill-label mb-2">Manufacturing &amp; Facilities</span>
+          <h2 class="section-dark-title">Nationwide &amp; Global Network</h2>
+          <p class="section-dark-subhead">Headquartered in New Delhi with manufacturing at METL Jhajjar, Haryana and overseas hub in UAE.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="stat-badge-box d-block p-4 h-100">
+              <div class="stat-icon-circle mb-3"><i class="bi bi-buildings-fill"></i></div>
+              <h4 class="text-white font-weight-bold mb-2">Corporate Head Office</h4>
+              <p class="text-primary small font-weight-bold mb-2">New Delhi, India</p>
+              <p class="text-muted small mb-1">Plot No. 75/02, Shri Sai Complex, Kapashera Border, New Delhi &ndash; 110037</p>
+              <p class="text-muted small mb-0">Toll-Free: 1800 891 7466 | Email: info@drsmith.co.in</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="stat-badge-box d-block p-4 h-100">
+              <div class="stat-icon-circle mb-3"><i class="bi bi-gear-wide-connected"></i></div>
+              <h4 class="text-white font-weight-bold mb-2">Primary Manufacturing Unit</h4>
+              <p class="text-primary small font-weight-bold mb-2">METL Jhajjar, Haryana</p>
+              <p class="text-muted small mb-1">Plot No. 20, Sector 2B, Model Economic Township (METL), Jhajjar, Haryana</p>
+              <p class="text-muted small mb-0">CNC laser cutting, robotic welding &amp; sterile cleanroom assembly</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="stat-badge-box d-block p-4 h-100">
+              <div class="stat-icon-circle mb-3"><i class="bi bi-globe2"></i></div>
+              <h4 class="text-white font-weight-bold mb-2">Overseas Office &amp; Warehouse</h4>
+              <p class="text-primary small font-weight-bold mb-2">Sharjah, United Arab Emirates</p>
+              <p class="text-muted small mb-1">Q4-223, SAIF Zone, Sharjah, United Arab Emirates</p>
+              <p class="text-muted small mb-0">Serving Middle East, Africa, and international hospital tenders</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       GLOBAL DIRECTORY FOOTER
+       ============================================================ -->
+  <footer class="apple-globalfooter">
+    <div class="apple-footer-inner">
+      
+      <!-- Notes / Footnotes -->
+      <div class="apple-footer-notes">
+        <ol>
+          <li>Medical equipment specifications, turnkey timelines, and compliance standards (ISO 9001:2015, ISO 13485:2016, CE, FDA) depend on specific project scopes and customized clinical configurations.</li>
+          <li>Turnkey hospital infrastructure engineering timelines depend on architectural blueprints, local regulatory clearances, and civil site readiness.</li>
+          <li>Principal Global Head Office located at Kapashera Border, New Delhi; Manufacturing Plant at METL, Jhajjar, Haryana; Overseas Head Office at SAIF Zone, Sharjah, UAE.</li>
+        </ol>
+      </div>
+
+      <!-- Directory Columns -->
+      <div class="apple-footer-directory">
+
+        <!-- Col 1: Turnkey Solutions -->
+        <div class="apple-footer-col">
+          <h4>Turnkey Solutions</h4>
+          <ul>
+            <li><a href="../turnkey-projects/index.html">500-Bedded Hospital Setup</a></li>
+            <li><a href="../catalogue/modular-ot/index.html">Modular OT Construction</a></li>
+            <li><a href="../turnkey-projects/index.html">Medical Gas Pipeline (MGPS)</a></li>
+            <li><a href="../turnkey-projects/index.html">Hospital Architecture &amp; MEP</a></li>
+            <li><a href="../turnkey-projects/index.html">Government &amp; Global Tenders</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 2: Group Ecosystem -->
+        <div class="apple-footer-col">
+          <h4>Group Ecosystem</h4>
+          <ul>
+            <li><a href="../about-us/index.html">Dr. Smith Healthcare</a></li>
+            <li><a href="../catalogue/index.html">Surgihub Surgical Devices</a></li>
+            <li><a href="../catalogue/index.html">Surgical Mall of India (SMPL)</a></li>
+            <li><a href="../catalogue/index.html">MediAid Patient Care</a></li>
+            <li><a href="../catalogue/index.html">Orbit Mahajan Diagnostics</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Product Catalogue -->
+        <div class="apple-footer-col">
+          <h4>Product Catalogue</h4>
+          <ul>
+            <li><a href="../catalogue/icu-beds/index.html">Hospital &amp; ICU Beds</a></li>
+            <li><a href="../catalogue/modular-ot/index.html">Modular OT Suites</a></li>
+            <li><a href="../catalogue/patient-monitor/index.html">Critical Care &amp; Monitors</a></li>
+            <li><a href="../catalogue/ventilators/index.html">ICU Ventilators</a></li>
+            <li><a href="../catalogue/index.html">Full 50+ Categories</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Global Directory -->
+        <div class="apple-footer-col">
+          <h4>Global Presence</h4>
+          <ul>
+            <li><a href="../contact-form/index.html">New Delhi Head Office (India)</a></li>
+            <li><a href="../contact-form/index.html">Jhajjar Manufacturing Plant</a></li>
+            <li><a href="../contact-form/index.html">Sharjah Overseas Office (UAE)</a></li>
+            <li><a href="../contact-form/index.html">Kenya &amp; Nigeria Desks</a></li>
+            <li><a href="../contact-form/index.html">Patna, Kolkata, Varanasi Marts</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Compliance & Values -->
+        <div class="apple-footer-col">
+          <h4>Corporate &amp; Quality</h4>
+          <ul>
+            <li><a href="../about-us/index.html">About 60+ Years Heritage</a></li>
+            <li><a href="../mission-values/index.html">Mission &amp; Values</a></li>
+            <li><a href="../about-us/index.html#team">Executive Leadership</a></li>
+            <li><a href="../privacy.html">Privacy Policy</a></li>
+            <li><a href="../terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Legal & Country -->
+      <div class="apple-footer-bottom">
+        <div class="apple-footer-copyright">
+          Copyright &copy; 2026 Dr. Smith Healthcare Solutions (Surgical Wholesale Mart Pvt. Ltd.). All rights reserved.
+        </div>
+        <div class="apple-footer-legal-links">
+          <a href="../privacy.html">Privacy Policy</a>
+          <a href="../terms.html">Terms of Use</a>
+          <a href="../contact-form/index.html">Sales Policy</a>
+          <a href="../contact-form/index.html">Legal</a>
+          <a href="../catalogue/index.html">Site Map</a>
+        </div>
+        <div class="apple-footer-country">
+          <a href="../contact-form/index.html" class="text-decoration-none text-muted"><i class="bi bi-globe me-1"></i> India (English)</a>
+        </div>
+      </div>
+
     </div>
   </footer>
 
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  <div id="preloader"></div>
+  <!-- Drawer Modal -->
+  <div class="apple-drawer-overlay" id="apple-drawer-overlay" onclick="if(event.target===this) closeAppleDrawer();">
+    <div class="apple-drawer-content">
+      <button type="button" class="apple-drawer-close" onclick="closeAppleDrawer();" aria-label="Close">
+        <i class="bi bi-x-lg"></i>
+      </button>
+      
+      <div style="text-align: center; margin-bottom: 24px;">
+        <span class="apple-shelf-badge">Dr. Smith Turnkey &amp; Procurement Desk</span>
+        <h3 style="font-size: 24px; font-weight: 700; margin-top: 8px;">Request Project Consultation</h3>
+        <p style="font-size: 14px; color: var(--apple-text-secondary); margin: 0;">Speak directly with our healthcare architects &amp; hospital engineering experts.</p>
+      </div>
+
+      <form class="apple-drawer-form" onsubmit="handleAppleQuoteSubmit(event);">
+        <div class="form-group">
+          <label>Scope of Interest</label>
+          <input type="text" id="drawer-product-name" value="Turnkey Hospital Setup" readonly style="background: rgba(255,255,255,0.08); font-weight: 600;">
+        </div>
+
+        <div class="row g-2">
+          <div class="col-md-6 form-group">
+            <label>Your Full Name *</label>
+            <input type="text" placeholder="Dr. / Mr. / Ms." required>
+          </div>
+          <div class="col-md-6 form-group">
+            <label>Hospital / Institution Name *</label>
+            <input type="text" placeholder="Hospital / Organization Name" required>
+          </div>
+        </div>
+
+        <div class="row g-2">
+          <div class="col-md-6 form-group">
+            <label>Official Email *</label>
+            <input type="email" placeholder="name@hospital.com" required>
+          </div>
+          <div class="col-md-6 form-group">
+            <label>Phone / WhatsApp *</label>
+            <input type="tel" placeholder="+91 99999 99999" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Project Scope &amp; Requirements</label>
+          <textarea rows="3" placeholder="Specify turnkey bed capacity, modular OT requirement, MGPS pipeline, or equipment procurement details..."></textarea>
+        </div>
+
+        <button type="submit" class="apple-btn-pill w-100 mt-2" style="padding: 14px;">Submit Consultation Request</button>
+      </form>
+    </div>
+  </div>
 
   <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="../assets/js/main.js?v=3.5"></script>
-  <script src="script.js?v=3.5"></script>
+  <script>
+    function openAppleDrawer(scopeName) {
+      if (scopeName) {
+        const scopeInput = document.getElementById('drawer-product-name');
+        if (scopeInput) scopeInput.value = scopeName;
+      }
+      document.getElementById('apple-drawer-overlay').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeAppleDrawer() {
+      document.getElementById('apple-drawer-overlay').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    function handleAppleQuoteSubmit(e) {
+      e.preventDefault();
+      alert('Thank you! Your project consultation request has been received.');
+      closeAppleDrawer();
+    }
+    const mobileMenuBtn = document.getElementById('apple-mobile-menu-btn');
+    if (mobileMenuBtn) {
+      mobileMenuBtn.addEventListener('click', function() {
+        document.body.classList.toggle('apple-mobile-menu-open');
+        const icon = mobileMenuBtn.querySelector('i');
+        if (document.body.classList.contains('apple-mobile-menu-open')) {
+          icon.classList.remove('bi-list');
+          icon.classList.add('bi-x-lg');
+        } else {
+          icon.classList.remove('bi-x-lg');
+          icon.classList.add('bi-list');
+        }
+      });
+    }
+    document.querySelectorAll('.apple-mobile-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.body.classList.remove('apple-mobile-menu-open');
+      });
+    });
+    window.addEventListener('scroll', function() {
+      const nav = document.querySelector('.apple-globalnav');
+      if (nav) {
+        if (window.scrollY > 30) nav.classList.add('nav-scrolled');
+        else nav.classList.remove('nav-scrolled');
+      }
+    }, { passive: true });
+  </script>
+
 </body>
 </html>
