@@ -733,7 +733,7 @@ body.apple-mobile-menu-open {
 }
 
 .apple-hero-unit:first-of-type {
-  padding-top: 100px;
+  padding-top: 76px;
 }
 
 /* Flagship Dark Hero (Apex Pro) */
@@ -1835,8 +1835,8 @@ body.apple-mobile-menu-open {
     text-align: left;
   }
   .apple-hero-unit:first-of-type {
-    padding-top: 72px !important;
-    padding-bottom: 24px;
+    padding-top: 58px !important;
+    padding-bottom: 20px;
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -1911,8 +1911,8 @@ body.apple-mobile-menu-open {
     width: calc(100% - 12px);
   }
   .apple-hero-unit:first-of-type {
-    padding-top: 66px !important;
-    padding-bottom: 18px;
+    padding-top: 52px !important;
+    padding-bottom: 16px;
     padding-left: 14px;
     padding-right: 14px;
   }
