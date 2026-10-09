@@ -1939,7 +1939,488 @@ body.apple-mobile-menu-open {
     font-size: 10px;
     padding: 3px 8px;
   }
+/* ============================================================
+   14. FINALIZED DESIGN DARK MODE STYLESHEET (ALL DEVICES)
+   ============================================================ */
+
+/* 5-Column Grid Helper */
+@media (min-width: 992px) {
+  .col-lg-2-4 {
+    flex: 0 0 auto;
+    width: 20%;
+  }
 }
+
+/* 1. Header Navigation Active Indicator */
+.apple-nav-link.nav-active {
+  color: #38bdf8 !important;
+  font-weight: 600;
+  position: relative;
+}
+.apple-nav-link.nav-active::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 12px;
+  right: 12px;
+  height: 2px;
+  background: #38bdf8;
+  border-radius: 2px;
+  box-shadow: 0 0 8px rgba(56, 189, 248, 0.8);
+}
+
+/* 2. Hero Section Split (Hero Billboard) */
+.hero-split-section {
+  position: relative;
+  padding-top: 110px;
+  padding-bottom: 70px;
+  background: radial-gradient(circle at 80% 25%, #0b1c36 0%, #030712 68%);
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.hero-pill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #38bdf8;
+  background: rgba(0, 163, 255, 0.08);
+  border: 1px solid rgba(0, 163, 255, 0.35);
+  padding: 6px 16px;
+  border-radius: 980px;
+  margin-bottom: 20px;
+}
+
+.hero-final-title {
+  font-size: clamp(32px, 4.2vw, 52px);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  color: #ffffff;
+  margin-bottom: 18px;
+}
+
+.hero-blue-accent {
+  color: #00a3ff;
+  display: inline;
+}
+
+.hero-final-desc {
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: #94a3b8;
+  max-width: 580px;
+  margin-bottom: 28px;
+}
+
+.btn-hero-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #0071e3 0%, #00a3ff 100%);
+  color: #ffffff !important;
+  font-size: 14.5px;
+  font-weight: 600;
+  padding: 12px 26px;
+  border-radius: 980px;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(0, 163, 255, 0.4);
+  transition: all 0.25s ease;
+  border: none;
+}
+.btn-hero-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 26px rgba(0, 163, 255, 0.6);
+  color: #ffffff !important;
+}
+
+.hero-link-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #38bdf8;
+  font-size: 14.5px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.hero-link-secondary:hover {
+  color: #7dd3fc;
+  text-decoration: underline;
+  transform: translateX(3px);
+}
+
+.hero-trust-chips {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 36px;
+}
+
+.hero-trust-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #cbd5e1;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 6px 14px;
+  border-radius: 980px;
+  backdrop-filter: blur(10px);
+}
+.hero-trust-chip i {
+  color: #00a3ff;
+  font-size: 13px;
+}
+
+.hero-img-frame {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+.hero-img-frame img {
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  object-fit: cover;
+  display: block;
+}
+
+/* 3. Featured Products Section (Slider & Cards) */
+.featured-products-section {
+  padding: 68px 0;
+  background: #030712;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.btn-outline-pill-cyan {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #d2d2d7;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 980px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.btn-outline-pill-cyan:hover {
+  background: rgba(0, 163, 255, 0.15);
+  border-color: #00a3ff;
+  color: #ffffff;
+}
+
+.product-white-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 24px 18px 20px;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.product-white-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(0, 163, 255, 0.25);
+}
+
+.product-img-box {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+.product-img-box img {
+  max-width: 100%;
+  max-height: 140px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+.product-white-card:hover .product-img-box img {
+  transform: scale(1.06);
+}
+
+.product-card-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 4px;
+  letter-spacing: -0.01em;
+}
+.product-card-desc {
+  font-size: 12.5px;
+  color: #64748b;
+  margin-bottom: 16px;
+}
+.product-card-link {
+  font-size: 13px;
+  font-weight: 600;
+  color: #0071e3;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+.product-card-link:hover {
+  color: #005bb5;
+  text-decoration: underline;
+  transform: translateX(2px);
+}
+
+.carousel-nav-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.carousel-nav-btn:hover {
+  background: #0071e3;
+  border-color: #0071e3;
+}
+
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  display: inline-block;
+  margin: 0 4px;
+  transition: all 0.2s ease;
+}
+.carousel-dot.active {
+  width: 24px;
+  border-radius: 980px;
+  background: #00a3ff;
+}
+
+/* 4. Why Choose Us Section */
+.why-choose-section {
+  padding: 68px 0;
+  background: radial-gradient(circle at 50% 50%, #061122 0%, #030712 80%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.why-icon-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(0, 163, 255, 0.08);
+  border: 1px solid rgba(0, 163, 255, 0.35);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #00a3ff;
+  box-shadow: 0 0 20px rgba(0, 163, 255, 0.2);
+  transition: all 0.3s ease;
+  margin-bottom: 16px;
+}
+.why-feature-box:hover .why-icon-circle {
+  transform: scale(1.1);
+  background: rgba(0, 163, 255, 0.2);
+  box-shadow: 0 0 30px rgba(0, 163, 255, 0.45);
+}
+
+/* 5. About Us Overview Section */
+.about-overview-section {
+  padding: 68px 0;
+  background: #030712;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.about-video-box {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 250px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+.about-video-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.video-play-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: rgba(0, 163, 255, 0.85);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 22px;
+  box-shadow: 0 0 30px rgba(0, 163, 255, 0.8);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+.video-play-overlay:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+  background: #00a3ff;
+  color: #ffffff;
+}
+
+.btn-cyan-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(135deg, #0071e3 0%, #00a3ff 100%);
+  color: #ffffff !important;
+  font-size: 13.5px;
+  font-weight: 600;
+  padding: 9px 20px;
+  border-radius: 980px;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(0, 163, 255, 0.35);
+  transition: all 0.25s ease;
+}
+.btn-cyan-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(0, 163, 255, 0.55);
+}
+
+.stat-badge-box {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 14px 18px;
+  transition: all 0.25s ease;
+}
+.stat-badge-box:hover {
+  background: rgba(0, 163, 255, 0.06);
+  border-color: rgba(0, 163, 255, 0.25);
+  transform: translateX(4px);
+}
+
+.stat-icon-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(0, 163, 255, 0.12);
+  border: 1px solid rgba(0, 163, 255, 0.3);
+  color: #00a3ff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* 6. Bottom CTA Glass Banner */
+.cta-banner-glass {
+  background: linear-gradient(135deg, rgba(8, 20, 40, 0.85) 0%, rgba(3, 7, 18, 0.95) 100%);
+  border: 1px solid rgba(0, 163, 255, 0.25);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 163, 255, 0.15);
+  backdrop-filter: blur(20px);
+}
+
+.cta-icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: rgba(0, 163, 255, 0.15);
+  border: 1px solid rgba(0, 163, 255, 0.35);
+  color: #00a3ff;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Responsive Overrides for Finalized Design */
+@media (max-width: 991px) {
+  .hero-split-section {
+    padding-top: 96px;
+    padding-bottom: 50px;
+  }
+  .hero-img-frame {
+    margin-top: 24px;
+  }
+  .stat-badge-box {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-split-section {
+    padding-top: 86px;
+    padding-bottom: 40px;
+  }
+  .hero-final-title {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+  .hero-final-desc {
+    font-size: 14px;
+  }
+  .product-img-box {
+    height: 120px;
+  }
+  .product-img-box img {
+    max-height: 110px;
+  }
+  .product-white-card {
+    padding: 16px 12px 14px;
+  }
+  .product-card-title {
+    font-size: 14px;
+  }
+  .why-icon-circle {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-split-section {
+    padding-top: 80px;
+    padding-bottom: 32px;
+  }
+  .hero-final-title {
+    font-size: 24px;
+  }
+  .hero-trust-chips {
+    gap: 6px;
+    margin-top: 24px;
+  }
+  .hero-trust-chip {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+}
+
 
 
 
