@@ -704,6 +704,10 @@ body.apple-mobile-menu-open {
   box-sizing: border-box;
 }
 
+.apple-hero-unit:first-of-type {
+  padding-top: 100px;
+}
+
 /* Flagship Dark Hero (Apex Pro) */
 .apple-hero-dark {
   background: radial-gradient(circle at 50% 30%, #151b28 0%, #000000 70%);
