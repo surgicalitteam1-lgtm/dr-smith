@@ -223,6 +223,7 @@ img, svg, video, iframe {
   line-height: 1;
 }
 
+.apple-nav-circle-catalogue,
 .apple-nav-circle-call {
   background: rgba(0, 163, 255, 0.12) !important;
   border-color: rgba(0, 163, 255, 0.35) !important;
@@ -230,6 +231,7 @@ img, svg, video, iframe {
   font-size: 16px;
 }
 
+.apple-nav-circle-catalogue:hover,
 .apple-nav-circle-call:hover {
   background: #00A3FF !important;
   border-color: #00A3FF !important;
