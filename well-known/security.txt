@@ -1,0 +1,5 @@
+# Security Policy for Dr. Smith
+Contact: mailto:info@drsmith.co.in
+Preferred-Languages: en
+Canonical: https://drsmith.co.in/.well-known/security.txt
+Policy: https://drsmith.co.in/privacy.html
