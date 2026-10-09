@@ -267,7 +267,7 @@ body {
 /* 1.2 Dribbble Dark Mode Parallax Floating Capsule Navigation */
 .apple-globalnav {
   position: fixed;
-  top: 14px;
+  top: 12px;
   left: 0;
   width: 100%;
   height: auto;
@@ -276,16 +276,17 @@ body {
   -webkit-backdrop-filter: none !important;
   z-index: 9999;
   border-bottom: none;
-  padding: 0 16px;
+  padding: 0 12px;
   pointer-events: none;
 }
 
 .apple-globalnav-inner {
   pointer-events: auto;
-  max-width: 1220px;
+  width: 100%;
+  max-width: calc(100% - 8px);
   height: 56px;
   margin: 0 auto;
-  padding: 0 10px 0 18px;
+  padding: 0 12px 0 18px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1788,6 +1789,21 @@ body.apple-mobile-menu-open {
 }
 
 @media (max-width: 768px) {
+  .apple-globalnav {
+    top: 8px;
+    padding: 0 8px;
+  }
+  .apple-globalnav-inner {
+    height: 52px;
+    padding: 0 8px 0 14px;
+    max-width: 100%;
+  }
+  .apple-mobile-drawer {
+    top: 68px;
+    left: 8px;
+    right: 8px;
+    width: calc(100% - 16px);
+  }
   .apple-nav-links,
   .apple-nav-actions .apple-nav-cta {
     display: none;
@@ -1863,6 +1879,20 @@ body.apple-mobile-menu-open {
 }
 
 @media (max-width: 480px) {
+  .apple-globalnav {
+    top: 6px;
+    padding: 0 6px;
+  }
+  .apple-globalnav-inner {
+    height: 50px;
+    padding: 0 6px 0 12px;
+  }
+  .apple-mobile-drawer {
+    top: 62px;
+    left: 6px;
+    right: 6px;
+    width: calc(100% - 12px);
+  }
   .apple-hero-unit:first-of-type {
     padding-top: 86px !important;
     padding-bottom: 30px;
