@@ -1557,69 +1557,127 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
 }
 
 
-/* Responsive Header Adjustments for Perfect Mobile Right-Padding */
-@media (max-width: 768px) {
+/* ============================================================
+   MOBILE & TABLET HEADER (30% LARGER PROPORTIONS)
+   ============================================================ */
+@media (max-width: 991px) {
   .apple-globalnav {
-    height: 64px;
+    height: 84px !important;
     padding: 0;
   }
   .apple-globalnav-inner {
-    height: 64px;
-    padding: 0 16px !important;
-    gap: 10px;
+    height: 84px !important;
+    padding: 0 20px !important;
+    gap: 12px;
   }
   .apple-nav-brand {
-    gap: 8px;
+    gap: 12px;
     min-width: 0;
   }
   .apple-nav-logo-img {
-    width: 32px;
-    height: 32px;
+    width: 44px !important;
+    height: 44px !important;
     flex-shrink: 0;
   }
   .apple-nav-brand-title {
-    font-size: 16px;
+    font-size: 21px !important;
+    font-weight: 800;
     white-space: nowrap;
+    line-height: 1.1;
   }
   .apple-nav-brand-subtitle {
-    font-size: 7.5px;
+    font-size: 10px !important;
+    font-weight: 700;
+    letter-spacing: 0.14em;
     white-space: nowrap;
+    margin-top: 3px;
   }
   .apple-nav-actions {
-    gap: 8px;
+    gap: 10px;
     margin-left: auto;
     flex-shrink: 0;
   }
   .apple-nav-circle-btn {
-    width: 36px;
-    height: 36px;
-    font-size: 14px;
+    width: 46px !important;
+    height: 46px !important;
+    font-size: 18px !important;
     flex-shrink: 0;
   }
   .apple-nav-circle-btn i {
-    font-size: 16px;
+    font-size: 20px !important;
+  }
+  .apple-nav-circle-whatsapp {
+    font-size: 21px !important;
+  }
+  .apple-nav-circle-whatsapp i {
+    font-size: 22px !important;
+  }
+  .apple-mobile-drawer {
+    top: 96px !important;
+  }
+  .hero-split-section {
+    padding-top: 106px !important;
+    padding-bottom: 50px !important;
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 480px) {
+  .apple-globalnav {
+    height: 80px !important;
+  }
   .apple-globalnav-inner {
-    padding: 0 12px !important;
+    height: 80px !important;
+    padding: 0 14px !important;
+    gap: 10px;
   }
-  .apple-nav-actions {
-    gap: 6px;
+  .apple-nav-brand {
+    gap: 10px;
   }
-  .apple-nav-circle-btn {
-    width: 33px;
-    height: 33px;
-    font-size: 13px;
-  }
-  .apple-nav-circle-btn i {
-    font-size: 15px;
+  .apple-nav-logo-img {
+    width: 40px !important;
+    height: 40px !important;
   }
   .apple-nav-brand-title {
-    font-size: 14.5px;
+    font-size: 19px !important;
   }
   .apple-nav-brand-subtitle {
-    font-size: 7px;
+    font-size: 9px !important;
+  }
+  .apple-nav-actions {
+    gap: 8px;
+  }
+  .apple-nav-circle-btn {
+    width: 42px !important;
+    height: 42px !important;
+    font-size: 16px !important;
+  }
+  .apple-nav-circle-btn i {
+    font-size: 18px !important;
+  }
+  .apple-nav-circle-whatsapp i {
+    font-size: 20px !important;
+  }
+  .apple-mobile-drawer {
+    top: 90px !important;
+  }
+  .hero-split-section {
+    padding-top: 98px !important;
+    padding-bottom: 36px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .apple-globalnav-inner {
+    padding: 0 10px !important;
+  }
+  .apple-nav-brand-title {
+    font-size: 17px !important;
+  }
+  .apple-nav-brand-subtitle {
+    font-size: 8px !important;
+  }
+  .apple-nav-circle-btn {
+    width: 38px !important;
+    height: 38px !important;
   }
 }
