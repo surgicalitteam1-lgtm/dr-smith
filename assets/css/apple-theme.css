@@ -319,25 +319,6 @@ body {
   letter-spacing: -0.025em;
   color: #ffffff;
   line-height: 1.1;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.apple-nav-pulse-dot {
-  width: 6px;
-  height: 6px;
-  background: #25D366;
-  border-radius: 50%;
-  display: inline-block;
-  box-shadow: 0 0 8px #25D366;
-  animation: applePulse 2s infinite;
-}
-
-@keyframes applePulse {
-  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
-  70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(37, 211, 102, 0); }
-  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
 }
 
 .apple-nav-brand-subtitle {
