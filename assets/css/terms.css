@@ -2,9 +2,9 @@
    Terms Page Custom Theme & Layout Styling - Orange Theme
    ============================================================ */
     .terms-hero-banner {
-      background: linear-gradient(180deg, #fff7ed 0%, #ffedd5 60%, #ffffff 100%);
+      background: linear-gradient(180deg, #ffffff 0%, #f5f5f7 60%, #ffffff 100%);
       padding: 95px 0 50px;
-      border-bottom: 1px solid rgba(234, 88, 12, 0.15);
+      border-bottom: 1px solid rgba(0, 113, 227, 0.15);
     }
 
     .terms-badge-cluster {
@@ -16,8 +16,8 @@
 
     .cert-pill {
       background: #ffffff;
-      color: #344761;
-      border: 1px solid rgba(234, 88, 12, 0.4);
+      color: #1d1d1f;
+      border: 1px solid rgba(0, 113, 227, 0.4);
       padding: 5px 12px;
       border-radius: 50px;
       font-size: 0.82rem;
@@ -25,11 +25,11 @@
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      box-shadow: 0 2px 8px rgba(234, 88, 12, 0.05);
+      box-shadow: 0 2px 8px rgba(0, 113, 227, 0.05);
     }
 
     .cert-pill i {
-      color: #ea580c;
+      color: #0071e3;
     }
 
     .terms-container {
@@ -39,10 +39,10 @@
     /* Table of contents sidebar */
     .toc-card {
       background: #ffffff;
-      border: 1px solid rgba(234, 88, 12, 0.25);
+      border: 1px solid rgba(0, 113, 227, 0.25);
       border-radius: 16px;
       padding: 24px;
-      box-shadow: 0 10px 30px rgba(234, 88, 12, 0.06);
+      box-shadow: 0 10px 30px rgba(0, 113, 227, 0.06);
       position: sticky;
       top: 100px;
     }
@@ -50,13 +50,13 @@
     .toc-card h4 {
       font-size: 1.15rem;
       font-weight: 700;
-      color: #344761;
+      color: #1d1d1f;
       margin-bottom: 16px;
       display: flex;
       align-items: center;
       gap: 8px;
       padding-bottom: 12px;
-      border-bottom: 2px solid #fff7ed;
+      border-bottom: 2px solid #ffffff;
     }
 
     .toc-list {
@@ -70,7 +70,7 @@
     }
 
     .toc-list a {
-      color: #535d6b;
+      color: #1d1d1f;
       font-size: 0.9rem;
       display: flex;
       align-items: center;
@@ -84,28 +84,28 @@
 
     .toc-list a i {
       font-size: 0.75rem;
-      color: #ea580c;
+      color: #0071e3;
     }
 
     .toc-list a:hover {
-      background: #fff7ed;
-      color: #c2410c;
+      background: #ffffff;
+      color: #0077ed;
       transform: translateX(4px);
     }
 
     /* Terms Content Blocks */
     .terms-card {
       background: #ffffff;
-      border: 1px solid rgba(234, 88, 12, 0.2);
+      border: 1px solid rgba(0, 113, 227, 0.2);
       border-radius: 16px;
       padding: 36px 32px;
       margin-bottom: 30px;
-      box-shadow: 0 8px 24px rgba(234, 88, 12, 0.05);
+      box-shadow: 0 8px 24px rgba(0, 113, 227, 0.05);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
     .terms-card:hover {
-      box-shadow: 0 12px 32px rgba(234, 88, 12, 0.08);
+      box-shadow: 0 12px 32px rgba(0, 113, 227, 0.08);
     }
 
     .terms-card-header {
@@ -114,14 +114,14 @@
       gap: 14px;
       margin-bottom: 22px;
       padding-bottom: 16px;
-      border-bottom: 1px solid #fff7ed;
+      border-bottom: 1px solid #ffffff;
     }
 
     .terms-icon-box {
       width: 46px;
       height: 46px;
-      background: #fff7ed;
-      color: #ea580c;
+      background: #ffffff;
+      color: #0071e3;
       border-radius: 12px;
       display: flex;
       align-items: center;
@@ -133,7 +133,7 @@
     .terms-card-header h2 {
       font-size: 1.5rem;
       font-weight: 700;
-      color: #344761;
+      color: #1d1d1f;
       margin: 0;
     }
 
@@ -142,15 +142,15 @@
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.5px;
-      color: #ea580c;
-      background: #fff7ed;
+      color: #0071e3;
+      background: #ffffff;
       padding: 3px 10px;
       border-radius: 20px;
       margin-left: auto;
     }
 
     .terms-card p {
-      color: #535d6b;
+      color: #1d1d1f;
       font-size: 0.98rem;
       line-height: 1.7;
       margin-bottom: 16px;
@@ -159,7 +159,7 @@
     .terms-card h3 {
       font-size: 1.15rem;
       font-weight: 600;
-      color: #344761;
+      color: #1d1d1f;
       margin: 24px 0 12px;
     }
 
@@ -173,7 +173,7 @@
       position: relative;
       padding-left: 28px;
       margin-bottom: 12px;
-      color: #535d6b;
+      color: #1d1d1f;
       font-size: 0.96rem;
       line-height: 1.6;
     }
@@ -184,21 +184,21 @@
       position: absolute;
       left: 0;
       top: 2px;
-      color: #ea580c;
+      color: #0071e3;
       font-size: 1rem;
     }
 
     /* Corporate Highlight Card */
     .company-identity-box {
-      background: #fffaf5;
-      border-left: 4px solid #ea580c;
+      background: #f5f5f7;
+      border-left: 4px solid #0071e3;
       border-radius: 0 12px 12px 0;
       padding: 20px 24px;
       margin: 20px 0;
     }
 
     .company-identity-box h5 {
-      color: #344761;
+      color: #1d1d1f;
       font-weight: 700;
       font-size: 1.1rem;
       margin-bottom: 10px;
@@ -213,19 +213,19 @@
 
     .identity-item {
       font-size: 0.9rem;
-      color: #535d6b;
+      color: #1d1d1f;
     }
 
     .identity-item strong {
-      color: #344761;
+      color: #1d1d1f;
       display: block;
       margin-bottom: 2px;
     }
 
     /* Milestone / Trust Callout */
     .milestone-strip {
-      background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
-      border: 1px solid #fed7aa;
+      background: linear-gradient(135deg, #ffffff 0%, #f5f5f7 100%);
+      border: 1px solid #e5e5ea;
       border-radius: 12px;
       padding: 18px 24px;
       margin: 20px 0;
@@ -236,14 +236,14 @@
 
     .milestone-strip i {
       font-size: 2.2rem;
-      color: #ea580c;
+      color: #0071e3;
       flex-shrink: 0;
     }
 
     .milestone-strip p {
       margin: 0;
       font-size: 0.92rem;
-      color: #344761;
+      color: #1d1d1f;
       line-height: 1.5;
     }
 
@@ -257,23 +257,23 @@
 
     .brand-tile {
       background: #ffffff;
-      border: 1px solid #ffedd5;
+      border: 1px solid #f5f5f7;
       border-radius: 12px;
       padding: 16px;
-      box-shadow: 0 4px 12px rgba(234, 88, 12, 0.04);
+      box-shadow: 0 4px 12px rgba(0, 113, 227, 0.04);
       text-align: center;
     }
 
     .brand-tile .brand-name {
       font-weight: 700;
-      color: #344761;
+      color: #1d1d1f;
       font-size: 0.98rem;
       margin-bottom: 4px;
     }
 
     .brand-tile .brand-role {
       font-size: 0.8rem;
-      color: #ea580c;
+      color: #0071e3;
       font-weight: 600;
     }
 
@@ -287,8 +287,8 @@
 
     .hospital-pill {
       background: #ffffff;
-      border: 1px solid #fed7aa;
-      color: #344761;
+      border: 1px solid #e5e5ea;
+      color: #1d1d1f;
       padding: 6px 14px;
       border-radius: 8px;
       font-size: 0.85rem;
@@ -299,7 +299,7 @@
     }
 
     .hospital-pill i {
-      color: #ea580c;
+      color: #0071e3;
     }
 
     /* Multi-Location Directory Grid */
@@ -311,14 +311,14 @@
     }
 
     .office-card {
-      background: #fffaf5;
-      border: 1px solid #fed7aa;
+      background: #f5f5f7;
+      border: 1px solid #e5e5ea;
       border-radius: 12px;
       padding: 18px;
     }
 
     .office-card h5 {
-      color: #344761;
+      color: #1d1d1f;
       font-size: 0.98rem;
       font-weight: 700;
       margin-bottom: 8px;
@@ -328,14 +328,14 @@
     }
 
     .office-card h5 i {
-      color: #ea580c;
+      color: #0071e3;
     }
 
     .office-card p {
       font-size: 0.88rem;
       line-height: 1.5;
       margin-bottom: 4px;
-      color: #535d6b;
+      color: #1d1d1f;
     }
 
     @media (max-width: 991px) {
@@ -350,7 +350,7 @@
 
 /* Terms Custom Utility Classes */
 .terms-badge {
-  background: #ea580c;
+  background: #0071e3;
   color: #ffffff;
   font-size: 0.85rem;
   padding: 6px 14px;
@@ -359,23 +359,23 @@
 }
 
 .terms-main-title {
-  color: #344761;
+  color: #1d1d1f;
   font-weight: 700;
   font-size: 2.6rem;
 }
 
 .terms-lead-text {
-  color: #535d6b;
+  color: #1d1d1f;
   font-size: 1.15rem;
   max-width: 820px;
   line-height: 1.6;
 }
 
 .terms-card-featured {
-  border-left: 4px solid #ea580c !important;
+  border-left: 4px solid #0071e3 !important;
 }
 
 .terms-contact-heading {
-  color: #344761;
+  color: #1d1d1f;
   font-weight: 700;
 }

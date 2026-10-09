@@ -1,18 +1,21 @@
 /* Custom Styles for Turnkey Projects Page - Architectural Terracotta & Industrial Slate Theme */
 
 :root {
-  --turnkey-primary: #ea580c;
-  --turnkey-primary-dark: #c2410c;
-  --turnkey-primary-deep: #7c2d12;
-  --turnkey-accent: #f59e0b;
+  --default-font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --heading-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --turnkey-primary: #0071e3;
+  --turnkey-primary-dark: #0077ed;
+  --turnkey-primary-deep: #1d1d1f;
+  --turnkey-accent: #0071e3;
   --turnkey-accent-slate: #1e293b;
-  --turnkey-bg-subtle: #fff7ed;
+  --turnkey-bg-subtle: #ffffff;
   --turnkey-surface: #ffffff;
 }
 
 .turnkey-hero {
   padding: 100px 0 60px;
-  background: linear-gradient(180deg, #fff7ed 0%, #ffedd5 45%, #fef3c7 75%, #ffffff 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #f5f5f7 45%, #f5f5f7 75%, #ffffff 100%);
   position: relative;
   overflow: hidden;
 }
@@ -31,7 +34,7 @@
   width: 550px;
   height: 550px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(234, 88, 12, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+  background: radial-gradient(circle, rgba(0, 113, 227, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
   pointer-events: none;
 }
 
@@ -39,14 +42,14 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(234, 88, 12, 0.12);
+  background: rgba(0, 113, 227, 0.12);
   color: var(--turnkey-primary-dark);
   padding: 6px 16px;
   border-radius: 30px;
   font-weight: 700;
   font-size: 0.88rem;
   margin-bottom: 1.2rem;
-  border: 1px solid rgba(234, 88, 12, 0.25);
+  border: 1px solid rgba(0, 113, 227, 0.25);
 }
 
 .turnkey-hero h1 {
@@ -59,14 +62,14 @@
 
 .turnkey-hero h1 span {
   color: var(--turnkey-primary);
-  background: linear-gradient(135deg, #ea580c 0%, #d97706 100%);
+  background: linear-gradient(135deg, #0071e3 0%, #0071e3 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .turnkey-hero .lead {
   font-size: 1.15rem;
-  color: #535d6b;
+  color: #1d1d1f;
   max-width: 650px;
   line-height: 1.7;
 }
@@ -75,8 +78,8 @@
   background: #ffffff;
   border-radius: 20px;
   padding: 32px;
-  box-shadow: 0 10px 25px rgba(234, 88, 12, 0.05);
-  border: 1px solid rgba(234, 88, 12, 0.15);
+  box-shadow: 0 10px 25px rgba(0, 113, 227, 0.05);
+  border: 1px solid rgba(0, 113, 227, 0.15);
   transition: all 0.35s ease;
   height: 100%;
   display: flex;
@@ -85,15 +88,15 @@
 
 .turnkey-feature-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 18px 35px rgba(234, 88, 12, 0.15);
-  border-color: rgba(234, 88, 12, 0.45);
+  box-shadow: 0 18px 35px rgba(0, 113, 227, 0.15);
+  border-color: rgba(0, 113, 227, 0.45);
 }
 
 .turnkey-card-icon {
   width: 60px;
   height: 60px;
   border-radius: 16px;
-  background: linear-gradient(135deg, rgba(234, 88, 12, 0.15), rgba(245, 158, 11, 0.1));
+  background: linear-gradient(135deg, rgba(0, 113, 227, 0.15), rgba(245, 158, 11, 0.1));
   color: var(--turnkey-primary);
   display: flex;
   align-items: center;
@@ -131,7 +134,7 @@
 
 .turnkey-checklist li {
   font-size: 0.88rem;
-  color: #535d6b;
+  color: #1d1d1f;
   margin-bottom: 8px;
   display: flex;
   align-items: center;
@@ -149,8 +152,8 @@
   padding: 28px;
   text-align: center;
   position: relative;
-  box-shadow: 0 8px 22px rgba(234, 88, 12, 0.04);
-  border: 1px solid rgba(234, 88, 12, 0.12);
+  box-shadow: 0 8px 22px rgba(0, 113, 227, 0.04);
+  border: 1px solid rgba(0, 113, 227, 0.12);
   height: 100%;
   transition: all 0.3s ease;
 }
@@ -158,14 +161,14 @@
 .process-step-box:hover {
   transform: translateY(-4px);
   border-color: var(--turnkey-primary);
-  box-shadow: 0 14px 30px rgba(234, 88, 12, 0.14);
+  box-shadow: 0 14px 30px rgba(0, 113, 227, 0.14);
 }
 
 .process-number {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #ea580c 0%, #f59e0b 100%);
+  background: linear-gradient(135deg, #0071e3 0%, #0071e3 100%);
   color: #ffffff;
   display: inline-flex;
   align-items: center;
@@ -173,7 +176,7 @@
   font-weight: 800;
   font-size: 1.15rem;
   margin-bottom: 16px;
-  box-shadow: 0 4px 12px rgba(234, 88, 12, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 113, 227, 0.3);
 }
 
 .process-step-box h4 {
@@ -190,22 +193,22 @@
 }
 
 .btn-turnkey-primary {
-  background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
+  background: linear-gradient(135deg, #0071e3 0%, #0077ed 100%);
   color: #ffffff !important;
   border-radius: 50px;
   padding: 12px 28px;
   font-weight: 700;
   border: none;
   transition: all 0.25s ease;
-  box-shadow: 0 4px 14px rgba(234, 88, 12, 0.35);
+  box-shadow: 0 4px 14px rgba(0, 113, 227, 0.35);
   display: inline-flex;
   align-items: center;
 }
 
 .btn-turnkey-primary:hover {
-  background: linear-gradient(135deg, #c2410c 0%, #9a3412 100%);
+  background: linear-gradient(135deg, #0077ed 0%, #005bb5 100%);
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(234, 88, 12, 0.45);
+  box-shadow: 0 6px 18px rgba(0, 113, 227, 0.45);
 }
 
 .btn-turnkey-outline {
@@ -234,8 +237,8 @@
     padding: 24px;
   }
   body.mobile-nav-active .navmenu ul li a.active {
-    background: rgba(234, 88, 12, 0.1) !important;
+    background: rgba(0, 113, 227, 0.1) !important;
     color: var(--turnkey-primary) !important;
-    border-color: rgba(234, 88, 12, 0.3) !important;
+    border-color: rgba(0, 113, 227, 0.3) !important;
   }
 }

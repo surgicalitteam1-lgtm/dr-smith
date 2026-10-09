@@ -8,18 +8,21 @@
    1. Theme Color & Font Variables
    ============================================================ */
 :root {
-    --bg-color: #fff7ed;                                        /* Soft light-orange background tint */
-    --bg-gradient: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%); /* Subtle diagonal background gradient */
-    --primary-blue: #ea580c;                                    /* Primary action orange */
-    --primary-hover: #c2410c;                                   /* Darker orange on button hover */
+  --default-font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --heading-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    --bg-color: #ffffff;                                        /* Soft light-orange background tint */
+    --bg-gradient: linear-gradient(135deg, #ffffff 0%, #f5f5f7 100%); /* Subtle diagonal background gradient */
+    --primary-blue: #0071e3;                                    /* Primary action orange */
+    --primary-hover: #0077ed;                                   /* Darker orange on button hover */
     --text-dark: #1e293b;                                       /* Dark slate color for headings */
-    --text-gray: #535d6b;                                       /* Text color */
+    --text-gray: #1d1d1f;                                       /* Text color */
     --white: #ffffff;                                           /* Clean white for card backgrounds */
-    --border-color: #fed7aa;                                    /* Neutral input border */
-    --error-color: #ea580c;                                     /* Error orange for validation */
-    --success-color: #ea580c;                                   /* Confirmations */
-    --shadow-sm: 0 4px 6px -1px rgba(234, 88, 12, 0.05), 0 2px 4px -1px rgba(234, 88, 12, 0.03);
-    --shadow-lg: 0 20px 40px -5px rgba(234, 88, 12, 0.08);     /* Soft floating card drop-shadow */
+    --border-color: #e5e5ea;                                    /* Neutral input border */
+    --error-color: #0071e3;                                     /* Error orange for validation */
+    --success-color: #0071e3;                                   /* Confirmations */
+    --shadow-sm: 0 4px 6px -1px rgba(0, 113, 227, 0.05), 0 2px 4px -1px rgba(0, 113, 227, 0.03);
+    --shadow-lg: 0 20px 40px -5px rgba(0, 113, 227, 0.08);     /* Soft floating card drop-shadow */
     --font-main: 'Inter', sans-serif;                           /* Clean modern typeface */
 }
 
@@ -167,7 +170,7 @@ header {
     padding: 40px;
     border-radius: 20px;
     box-shadow: var(--shadow-lg);
-    border: 1px solid rgba(234, 88, 12, 0.12);
+    border: 1px solid rgba(0, 113, 227, 0.12);
 }
 
 .contact-form-wrapper h2 {
@@ -209,7 +212,7 @@ textarea {
     font-family: var(--font-main);
     font-size: 0.95rem;
     color: var(--text-dark);
-    background: #fffaf5;
+    background: #f5f5f7;
     transition: all 0.3s ease;
     outline: none;
 }
@@ -225,7 +228,7 @@ select:focus,
 textarea:focus {
     background: var(--white);
     border-color: var(--primary-blue);
-    box-shadow: 0 0 0 4px rgba(234, 88, 12, 0.15);
+    box-shadow: 0 0 0 4px rgba(0, 113, 227, 0.15);
 }
 
 textarea {
@@ -281,13 +284,13 @@ textarea {
     align-items: center;
     gap: 10px;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 14px rgba(234, 88, 12, 0.3);
+    box-shadow: 0 4px 14px rgba(0, 113, 227, 0.3);
 }
 
 .submit-btn:hover {
     background: var(--primary-hover);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(234, 88, 12, 0.4);
+    box-shadow: 0 6px 20px rgba(0, 113, 227, 0.4);
 }
 
 .submit-btn:active {
@@ -336,15 +339,15 @@ textarea {
 }
 
 .status-alert.success {
-    background-color: #fff7ed;
-    color: #c2410c;
-    border: 1px solid #fed7aa;
+    background-color: #ffffff;
+    color: #0077ed;
+    border: 1px solid #e5e5ea;
 }
 
 .status-alert.error {
-    background-color: #fff7ed;
-    color: #ea580c;
-    border: 1px solid #fed7aa;
+    background-color: #ffffff;
+    color: #0071e3;
+    border: 1px solid #e5e5ea;
 }
 
 /* ============================================================
