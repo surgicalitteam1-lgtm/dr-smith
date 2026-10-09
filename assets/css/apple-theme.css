@@ -256,12 +256,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgba(15, 16, 21, 0.82);
-  backdrop-filter: saturate(190%) blur(28px);
-  -webkit-backdrop-filter: saturate(190%) blur(28px);
-  border: 1px solid rgba(255, 255, 255, 0.13);
+  background: #000000;
+  backdrop-filter: saturate(200%) blur(32px);
+  -webkit-backdrop-filter: saturate(200%) blur(32px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 980px;
-  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.95), 0 0 0 1px rgba(255, 255, 255, 0.08);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -271,13 +271,12 @@ body {
   align-items: center;
   gap: 10px;
   text-decoration: none;
-  color: #f5f5f7;
-  opacity: 0.95;
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  color: #ffffff;
+  opacity: 1;
+  transition: transform 0.2s ease;
 }
 
 .apple-nav-brand:hover {
-  opacity: 1;
   transform: translateY(-1px);
 }
 
@@ -287,7 +286,7 @@ body {
   max-width: 44px;
   object-fit: contain;
   display: block;
-  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.6));
   transition: transform 0.2s ease;
 }
 
@@ -305,7 +304,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 14px rgba(0, 113, 227, 0.45);
+  box-shadow: 0 4px 14px rgba(0, 113, 227, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -356,11 +355,11 @@ body {
   align-items: center;
   list-style: none;
   margin: 0;
-  padding: 4px;
+  padding: 3px;
   gap: 2px;
   height: auto;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: #050507;
+  border: 1px solid rgba(255, 255, 255, 0.09);
   border-radius: 980px;
 }
 
@@ -375,7 +374,7 @@ body {
   font-size: 12.5px;
   font-weight: 500;
   letter-spacing: -0.01em;
-  color: #a1a1a6;
+  color: #d2d2d7;
   text-decoration: none;
   padding: 6px 13px;
   border-radius: 980px;
@@ -389,12 +388,12 @@ body {
 .apple-nav-item:hover > .apple-nav-link,
 .apple-nav-link.active {
   color: #ffffff;
-  background: rgba(255, 255, 255, 0.1);
+  background: #18181b;
 }
 
 .apple-nav-link .nav-chevron {
   font-size: 9px;
-  opacity: 0.6;
+  opacity: 0.7;
   transition: transform 0.25s ease;
 }
 
@@ -409,12 +408,12 @@ body {
   left: 50%;
   transform: translateX(-50%) translateY(8px);
   width: 680px;
-  background: rgba(18, 19, 24, 0.96);
+  background: #000000;
   backdrop-filter: saturate(190%) blur(36px);
   -webkit-backdrop-filter: saturate(190%) blur(36px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 22px;
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.75), 0 0 0 1px rgba(255, 255, 255, 0.06);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.95), 0 0 0 1px rgba(255, 255, 255, 0.08);
   padding: 24px 28px;
   opacity: 0;
   visibility: hidden;
@@ -466,7 +465,7 @@ body {
 }
 
 .apple-mega-item a:hover {
-  background: rgba(255, 255, 255, 0.07);
+  background: #141416;
   transform: translateX(2px);
 }
 
@@ -474,34 +473,34 @@ body {
   width: 32px;
   height: 32px;
   border-radius: 8px;
-  background: rgba(0, 113, 227, 0.15);
+  background: rgba(0, 113, 227, 0.18);
   color: #2997ff;
   font-size: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  border: 1px solid rgba(0, 113, 227, 0.2);
+  border: 1px solid rgba(0, 113, 227, 0.25);
 }
 
 .apple-mega-item-text h5 {
   font-size: 13.5px;
   font-weight: 600;
-  color: #f5f5f7;
+  color: #ffffff;
   margin: 0 0 2px 0;
   letter-spacing: -0.01em;
 }
 
 .apple-mega-item-text p {
   font-size: 11.5px;
-  color: #a1a1a6;
+  color: #86868b;
   margin: 0;
   line-height: 1.3;
 }
 
 .apple-mega-feature-card {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #08080a;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   padding: 20px;
   display: flex;
@@ -518,7 +517,7 @@ body {
 
 .apple-mega-feature-card p {
   font-size: 12px;
-  color: #a1a1a6;
+  color: #86868b;
   line-height: 1.4;
   margin-bottom: 14px;
 }
@@ -534,9 +533,9 @@ body {
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: #d2d2d7;
+  background: #08080a;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #ffffff;
   font-size: 13.5px;
   cursor: pointer;
   display: flex;
@@ -547,14 +546,14 @@ body {
 }
 
 .apple-nav-circle-btn:hover {
-  background: rgba(255, 255, 255, 0.12);
+  background: #18181b;
   color: #ffffff;
   transform: translateY(-1px);
 }
 
 .apple-nav-circle-whatsapp {
-  background: rgba(37, 211, 102, 0.14);
-  border-color: rgba(37, 211, 102, 0.3);
+  background: rgba(37, 211, 102, 0.16);
+  border-color: rgba(37, 211, 102, 0.35);
   color: #25D366 !important;
   font-size: 15px;
 }
@@ -562,7 +561,7 @@ body {
 .apple-nav-circle-whatsapp:hover {
   background: #25D366;
   color: #ffffff !important;
-  box-shadow: 0 0 16px rgba(37, 211, 102, 0.5);
+  box-shadow: 0 0 16px rgba(37, 211, 102, 0.6);
 }
 
 .apple-nav-cta {
@@ -613,12 +612,12 @@ body {
   max-width: 500px;
   margin: 0 auto;
   max-height: calc(100vh - 100px);
-  background: rgba(14, 15, 20, 0.96);
+  background: #000000;
   backdrop-filter: blur(32px);
   -webkit-backdrop-filter: blur(32px);
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 24px;
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.95);
   z-index: 9998;
   padding: 24px 20px 40px;
   overflow-y: auto;
