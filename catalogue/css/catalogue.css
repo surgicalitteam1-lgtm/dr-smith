@@ -22,18 +22,23 @@
  */
 
 /* ============================================================
-   1. Page Layout & Base Styles
+   1. Page Layout & Base Styles (Apple Design Language)
    ============================================================ */
 .catalogue-page {
-    --catalogue-shadow: 0 12px 36px rgba(52, 71, 97, 0.09);
-    --catalogue-border: color-mix(in srgb, var(--heading-color), transparent 90%);
-    padding-top: 94px;
+    --catalogue-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    --catalogue-border: rgba(0, 0, 0, 0.08);
+    padding-top: 44px;
+    background-color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
 .catalogue-page .header {
-    --background-color: var(--surface-color);
-    background-color: var(--surface-color);
-    box-shadow: 0 2px 18px rgba(52, 71, 97, 0.08);
+    --background-color: rgba(255, 255, 255, 0.82);
+    background-color: rgba(255, 255, 255, 0.82) !important;
+    backdrop-filter: saturate(180%) blur(20px) !important;
+    -webkit-backdrop-filter: saturate(180%) blur(20px) !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
     transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease !important;
 }
 
@@ -58,27 +63,24 @@ body.header-hidden #header.header,
 /* Header styles on mobile/tablet screens (< 1200px) */
 @media (max-width: 1199px) {
     .catalogue-page #header.header {
-        background: transparent !important;
-        background-color: transparent !important;
-        background-image: none !important;
-        --background-color: transparent !important;
+        background: rgba(255, 255, 255, 0.9) !important;
+        backdrop-filter: blur(15px) !important;
         box-shadow: none !important;
-        border: none !important;
-        padding: 14px 0 !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
+        padding: 10px 0 !important;
     }
 
     .catalogue-page #header .logo h1,
     .catalogue-page #header .sitename {
         color: #1d1d1f !important;
-        font-weight: 700 !important;
-        letter-spacing: 0.3px !important;
+        font-weight: 600 !important;
+        letter-spacing: -0.02em !important;
     }
 }
 
 /* ============================================================
    3. Minimal Header for Sub-pages
    ============================================================ */
-/* Sub-pages only need a way back home: logo + brand name */
 .header--minimal .container-fluid {
     justify-content: flex-start;
 }
@@ -88,35 +90,22 @@ body.header-hidden #header.header,
 }
 
 .header--minimal .logo:hover {
-    opacity: 0.85;
+    opacity: 0.8;
 }
 
 /* ============================================================
-   4. Hero Banner & Breadcrumbs
+   4. Hero Banner & Breadcrumbs (Apple Clean Aesthetic)
    ============================================================ */
 .catalogue-hero {
     position: relative;
     overflow: hidden;
-    padding: 88px 0 76px;
-    background:
-        radial-gradient(ellipse at 88% 18%, color-mix(in srgb, var(--accent-color), transparent 84%), transparent 42%),
-        linear-gradient(135deg, var(--surface-color), var(--background-color));
-}
-
-.catalogue-hero:after {
-    position: absolute;
-    right: -110px;
-    bottom: -230px;
-    width: 430px;
-    height: 430px;
-    border: 1px solid color-mix(in srgb, var(--accent-color), transparent 76%);
-    border-radius: 50%;
-    content: "";
-    pointer-events: none;
+    padding: 64px 0 52px;
+    background: #f5f5f7;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .catalogue-hero--compact {
-    padding: 48px 0 44px;
+    padding: 44px 0 38px;
 }
 
 .catalogue-breadcrumb {
@@ -124,107 +113,108 @@ body.header-hidden #header.header,
     flex-wrap: wrap;
     align-items: center;
     gap: 8px;
-    margin-bottom: 18px;
-    color: color-mix(in srgb, var(--default-color), transparent 25%);
-    font-family: var(--nav-font);
-    font-size: 0.85rem;
+    margin-bottom: 16px;
+    color: #86868b;
+    font-size: 12px;
+    letter-spacing: -0.01em;
 }
 
 .catalogue-breadcrumb a {
-    color: var(--default-color);
-    font-weight: 600;
+    color: #1d1d1f;
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 0.2s ease;
 }
 
 .catalogue-breadcrumb a:hover {
-    color: var(--accent-color);
+    color: #0071e3;
 }
 
 .catalogue-breadcrumb .bi {
-    font-size: 0.7rem;
-    opacity: 0.6;
+    font-size: 10px;
+    opacity: 0.5;
 }
 
 .catalogue-breadcrumb span[aria-current] {
-    color: var(--accent-color);
-    font-weight: 600;
+    color: #0071e3;
+    font-weight: 500;
 }
 
 .catalogue-eyebrow {
     display: inline-flex;
     align-items: center;
-    gap: 9px;
-    margin-bottom: 18px;
-    color: var(--accent-color);
-    font-family: var(--nav-font);
-    font-size: 0.78rem;
-    font-weight: 700;
-    letter-spacing: 0.12em;
+    gap: 6px;
+    margin-bottom: 10px;
+    color: #0071e3;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
     text-transform: uppercase;
 }
 
-.catalogue-eyebrow:before {
-    width: 26px;
-    height: 2px;
-    background: var(--accent-color);
-    content: "";
-}
-
 .catalogue-hero h1 {
-    max-width: 680px;
-    margin-bottom: 20px;
-    font-size: clamp(2.45rem, 5vw, 4.15rem);
-    line-height: 1.08;
+    max-width: 720px;
+    margin-bottom: 12px;
+    font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: #1d1d1f;
+    line-height: 1.1;
 }
 
 .catalogue-hero--compact h1 {
-    font-size: clamp(2rem, 4vw, 3rem);
+    font-size: clamp(1.8rem, 3.5vw, 2.6rem);
 }
 
 .catalogue-hero h1 span {
-    color: var(--accent-color);
+    color: #0071e3;
 }
 
 .catalogue-hero p {
-    max-width: 590px;
-    margin-bottom: 28px;
-    font-size: 1.05rem;
-    line-height: 1.8;
+    max-width: 640px;
+    margin-bottom: 24px;
+    font-size: 17px;
+    line-height: 1.45;
+    color: #86868b;
 }
 
 /* ============================================================
-   5. Button Components
+   5. Button Components (Apple Pill Buttons)
    ============================================================ */
 .catalogue-button {
     display: inline-flex;
-    min-height: 48px;
+    min-height: 40px;
     align-items: center;
     justify-content: center;
-    gap: 9px;
-    padding: 12px 22px;
-    border: 1px solid var(--accent-color);
-    border-radius: 5px;
-    background: var(--accent-color);
-    color: var(--contrast-color);
-    font-family: var(--nav-font);
-    font-weight: 600;
+    gap: 8px;
+    padding: 9px 20px;
+    border: 1px solid #0071e3;
+    border-radius: 980px;
+    background: #0071e3;
+    color: #ffffff !important;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none !important;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .catalogue-button:hover {
-    border-color: color-mix(in srgb, var(--accent-color), black 12%);
-    background: color-mix(in srgb, var(--accent-color), black 12%);
-    color: var(--contrast-color);
+    border-color: #0077ed;
+    background: #0077ed;
+    color: #ffffff !important;
+    transform: scale(1.02);
 }
 
 .catalogue-button--ghost {
-    border-color: var(--catalogue-border);
-    background: var(--surface-color);
-    color: var(--heading-color);
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    background: #ffffff;
+    color: #1d1d1f !important;
 }
 
 .catalogue-button--ghost:hover {
-    border-color: var(--accent-color);
-    background: color-mix(in srgb, var(--accent-color), white 94%);
-    color: var(--heading-color);
+    border-color: rgba(0, 0, 0, 0.32);
+    background: #f5f5f7;
+    color: #1d1d1f !important;
 }
 
 /* ============================================================
@@ -310,22 +300,24 @@ body.header-hidden #header.header,
 }
 
 /* ============================================================
-   7. Product Cards & Image Frame
+   7. Product Cards & Image Frame (Apple Bento Style)
    ============================================================ */
 .catalogue-card {
     position: relative;
     height: 100%;
     overflow: hidden;
-    border: 1px solid var(--catalogue-border);
-    border-radius: 10px;
-    background: var(--surface-color);
-    box-shadow: var(--catalogue-shadow);
-    transition: transform 0.25s, box-shadow 0.25s;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 24px;
+    background: #f5f5f7;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .catalogue-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 18px 42px rgba(52, 71, 97, 0.14);
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.06);
 }
 
 .catalogue-card[hidden] {
@@ -338,11 +330,12 @@ body.header-hidden #header.header,
 
 .catalogue-card__image {
     position: relative;
-    min-height: 230px;
-    background-color: color-mix(in srgb, var(--accent-color), white 94%);
+    min-height: 240px;
+    background-color: #ffffff;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
 }
 
 .catalogue-card__image--icon {
@@ -350,12 +343,12 @@ body.header-hidden #header.header,
     align-items: center;
     justify-content: center;
     background-image: none !important;
-    background-color: color-mix(in srgb, var(--accent-color), white 92%);
+    background-color: #ffffff;
 }
 
 .catalogue-card__image--icon i {
     font-size: 3.1rem;
-    color: color-mix(in srgb, var(--accent-color), black 8%);
+    color: #0071e3;
 }
 
 .catalogue-card__image--photo {
@@ -374,10 +367,11 @@ body.header-hidden #header.header,
 .catalogue-card__image--photo img {
     display: block;
     width: 100%;
-    height: 260px;
+    height: 240px;
     object-fit: contain;
-    background: #fff;
-    transition: transform 0.35s ease;
+    background: #ffffff;
+    padding: 16px;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     cursor: pointer;
 }
 
@@ -386,8 +380,30 @@ body.header-hidden #header.header,
 }
 
 /* ============================================================
-   8. Details, Specifications & Badges
+   8. Details, Specifications & Badges (Apple Minimalist)
    ============================================================ */
+.catalogue-card__body {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.catalogue-card__body h3 {
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    color: #1d1d1f;
+    margin-bottom: 8px;
+}
+
+.catalogue-card__body p {
+    font-size: 14px;
+    color: #86868b;
+    line-height: 1.45;
+    margin-bottom: 16px;
+}
+
 .catalogue-card__badge {
     position: absolute;
     top: 14px;
@@ -395,21 +411,22 @@ body.header-hidden #header.header,
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    padding: 6px 12px;
-    border-radius: 30px;
-    background: rgba(15, 23, 42, 0.72);
-    backdrop-filter: blur(3px);
-    color: #fff;
-    font-family: var(--nav-font);
-    font-size: 0.72rem;
-    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 980px;
+    background: rgba(29, 29, 31, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 600;
     letter-spacing: 0.02em;
+    z-index: 2;
 }
 
 .catalogue-card__badge--accent {
     right: 14px;
     left: auto;
-    background: var(--accent-color);
+    background: #0071e3;
 }
 
 .catalogue-card__actions {
@@ -417,13 +434,39 @@ body.header-hidden #header.header,
     flex-wrap: wrap;
     align-items: center;
     gap: 10px 18px;
+    margin-top: auto;
+}
+
+.catalogue-card__link {
+    color: #0071e3;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.catalogue-card__link:hover {
+    color: #0077ed;
+    text-decoration: underline;
+}
+
+.catalogue-card__link i {
+    font-size: 11px;
+    transition: transform 0.2s ease;
+}
+
+.catalogue-card__link:hover i {
+    transform: translateX(3px);
 }
 
 .catalogue-card__link--btn {
     border: none;
     background: none;
     padding: 0;
-    color: var(--accent-color);
+    color: #0071e3;
     cursor: pointer;
 }
 
@@ -434,9 +477,8 @@ body.header-hidden #header.header,
 .catalogue-count {
     margin: -18px 0 28px;
     text-align: center;
-    color: color-mix(in srgb, var(--default-color), transparent 35%);
-    font-family: var(--nav-font);
-    font-size: 0.86rem;
+    color: #86868b;
+    font-size: 14px;
 }
 
 .catalogue-count strong {
