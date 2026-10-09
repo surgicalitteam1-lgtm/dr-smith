@@ -35,43 +35,299 @@
 <body class="apple-body">
 
   <!-- ============================================================
-       1. APPLE GLOBAL NAVIGATION BAR (44px Frosted Glass)
+       1. APPLE ENTERPRISE TOP UTILITY & COMPLIANCE BAR
+       ============================================================ -->
+  <div class="apple-topbar">
+    <div class="apple-topbar-inner">
+      <div class="apple-topbar-left">
+        <span class="apple-topbar-badge"><i class="bi bi-patch-check-fill"></i> ISO 13485:2016 &amp; CE Certified</span>
+        <span class="text-muted d-none d-md-inline">&bull;</span>
+        <span class="d-none d-md-inline text-secondary">Turnkey Hospital Setup &bull; NABH Modular OT Cleanrooms</span>
+      </div>
+      <div class="apple-topbar-right">
+        <a href="tel:18008917466" class="apple-topbar-link"><i class="bi bi-telephone-fill"></i> Toll-Free: <strong>1800 891 7466</strong></a>
+        <span class="text-muted d-none d-sm-inline">|</span>
+        <a href="mailto:info@drsmith.co.in" class="apple-topbar-link d-none d-sm-inline"><i class="bi bi-envelope-fill"></i> info@drsmith.co.in</a>
+        <span class="text-muted d-none d-lg-inline">|</span>
+        <span class="d-none d-lg-inline text-secondary"><i class="bi bi-globe2 text-primary me-1"></i> New Delhi HQ &bull; Sharjah UAE</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       2. APPLE GLOBAL NAVIGATION (Frosted Glass 52px with Mega Flyouts)
        ============================================================ -->
   <nav class="apple-globalnav" aria-label="Global">
     <div class="apple-globalnav-inner">
       
-      <!-- Brand / Logo -->
-      <a href="index.html" class="apple-nav-brand" aria-label="Dr. Smith Homepage">
+      <!-- Brand & Corporate Identity -->
+      <a href="index.html" class="apple-nav-brand" aria-label="Dr. Smith Hospital Engineering">
         <span class="apple-nav-logo-icon"><i class="bi bi-shield-plus"></i></span>
-        <span class="apple-nav-brand-title">Dr. Smith</span>
+        <div class="apple-nav-brand-text">
+          <span class="apple-nav-brand-title">Dr. Smith</span>
+          <span class="apple-nav-brand-subtitle">Hospital Solutions</span>
+        </div>
       </a>
 
-      <!-- Navigation Links -->
+      <!-- Navigation Links with Apple Mega Flyouts -->
       <ul class="apple-nav-links">
-        <li><a href="turnkey-projects/index.html">Turnkey Projects</a></li>
-        <li><a href="catalogue/modular-ot/index.html">Modular OT</a></li>
-        <li><a href="medical-products/index.html">Healthcare Lines</a></li>
-        <li><a href="group-companies/index.html">Group Ecosystem</a></li>
-        <li><a href="about-us/index.html">About Us</a></li>
-        <li><a href="mission-values/index.html">Mission &amp; Values</a></li>
-        <li><a href="catalogue/index.html">Catalogue</a></li>
-        <li><a href="contact-form/index.html">Contact &amp; Offices</a></li>
+        
+        <!-- Link 1: Turnkey Projects -->
+        <li class="apple-nav-item">
+          <a href="turnkey-projects/index.html" class="apple-nav-link">
+            Turnkey Setup <i class="bi bi-chevron-down nav-chevron"></i>
+          </a>
+          <div class="apple-mega-flyout">
+            <div class="apple-mega-grid">
+              <div class="apple-mega-col">
+                <span class="apple-mega-col-title">Hospital Engineering Capabilities</span>
+                <ul class="apple-mega-list">
+                  <li class="apple-mega-item">
+                    <a href="turnkey-projects/index.html">
+                      <div class="apple-mega-item-icon"><i class="bi bi-building"></i></div>
+                      <div class="apple-mega-item-text">
+                        <h5>Complete Hospital Setup</h5>
+                        <p>End-to-end architectural, civil &amp; MEP engineering.</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="apple-mega-item">
+                    <a href="catalogue/modular-ot/index.html">
+                      <div class="apple-mega-item-icon"><i class="bi bi-shield-check"></i></div>
+                      <div class="apple-mega-item-text">
+                        <h5>NABH Modular Cleanrooms</h5>
+                        <p>Class 100/1000 laminar flow &amp; hermetic suites.</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="apple-mega-item">
+                    <a href="turnkey-projects/index.html#mgps">
+                      <div class="apple-mega-item-icon"><i class="bi bi-bezier2"></i></div>
+                      <div class="apple-mega-item-text">
+                        <h5>Medical Gas Pipeline Systems</h5>
+                        <p>Oxygen manifold, vacuum plants &amp; AVSU alarms.</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="apple-mega-feature-card">
+                <div>
+                  <span class="badge bg-primary mb-2">Turnkey Consultation</span>
+                  <h4>Blueprint to Bedside</h4>
+                  <p>Consult with our hospital architects for NABH/JCI compliant layouts and budgeting.</p>
+                </div>
+                <a href="javascript:void(0)" onclick="openAppleDrawer('Turnkey Hospital Setup');" class="apple-btn-pill" style="font-size: 12px; padding: 6px 14px; align-self: flex-start;">Consult Architects</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Link 2: Modular OT -->
+        <li class="apple-nav-item">
+          <a href="catalogue/modular-ot/index.html" class="apple-nav-link">
+            Modular OT <i class="bi bi-chevron-down nav-chevron"></i>
+          </a>
+          <div class="apple-mega-flyout" style="width: 600px;">
+            <div class="apple-mega-grid" style="grid-template-columns: 1fr 1fr;">
+              <div class="apple-mega-col">
+                <span class="apple-mega-col-title">Surgical Cleanroom Systems</span>
+                <ul class="apple-mega-list">
+                  <li class="apple-mega-item">
+                    <a href="catalogue/modular-ot/index.html">
+                      <div class="apple-mega-item-icon"><i class="bi bi-door-closed"></i></div>
+                      <div class="apple-mega-item-text">
+                        <h5>Hermetic Sliding Doors</h5>
+                        <p>Acoustic, radiation &amp; antibacterial sealed.</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="apple-mega-item">
+                    <a href="catalogue/modular-ot/index.html">
+                      <div class="apple-mega-item-icon"><i class="bi bi-wind"></i></div>
+                      <div class="apple-mega-item-text">
+                        <h5>Laminar Airflow Ceilings</h5>
+                        <p>HEPA diffusers with sterile velocity draft.</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="apple-mega-col">
+                <span class="apple-mega-col-title">OT Equipment &amp; Panels</span>
+                <ul class="apple-mega-list">
+                  <li class="apple-mega-item">
+                    <a href="catalogue/ot-tables/index.html">
+                      <div class="apple-mega-item-icon"><i class="bi bi-sliders"></i></div>
+                      <div class="apple-mega-item-text">
+                        <h5>Surgeon Touch Consoles</h5>
+                        <p>Digital timing, pressure &amp; gas telemetry.</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="apple-mega-item">
+                    <a href="catalogue/scrub-station/index.html">
+                      <div class="apple-mega-item-icon"><i class="bi bi-droplet"></i></div>
+                      <div class="apple-mega-item-text">
+                        <h5>Surgical Scrub Stations</h5>
+                        <p>Sensor/knee operated stainless steel sinks.</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Link 3: Medical Products Lines -->
+        <li class="apple-nav-item">
+          <a href="medical-products/index.html" class="apple-nav-link">
+            Infrastructure Lines <i class="bi bi-chevron-down nav-chevron"></i>
+          </a>
+          <div class="apple-mega-flyout" style="width: 640px;">
+            <div class="apple-mega-grid" style="grid-template-columns: 1fr 1fr;">
+              <div class="apple-mega-col">
+                <span class="apple-mega-col-title">Ward &amp; ICU Furniture</span>
+                <ul class="apple-mega-list">
+                  <li class="apple-mega-item">
+                    <a href="catalogue/beds/index.html">
+                      <div class="apple-mega-item-icon"><i class="bi bi-hospital"></i></div>
+                      <div class="apple-mega-item-text">
+                        <h5>Hospital &amp; ICU Beds</h5>
+                        <p>Motorized electric, semi-fowler &amp; pediatric.</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="apple-mega-item">
+                    <a href="catalogue/furniture/index.html">
+                      <div class="apple-mega-item-icon"><i class="bi bi-archive"></i></div>
+                      <div class="apple-mega-item-text">
+                        <h5>Clinical Furniture &amp; Lockers</h5>
+                        <p>Bedside lockers, overbed tables &amp; trollies.</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="apple-mega-col">
+                <span class="apple-mega-col-title">Critical Care &amp; Life Support</span>
+                <ul class="apple-mega-list">
+                  <li class="apple-mega-item">
+                    <a href="catalogue/ventilators/index.html">
+                      <div class="apple-mega-item-icon"><i class="bi bi-heart-pulse"></i></div>
+                      <div class="apple-mega-item-text">
+                        <h5>ICU Ventilators &amp; Monitors</h5>
+                        <p>High-acuity multipara patient telemetry.</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="apple-mega-item">
+                    <a href="catalogue/index.html">
+                      <div class="apple-mega-item-icon"><i class="bi bi-grid-3x3-gap"></i></div>
+                      <div class="apple-mega-item-text">
+                        <h5>All 50+ Medical Categories</h5>
+                        <p>Explore complete medical device catalogue.</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Link 4: Group Ecosystem -->
+        <li class="apple-nav-item">
+          <a href="group-companies/index.html" class="apple-nav-link">
+            Group Ecosystem <i class="bi bi-chevron-down nav-chevron"></i>
+          </a>
+          <div class="apple-mega-flyout" style="width: 580px;">
+            <span class="apple-mega-col-title">Unified Healthcare Synergy</span>
+            <div class="row g-2">
+              <div class="col-6">
+                <a href="about-us/index.html" class="d-flex align-items-center gap-2 p-2 rounded text-decoration-none bg-dark bg-opacity-25 text-light">
+                  <i class="bi bi-shield-plus text-primary"></i>
+                  <div><strong class="d-block small">Dr. Smith Healthcare</strong><span class="text-secondary" style="font-size: 11px;">Turnkey Setup &amp; Plants</span></div>
+                </a>
+              </div>
+              <div class="col-6">
+                <a href="group-companies/index.html" class="d-flex align-items-center gap-2 p-2 rounded text-decoration-none bg-dark bg-opacity-25 text-light">
+                  <i class="bi bi-scissors text-info"></i>
+                  <div><strong class="d-block small">Surgihub</strong><span class="text-secondary" style="font-size: 11px;">Surgical Devices Hub</span></div>
+                </a>
+              </div>
+              <div class="col-6">
+                <a href="group-companies/index.html" class="d-flex align-items-center gap-2 p-2 rounded text-decoration-none bg-dark bg-opacity-25 text-light">
+                  <i class="bi bi-bag-plus text-warning"></i>
+                  <div><strong class="d-block small">Surgical Mall (SMPL)</strong><span class="text-secondary" style="font-size: 11px;">Nationwide Procurement</span></div>
+                </a>
+              </div>
+              <div class="col-6">
+                <a href="group-companies/index.html" class="d-flex align-items-center gap-2 p-2 rounded text-decoration-none bg-dark bg-opacity-25 text-light">
+                  <i class="bi bi-heart-pulse text-danger"></i>
+                  <div><strong class="d-block small">MediAid Curatives</strong><span class="text-secondary" style="font-size: 11px;">Patient Care &amp; Ambulances</span></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Link 5: About Us & Heritage -->
+        <li class="apple-nav-item">
+          <a href="about-us/index.html" class="apple-nav-link">
+            About &amp; Offices <i class="bi bi-chevron-down nav-chevron"></i>
+          </a>
+          <div class="apple-mega-flyout" style="width: 520px;">
+            <div class="apple-mega-grid" style="grid-template-columns: 1fr 1fr;">
+              <div class="apple-mega-col">
+                <span class="apple-mega-col-title">Corporate Heritage</span>
+                <ul class="apple-mega-list">
+                  <li class="apple-mega-item"><a href="about-us/index.html"><div class="apple-mega-item-text"><h5>60+ Years Legacy</h5><p>Our journey in healthcare.</p></div></a></li>
+                  <li class="apple-mega-item"><a href="mission-values/index.html"><div class="apple-mega-item-text"><h5>Mission &amp; Values</h5><p>Clinical ethics &amp; quality.</p></div></a></li>
+                </ul>
+              </div>
+              <div class="apple-mega-col">
+                <span class="apple-mega-col-title">Global Facilities</span>
+                <ul class="apple-mega-list">
+                  <li class="apple-mega-item"><a href="contact-form/index.html"><div class="apple-mega-item-text"><h5>New Delhi Global HQ</h5><p>Kapashera Border Center.</p></div></a></li>
+                  <li class="apple-mega-item"><a href="contact-form/index.html"><div class="apple-mega-item-text"><h5>Sharjah UAE Office</h5><p>SAIF Zone international hub.</p></div></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Link 6: Full Catalogue -->
+        <li class="apple-nav-item">
+          <a href="catalogue/index.html" class="apple-nav-link">Catalogue</a>
+        </li>
+
       </ul>
 
-      <!-- Action Buttons -->
+      <!-- Action Utilities -->
       <div class="apple-nav-actions">
-        <button type="button" class="apple-nav-action-btn" id="apple-search-trigger" aria-label="Search Catalogue" onclick="window.location.href='catalogue/index.html';">
+        
+        <!-- Search Trigger -->
+        <button type="button" class="apple-nav-action-btn" id="apple-search-trigger" aria-label="Search Medical Catalogue" onclick="window.location.href='catalogue/index.html';" title="Search Catalogue">
           <i class="bi bi-search"></i>
         </button>
-        <button type="button" class="apple-nav-action-btn" id="apple-quote-trigger" aria-label="Request Project Consultation" onclick="openAppleDrawer('Turnkey Hospital Setup');">
-          <i class="bi bi-building"></i>
-        </button>
-        <a href="https://wa.me/919999999999" class="apple-nav-action-btn apple-nav-action-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Us">
+
+        <!-- WhatsApp Quick Connect -->
+        <a href="https://wa.me/919999999999" class="apple-nav-action-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" title="WhatsApp Direct">
           <i class="fa-brands fa-whatsapp"></i>
         </a>
-        <button type="button" class="apple-menu-toggle" id="apple-mobile-menu-btn" aria-label="Toggle Menu">
+
+        <!-- Consultation Pill CTA -->
+        <button type="button" class="apple-nav-cta" onclick="openAppleDrawer('Turnkey Hospital Setup');">
+          <i class="bi bi-building"></i> <span>Consultation</span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button type="button" class="apple-menu-toggle" id="apple-mobile-menu-btn" aria-label="Toggle Navigation Menu">
           <i class="bi bi-list"></i>
         </button>
+
       </div>
 
     </div>
@@ -80,22 +336,34 @@
   <!-- Apple Mobile Menu Drawer Overlay -->
   <div class="apple-mobile-drawer" id="apple-mobile-drawer">
     <ul class="apple-mobile-links">
-      <li><a href="turnkey-projects/index.html">Turnkey Hospital Projects</a></li>
-      <li><a href="catalogue/modular-ot/index.html">Modular Operation Theatres</a></li>
-      <li><a href="medical-products/index.html">Medical Infrastructure Lines</a></li>
-      <li><a href="group-companies/index.html">Group Companies Ecosystem</a></li>
-      <li><a href="about-us/index.html">About Dr. Smith Heritage</a></li>
-      <li><a href="mission-values/index.html">Mission &amp; Core Values</a></li>
-      <li><a href="catalogue/index.html">Full Medical Catalogue</a></li>
-      <li><a href="contact-form/index.html">Global Offices &amp; Contact</a></li>
+      <li><a href="turnkey-projects/index.html">Turnkey Hospital Setup <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+      <li><a href="catalogue/modular-ot/index.html">Modular Operation Theatres <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+      <li><a href="medical-products/index.html">Medical Infrastructure Lines <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+      <li><a href="group-companies/index.html">Group Companies Ecosystem <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+      <li><a href="about-us/index.html">About Dr. Smith Heritage <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+      <li><a href="mission-values/index.html">Mission &amp; Core Values <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+      <li><a href="catalogue/index.html">Full Medical Catalogue <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+      <li><a href="contact-form/index.html">Global Offices &amp; Contact <i class="bi bi-chevron-right small text-secondary"></i></a></li>
     </ul>
+    
+    <div class="apple-mobile-cta-box">
+      <button type="button" class="apple-btn-pill w-100 py-3" onclick="openAppleDrawer('Mobile Turnkey Quote');">
+        <i class="bi bi-building me-2"></i> Request Project Consultation
+      </button>
+      <a href="tel:18008917466" class="btn btn-outline-light rounded-pill py-2 w-100 text-center">
+        <i class="bi bi-telephone-fill me-2 text-primary"></i> Call Toll-Free: 1800 891 7466
+      </a>
+      <a href="https://wa.me/919999999999" class="btn btn-success rounded-pill py-2 w-100 text-center" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp me-2"></i> WhatsApp Consultation Desk
+      </a>
+    </div>
   </div>
 
   <!-- ============================================================
-       2. APPLE TOP ANNOUNCEMENT RIBBON
+       3. APPLE TOP ANNOUNCEMENT RIBBON
        ============================================================ -->
   <div class="apple-ribbon">
-    <span><strong>60+ Years Healthcare Legacy:</strong> Complete Turnkey Hospital Solutions, NABH Modular OT, and Global Medical Infrastructure.</span>
+    <span><strong>60+ Years Healthcare Engineering:</strong> Complete Turnkey Hospital Solutions, NABH Modular OT, and Global Infrastructure.</span>
     <a href="turnkey-projects/index.html">Explore Capabilities <i class="bi bi-chevron-right"></i></a>
   </div>
 
