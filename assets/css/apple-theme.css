@@ -70,36 +70,32 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-/* Flagship Main Headline Differentiation */
+/* Flagship Main Headline: Bhagwa (Saffron) & Blue Differentiation */
 .apple-hero-main-title {
   font-size: clamp(38px, 6vw, 72px);
   font-weight: 800;
   letter-spacing: -0.035em;
-  line-height: 1.1;
+  line-height: 1.14;
   margin: 0 auto 16px auto;
-  max-width: 1020px;
+  max-width: 1040px;
 }
 
+.hero-gradient-text-bhagwa,
 .hero-gradient-text-1 {
-  background: linear-gradient(180deg, #ffffff 20%, #e2e8f0 100%);
+  background: linear-gradient(135deg, #FFA033 0%, #FF6700 50%, #FF3D00 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
+  filter: drop-shadow(0 4px 24px rgba(255, 103, 0, 0.55));
 }
 
-.hero-subline-connector {
-  color: #94a3b8;
-  font-weight: 400;
-  font-size: 0.82em;
-  margin: 0 4px;
-}
-
+.hero-gradient-text-blue,
 .hero-gradient-text-2 {
   background: linear-gradient(135deg, #38bdf8 0%, #0099ff 50%, #0071e3 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
-  filter: drop-shadow(0 4px 20px rgba(56, 189, 248, 0.4));
+  filter: drop-shadow(0 4px 24px rgba(0, 153, 255, 0.55));
 }
 
 .apple-subhead-hero {
