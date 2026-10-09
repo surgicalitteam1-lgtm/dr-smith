@@ -1,6 +1,3 @@
-<!-- https://dr-smith.vercel.app/ -->
-<!-- Current web link : Vercel  -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,942 +5,804 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta name="theme-color" content="#ffffff">
-  <title>Dr. Smith</title>
+  <title>Dr. Smith — Excellence In Healthcare Solutions</title>
   <meta name="description"
-    content="Dr. Smith manufactures, exports and supplies hospital furniture, medical equipment, surgical products and turnkey hospital solutions.">
+    content="Dr. Smith manufactures, exports and supplies hospital furniture, medical equipment, surgical products and turnkey hospital solutions worldwide.">
   <meta name="keywords"
-    content="Dr. Smith, hospital furniture, medical equipment, surgical instruments, turnkey hospital solutions">
+    content="Dr. Smith, hospital furniture, medical equipment, ICU beds, modular OT, turnkey hospital solutions">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
- 
+
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/css/main.css?v=12.8" rel="stylesheet">
+  
+  <link href="assets/css/apple-theme.css?v=1.0" rel="stylesheet">
+  <link href="assets/css/main.css?v=13.0" rel="stylesheet">
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-
 </head>
 
-<body class="index-page">
+<body class="apple-body">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png?v=2" onerror="this.onerror=null; this.src='catalogue/img/logo.png?v=2';"
-          alt="Dr. Smith logo" width="62" height="64">
-        <div class="logo-brand d-flex flex-column">
-          <h1 class="sitename">Dr. Smith</h1>
-          <span class="logo-slogan">Excellence In Healthcare Solutions</span>
-        </div>
+  <!-- ============================================================
+       1. APPLE GLOBAL NAVIGATION BAR (44px Frosted Glass)
+       ============================================================ -->
+  <nav class="apple-globalnav" aria-label="Global">
+    <div class="apple-globalnav-inner">
+      
+      <!-- Brand / Logo -->
+      <a href="index.html" class="apple-nav-brand" aria-label="Dr. Smith Homepage">
+        <span class="apple-nav-logo-icon"><i class="bi bi-shield-plus"></i></span>
+        <span class="apple-nav-brand-title">Dr. Smith</span>
       </a>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about-us/index.html">About Us</a></li>
-          <li><a href="medical-products/index.html">Medical Products</a></li>
-          <li><a href="group-companies/index.html">Group Companies</a></li>
-          <li><a href="mission-values/index.html">Mission &amp; Values</a></li>
-          <li><a href="turnkey-projects/index.html">Turnkey Projects</a></li>
-          <li><a href="#" class="nav-whatsapp-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></li>
-        </ul>
-      </nav>
+      <!-- Navigation Links -->
+      <ul class="apple-nav-links">
+        <li><a href="catalogue/index.html">Catalogue</a></li>
+        <li><a href="catalogue/beds/index.html">Hospital Beds</a></li>
+        <li><a href="catalogue/modular-ot/index.html">Modular OT</a></li>
+        <li><a href="catalogue/equipments/index.html">Critical Care</a></li>
+        <li><a href="turnkey-projects/index.html">Turnkey Projects</a></li>
+        <li><a href="about-us/index.html">About Us</a></li>
+        <li><a href="mission-values/index.html">Mission &amp; Values</a></li>
+        <li><a href="group-companies/index.html">Group Companies</a></li>
+        <li><a href="contact-form/index.html">Contact</a></li>
+      </ul>
 
-      <div class="mobile-nav-toggle d-xl-none bi bi-list"></div>
+      <!-- Action Buttons -->
+      <div class="apple-nav-actions">
+        <button type="button" class="apple-nav-action-btn" id="apple-search-trigger" aria-label="Search Products" onclick="window.location.href='catalogue/index.html';">
+          <i class="bi bi-search"></i>
+        </button>
+        <button type="button" class="apple-nav-action-btn" id="apple-quote-trigger" aria-label="Request Quote Drawer" onclick="openAppleDrawer();">
+          <i class="bi bi-bag"></i>
+        </button>
+        <a href="https://wa.me/919999999999" class="apple-nav-action-btn apple-nav-action-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Us">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <button type="button" class="apple-menu-toggle" id="apple-mobile-menu-btn" aria-label="Toggle Menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+
     </div>
-  </header>
-
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
-
-      <div class="container">
-
-        <!-- Top Split: Left Content + Right Why Choose Us Visual -->
-        <div class="row hero-top-row align-items-center gy-4 mb-4 pb-2">
-          
-          <!-- Left Column: Title, Subtitle, Trust Badges, Action Buttons -->
-          <div class="col-lg-6 hero-left-col text-lg-start text-center">
-            <h1 class="hero-title mb-3">
-              Dr. Smith <span>Medical Equipment &amp; Hospital Solutions</span>
-            </h1>
-            <p class="hero-subtitle mb-4">
-              Comprehensive turnkey hospital setups, critical care machinery, and precision surgical tools engineered for dependable clinical performance.
-            </p>
-
-            <!-- Quick Trust Indicators -->
-            <div class="hero-trust-indicators mb-4 d-flex align-items-center justify-content-lg-start justify-content-center gap-4">
-              <div class="trust-item text-center text-lg-start">
-                <span class="trust-num">60+</span>
-                <span class="trust-label">Years Heritage</span>
-              </div>
-              <div class="trust-item text-center text-lg-start">
-                <span class="trust-num">500+</span>
-                <span class="trust-label">Turnkey Projects</span>
-              </div>
-              <div class="trust-item text-center text-lg-start">
-                <span class="trust-num">100%</span>
-                <span class="trust-label">ISO &amp; CE Certified</span>
-              </div>
-            </div>
-
-            <!-- Hero Actions / CTAs -->
-            <div class="hero-actions d-flex flex-wrap align-items-center gap-3 justify-content-lg-start justify-content-center">
-              <a href="catalogue/index.html" class="btn-primary">Explore Our Catalogue</a>
-              <div class="hero-contact-whatsapp-row d-flex align-items-center gap-2">
-                <a href="contact-form/index.html" class="btn-hero-contact d-inline-flex align-items-center gap-2">
-                  <i class="bi bi-envelope-fill"></i>
-                  <span>Send Enquiry</span>
-                </a>
-                <a href="https://wa.me/919999999999" class="btn-hero-whatsapp d-lg-none d-inline-flex align-items-center gap-2" aria-label="WhatsApp Us" target="_blank" rel="noopener noreferrer">
-                  <i class="fa-brands fa-whatsapp"></i>
-                  <span>WhatsApp</span>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Right Column: Why Choose Us Infographic -->
-          <div class="col-lg-6 hero-right-col text-center">
-            <div class="why-choose-wrapper">
-              <img src="assets/img/why-choose-us.png?v=2" onerror="this.onerror=null; this.src='assets/img/why-choose-us-transparent.png?v=2';" alt="Why Choose Dr. Smith Medical Equipment" class="img-fluid why-choose-img" loading="eager">
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Bottom Showcase: Product Categories Carousel -->
-        <div id="equipment-showcase" class="equipment-showcase-container pt-3">
-          <div class="showcase-header-bar d-flex align-items-center justify-content-end mb-2 px-2">
-            <div class="equipment-nav-actions d-none d-md-flex align-items-center gap-2">
-              <button type="button" class="equipment-nav-btn equipment-prev-btn" id="equipment-prev-btn" aria-label="Scroll Left"><i class="bi bi-chevron-left"></i></button>
-              <button type="button" class="equipment-nav-btn equipment-next-btn" id="equipment-next-btn" aria-label="Scroll Right"><i class="bi bi-chevron-right"></i></button>
-              <a href="catalogue/index.html" class="btn-view-all-equipment ms-2">View All Categories <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="equipment-carousel-wrapper" id="equipment-carousel">
-            <div class="equipment-track">
-
-              <!-- Category 1: Hospital & Ward Furniture -->
-              <a href="catalogue/furniture/index.html" class="equipment-card">
-                <div class="equipment-visual">
-                  <img src="assets/img/categories/cat-furniture.png" alt="Hospital &amp; Ward Furniture" class="equipment-img" loading="eager">
-                  <span class="equipment-tag"><i class="bi bi-hospital me-1"></i> Ward Infrastructure</span>
-                </div>
-                <div class="equipment-body">
-                  <h3 class="equipment-name">Hospital &amp; Ward Furniture</h3>
-                  <p class="equipment-desc">Motorized ICU beds, fowler beds, bedside lockers, patient transfer trolleys &amp; ward seating.</p>
-                  <div class="equipment-footer">
-                    <span class="equipment-link-text">Browse Category</span>
-                    <i class="bi bi-arrow-right equipment-arrow"></i>
-                  </div>
-                </div>
-              </a>
-
-              <!-- Category 2: Critical Care & OT Equipment -->
-              <a href="catalogue/equipments/index.html" class="equipment-card">
-                <div class="equipment-visual">
-                  <img src="assets/img/categories/cat-equipments.png" alt="Critical Care &amp; OT Equipment" class="equipment-img" loading="lazy">
-                  <span class="equipment-tag"><i class="bi bi-heart-pulse me-1"></i> Critical Care &amp; OT</span>
-                </div>
-                <div class="equipment-body">
-                  <h3 class="equipment-name">Critical Care &amp; OT Equipment</h3>
-                  <p class="equipment-desc">Anesthesia workstations, ICU ventilators, electro-hydraulic OT tables &amp; surgical lighting.</p>
-                  <div class="equipment-footer">
-                    <span class="equipment-link-text">Browse Category</span>
-                    <i class="bi bi-arrow-right equipment-arrow"></i>
-                  </div>
-                </div>
-              </a>
-
-              <!-- Category 3: Modular Operation Theatres -->
-              <a href="catalogue/modular-ot/index.html" class="equipment-card">
-                <div class="equipment-visual">
-                  <img src="assets/img/categories/cat-ot.jpg" alt="Modular Operation Theatres" class="equipment-img" loading="lazy">
-                  <span class="equipment-tag"><i class="bi bi-building me-1"></i> Turnkey Infrastructure</span>
-                </div>
-                <div class="equipment-body">
-                  <h3 class="equipment-name">Modular Operation Theatres</h3>
-                  <p class="equipment-desc">Pre-fabricated laminar airflow surgical rooms, cleanroom panels &amp; hermetic door systems.</p>
-                  <div class="equipment-footer">
-                    <span class="equipment-link-text">Browse Category</span>
-                    <i class="bi bi-arrow-right equipment-arrow"></i>
-                  </div>
-                </div>
-              </a>
-
-              <!-- Category 4: Surgical & Laparoscopy Tools -->
-              <a href="catalogue/instruments/index.html" class="equipment-card">
-                <div class="equipment-visual">
-                  <img src="assets/img/categories/cat-instruments.png" alt="Surgical &amp; Laparoscopy Tools" class="equipment-img" loading="lazy">
-                  <span class="equipment-tag"><i class="bi bi-scissors me-1"></i> Surgical Precision</span>
-                </div>
-                <div class="equipment-body">
-                  <h3 class="equipment-name">Surgical &amp; Laparoscopy Tools</h3>
-                  <p class="equipment-desc">High-grade German stainless steel surgical instruments, laparoscopy towers &amp; endoscopic sets.</p>
-                  <div class="equipment-footer">
-                    <span class="equipment-link-text">Browse Category</span>
-                    <i class="bi bi-arrow-right equipment-arrow"></i>
-                  </div>
-                </div>
-              </a>
-
-              <!-- Category 5: Radiology & Diagnostic Systems -->
-              <a href="catalogue/radiology-equipments/index.html" class="equipment-card">
-                <div class="equipment-visual">
-                  <img src="assets/img/categories/cat-radiology.png" alt="Radiology &amp; Diagnostic Systems" class="equipment-img" loading="lazy">
-                  <span class="equipment-tag"><i class="bi bi-activity me-1"></i> Diagnostics &amp; Imaging</span>
-                </div>
-                <div class="equipment-body">
-                  <h3 class="equipment-name">Radiology &amp; Diagnostic Systems</h3>
-                  <p class="equipment-desc">High-frequency C-Arm systems, digital radiography X-ray machines, color Doppler ultrasound &amp; ECG.</p>
-                  <div class="equipment-footer">
-                    <span class="equipment-link-text">Browse Category</span>
-                    <i class="bi bi-arrow-right equipment-arrow"></i>
-                  </div>
-                </div>
-              </a>
-
-              <!-- Category 6: Neonatal & Infant Care -->
-              <a href="catalogue/nic-machines/index.html" class="equipment-card">
-                <div class="equipment-visual">
-                  <img src="assets/img/categories/cat-nic.png" alt="Neonatal &amp; Infant Care (NIC)" class="equipment-img" loading="lazy">
-                  <span class="equipment-tag"><i class="bi bi-shield-heart me-1"></i> NICU &amp; Pediatric</span>
-                </div>
-                <div class="equipment-body">
-                  <h3 class="equipment-name">Neonatal &amp; Infant Care (NIC)</h3>
-                  <p class="equipment-desc">Microprocessor radiant baby warmers, infant phototherapy units &amp; neonatal intensive care systems.</p>
-                  <div class="equipment-footer">
-                    <span class="equipment-link-text">Browse Category</span>
-                    <i class="bi bi-arrow-right equipment-arrow"></i>
-                  </div>
-                </div>
-              </a>
-
-              <!-- Category 7: Sterilization & Autoclaves -->
-              <a href="catalogue/autoclaves/index.html" class="equipment-card">
-                <div class="equipment-visual">
-                  <img src="assets/img/categories/cat-sterilization.png" alt="Sterilization &amp; Autoclaves" class="equipment-img" loading="lazy">
-                  <span class="equipment-tag"><i class="bi bi-shield-check me-1"></i> Infection Control</span>
-                </div>
-                <div class="equipment-body">
-                  <h3 class="equipment-name">Sterilization &amp; Autoclaves</h3>
-                  <p class="equipment-desc">Horizontal cylindrical autoclaves, high-pressure steam sterilizers &amp; CSSD ultrasonic cleaners.</p>
-                  <div class="equipment-footer">
-                    <span class="equipment-link-text">Browse Category</span>
-                    <i class="bi bi-arrow-right equipment-arrow"></i>
-                  </div>
-                </div>
-              </a>
-
-            </div>
-          </div>
-        </div>
-
-        <!-- Gradient Shaded Blue Divider (All Devices) -->
-        <div class="hero-clients-divider"></div>
-
-      </div>
-
-    </section><!-- /Hero Section -->
-
-    <!-- Clients Section -->
-    <section id="clients" class="clients section">
-
-      <div class="container">
-
-        <div class="swiper clients-swiper clients-slider-interactive">
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/clients-1.webp" class="img-fluid"
-                alt="Healthcare Partner 1"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-2.webp" class="img-fluid"
-                alt="Healthcare Partner 2"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-3.webp" class="img-fluid"
-                alt="Healthcare Partner 3"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-4.webp" class="img-fluid"
-                alt="Healthcare Partner 4"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-5.webp" class="img-fluid"
-                alt="Healthcare Partner 5"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-6.webp" class="img-fluid"
-                alt="Healthcare Partner 6"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-7.webp" class="img-fluid"
-                alt="Healthcare Partner 7"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-8.webp" class="img-fluid"
-                alt="Healthcare Partner 8"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-9.webp" class="img-fluid"
-                alt="Healthcare Partner 9"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-10.webp" class="img-fluid"
-                alt="Healthcare Partner 10"></div>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Clients Section -->
-
-    <!-- Company background and milestones -->
-    <section id="company-milestones" class="testimonials section">
-
-      <div class="container section-title">
-        <h2>Company Background, Milestones &amp; Quality Assurance</h2>
-        <p>A trusted global leader in comprehensive hospital infrastructure, precision medical equipment manufacturing, turnkey healthcare engineering, and international quality-certified clinical solutions.</p>
-      </div>
-
-      <div class="container">
-        <div class="testimonial-slider swiper init-swiper">
-
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="testimonial-header">
-                  <div class="milestone-icon-badge">
-                    <i class="bi bi-award"></i>
-                  </div>
-                </div>
-                <div class="testimonial-body">
-                  <p>Backed by over 60 years of foundational manufacturing and engineering expertise in medical equipment, hospital infrastructure, and international trade.</p>
-                </div>
-                <div class="testimonial-footer">
-                  <h5>Parent Company Heritage</h5>
-                  <span>60+ Years Industry Experience</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="testimonial-header">
-                  <div class="milestone-icon-badge">
-                    <i class="bi bi-hospital"></i>
-                  </div>
-                </div>
-                <div class="testimonial-body">
-                  <p>Demonstrated capability in large-scale healthcare engineering, including the turnkey outfitting of a 500-bedded government hospital facility inaugurated by the Home Minister of India.</p>
-                </div>
-                <div class="testimonial-footer">
-                  <h5>500-Bedded Hospital</h5>
-                  <span>Turnkey Infrastructure Milestone</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="testimonial-header">
-                  <div class="milestone-icon-badge">
-                    <i class="bi bi-patch-check"></i>
-                  </div>
-                </div>
-                <div class="testimonial-body">
-                  <p>Manufactured under stringent global standards with ISO 9001:2015, ISO 13485:2016, ISO 14001:2015, OHSAS 45001:2018, BIFMA, GMP, CE, and US FDA compliance.</p>
-                </div>
-                <div class="testimonial-footer">
-                  <h5>Quality Standards</h5>
-                  <span>Internationally Certified Excellence</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="testimonial-header">
-                  <div class="milestone-icon-badge">
-                    <i class="bi bi-globe-americas"></i>
-                  </div>
-                </div>
-                <div class="testimonial-body">
-                  <p>Active global supply footprint across Yemen, Nepal, Sri Lanka, Liberia, Congo, Ukraine, Uganda, UAE, Kenya, Nigeria, and Zimbabwe’s Ministry of Health &amp; Child Care.</p>
-                </div>
-                <div class="testimonial-footer">
-                  <h5>Global Engagements</h5>
-                  <span>Worldwide Institutional Reach</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="testimonial-header">
-                  <div class="milestone-icon-badge">
-                    <i class="bi bi-lungs"></i>
-                  </div>
-                </div>
-                <div class="testimonial-body">
-                  <p>Proven rapid deployment capability for high-dependency critical care units, having successfully supplied and commissioned 125 ICU ventilators for prominent healthcare networks.</p>
-                </div>
-                <div class="testimonial-footer">
-                  <h5>Critical Care Deployments</h5>
-                  <span>125+ ICU Ventilators Commissioned</span>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="swiper-navigation">
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Company background and milestones -->
-
-    <!-- Office and contact directory -->
-    <section id="office-locations" class="office-directory section">
-
-      <div class="container section-title">
-        <h2>Office Locations &amp; Contact Directory</h2>
-        <p>Direct communication channels and physical directory for Dr. Smith’s principal global head office in New Delhi, primary manufacturing plant, and international head office in Sharjah, UAE.</p>
-      </div>
-
-      <div class="container">
-        <div class="row justify-content-center g-4">
-
-          <!-- Location 1: Global Head Office (New Delhi) -->
-          <div class="col-lg-4 col-md-6 d-flex">
-            <div class="office-card w-100">
-              <div class="office-card-header">
-                <div class="office-type-badge">
-                  <i class="bi bi-geo-alt-fill"></i> Principal Global Head Office
-                </div>
-                <div class="office-icon-wrapper">
-                  <i class="bi bi-buildings"></i>
-                </div>
-                <h3 class="office-title">Global Head Office</h3>
-                <span class="office-subtitle">New Delhi, India (Principal Headquarters)</span>
-              </div>
-
-              <div class="office-card-body">
-                <div class="office-info-item">
-                  <div class="info-icon">
-                    <i class="bi bi-geo-alt"></i>
-                  </div>
-                  <div class="info-content">
-                    <label>Main Office Address</label>
-                    <p>Plot No. 75/02, Shri Sai Complex, Ground Floor, Kapashera Border, New Delhi &ndash; 110037, India</p>
-                  </div>
-                </div>
-
-                <div class="office-info-item">
-                  <div class="info-icon">
-                    <i class="bi bi-telephone"></i>
-                  </div>
-                  <div class="info-content">
-                    <label>Toll-Free Helpline</label>
-                    <p><a href="tel:18008917466">1800 891 7466</a></p>
-                  </div>
-                </div>
-
-                <div class="office-info-item">
-                  <div class="info-icon">
-                    <i class="bi bi-envelope"></i>
-                  </div>
-                  <div class="info-content">
-                    <label>Email &amp; Web</label>
-                    <p><a href="mailto:info@drsmith.co.in">info@drsmith.co.in</a> &bull; <a href="https://www.drsmith.co.in" target="_blank" rel="noopener">www.drsmith.co.in</a></p>
-                  </div>
-                </div>
-
-                <div class="office-info-item">
-                  <div class="info-icon">
-                    <i class="bi bi-shield-check"></i>
-                  </div>
-                  <div class="info-content">
-                    <label>Operations Focus</label>
-                    <p>Executive Management, Institutional Tenders &amp; Client Relations</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="office-card-footer">
-                <a href="contact-form/index.html" class="btn-office-action">
-                  <span>Contact Global Head Office</span>
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Location 2: Manufacturing Facility -->
-          <div class="col-lg-4 col-md-6 d-flex">
-            <div class="office-card featured-location w-100">
-              <div class="office-card-header">
-                <div class="office-type-badge">
-                  <i class="bi bi-gear-wide-connected"></i> Primary Production Unit
-                </div>
-                <div class="office-icon-wrapper">
-                  <i class="bi bi-cpu"></i>
-                </div>
-                <h3 class="office-title">Manufacturing Facility</h3>
-                <span class="office-subtitle">Haryana, India</span>
-              </div>
-
-              <div class="office-card-body">
-                <div class="office-info-item">
-                  <div class="info-icon">
-                    <i class="bi bi-geo-alt"></i>
-                  </div>
-                  <div class="info-content">
-                    <label>Factory Address</label>
-                    <p>Plot No. 20, Street No. H, Model Economic Township Limited (METL), Village Dadri Toe, Tehsil Badli, Dist. Jhajjar, Haryana &ndash; 124105, India</p>
-                  </div>
-                </div>
-
-                <div class="office-info-item">
-                  <div class="info-icon">
-                    <i class="bi bi-tools"></i>
-                  </div>
-                  <div class="info-content">
-                    <label>Plant Capabilities</label>
-                    <p>Hospital Beds, OT Tables, Medical Furniture &amp; Critical Care Equipment</p>
-                  </div>
-                </div>
-
-                <div class="office-info-item">
-                  <div class="info-icon">
-                    <i class="bi bi-patch-check"></i>
-                  </div>
-                  <div class="info-content">
-                    <label>Quality Standards</label>
-                    <p>ISO 9001, ISO 13485, CE &amp; FDA Standardized Production</p>
-                  </div>
-                </div>
-
-                <div class="office-info-item">
-                  <div class="info-icon">
-                    <i class="bi bi-envelope"></i>
-                  </div>
-                  <div class="info-content">
-                    <label>Plant Desk</label>
-                    <p><a href="tel:18008917466">1800 891 7466</a> &bull; <a href="mailto:info@drsmith.co.in">info@drsmith.co.in</a></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="office-card-footer">
-                <a href="contact-form/index.html" class="btn-office-action btn-featured-action">
-                  <span>Plant Inquiries &amp; Tenders</span>
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Location 3: International Head Office (UAE Mart Outside India) -->
-          <div class="col-lg-4 col-md-6 d-flex">
-            <div class="office-card w-100">
-              <div class="office-card-header">
-                <div class="office-type-badge">
-                  <i class="bi bi-globe2"></i> International Head Office (Overseas)
-                </div>
-                <div class="office-icon-wrapper">
-                  <i class="bi bi-box-seam"></i>
-                </div>
-                <h3 class="office-title">International Head Office</h3>
-                <span class="office-subtitle">Sharjah, UAE (Overseas Head Office)</span>
-              </div>
-
-              <div class="office-card-body">
-                <div class="office-info-item">
-                  <div class="info-icon">
-                    <i class="bi bi-geo-alt"></i>
-                  </div>
-                  <div class="info-content">
-                    <label>Warehouse Address</label>
-                    <p>Q4-223, Warehouse Number, SAIF Zone (Sharjah Airport International Free Zone), Sharjah, United Arab Emirates</p>
-                  </div>
-                </div>
-
-                <div class="office-info-item">
-                  <div class="info-icon">
-                    <i class="bi bi-airplane"></i>
-                  </div>
-                  <div class="info-content">
-                    <label>Export Markets</label>
-                    <p>Middle East, Africa, Eastern Europe &amp; Global Free Zone Logistics</p>
-                  </div>
-                </div>
-
-                <div class="office-info-item">
-                  <div class="info-icon">
-                    <i class="bi bi-telephone"></i>
-                  </div>
-                  <div class="info-content">
-                    <label>International Helpline</label>
-                    <p><a href="tel:18008917466">1800 891 7466</a></p>
-                  </div>
-                </div>
-
-                <div class="office-info-item">
-                  <div class="info-icon">
-                    <i class="bi bi-envelope"></i>
-                  </div>
-                  <div class="info-content">
-                    <label>Export Inquiries</label>
-                    <p><a href="mailto:info@drsmith.co.in">info@drsmith.co.in</a></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="office-card-footer">
-                <a href="contact-form/index.html" class="btn-office-action">
-                  <span>International Export Desk</span>
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </section><!-- /Office and contact directory -->
-
-    <!-- Faq Section -->
-    <section id="faq" class="faq section">
-
-      <div class="container section-title">
-        <h2>Frequently Asked Questions</h2>
-        <p>Key questions about our healthcare mission, certifications, and operational reach.</p>
-      </div>
-
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-9">
-            <div class="faq-wrapper">
-
-              <div class="faq-item faq-active">
-                <div class="faq-header">
-                  <span class="faq-number">01</span>
-                  <h4>What does Dr. Smith provide?</h4>
-                  <div class="faq-toggle"><i class="bi bi-plus"></i><i class="bi bi-dash"></i></div>
-                </div>
-                <div class="faq-content">
-                  <div class="content-inner">
-                    <p>The catalogue presents Dr. Smith as a one-stop solution for hospital-related needs and as a
-                      manufacturer, exporter and supplier of medical products.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="faq-item">
-                <div class="faq-header">
-                  <span class="faq-number">02</span>
-                  <h4>What are the company’s key strategic focus areas?</h4>
-                  <div class="faq-toggle"><i class="bi bi-plus"></i><i class="bi bi-dash"></i></div>
-                </div>
-                <div class="faq-content">
-                  <div class="content-inner">
-                    <p>The company supplies hospital furniture, medical and laboratory equipment, surgical instruments,
-                      medical gas pipeline systems and turnkey hospital solutions.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="faq-item">
-                <div class="faq-header">
-                  <span class="faq-number">03</span>
-                  <h4>What certifications support the company’s quality standards?</h4>
-                  <div class="faq-toggle"><i class="bi bi-plus"></i><i class="bi bi-dash"></i></div>
-                </div>
-                <div class="faq-content">
-                  <div class="content-inner">
-                    <p>The catalogue lists ISO 9001:2015, ISO 13485:2016, ISO 14001:2015, HSAS 45001:2018, BIFMA, GMP,
-                      CE and FDA among the company’s certifications.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="faq-item">
-                <div class="faq-header">
-                  <span class="faq-number">04</span>
-                  <h4>Where are Dr. Smith’s offices and service centres?</h4>
-                  <div class="faq-toggle"><i class="bi bi-plus"></i><i class="bi bi-dash"></i></div>
-                </div>
-                <div class="faq-content">
-                  <div class="content-inner">
-                    <p>The catalogue lists offices and service centres in Delhi, Bihar, Maharashtra, Hyderabad and
-                      Punjab, marts in Patna, Kolkata and Varanasi, and a UAE mart in Sharjah. It also lists
-                      international expansion in Kenya and Nigeria.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="faq-item">
-                <div class="faq-header">
-                  <span class="faq-number">05</span>
-                  <h4>How can customers reach Dr. Smith?</h4>
-                  <div class="faq-toggle"><i class="bi bi-plus"></i><i class="bi bi-dash"></i></div>
-                </div>
-                <div class="faq-content">
-                  <div class="content-inner">
-                    <p>Contact Dr. Smith at 1800 891 7466 or <a href="mailto:info@drsmith.co.in">info@drsmith.co.in</a>,
-                      or visit www.drsmith.co.in.</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section><!-- /Faq Section -->
-
-    <!-- Team Section -->
-    <section id="team" class="team section">
-
-      <div class="container section-title">
-        <h2>Leadership</h2>
-        <p>Kamal Mahajan is Chairman with more than 35 years of healthcare industry experience. Naman Mahajan is CMO,
-          and Danjali Mahajan is CEO and Finance &amp; Export Head.</p>
-      </div>
-
-      <div class="container">
-        <div class="row gy-4 justify-content-center">
-
-          <div class="col-lg-6">
-            <div class="team-member d-flex">
-              <div class="member-img team-member-img d-flex align-items-center justify-content-center">
-                <div class="team-avatar-circle">
-                  <span class="team-avatar-initials">KM</span>
-                </div>
-              </div>
-              <div class="member-info flex-grow-1">
-                <h4>Kamal Mahajan</h4>
-                <span>Chairman</span>
-                <p>He has more than 35 years of experience in the healthcare industry and leads business growth in
-                  national and international markets.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="team-member d-flex">
-              <div class="member-img team-member-img d-flex align-items-center justify-content-center">
-                <div class="team-avatar-circle">
-                  <span class="team-avatar-initials">DM</span>
-                </div>
-              </div>
-              <div class="member-info flex-grow-1">
-                <h4>Danjali Mahajan</h4>
-                <span>CEO &amp; Finance and Export Head</span>
-                <p>She has experience in financial planning and analysis, project finance and business process
-                  improvement.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="team-member d-flex">
-              <div class="member-img team-member-img d-flex align-items-center justify-content-center">
-                <div class="team-avatar-circle">
-                  <span class="team-avatar-initials">NM</span>
-                </div>
-              </div>
-              <div class="member-info flex-grow-1">
-                <h4>Naman Mahajan</h4>
-                <span>CMO</span>
-                <p>He brings experience in sales and marketing and has helped the company develop new products and
-                  services.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="team-member d-flex">
-              <div class="member-img team-member-img d-flex align-items-center justify-content-center">
-                <div class="team-avatar-circle">
-                  <span class="team-avatar-initials">RM</span>
-                </div>
-              </div>
-              <div class="member-info flex-grow-1">
-                <h4>Ritika Mahajan</h4>
-                <span>Head Purchase &amp; Branch Ops</span>
-                <p>Leads purchasing and operations with a philosophy that excellence is a continuous journey.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="team-member d-flex">
-              <div class="member-img team-member-img d-flex align-items-center justify-content-center">
-                <div class="team-avatar-circle">
-                  <span class="team-avatar-initials">RK</span>
-                </div>
-              </div>
-              <div class="member-info flex-grow-1">
-                <h4>Ravi Kumar</h4>
-                <span>Head Sales &amp; Specialised Product</span>
-                <p>Directs sales initiatives by leveraging the power of collaborative teamwork.</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </section><!-- /Team Section -->
-
-  </main>
-
-  <footer id="footer" class="footer position-relative light-background">
-
-    <div class="container">
-      <div class="row gy-5">
-
-        <div class="col-lg-4">
-          <div class="footer-content">
-            <a href="index.html" class="logo d-flex align-items-center mb-4">
-              <span class="sitename">Dr. Smith</span>
-            </a>
-            <p class="mb-4">Dr. Smith is committed to delivering dependable medical infrastructure, trusted healthcare
-              solutions, and patient-first services across India and global markets.</p>
-
-            <div class="newsletter-form">
-              <h5>Product Enquiries</h5>
-              <p>For product and service enquiries, email <a href="mailto:info@drsmith.co.in">info@drsmith.co.in</a>.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-6">
-          <div class="footer-links">
-            <h4>Company</h4>
-            <ul>
-              <li><a href="about-us/index.html"><i class="bi bi-chevron-right"></i> About Us</a></li>
-              <li><a href="turnkey-projects/index.html"><i class="bi bi-chevron-right"></i> Turnkey Projects</a></li>
-              <li><a href="medical-products/index.html"><i class="bi bi-chevron-right"></i> Medical Products</a></li>
-              <li><a href="mission-values/index.html"><i class="bi bi-chevron-right"></i> Mission &amp; Values</a></li>
-              <li><a href="group-companies/index.html"><i class="bi bi-chevron-right"></i> Group Companies</a></li>
-              <li><a href="contact-form/index.html"><i class="bi bi-chevron-right"></i> Contact</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-6">
-          <div class="footer-links">
-            <h4>Solutions</h4>
-            <ul>
-              <li><a href="catalogue/modular-ot/index.html"><i class="bi bi-chevron-right"></i> Modular OT &amp;
-                  Construction</a></li>
-              <li><a href="catalogue/hospital-furniture/index.html"><i class="bi bi-chevron-right"></i> Hospital
-                  Furniture</a></li>
-              <li><a href="catalogue/index.html"><i class="bi bi-chevron-right"></i> Medical Equipment</a></li>
-              <li><a href="catalogue/surgical-instruments/index.html"><i class="bi bi-chevron-right"></i> Surgical
-                  Instruments</a></li>
-              <li><a href="catalogue/ivd-products/index.html"><i class="bi bi-chevron-right"></i> Laboratory
-                  Equipment</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-lg-4">
-          <div class="footer-contact">
-            <h4>Get in Touch</h4>
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="bi bi-buildings"></i>
-              </div>
-              <div class="contact-info">
-                <p><strong>Global Head Office:</strong><br>Plot No. 75/02, Shri Sai Complex, GF<br>Kapashera Border, New Delhi &ndash; 110037, India</p>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="bi bi-geo-alt"></i>
-              </div>
-              <div class="contact-info">
-                <p><strong>Overseas Head Office (UAE):</strong><br>Q4-223, SAIF Zone, Sharjah, UAE</p>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="bi bi-telephone"></i>
-              </div>
-              <div class="contact-info">
-                <p><a href="tel:18008917466">1800 891 7466</a> (Toll-Free)</p>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="bi bi-envelope"></i>
-              </div>
-              <div class="contact-info">
-                <p><a href="mailto:info@drsmith.co.in">info@drsmith.co.in</a></p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class="copyright">
-              <p>© <span>Copyright</span> <strong class="px-1 sitename">Dr. Smith</strong> <span>All Rights
-                  Reserved</span></p>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="footer-bottom-links">
-              <a href="privacy.html">Privacy Policy</a>
-              <a href="terms.html">Terms of Service</a>
-              <a href="contact-form/index.html">Contact</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </footer>
-
-  <!-- Mobile & Tablet Sticky Bottom Action Bar -->
-  <div class="mobile-sticky-actions" id="mobile-sticky-actions" aria-label="Quick Actions">
-    <a href="contact-form/index.html" class="sticky-action-btn sticky-btn-enquiry">
-      <i class="bi bi-envelope-fill"></i>
-      <span>Send Enquiry</span>
-    </a>
-    <a href="https://wa.me/919999999999" class="sticky-action-btn sticky-btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Us">
-      <i class="fa-brands fa-whatsapp"></i>
-      <span>WhatsApp</span>
-    </a>
+  </nav>
+
+  <!-- Apple Mobile Menu Drawer Overlay -->
+  <div class="apple-mobile-drawer" id="apple-mobile-drawer">
+    <ul class="apple-mobile-links">
+      <li><a href="catalogue/index.html">Catalogue Overview</a></li>
+      <li><a href="catalogue/beds/index.html">Hospital &amp; ICU Beds</a></li>
+      <li><a href="catalogue/modular-ot/index.html">Modular Operation Theatres</a></li>
+      <li><a href="catalogue/equipments/index.html">Critical Care &amp; Monitors</a></li>
+      <li><a href="catalogue/radiology-equipments/index.html">Radiology &amp; C-Arm</a></li>
+      <li><a href="turnkey-projects/index.html">Turnkey Projects</a></li>
+      <li><a href="about-us/index.html">About Dr. Smith</a></li>
+      <li><a href="mission-values/index.html">Mission &amp; Values</a></li>
+      <li><a href="group-companies/index.html">Group Companies</a></li>
+      <li><a href="contact-form/index.html">Contact &amp; Offices</a></li>
+    </ul>
   </div>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <!-- ============================================================
+       2. APPLE ANNOUNCEMENT RIBBON
+       ============================================================ -->
+  <div class="apple-ribbon">
+    <span><strong>Dr. Smith Apex Series:</strong> Next-generation ICU hospital infrastructure engineered with precision Linak actuators.</span>
+    <a href="catalogue/beds/index.html">Explore the series <i class="bi bi-chevron-right"></i></a>
+  </div>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+  <!-- ============================================================
+       3. HERO BILLBOARD 1: APEX PRO (TITANIUM / DARK FLAGSHIP)
+       ============================================================ -->
+  <section class="apple-hero-unit apple-hero-dark">
+    <span class="apple-eyebrow">Dr. Smith Pro</span>
+    <h1 class="apple-headline-hero apple-headline-hero-dark">Apex Series ICU Bed</h1>
+    <p class="apple-subhead-hero">Titanium-grade engineering. Intuitive touch articulation. Uncompromised clinical resilience.</p>
+    
+    <div class="apple-hero-actions">
+      <a href="catalogue/beds/index.html" class="apple-btn-pill">Explore Apex Pro</a>
+      <a href="javascript:void(0)" class="apple-link" onclick="openAppleDrawer('Apex Series ICU Bed');">Request Hospital Quote <i class="bi bi-chevron-right"></i></a>
+    </div>
+
+    <div class="apple-hero-media">
+      <img src="catalogue/beds/icu-bed-7-function-luxury-electric.png" alt="Dr. Smith Apex 7-Function Luxury Electric ICU Bed" class="apple-hero-img" loading="eager">
+      <div class="apple-hero-reflection"></div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       4. HERO BILLBOARD 2: MODULAR OT (LIGHT MINIMALIST FLAGSHIP)
+       ============================================================ -->
+  <section class="apple-hero-unit apple-hero-light">
+    <span class="apple-eyebrow">Turnkey Surgical Suites</span>
+    <h2 class="apple-headline-hero">Modular Operation Theatres</h2>
+    <p class="apple-subhead-hero">Laminar airflow systems. Zero bacterial retention cleanrooms. Absolute surgical ergonomics.</p>
+    
+    <div class="apple-hero-actions">
+      <a href="catalogue/modular-ot/index.html" class="apple-btn-pill">Discover Modular OT</a>
+      <a href="turnkey-projects/index.html" class="apple-link">View Project Portfolio <i class="bi bi-chevron-right"></i></a>
+    </div>
+
+    <div class="apple-hero-media">
+      <img src="assets/img/categories/cat-ot.jpg" alt="Modular Operation Theatre Suite" class="apple-hero-img" style="border-radius: 20px;" loading="lazy">
+    </div>
+  </section>
+
+  <!-- ============================================================
+       5. HERO BILLBOARD 3: TURNKEY EXCELLENCE
+       ============================================================ -->
+  <section class="apple-hero-unit apple-hero-dark" style="background: radial-gradient(circle at 50% 30%, #1e293b 0%, #090d16 70%);">
+    <span class="apple-eyebrow">Complete Hospital Setup</span>
+    <h2 class="apple-headline-hero apple-headline-hero-dark">Blueprint to Bedside.</h2>
+    <p class="apple-subhead-hero">Over 500+ Hospitals, Trauma Centers &amp; Specialized Clinics Outfitted Globally.</p>
+    
+    <div class="apple-hero-actions">
+      <a href="turnkey-projects/index.html" class="apple-btn-pill">Explore Turnkey Solutions</a>
+      <a href="contact-form/index.html" class="apple-link">Consult Healthcare Architects <i class="bi bi-chevron-right"></i></a>
+    </div>
+
+    <div class="apple-hero-media">
+      <img src="catalogue/img/banner 1.jpg" alt="Turnkey Hospital Setup" class="apple-hero-img" style="border-radius: 20px;" loading="lazy">
+    </div>
+  </section>
+
+  <!-- ============================================================
+       6. APPLE 2x2 BENTO PROMOS GRID (6 Hero Promo Cards)
+       ============================================================ -->
+  <section class="apple-promos-section">
+    <div class="apple-promos-container">
+      <div class="apple-promos-grid">
+
+        <!-- Promo 1: Electric ICU & Fowler Beds -->
+        <div class="apple-promo-card apple-promo-dark">
+          <span class="apple-promo-eyebrow">Critical Care</span>
+          <h3 class="apple-promo-title">ICU &amp; Fowler Beds</h3>
+          <p class="apple-promo-desc">Motorized multi-posture articulation with instant CPR quick-release and Linak actuators.</p>
+          <div class="apple-promo-actions">
+            <a href="catalogue/beds/index.html" class="apple-btn-pill">Learn more</a>
+            <a href="javascript:void(0)" class="apple-link" onclick="openAppleDrawer('ICU Beds');">Get Quote <i class="bi bi-chevron-right"></i></a>
+          </div>
+          <div class="apple-promo-media">
+            <img src="catalogue/beds/icu-bed-5-function-electric-abs.png" alt="5-Function Electric ICU Bed" class="apple-promo-img" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Promo 2: Shadowless OT Lighting & Tables -->
+        <div class="apple-promo-card apple-promo-light">
+          <span class="apple-promo-eyebrow">Surgical Systems</span>
+          <h3 class="apple-promo-title">OT Lighting &amp; Tables</h3>
+          <p class="apple-promo-desc">High-definition CRI, multi-axis electro-hydraulic adjustments, and shadowless illumination.</p>
+          <div class="apple-promo-actions">
+            <a href="catalogue/equipments/index.html" class="apple-btn-pill">Learn more</a>
+            <a href="javascript:void(0)" class="apple-link" onclick="openAppleDrawer('OT Tables & Lights');">Get Quote <i class="bi bi-chevron-right"></i></a>
+          </div>
+          <div class="apple-promo-media">
+            <img src="assets/img/categories/cat-equipments.png" alt="OT Equipment & Lighting" class="apple-promo-img" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Promo 3: Neonatal & Infant Radiant Warmers -->
+        <div class="apple-promo-card apple-promo-light">
+          <span class="apple-promo-eyebrow">Pediatric Care</span>
+          <h3 class="apple-promo-title">Neonatal &amp; Infant Warmers</h3>
+          <p class="apple-promo-desc">Microprocessor thermal control and infant phototherapy units engineered for newborn safety.</p>
+          <div class="apple-promo-actions">
+            <a href="catalogue/nic-machines/index.html" class="apple-btn-pill">Learn more</a>
+            <a href="javascript:void(0)" class="apple-link" onclick="openAppleDrawer('Neonatal Equipment');">Get Quote <i class="bi bi-chevron-right"></i></a>
+          </div>
+          <div class="apple-promo-media">
+            <img src="assets/img/categories/cat-nic.png" alt="Neonatal Infant Warmer" class="apple-promo-img" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Promo 4: High-Frequency C-Arm & X-Ray -->
+        <div class="apple-promo-card apple-promo-dark">
+          <span class="apple-promo-eyebrow">Medical Imaging</span>
+          <h3 class="apple-promo-title">High-Frequency C-Arm</h3>
+          <p class="apple-promo-desc">Instant digital fluoroscopy and radiography with minimal radiation exposure.</p>
+          <div class="apple-promo-actions">
+            <a href="catalogue/radiology-equipments/index.html" class="apple-btn-pill">Learn more</a>
+            <a href="javascript:void(0)" class="apple-link" onclick="openAppleDrawer('C-Arm & Radiology');">Get Quote <i class="bi bi-chevron-right"></i></a>
+          </div>
+          <div class="apple-promo-media">
+            <img src="assets/img/categories/cat-radiology.png" alt="Radiology C-Arm System" class="apple-promo-img" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Promo 5: Sterilization & Autoclaves -->
+        <div class="apple-promo-card apple-promo-light">
+          <span class="apple-promo-eyebrow">Infection Control</span>
+          <h3 class="apple-promo-title">CSSD &amp; Autoclaves</h3>
+          <p class="apple-promo-desc">Hospital-grade high-pressure vacuum steam sterilizers engineered for absolute sterility.</p>
+          <div class="apple-promo-actions">
+            <a href="catalogue/autoclaves/index.html" class="apple-btn-pill">Learn more</a>
+            <a href="javascript:void(0)" class="apple-link" onclick="openAppleDrawer('Autoclaves');">Get Quote <i class="bi bi-chevron-right"></i></a>
+          </div>
+          <div class="apple-promo-media">
+            <img src="assets/img/categories/cat-sterilization.png" alt="Sterilization Autoclaves" class="apple-promo-img" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Promo 6: Global Network -->
+        <div class="apple-promo-card apple-promo-dark" style="background: #0f172a;">
+          <span class="apple-promo-eyebrow">Global Footprint</span>
+          <h3 class="apple-promo-title">Dual Head Offices</h3>
+          <p class="apple-promo-desc">Principal Headquarters in New Delhi, India with International Overseas Free-Zone Hub in Sharjah, UAE.</p>
+          <div class="apple-promo-actions">
+            <a href="contact-form/index.html" class="apple-btn-pill">View Directory</a>
+            <a href="about-us/index.html" class="apple-link">About Dr. Smith <i class="bi bi-chevron-right"></i></a>
+          </div>
+          <div class="apple-promo-media">
+            <img src="assets/img/why-choose-us.png" alt="Dr. Smith Global Operations" class="apple-promo-img" loading="lazy">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       7. INTERACTIVE PRODUCT SHELF ("Explore the line-up")
+       ============================================================ */
+  -->
+  <section class="apple-shelf-section" id="lineup">
+    <div class="apple-shelf-container">
+      
+      <div class="apple-shelf-header">
+        <h2>Explore the line-up.</h2>
+        <p>Precision-engineered hospital infrastructure designed for every clinical department.</p>
+      </div>
+
+      <!-- Segmented Controls -->
+      <div class="apple-segmented-nav">
+        <button class="apple-segment-btn active" data-filter="all">All Models</button>
+        <button class="apple-segment-btn" data-filter="icu-beds">ICU &amp; Fowler Beds</button>
+        <button class="apple-segment-btn" data-filter="ot">Modular OT</button>
+        <button class="apple-segment-btn" data-filter="radiology">Radiology &amp; C-Arm</button>
+        <button class="apple-segment-btn" data-filter="pediatric">Pediatric Care</button>
+        <button class="apple-segment-btn" data-filter="ward">Ward Furniture</button>
+      </div>
+
+      <!-- Shelf Grid -->
+      <div class="apple-shelf-grid" id="apple-product-shelf-grid">
+
+        <!-- Item 1 -->
+        <div class="apple-shelf-card" data-category="icu-beds">
+          <span class="apple-shelf-badge">Flagship Smart Series</span>
+          <div class="apple-shelf-img-wrap">
+            <img src="catalogue/beds/icu-bed-7-function-luxury-electric.png" alt="7-Function Luxury Electric ICU Bed" class="apple-shelf-img" loading="lazy">
+          </div>
+          <h3>7-Function Luxury ICU Bed</h3>
+          <p class="apple-shelf-desc">Microprocessor dual column control with cardiac chair, Trendelenburg &amp; nurse control panel.</p>
+          <div class="apple-shelf-specs">
+            <div class="apple-spec-item"><i class="bi bi-cpu"></i> Linak Medical Actuators</div>
+            <div class="apple-spec-item"><i class="bi bi-shield-check"></i> Integrated X-Ray Cassette Holder</div>
+            <div class="apple-spec-item"><i class="bi bi-lightning-charge"></i> Instant Emergency CPR Release</div>
+          </div>
+          <div class="apple-shelf-actions">
+            <a href="catalogue/beds/index.html" class="apple-btn-pill">Explore</a>
+            <button type="button" class="apple-btn-pill apple-btn-pill-light-secondary" onclick="openAppleDrawer('7-Function Luxury ICU Bed');">Quote</button>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="apple-shelf-card" data-category="icu-beds">
+          <span class="apple-shelf-badge">Intensive Care</span>
+          <div class="apple-shelf-img-wrap">
+            <img src="catalogue/beds/icu-bed-5-function-electric-abs.png" alt="5-Function Electric ICU Bed" class="apple-shelf-img" loading="lazy">
+          </div>
+          <h3>5-Function Electric ICU Bed</h3>
+          <p class="apple-shelf-desc">Fully motorized height, backrest, kneerest, and Trendelenburg positions with ABS tuck-away railings.</p>
+          <div class="apple-shelf-specs">
+            <div class="apple-spec-item"><i class="bi bi-activity"></i> 4-Piece Split ABS Safety Side Rails</div>
+            <div class="apple-spec-item"><i class="bi bi-circle"></i> 125mm Central Locking Castors</div>
+            <div class="apple-spec-item"><i class="bi bi-battery-charging"></i> Battery Backup Included</div>
+          </div>
+          <div class="apple-shelf-actions">
+            <a href="catalogue/beds/index.html" class="apple-btn-pill">Explore</a>
+            <button type="button" class="apple-btn-pill apple-btn-pill-light-secondary" onclick="openAppleDrawer('5-Function Electric ICU Bed');">Quote</button>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="apple-shelf-card" data-category="icu-beds ward">
+          <span class="apple-shelf-badge">Recovery &amp; Step-down</span>
+          <div class="apple-shelf-img-wrap">
+            <img src="catalogue/beds/fowler-bed-3-function-electric-collapsible.png" alt="3-Function Electric Fowler Bed" class="apple-shelf-img" loading="lazy">
+          </div>
+          <h3>3-Function Electric Fowler Bed</h3>
+          <p class="apple-shelf-desc">Versatile recovery bed with collapsible aluminum side rails and smooth electric elevation.</p>
+          <div class="apple-spec-item"><i class="bi bi-gear-wide"></i> 3 Motor High-Precision Actuation</div>
+          <div class="apple-spec-item"><i class="bi bi-shield"></i> Detachable ABS Head &amp; Foot Bows</div>
+          <div class="apple-spec-item"><i class="bi bi-check-circle"></i> MS Epoxy Powder Coated Frame</div>
+          <div class="apple-shelf-actions">
+            <a href="catalogue/beds/index.html" class="apple-btn-pill">Explore</a>
+            <button type="button" class="apple-btn-pill apple-btn-pill-light-secondary" onclick="openAppleDrawer('3-Function Electric Fowler Bed');">Quote</button>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="apple-shelf-card" data-category="pediatric">
+          <span class="apple-shelf-badge">Neonatal &amp; Pediatric</span>
+          <div class="apple-shelf-img-wrap">
+            <img src="catalogue/beds/pediatric-crib-bed-hospital.png" alt="Pediatric Hospital Crib Bed" class="apple-shelf-img" loading="lazy">
+          </div>
+          <h3>Pediatric Hospital Crib Bed</h3>
+          <p class="apple-shelf-desc">Full-length drop-down side rails engineered with safe bar spacing and smooth tilting mechanism.</p>
+          <div class="apple-shelf-specs">
+            <div class="apple-spec-item"><i class="bi bi-heart-pulse"></i> Child-Safe Locking Mechanism</div>
+            <div class="apple-spec-item"><i class="bi bi-stars"></i> Non-Toxic Medical Grade Powder Coating</div>
+            <div class="apple-spec-item"><i class="bi bi-shield-check"></i> IV Pole &amp; Accessory Provisions</div>
+          </div>
+          <div class="apple-shelf-actions">
+            <a href="catalogue/pediatric-beds/index.html" class="apple-btn-pill">Explore</a>
+            <button type="button" class="apple-btn-pill apple-btn-pill-light-secondary" onclick="openAppleDrawer('Pediatric Hospital Crib Bed');">Quote</button>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="apple-shelf-card" data-category="radiology">
+          <span class="apple-shelf-badge">Diagnostic Radiology</span>
+          <div class="apple-shelf-img-wrap">
+            <img src="assets/img/categories/cat-radiology.png" alt="High Frequency C-Arm Machine" class="apple-shelf-img" loading="lazy">
+          </div>
+          <h3>High-Frequency C-Arm System</h3>
+          <p class="apple-shelf-desc">Advanced image intensifier with dual high-resolution monitors and minimal radiation pulse modes.</p>
+          <div class="apple-shelf-specs">
+            <div class="apple-spec-item"><i class="bi bi-display"></i> Dual 19-inch Medical Monitors</div>
+            <div class="apple-spec-item"><i class="bi bi-camera"></i> 9-inch Image Intensifier</div>
+            <div class="apple-spec-item"><i class="bi bi-broadcast-pin"></i> Low-Dose Fluoroscopy Technology</div>
+          </div>
+          <div class="apple-shelf-actions">
+            <a href="catalogue/c-arm-machine/index.html" class="apple-btn-pill">Explore</a>
+            <button type="button" class="apple-btn-pill apple-btn-pill-light-secondary" onclick="openAppleDrawer('C-Arm System');">Quote</button>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="apple-shelf-card" data-category="ot">
+          <span class="apple-shelf-badge">Surgical Suites</span>
+          <div class="apple-shelf-img-wrap">
+            <img src="assets/img/categories/cat-ot.jpg" alt="Modular OT Laminar Flow" class="apple-shelf-img" loading="lazy">
+          </div>
+          <h3>Prefabricated Modular OT</h3>
+          <p class="apple-shelf-desc">Seamless antibacterial wall panels, HEPA filtered laminar airflow, and integrated surgeon control panels.</p>
+          <div class="apple-shelf-specs">
+            <div class="apple-spec-item"><i class="bi bi-wind"></i> Class 100/1000 Laminar Airflow</div>
+            <div class="apple-spec-item"><i class="bi bi-door-closed"></i> Hermetically Sealing Automatic Doors</div>
+            <div class="apple-spec-item"><i class="bi bi-sliders"></i> Digital Touch Control Dashboard</div>
+          </div>
+          <div class="apple-shelf-actions">
+            <a href="catalogue/modular-ot/index.html" class="apple-btn-pill">Explore</a>
+            <button type="button" class="apple-btn-pill apple-btn-pill-light-secondary" onclick="openAppleDrawer('Modular OT Suite');">Quote</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       8. APPLE "WHY DR. SMITH" BENTO SHOWCASE
+       ============================================================ -->
+  <section class="apple-bento-section">
+    <div class="apple-bento-container">
+      
+      <div class="apple-bento-header">
+        <h2>Engineering the Future of Healthcare.</h2>
+        <p>Built with institutional discipline, clinical grade materials, and global compliance.</p>
+      </div>
+
+      <div class="apple-bento-grid">
+
+        <!-- Bento Card 1: 60+ Years (Span 2) -->
+        <div class="apple-bento-card apple-bento-span-2 apple-bento-dark">
+          <div class="apple-bento-stat">60+ Years</div>
+          <h3>Heritage of Precision Manufacturing</h3>
+          <p>Backed by over six decades of industrial expertise in medical equipment, hospital furniture, and international engineering supply across government and private healthcare systems.</p>
+        </div>
+
+        <!-- Bento Card 2: Linak Motors -->
+        <div class="apple-bento-card">
+          <div class="apple-bento-stat">100k+</div>
+          <h3>Whisper-Quiet Actuators</h3>
+          <p>Equipped with Linak &amp; German-engineered medical electric motors tested for continuous duty cycles with zero maintenance downtime.</p>
+        </div>
+
+        <!-- Bento Card 3: Quality Certifications -->
+        <div class="apple-bento-card">
+          <div class="apple-bento-stat">100%</div>
+          <h3>ISO &amp; CE Quality Certified</h3>
+          <p>Certified under ISO 9001:2015, ISO 13485:2016, ISO 14001:2015, OHSAS 45001:2018, BIFMA, GMP, CE, and US FDA standards.</p>
+        </div>
+
+        <!-- Bento Card 4: 500-Bedded Hospital Track Record -->
+        <div class="apple-bento-card">
+          <div class="apple-bento-stat">500+</div>
+          <h3>Turnkey Hospital Installations</h3>
+          <p>Proven track record in executing complete hospital projects, including a flagship 500-bedded government hospital inaugurated by the Home Minister of India.</p>
+        </div>
+
+        <!-- Bento Card 5: Dual Head Offices (Span 2) -->
+        <div class="apple-bento-card apple-bento-span-2">
+          <div class="apple-bento-stat">40+</div>
+          <h3>Countries in Global Network</h3>
+          <p>Principal Global Head Office located at Kapashera Border, New Delhi, India; Manufacturing Plant at METL, Jhajjar, Haryana; and International Overseas Head Office in SAIF Zone, Sharjah, UAE.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       9. OFFICE LOCATIONS & DIRECTORY (APPLE BENTO CARDS)
+       ============================================================ -->
+  <section class="apple-leadership-section" id="offices">
+    <div class="apple-leadership-container">
+      
+      <div class="apple-shelf-header">
+        <h2>Global Offices &amp; Facilities.</h2>
+        <p>Direct communication channels for hospital procurement, international exports, and factory tours.</p>
+      </div>
+
+      <div class="apple-bento-grid" style="margin-top: 36px;">
+
+        <!-- Office 1: Global Head Office (New Delhi) -->
+        <div class="apple-bento-card">
+          <span class="apple-shelf-badge">Principal Global Head Office</span>
+          <h3>New Delhi, India</h3>
+          <p style="margin-bottom: 14px;"><strong>Address:</strong> Plot No. 75/02, Shri Sai Complex, Ground Floor, Kapashera Border, New Delhi &ndash; 110037, India</p>
+          <p style="margin-bottom: 8px;"><i class="bi bi-telephone text-primary me-2"></i><strong>Toll-Free:</strong> <a href="tel:18008917466" class="text-decoration-none">1800 891 7466</a></p>
+          <p><i class="bi bi-envelope text-primary me-2"></i><strong>Email:</strong> <a href="mailto:info@drsmith.co.in" class="text-decoration-none">info@drsmith.co.in</a></p>
+          <div class="mt-4">
+            <a href="contact-form/index.html" class="apple-link">Contact Head Office <i class="bi bi-chevron-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Office 2: Primary Manufacturing Plant (Haryana) -->
+        <div class="apple-bento-card">
+          <span class="apple-shelf-badge">Primary Production Plant</span>
+          <h3>Haryana, India</h3>
+          <p style="margin-bottom: 14px;"><strong>Address:</strong> Plot No. 20, Street No. H, Model Economic Township Limited (METL), Village Dadri Toe, Tehsil Badli, Dist. Jhajjar, Haryana &ndash; 124105, India</p>
+          <p style="margin-bottom: 8px;"><i class="bi bi-gear-wide-connected text-primary me-2"></i><strong>Focus:</strong> Beds, OT Tables &amp; Furniture</p>
+          <p><i class="bi bi-patch-check text-primary me-2"></i><strong>Standard:</strong> ISO 13485 &amp; CE Quality</p>
+          <div class="mt-4">
+            <a href="contact-form/index.html" class="apple-link">Schedule Plant Visit <i class="bi bi-chevron-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Office 3: Overseas Head Office (Sharjah, UAE) -->
+        <div class="apple-bento-card">
+          <span class="apple-shelf-badge">International Head Office (Overseas)</span>
+          <h3>Sharjah, UAE</h3>
+          <p style="margin-bottom: 14px;"><strong>Address:</strong> Q4-223, Warehouse Number, SAIF Zone (Sharjah Airport International Free Zone), Sharjah, United Arab Emirates</p>
+          <p style="margin-bottom: 8px;"><i class="bi bi-globe2 text-primary me-2"></i><strong>Logistics:</strong> Middle East, Africa &amp; Global Free Zone</p>
+          <p><i class="bi bi-envelope text-primary me-2"></i><strong>Email:</strong> <a href="mailto:info@drsmith.co.in" class="text-decoration-none">info@drsmith.co.in</a></p>
+          <div class="mt-4">
+            <a href="contact-form/index.html" class="apple-link">International Export Desk <i class="bi bi-chevron-right"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       10. LEADERSHIP (APPLE EXECUTIVE SHOWCASE)
+       ============================================================ -->
+  <section class="apple-leadership-section" style="background: #f5f5f7;">
+    <div class="apple-leadership-container">
+      
+      <div class="apple-shelf-header">
+        <h2>Leadership.</h2>
+        <p>Guiding our global operations with integrity, clinical insight, and engineering vision.</p>
+      </div>
+
+      <div class="apple-team-grid">
+
+        <!-- Executive 1 -->
+        <div class="apple-team-card">
+          <div class="apple-team-avatar">KM</div>
+          <div class="apple-team-info">
+            <h4>Kamal Mahajan</h4>
+            <span class="apple-team-role">Chairman</span>
+            <p class="apple-team-bio">Over 35 years of healthcare leadership driving strategic business expansion across national and international hospital markets.</p>
+          </div>
+        </div>
+
+        <!-- Executive 2 -->
+        <div class="apple-team-card">
+          <div class="apple-team-avatar">DM</div>
+          <div class="apple-team-info">
+            <h4>Danjali Mahajan</h4>
+            <span class="apple-team-role">CEO &amp; Finance and Export Head</span>
+            <p class="apple-team-bio">Leading institutional project financing, international export compliance, and global trade partnerships.</p>
+          </div>
+        </div>
+
+        <!-- Executive 3 -->
+        <div class="apple-team-card">
+          <div class="apple-team-avatar">NM</div>
+          <div class="apple-team-info">
+            <h4>Naman Mahajan</h4>
+            <span class="apple-team-role">Chief Marketing Officer</span>
+            <p class="apple-team-bio">Spearheading digital healthcare marketing, global brand development, and international trade relations.</p>
+          </div>
+        </div>
+
+        <!-- Executive 4 -->
+        <div class="apple-team-card">
+          <div class="apple-team-avatar">RM</div>
+          <div class="apple-team-info">
+            <h4>Ritika Mahajan</h4>
+            <span class="apple-team-role">Head Purchase &amp; Branch Ops</span>
+            <p class="apple-team-bio">Directing strategic medical-grade raw material procurement and seamless nationwide branch logistics.</p>
+          </div>
+        </div>
+
+        <!-- Executive 5 -->
+        <div class="apple-team-card">
+          <div class="apple-team-avatar">RK</div>
+          <div class="apple-team-info">
+            <h4>Ravi Kumar</h4>
+            <span class="apple-team-role">Head Sales &amp; Specialised Products</span>
+            <p class="apple-team-bio">Directing critical care equipment deployment, turnkey tenders, and hospital client satisfaction.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       11. APPLE GLOBAL DIRECTORY FOOTER
+       ============================================================ -->
+  <footer class="apple-globalfooter">
+    <div class="apple-footer-inner">
+      
+      <!-- Notes / Footnotes -->
+      <div class="apple-footer-notes">
+        <ol>
+          <li>Medical equipment specifications, actuator duty cycles, and certifications (ISO 9001:2015, ISO 13485:2016, CE, FDA) are subject to specific product models and custom hospital configurations.</li>
+          <li>Turnkey hospital infrastructure engineering timelines depend on architectural blueprints, local regulatory clearances, and civil site readiness.</li>
+          <li>Principal Global Head Office located at Kapashera Border, New Delhi; Manufacturing Plant at METL, Jhajjar, Haryana; Overseas Head Office at SAIF Zone, Sharjah, UAE.</li>
+        </ol>
+      </div>
+
+      <!-- Directory Columns -->
+      <div class="apple-footer-directory">
+
+        <!-- Col 1: Shop & Explore -->
+        <div class="apple-footer-col">
+          <h4>Shop &amp; Explore</h4>
+          <ul>
+            <li><a href="catalogue/beds/index.html">ICU &amp; Fowler Beds</a></li>
+            <li><a href="catalogue/modular-ot/index.html">Modular Operation Theatres</a></li>
+            <li><a href="catalogue/equipments/index.html">Critical Care &amp; Monitors</a></li>
+            <li><a href="catalogue/radiology-equipments/index.html">Radiology &amp; C-Arm</a></li>
+            <li><a href="catalogue/pediatric-beds/index.html">Pediatric &amp; Baby Warmers</a></li>
+            <li><a href="catalogue/autoclaves/index.html">Sterilization &amp; CSSD</a></li>
+            <li><a href="catalogue/index.html">Full Medical Catalogue</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 2: Turnkey Solutions -->
+        <div class="apple-footer-col">
+          <h4>Turnkey Solutions</h4>
+          <ul>
+            <li><a href="turnkey-projects/index.html">500-Bedded Hospital Setup</a></li>
+            <li><a href="catalogue/modular-ot/index.html">Laminar OT Construction</a></li>
+            <li><a href="turnkey-projects/index.html">Medical Gas Pipeline (MGPS)</a></li>
+            <li><a href="turnkey-projects/index.html">ICU &amp; NICU Planning</a></li>
+            <li><a href="turnkey-projects/index.html">Government &amp; Global Tenders</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Dr. Smith Healthcare -->
+        <div class="apple-footer-col">
+          <h4>Dr. Smith Healthcare</h4>
+          <ul>
+            <li><a href="about-us/index.html">About Our Heritage</a></li>
+            <li><a href="about-us/index.html#team">Executive Leadership</a></li>
+            <li><a href="mission-values/index.html">Mission &amp; Values</a></li>
+            <li><a href="group-companies/index.html">Group Companies</a></li>
+            <li><a href="contact-form/index.html">Careers &amp; Tenders</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Global Directory -->
+        <div class="apple-footer-col">
+          <h4>Global Presence</h4>
+          <ul>
+            <li><a href="contact-form/index.html">New Delhi Head Office (India)</a></li>
+            <li><a href="contact-form/index.html">Jhajjar Manufacturing Plant</a></li>
+            <li><a href="contact-form/index.html">Sharjah Overseas Office (UAE)</a></li>
+            <li><a href="contact-form/index.html">Kenya &amp; Nigeria Desks</a></li>
+            <li><a href="contact-form/index.html">Authorized Service Centers</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Compliance & Values -->
+        <div class="apple-footer-col">
+          <h4>Quality &amp; Compliance</h4>
+          <ul>
+            <li><a href="about-us/index.html">ISO 13485:2016 Certified</a></li>
+            <li><a href="about-us/index.html">CE &amp; US FDA Standards</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="contact-form/index.html">Procurement Inquiries</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Legal & Country -->
+      <div class="apple-footer-bottom">
+        <div class="apple-footer-copyright">
+          Copyright &copy; 2026 Dr. Smith Healthcare Solutions. All rights reserved.
+        </div>
+        <div class="apple-footer-legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Use</a>
+          <a href="contact-form/index.html">Sales Policy</a>
+          <a href="contact-form/index.html">Legal</a>
+          <a href="catalogue/index.html">Site Map</a>
+        </div>
+        <div class="apple-footer-country">
+          <a href="contact-form/index.html" class="text-decoration-none text-muted"><i class="bi bi-globe me-1"></i> India (English)</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       12. APPLE QUICK ENQUIRY DRAWER / MODAL
+       ============================================================ -->
+  <div class="apple-drawer-overlay" id="apple-drawer-overlay" onclick="if(event.target===this) closeAppleDrawer();">
+    <div class="apple-drawer-content">
+      <button type="button" class="apple-drawer-close" onclick="closeAppleDrawer();" aria-label="Close">
+        <i class="bi bi-x-lg"></i>
+      </button>
+      
+      <div style="text-align: center; margin-bottom: 24px;">
+        <span class="apple-shelf-badge">Dr. Smith Direct Procurement</span>
+        <h3 style="font-size: 24px; font-weight: 700; margin-top: 8px;">Request Hospital Quote</h3>
+        <p style="font-size: 14px; color: var(--apple-text-secondary); margin: 0;">Speak directly with our clinical engineering &amp; hospital setup experts.</p>
+      </div>
+
+      <form class="apple-drawer-form" onsubmit="handleAppleQuoteSubmit(event);">
+        <div class="form-group">
+          <label>Selected Product Line</label>
+          <input type="text" id="drawer-product-name" value="Apex Series ICU Bed" readonly style="background: #e8e8ed; font-weight: 600;">
+        </div>
+
+        <div class="row g-2">
+          <div class="col-md-6 form-group">
+            <label>Your Full Name *</label>
+            <input type="text" placeholder="Dr. / Mr. / Ms." required>
+          </div>
+          <div class="col-md-6 form-group">
+            <label>Hospital / Institution Name *</label>
+            <input type="text" placeholder="Hospital / Clinic Name" required>
+          </div>
+        </div>
+
+        <div class="row g-2">
+          <div class="col-md-6 form-group">
+            <label>Official Email *</label>
+            <input type="email" placeholder="name@hospital.com" required>
+          </div>
+          <div class="col-md-6 form-group">
+            <label>Phone / WhatsApp *</label>
+            <input type="tel" placeholder="+91 99999 99999" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Estimated Quantity &amp; Requirements</label>
+          <textarea rows="3" placeholder="Specify unit quantities, turnkey setup requirements, or delivery location..."></textarea>
+        </div>
+
+        <button type="submit" class="apple-btn-pill w-100 mt-2" style="padding: 14px;">Submit Quote Request</button>
+      </form>
+    </div>
+  </div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js?v=4.5"></script>
+  <!-- Interactive Apple Features JS -->
+  <script>
+    // Apple Drawer Modal Controls
+    function openAppleDrawer(productName) {
+      if (productName) {
+        const prodInput = document.getElementById('drawer-product-name');
+        if (prodInput) prodInput.value = productName;
+      }
+      document.getElementById('apple-drawer-overlay').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeAppleDrawer() {
+      document.getElementById('apple-drawer-overlay').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    function handleAppleQuoteSubmit(e) {
+      e.preventDefault();
+      alert('Thank you! Your quote request has been received. Our clinical procurement team will contact you shortly.');
+      closeAppleDrawer();
+    }
+
+    // Apple Mobile Menu Drawer
+    const mobileMenuBtn = document.getElementById('apple-mobile-menu-btn');
+    if (mobileMenuBtn) {
+      mobileMenuBtn.addEventListener('click', function() {
+        document.body.classList.toggle('apple-mobile-menu-open');
+        const icon = mobileMenuBtn.querySelector('i');
+        if (document.body.classList.contains('apple-mobile-menu-open')) {
+          icon.classList.remove('bi-list');
+          icon.classList.add('bi-x-lg');
+        } else {
+          icon.classList.remove('bi-x-lg');
+          icon.classList.add('bi-list');
+        }
+      });
+    }
+
+    // Segmented Control Shelf Filtering
+    const segmentBtns = document.querySelectorAll('.apple-segment-btn');
+    const shelfCards = document.querySelectorAll('.apple-shelf-card');
+
+    segmentBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        segmentBtns.forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        const filter = this.getAttribute('data-filter');
+
+        shelfCards.forEach(card => {
+          if (filter === 'all') {
+            card.style.display = 'flex';
+          } else {
+            const categories = card.getAttribute('data-category') || '';
+            if (categories.includes(filter)) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          }
+        });
+      });
+    });
+
+    // Close mobile drawer on link click
+    document.querySelectorAll('.apple-mobile-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.body.classList.remove('apple-mobile-menu-open');
+        const icon = mobileMenuBtn ? mobileMenuBtn.querySelector('i') : null;
+        if (icon) {
+          icon.classList.remove('bi-x-lg');
+          icon.classList.add('bi-list');
+        }
+      });
+    });
+  </script>
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js?v=5.0"></script>
 
 </body>
 
