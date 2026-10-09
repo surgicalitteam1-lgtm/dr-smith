@@ -223,10 +223,18 @@ img, svg, video, iframe {
   line-height: 1;
 }
 
-.apple-nav-circle-btn:hover {
-  background: rgba(0, 163, 255, 0.2);
-  border-color: #00A3FF;
-  color: #ffffff;
+.apple-nav-circle-call {
+  background: rgba(0, 163, 255, 0.12) !important;
+  border-color: rgba(0, 163, 255, 0.35) !important;
+  color: #00A3FF !important;
+  font-size: 16px;
+}
+
+.apple-nav-circle-call:hover {
+  background: #00A3FF !important;
+  border-color: #00A3FF !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 16px rgba(0, 163, 255, 0.5);
   transform: scale(1.05);
 }
 
