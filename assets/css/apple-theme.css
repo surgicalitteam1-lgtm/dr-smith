@@ -70,6 +70,38 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+/* Flagship Main Headline Differentiation */
+.apple-hero-main-title {
+  font-size: clamp(38px, 6vw, 72px);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.1;
+  margin: 0 auto 16px auto;
+  max-width: 1020px;
+}
+
+.hero-gradient-text-1 {
+  background: linear-gradient(180deg, #ffffff 20%, #e2e8f0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.hero-subline-connector {
+  color: #94a3b8;
+  font-weight: 400;
+  font-size: 0.82em;
+  margin: 0 4px;
+}
+
+.hero-gradient-text-2 {
+  background: linear-gradient(135deg, #38bdf8 0%, #0099ff 50%, #0071e3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  filter: drop-shadow(0 4px 20px rgba(56, 189, 248, 0.4));
+}
+
 .apple-subhead-hero {
   font-size: clamp(19px, 2.8vw, 28px);
   font-weight: 400;
