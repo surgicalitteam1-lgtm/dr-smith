@@ -15,13 +15,20 @@
   --apple-border-glass: rgba(0, 163, 255, 0.2);
 }
 
-/* Global Reset & Dark Canvas */
+/* Global Reset & Dark Canvas with Strict Anti-Horizontal Overflow Lock */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 16px;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #030712 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
 }
 
 body,
@@ -32,7 +39,25 @@ body.apple-body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
-  overflow-x: hidden;
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+  position: relative;
+}
+
+main,
+section,
+header,
+footer {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  overflow-x: clip !important;
+}
+
+img, svg, video, iframe {
+  max-width: 100% !important;
+  height: auto;
 }
 
 /* 1. TOP GLOBAL NAVIGATION HEADER - COMPLETELY SEAMLESS, NO HARD LINES */
@@ -1561,6 +1586,27 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
    MOBILE & TABLET HEADER (30% LARGER PROPORTIONS)
    ============================================================ */
 @media (max-width: 991px) {
+  html, body {
+    overflow-x: hidden !important;
+    max-width: 100vw !important;
+    width: 100% !important;
+  }
+  .hero-split-container,
+  .featured-products-container,
+  .why-choose-container,
+  .about-overview-container,
+  .cta-banner-container,
+  .container,
+  .container-fluid {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    max-width: 100% !important;
+    overflow-x: clip !important;
+  }
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
   .apple-globalnav {
     height: 84px !important;
     padding: 0;
@@ -1615,6 +1661,9 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   }
   .apple-mobile-drawer {
     top: 96px !important;
+    left: 14px !important;
+    right: 14px !important;
+    max-width: calc(100vw - 28px) !important;
   }
   .hero-split-section {
     padding-top: 106px !important;
@@ -1623,6 +1672,16 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
 }
 
 @media (max-width: 480px) {
+  .hero-split-container,
+  .featured-products-container,
+  .why-choose-container,
+  .about-overview-container,
+  .cta-banner-container,
+  .container,
+  .container-fluid {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
   .apple-globalnav {
     height: 80px !important;
   }
@@ -1661,6 +1720,9 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   }
   .apple-mobile-drawer {
     top: 90px !important;
+    left: 10px !important;
+    right: 10px !important;
+    max-width: calc(100vw - 20px) !important;
   }
   .hero-split-section {
     padding-top: 98px !important;
