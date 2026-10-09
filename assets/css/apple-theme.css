@@ -267,7 +267,7 @@ body {
 /* 1.2 Dribbble Dark Mode Parallax Floating Capsule Navigation */
 .apple-globalnav {
   position: fixed;
-  top: 12px;
+  top: 16px;
   left: 0;
   width: 100%;
   height: auto;
@@ -733,7 +733,7 @@ body.apple-mobile-menu-open {
 }
 
 .apple-hero-unit:first-of-type {
-  padding-top: 76px;
+  padding-top: 92px;
 }
 
 /* Flagship Dark Hero (Apex Pro) */
@@ -1790,7 +1790,7 @@ body.apple-mobile-menu-open {
 
 @media (max-width: 768px) {
   .apple-globalnav {
-    top: 8px;
+    top: 12px;
     padding: 0 8px;
   }
   .apple-globalnav-inner {
@@ -1799,7 +1799,7 @@ body.apple-mobile-menu-open {
     max-width: 100%;
   }
   .apple-mobile-drawer {
-    top: 68px;
+    top: 72px;
     left: 8px;
     right: 8px;
     width: calc(100% - 16px);
@@ -1835,7 +1835,7 @@ body.apple-mobile-menu-open {
     text-align: left;
   }
   .apple-hero-unit:first-of-type {
-    padding-top: 66px !important;
+    padding-top: 80px !important;
     padding-bottom: 24px;
     padding-left: 16px;
     padding-right: 16px;
@@ -1897,7 +1897,7 @@ body.apple-mobile-menu-open {
 
 @media (max-width: 480px) {
   .apple-globalnav {
-    top: 6px;
+    top: 10px;
     padding: 0 6px;
   }
   .apple-globalnav-inner {
@@ -1905,13 +1905,13 @@ body.apple-mobile-menu-open {
     padding: 0 6px 0 10px;
   }
   .apple-mobile-drawer {
-    top: 58px;
+    top: 66px;
     left: 6px;
     right: 6px;
     width: calc(100% - 12px);
   }
   .apple-hero-unit:first-of-type {
-    padding-top: 60px !important;
+    padding-top: 74px !important;
     padding-bottom: 20px;
     padding-left: 14px;
     padding-right: 14px;
