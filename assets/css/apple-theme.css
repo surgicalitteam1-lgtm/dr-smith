@@ -74,35 +74,31 @@ body {
 .apple-hero-main-title {
   font-size: clamp(34px, 5.4vw, 72px);
   font-weight: 800;
-  letter-spacing: -0.04em;
-  line-height: 1.12;
+  letter-spacing: -0.035em;
+  line-height: 1.15;
   margin: 0 auto 18px auto;
   max-width: 1080px;
   word-wrap: break-word;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
 }
 
 .hero-gradient-text-bhagwa,
 .hero-gradient-text-1 {
-  background: linear-gradient(135deg, #FFFBEB 0%, #FDE68A 16%, #FF9800 45%, #FF5722 80%, #F43F5E 100%);
+  background: linear-gradient(135deg, #FFA033 0%, #FF6700 50%, #FF3D00 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
-  filter: drop-shadow(0 0 24px rgba(255, 152, 0, 0.42));
 }
 
 .hero-gradient-text-blue,
 .hero-gradient-text-2 {
-  background: linear-gradient(135deg, #FFFFFF 0%, #7DD3FC 18%, #38BDF8 48%, #0284C7 82%, #0071E3 100%);
+  background: linear-gradient(135deg, #38bdf8 0%, #0099ff 50%, #0071e3 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
-  filter: drop-shadow(0 0 24px rgba(56, 189, 248, 0.42));
 }
 
 .apple-subhead-hero {
@@ -740,10 +736,7 @@ body.apple-mobile-menu-open {
 
 /* Flagship Dark Hero (Apex Pro) */
 .apple-hero-dark {
-  background: 
-    radial-gradient(ellipse 700px 360px at 25% 22%, rgba(56, 189, 248, 0.18), transparent 70%),
-    radial-gradient(ellipse 700px 360px at 75% 22%, rgba(255, 120, 0, 0.16), transparent 70%),
-    radial-gradient(circle 900px at 50% 0%, #0d131f 0%, #000000 80%);
+  background: radial-gradient(circle at 50% 30%, #151b28 0%, #000000 70%);
   color: #f5f5f7;
   border-bottom: 12px solid #ffffff;
 }
