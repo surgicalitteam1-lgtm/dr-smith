@@ -554,6 +554,7 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   width: 100%;
   height: 1.5px;
   background: linear-gradient(90deg, transparent 0%, rgba(0, 113, 227, 0.15) 8%, rgba(0, 163, 255, 0.65) 30%, #00A3FF 50%, rgba(0, 163, 255, 0.65) 70%, rgba(0, 113, 227, 0.15) 92%, transparent 100%);
+  margin-top: 16px;
   margin-bottom: 24px;
   opacity: 0.9;
   border-radius: 980px;
