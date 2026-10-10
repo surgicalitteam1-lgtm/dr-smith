@@ -433,7 +433,7 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   transform: translateX(4px);
 }
 
-/* HERO TRUST CHIPS MARQUEE (UNTOUCHABLE, 20% SMALLER, SMOOTH INFINITE AUTO-SCROLL) */
+/* HERO TRUST CHIPS MARQUEE (UNTOUCHABLE, 20% SMALLER, 60/120FPS HARDWARE-ACCELERATED SMOOTH AUTO-SCROLL) */
 .hero-trust-marquee,
 .hero-trust-chips {
   width: 100%;
@@ -445,6 +445,9 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   pointer-events: none !important;
   user-select: none !important;
   -webkit-user-select: none !important;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  contain: paint layout;
   mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 1) 6%, rgba(0, 0, 0, 1) 94%, transparent 100%);
   -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 1) 6%, rgba(0, 0, 0, 1) 94%, transparent 100%);
 }
@@ -455,16 +458,24 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   gap: 8px;
   width: max-content;
   will-change: transform;
-  animation: heroTrustMarqueeScroll 45s linear infinite !important;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
+  animation: heroTrustMarqueeScroll 56s linear infinite !important;
   pointer-events: none !important;
 }
 
 @keyframes heroTrustMarqueeScroll {
   0% {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translate3d(-50%, 0, 0);
+    -webkit-transform: translate3d(-50%, 0, 0);
   }
 }
 
