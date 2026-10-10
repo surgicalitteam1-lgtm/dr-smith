@@ -2425,6 +2425,34 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   .apple-nav-circle-whatsapp i {
     font-size: 22px !important;
   }
+
+  /* Mobile Header Mail Button: hidden at page top; only shown after scrolling past hero Mail button */
+  .apple-nav-circle-mail {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    transform: scale(0.7) !important;
+  }
+  .apple-nav-circle-mail.visible-mobile {
+    display: flex !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    transform: scale(1) !important;
+    animation: appleNavMailIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  @keyframes appleNavMailIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.6);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
   .apple-mobile-drawer {
     top: 96px !important;
     left: 14px !important;

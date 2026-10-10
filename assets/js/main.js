@@ -929,4 +929,62 @@
     initFooterAccordion();
   }
 
+  /**
+   * 17. Mobile Header Mail Button Visibility
+   * On mobile viewports (<= 991px), only displays the header mail button after the
+   * user has scrolled the hero's "Mail Us" button up and out of view.
+   */
+  function initMobileHeaderMailVisibility() {
+    const mailNavBtn = document.querySelector('.apple-nav-circle-mail');
+    if (!mailNavBtn) return;
+
+    let ticking = false;
+
+    function updateMailVisibility() {
+      if (window.innerWidth > 991) {
+        mailNavBtn.classList.remove('visible-mobile');
+        return;
+      }
+
+      const heroMailBtn = document.querySelector('.btn-hero-mail');
+      if (heroMailBtn) {
+        const rect = heroMailBtn.getBoundingClientRect();
+        // 74px accounts for the fixed header height
+        const isPastHero = rect.bottom <= 74;
+        if (isPastHero) {
+          mailNavBtn.classList.add('visible-mobile');
+        } else {
+          mailNavBtn.classList.remove('visible-mobile');
+        }
+      } else {
+        // Fallback for pages without hero mail button: show after scrolling 250px
+        if (window.scrollY > 250) {
+          mailNavBtn.classList.add('visible-mobile');
+        } else {
+          mailNavBtn.classList.remove('visible-mobile');
+        }
+      }
+    }
+
+    function onScroll() {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          updateMailVisibility();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', updateMailVisibility, { passive: true });
+    updateMailVisibility();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initMobileHeaderMailVisibility);
+  } else {
+    initMobileHeaderMailVisibility();
+  }
+
 })();

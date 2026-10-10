@@ -1266,8 +1266,8 @@
       }
     }
 
-    // Header scroll background transition
-    window.addEventListener('scroll', function() {
+    // Header scroll background transition & Mobile Mail button visibility
+    function checkHeaderScroll() {
       const nav = document.querySelector('.apple-globalnav');
       if (nav) {
         if (window.scrollY > 30) {
@@ -1276,10 +1276,29 @@
           nav.classList.remove('nav-scrolled');
         }
       }
-    }, { passive: true });
+
+      const mailNavBtn = document.querySelector('.apple-nav-circle-mail');
+      if (mailNavBtn && window.innerWidth <= 991) {
+        const heroMailBtn = document.querySelector('.btn-hero-mail');
+        if (heroMailBtn) {
+          const rect = heroMailBtn.getBoundingClientRect();
+          if (rect.bottom <= 74) {
+            mailNavBtn.classList.add('visible-mobile');
+          } else {
+            mailNavBtn.classList.remove('visible-mobile');
+          }
+        }
+      } else if (mailNavBtn && window.innerWidth > 991) {
+        mailNavBtn.classList.remove('visible-mobile');
+      }
+    }
+
+    window.addEventListener('scroll', checkHeaderScroll, { passive: true });
+    window.addEventListener('resize', checkHeaderScroll, { passive: true });
+    checkHeaderScroll();
   </script>
 
-  <script src="assets/js/main.js?v=88.0"></script>
+  <script src="assets/js/main.js?v=89.0"></script>
 
   <script src="assets/js/global-search.js?v=40.0"></script>
 </body>
