@@ -373,9 +373,9 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('../img/infrastructure/hero-hospital-clean-bg.jpg?v=6.0') no-repeat right center;
+  background: url('../img/infrastructure/hero-hospital-clean-bg.jpg?v=7.0') no-repeat right center;
   background-size: cover;
-  opacity: 0.9;
+  opacity: 1;
   z-index: 1;
 }
 
@@ -386,8 +386,8 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(90deg, #030712 0%, rgba(3, 7, 18, 0.96) 38%, rgba(3, 7, 18, 0.75) 55%, rgba(3, 7, 18, 0.2) 80%, rgba(3, 7, 18, 0.85) 100%),
-              linear-gradient(180deg, rgba(3, 7, 18, 0.7) 0%, transparent 20%, transparent 80%, #030712 100%);
+  background: linear-gradient(90deg, rgba(3, 7, 18, 0.92) 0%, rgba(3, 7, 18, 0.82) 35%, rgba(3, 7, 18, 0.4) 55%, rgba(3, 7, 18, 0.08) 75%, rgba(3, 7, 18, 0.25) 100%),
+              linear-gradient(180deg, rgba(3, 7, 18, 0.45) 0%, transparent 20%, transparent 80%, rgba(3, 7, 18, 0.75) 100%);
   z-index: 2;
   pointer-events: none;
 }
@@ -1824,7 +1824,7 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
     padding-bottom: 40px !important;
   }
   .hero-split-section::after {
-    background: linear-gradient(180deg, rgba(3, 7, 18, 0.94) 0%, rgba(3, 7, 18, 0.88) 60%, rgba(3, 7, 18, 0.98) 100%) !important;
+    background: linear-gradient(180deg, rgba(3, 7, 18, 0.82) 0%, rgba(3, 7, 18, 0.65) 50%, rgba(3, 7, 18, 0.88) 100%) !important;
   }
   .subpage-hero-section,
   .catalogue-hero {
