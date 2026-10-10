@@ -357,7 +357,7 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
 .hero-split-section {
   position: relative;
   padding-top: 130px;
-  padding-bottom: 80px;
+  padding-bottom: 24px;
   background: #030712;
   border-bottom: none !important;
   overflow: hidden;
@@ -543,7 +543,7 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
 
 /* 3. FEATURED MEDICAL EQUIPMENT */
 .featured-products-section {
-  padding: 70px 0;
+  padding: 20px 0 60px 0;
   background: #030712;
   border-bottom: none !important;
 }
