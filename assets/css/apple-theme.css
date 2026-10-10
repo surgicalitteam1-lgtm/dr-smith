@@ -384,14 +384,9 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
 .hero-final-desc {
   font-size: 15px;
   line-height: 1.6;
-  background: linear-gradient(315deg, #241375 0%, #16abdd 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent !important;
+  color: #94A3B8;
   max-width: 540px;
   margin-bottom: 26px;
-  font-weight: 500;
 }
 
 .btn-hero-primary {
