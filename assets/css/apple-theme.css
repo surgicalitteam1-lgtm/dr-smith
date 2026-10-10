@@ -1548,12 +1548,10 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   border-radius: 16px;
   overflow: hidden;
   height: 200px;
-  background: radial-gradient(circle at 50% 50%, rgba(0, 163, 255, 0.08) 0%, rgba(11, 19, 43, 0.95) 100%);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #0B132B;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 
 .apple-promo-media img {
@@ -1563,14 +1561,8 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   transition: transform 0.4s ease;
 }
 
-.apple-promo-media img[src*=".png"] {
-  object-fit: contain !important;
-  padding: 12px !important;
-  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.6));
-}
-
 .apple-promo-card:hover .apple-promo-media img {
-  transform: scale(1.05);
+  transform: scale(1.04);
 }
 
 /* 2. Certifications Marquee Track */
