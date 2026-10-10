@@ -1778,23 +1778,39 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
     background: linear-gradient(135deg, #0071E3 0%, #00A3FF 100%) !important;
     color: #ffffff !important;
     border: none !important;
+    box-shadow: 0 4px 16px rgba(0, 113, 227, 0.4) !important;
+  }
+  .btn-hero-primary:hover,
+  .btn-hero-primary:active {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 22px rgba(0, 163, 255, 0.5) !important;
+    color: #ffffff !important;
   }
   .btn-hero-mail {
-    background: rgba(0, 163, 255, 0.12) !important;
-    border: 1px solid rgba(0, 163, 255, 0.45) !important;
+    background: linear-gradient(135deg, rgba(0, 163, 255, 0.16) 0%, rgba(15, 23, 42, 0.75) 100%) !important;
+    border: 1.5px solid rgba(0, 163, 255, 0.55) !important;
     color: #ffffff !important;
+    backdrop-filter: blur(14px) !important;
+    -webkit-backdrop-filter: blur(14px) !important;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 4px 16px rgba(0, 0, 0, 0.45) !important;
   }
   .btn-hero-mail i {
     color: #00A3FF;
     font-size: 15px !important;
+    transition: transform 0.25s ease;
   }
-  .btn-hero-mail:hover {
-    background: #00A3FF !important;
+  .btn-hero-mail:hover,
+  .btn-hero-mail:active {
+    background: linear-gradient(135deg, #0071E3 0%, #00A3FF 100%) !important;
     border-color: #00A3FF !important;
     color: #ffffff !important;
+    box-shadow: 0 6px 22px rgba(0, 163, 255, 0.45) !important;
+    transform: translateY(-2px);
   }
-  .btn-hero-mail:hover i {
+  .btn-hero-mail:hover i,
+  .btn-hero-mail:active i {
     color: #ffffff !important;
+    transform: scale(1.12);
   }
 }
 
