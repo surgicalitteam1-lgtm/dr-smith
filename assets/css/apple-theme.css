@@ -433,42 +433,63 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   transform: translateX(4px);
 }
 
+/* HERO TRUST CHIPS MARQUEE (UNTOUCHABLE, 20% SMALLER, SMOOTH INFINITE AUTO-SCROLL) */
+.hero-trust-marquee,
 .hero-trust-chips {
+  width: 100%;
+  max-width: 560px;
+  overflow: hidden !important;
+  position: relative;
+  margin-top: 20px;
+  padding: 4px 0;
+  pointer-events: none !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 1) 6%, rgba(0, 0, 0, 1) 94%, transparent 100%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 1) 6%, rgba(0, 0, 0, 1) 94%, transparent 100%);
+}
+
+.hero-trust-track {
   display: flex;
   align-items: center;
   gap: 8px;
-  flex-wrap: nowrap !important;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  margin-top: 20px;
-  padding-bottom: 2px;
+  width: max-content;
+  will-change: transform;
+  animation: heroTrustMarqueeScroll 28s linear infinite !important;
+  pointer-events: none !important;
 }
 
-.hero-trust-chips::-webkit-scrollbar {
-  display: none;
+@keyframes heroTrustMarqueeScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .hero-trust-chip {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  font-size: 11.5px;
+  gap: 5px;
+  font-size: 9.5px !important;
   font-weight: 500;
   color: #CBD5E1;
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(0, 163, 255, 0.22);
-  padding: 5px 12px;
+  padding: 3.5px 10px !important;
   border-radius: 980px;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(8px);
   white-space: nowrap !important;
   flex-shrink: 0;
+  pointer-events: none !important;
+  user-select: none !important;
+  line-height: 1.2;
 }
 
 .hero-trust-chip i {
   color: #00A3FF;
-  font-size: 12.5px;
+  font-size: 10.5px !important;
 }
 
 .hero-img-frame {
@@ -1115,16 +1136,18 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   .hero-final-title {
     font-size: 24px;
   }
+  .hero-trust-marquee,
   .hero-trust-chips {
-    gap: 6px !important;
-    margin-top: 14px !important;
-    flex-wrap: nowrap !important;
+    margin-top: 12px !important;
+    max-width: 100% !important;
   }
   .hero-trust-chip {
-    font-size: 10.5px !important;
-    padding: 4px 10px !important;
-    gap: 5px !important;
-    flex-shrink: 0 !important;
+    font-size: 8.5px !important;
+    padding: 3px 8px !important;
+    gap: 4px !important;
+  }
+  .hero-trust-chip i {
+    font-size: 9.5px !important;
   }
 }
 
