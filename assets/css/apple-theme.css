@@ -10,9 +10,77 @@
   --apple-cyan-glow: rgba(0, 163, 255, 0.4);
   --apple-blue: #0071e3;
   --apple-text-primary: #ffffff;
-  --apple-text-secondary: #94A3B8;
-  --apple-text-muted: #64748B;
+  --apple-text-secondary: #CBD5E1;
+  --apple-text-muted: #94A3B8;
   --apple-border-glass: rgba(0, 163, 255, 0.2);
+}
+
+/* HIGH-CONTRAST GLOBAL TEXT & UTILITY OVERRIDES (ACCESSIBILITY & READABILITY) */
+.text-muted,
+p.text-muted,
+span.text-muted,
+small.text-muted,
+div.text-muted {
+  color: #CBD5E1 !important;
+}
+
+.text-secondary,
+p.text-secondary,
+span.text-secondary,
+small.text-secondary {
+  color: #94A3B8 !important;
+}
+
+.text-primary,
+p.text-primary,
+span.text-primary,
+i.text-primary {
+  color: #00A3FF !important;
+}
+
+a.text-primary:hover,
+a.text-primary:focus {
+  color: #38BDF8 !important;
+}
+
+a.text-muted:hover,
+a.text-muted:focus {
+  color: #00A3FF !important;
+}
+
+/* HIGH-CONTRAST FORM INPUT PLACEHOLDERS (DARK THEME) */
+::placeholder,
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder {
+  color: #94A3B8 !important;
+  opacity: 1 !important;
+}
+
+input::placeholder,
+textarea::placeholder,
+.form-control::placeholder,
+.contact-dark-form input::placeholder,
+.contact-dark-form textarea::placeholder,
+.apple-drawer-form input::placeholder,
+.apple-drawer-form textarea::placeholder {
+  color: #94A3B8 !important;
+  opacity: 1 !important;
+}
+
+/* HIGH-CONTRAST NATIVE DROPDOWN SELECT & OPTION STYLING */
+select option,
+.form-select option,
+.contact-dark-form select option,
+.apple-drawer-form select option {
+  background-color: #0b1329 !important;
+  color: #ffffff !important;
+  padding: 10px 14px !important;
+}
+
+select option:disabled,
+.form-select option:disabled {
+  color: #94A3B8 !important;
 }
 
 /* GLOBAL TEXT SELECTION & HIGHLIGHTING (ORIGINAL DEEP BLUE HIGHLIGHT, LIGHT BLUE TEXT) */
@@ -799,10 +867,11 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   line-height: 1.2;
 }
 
-.why-section-subhead {
+.why-section-subhead,
+.section-dark-subhead {
   font-family: var(--apple-font) !important;
-  font-size: 15px;
-  color: #94A3B8;
+  font-size: 15.5px;
+  color: #CBD5E1 !important;
   letter-spacing: normal;
   max-width: 680px;
   margin-top: 8px;
@@ -1003,7 +1072,7 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
 .about-lead-text {
   font-size: 14px;
   line-height: 1.6;
-  color: #94A3B8;
+  color: #CBD5E1 !important;
   margin-bottom: 22px;
 }
 
@@ -1051,6 +1120,11 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   transform: translateX(4px);
 }
 
+.stat-badge-box p {
+  color: #CBD5E1 !important;
+  line-height: 1.55;
+}
+
 .stat-icon-circle {
   width: 44px;
   height: 44px;
@@ -1076,7 +1150,7 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
 .stat-label {
   font-size: 13px;
   font-weight: 500;
-  color: #94A3B8;
+  color: #CBD5E1;
 }
 
 /* 6. BOTTOM CTA BANNER */
@@ -1201,30 +1275,32 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
 }
 
 .apple-drawer-form label {
-  font-size: 12px;
-  font-weight: 500;
-  color: #94A3B8;
-  margin-bottom: 4px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #CBD5E1 !important;
+  margin-bottom: 5px;
   display: block;
 }
 
 .apple-drawer-form input,
+.apple-drawer-form select,
 .apple-drawer-form textarea {
   width: 100%;
   padding: 10px 14px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 10px;
   font-size: 13.5px;
-  color: #ffffff;
+  color: #ffffff !important;
   outline: none;
-  transition: border-color 0.2s ease;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .apple-drawer-form input:focus,
+.apple-drawer-form select:focus,
 .apple-drawer-form textarea:focus {
   border-color: #00A3FF;
-  box-shadow: none;
+  box-shadow: 0 0 10px rgba(0, 163, 255, 0.3);
 }
 
 .apple-btn-pill {
@@ -1670,9 +1746,9 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
 }
 
 .apple-team-bio {
-  font-size: 12.5px;
-  line-height: 1.5;
-  color: #94A3B8;
+  font-size: 13px;
+  line-height: 1.55;
+  color: #CBD5E1 !important;
   margin: 0;
 }
 
@@ -1743,9 +1819,9 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
 }
 
 .apple-faq-answer p {
-  color: #94A3B8;
-  font-size: 14px;
-  line-height: 1.6;
+  color: #CBD5E1 !important;
+  font-size: 14.5px;
+  line-height: 1.65;
   margin: 0;
 }
 
@@ -1848,8 +1924,8 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   list-style-type: decimal;
   padding-left: 20px;
   margin: 0;
-  color: #64748B;
-  font-size: 11.5px;
+  color: #CBD5E1 !important;
+  font-size: 12px;
   line-height: 1.6;
 }
 
@@ -2005,8 +2081,8 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 14px;
-  font-size: 12px;
-  color: #64748B;
+  font-size: 12.5px;
+  color: #94A3B8;
 }
 
 .apple-footer-legal-links {
@@ -2017,25 +2093,25 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
 }
 
 .apple-footer-legal-links a {
-  color: #64748B;
+  color: #CBD5E1;
   text-decoration: none;
   font-size: 12px;
   transition: color 0.2s ease;
 }
 
 .apple-footer-legal-links a:hover {
-  color: #94A3B8;
+  color: #00A3FF;
 }
 
 .legal-dot {
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.3);
   font-size: 10px;
   user-select: none;
 }
 
 .apple-footer-copyright {
-  font-size: 11.5px;
-  color: #64748B;
+  font-size: 12px;
+  color: #CBD5E1;
   line-height: 1.5;
 }
 
@@ -2705,8 +2781,8 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
 }
 
 .contact-info-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
   border-radius: 20px;
   padding: 28px;
   margin-bottom: 20px;
@@ -2714,40 +2790,67 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
 }
 
 .contact-info-card:hover {
-  border-color: rgba(0, 163, 255, 0.3);
-  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(0, 163, 255, 0.4) !important;
+  background: rgba(255, 255, 255, 0.06) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 163, 255, 0.15);
+}
+
+.contact-info-card h4 {
+  color: #ffffff !important;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.contact-info-card p {
+  color: #CBD5E1 !important;
+  font-size: 13.5px !important;
+  line-height: 1.6;
+}
+
+.contact-info-card p strong {
+  color: #00A3FF !important;
+  font-weight: 700;
+}
+
+.contact-info-card i {
+  color: #00A3FF !important;
 }
 
 .contact-dark-form {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
   border-radius: 24px;
   padding: 40px;
+}
+
+.contact-dark-form p,
+.contact-dark-form .text-muted {
+  color: #CBD5E1 !important;
 }
 
 .contact-dark-form .form-label {
   font-size: 13px;
   font-weight: 600;
-  color: #CBD5E1;
+  color: #E2E8F0 !important;
   margin-bottom: 6px;
 }
 
 .contact-dark-form .form-control,
 .contact-dark-form .form-select {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.16) !important;
   border-radius: 12px;
   padding: 12px 16px;
-  color: #ffffff;
+  color: #ffffff !important;
   font-size: 14px;
 }
 
 .contact-dark-form .form-control:focus,
 .contact-dark-form .form-select:focus {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: #00A3FF;
-  box-shadow: 0 0 12px rgba(0, 163, 255, 0.3);
-  color: #ffffff;
+  background: rgba(255, 255, 255, 0.09) !important;
+  border-color: #00A3FF !important;
+  box-shadow: 0 0 14px rgba(0, 163, 255, 0.35) !important;
+  color: #ffffff !important;
 }
 
 /* Catalogue Dark Grid & Cards */
