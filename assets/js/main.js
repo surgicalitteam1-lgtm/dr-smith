@@ -987,4 +987,61 @@
     initMobileHeaderMailVisibility();
   }
 
+  /**
+   * 18. Global Apple Mobile Drawer Menu
+   * Handles opening/closing, background backdrop dismissal, and body scroll lock.
+   */
+  function initAppleMobileMenu() {
+    if (window._appleMobileMenuBound) return;
+    window._appleMobileMenuBound = true;
+
+    const btn = document.getElementById('apple-mobile-menu-btn');
+    const backdrop = document.getElementById('appleMobileBackdrop');
+    const closeBtn = document.getElementById('appleMobileDrawerClose');
+
+    function toggleMenu(forceClose) {
+      const shouldOpen = forceClose ? false : !document.body.classList.contains('apple-mobile-menu-open');
+      document.body.classList.toggle('apple-mobile-menu-open', shouldOpen);
+      document.body.style.overflow = shouldOpen ? 'hidden' : '';
+
+      if (btn) {
+        const icon = btn.querySelector('i');
+        if (icon) {
+          icon.className = shouldOpen ? 'bi bi-x-lg' : 'bi bi-list';
+        }
+      }
+    }
+
+    if (btn) {
+      btn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        toggleMenu();
+      });
+    }
+
+    if (backdrop) {
+      backdrop.addEventListener('click', function() {
+        toggleMenu(true);
+      });
+    }
+
+    if (closeBtn) {
+      closeBtn.addEventListener('click', function() {
+        toggleMenu(true);
+      });
+    }
+
+    document.querySelectorAll('.apple-mobile-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        toggleMenu(true);
+      });
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAppleMobileMenu);
+  } else {
+    initAppleMobileMenu();
+  }
+
 })();

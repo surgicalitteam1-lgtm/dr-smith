@@ -26,7 +26,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   
-  <link href="assets/css/apple-theme.css?v=91.0" rel="stylesheet">
+  <link href="assets/css/apple-theme.css?v=92.0" rel="stylesheet">
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 </head>
@@ -90,27 +90,90 @@
     </div>
   </nav>
 
+  <!-- Mobile Menu Drawer Backdrop Overlay -->
+  <div class="apple-mobile-backdrop" id="appleMobileBackdrop"></div>
+
   <!-- Mobile Menu Drawer Overlay -->
   <div class="apple-mobile-drawer" id="apple-mobile-drawer">
+    <div class="apple-mobile-drawer-header">
+      <span class="apple-mobile-drawer-tag"><i class="bi bi-hospital"></i> Dr. Smith Quick Menu</span>
+      <button type="button" class="apple-mobile-drawer-close" id="appleMobileDrawerClose" aria-label="Close Navigation Menu">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
     <ul class="apple-mobile-links">
-      <li><a href="index.html">Home <i class="bi bi-chevron-right small text-secondary"></i></a></li>
-      <li><a href="catalogue/index.html">Products Catalogue <i class="bi bi-chevron-right small text-secondary"></i></a></li>
-      <li><a href="turnkey-projects/index.html">Turnkey Hospital Setup <i class="bi bi-chevron-right small text-secondary"></i></a></li>
-      <li><a href="catalogue/modular-ot/index.html">Modular Operation Theatres <i class="bi bi-chevron-right small text-secondary"></i></a></li>
-      <li><a href="about-us/index.html">About Dr. Smith <i class="bi bi-chevron-right small text-secondary"></i></a></li>
-      <li><a href="contact-form/index.html">Global Offices &amp; Contact <i class="bi bi-chevron-right small text-secondary"></i></a></li>
+      <li>
+        <a href="index.html" class="active">
+          <span class="apple-mobile-link-left">
+            <span class="apple-mobile-icon-box"><i class="bi bi-house-door-fill"></i></span>
+            <span class="apple-mobile-link-text">Home</span>
+          </span>
+          <i class="bi bi-chevron-right apple-mobile-chevron"></i>
+        </a>
+      </li>
+      <li>
+        <a href="catalogue/index.html">
+          <span class="apple-mobile-link-left">
+            <span class="apple-mobile-icon-box"><i class="bi bi-grid-fill"></i></span>
+            <span class="apple-mobile-link-text">Products Catalogue</span>
+          </span>
+          <i class="bi bi-chevron-right apple-mobile-chevron"></i>
+        </a>
+      </li>
+      <li>
+        <a href="turnkey-projects/index.html">
+          <span class="apple-mobile-link-left">
+            <span class="apple-mobile-icon-box"><i class="bi bi-hospital-fill"></i></span>
+            <span class="apple-mobile-link-text">Turnkey Hospital Setup</span>
+          </span>
+          <i class="bi bi-chevron-right apple-mobile-chevron"></i>
+        </a>
+      </li>
+      <li>
+        <a href="catalogue/modular-ot/index.html">
+          <span class="apple-mobile-link-left">
+            <span class="apple-mobile-icon-box"><i class="bi bi-activity"></i></span>
+            <span class="apple-mobile-link-text">Modular Operation Theatres</span>
+          </span>
+          <i class="bi bi-chevron-right apple-mobile-chevron"></i>
+        </a>
+      </li>
+      <li>
+        <a href="about-us/index.html">
+          <span class="apple-mobile-link-left">
+            <span class="apple-mobile-icon-box"><i class="bi bi-shield-check"></i></span>
+            <span class="apple-mobile-link-text">About Dr. Smith</span>
+          </span>
+          <i class="bi bi-chevron-right apple-mobile-chevron"></i>
+        </a>
+      </li>
+      <li>
+        <a href="contact-form/index.html">
+          <span class="apple-mobile-link-left">
+            <span class="apple-mobile-icon-box"><i class="bi bi-envelope-fill"></i></span>
+            <span class="apple-mobile-link-text">Global Offices &amp; Contact</span>
+          </span>
+          <i class="bi bi-chevron-right apple-mobile-chevron"></i>
+        </a>
+      </li>
     </ul>
     
     <div class="apple-mobile-cta-box">
-      <button type="button" class="apple-btn-pill w-100 py-3" onclick="openAppleDrawer('Turnkey Consultation');">
-        <i class="bi bi-building me-2"></i> Request Project Consultation
+      <button type="button" class="apple-mobile-btn-consultation" onclick="openAppleDrawer('Turnkey Consultation');">
+        <i class="bi bi-building-check me-2"></i> Request Project Consultation <i class="bi bi-arrow-right ms-auto"></i>
       </button>
-      <a href="tel:18008917466" class="btn btn-outline-light rounded-pill py-2 w-100 text-center">
-        <i class="bi bi-telephone-fill me-2 text-primary"></i> Call Toll-Free: 1800 891 7466
-      </a>
-      <a href="https://wa.me/919999999999" class="btn btn-success rounded-pill py-2 w-100 text-center" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-whatsapp me-2"></i> WhatsApp Consultation Desk
-      </a>
+
+      <div class="apple-mobile-contact-grid">
+        <a href="tel:18008917466" class="apple-mobile-contact-pill apple-mobile-pill-tel">
+          <i class="bi bi-telephone-fill"></i>
+          <span>1800 891 7466<small>National Toll-Free</small></span>
+        </a>
+        <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." target="_blank" rel="noopener noreferrer" class="apple-mobile-contact-pill apple-mobile-pill-wa">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>WhatsApp Desk<small>24/7 Fast Inquiry</small></span>
+        </a>
+      </div>
     </div>
   </div>
 
@@ -1229,30 +1292,57 @@
       closeAppleDrawer();
     }
 
-    // Mobile Menu Drawer
+    // Mobile Menu Drawer Toggle, Backdrop & Close
     const mobileMenuBtn = document.getElementById('apple-mobile-menu-btn');
-    if (mobileMenuBtn) {
-      mobileMenuBtn.addEventListener('click', function() {
-        document.body.classList.toggle('apple-mobile-menu-open');
+    const mobileBackdrop = document.getElementById('appleMobileBackdrop');
+    const mobileDrawerClose = document.getElementById('appleMobileDrawerClose');
+
+    function toggleMobileDrawer(open) {
+      const isOpen = typeof open === 'boolean' ? open : !document.body.classList.contains('apple-mobile-menu-open');
+      if (isOpen) {
+        document.body.classList.add('apple-mobile-menu-open');
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.classList.remove('apple-mobile-menu-open');
+        document.body.style.overflow = '';
+      }
+
+      if (mobileMenuBtn) {
         const icon = mobileMenuBtn.querySelector('i');
-        if (document.body.classList.contains('apple-mobile-menu-open')) {
-          icon.classList.remove('bi-list');
-          icon.classList.add('bi-x-lg');
-        } else {
-          icon.classList.remove('bi-x-lg');
-          icon.classList.add('bi-list');
+        if (icon) {
+          if (isOpen) {
+            icon.classList.remove('bi-list');
+            icon.classList.add('bi-x-lg');
+          } else {
+            icon.classList.remove('bi-x-lg');
+            icon.classList.add('bi-list');
+          }
         }
+      }
+    }
+
+    if (mobileMenuBtn) {
+      mobileMenuBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        toggleMobileDrawer();
+      });
+    }
+
+    if (mobileBackdrop) {
+      mobileBackdrop.addEventListener('click', function() {
+        toggleMobileDrawer(false);
+      });
+    }
+
+    if (mobileDrawerClose) {
+      mobileDrawerClose.addEventListener('click', function() {
+        toggleMobileDrawer(false);
       });
     }
 
     document.querySelectorAll('.apple-mobile-links a').forEach(link => {
       link.addEventListener('click', () => {
-        document.body.classList.remove('apple-mobile-menu-open');
-        const icon = mobileMenuBtn ? mobileMenuBtn.querySelector('i') : null;
-        if (icon) {
-          icon.classList.remove('bi-x-lg');
-          icon.classList.add('bi-list');
-        }
+        toggleMobileDrawer(false);
       });
     });
 
@@ -1298,7 +1388,7 @@
     checkHeaderScroll();
   </script>
 
-  <script src="assets/js/main.js?v=89.0"></script>
+  <script src="assets/js/main.js?v=90.0"></script>
 
   <script src="assets/js/global-search.js?v=40.0"></script>
 </body>
