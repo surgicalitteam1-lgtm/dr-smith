@@ -360,12 +360,26 @@ img, svg, video, iframe {
   z-index: 9995;
   opacity: 0;
   visibility: hidden;
+  pointer-events: none !important;
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 body.apple-mobile-menu-open .apple-mobile-backdrop {
   opacity: 1;
   visibility: visible;
+  pointer-events: auto !important;
+}
+
+#apple-mobile-menu-btn {
+  position: relative !important;
+  z-index: 10000 !important;
+  cursor: pointer !important;
+  pointer-events: auto !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+#apple-mobile-menu-btn i {
+  pointer-events: none !important;
 }
 
 .apple-mobile-drawer {

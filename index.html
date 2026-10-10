@@ -26,7 +26,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   
-  <link href="assets/css/apple-theme.css?v=92.0" rel="stylesheet">
+  <link href="assets/css/apple-theme.css?v=93.0" rel="stylesheet">
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 </head>
@@ -1322,28 +1322,33 @@
     }
 
     if (mobileMenuBtn) {
-      mobileMenuBtn.addEventListener('click', function(e) {
-        e.stopPropagation();
+      mobileMenuBtn.onclick = function(e) {
+        if (e) {
+          e.preventDefault();
+          e.stopPropagation();
+        }
         toggleMobileDrawer();
-      });
+      };
     }
 
     if (mobileBackdrop) {
-      mobileBackdrop.addEventListener('click', function() {
+      mobileBackdrop.onclick = function(e) {
+        if (e) e.preventDefault();
         toggleMobileDrawer(false);
-      });
+      };
     }
 
     if (mobileDrawerClose) {
-      mobileDrawerClose.addEventListener('click', function() {
+      mobileDrawerClose.onclick = function(e) {
+        if (e) e.preventDefault();
         toggleMobileDrawer(false);
-      });
+      };
     }
 
     document.querySelectorAll('.apple-mobile-links a').forEach(link => {
-      link.addEventListener('click', () => {
+      link.onclick = function() {
         toggleMobileDrawer(false);
-      });
+      };
     });
 
     // FAQ Accordion Toggle
@@ -1388,7 +1393,7 @@
     checkHeaderScroll();
   </script>
 
-  <script src="assets/js/main.js?v=90.0"></script>
+  <script src="assets/js/main.js?v=91.0"></script>
 
   <script src="assets/js/global-search.js?v=40.0"></script>
 </body>
