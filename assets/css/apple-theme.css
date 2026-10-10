@@ -243,7 +243,8 @@ img, svg, video, iframe {
 }
 
 .apple-nav-circle-catalogue,
-.apple-nav-circle-call {
+.apple-nav-circle-call,
+.apple-nav-circle-mail {
   background: rgba(0, 163, 255, 0.12) !important;
   border-color: rgba(0, 163, 255, 0.35) !important;
   color: #00A3FF !important;
@@ -251,12 +252,17 @@ img, svg, video, iframe {
 }
 
 .apple-nav-circle-catalogue:hover,
-.apple-nav-circle-call:hover {
+.apple-nav-circle-call:hover,
+.apple-nav-circle-mail:hover {
   background: #00A3FF !important;
   border-color: #00A3FF !important;
   color: #ffffff !important;
   box-shadow: 0 0 16px rgba(0, 163, 255, 0.5);
   transform: scale(1.05);
+}
+
+.apple-nav-circle-mail i {
+  font-size: 16px;
 }
 
 .apple-nav-circle-whatsapp {
