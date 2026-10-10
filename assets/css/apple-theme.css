@@ -455,7 +455,7 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   gap: 8px;
   width: max-content;
   will-change: transform;
-  animation: heroTrustMarqueeScroll 28s linear infinite !important;
+  animation: heroTrustMarqueeScroll 45s linear infinite !important;
   pointer-events: none !important;
 }
 
