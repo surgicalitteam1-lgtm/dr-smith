@@ -49,8 +49,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Apple Text Selection */
 ::selection, *::selection, body *::selection {
-  background: rgba(0, 113, 227, 0.22) !important;
-  color: #1d1d1f !important;
+  background: rgba(0, 113, 227, 0.45) !important;
+  color: #7DD3FC !important;
 }
 
 /* Apple Navbar */
@@ -490,18 +490,16 @@ h1, h2, h3, h4, h5, h6 {
 ::selection,
 *::selection,
 body *::selection {
-  background: rgba(0, 113, 227, 0.25) !important; background-color: rgba(0, 113, 227, 0.25) !important;
-  background: #0071e3 !important;
-  color: #ffffff !important;
+  background: rgba(0, 113, 227, 0.45) !important;
+  color: #7DD3FC !important;
   text-shadow: none !important;
 }
 
 ::-moz-selection,
 *::-moz-selection,
 body *::-moz-selection {
-  background: rgba(0, 113, 227, 0.25) !important; background-color: rgba(0, 113, 227, 0.25) !important;
-  background: #0071e3 !important;
-  color: #ffffff !important;
+  background: rgba(0, 113, 227, 0.45) !important;
+  color: #7DD3FC !important;
   text-shadow: none !important;
 }
 
