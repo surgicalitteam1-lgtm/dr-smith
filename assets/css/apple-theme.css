@@ -353,48 +353,14 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   padding-left: 10px !important;
 }
 
-/* 2. HERO SECTION - FULL-BLEED HOSPITAL BACKGROUND & SEAMLESS DARK GRADIENT OVERLAY */
+/* 2. HERO SECTION - SEAMLESS SLOW GRADUAL SHADING */
 .hero-split-section {
   position: relative;
   padding-top: 130px;
   padding-bottom: 80px;
-  background-color: #030712;
+  background: #030712;
   border-bottom: none !important;
   overflow: hidden;
-  min-height: 600px;
-  display: flex;
-  align-items: center;
-}
-
-.hero-split-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('../img/infrastructure/hero-hospital-clean-bg.jpg?v=7.0') no-repeat right center;
-  background-size: cover;
-  opacity: 1;
-  z-index: 1;
-}
-
-.hero-split-section::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(90deg, rgba(3, 7, 18, 0.92) 0%, rgba(3, 7, 18, 0.82) 35%, rgba(3, 7, 18, 0.4) 55%, rgba(3, 7, 18, 0.08) 75%, rgba(3, 7, 18, 0.25) 100%),
-              linear-gradient(180deg, rgba(3, 7, 18, 0.45) 0%, transparent 20%, transparent 80%, rgba(3, 7, 18, 0.75) 100%);
-  z-index: 2;
-  pointer-events: none;
-}
-
-.hero-split-container {
-  position: relative;
-  z-index: 3;
 }
 
 .hero-pill-badge {
@@ -1822,9 +1788,6 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   .hero-split-section {
     padding-top: 100px !important;
     padding-bottom: 40px !important;
-  }
-  .hero-split-section::after {
-    background: linear-gradient(180deg, rgba(3, 7, 18, 0.82) 0%, rgba(3, 7, 18, 0.65) 50%, rgba(3, 7, 18, 0.88) 100%) !important;
   }
   .subpage-hero-section,
   .catalogue-hero {
