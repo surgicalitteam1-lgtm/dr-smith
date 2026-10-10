@@ -769,7 +769,7 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
 
 /* 4. WHY CHOOSE US */
 .why-choose-section {
-  padding: 60px 0 70px 0;
+  padding: 40px 0 20px 0;
   background: #030712;
   border-bottom: none !important;
 }
@@ -929,7 +929,7 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
 
 /* 5. ABOUT US */
 .about-overview-section {
-  padding: 70px 0;
+  padding: 16px 0 50px 0;
   background: #030712;
   border-bottom: none !important;
 }
