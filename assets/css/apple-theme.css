@@ -15,22 +15,22 @@
   --apple-border-glass: rgba(0, 163, 255, 0.2);
 }
 
-/* GLOBAL TEXT SELECTION & HIGHLIGHTING (LIGHT BLUE TEXT) */
+/* GLOBAL TEXT SELECTION & HIGHLIGHTING (ORIGINAL DEEP BLUE HIGHLIGHT, LIGHT BLUE TEXT) */
 ::selection,
 *::selection,
 body *::selection {
-  background: rgba(0, 113, 227, 0.45) !important;
-  background-color: rgba(0, 113, 227, 0.45) !important;
-  color: #7DD3FC !important; /* Light Blue */
+  background: #0071E3 !important;
+  background-color: #0071E3 !important;
+  color: #BAE6FD !important; /* Light Blue Text */
   text-shadow: none !important;
 }
 
 ::-moz-selection,
 *::-moz-selection,
 body *::-moz-selection {
-  background: rgba(0, 113, 227, 0.45) !important;
-  background-color: rgba(0, 113, 227, 0.45) !important;
-  color: #7DD3FC !important; /* Light Blue */
+  background: #0071E3 !important;
+  background-color: #0071E3 !important;
+  color: #BAE6FD !important; /* Light Blue Text */
   text-shadow: none !important;
 }
 

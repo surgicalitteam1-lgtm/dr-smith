@@ -7,10 +7,10 @@ for root, dirs, files in os.walk('.'):
             p = os.path.join(root, f)
             with open(p, 'r', encoding='utf-8') as fp:
                 content = fp.read()
-            new_content = re.sub(r'apple-theme\.css\?v=[0-9\.]+', 'apple-theme.css?v=67.0', content)
+            new_content = re.sub(r'apple-theme\.css\?v=[0-9\.]+', 'apple-theme.css?v=68.0', content)
             if new_content != content:
                 with open(p, 'w', encoding='utf-8') as fp:
                     fp.write(new_content)
                 count += 1
 
-print(f'Updated {count} HTML files to v=67.0')
+print(f'Updated {count} HTML files to v=68.0')

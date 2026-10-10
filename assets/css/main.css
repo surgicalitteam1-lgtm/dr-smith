@@ -49,8 +49,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Apple Text Selection */
 ::selection, *::selection, body *::selection {
-  background: rgba(0, 113, 227, 0.45) !important;
-  color: #7DD3FC !important;
+  background: #0071E3 !important;
+  color: #BAE6FD !important;
 }
 
 /* Apple Navbar */
@@ -490,16 +490,16 @@ h1, h2, h3, h4, h5, h6 {
 ::selection,
 *::selection,
 body *::selection {
-  background: rgba(0, 113, 227, 0.45) !important;
-  color: #7DD3FC !important;
+  background: #0071E3 !important;
+  color: #BAE6FD !important;
   text-shadow: none !important;
 }
 
 ::-moz-selection,
 *::-moz-selection,
 body *::-moz-selection {
-  background: rgba(0, 113, 227, 0.45) !important;
-  color: #7DD3FC !important;
+  background: #0071E3 !important;
+  color: #BAE6FD !important;
   text-shadow: none !important;
 }
 
