@@ -138,30 +138,35 @@
    * Shows a floating button when scrolled down more than 100px.
    * Smoothly scrolls back to the very top of the page when clicked.
    */
-  const scrollTop = document.querySelector('.scroll-top');
-
+  /**
+   * 6. Scroll-to-Top Button
+   * Shows a floating button when scrolled down more than 100px.
+   * Smoothly scrolls back to the very top of the page when clicked.
+   */
   function toggleScrollTop() {
-    if (scrollTop) {
-      if (window.scrollY > 100) {
-        scrollTop.classList.add('active');
+    const scrollTopBtn = document.querySelector('.scroll-top');
+    if (scrollTopBtn) {
+      if (window.scrollY > 120) {
+        scrollTopBtn.classList.add('active');
       } else {
-        scrollTop.classList.remove('active');
+        scrollTopBtn.classList.remove('active');
       }
     }
   }
 
-  if (scrollTop) {
-    scrollTop.addEventListener('click', (e) => {
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest('.scroll-top');
+    if (btn) {
       e.preventDefault();
       window.scrollTo({
         top: 0,
         behavior: 'smooth'
       });
-    });
-  }
+    }
+  });
 
   window.addEventListener('load', toggleScrollTop);
-  document.addEventListener('scroll', toggleScrollTop);
+  document.addEventListener('scroll', toggleScrollTop, { passive: true });
 
   /**
    * 6b. Mobile & Tablet Sticky Bottom Action Bar
