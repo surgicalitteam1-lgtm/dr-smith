@@ -2035,12 +2035,6 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
 
 /* Responsive Media Queries */
 @media (max-width: 991px) {
-  .apple-footer-directory {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
   .cta-banner-section {
     padding: 36px 0 24px;
   }
@@ -2070,17 +2064,18 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
     line-height: 1.55;
   }
 
-  /* Accordion Layout on Mobile */
+  /* Accordion Layout on Mobile & Tablet */
   .apple-footer-directory {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    padding-bottom: 16px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0 !important;
+    padding-bottom: 16px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
   }
 
   .apple-footer-col {
     border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    width: 100%;
   }
 
   .apple-footer-col-trigger,
@@ -2093,6 +2088,7 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
     justify-content: space-between;
     width: 100%;
     -webkit-tap-highlight-color: transparent;
+    user-select: none;
   }
 
   .apple-footer-col-trigger:focus-visible {
@@ -2111,7 +2107,7 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
 
   .apple-footer-col-icon {
     display: inline-block;
-    font-size: 12px;
+    font-size: 13px;
     color: #64748B;
     transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s ease;
   }
@@ -2147,15 +2143,19 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
     max-height: 0;
     opacity: 0;
     overflow: hidden;
-    transition: max-height 0.32s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease, padding 0.3s ease;
+    visibility: hidden;
+    transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease, padding 0.3s ease;
     padding: 0 4px;
+    margin: 0;
   }
 
   .apple-footer-col.active ul,
   .apple-footer-col.active .apple-footer-col-list {
-    max-height: 420px;
-    opacity: 1;
-    padding: 2px 4px 14px 8px;
+    max-height: 500px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
+    padding: 2px 4px 14px 8px !important;
   }
 
   .apple-footer-col ul li,
@@ -2192,6 +2192,7 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   }
 
   .apple-footer-top-row {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -2213,6 +2214,7 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
 
   .apple-footer-meta-row {
     order: 4;
+    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -2233,6 +2235,18 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
     text-align: center;
     font-size: 11px;
     line-height: 1.5;
+  }
+}
+
+@media (min-width: 992px) {
+  .apple-footer-col ul,
+  .apple-footer-col-list {
+    max-height: none !important;
+    opacity: 1 !important;
+    overflow: visible !important;
+    visibility: visible !important;
+    display: block !important;
+    padding: 0 !important;
   }
 }
 

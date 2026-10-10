@@ -893,22 +893,27 @@
 
   /**
    * 16. Mobile Footer Accordion Toggle (Apple-Style)
-   * On mobile screens (<= 768px), enables tapping directory headers to expand/collapse link lists.
+   * On mobile/tablet screens (<= 991px), enables tapping directory headers to expand/collapse link lists.
    */
   function initFooterAccordion() {
+    if (window._footerAccordionBound) return;
+    window._footerAccordionBound = true;
+
     document.addEventListener('click', function(e) {
-      if (window.innerWidth > 768) return;
+      if (window.innerWidth > 991) return;
       const trigger = e.target.closest('.apple-footer-col-trigger, .apple-footer-col > h4');
       if (!trigger) return;
 
+      e.preventDefault();
       const col = trigger.closest('.apple-footer-col');
       if (!col) return;
 
       const isActive = col.classList.contains('active');
       col.classList.toggle('active', !isActive);
 
-      if (trigger.hasAttribute('aria-expanded')) {
-        trigger.setAttribute('aria-expanded', !isActive ? 'true' : 'false');
+      const triggerBtn = col.querySelector('.apple-footer-col-trigger');
+      if (triggerBtn) {
+        triggerBtn.setAttribute('aria-expanded', !isActive ? 'true' : 'false');
       }
     });
   }
