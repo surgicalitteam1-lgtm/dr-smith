@@ -812,8 +812,7 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
 }
 
 .why-feature-box {
-  text-align: center;
-  padding: 26px 16px 22px;
+  padding: 26px 22px;
   border-radius: 22px;
   background: linear-gradient(145deg, rgba(13, 27, 46, 0.65) 0%, rgba(6, 13, 29, 0.8) 100%) !important;
   border: 1px solid rgba(0, 163, 255, 0.22) !important;
@@ -823,9 +822,13 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.35s ease;
   height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  text-align: left;
+}
+
+.why-box-content {
+  flex: 1 1 auto;
 }
 
 .why-feature-box:hover {
@@ -836,8 +839,8 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
 }
 
 .why-icon-circle {
-  width: 58px;
-  height: 58px;
+  width: 56px;
+  height: 56px;
   border-radius: 16px;
   background: linear-gradient(135deg, rgba(0, 163, 255, 0.12) 0%, rgba(0, 113, 227, 0.22) 100%);
   border: 1px solid rgba(0, 163, 255, 0.35);
@@ -848,7 +851,7 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   color: #00A3FF;
   box-shadow: 0 4px 14px rgba(0, 163, 255, 0.15);
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-  margin-bottom: 16px;
+  margin-bottom: 0;
   flex-shrink: 0;
 }
 
@@ -862,20 +865,36 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
 
 .why-box-title {
   font-family: var(--apple-font) !important;
-  font-size: 15.5px;
+  font-size: 16px;
   font-weight: 700;
   color: #ffffff !important;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   line-height: 1.35;
   letter-spacing: -0.015em;
 }
 
 .why-box-desc {
   font-family: var(--apple-font) !important;
-  font-size: 12.5px;
+  font-size: 13px;
   color: #94A3B8 !important;
-  line-height: 1.5;
+  line-height: 1.55;
   margin-bottom: 0;
+}
+
+@media (max-width: 576px) {
+  .why-feature-box {
+    padding: 20px 16px;
+    gap: 14px;
+  }
+  .why-icon-circle {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+    border-radius: 14px;
+  }
+  .why-box-title {
+    font-size: 15px;
+  }
 }
 
 /* 5. ABOUT US */
