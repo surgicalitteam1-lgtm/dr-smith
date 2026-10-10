@@ -562,198 +562,220 @@
    * - Seamless 60fps infinite looping with requestAnimationFrame
   /**
    * 13. Featured Equipment / Categories Smooth Auto-Scrolling Carousel
-   * High-precision 60fps infinite marquee with momentum physics, smooth hover deceleration,
+   * High-precision 60fps infinite marquee with momentum physics, smooth hover pause,
    * touch drag/swipe, and gliding navigation buttons.
    */
   function initEquipmentCarousel() {
-    const container = document.querySelector('#equipment-carousel, #categories-carousel');
-    const track = container ? container.querySelector('.equipment-track, .categories-track') : null;
+    const containers = document.querySelectorAll('#equipment-carousel, #categories-carousel, .featured-carousel-wrapper');
 
-    if (!container || !track || container.dataset.ready) return;
-    container.dataset.ready = '1';
+    containers.forEach((container) => {
+      const track = container.querySelector('.equipment-track, .categories-track');
+      if (!track || container.dataset.ready) return;
+      container.dataset.ready = '1';
 
-    const originalCards = Array.from(track.children);
-    const originalCount = originalCards.length;
-    if (originalCount === 0) return;
+      const originalCards = Array.from(track.children);
+      const originalCount = originalCards.length;
+      if (originalCount === 0) return;
 
-    // Append 2 clone sets for a triple-buffer infinite loop (Original + Clone 1 + Clone 2)
-    for (let set = 0; set < 2; set++) {
-      originalCards.forEach((card) => {
-        const clone = card.cloneNode(true);
-        clone.setAttribute('aria-hidden', 'true');
-        track.appendChild(clone);
+      // Append 2 clone sets for a triple-buffer infinite loop (Original + Clone 1 + Clone 2)
+      for (let set = 0; set < 2; set++) {
+        originalCards.forEach((card) => {
+          const clone = card.cloneNode(true);
+          clone.setAttribute('aria-hidden', 'true');
+          track.appendChild(clone);
+        });
+      }
+
+      // Prevent default native image drag
+      container.querySelectorAll('img').forEach((img) => {
+        img.draggable = false;
+        img.style.cssText = '-webkit-user-drag:none;user-select:none;';
       });
-    }
 
-    // Engine Physics State
-    let singleSetWidth = 0;
-    let currentOffset = 0;
-    let baseSpeed = 0.048; // Cruise speed (pixels per millisecond, ~45px/s)
-    let isDragging = false;
-    let hasMoved = false;
-    let dragStartX = 0;
-    let dragStartOffset = 0;
-    let dragVelocity = 0;
-    let lastDragX = 0;
-    let lastDragTime = 0;
-    let impulse = 0; // Smooth impulse for Next/Prev buttons
-    let lastTimestamp = null;
+      // Engine Physics State
+      let singleSetWidth = 0;
+      let cardStep = 300;
+      let currentOffset = 0;
+      let baseSpeed = 0.038; // Smooth gentle auto-scroll cruise speed (pixels per ms)
+      let isDragging = false;
+      let isHovered = false;
+      let hasMoved = false;
+      let dragStartX = 0;
+      let dragStartOffset = 0;
+      let dragVelocity = 0;
+      let lastDragX = 0;
+      let lastDragTime = 0;
+      let impulse = 0; // Smooth impulse for Next/Prev buttons
+      let lastTimestamp = null;
 
-    function updateWidths() {
-      if (track.children.length > originalCount && track.children[originalCount]) {
-        const firstCardLeft = track.children[0].offsetLeft;
-        const cloneCardLeft = track.children[originalCount].offsetLeft;
-        const measured = cloneCardLeft - firstCardLeft;
-        if (measured > 100) {
-          singleSetWidth = measured;
-          return;
+      function updateWidths() {
+        if (track.children.length > originalCount && track.children[originalCount]) {
+          const firstCardLeft = track.children[0].offsetLeft;
+          const cloneCardLeft = track.children[originalCount].offsetLeft;
+          const measured = cloneCardLeft - firstCardLeft;
+          if (measured > 100) {
+            singleSetWidth = measured;
+          }
+        }
+
+        // Card step calculation for next/prev buttons
+        if (track.children.length > 0) {
+          const first = track.children[0];
+          const gap = parseFloat(window.getComputedStyle(track).gap) || 20;
+          cardStep = first.offsetWidth + gap;
+        }
+
+        // Fallback calculation if offsetLeft is 0 during early render
+        if (singleSetWidth <= 0) {
+          let total = 0;
+          for (let i = 0; i < originalCount; i++) {
+            const item = track.children[i];
+            if (!item) continue;
+            const gap = parseFloat(window.getComputedStyle(track).gap) || 20;
+            total += item.offsetWidth + gap;
+          }
+          singleSetWidth = total > 0 ? total : 2400;
         }
       }
 
-      // Fallback calculation
-      let total = 0;
-      for (let i = 0; i < originalCount; i++) {
-        const item = track.children[i];
-        if (!item) continue;
-        const gap = parseFloat(window.getComputedStyle(track).gap) || 24;
-        total += item.offsetWidth + gap;
-      }
-      singleSetWidth = total > 0 ? total : 2500;
-    }
-
-    function render() {
-      track.style.transform = `translate3d(${-currentOffset.toFixed(2)}px, 0, 0)`;
-    }
-
-    function wrapOffset(val) {
-      if (singleSetWidth <= 0) return val;
-      while (val >= singleSetWidth) val -= singleSetWidth;
-      while (val < 0) val += singleSetWidth;
-      return val;
-    }
-
-    // Pointer Interaction (Mouse & Touch)
-    function onPointerDown(e) {
-      isDragging = true;
-      hasMoved = false;
-      impulse = 0;
-      dragVelocity = 0;
-      dragStartX = (e.touches && e.touches[0] ? e.touches[0].clientX : e.clientX) || 0;
-      dragStartOffset = currentOffset;
-      lastDragX = dragStartX;
-      lastDragTime = performance.now();
-      container.style.cursor = 'grabbing';
-    }
-
-    function onPointerMove(e) {
-      if (!isDragging) return;
-      const currentX = (e.touches && e.touches[0] ? e.touches[0].clientX : e.clientX) || 0;
-      const deltaX = currentX - dragStartX;
-
-      if (Math.abs(deltaX) > 6) {
-        hasMoved = true;
+      function render() {
+        track.style.transform = `translate3d(${-currentOffset.toFixed(2)}px, 0, 0)`;
       }
 
-      const now = performance.now();
-      const dt = now - lastDragTime;
-      if (dt > 0) {
-        dragVelocity = -(currentX - lastDragX) / dt;
-        lastDragX = currentX;
-        lastDragTime = now;
+      function wrapOffset(val) {
+        if (singleSetWidth <= 0) return val;
+        while (val >= singleSetWidth) val -= singleSetWidth;
+        while (val < 0) val += singleSetWidth;
+        return val;
       }
 
-      currentOffset = wrapOffset(dragStartOffset - deltaX);
-      render();
-    }
+      // Hover Listeners (smoothly pause auto-scroll when user hovers cards to read/click)
+      container.addEventListener('mouseenter', () => { isHovered = true; });
+      container.addEventListener('mouseleave', () => { isHovered = false; });
 
-    function onPointerUp() {
-      if (!isDragging) return;
-      isDragging = false;
-      container.style.cursor = 'grab';
-    }
-
-    // Prevent navigation clicks if user dragged the cards
-    container.addEventListener('click', function(e) {
-      if (hasMoved) {
-        e.preventDefault();
-        e.stopPropagation();
+      // Pointer Interaction (Mouse & Touch)
+      function onPointerDown(e) {
+        isDragging = true;
+        hasMoved = false;
+        impulse = 0;
+        dragVelocity = 0;
+        dragStartX = (e.touches && e.touches[0] ? e.touches[0].clientX : e.clientX) || 0;
+        dragStartOffset = currentOffset;
+        lastDragX = dragStartX;
+        lastDragTime = performance.now();
+        track.style.cursor = 'grabbing';
       }
-    }, true);
 
-    // Mouse Listeners
-    container.addEventListener('mousedown', onPointerDown);
-    window.addEventListener('mousemove', onPointerMove);
-    window.addEventListener('mouseup', onPointerUp);
+      function onPointerMove(e) {
+        if (!isDragging) return;
+        const currentX = (e.touches && e.touches[0] ? e.touches[0].clientX : e.clientX) || 0;
+        const deltaX = currentX - dragStartX;
 
-    // Touch Listeners
-    container.addEventListener('touchstart', onPointerDown, { passive: true });
-    window.addEventListener('touchmove', onPointerMove, { passive: true });
-    window.addEventListener('touchend', onPointerUp, { passive: true });
-    window.addEventListener('touchcancel', onPointerUp, { passive: true });
-
-    // Trackpad / Wheel Horizontal Scroll
-    container.addEventListener('wheel', (e) => {
-      const delta = e.deltaX !== 0 ? e.deltaX : e.deltaY;
-      impulse += delta * 0.8;
-    }, { passive: true });
-
-    // Gliding Navigation Buttons
-    const prevBtn = document.querySelector('#equipment-prev-btn');
-    const nextBtn = document.querySelector('#equipment-next-btn');
-    const cardStep = 374; // Standard card width (350px) + gap (24px)
-
-    if (prevBtn) {
-      prevBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        impulse -= cardStep;
-      });
-    }
-    if (nextBtn) {
-      nextBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        impulse += cardStep;
-      });
-    }
-
-    // Main 60fps Render Loop
-    function animationLoop(timestamp) {
-      if (!lastTimestamp) lastTimestamp = timestamp;
-      const dt = Math.min(timestamp - lastTimestamp, 40); // Cap frame delta to prevent jumps
-      lastTimestamp = timestamp;
-
-      if (!isDragging) {
-        // Apply impulse (glide for next/prev/wheel)
-        if (Math.abs(impulse) > 0.5) {
-          currentOffset += impulse * 0.12;
-          impulse *= 0.86;
-        } else {
-          impulse = 0;
+        if (Math.abs(deltaX) > 6) {
+          hasMoved = true;
         }
 
-        // Apply drag inertia release
-        if (Math.abs(dragVelocity) > 0.01) {
-          currentOffset += dragVelocity * dt;
-          dragVelocity *= 0.92;
-        } else {
-          dragVelocity = 0;
+        const now = performance.now();
+        const dt = now - lastDragTime;
+        if (dt > 0) {
+          dragVelocity = -(currentX - lastDragX) / dt;
+          lastDragX = currentX;
+          lastDragTime = now;
         }
 
-        // Continuous uninterrupted cruise speed
-        currentOffset += baseSpeed * dt;
-        currentOffset = wrapOffset(currentOffset);
+        currentOffset = wrapOffset(dragStartOffset - deltaX);
         render();
       }
 
-      requestAnimationFrame(animationLoop);
-    }
+      function onPointerUp() {
+        if (!isDragging) return;
+        isDragging = false;
+        track.style.cursor = 'grab';
+      }
 
-    updateWidths();
-    window.addEventListener('load', () => {
+      // Prevent navigation clicks if user dragged the cards
+      container.addEventListener('click', function(e) {
+        if (hasMoved) {
+          e.preventDefault();
+          e.stopPropagation();
+        }
+      }, true);
+
+      // Mouse Listeners
+      track.addEventListener('mousedown', onPointerDown);
+      window.addEventListener('mousemove', onPointerMove);
+      window.addEventListener('mouseup', onPointerUp);
+
+      // Touch Listeners
+      track.addEventListener('touchstart', onPointerDown, { passive: true });
+      window.addEventListener('touchmove', onPointerMove, { passive: true });
+      window.addEventListener('touchend', onPointerUp, { passive: true });
+      window.addEventListener('touchcancel', onPointerUp, { passive: true });
+
+      // Trackpad / Wheel Horizontal Scroll
+      container.addEventListener('wheel', (e) => {
+        const delta = e.deltaX !== 0 ? e.deltaX : e.deltaY;
+        impulse += delta * 0.8;
+      }, { passive: true });
+
+      // Gliding Navigation Buttons
+      const prevBtn = container.querySelector('.carousel-nav-prev, #equipment-prev-btn');
+      const nextBtn = container.querySelector('.carousel-nav-next, #equipment-next-btn');
+
+      if (prevBtn) {
+        prevBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          impulse -= cardStep;
+        });
+      }
+      if (nextBtn) {
+        nextBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          impulse += cardStep;
+        });
+      }
+
+      // Main 60fps Render Loop
+      function animationLoop(timestamp) {
+        if (!lastTimestamp) lastTimestamp = timestamp;
+        const dt = Math.min(timestamp - lastTimestamp, 40); // Cap frame delta to prevent jumps
+        lastTimestamp = timestamp;
+
+        if (!isDragging) {
+          // Apply impulse (glide for next/prev/wheel)
+          if (Math.abs(impulse) > 0.5) {
+            currentOffset += impulse * 0.12;
+            impulse *= 0.86;
+          } else {
+            impulse = 0;
+          }
+
+          // Apply drag inertia release
+          if (Math.abs(dragVelocity) > 0.01) {
+            currentOffset += dragVelocity * dt;
+            dragVelocity *= 0.92;
+          } else {
+            dragVelocity = 0;
+          }
+
+          // Continuous gentle auto-scroll (pauses on hover)
+          const cruiseSpeed = isHovered ? 0 : baseSpeed;
+          currentOffset += cruiseSpeed * dt;
+          currentOffset = wrapOffset(currentOffset);
+          render();
+        }
+
+        requestAnimationFrame(animationLoop);
+      }
+
       updateWidths();
-      setTimeout(updateWidths, 300);
+      window.addEventListener('load', () => {
+        updateWidths();
+        setTimeout(updateWidths, 300);
+      });
+      window.addEventListener('resize', updateWidths);
+      requestAnimationFrame(animationLoop);
     });
-    window.addEventListener('resize', updateWidths);
-    requestAnimationFrame(animationLoop);
   }
 
 

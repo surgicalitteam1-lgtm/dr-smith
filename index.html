@@ -26,7 +26,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   
-  <link href="assets/css/apple-theme.css?v=68.0" rel="stylesheet">
+  <link href="assets/css/apple-theme.css?v=69.0" rel="stylesheet">
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 </head>
@@ -215,31 +215,28 @@
       </div>
 
       <!-- Carousel with navigation arrows -->
-      <div class="featured-carousel-wrapper">
-        <button class="carousel-nav-btn carousel-nav-prev" aria-label="Previous Products"><i class="bi bi-chevron-left"></i></button>
+      <div class="featured-carousel-wrapper" id="equipment-carousel">
+        <button class="carousel-nav-btn carousel-nav-prev" id="equipment-prev-btn" aria-label="Previous Products"><i class="bi bi-chevron-left"></i></button>
 
-        <!-- 4 Product Cards Grid -->
-        <div class="row g-3 g-md-4 flex-grow-1">
-          
-          <!-- Card 1: AMBU BAG -->
-          <div class="col-12 col-sm-6 col-lg-3">
-            <div class="product-white-card">
+        <div class="equipment-track-container">
+          <div class="equipment-track">
+            
+            <!-- Product Card 1: AMBU BAG -->
+            <div class="product-dark-card">
               <div class="product-img-box">
                 <img src="assets/img/hero-slides/1.jpg" alt="AMBU BAG Manual Resuscitator" loading="lazy">
               </div>
               <div class="product-info-box">
                 <h3 class="product-card-title">AMBU BAG</h3>
                 <p class="product-card-desc">Manual Resuscitator</p>
-                <a href="catalogue/ambu-bag/index.html" class="product-card-link">
+                <a href="catalogue/equipments/index.html" class="product-card-link">
                   View Details <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
             </div>
-          </div>
 
-          <!-- Card 2: Patient Monitor -->
-          <div class="col-12 col-sm-6 col-lg-3">
-            <div class="product-white-card">
+            <!-- Product Card 2: Patient Monitor -->
+            <div class="product-dark-card">
               <div class="product-img-box">
                 <img src="assets/img/hero-slides/2.png" alt="Patient Monitor Multi-Parameter" loading="lazy">
               </div>
@@ -251,53 +248,95 @@
                 </a>
               </div>
             </div>
-          </div>
 
-          <!-- Card 3: Hospital Bed -->
-          <div class="col-12 col-sm-6 col-lg-3">
-            <div class="product-white-card">
+            <!-- Product Card 3: Hospital Bed -->
+            <div class="product-dark-card">
               <div class="product-img-box">
                 <img src="assets/img/hero-slides/3.png" alt="Hospital Bed Electric ICU Bed" loading="lazy">
               </div>
               <div class="product-info-box">
                 <h3 class="product-card-title">Hospital Bed</h3>
                 <p class="product-card-desc">Electric ICU Bed</p>
-                <a href="catalogue/icu-beds/index.html" class="product-card-link">
+                <a href="catalogue/beds/index.html" class="product-card-link">
                   View Details <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
             </div>
-          </div>
 
-          <!-- Card 4: Ventilator -->
-          <div class="col-12 col-sm-6 col-lg-3">
-            <div class="product-white-card">
+            <!-- Product Card 4: Ventilator -->
+            <div class="product-dark-card">
               <div class="product-img-box">
                 <img src="assets/img/hero-slides/4.png" alt="Ventilator ICU Ventilator" loading="lazy">
               </div>
               <div class="product-info-box">
-                <h3 class="product-card-title">Ventilator</h3>
-                <p class="product-card-desc">ICU Ventilator</p>
+                <h3 class="product-card-title">ICU Ventilator</h3>
+                <p class="product-card-desc">Critical Care Ventilation</p>
                 <a href="catalogue/ventilators/index.html" class="product-card-link">
                   View Details <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
             </div>
+
+            <!-- Product Card 5: OT Light -->
+            <div class="product-dark-card">
+              <div class="product-img-box">
+                <img src="assets/img/hero-slides/5.png" alt="OT Surgical Lights" loading="lazy">
+              </div>
+              <div class="product-info-box">
+                <h3 class="product-card-title">OT Surgical Light</h3>
+                <p class="product-card-desc">Shadowless Theatre Lighting</p>
+                <a href="catalogue/ot-lights/index.html" class="product-card-link">
+                  View Details <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Product Card 6: Defibrillator / AED -->
+            <div class="product-dark-card">
+              <div class="product-img-box">
+                <img src="assets/img/categories/cat-equipments.png" alt="Defibrillator AED" loading="lazy">
+              </div>
+              <div class="product-info-box">
+                <h3 class="product-card-title">Defibrillator / AED</h3>
+                <p class="product-card-desc">Emergency Cardiac Care</p>
+                <a href="catalogue/defibrillator-aed/index.html" class="product-card-link">
+                  View Details <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Product Card 7: ECG Machine -->
+            <div class="product-dark-card">
+              <div class="product-img-box">
+                <img src="assets/img/categories/cat-instruments.png" alt="12-Channel ECG Machine" loading="lazy">
+              </div>
+              <div class="product-info-box">
+                <h3 class="product-card-title">ECG Machine</h3>
+                <p class="product-card-desc">12-Channel Diagnostic</p>
+                <a href="catalogue/ecg-machine/index.html" class="product-card-link">
+                  View Details <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Product Card 8: Syringe & Infusion Pump -->
+            <div class="product-dark-card">
+              <div class="product-img-box">
+                <img src="assets/img/categories/cat-nic.png" alt="Syringe & Infusion Pump" loading="lazy">
+              </div>
+              <div class="product-info-box">
+                <h3 class="product-card-title">Infusion Pump</h3>
+                <p class="product-card-desc">Precision Micro-Dosing</p>
+                <a href="catalogue/syringe-infusion/index.html" class="product-card-link">
+                  View Details <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
           </div>
-
         </div>
 
-        <button class="carousel-nav-btn carousel-nav-next" aria-label="Next Products"><i class="bi bi-chevron-right"></i></button>
-      </div>
-
-      <!-- Carousel Dots -->
-      <div class="carousel-bottom-nav">
-        <div class="carousel-dots">
-          <span class="carousel-dot active"></span>
-          <span class="carousel-dot"></span>
-          <span class="carousel-dot"></span>
-          <span class="carousel-dot"></span>
-        </div>
+        <button class="carousel-nav-btn carousel-nav-next" id="equipment-next-btn" aria-label="Next Products"><i class="bi bi-chevron-right"></i></button>
       </div>
 
     </div>
@@ -1099,7 +1138,7 @@
     }, { passive: true });
   </script>
 
-  <script src="assets/js/main.js?v=5.0"></script>
+  <script src="assets/js/main.js?v=69.0"></script>
 
   <script src="assets/js/global-search.js?v=40.0"></script>
 </body>
