@@ -365,7 +365,16 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   line-height: 1.15;
   letter-spacing: -0.025em;
   color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.hero-accent-line {
+  width: 52px;
+  height: 3.5px;
+  background: linear-gradient(90deg, #00A3FF 0%, #0071E3 100%);
+  border-radius: 980px;
   margin-bottom: 20px;
+  box-shadow: 0 0 14px rgba(0, 163, 255, 0.65);
 }
 
 .hero-blue-accent {
@@ -1738,8 +1747,13 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   }
   .hero-final-title {
     font-size: clamp(26px, 5.5vw, 36px) !important;
-    margin-bottom: 14px !important;
+    margin-bottom: 10px !important;
     line-height: 1.2 !important;
+  }
+  .hero-accent-line {
+    width: 44px !important;
+    height: 3px !important;
+    margin-bottom: 14px !important;
   }
   .hero-final-desc {
     font-size: 14px !important;
@@ -1901,7 +1915,12 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   }
   .hero-final-title {
     font-size: 24px !important;
-    margin-bottom: 10px !important;
+    margin-bottom: 8px !important;
+  }
+  .hero-accent-line {
+    width: 38px !important;
+    height: 2.5px !important;
+    margin-bottom: 12px !important;
   }
   .hero-final-desc {
     font-size: 13px !important;
