@@ -364,10 +364,18 @@ img, svg, video, iframe {
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
+html.apple-mobile-menu-open,
+body.apple-mobile-menu-open {
+  overflow: hidden !important;
+  overscroll-behavior: none !important;
+}
+
 body.apple-mobile-menu-open .apple-mobile-backdrop {
   opacity: 1;
   visibility: visible;
   pointer-events: auto !important;
+  touch-action: none !important;
+  overscroll-behavior: none !important;
 }
 
 #apple-mobile-menu-btn {
@@ -404,6 +412,8 @@ body.apple-mobile-menu-open .apple-mobile-backdrop {
   max-height: calc(100dvh - 98px);
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain !important;
+  touch-action: pan-y;
 }
 
 body.apple-mobile-menu-open .apple-mobile-drawer {
