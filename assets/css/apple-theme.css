@@ -384,7 +384,7 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
 .hero-final-desc {
   font-size: 15px;
   line-height: 1.6;
-  color: #94A3B8;
+  color: #ffffff !important;
   max-width: 540px;
   margin-bottom: 26px;
 }
