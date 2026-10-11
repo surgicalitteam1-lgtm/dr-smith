@@ -279,6 +279,13 @@
     window.toggleMobileDrawer = toggleMobileDrawer;
 
     if (mobileMenuBtn) {
+      // Clone and replace to strip any conflicting duplicate listeners from legacy scripts
+      var freshBtn = mobileMenuBtn.cloneNode(true);
+      if (mobileMenuBtn.parentNode) {
+        mobileMenuBtn.parentNode.replaceChild(freshBtn, mobileMenuBtn);
+      }
+      mobileMenuBtn = freshBtn;
+
       mobileMenuBtn.onclick = function(e) {
         if (e) {
           e.preventDefault();

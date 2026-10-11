@@ -406,25 +406,6 @@
       alert('Thank you! Your project consultation request has been received.');
       closeAppleDrawer();
     }
-    const mobileMenuBtn = document.getElementById('apple-mobile-menu-btn');
-    if (mobileMenuBtn) {
-      mobileMenuBtn.addEventListener('click', function() {
-        document.body.classList.toggle('apple-mobile-menu-open');
-        const icon = mobileMenuBtn.querySelector('i');
-        if (document.body.classList.contains('apple-mobile-menu-open')) {
-          icon.classList.remove('bi-list');
-          icon.classList.add('bi-x-lg');
-        } else {
-          icon.classList.remove('bi-x-lg');
-          icon.classList.add('bi-list');
-        }
-      });
-    }
-    document.querySelectorAll('.apple-mobile-links a').forEach(link => {
-      link.addEventListener('click', () => {
-        document.body.classList.remove('apple-mobile-menu-open');
-      });
-    });
     window.addEventListener('scroll', function() {
       const nav = document.querySelector('.apple-globalnav');
       if (nav) {
@@ -434,6 +415,6 @@
     }, { passive: true });
   </script>
 
-  <script src="../assets/js/global-search.js?v=41.0"></script>
+  <script src="../assets/js/global-search.js?v=42.0"></script>
 </body>
 </html>
