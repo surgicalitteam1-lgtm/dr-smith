@@ -311,8 +311,7 @@ img, svg, video, iframe {
 }
 
 .apple-nav-circle-catalogue,
-.apple-nav-circle-call,
-.apple-nav-circle-mail {
+.apple-nav-circle-call {
   background: rgba(0, 163, 255, 0.12) !important;
   border-color: rgba(0, 163, 255, 0.35) !important;
   color: #00A3FF !important;
@@ -320,8 +319,7 @@ img, svg, video, iframe {
 }
 
 .apple-nav-circle-catalogue:hover,
-.apple-nav-circle-call:hover,
-.apple-nav-circle-mail:hover {
+.apple-nav-circle-call:hover {
   background: #00A3FF !important;
   border-color: #00A3FF !important;
   color: #ffffff !important;
@@ -329,8 +327,35 @@ img, svg, video, iframe {
   transform: scale(1.05);
 }
 
-.apple-nav-circle-mail i {
+/* Header Email Button - Signature White Color Theme */
+.apple-nav-circle-mail {
+  background: #ffffff !important;
+  border-color: #ffffff !important;
+  color: #0f172a !important;
   font-size: 16px;
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.25);
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.apple-nav-circle-mail i {
+  color: #0f172a !important;
+  font-size: 16px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.apple-nav-circle-mail:hover,
+.apple-nav-circle-mail:active {
+  background: #f8fafc !important;
+  border-color: #ffffff !important;
+  color: #000000 !important;
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.65);
+  transform: scale(1.05);
+}
+
+.apple-nav-circle-mail:hover i,
+.apple-nav-circle-mail:active i {
+  color: #000000 !important;
+  transform: scale(1.08);
 }
 
 .apple-nav-circle-whatsapp {
