@@ -75,27 +75,78 @@
     </div>
   </nav>
 
+    <!-- Mobile Menu Drawer Backdrop Overlay -->
+  <div class="apple-mobile-backdrop" id="appleMobileBackdrop"></div>
+
   <!-- Mobile Menu Drawer Overlay -->
   <div class="apple-mobile-drawer" id="apple-mobile-drawer">
-    <ul class="apple-mobile-links">
-      <li><a href="../index.html">Home <i class="bi bi-chevron-right small text-secondary"></i></a></li>
-      <li><a href="../catalogue/index.html">Products Catalogue <i class="bi bi-chevron-right small text-secondary"></i></a></li>
-      <li><a href="../turnkey-projects/index.html">Turnkey Hospital Setup <i class="bi bi-chevron-right small text-secondary"></i></a></li>
-      <li><a href="../catalogue/modular-ot/index.html">Modular Operation Theatres <i class="bi bi-chevron-right small text-secondary"></i></a></li>
-      <li><a href="../about-us/index.html">About Dr. Smith <i class="bi bi-chevron-right small text-secondary"></i></a></li>
-      <li><a href="../contact-form/index.html">Global Offices &amp; Contact <i class="bi bi-chevron-right small text-secondary"></i></a></li>
-    </ul>
+    <div class="apple-mobile-drawer-header">
+      <span class="apple-mobile-drawer-tag"><i class="bi bi-hospital"></i> Dr. Smith Quick Menu</span>
+      <button type="button" class="apple-mobile-drawer-close" id="appleMobileDrawerClose" aria-label="Close Navigation Menu">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
+    <div class="apple-mobile-grid">
+      <a href="../index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-house-door-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Home</span>
+          <span class="apple-mobile-tile-sub">Overview</span>
+        </div>
+      </a>
+      <a href="../catalogue/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-grid-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Catalogue</span>
+          <span class="apple-mobile-tile-sub">50+ Categories</span>
+        </div>
+      </a>
+      <a href="../turnkey-projects/index.html" class="apple-mobile-tile active">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-hospital-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Turnkey Setup</span>
+          <span class="apple-mobile-tile-sub">50–500 Beds</span>
+        </div>
+      </a>
+      <a href="../catalogue/modular-ot/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-activity"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Modular OT</span>
+          <span class="apple-mobile-tile-sub">Cleanrooms</span>
+        </div>
+      </a>
+      <a href="../about-us/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-shield-check"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">About Us</span>
+          <span class="apple-mobile-tile-sub">Heritage</span>
+        </div>
+      </a>
+      <a href="../contact-form/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-envelope-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Contact</span>
+          <span class="apple-mobile-tile-sub">Global Offices</span>
+        </div>
+      </a>
+    </div>
     
     <div class="apple-mobile-cta-box">
-      <button type="button" class="apple-btn-pill w-100 py-3" onclick="openAppleDrawer('Turnkey Consultation');">
-        <i class="bi bi-building me-2"></i> Request Project Consultation
+      <button type="button" class="apple-mobile-btn-consultation" onclick="openAppleDrawer('Turnkey Consultation');">
+        <i class="bi bi-building-check me-2"></i> Request Project Consultation <i class="bi bi-arrow-right ms-auto"></i>
       </button>
-      <a href="tel:18008917466" class="btn btn-outline-light rounded-pill py-2 w-100 text-center">
-        <i class="bi bi-telephone-fill me-2 text-primary"></i> Call Toll-Free: 1800 891 7466
-      </a>
-      <a href="https://wa.me/919999999999" class="btn btn-success rounded-pill py-2 w-100 text-center" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-whatsapp me-2"></i> WhatsApp Consultation Desk
-      </a>
+
+      <div class="apple-mobile-contact-grid">
+        <a href="tel:18008917466" class="apple-mobile-contact-pill apple-mobile-pill-tel">
+          <i class="bi bi-telephone-fill"></i>
+          <span>1800 891 7466<small>National Toll-Free</small></span>
+        </a>
+        <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." target="_blank" rel="noopener noreferrer" class="apple-mobile-contact-pill apple-mobile-pill-wa">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>WhatsApp Desk<small>24/7 Fast Inquiry</small></span>
+        </a>
+      </div>
     </div>
   </div>
 
@@ -383,6 +434,6 @@
     }, { passive: true });
   </script>
 
-  <script src="../assets/js/global-search.js?v=40.0"></script>
+  <script src="../assets/js/global-search.js?v=41.0"></script>
 </body>
 </html>

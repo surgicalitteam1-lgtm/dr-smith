@@ -226,4 +226,103 @@
     });
   });
 
+  // ============================================================
+  // GLOBAL APPLE MOBILE NAVIGATION DRAWER CONTROLLER
+  // ============================================================
+  function initGlobalMobileDrawer() {
+    var mobileMenuBtn = document.getElementById('apple-mobile-menu-btn');
+    var mobileBackdrop = document.getElementById('appleMobileBackdrop');
+    var mobileDrawerClose = document.getElementById('appleMobileDrawerClose');
+    var mobileSavedScrollY = 0;
+
+    function toggleMobileDrawer(open) {
+      var isOpen = typeof open === 'boolean' ? open : !document.body.classList.contains('apple-mobile-menu-open');
+      if (isOpen) {
+        mobileSavedScrollY = window.pageYOffset || document.documentElement.scrollTop;
+        document.documentElement.classList.add('apple-mobile-menu-open');
+        document.body.classList.add('apple-mobile-menu-open');
+        document.body.style.position = 'fixed';
+        document.body.style.top = '-' + mobileSavedScrollY + 'px';
+        document.body.style.left = '0';
+        document.body.style.right = '0';
+        document.body.style.width = '100%';
+        document.body.style.overflow = 'hidden';
+      } else {
+        var scrollY = mobileSavedScrollY;
+        document.documentElement.classList.remove('apple-mobile-menu-open');
+        document.body.classList.remove('apple-mobile-menu-open');
+        document.body.style.position = '';
+        document.body.style.top = '';
+        document.body.style.left = '';
+        document.body.style.right = '';
+        document.body.style.width = '';
+        document.body.style.overflow = '';
+        if (typeof scrollY === 'number') {
+          window.scrollTo(0, scrollY);
+        }
+      }
+
+      if (mobileMenuBtn) {
+        var icon = mobileMenuBtn.querySelector('i');
+        if (icon) {
+          if (isOpen) {
+            icon.classList.remove('bi-list');
+            icon.classList.add('bi-x-lg');
+          } else {
+            icon.classList.remove('bi-x-lg');
+            icon.classList.add('bi-list');
+          }
+        }
+      }
+    }
+
+    window.toggleMobileDrawer = toggleMobileDrawer;
+
+    if (mobileMenuBtn) {
+      mobileMenuBtn.onclick = function(e) {
+        if (e) {
+          e.preventDefault();
+          e.stopPropagation();
+        }
+        toggleMobileDrawer();
+      };
+    }
+
+    if (mobileBackdrop) {
+      mobileBackdrop.onclick = function(e) {
+        if (e) e.preventDefault();
+        toggleMobileDrawer(false);
+      };
+      mobileBackdrop.addEventListener('touchmove', function(e) {
+        e.preventDefault();
+      }, { passive: false });
+    }
+
+    if (mobileDrawerClose) {
+      mobileDrawerClose.onclick = function(e) {
+        if (e) e.preventDefault();
+        toggleMobileDrawer(false);
+      };
+    }
+
+    document.querySelectorAll('.apple-mobile-links a, .apple-mobile-tile').forEach(function(link) {
+      link.onclick = function() {
+        toggleMobileDrawer(false);
+      };
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && document.body.classList.contains('apple-mobile-menu-open')) {
+        toggleMobileDrawer(false);
+      }
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initGlobalMobileDrawer);
+  } else {
+    initGlobalMobileDrawer();
+  }
+
 })();
+
