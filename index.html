@@ -28,7 +28,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <link href="assets/css/apple-theme.css?v=98.0" rel="stylesheet">
+  <link href="assets/css/apple-theme.css?v=99.0" rel="stylesheet">
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 </head>
@@ -1287,42 +1287,66 @@
       </div>
 
       <form class="apple-drawer-form" onsubmit="handleAppleQuoteSubmit(event);">
-        <div class="form-group">
-          <label>Scope of Interest</label>
-          <input type="text" id="drawer-product-name" value="Turnkey Hospital Setup" readonly
-            style="background: rgba(255,255,255,0.08); font-weight: 600;">
+        <!-- Quick Category Chips -->
+        <div class="apple-chips-container mb-3">
+          <div class="apple-chips-header mb-2">
+            <span style="font-size: 12.5px;">Requirement Category:</span>
+          </div>
+          <div class="apple-category-chips" id="drawerScopeChips">
+            <button type="button" class="apple-category-chip active" data-scope="Turnkey Hospital Setup" onclick="setDrawerScope(this, 'Turnkey Hospital Setup');"><i class="bi bi-hospital"></i> Turnkey Setup</button>
+            <button type="button" class="apple-category-chip" data-scope="Modular Operation Theatre" onclick="setDrawerScope(this, 'Modular Operation Theatre');"><i class="bi bi-brightness-high"></i> Modular OT</button>
+            <button type="button" class="apple-category-chip" data-scope="Medical Gas Pipeline" onclick="setDrawerScope(this, 'Medical Gas Pipeline');"><i class="bi bi-diagram-3"></i> MGPS Pipeline</button>
+            <button type="button" class="apple-category-chip" data-scope="ICU & Hospital Beds" onclick="setDrawerScope(this, 'ICU & Hospital Beds');"><i class="bi bi-hospital"></i> ICU Beds</button>
+            <button type="button" class="apple-category-chip" data-scope="Critical Care Equipment" onclick="setDrawerScope(this, 'Critical Care Equipment');"><i class="bi bi-heart-pulse"></i> Critical Care</button>
+          </div>
+          <input type="hidden" id="drawer-product-name" value="Turnkey Hospital Setup">
         </div>
 
         <div class="row g-2">
-          <div class="col-md-6 form-group">
-            <label>Your Full Name *</label>
-            <input type="text" placeholder="Dr. / Mr. / Ms." required>
+          <div class="col-md-6 apple-form-group">
+            <label class="apple-form-label">Your Full Name <span class="req">*</span></label>
+            <div class="apple-input-icon-box">
+              <i class="bi bi-person-fill apple-input-icon"></i>
+              <input type="text" class="apple-glass-input" placeholder="Dr. / Mr. / Ms." required autocomplete="name">
+            </div>
           </div>
-          <div class="col-md-6 form-group">
-            <label>Hospital / Institution Name *</label>
-            <input type="text" placeholder="Hospital / Organization Name" required>
+          <div class="col-md-6 apple-form-group">
+            <label class="apple-form-label">Hospital / Institution <span class="req">*</span></label>
+            <div class="apple-input-icon-box">
+              <i class="bi bi-building-fill apple-input-icon"></i>
+              <input type="text" class="apple-glass-input" placeholder="Hospital / Organization Name" required autocomplete="organization">
+            </div>
           </div>
         </div>
 
         <div class="row g-2">
-          <div class="col-md-6 form-group">
-            <label>Official Email *</label>
-            <input type="email" placeholder="name@hospital.com" required>
+          <div class="col-md-6 apple-form-group">
+            <label class="apple-form-label">Official Email <span class="req">*</span></label>
+            <div class="apple-input-icon-box">
+              <i class="bi bi-envelope-fill apple-input-icon"></i>
+              <input type="email" class="apple-glass-input" placeholder="name@hospital.com" required autocomplete="email">
+            </div>
           </div>
-          <div class="col-md-6 form-group">
-            <label>Phone / WhatsApp *</label>
-            <input type="tel" placeholder="+91 99999 99999" required>
+          <div class="col-md-6 apple-form-group">
+            <label class="apple-form-label">Phone / WhatsApp <span class="req">*</span></label>
+            <div class="apple-input-icon-box">
+              <i class="bi bi-telephone-fill apple-input-icon"></i>
+              <input type="tel" class="apple-glass-input" placeholder="+91 99999 99999" required autocomplete="tel">
+            </div>
           </div>
         </div>
 
-        <div class="form-group">
-          <label>Project Scope &amp; Requirements</label>
-          <textarea rows="3"
-            placeholder="Specify turnkey bed capacity, modular OT requirement, MGPS pipeline, or equipment procurement details..."></textarea>
+        <div class="apple-form-group">
+          <label class="apple-form-label">Project Scope &amp; Requirements</label>
+          <div class="apple-input-icon-box textarea-box">
+            <i class="bi bi-chat-left-text-fill apple-input-icon"></i>
+            <textarea class="apple-glass-input apple-glass-textarea" rows="3" placeholder="Specify turnkey bed capacity, modular OT requirement, MGPS pipeline, or equipment procurement details..."></textarea>
+          </div>
         </div>
 
-        <button type="submit" class="apple-btn-pill w-100 mt-2" style="padding: 14px;">Submit Consultation
-          Request</button>
+        <button type="submit" class="apple-form-submit-btn w-100 mt-2">
+          <span>Submit Consultation Request</span> <i class="bi bi-arrow-right"></i>
+        </button>
       </form>
     </div>
   </div>
@@ -1374,10 +1398,13 @@
       document.body.style.overflow = '';
     }
 
-    function handleAppleQuoteSubmit(e) {
-      e.preventDefault();
-      alert('Thank you! Your project consultation request has been received. Our senior healthcare engineering team will contact you shortly.');
-      closeAppleDrawer();
+    function setDrawerScope(btn, val) {
+      document.querySelectorAll('#drawerScopeChips .apple-category-chip').forEach(function(b) {
+        b.classList.remove('active');
+      });
+      if (btn) btn.classList.add('active');
+      var inp = document.getElementById('drawer-product-name');
+      if (inp) inp.value = val;
     }
 
     // Mobile Menu Drawer Toggle, Backdrop & Close
@@ -1508,7 +1535,7 @@
 
   <script src="assets/js/main.js?v=91.0"></script>
 
-  <script src="assets/js/global-search.js?v=42.0"></script>
+  <script src="assets/js/global-search.js?v=43.0"></script>
 </body>
 
 </html>

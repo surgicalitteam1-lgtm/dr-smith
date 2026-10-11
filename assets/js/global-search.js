@@ -325,6 +325,86 @@
     });
   }
 
+  // ============================================================
+  // GLOBAL CONSULTATION DRAWER CONTROLLER & IN-PLACE SUCCESS ANIMATION
+  // ============================================================
+  window.openAppleDrawer = function(scopeName) {
+    var overlay = document.getElementById('apple-drawer-overlay');
+    if (!overlay) return;
+    
+    // Reset any previous success message to show fresh form
+    var drawerSuccess = document.getElementById('appleDrawerSuccessCard');
+    var drawerForm = overlay.querySelector('.apple-drawer-form');
+    if (drawerSuccess) drawerSuccess.remove();
+    if (drawerForm) drawerForm.style.display = '';
+
+    if (scopeName) {
+      var scopeInput = document.getElementById('drawer-product-name');
+      if (scopeInput) scopeInput.value = scopeName;
+      // Also highlight matching chip if available
+      document.querySelectorAll('#drawerScopeChips .apple-category-chip').forEach(function(chip) {
+        if (chip.getAttribute('data-scope') === scopeName) {
+          chip.classList.add('active');
+        } else {
+          chip.classList.remove('active');
+        }
+      });
+    }
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  };
+
+  window.closeAppleDrawer = function() {
+    var overlay = document.getElementById('apple-drawer-overlay');
+    if (overlay) overlay.classList.remove('active');
+    document.body.style.overflow = '';
+  };
+
+  window.handleAppleQuoteSubmit = function(e) {
+    if (e && e.preventDefault) e.preventDefault();
+    var overlay = document.getElementById('apple-drawer-overlay');
+    if (!overlay) return;
+
+    var content = overlay.querySelector('.apple-drawer-content');
+    var drawerForm = overlay.querySelector('.apple-drawer-form');
+    if (!content || !drawerForm) return;
+
+    var scopeVal = (document.getElementById('drawer-product-name') && document.getElementById('drawer-product-name').value) || 'Hospital Solutions';
+    var refId = 'DS-' + Math.floor(1000 + Math.random() * 9000);
+
+    // Hide the input fields smoothly
+    drawerForm.style.display = 'none';
+
+    // Remove any previous success card
+    var existingSuccess = document.getElementById('appleDrawerSuccessCard');
+    if (existingSuccess) existingSuccess.remove();
+
+    // Create Apple Glass In-Place Success Screen
+    var successCard = document.createElement('div');
+    successCard.id = 'appleDrawerSuccessCard';
+    successCard.className = 'apple-form-success-card';
+    successCard.innerHTML = `
+      <div class="apple-success-badge-icon">
+        <i class="bi bi-check-lg"></i>
+      </div>
+      <h3 class="apple-success-title">Consultation Request Received!</h3>
+      <p class="apple-success-desc">
+        Our senior hospital planners and biomedical engineering experts have received your inquiry for 
+        <strong style="color: #00A3FF;">${scopeVal}</strong>. We will review your specifications and reach out within 24 business hours.
+      </p>
+      <div class="apple-success-ref">
+        Reference ID: #${refId} &bull; Priority Response Desk
+      </div>
+      <div class="apple-success-actions">
+        <a href="tel:18008917466" class="apple-success-btn-secondary"><i class="bi bi-telephone-fill text-info"></i> Call National Desk</a>
+        <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20just%20submitted%20a%20consultation%20request%20ref%20%23${refId}" target="_blank" rel="noopener noreferrer" class="apple-success-btn-secondary"><i class="fa-brands fa-whatsapp text-success"></i> WhatsApp Desk</a>
+        <button type="button" class="apple-success-btn-secondary" onclick="closeAppleDrawer();"><i class="bi bi-x-circle"></i> Close</button>
+      </div>
+    `;
+
+    content.appendChild(successCard);
+  };
+
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initGlobalMobileDrawer);
   } else {

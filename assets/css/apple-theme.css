@@ -3996,4 +3996,386 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   }
 }
 
+/* ============================================================
+   MODERN APPLE GLASS FORMS & INTERACTIVE COMPONENTS SUITE
+   ============================================================ */
+
+/* Glass Form Container Card */
+.apple-glass-form-card {
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.85) 0%, rgba(8, 14, 28, 0.95) 100%) !important;
+  border: 1px solid rgba(0, 163, 255, 0.25) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border-radius: 24px !important;
+  padding: 34px 30px !important;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.75), inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.apple-form-group {
+  margin-bottom: 16px;
+}
+
+.apple-form-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #E2E8F0;
+  margin-bottom: 7px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.apple-form-label span.req {
+  color: #ef4444;
+  font-weight: 700;
+}
+
+/* Glass Input With Icon Box */
+.apple-input-icon-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.apple-input-icon {
+  position: absolute;
+  left: 15px;
+  color: #00A3FF;
+  font-size: 15px;
+  pointer-events: none;
+  z-index: 2;
+  transition: all 0.2s ease;
+}
+
+.apple-glass-input {
+  width: 100% !important;
+  min-height: 48px !important;
+  padding: 12px 16px 12px 42px !important;
+  background: rgba(255, 255, 255, 0.055) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.16) !important;
+  border-radius: 12px !important;
+  color: #ffffff !important;
+  font-size: 15px !important;
+  transition: all 0.22s ease !important;
+  outline: none !important;
+}
+
+.apple-glass-input::placeholder {
+  color: #94A3B8 !important;
+  opacity: 1 !important;
+}
+
+.apple-glass-input:focus {
+  background: rgba(255, 255, 255, 0.10) !important;
+  border-color: #0071E3 !important;
+  box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.35), 0 4px 16px rgba(0, 163, 255, 0.2) !important;
+  color: #ffffff !important;
+}
+
+.apple-input-icon-box:focus-within .apple-input-icon {
+  color: #ffffff !important;
+  transform: scale(1.1);
+}
+
+.apple-glass-textarea {
+  min-height: 100px !important;
+  padding-top: 13px !important;
+  line-height: 1.5 !important;
+  resize: vertical;
+}
+
+.apple-input-icon-box.textarea-box .apple-input-icon {
+  top: 15px;
+  transform: none;
+}
+.apple-input-icon-box.textarea-box:focus-within .apple-input-icon {
+  transform: scale(1.1);
+}
+
+/* Interactive Category Chips */
+.apple-chips-container {
+  margin-bottom: 18px;
+}
+
+.apple-chips-header {
+  font-size: 13px;
+  font-weight: 600;
+  color: #E2E8F0;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.apple-chips-header small {
+  color: #94A3B8;
+  font-size: 11.5px;
+}
+
+.apple-category-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.apple-category-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 13px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 980px;
+  color: #CBD5E1;
+  font-size: 12.5px;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.apple-category-chip i {
+  color: #00A3FF;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+
+.apple-category-chip:hover {
+  background: rgba(0, 163, 255, 0.14);
+  border-color: rgba(0, 163, 255, 0.4);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.apple-category-chip.active {
+  background: linear-gradient(135deg, #0071E3 0%, #00A3FF 100%) !important;
+  border-color: transparent !important;
+  color: #ffffff !important;
+  font-weight: 600;
+  box-shadow: 0 2px 12px rgba(0, 163, 255, 0.45);
+  transform: scale(1.02);
+}
+
+.apple-category-chip.active i {
+  color: #ffffff !important;
+}
+
+/* Submit Action Button */
+.apple-form-submit-btn {
+  width: 100% !important;
+  min-height: 52px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  background: linear-gradient(135deg, #0071E3 0%, #00A3FF 100%) !important;
+  color: #ffffff !important;
+  font-size: 15.5px !important;
+  font-weight: 600 !important;
+  border-radius: 980px !important;
+  border: none !important;
+  box-shadow: 0 4px 20px rgba(0, 113, 227, 0.45) !important;
+  cursor: pointer !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  text-decoration: none !important;
+}
+
+.apple-form-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 26px rgba(0, 163, 255, 0.55) !important;
+  color: #ffffff !important;
+}
+
+.apple-form-submit-btn:active {
+  transform: scale(0.98);
+}
+
+/* In-Place Animated Success Card (No Browser Popups!) */
+.apple-form-success-card {
+  text-align: center;
+  padding: 36px 20px 24px;
+  animation: appleFormSuccessIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes appleFormSuccessIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.apple-success-badge-icon {
+  width: 68px;
+  height: 68px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  background: rgba(34, 197, 94, 0.15);
+  border: 1.5px solid rgba(34, 197, 94, 0.5);
+  color: #22c55e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  box-shadow: 0 0 24px rgba(34, 197, 94, 0.3);
+}
+
+.apple-success-title {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.apple-success-desc {
+  color: #CBD5E1;
+  font-size: 14px;
+  line-height: 1.55;
+  max-width: 440px;
+  margin: 0 auto 18px;
+}
+
+.apple-success-ref {
+  display: inline-block;
+  padding: 6px 14px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px dashed rgba(0, 163, 255, 0.4);
+  border-radius: 8px;
+  color: #00A3FF;
+  font-size: 12.5px;
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+
+.apple-success-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.apple-success-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 10px 18px;
+  border-radius: 980px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  font-size: 13.5px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.apple-success-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+
+/* Interactive Direct Contact Tiles in Directory Cards */
+.contact-action-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.contact-action-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 13px;
+  border-radius: 980px;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.contact-pill-call {
+  background: rgba(0, 163, 255, 0.12);
+  border: 1px solid rgba(0, 163, 255, 0.35);
+  color: #7DD3FC !important;
+}
+
+.contact-pill-call:hover {
+  background: #0071E3;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+}
+
+.contact-pill-wa {
+  background: rgba(37, 211, 102, 0.12);
+  border: 1px solid rgba(37, 211, 102, 0.35);
+  color: #4ade80 !important;
+}
+
+.contact-pill-wa:hover {
+  background: #25D366;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+}
+
+.contact-pill-mail {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff !important;
+}
+
+.contact-pill-mail:hover {
+  background: #ffffff;
+  color: #0f172a !important;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .apple-glass-form-card {
+    padding: 22px 16px !important;
+    border-radius: 20px !important;
+  }
+
+  .apple-category-chip {
+    padding: 7px 11px;
+    font-size: 12px;
+  }
+
+  .apple-glass-input {
+    font-size: 16px !important; /* Strictly prevents iOS Safari auto-zoom */
+    min-height: 48px !important;
+    padding-left: 42px !important;
+  }
+
+  .apple-form-submit-btn {
+    min-height: 48px !important;
+    font-size: 15px !important;
+  }
+
+  .apple-success-badge-icon {
+    width: 58px;
+    height: 58px;
+    font-size: 28px;
+  }
+
+  .apple-success-title {
+    font-size: 19px;
+  }
+
+  .apple-success-desc {
+    font-size: 13px;
+  }
+}
+
+
 
