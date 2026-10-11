@@ -405,10 +405,28 @@
     content.appendChild(successCard);
   };
 
+  // Global Header Scroll Listener (.apple-globalnav blur/border styling)
+  function handleGlobalNavScroll() {
+    var nav = document.querySelector('.apple-globalnav');
+    if (nav) {
+      if (window.scrollY > 30) {
+        nav.classList.add('nav-scrolled');
+      } else {
+        nav.classList.remove('nav-scrolled');
+      }
+    }
+  }
+
+  window.addEventListener('scroll', handleGlobalNavScroll, { passive: true });
+
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initGlobalMobileDrawer);
+    document.addEventListener('DOMContentLoaded', function() {
+      initGlobalMobileDrawer();
+      handleGlobalNavScroll();
+    });
   } else {
     initGlobalMobileDrawer();
+    handleGlobalNavScroll();
   }
 
 })();

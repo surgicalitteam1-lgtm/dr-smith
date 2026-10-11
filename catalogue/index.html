@@ -1062,69 +1062,7 @@
   <script src="../assets/js/admin-portal.js?v=28.0"></script>
   <script src="../assets/js/airtable-marketplace.js?v=28.0"></script>
 
-  <script>
-    // Live category search filter
-    document.addEventListener('DOMContentLoaded', function() {
-      var searchInput = document.getElementById('category-filter-search');
-      var countElem = document.getElementById('category-results-count');
-      var noResultsElem = document.getElementById('no-category-results');
-
-      if (searchInput) {
-        searchInput.addEventListener('input', function() {
-          var query = this.value.toLowerCase().trim();
-          var categoryCards = document.querySelectorAll('.category-box-col');
-          var visibleCount = 0;
-
-          categoryCards.forEach(function(card) {
-            var title = (card.getAttribute('data-title') || '').toLowerCase();
-            var keywords = (card.getAttribute('data-keywords') || '').toLowerCase();
-            var text = card.textContent.toLowerCase();
-
-            var isMatch = !query || title.includes(query) || keywords.includes(query) || text.includes(query);
-            card.style.display = isMatch ? '' : 'none';
-
-            if (isMatch) visibleCount++;
-          });
-
-          if (countElem) {
-            countElem.textContent = visibleCount;
-          }
-
-          if (noResultsElem) {
-            noResultsElem.classList.toggle('d-none', visibleCount > 0);
-          }
-        });
-      }
-    });
-
-    // Drawer Consultation Form Logic
-    function openAppleDrawer(scopeName) {
-      if (scopeName) {
-        const scopeInput = document.getElementById('drawer-product-name');
-        if (scopeInput) scopeInput.value = scopeName;
-      }
-      document.getElementById('apple-drawer-overlay').classList.add('active');
-      document.body.style.overflow = 'hidden';
-    }
-    function closeAppleDrawer() {
-      document.getElementById('apple-drawer-overlay').classList.remove('active');
-      document.body.style.overflow = '';
-    }
-    function handleAppleQuoteSubmit(e) {
-      e.preventDefault();
-      alert('Thank you! Your consultation request has been received.');
-      closeAppleDrawer();
-    }
-
-    // Mobile Drawer Navigation
-    window.addEventListener('scroll', function() {
-      const nav = document.querySelector('.apple-globalnav');
-      if (nav) {
-        if (window.scrollY > 30) nav.classList.add('nav-scrolled');
-        else nav.classList.remove('nav-scrolled');
-      }
-    }, { passive: true });
-  </script>
+  <script src="../assets/js/catalogue-filters.js?v=1.0"></script>
   <script src="../assets/js/global-search.js?v=42.0"></script>
 </body>
 </html>

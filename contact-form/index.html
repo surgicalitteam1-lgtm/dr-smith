@@ -466,67 +466,7 @@
 
   <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script>
-    // Interactive Category Chips Controller
-    document.querySelectorAll('#contactScopeChips .apple-category-chip').forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        document.querySelectorAll('#contactScopeChips .apple-category-chip').forEach(function(b) {
-          b.classList.remove('active');
-        });
-        this.classList.add('active');
-        var scope = this.getAttribute('data-scope');
-        var input = document.getElementById('contactScopeInput');
-        var label = document.getElementById('selectedScopeLabel');
-        if (input) input.value = scope;
-        if (label) label.textContent = scope;
-      });
-    });
-
-    // In-Place Animated Success Handler (No Browser Alerts!)
-    function handleContactPageSubmit(e) {
-      if (e && e.preventDefault) e.preventDefault();
-      var form = document.getElementById('contactPageForm');
-      var name = (document.getElementById('contactFullName') && document.getElementById('contactFullName').value.trim()) || 'Doctor / Partner';
-      var scope = (document.getElementById('contactScopeInput') && document.getElementById('contactScopeInput').value) || 'Turnkey Hospital Setup';
-      var refNum = 'DS-' + Math.floor(1000 + Math.random() * 9000);
-
-      var clientNameEl = document.getElementById('successClientName');
-      var scopeBadgeEl = document.getElementById('successScopeBadge');
-      var refCodeEl = document.getElementById('successRefCode');
-
-      if (clientNameEl) clientNameEl.textContent = name;
-      if (scopeBadgeEl) scopeBadgeEl.textContent = scope;
-      if (refCodeEl) refCodeEl.textContent = '#' + refNum;
-
-      if (form) form.classList.add('d-none');
-      var successCard = document.getElementById('contactSuccessState');
-      if (successCard) successCard.classList.remove('d-none');
-
-      // Scroll smoothly to success state if needed
-      var formCard = document.getElementById('contactMainFormCard');
-      if (formCard) {
-        formCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    }
-
-    function resetContactPageForm() {
-      var form = document.getElementById('contactPageForm');
-      if (form) {
-        form.reset();
-        form.classList.remove('d-none');
-      }
-      var successCard = document.getElementById('contactSuccessState');
-      if (successCard) successCard.classList.add('d-none');
-    }
-
-    window.addEventListener('scroll', function() {
-      var nav = document.querySelector('.apple-globalnav');
-      if (nav) {
-        if (window.scrollY > 30) nav.classList.add('nav-scrolled');
-        else nav.classList.remove('nav-scrolled');
-      }
-    }, { passive: true });
-  </script>
+  <script src="../assets/js/contact-page.js?v=1.0"></script>
 
   <script src="../assets/js/global-search.js?v=43.0"></script>
 </body>

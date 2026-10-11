@@ -350,32 +350,7 @@
 
   <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script>
-    function openAppleDrawer(scopeName) {
-      if (scopeName) {
-        const scopeInput = document.getElementById('drawer-product-name');
-        if (scopeInput) scopeInput.value = scopeName;
-      }
-      document.getElementById('apple-drawer-overlay').classList.add('active');
-      document.body.style.overflow = 'hidden';
-    }
-    function closeAppleDrawer() {
-      document.getElementById('apple-drawer-overlay').classList.remove('active');
-      document.body.style.overflow = '';
-    }
-    function handleAppleQuoteSubmit(e) {
-      e.preventDefault();
-      alert('Thank you! Your project consultation request has been received.');
-      closeAppleDrawer();
-    }
-    window.addEventListener('scroll', function() {
-      const nav = document.querySelector('.apple-globalnav');
-      if (nav) {
-        if (window.scrollY > 30) nav.classList.add('nav-scrolled');
-        else nav.classList.remove('nav-scrolled');
-      }
-    }, { passive: true });
-  </script>
+  
 
   <script src="../assets/js/global-search.js?v=42.0"></script>
 </body>

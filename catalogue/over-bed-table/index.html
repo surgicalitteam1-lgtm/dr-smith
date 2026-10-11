@@ -190,32 +190,7 @@
                         <input type="text" id="categoryProductSearch" class="form-control border-start-0 ps-0" placeholder="Filter over bed table..." aria-label="Filter products">
                     </div>
                 </div>
-                <script>
-                document.addEventListener('DOMContentLoaded', function() {
-                    var searchInput = document.getElementById('categoryProductSearch');
-                    if (searchInput) {
-                        searchInput.addEventListener('input', function() {
-                            var query = this.value.toLowerCase().trim();
-                            var items = document.querySelectorAll('.catalogue-grid-item');
-                            var count = 0;
-                            items.forEach(function(item) {
-                                var title = item.getAttribute('data-title') || '';
-                                var badge = item.getAttribute('data-badge') || '';
-                                if (!query || title.includes(query) || badge.includes(query)) {
-                                    item.style.display = '';
-                                    count++;
-                                } else {
-                                    item.style.display = 'none';
-                                }
-                            });
-                            var countElem = document.querySelector('.catalogue-count strong');
-                            if (countElem) {
-                                countElem.textContent = count;
-                            }
-                        });
-                    }
-                });
-                </script>
+                <script src="../../assets/js/catalogue-filters.js?v=1.0"></script>
                 <div class="row g-4" id="products-grid">
                     <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="over bed food table (u type)" data-badge="manual u-base">
                         <article class="catalogue-card">
@@ -479,32 +454,7 @@
 
   <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script>
-    function openAppleDrawer(scopeName) {
-      if (scopeName) {
-        const scopeInput = document.getElementById('drawer-product-name');
-        if (scopeInput) scopeInput.value = scopeName;
-      }
-      document.getElementById('apple-drawer-overlay').classList.add('active');
-      document.body.style.overflow = 'hidden';
-    }
-    function closeAppleDrawer() {
-      document.getElementById('apple-drawer-overlay').classList.remove('active');
-      document.body.style.overflow = '';
-    }
-    function handleAppleQuoteSubmit(e) {
-      e.preventDefault();
-      alert('Thank you! Your project consultation request has been received.');
-      closeAppleDrawer();
-    }
-    window.addEventListener('scroll', function() {
-      const nav = document.querySelector('.apple-globalnav');
-      if (nav) {
-        if (window.scrollY > 30) nav.classList.add('nav-scrolled');
-        else nav.classList.remove('nav-scrolled');
-      }
-    }, { passive: true });
-  </script>
+  
 
 
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to top">
