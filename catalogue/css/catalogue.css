@@ -646,3 +646,12 @@ footer {
   flex-shrink: 0;
 }
 
+.max-w-500 {
+  max-width: 500px;
+}
+
+.apple-drawer-input-readonly {
+  background: rgba(255, 255, 255, 0.08) !important;
+  font-weight: 600 !important;
+}
+
