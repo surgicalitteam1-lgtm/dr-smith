@@ -122,6 +122,39 @@
     return '';
   }
 
+  const HARDCODED_MEMBERS = [
+    {
+      id: "admin",
+      pass: "admin",
+      passHash: "bc30d3b94b6baf9224b7ad35ea56fb5a1c2c20aee168f8686c790b1d063a1851",
+      name: "Admin",
+      department: "IT & System Security",
+      role: "Administrator",
+      organization: "Dr. Smith Healthcare",
+      status: "Active"
+    },
+    {
+      id: "lucky",
+      pass: "lucky123",
+      passHash: "1861500c364d022c1379490005387bab5e89d86f101f3bc44bf20bcc83f9d688",
+      name: "Lucky",
+      department: "Administration",
+      role: "Administrator",
+      organization: "Dr. Smith Healthcare",
+      status: "Active"
+    },
+    {
+      id: "ritu",
+      pass: "ritu123",
+      passHash: "eb3a0473b431a48a60dd1bcfcada2b4f5f9a2ded75f941cc2baf02e06402dcf5",
+      name: "Ritu",
+      department: "Export Department",
+      role: "Head of Export Department",
+      organization: "Dr. Smith Healthcare",
+      status: "Active"
+    }
+  ];
+
   /**
    * Resilient multi-path loader for data/members.json.
    * Tries multiple candidate paths to guarantee instant resolution across all hosting environments.
@@ -152,7 +185,8 @@
         }
       } catch (e) {}
     }
-    return cachedMembers || [];
+    cachedMembers = HARDCODED_MEMBERS;
+    return HARDCODED_MEMBERS;
   }
 
   /**
@@ -609,16 +643,17 @@
                   return;
                 }
 
-                // Cryptographic Salted SHA-256 Hash verification
+                // Password verification: matches either cryptographic hash OR plaintext pass
                 let passMatches = false;
-                if (match.passHash) {
-                  const computedHash = (window.DrSmithSecurity && typeof window.DrSmithSecurity.hashCredential === 'function')
-                    ? await window.DrSmithSecurity.hashCredential(match.id || idVal, passVal)
-                    : '';
-                  passMatches = (computedHash === match.passHash);
-                } else if (match.pass || match.password || match.Password) {
+                if (match.passHash && window.DrSmithSecurity && typeof window.DrSmithSecurity.hashCredential === 'function') {
+                  try {
+                    const computedHash = await window.DrSmithSecurity.hashCredential(match.id || idVal, passVal);
+                    if (computedHash === match.passHash) passMatches = true;
+                  } catch (hErr) {}
+                }
+                if (!passMatches && (match.pass || match.password || match.Password)) {
                   const expectedPass = String(match.pass || match.password || match.Password || '');
-                  passMatches = (expectedPass === passVal);
+                  if (expectedPass === passVal) passMatches = true;
                 }
 
                 if (passMatches) {

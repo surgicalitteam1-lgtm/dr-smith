@@ -1,0 +1,5 @@
+# Ignore private credentials files
+data/credentials-private.txt
+*.local
+.env
+.env.local
