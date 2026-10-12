@@ -64,9 +64,9 @@
 
     var mailNavBtn = document.querySelector('.apple-nav-circle-mail');
     if (mailNavBtn && window.innerWidth <= 991) {
-      var heroMailBtn = document.querySelector('.btn-hero-mail');
-      if (heroMailBtn) {
-        var rect = heroMailBtn.getBoundingClientRect();
+      var heroActionBtn = document.querySelector('.btn-hero-whatsapp, .btn-hero-mail');
+      if (heroActionBtn) {
+        var rect = heroActionBtn.getBoundingClientRect();
         if (rect.bottom <= 74) {
           mailNavBtn.classList.add('visible-mobile');
         } else {

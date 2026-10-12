@@ -982,6 +982,44 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   transform: scale(1.15);
 }
 
+/* Hero WhatsApp Button - Official Dr. Smith WhatsApp Styling */
+.btn-hero-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #25D366 !important;
+  border: 1.5px solid #25D366 !important;
+  color: #ffffff !important;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 13px 26px;
+  border-radius: 980px;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.35), 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+  transition: all 0.25s ease;
+}
+
+.btn-hero-whatsapp i {
+  color: #ffffff !important;
+  font-size: 18px !important;
+  transition: transform 0.25s ease;
+}
+
+.btn-hero-whatsapp:hover,
+.btn-hero-whatsapp:active {
+  background: #20BA5A !important;
+  border-color: #20BA5A !important;
+  color: #ffffff !important;
+  box-shadow: 0 6px 24px rgba(37, 211, 102, 0.55), 0 2px 10px rgba(0, 0, 0, 0.3) !important;
+  transform: translateY(-2px);
+}
+
+.btn-hero-whatsapp:hover i,
+.btn-hero-whatsapp:active i {
+  transform: scale(1.15);
+}
+
 .hero-link-secondary {
   display: inline-flex;
   align-items: center;
@@ -3057,7 +3095,8 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
     margin-bottom: 20px !important;
   }
   .btn-hero-primary,
-  .btn-hero-mail {
+  .btn-hero-mail,
+  .btn-hero-whatsapp {
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -3112,6 +3151,29 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   .btn-hero-mail:hover i,
   .btn-hero-mail:active i {
     color: #000000 !important;
+    transform: scale(1.15);
+  }
+  .btn-hero-whatsapp {
+    background: #25D366 !important;
+    border: 1.5px solid #25D366 !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 16px rgba(37, 211, 102, 0.35), 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+  }
+  .btn-hero-whatsapp i {
+    color: #ffffff !important;
+    font-size: 16px !important;
+    transition: transform 0.25s ease;
+  }
+  .btn-hero-whatsapp:hover,
+  .btn-hero-whatsapp:active {
+    background: #20BA5A !important;
+    border-color: #20BA5A !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 22px rgba(37, 211, 102, 0.5) !important;
+    transform: translateY(-2px);
+  }
+  .btn-hero-whatsapp:hover i,
+  .btn-hero-whatsapp:active i {
     transform: scale(1.15);
   }
 }
@@ -3224,14 +3286,16 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
     margin-bottom: 16px !important;
   }
   .btn-hero-primary,
-  .btn-hero-mail {
+  .btn-hero-mail,
+  .btn-hero-whatsapp {
     height: 42px !important;
     padding: 8px 10px !important;
     font-size: 12.5px !important;
     gap: 6px !important;
   }
   .btn-hero-primary i,
-  .btn-hero-mail i {
+  .btn-hero-mail i,
+  .btn-hero-whatsapp i {
     font-size: 13px !important;
   }
 }

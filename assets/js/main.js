@@ -946,9 +946,9 @@
         return;
       }
 
-      const heroMailBtn = document.querySelector('.btn-hero-mail');
-      if (heroMailBtn) {
-        const rect = heroMailBtn.getBoundingClientRect();
+      const heroActionBtn = document.querySelector('.btn-hero-whatsapp, .btn-hero-mail');
+      if (heroActionBtn) {
+        const rect = heroActionBtn.getBoundingClientRect();
         // 74px accounts for the fixed header height
         const isPastHero = rect.bottom <= 74;
         if (isPastHero) {
