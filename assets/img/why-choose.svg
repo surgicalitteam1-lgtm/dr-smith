@@ -59,7 +59,7 @@
   <!-- Center Core -->
   <text x="1084" y="768" class="center-eyebrow" text-anchor="middle">Excellence In Care</text>
   <text x="1084" y="851" class="center-why" text-anchor="middle">Why Choose</text>
-  <text x="1084" y="964" class="center-brand" text-anchor="middle">Mediaid?</text>
+  <text x="1084" y="964" class="center-brand" text-anchor="middle">Dr. Smith</text>
   <rect x="934" y="996" width="300" height="34" rx="17" fill="rgba(255,255,255,0.06)" stroke="rgba(0,163,255,0.3)" stroke-width="1"/>
   <text x="1084" y="1019" class="center-badge-text" text-anchor="middle">NABH &amp; JCI ACCREDITED</text>
 
