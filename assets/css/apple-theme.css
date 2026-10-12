@@ -1087,6 +1087,48 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   display: block;
 }
 
+/* 2.5 WHY CHOOSE MEDIAID INFOGRAPHIC SHOWCASE */
+.why-choose-infographic-section {
+  position: relative;
+  padding: 40px 0 25px 0;
+  background: #030712;
+  overflow: hidden;
+}
+
+.why-choose-infographic-card {
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 36px 30px;
+  max-width: 980px;
+  margin: 0 auto;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45), 0 0 35px rgba(0, 163, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-choose-infographic-card:hover {
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.55), 0 0 45px rgba(0, 163, 255, 0.22);
+}
+
+.why-choose-infographic-img {
+  width: 100%;
+  max-width: 880px;
+  height: auto;
+  display: inline-block;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .why-choose-infographic-section {
+    padding: 24px 0 16px 0;
+  }
+  .why-choose-infographic-card {
+    border-radius: 18px;
+    padding: 20px 12px;
+  }
+}
+
 /* 3. FEATURED MEDICAL EQUIPMENT */
 .featured-products-section {
   padding: 0 0 45px 0 !important;
