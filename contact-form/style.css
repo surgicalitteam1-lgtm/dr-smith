@@ -1,383 +1,94 @@
 /**
- * Contact & Enquiry Page Stylesheet - Orange Theme
- * 
- * Styles for the responsive split-screen contact form modal/page.
+ * Dr. Smith Healthcare Solutions - Official Consultation & Quotation Form Stylesheet
+ * Scoped styling complementary to apple-theme.css
  */
 
-/* ============================================================
-   1. Theme Color & Font Variables
-   ============================================================ */
-:root {
-  --default-font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --heading-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-    --bg-color: #ffffff;                                        /* Soft light-orange background tint */
-    --bg-gradient: linear-gradient(135deg, #ffffff 0%, #f5f5f7 100%); /* Subtle diagonal background gradient */
-    --primary-blue: #0071e3;                                    /* Primary action orange */
-    --primary-hover: #0077ed;                                   /* Darker orange on button hover */
-    --text-dark: #1e293b;                                       /* Dark slate color for headings */
-    --text-gray: #1d1d1f;                                       /* Text color */
-    --white: #ffffff;                                           /* Clean white for card backgrounds */
-    --border-color: #e5e5ea;                                    /* Neutral input border */
-    --error-color: #0071e3;                                     /* Error orange for validation */
-    --success-color: #0071e3;                                   /* Confirmations */
-    --shadow-sm: 0 4px 6px -1px rgba(0, 113, 227, 0.05), 0 2px 4px -1px rgba(0, 113, 227, 0.03);
-    --shadow-lg: 0 20px 40px -5px rgba(0, 113, 227, 0.08);     /* Soft floating card drop-shadow */
-    --font-main: 'Inter', sans-serif;                           /* Clean modern typeface */
+/* Scope Header Pill */
+.contact-scope-label {
+  display: inline-block;
+  background: rgba(0, 163, 255, 0.12);
+  border: 1px solid rgba(0, 163, 255, 0.35);
+  color: #38bdf8;
+  padding: 2px 10px;
+  border-radius: 980px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
-/* Mailto link default reset */
-a[href^="mailto:"] {
-    text-decoration: none;
+/* Product Inquiry Context Pill */
+.apple-product-inquiry-pill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: linear-gradient(135deg, rgba(0, 163, 255, 0.16) 0%, rgba(15, 23, 42, 0.85) 100%);
+  border: 1px solid rgba(0, 163, 255, 0.45);
+  border-radius: 14px;
+  padding: 11px 16px;
+  font-size: 13.5px;
+  color: #7dd3fc;
+  box-shadow: 0 4px 20px rgba(0, 163, 255, 0.18);
+  animation: fadeInPill 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* ============================================================
-   2. Reset & Base Page Layout
-   ============================================================ */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.apple-product-inquiry-pill .btn-clear-inquiry {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 4px;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
-body {
-    font-family: var(--font-main);
-    background: var(--bg-gradient);
-    color: var(--text-dark);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
+.apple-product-inquiry-pill .btn-clear-inquiry:hover {
+  color: #ffffff;
+  transform: scale(1.2);
 }
 
-/* ============================================================
-   3. Minimal Brand Header & Logo
-   ============================================================ */
-header {
-    background: transparent;
-    padding: 20px 5%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+/* Validation and Error States */
+.apple-glass-input.input-error {
+  border-color: #f43f5e !important;
+  box-shadow: 0 0 0 3px rgba(244, 63, 94, 0.28) !important;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: var(--text-dark);
-    text-decoration: none;
+.field-error-msg {
+  font-size: 11.5px;
+  color: #f43f5e;
+  margin-top: 4px;
+  display: none;
+  font-weight: 500;
 }
 
-.logo img {
-    display: block;
-    width: 48px;
-    height: 48px;
-    flex: 0 0 48px;
-    object-fit: contain;
+.apple-form-group.has-error .field-error-msg {
+  display: block;
 }
 
-.logo span {
-    font-weight: 300; /* Subtle light weight on brand prefix */
+/* Animated Pulse Dot for Inquiry */
+.badge-dot-glow {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #00A3FF;
+  box-shadow: 0 0 8px #00A3FF;
+  animation: pulseDot 2s infinite ease-in-out;
 }
 
-/* ============================================================
-   4. Split-Screen Layout (Left: Info, Right: Form)
-   ============================================================ */
-.contact-container {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 60px;
-    flex: 1;
-    align-items: center;
+@keyframes pulseDot {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 1;
+  }
 }
 
-/* ============================================================
-   5. Left Column: Company Info & Contact Cards
-   ============================================================ */
-.contact-info {
-    padding-right: 20px;
-}
-
-.contact-info h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    color: var(--text-dark);
-    margin-bottom: 10px;
-    line-height: 1.2;
-}
-
-.contact-info h1 span {
-    color: var(--primary-blue);
-}
-
-.contact-info > p {
-    color: var(--text-gray);
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 40px;
-}
-
-.info-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-.info-card {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-}
-
-.icon-box {
-    width: 50px;
-    height: 50px;
-    background: var(--white);
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--primary-blue);
-    font-size: 1.2rem;
-    box-shadow: var(--shadow-sm);
-    flex-shrink: 0;
-}
-
-.info-content h3 {
-    font-size: 1.05rem;
-    font-weight: 600;
-    margin-bottom: 5px;
-    color: var(--text-dark);
-}
-
-.info-content p {
-    color: var(--text-gray);
-    font-size: 0.95rem;
-    line-height: 1.5;
-}
-
-/* ============================================================
-   6. Right Column: Form Container & Input Fields
-   ============================================================ */
-.contact-form-wrapper {
-    background: var(--white);
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: var(--shadow-lg);
-    border: 1px solid rgba(0, 113, 227, 0.12);
-}
-
-.contact-form-wrapper h2 {
-    font-size: 1.8rem;
-    margin-bottom: 25px;
-    color: var(--text-dark);
-}
-
-.form-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin-bottom: 20px;
-}
-
-.full-width {
-    grid-column: 1 / -1;
-}
-
-label {
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: var(--text-dark);
-}
-
-input,
-select,
-textarea {
-    width: 100%;
-    padding: 14px 16px;
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
-    font-family: var(--default-font);
-    font-size: 0.95rem;
-    color: var(--text-dark);
-    background: #f5f5f7;
-    transition: all 0.2s ease;
-    outline: none;
-}
-
-input::placeholder,
-select:invalid,
-textarea::placeholder {
-    color: #86868b;
-}
-
-input:focus,
-select:focus,
-textarea:focus {
-    background: var(--white);
-    border-color: var(--primary-blue);
-    box-shadow: 0 0 0 4px rgba(0, 113, 227, 0.15);
-}
-
-textarea {
-    resize: vertical;
-    min-height: 120px;
-}
-
-/* ============================================================
-   7. Checkbox Group & Privacy Link
-   ============================================================ */
-.checkbox-group {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    margin-bottom: 25px;
-}
-
-.checkbox-group input[type="checkbox"] {
-    width: auto;
-    margin-top: 4px;
-    cursor: pointer;
-    accent-color: var(--primary-blue);
-}
-
-.checkbox-group label {
-    font-size: 0.85rem;
-    color: var(--text-gray);
-    font-weight: 400;
-    line-height: 1.5;
-    cursor: pointer;
-}
-
-.checkbox-group a {
-    color: var(--primary-blue);
-    text-decoration: none;
-}
-
-/* ============================================================
-   8. Submit Button & Loading Spinner (Apple Pill)
-   ============================================================ */
-.submit-btn {
-    background: var(--primary-blue);
-    color: var(--white);
-    border: none;
-    padding: 14px 28px;
-    border-radius: 980px;
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 4px 14px rgba(0, 113, 227, 0.25);
-}
-
-.submit-btn:hover {
-    background: var(--primary-hover);
-    transform: scale(1.01);
-    box-shadow: 0 6px 20px rgba(0, 113, 227, 0.35);
-}
-
-.submit-btn:active {
-    transform: translateY(0);
-}
-
-.submit-btn i {
-    font-size: 1.1rem;
-}
-
-/* Loading animation spinner inside the submit button */
-.spinner {
-    display: none;
-    width: 20px;
-    height: 20px;
-    border: 3px solid rgba(255, 255, 255, 0.3);
-    border-radius: 50%;
-    border-top-color: #fff;
-    animation: spin 1s ease-in-out infinite;
-}
-
-@keyframes spin {
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-/* ============================================================
-   9. Validation Errors & Feedback Alerts
-   ============================================================ */
-.error-message {
-    color: var(--error-color);
-    font-size: 0.8rem;
-    margin-top: -15px;
-    margin-bottom: 15px;
-    display: none;
-}
-
-.status-alert {
-    display: none;
-    padding: 14px 18px;
-    border-radius: 8px;
-    font-size: 0.95rem;
-    margin-bottom: 20px;
-    line-height: 1.5;
-}
-
-.status-alert.success {
-    background-color: #ffffff;
-    color: #0077ed;
-    border: 1px solid #e5e5ea;
-}
-
-.status-alert.error {
-    background-color: #ffffff;
-    color: #0071e3;
-    border: 1px solid #e5e5ea;
-}
-
-/* ============================================================
-   10. Anti-Spam Honeypot Field
-   ============================================================ */
-.honeypot-field {
-    display: none !important;
-}
-
-/* ============================================================
-   11. Responsive Breakpoints (Tablets & Mobile)
-   ============================================================ */
-@media (max-width: 992px) {
-    .contact-container {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-    nav {
-        display: none;
-    }
-}
-
-@media (max-width: 600px) {
-    .form-grid {
-        grid-template-columns: 1fr;
-    }
-    .contact-form-wrapper {
-        padding: 25px;
-    }
-    .contact-info h1 {
-        font-size: 2.2rem;
-    }
+@keyframes fadeInPill {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
 }

@@ -13,6 +13,7 @@
   <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link href="../assets/css/apple-theme.css?v=99.0" rel="stylesheet">
+  <link href="style.css?v=2.0" rel="stylesheet">
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
 </head>
@@ -54,15 +55,10 @@
         </li>
       </ul>
 
-                  <!-- Action Utilities -->
+      <!-- Action Utilities -->
       <div class="apple-nav-actions">
-        <!-- Products Catalogue Button -->
-        <a href="../catalogue/index.html" class="apple-nav-circle-btn apple-nav-circle-catalogue" aria-label="Browse Medical Catalogue" title="Browse Products Catalogue">
-          <i class="bi bi-grid-fill"></i>
-        </a>
-
         <!-- WhatsApp Circle Button -->
-        <a href="https://wa.me/919999999999" class="apple-nav-circle-btn apple-nav-circle-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" title="WhatsApp Direct">
+        <a href="https://wa.me/919599081020" class="apple-nav-circle-btn apple-nav-circle-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" title="WhatsApp Direct">
           <i class="fa-brands fa-whatsapp"></i>
         </a>
 
@@ -133,7 +129,7 @@
     </div>
     
     <div class="apple-mobile-cta-box">
-      <button type="button" class="apple-mobile-btn-consultation" onclick="openAppleDrawer('Turnkey Consultation');">
+      <button type="button" class="apple-mobile-btn-consultation" onclick="var el = document.getElementById('contactMainFormCard'); if(el) el.scrollIntoView({behavior: 'smooth', block: 'start'}); var closeBtn = document.getElementById('appleMobileDrawerClose'); if(closeBtn) closeBtn.click();">
         <i class="bi bi-building-check me-2"></i> Request Project Consultation <i class="bi bi-arrow-right ms-auto"></i>
       </button>
 
@@ -221,6 +217,15 @@
             <p class="text-muted small mb-4" style="line-height: 1.55;">Our hospital planners and biomedical engineers will analyze your specifications and send an itemized quotation within 24 hours.</p>
 
             <form id="contactPageForm" onsubmit="handleContactPageSubmit(event);">
+              <!-- Equipment Inquiry Context Banner (dynamically shown if arrived via ?product=) -->
+              <div id="productInquiryBanner" class="apple-product-inquiry-pill d-none mb-3" role="status">
+                <div class="d-flex align-items-center gap-2">
+                  <span class="badge-dot-glow"></span>
+                  <span>Inquiring about: <strong id="productInquiryName" class="text-white"></strong></span>
+                </div>
+                <button type="button" class="btn-clear-inquiry" onclick="clearProductInquiry();" aria-label="Clear equipment inquiry" title="Clear equipment inquiry">&times;</button>
+              </div>
+
               <!-- Scope Selection via Quick Chips -->
               <div class="apple-chips-container">
                 <div class="apple-chips-header">
@@ -413,61 +418,9 @@
     </div>
   </footer>
 
-  <!-- Drawer Modal -->
-  <div class="apple-drawer-overlay" id="apple-drawer-overlay" onclick="if(event.target===this) closeAppleDrawer();">
-    <div class="apple-drawer-content">
-      <button type="button" class="apple-drawer-close" onclick="closeAppleDrawer();" aria-label="Close">
-        <i class="bi bi-x-lg"></i>
-      </button>
-      
-      <div style="text-align: center; margin-bottom: 24px;">
-        <span class="apple-shelf-badge">Dr. Smith Turnkey &amp; Procurement Desk</span>
-        <h3 style="font-size: 24px; font-weight: 700; margin-top: 8px;">Request Project Consultation</h3>
-        <p style="font-size: 14px; color: var(--apple-text-secondary); margin: 0;">Speak directly with our healthcare architects &amp; hospital engineering experts.</p>
-      </div>
-
-      <form class="apple-drawer-form" onsubmit="handleAppleQuoteSubmit(event);">
-        <div class="form-group">
-          <label>Scope of Interest</label>
-          <input type="text" id="drawer-product-name" value="Turnkey Hospital Setup" readonly style="background: rgba(255,255,255,0.08); font-weight: 600;">
-        </div>
-
-        <div class="row g-2">
-          <div class="col-md-6 form-group">
-            <label>Your Full Name *</label>
-            <input type="text" placeholder="Dr. / Mr. / Ms." required>
-          </div>
-          <div class="col-md-6 form-group">
-            <label>Hospital / Institution Name *</label>
-            <input type="text" placeholder="Hospital / Organization Name" required>
-          </div>
-        </div>
-
-        <div class="row g-2">
-          <div class="col-md-6 form-group">
-            <label>Official Email *</label>
-            <input type="email" placeholder="name@hospital.com" required>
-          </div>
-          <div class="col-md-6 form-group">
-            <label>Phone / WhatsApp *</label>
-            <input type="tel" placeholder="+91 99999 99999" required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label>Project Scope &amp; Requirements</label>
-          <textarea rows="3" placeholder="Specify turnkey bed capacity, modular OT requirement, MGPS pipeline, or equipment procurement details..."></textarea>
-        </div>
-
-        <button type="submit" class="apple-btn-pill w-100 mt-2" style="padding: 14px;">Submit Consultation Request</button>
-      </form>
-    </div>
-  </div>
-
   <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="../assets/js/contact-page.js?v=1.0"></script>
-
-  <script src="../assets/js/global-search.js?v=43.0"></script>
+  <script src="../assets/js/contact-page.js?v=2.0"></script>
+  <script src="../assets/js/global-search.js?v=44.0"></script>
 </body>
 </html>

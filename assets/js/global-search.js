@@ -334,32 +334,34 @@
   }
 
   // ============================================================
-  // GLOBAL CONSULTATION DRAWER CONTROLLER & IN-PLACE SUCCESS ANIMATION
+  // GLOBAL CONSULTATION DRAWER & UNIVERSAL FORM REDIRECTOR
+  // All consultation, quote, and inquiry triggers redirect directly
+  // to the unified main form at contact-form/index.html.
   // ============================================================
   window.openAppleDrawer = function(scopeName) {
-    var overlay = document.getElementById('apple-drawer-overlay');
-    if (!overlay) return;
+    var currentPath = window.location.pathname.replace(/\\/g, '/');
     
-    // Reset any previous success message to show fresh form
-    var drawerSuccess = document.getElementById('appleDrawerSuccessCard');
-    var drawerForm = overlay.querySelector('.apple-drawer-form');
-    if (drawerSuccess) drawerSuccess.remove();
-    if (drawerForm) drawerForm.style.display = '';
-
-    if (scopeName) {
-      var scopeInput = document.getElementById('drawer-product-name');
-      if (scopeInput) scopeInput.value = scopeName;
-      // Also highlight matching chip if available
-      document.querySelectorAll('#drawerScopeChips .apple-category-chip').forEach(function(chip) {
-        if (chip.getAttribute('data-scope') === scopeName) {
-          chip.classList.add('active');
-        } else {
-          chip.classList.remove('active');
-        }
-      });
+    // If already on the contact form page, smooth scroll directly to the form
+    if (currentPath.includes('/contact-form/')) {
+      var targetForm = document.getElementById('contactMainFormCard') || document.getElementById('contactPageForm');
+      if (targetForm) {
+        targetForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+      if (scopeName && typeof window.selectScopeChipByName === 'function') {
+        window.selectScopeChipByName(scopeName);
+      }
+      return;
     }
-    overlay.classList.add('active');
-    document.body.style.overflow = 'hidden';
+
+    // Determine correct relative prefix based on current page depth
+    var prefix = getRootPrefix();
+    var targetUrl = prefix + 'contact-form/index.html';
+    
+    if (scopeName) {
+      targetUrl += '?scope=' + encodeURIComponent(scopeName);
+    }
+    
+    window.location.href = targetUrl;
   };
 
   window.closeAppleDrawer = function() {
