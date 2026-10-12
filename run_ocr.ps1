@@ -28,7 +28,7 @@ $engine = [Windows.Media.Ocr.OcrEngine]::TryCreateFromUserProfileLanguages()
 
 foreach ($d in $Dirs) {
     if (Test-Path $d) {
-        $files = Get-ChildItem -Path $d -Filter 'Screenshot*.png'
+        $files = Get-ChildItem -Path $d -Filter '*.png'
         foreach ($f in $files) {
             try {
                 $file = Await-WinRT ([Windows.Storage.StorageFile]::GetFileFromPathAsync($f.FullName)) ([Windows.Storage.StorageFile])
