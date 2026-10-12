@@ -2,113 +2,157 @@
   <defs>
     <style>
       .title-font { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Inter', Roboto, sans-serif; font-size: 38px; font-weight: 700; fill: #ffffff; }
-      .body-font { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Inter', Roboto, sans-serif; font-size: 32px; font-weight: 500; fill: #cbd5e1; }
-      .center-why { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Inter', Roboto, sans-serif; font-size: 98px; font-weight: 800; fill: #ffffff; letter-spacing: -0.5px; }
-      .center-brand { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Inter', Roboto, sans-serif; font-size: 114px; font-weight: 800; fill: #00A3FF; letter-spacing: -0.5px; }
+      .body-font { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Inter', Roboto, sans-serif; font-size: 31px; font-weight: 500; fill: #cbd5e1; }
+      .center-eyebrow { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Inter', Roboto, sans-serif; font-size: 24px; font-weight: 700; fill: #00A3FF; letter-spacing: 3.5px; text-transform: uppercase; }
+      .center-why { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Inter', Roboto, sans-serif; font-size: 96px; font-weight: 800; fill: #ffffff; letter-spacing: -0.5px; }
+      .center-brand { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Inter', Roboto, sans-serif; font-size: 114px; font-weight: 800; fill: url(#brand-cyan); letter-spacing: -0.5px; }
+      .center-badge-text { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Inter', Roboto, sans-serif; font-size: 21px; font-weight: 600; fill: #94a3b8; letter-spacing: 2px; text-transform: uppercase; }
     </style>
+    
+    <!-- Gradients -->
+    <linearGradient id="brand-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0080ff"/>
+    </linearGradient>
+
+    <radialGradient id="center-radial-halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(0, 163, 255, 0.18)"/>
+      <stop offset="50%" stop-color="rgba(0, 113, 227, 0.08)"/>
+      <stop offset="100%" stop-color="rgba(3, 7, 18, 0)"/>
+    </radialGradient>
+    
+    <!-- Shadow Filters -->
+    <filter id="badge-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="rgba(0,0,0,0.6)"/>
+    </filter>
   </defs>
 
-  <path d="M 781.89 495.96 A 470 470 0 0 1 1084.00 386.00 L 1084.00 266.00" fill="none" stroke="#ffffff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-  <polygon points="1084.00,201.00 1048.00,266.00 1120.00,266.00" fill="#ffffff"/>
-  <path d="M 1165.61 393.14 A 470 470 0 0 1 1449.26 560.22 L 1542.52 484.70" fill="none" stroke="#00A3FF" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-  <polygon points="1593.03,443.80 1519.86,456.72 1565.17,512.68" fill="#00A3FF"/>
-  <path d="M 1495.07 628.14 A 470 470 0 0 1 1540.04 969.70 L 1656.47 998.73" fill="none" stroke="#ff4d4f" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-  <polygon points="1719.54,1014.46 1665.18,963.80 1647.77,1033.66" fill="#ff4d4f"/>
-  <path d="M 1513.37 1047.17 A 470 470 0 0 1 1333.06 1254.58 L 1396.65 1356.35" fill="none" stroke="#84cc16" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-  <polygon points="1431.10,1411.47 1427.18,1337.27 1366.12,1375.43" fill="#84cc16"/>
-  <path d="M 1260.07 1291.78 A 470 470 0 0 1 863.35 1270.99 L 807.01 1376.94" fill="none" stroke="#f43f5e" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-  <polygon points="776.50,1434.33 838.80,1393.84 775.23,1360.04" fill="#f43f5e"/>
-  <path d="M 794.64 1226.37 A 470 470 0 0 1 615.79 896.96 L 496.25 907.42" fill="none" stroke="#38bdf8" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-  <polygon points="431.49,913.09 499.38,943.28 493.11,871.56" fill="#38bdf8"/>
-  <path d="M 615.79 815.04 A 470 470 0 0 1 734.72 541.51 L 645.54 461.21" fill="none" stroke="#4ade80" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-  <polygon points="597.24,417.72 621.46,487.97 669.63,434.46" fill="#4ade80"/>
+  <!-- Ambient Center Lighting Halo -->
+  <circle cx="1084" cy="856" r="390" fill="url(#center-radial-halo)"/>
 
-  <!-- Center Text -->
-  <text x="1084" y="821" class="center-why" text-anchor="middle">Why Choose</text>
-  <text x="1084" y="941" class="center-brand" text-anchor="middle">Mediaid?</text>
+  <!-- Subtle Concentric Architectural Rings -->
+  <circle cx="1084" cy="856" r="310" fill="none" stroke="rgba(0, 163, 255, 0.22)" stroke-dasharray="6 8" stroke-width="2"/>
+  <circle cx="1084" cy="856" r="335" fill="none" stroke="rgba(255, 255, 255, 0.06)" stroke-width="1.5"/>
 
+  <circle cx="781.89" cy="495.96" r="8" fill="#ffffff"/>
+  <path d="M 781.89 495.96 A 470 470 0 0 1 1084.00 386.00 L 1084.00 271.00" fill="none" stroke="#ffffff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="1084.00,209.00 1050.00,271.00 1118.00,271.00" fill="#ffffff"/>
+  <circle cx="1165.61" cy="393.14" r="8" fill="#00A3FF"/>
+  <path d="M 1165.61 393.14 A 470 470 0 0 1 1449.26 560.22 L 1538.63 487.85" fill="none" stroke="#00A3FF" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="1586.81,448.83 1517.23,461.42 1560.03,514.27" fill="#00A3FF"/>
+  <circle cx="1495.07" cy="628.14" r="8" fill="#ff4d4f"/>
+  <path d="M 1495.07 628.14 A 470 470 0 0 1 1540.04 969.70 L 1651.62 997.52" fill="none" stroke="#ff4d4f" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="1711.78,1012.52 1659.85,964.53 1643.40,1030.51" fill="#ff4d4f"/>
+  <circle cx="1513.37" cy="1047.17" r="8" fill="#84cc16"/>
+  <path d="M 1513.37 1047.17 A 470 470 0 0 1 1333.06 1254.58 L 1394.00 1352.11" fill="none" stroke="#84cc16" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="1426.86,1404.69 1422.84,1334.09 1365.17,1370.13" fill="#84cc16"/>
+  <circle cx="1260.07" cy="1291.78" r="8" fill="#f43f5e"/>
+  <path d="M 1260.07 1291.78 A 470 470 0 0 1 863.35 1270.99 L 809.36 1372.52" fill="none" stroke="#f43f5e" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="780.25,1427.27 839.38,1388.49 779.34,1356.56" fill="#f43f5e"/>
+  <circle cx="794.64" cy="1226.37" r="8" fill="#38bdf8"/>
+  <path d="M 794.64 1226.37 A 470 470 0 0 1 615.79 896.96 L 501.23 906.99" fill="none" stroke="#38bdf8" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="439.46,912.39 504.19,940.86 498.26,873.12" fill="#38bdf8"/>
+  <circle cx="615.79" cy="815.04" r="8" fill="#4ade80"/>
+  <path d="M 615.79 815.04 A 470 470 0 0 1 734.72 541.51 L 649.26 464.56" fill="none" stroke="#4ade80" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="603.19,423.07 626.51,489.83 672.01,439.29" fill="#4ade80"/>
+
+  <!-- Center Core -->
+  <text x="1084" y="768" class="center-eyebrow" text-anchor="middle">Excellence In Care</text>
+  <text x="1084" y="851" class="center-why" text-anchor="middle">Why Choose</text>
+  <text x="1084" y="964" class="center-brand" text-anchor="middle">Mediaid?</text>
+  <rect x="934" y="996" width="300" height="34" rx="17" fill="rgba(255,255,255,0.06)" stroke="rgba(0,163,255,0.3)" stroke-width="1"/>
+  <text x="1084" y="1019" class="center-badge-text" text-anchor="middle">NABH &amp; JCI ACCREDITED</text>
+
+
+    <!-- Frosted Badge Backdrop -->
+    <circle cx="880" cy="130" r="66" fill="rgba(15, 23, 42, 0.85)" stroke="#ffffff" stroke-width="2.5" stroke-opacity="0.5" filter="url(#badge-glow)"/>
+    <circle cx="880" cy="130" r="61" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
+    
 
   <!-- Section 0: Super Speciality Hospitals -->
-  <g transform="translate(850, 15) scale(1.65)">
-    <!-- Hospital Icon -->
-    <rect x="36" y="24" width="48" height="88" fill="#ffffff" rx="2"/>
-    <circle cx="60" cy="14" r="13" fill="#ffffff"/>
-    <rect x="57" y="6" width="6" height="16" fill="#030712" rx="1"/>
-    <rect x="52" y="11" width="16" height="6" fill="#030712" rx="1"/>
+  <g transform="translate(833, 80) scale(1.15)">
+    <!-- Hospital Icon Inside Badge -->
+    <rect x="24" y="16" width="34" height="60" fill="#ffffff" rx="2"/>
+    <circle cx="41" cy="9" r="9" fill="#ffffff"/>
+    <rect x="39" y="3" width="4" height="12" fill="#0f172a" rx="1"/>
+    <rect x="35" y="7" width="12" height="4" fill="#0f172a" rx="1"/>
     <!-- Center Windows -->
-    <rect x="42" y="30" width="8" height="11" fill="#030712" rx="1.5"/>
-    <rect x="56" y="30" width="8" height="11" fill="#030712" rx="1.5"/>
-    <rect x="70" y="30" width="8" height="11" fill="#030712" rx="1.5"/>
-    <rect x="42" y="48" width="8" height="11" fill="#030712" rx="1.5"/>
-    <rect x="56" y="48" width="8" height="11" fill="#030712" rx="1.5"/>
-    <rect x="70" y="48" width="8" height="11" fill="#030712" rx="1.5"/>
-    <rect x="42" y="66" width="8" height="11" fill="#030712" rx="1.5"/>
-    <rect x="56" y="66" width="8" height="11" fill="#030712" rx="1.5"/>
-    <rect x="70" y="66" width="8" height="11" fill="#030712" rx="1.5"/>
-    <!-- Entrance Door -->
-    <rect x="51" y="86" width="8" height="26" fill="#030712" rx="1.5"/>
-    <rect x="61" y="86" width="8" height="26" fill="#030712" rx="1.5"/>
+    <rect x="28" y="20" width="6" height="8" fill="#0f172a" rx="1"/>
+    <rect x="38" y="20" width="6" height="8" fill="#0f172a" rx="1"/>
+    <rect x="48" y="20" width="6" height="8" fill="#0f172a" rx="1"/>
+    <rect x="28" y="32" width="6" height="8" fill="#0f172a" rx="1"/>
+    <rect x="38" y="32" width="6" height="8" fill="#0f172a" rx="1"/>
+    <rect x="48" y="32" width="6" height="8" fill="#0f172a" rx="1"/>
+    <rect x="28" y="44" width="6" height="8" fill="#0f172a" rx="1"/>
+    <rect x="38" y="44" width="6" height="8" fill="#0f172a" rx="1"/>
+    <rect x="48" y="44" width="6" height="8" fill="#0f172a" rx="1"/>
+    <!-- Door -->
+    <rect x="34" y="58" width="6" height="18" fill="#0f172a" rx="1"/>
+    <rect x="42" y="58" width="6" height="18" fill="#0f172a" rx="1"/>
     <!-- Left Wing -->
-    <rect x="2" y="44" width="34" height="68" fill="#ffffff" rx="2"/>
-    <rect x="8" y="52" width="8" height="11" fill="#030712" rx="1.5"/>
-    <rect x="20" y="52" width="8" height="11" fill="#030712" rx="1.5"/>
-    <rect x="8" y="70" width="8" height="11" fill="#030712" rx="1.5"/>
-    <rect x="20" y="70" width="8" height="11" fill="#030712" rx="1.5"/>
-    <rect x="8" y="88" width="8" height="11" fill="#030712" rx="1.5"/>
-    <rect x="20" y="88" width="8" height="11" fill="#030712" rx="1.5"/>
+    <rect x="2" y="30" width="22" height="46" fill="#ffffff" rx="2"/>
+    <rect x="6" y="36" width="5" height="7" fill="#0f172a" rx="1"/>
+    <rect x="14" y="36" width="5" height="7" fill="#0f172a" rx="1"/>
+    <rect x="6" y="48" width="5" height="7" fill="#0f172a" rx="1"/>
+    <rect x="14" y="48" width="5" height="7" fill="#0f172a" rx="1"/>
+    <rect x="6" y="60" width="5" height="7" fill="#0f172a" rx="1"/>
+    <rect x="14" y="60" width="5" height="7" fill="#0f172a" rx="1"/>
     <!-- Right Wing -->
-    <rect x="84" y="44" width="34" height="68" fill="#ffffff" rx="2"/>
-    <rect x="92" y="52" width="8" height="11" fill="#030712" rx="1.5"/>
-    <rect x="104" y="52" width="8" height="11" fill="#030712" rx="1.5"/>
-    <rect x="92" y="70" width="8" height="11" fill="#030712" rx="1.5"/>
-    <rect x="104" y="70" width="8" height="11" fill="#030712" rx="1.5"/>
-    <rect x="92" y="88" width="8" height="11" fill="#030712" rx="1.5"/>
-    <rect x="104" y="88" width="8" height="11" fill="#030712" rx="1.5"/>
+    <rect x="58" y="30" width="22" height="46" fill="#ffffff" rx="2"/>
+    <rect x="63" y="36" width="5" height="7" fill="#0f172a" rx="1"/>
+    <rect x="71" y="36" width="5" height="7" fill="#0f172a" rx="1"/>
+    <rect x="63" y="48" width="5" height="7" fill="#0f172a" rx="1"/>
+    <rect x="71" y="48" width="5" height="7" fill="#0f172a" rx="1"/>
+    <rect x="63" y="60" width="5" height="7" fill="#0f172a" rx="1"/>
+    <rect x="71" y="60" width="5" height="7" fill="#0f172a" rx="1"/>
   </g>
-  <text x="1070" y="75">
-    <tspan class="title-font" x="1070" dy="0">Super Speciality Hospitals:</tspan>
-    <tspan class="body-font" x="1070" dy="48">Tie-ups with NABH</tspan>
-    <tspan class="body-font" x="1070" dy="44">accredited hospitals</tspan>
+  <!-- Text positioned to the right of the vertical arrow with clean clearance -->
+  <text x="1140" y="95">
+    <tspan class="title-font" x="1140" dy="0">Super Speciality Hospitals:</tspan>
+    <tspan class="body-font" x="1140" dy="48">Tie-ups with NABH</tspan>
+    <tspan class="body-font" x="1140" dy="44">accredited hospitals</tspan>
   </text>
 
 
+    <!-- Frosted Badge Backdrop -->
+    <circle cx="1775" cy="355" r="66" fill="rgba(15, 23, 42, 0.85)" stroke="#00A3FF" stroke-width="2.5" stroke-opacity="0.5" filter="url(#badge-glow)"/>
+    <circle cx="1775" cy="355" r="61" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
+    
+
   <!-- Section 1: Prioritizing Patient Safety -->
-  <g transform="translate(1700, 260) scale(1.65)">
-    <!-- Floating Medical Cross -->
-    <rect x="52" y="4" width="16" height="46" rx="5" fill="#00A3FF"/>
-    <rect x="37" y="19" width="46" height="16" rx="5" fill="#00A3FF"/>
-    
-    <!-- Left Cupped Hand -->
-    <path d="M 24 52 C 24 45 30 45 30 52 L 30 94 C 30 98 24 98 24 94 Z" fill="#00A3FF"/>
-    <path d="M 40 68 C 38 62 46 58 48 64 L 54 84 C 54 90 46 90 44 86 Z" fill="#00A3FF"/>
-    <path d="M 24 80 C 24 98 42 108 52 108 C 58 108 58 100 52 98 C 42 94 36 88 32 80 Z" fill="#00A3FF"/>
-    <rect x="18" y="114" width="34" height="8" rx="4" fill="#00A3FF"/>
-    
-    <!-- Right Cupped Hand (mirrored) -->
-    <path d="M 96 52 C 96 45 90 45 90 52 L 90 94 C 90 98 96 98 96 94 Z" fill="#00A3FF"/>
-    <path d="M 80 68 C 82 62 74 58 72 64 L 66 84 C 66 90 74 90 76 86 Z" fill="#00A3FF"/>
-    <path d="M 96 80 C 96 98 78 108 68 108 C 62 108 62 100 68 98 C 78 94 84 88 88 80 Z" fill="#00A3FF"/>
-    <rect x="68" y="114" width="34" height="8" rx="4" fill="#00A3FF"/>
+  <g transform="translate(1730, 305) scale(1.05)">
+    <!-- Cross -->
+    <rect x="36" y="6" width="14" height="40" rx="4" fill="#00A3FF"/>
+    <rect x="23" y="19" width="40" height="14" rx="4" fill="#00A3FF"/>
+    <!-- Left Hand -->
+    <path d="M 12 78 C 12 66 10 56 6 48 C 4 44 8 42 11 44 C 14 46 16 50 18 56 L 22 66 C 22 56 24 46 29 44 C 34 42 38 46 37 52 L 35 68 C 38 60 42 52 46 51 C 50 50 53 54 51 59 L 47 74 C 44 86 28 92 12 78 Z" fill="#00A3FF"/>
+    <rect x="8" y="86" width="26" height="6" rx="3" fill="#00A3FF"/>
+    <!-- Right Hand -->
+    <path d="M 74 78 C 74 66 76 56 80 48 C 82 44 78 42 75 44 C 72 46 70 50 68 56 L 64 66 C 64 56 62 46 57 44 C 52 42 48 46 49 52 L 51 68 C 48 60 44 52 40 51 C 36 50 33 54 35 59 L 39 74 C 42 86 58 92 74 78 Z" fill="#00A3FF"/>
+    <rect x="52" y="86" width="26" height="6" rx="3" fill="#00A3FF"/>
   </g>
-  <text x="1650" y="520">
+  <text x="1650" y="475">
     <tspan class="title-font" x="1650" dy="0">Prioritizing Patient Safety:</tspan>
     <tspan class="body-font" x="1650" dy="48">Interpreter stay with patients</tspan>
     <tspan class="body-font" x="1650" dy="44">for complete safety</tspan>
   </text>
 
 
-  <!-- Section 2: Multilanguage Chat Assistance -->
-  <g transform="translate(1780, 890) scale(1.65)">
-    <!-- Top-Right Chat Bubble with Heart -->
-    <path d="M 46 8 L 100 8 C 108 8 114 14 114 22 L 114 62 C 114 70 108 76 100 76 L 90 76 L 96 92 L 78 76 L 46 76 C 38 76 32 70 32 62 L 32 22 C 32 14 38 8 46 8 Z" fill="#ffffff" stroke="#ff4d4f" stroke-width="8" stroke-linejoin="round"/>
-    <!-- Heart inside bubble -->
-    <path d="M 80 32 C 80 23 72 17 64 20 C 60 22 58 28 58 31 C 58 28 56 22 52 20 C 44 17 36 23 36 32 C 36 44 58 56 58 56 C 58 56 80 44 80 32 Z" transform="translate(15, 6) scale(0.74)" fill="#ff4d4f" stroke="#ff4d4f" stroke-width="2" stroke-linejoin="round"/>
+    <!-- Frosted Badge Backdrop -->
+    <circle cx="1855" cy="965" r="66" fill="rgba(15, 23, 42, 0.85)" stroke="#ff4d4f" stroke-width="2.5" stroke-opacity="0.5" filter="url(#badge-glow)"/>
+    <circle cx="1855" cy="965" r="61" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
     
-    <!-- Bottom-Left Chat Bubble with 24/7 -->
-    <path d="M 22 42 L 72 42 C 78 42 82 46 82 52 L 82 86 C 82 92 78 96 72 96 L 44 96 L 30 110 L 34 96 L 22 96 C 16 96 12 92 12 86 L 12 52 C 12 46 16 42 22 42 Z" fill="#ffffff" stroke="#ff4d4f" stroke-width="8" stroke-linejoin="round"/>
-    <text x="47" y="78" font-family="'Segoe UI', sans-serif" font-size="28" font-weight="800" fill="#ff4d4f" text-anchor="middle" font-style="italic">24/7</text>
+
+  <!-- Section 2: Multilanguage Chat Assistance -->
+  <g transform="translate(1812, 922) scale(1.05)">
+    <!-- Top-Right Bubble -->
+    <path d="M 38 6 L 80 6 C 86 6 90 10 90 16 L 90 48 C 90 54 86 58 80 58 L 72 58 L 76 70 L 62 58 L 38 58 C 32 58 28 54 28 48 L 28 16 C 28 10 32 6 38 6 Z" fill="rgba(15,23,42,0.85)" stroke="#ff4d4f" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M 64 26 C 64 19 57 14 51 16 C 47 18 45 22 45 25 C 45 22 43 18 39 16 C 33 14 26 19 26 26 C 26 36 45 46 45 46 C 45 46 64 36 64 26 Z" transform="translate(14, 4) scale(0.68)" fill="#ff4d4f"/>
+    <!-- Bottom-Left Bubble -->
+    <path d="M 16 32 L 56 32 C 61 32 64 35 64 40 L 64 68 C 64 73 61 76 56 76 L 36 76 L 24 86 L 28 76 L 16 76 C 11 76 8 73 8 68 L 8 40 C 8 35 11 32 16 32 Z" fill="rgba(15,23,42,0.9)" stroke="#ff4d4f" stroke-width="6" stroke-linejoin="round"/>
+    <text x="36" y="61" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="800" fill="#ff4d4f" text-anchor="middle" font-style="italic">24/7</text>
   </g>
-  <text x="1730" y="1140">
+  <text x="1730" y="1085">
     <tspan class="title-font" x="1730" dy="0">Multilanguage Chat</tspan>
     <tspan class="title-font" x="1730" dy="48">Assistance:</tspan>
     <tspan class="body-font" x="1730" dy="48">24*7 multi-language</tspan>
@@ -116,87 +160,104 @@
   </text>
 
 
+    <!-- Frosted Badge Backdrop -->
+    <circle cx="1575" cy="1485" r="66" fill="rgba(15, 23, 42, 0.85)" stroke="#84cc16" stroke-width="2.5" stroke-opacity="0.5" filter="url(#badge-glow)"/>
+    <circle cx="1575" cy="1485" r="61" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
+    
+
   <!-- Section 3: Instant Appointment -->
-  <g transform="translate(1500, 1370) scale(1.65)">
-    <!-- Clipboard Body -->
-    <rect x="14" y="16" width="76" height="106" rx="10" fill="#ffffff" stroke="#84cc16" stroke-width="8"/>
-    <!-- Clip Handle -->
-    <path d="M 34 16 L 34 10 C 34 6 38 4 42 4 L 62 4 C 66 4 70 6 70 10 L 70 16 Z" fill="#84cc16"/>
-    <!-- Stethoscope binaural -->
-    <circle cx="36" cy="40" r="4.5" fill="#84cc16"/>
-    <circle cx="68" cy="40" r="4.5" fill="#84cc16"/>
-    <path d="M 36 40 C 36 60 52 66 52 66 C 52 66 68 60 68 40" fill="none" stroke="#84cc16" stroke-width="6" stroke-linecap="round"/>
-    <!-- S-Curve tubing -->
-    <path d="M 52 66 C 52 82 72 82 72 96 C 72 108 48 108 48 108" fill="none" stroke="#84cc16" stroke-width="6" stroke-linecap="round"/>
-    <!-- Chestpiece -->
-    <circle cx="40" cy="108" r="7.5" fill="none" stroke="#84cc16" stroke-width="5"/>
-    <circle cx="40" cy="108" r="3" fill="#84cc16"/>
+  <g transform="translate(1535, 1438) scale(1.05)">
+    <!-- Clipboard -->
+    <rect x="14" y="16" width="56" height="78" rx="8" fill="rgba(15,23,42,0.75)" stroke="#84cc16" stroke-width="6"/>
+    <path d="M 28 16 L 28 10 C 28 7 31 5 34 5 L 50 5 C 53 5 56 7 56 10 L 56 16 Z" fill="#84cc16"/>
+    <!-- Stethoscope -->
+    <circle cx="30" cy="34" r="3.5" fill="#84cc16"/>
+    <circle cx="54" cy="34" r="3.5" fill="#84cc16"/>
+    <path d="M 30 34 C 30 48 42 54 42 54 C 42 54 54 48 54 34" fill="none" stroke="#84cc16" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 42 54 C 42 66 56 66 56 76 C 56 84 38 84 38 84" fill="none" stroke="#84cc16" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="32" cy="84" r="6" fill="none" stroke="#84cc16" stroke-width="4"/>
+    <circle cx="32" cy="84" r="2.5" fill="#84cc16"/>
   </g>
-  <text x="1330" y="1620">
+  <text x="1330" y="1610">
     <tspan class="title-font" x="1330" dy="0">Instant Appointment:</tspan>
     <tspan class="body-font" x="1330" dy="48">Quick &amp; easy appointments</tspan>
     <tspan class="body-font" x="1330" dy="44">&amp; video consultation</tspan>
   </text>
 
 
+    <!-- Frosted Badge Backdrop -->
+    <circle cx="745" cy="1515" r="66" fill="rgba(15, 23, 42, 0.85)" stroke="#f43f5e" stroke-width="2.5" stroke-opacity="0.5" filter="url(#badge-glow)"/>
+    <circle cx="745" cy="1515" r="61" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
+    
+
   <!-- Section 4: Instant Engagement -->
-  <g transform="translate(680, 1430) scale(1.65)">
-    <!-- Thumbs up hand (White on dark background) -->
-    <path d="M 28 32 C 16 32 14 44 26 44 L 54 44" fill="none" stroke="#f43f5e" stroke-width="7" stroke-linecap="round"/>
-    <path d="M 24 46 C 12 46 10 58 22 58 L 56 58" fill="none" stroke="#f43f5e" stroke-width="7" stroke-linecap="round"/>
-    <path d="M 24 60 C 12 60 10 72 22 72 L 56 72" fill="none" stroke="#f43f5e" stroke-width="7" stroke-linecap="round"/>
-    <path d="M 26 74 C 16 74 14 86 26 86 L 50 86" fill="none" stroke="#f43f5e" stroke-width="7" stroke-linecap="round"/>
-    <path d="M 28 86 C 36 96 46 96 56 94 C 64 92 70 82 72 70 L 72 38 C 72 16 64 6 56 6 C 50 6 48 14 50 28 L 52 38" fill="none" stroke="#f43f5e" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-    <line x1="28" y1="94" x2="52" y2="98" stroke="#f43f5e" stroke-width="7" stroke-linecap="round"/>
+  <g transform="translate(712, 1475) scale(1.05)">
+    <!-- Thumbs up -->
+    <path d="M 24 24 C 14 24 12 34 22 34 L 46 34" fill="none" stroke="#f43f5e" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 20 36 C 10 36 8 46 18 46 L 48 46" fill="none" stroke="#f43f5e" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 20 48 C 10 48 8 58 18 58 L 48 58" fill="none" stroke="#f43f5e" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 22 60 C 14 60 12 70 22 70 L 42 70" fill="none" stroke="#f43f5e" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 24 70 C 30 78 38 78 46 76 C 52 74 58 66 60 56 L 60 30 C 60 12 54 4 46 4 C 42 4 40 10 42 22 L 44 30" fill="none" stroke="#f43f5e" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="24" y1="76" x2="44" y2="80" stroke="#f43f5e" stroke-width="6" stroke-linecap="round"/>
   </g>
-  <text x="440" y="1640">
-    <tspan class="title-font" x="440" dy="0">Instant Engagement:</tspan>
-    <tspan class="body-font" x="440" dy="48">Regular follow-ups post</tspan>
-    <tspan class="body-font" x="440" dy="44">discharge</tspan>
+  <text x="500" y="1640">
+    <tspan class="title-font" x="500" dy="0">Instant Engagement:</tspan>
+    <tspan class="body-font" x="500" dy="48">Regular follow-ups post</tspan>
+    <tspan class="body-font" x="500" dy="44">discharge</tspan>
   </text>
 
 
+    <!-- Frosted Badge Backdrop -->
+    <circle cx="295" cy="915" r="66" fill="rgba(15, 23, 42, 0.85)" stroke="#38bdf8" stroke-width="2.5" stroke-opacity="0.5" filter="url(#badge-glow)"/>
+    <circle cx="295" cy="915" r="61" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
+    
+
   <!-- Section 5: Treatment Packages -->
-  <g transform="translate(200, 840) scale(1.65)">
+  <g transform="translate(248, 872) scale(1.05)">
     <!-- Handle -->
-    <path d="M 44 26 L 44 14 C 44 8 50 4 58 4 L 68 4 C 76 4 82 8 82 14 L 82 26" fill="none" stroke="#38bdf8" stroke-width="9" stroke-linecap="round"/>
-    <!-- Upper Lid -->
-    <rect x="8" y="24" width="110" height="34" rx="10" fill="#38bdf8"/>
-    <!-- Lower Body -->
-    <rect x="8" y="64" width="110" height="48" rx="10" fill="#38bdf8"/>
-    <!-- 4 Dots / Lock Pattern -->
-    <circle cx="56" cy="54" r="5" fill="#ffffff"/>
-    <circle cx="70" cy="54" r="5" fill="#ffffff"/>
-    <circle cx="56" cy="68" r="5" fill="#ffffff"/>
-    <circle cx="70" cy="68" r="5" fill="#ffffff"/>
+    <path d="M 36 20 L 36 10 C 36 6 41 3 48 3 L 56 3 C 63 3 68 6 68 10 L 68 20" fill="none" stroke="#38bdf8" stroke-width="7" stroke-linecap="round"/>
+    <!-- Lid -->
+    <rect x="6" y="18" width="92" height="28" rx="8" fill="#38bdf8"/>
+    <!-- Base -->
+    <rect x="6" y="50" width="92" height="38" rx="8" fill="#38bdf8"/>
+    <!-- 4 Dots -->
+    <circle cx="46" cy="42" r="4" fill="#ffffff"/>
+    <circle cx="58" cy="42" r="4" fill="#ffffff"/>
+    <circle cx="46" cy="54" r="4" fill="#ffffff"/>
+    <circle cx="58" cy="54" r="4" fill="#ffffff"/>
   </g>
-  <text x="48" y="1120">
+  <text x="48" y="1060">
     <tspan class="title-font" x="48" dy="0">Treatment Packages:</tspan>
     <tspan class="body-font" x="48" dy="48">We offer customized</tspan>
     <tspan class="body-font" x="48" dy="44">packages</tspan>
   </text>
 
 
-  <!-- Section 6: Best-In-class Doctors -->
-  <g transform="translate(290, 270) scale(1.65)">
-    <!-- Patient seated on stool -->
-    <circle cx="28" cy="18" r="11" fill="#4ade80"/>
-    <path d="M 18 36 C 14 44 14 54 22 62 C 26 66 38 68 44 68 L 46 94 C 46 98 42 100 38 100" fill="none" stroke="#4ade80" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
-    <!-- Stool -->
-    <rect x="8" y="72" width="32" height="6" rx="2" fill="#4ade80"/>
-    <line x1="12" y1="78" x2="8" y2="108" stroke="#4ade80" stroke-width="5" stroke-linecap="round"/>
-    <line x1="36" y1="78" x2="40" y2="108" stroke="#4ade80" stroke-width="5" stroke-linecap="round"/>
-    <line x1="10" y1="94" x2="38" y2="94" stroke="#4ade80" stroke-width="4"/>
+    <!-- Frosted Badge Backdrop -->
+    <circle cx="375" cy="355" r="66" fill="rgba(15, 23, 42, 0.85)" stroke="#4ade80" stroke-width="2.5" stroke-opacity="0.5" filter="url(#badge-glow)"/>
+    <circle cx="375" cy="355" r="61" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
     
-    <!-- Doctor standing on right -->
-    <circle cx="72" cy="14" r="11" fill="#4ade80"/>
-    <path d="M 60 32 C 64 30 78 30 82 32 L 86 82 L 56 82 Z" fill="#4ade80"/>
-    <rect x="64" y="82" width="16" height="26" rx="3" fill="#4ade80"/>
-    <!-- Arm with Stethoscope -->
-    <path d="M 70 36 C 64 46 52 50 42 56" fill="none" stroke="#4ade80" stroke-width="6" stroke-linecap="round"/>
-    <circle cx="40" cy="56" r="3.5" fill="#4ade80"/>
+
+  <!-- Section 6: Best-In-class Doctors -->
+  <g transform="translate(328, 308) scale(1.05)">
+    <!-- Patient -->
+    <circle cx="22" cy="14" r="9" fill="#4ade80"/>
+    <path d="M 14 28 C 10 34 10 42 16 48 C 20 52 30 54 34 54 L 36 74 C 36 78 32 80 28 80" fill="none" stroke="#4ade80" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Stool -->
+    <rect x="6" y="58" width="26" height="5" rx="2" fill="#4ade80"/>
+    <line x1="9" y1="63" x2="6" y2="86" stroke="#4ade80" stroke-width="4" stroke-linecap="round"/>
+    <line x1="28" y1="63" x2="31" y2="86" stroke="#4ade80" stroke-width="4" stroke-linecap="round"/>
+    <line x1="8" y1="76" x2="30" y2="76" stroke="#4ade80" stroke-width="3"/>
+    
+    <!-- Doctor -->
+    <circle cx="58" cy="11" r="9" fill="#4ade80"/>
+    <path d="M 48 26 C 52 24 64 24 68 26 L 72 66 L 46 66 Z" fill="#4ade80"/>
+    <rect x="52" y="66" width="12" height="20" rx="2" fill="#4ade80"/>
+    <!-- Stethoscope -->
+    <path d="M 56 28 C 50 36 40 40 32 44" fill="none" stroke="#4ade80" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="30" cy="44" r="3" fill="#4ade80"/>
   </g>
-  <text x="48" y="540">
+  <text x="48" y="475">
     <tspan class="title-font" x="48" dy="0">Best-In-class Doctors:</tspan>
     <tspan class="body-font" x="48" dy="48">Get an expert</tspan>
     <tspan class="body-font" x="48" dy="44">medical opinion</tspan>

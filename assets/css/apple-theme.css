@@ -1090,22 +1090,29 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
 /* 2.5 WHY CHOOSE MEDIAID (TRANSPARENT INFOGRAPHIC) */
 .why-choose-transparent-section {
   position: relative;
-  padding: 24px 0 10px 0;
-  background: transparent;
+  padding: 35px 0 15px 0;
+  background: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(0, 163, 255, 0.08) 0%, rgba(3, 7, 18, 0) 70%);
   overflow: hidden;
 }
 
 .why-choose-transparent-img {
   width: 100%;
-  max-width: 860px;
+  max-width: 900px;
   height: auto;
   display: inline-block;
   object-fit: contain;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.6s ease;
+  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.5));
+}
+
+.why-choose-transparent-img:hover {
+  transform: scale(1.02);
+  filter: drop-shadow(0 20px 45px rgba(0, 163, 255, 0.22)) drop-shadow(0 10px 25px rgba(0, 0, 0, 0.6));
 }
 
 @media (max-width: 768px) {
   .why-choose-transparent-section {
-    padding: 16px 0 8px 0;
+    padding: 20px 0 10px 0;
   }
 }
 
