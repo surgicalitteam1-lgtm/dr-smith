@@ -669,23 +669,45 @@
        ============================================================ -->
   <footer class="apple-globalfooter">
     <div class="apple-footer-inner">
-      
+
+      <!-- Footer Brand Header & Fast Back-To-Top -->
+      <div class="apple-footer-brand-header">
+        <div class="apple-footer-brand-left">
+          <img src="../../assets/img/logo.png?v=11.0" alt="Dr. Smith Emblem Logo" class="apple-footer-brand-logo" width="32"
+            height="32">
+          <div>
+            <div class="apple-footer-brand-title">Dr. Smith</div>
+            <span class="apple-footer-brand-subtitle">HOSPITAL SOLUTIONS</span>
+          </div>
+        </div>
+        <a href="#top" class="apple-footer-backtotop-btn"
+          onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;" aria-label="Scroll back to top">
+          <span>Top</span> <i class="bi bi-chevron-up"></i>
+        </a>
+      </div>
+
       <!-- Notes / Footnotes -->
       <div class="apple-footer-notes">
         <ol>
-          <li>Medical equipment specifications, turnkey timelines, and compliance standards (ISO 9001:2015, ISO 13485:2016, CE, FDA) depend on specific project scopes and customized clinical configurations.</li>
-          <li>Turnkey hospital infrastructure engineering timelines depend on architectural blueprints, local regulatory clearances, and civil site readiness.</li>
-          <li>Principal Global Head Office located at Kapashera Border, New Delhi; Manufacturing Plant at METL, Jhajjar, Haryana; Overseas Head Office at SAIF Zone, Sharjah, UAE.</li>
+          <li>Medical equipment specifications, turnkey timelines, and compliance standards (ISO 9001:2015, ISO
+            13485:2016, CE, FDA) depend on specific project scopes and customized clinical configurations.</li>
+          <li>Turnkey hospital infrastructure engineering timelines depend on architectural blueprints, local regulatory
+            clearances, and civil site readiness.</li>
+          <li>Principal Global Head Office located at Kapashera Border, New Delhi; Manufacturing Plant at METL, Jhajjar,
+            Haryana; Overseas Head Office at SAIF Zone, Sharjah, UAE.</li>
         </ol>
       </div>
 
-      <!-- Directory Columns -->
+      <!-- Directory Columns (Mobile Collapsible Accordions) -->
       <div class="apple-footer-directory">
 
-        <!-- Col 1: Turnkey Solutions -->
-        <div class="apple-footer-col">
-          <h4>Turnkey Solutions</h4>
-          <ul>
+        <!-- Col 1: Turnkey Solutions (Active by default on mobile) -->
+        <div class="apple-footer-col active">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="true">
+            <h4 class="apple-footer-col-title">Turnkey Solutions</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
             <li><a href="../../turnkey-projects/index.html">500-Bedded Hospital Setup</a></li>
             <li><a href="../../catalogue/modular-ot/index.html">Modular OT Construction</a></li>
             <li><a href="../../turnkey-projects/index.html">Medical Gas Pipeline (MGPS)</a></li>
@@ -696,8 +718,11 @@
 
         <!-- Col 2: Group Ecosystem -->
         <div class="apple-footer-col">
-          <h4>Group Ecosystem</h4>
-          <ul>
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Group Ecosystem</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
             <li><a href="../../about-us/index.html">Dr. Smith Healthcare</a></li>
             <li><a href="../../catalogue/index.html">Surgihub Surgical Devices</a></li>
             <li><a href="../../catalogue/index.html">Surgical Mall of India (SMPL)</a></li>
@@ -708,8 +733,11 @@
 
         <!-- Col 3: Product Catalogue -->
         <div class="apple-footer-col">
-          <h4>Product Catalogue</h4>
-          <ul>
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Product Catalogue</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
             <li><a href="../../catalogue/beds/index.html">Hospital &amp; ICU Beds</a></li>
             <li><a href="../../catalogue/modular-ot/index.html">Modular OT Suites</a></li>
             <li><a href="../../catalogue/patient-monitor/index.html">Critical Care &amp; Monitors</a></li>
@@ -720,8 +748,11 @@
 
         <!-- Col 4: Global Directory -->
         <div class="apple-footer-col">
-          <h4>Global Presence</h4>
-          <ul>
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Global Presence</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
             <li><a href="../../contact-form/index.html">New Delhi Head Office (India)</a></li>
             <li><a href="../../contact-form/index.html">Jhajjar Manufacturing Plant</a></li>
             <li><a href="../../contact-form/index.html">Sharjah Overseas Office (UAE)</a></li>
@@ -732,11 +763,14 @@
 
         <!-- Col 5: Compliance & Values -->
         <div class="apple-footer-col">
-          <h4>Corporate &amp; Quality</h4>
-          <ul>
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Corporate &amp; Quality</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
             <li><a href="../../about-us/index.html">About 60+ Years Heritage</a></li>
             <li><a href="../../mission-values/index.html">Mission &amp; Values</a></li>
-            <li><a href="../../about-us/index.html#team">Executive Leadership</a></li>
+            <li><a href="../../about-us/index.html">Executive Leadership</a></li>
             <li><a href="../../privacy.html">Privacy Policy</a></li>
             <li><a href="../../terms.html">Terms of Service</a></li>
           </ul>
@@ -744,19 +778,40 @@
 
       </div>
 
-      <!-- Footer Bottom Legal & Country -->
+      <!-- Footer Bottom Legal, Direct Connect & Country Positioned in Correct Order -->
       <div class="apple-footer-bottom">
-        <div class="apple-footer-copyright">
-          Copyright &copy; 2026 Dr. Smith Healthcare Solutions (Surgical Wholesale Mart Pvt. Ltd.). All rights reserved. An ISO 9001:2015, ISO 13485:2016, CE &amp; FDA Certified Company.
+        <div class="apple-footer-top-row">
+          <div class="apple-footer-country">
+            <a href="../../contact-form/index.html" class="apple-footer-country-badge" title="Region &amp; Language">
+              <i class="bi bi-globe me-1"></i> India (English)
+            </a>
+          </div>
+          <div class="apple-footer-quicklinks">
+            <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." target="_blank" rel="noopener noreferrer"
+              class="apple-footer-badge-link" title="Direct WhatsApp Assistance (+91 95990 81020)">
+              <i class="fa-brands fa-whatsapp text-success me-1"></i> WhatsApp Desk
+            </a>
+          </div>
         </div>
-        <div class="apple-footer-legal-links">
-          <a href="../../privacy.html">Privacy Policy</a>
-          <a href="../../terms.html">Terms of Use</a>
-          <a href="../../contact-form/index.html">Regulatory Compliance</a>
-          <a href="../../catalogue/index.html">Site Map</a>
-        </div>
-        <div class="apple-footer-country">
-          <a href="../../contact-form/index.html" class="text-decoration-none text-muted"><i class="bi bi-globe me-1"></i> India (English)</a>
+
+        <div class="apple-footer-divider"></div>
+
+        <div class="apple-footer-meta-row">
+          <div class="apple-footer-legal-links">
+            <a href="../../privacy.html">Privacy Policy</a>
+            <span class="legal-dot">•</span>
+            <a href="../../terms.html">Terms of Use</a>
+            <span class="legal-dot">•</span>
+            <a href="../../contact-form/index.html">Sales Policy</a>
+            <span class="legal-dot">•</span>
+            <a href="../../contact-form/index.html">Legal</a>
+            <span class="legal-dot">•</span>
+            <a href="../../catalogue/index.html">Site Map</a>
+          </div>
+          <div class="apple-footer-copyright">
+            Copyright &copy; 2026 Dr. Smith Healthcare Solutions (Surgical Wholesale Mart Pvt. Ltd.). All rights
+            reserved. An ISO 9001:2015, ISO 13485:2016, CE &amp; FDA Certified Company.
+          </div>
         </div>
       </div>
 
