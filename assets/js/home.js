@@ -129,6 +129,68 @@
     });
   };
 
+  // PC Full-Width Category Hero Banner Slider Controller
+  var pcCurrentCatSlide = 0;
+  var pcCatBannerTimer = null;
+
+  window.goToPcCatBanner = function(idx, tabBtn) {
+    var slides = document.querySelectorAll('#pcCatHeroSlider .pc-cat-banner-slide');
+    var tabs = document.querySelectorAll('#pcCatHeroSlider .pc-cat-slider-tab');
+    if (!slides.length) return;
+
+    var total = slides.length;
+    pcCurrentCatSlide = ((idx % total) + total) % total;
+
+    slides.forEach(function(s, i) {
+      if (i === pcCurrentCatSlide) {
+        s.classList.add('active');
+        eagerRestoreContainerImages(s);
+      } else {
+        s.classList.remove('active');
+      }
+    });
+
+    tabs.forEach(function(t, i) {
+      if (i === pcCurrentCatSlide) {
+        t.classList.add('active');
+      } else {
+        t.classList.remove('active');
+      }
+    });
+  };
+
+  window.stepPcCatBanner = function(delta) {
+    window.goToPcCatBanner(pcCurrentCatSlide + delta);
+    resetPcCatBannerAutoplay();
+  };
+
+  function resetPcCatBannerAutoplay() {
+    if (pcCatBannerTimer) clearInterval(pcCatBannerTimer);
+    pcCatBannerTimer = setInterval(function() {
+      if (window.innerWidth >= 992) {
+        window.goToPcCatBanner(pcCurrentCatSlide + 1);
+      }
+    }, 6000);
+  }
+
+  function initPcCatBannerSlider() {
+    var slider = document.getElementById('pcCatHeroSlider');
+    if (!slider) return;
+    resetPcCatBannerAutoplay();
+    slider.addEventListener('mouseenter', function() {
+      if (pcCatBannerTimer) clearInterval(pcCatBannerTimer);
+    });
+    slider.addEventListener('mouseleave', function() {
+      resetPcCatBannerAutoplay();
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initPcCatBannerSlider);
+  } else {
+    initPcCatBannerSlider();
+  }
+
   // Helper to get the currently visible .btn-hero-whatsapp (PC or Mobile)
   function getActiveHeroWhatsAppBtn() {
     var btns = document.querySelectorAll('.btn-hero-whatsapp');
