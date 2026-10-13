@@ -420,6 +420,36 @@ img, svg, video, iframe {
   transform: scale(1.1);
 }
 
+/* Header WhatsApp visibility on pages with hero WhatsApp button */
+body.has-hero-whatsapp .apple-nav-circle-whatsapp {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  transform: scale(0.7) !important;
+}
+
+body.has-hero-whatsapp .apple-nav-circle-whatsapp.visible-whatsapp,
+body.has-hero-whatsapp .apple-nav-circle-whatsapp.visible-mobile {
+  display: flex !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+  transform: scale(1) !important;
+  animation: appleNavWhatsAppIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes appleNavWhatsAppIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 
 /* ============================================================
    APPLE MOBILE DRAWER MENU & BACKDROP
@@ -3055,7 +3085,9 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
     font-size: 22px !important;
   }
 
-  /* Mobile Header Action Buttons: Mail & WhatsApp fully visible & balanced */
+  /* Mobile Header Action Buttons:
+     E-mail option ALWAYS shows in header every time.
+     WhatsApp option on hero pages only shows after scrolling down past hero section. */
   .apple-nav-circle-mail {
     display: flex !important;
     opacity: 1 !important;
@@ -3069,6 +3101,23 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
     visibility: visible !important;
     pointer-events: auto !important;
     transform: none !important;
+  }
+
+  body.has-hero-whatsapp .apple-nav-circle-whatsapp {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    transform: scale(0.7) !important;
+  }
+  body.has-hero-whatsapp .apple-nav-circle-whatsapp.visible-whatsapp,
+  body.has-hero-whatsapp .apple-nav-circle-whatsapp.visible-mobile {
+    display: flex !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    transform: scale(1) !important;
+    animation: appleNavWhatsAppIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   }
   .apple-mobile-drawer {
     top: 96px !important;

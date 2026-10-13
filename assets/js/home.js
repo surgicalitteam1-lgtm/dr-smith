@@ -51,7 +51,7 @@
     }
   };
 
-  // Header scroll background transition & Mobile Mail button visibility
+  // Header scroll background transition & Hero WhatsApp button visibility tracking
   function checkHeaderScroll() {
     var nav = document.querySelector('.apple-globalnav');
     if (nav) {
@@ -62,9 +62,28 @@
       }
     }
 
+    // E-mail option in header: ALWAYS visible across all screen sizes and scroll states
     var mailNavBtn = document.querySelector('.apple-nav-circle-mail');
     if (mailNavBtn) {
-      mailNavBtn.classList.add('visible-mobile');
+      mailNavBtn.classList.add('visible-mobile', 'visible-mail');
+    }
+
+    // WhatsApp option in header: on hero section, reveals only after scrolling down past hero action button
+    var waNavBtn = document.querySelector('.apple-nav-circle-whatsapp');
+    if (waNavBtn) {
+      var heroActionBtn = document.querySelector('.btn-hero-whatsapp');
+      if (heroActionBtn) {
+        document.body.classList.add('has-hero-whatsapp');
+        var rect = heroActionBtn.getBoundingClientRect();
+        // 74px accounts for the fixed header height
+        if (rect.bottom <= 74) {
+          waNavBtn.classList.add('visible-whatsapp', 'visible-mobile');
+        } else {
+          waNavBtn.classList.remove('visible-whatsapp', 'visible-mobile');
+        }
+      } else {
+        waNavBtn.classList.add('visible-whatsapp', 'visible-mobile');
+      }
     }
   }
 

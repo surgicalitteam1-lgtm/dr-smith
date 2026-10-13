@@ -930,20 +930,60 @@
   }
 
   /**
-   * 17. Mobile Header Mail Button Visibility
-   * Ensures header mail and whatsapp action buttons remain consistently visible
-   * across all screen sizes and responsive viewports.
+   * 17. Header Action Buttons Scroll Visibility
+   * Header E-mail button is ALWAYS visible across all pages and viewports.
+   * Header WhatsApp button on pages with a hero section is hidden at the top
+   * and smoothly reveals only after the user scrolls down past the hero action button.
    */
-  function initMobileHeaderMailVisibility() {
+  function initHeaderActionsVisibility() {
     const mailNavBtn = document.querySelector('.apple-nav-circle-mail');
-    if (!mailNavBtn) return;
-    mailNavBtn.classList.add('visible-mobile');
+    if (mailNavBtn) {
+      mailNavBtn.classList.add('visible-mobile', 'visible-mail');
+    }
+
+    const waNavBtn = document.querySelector('.apple-nav-circle-whatsapp');
+    if (!waNavBtn) return;
+
+    const heroActionBtn = document.querySelector('.btn-hero-whatsapp');
+    if (!heroActionBtn) {
+      // Subpages without hero whatsapp button: always visible
+      waNavBtn.classList.add('visible-whatsapp', 'visible-mobile');
+      return;
+    }
+
+    document.body.classList.add('has-hero-whatsapp');
+    let ticking = false;
+
+    function updateWhatsAppVisibility() {
+      const rect = heroActionBtn.getBoundingClientRect();
+      // 74px accounts for the fixed header height
+      const isPastHero = rect.bottom <= 74;
+      if (isPastHero) {
+        waNavBtn.classList.add('visible-whatsapp', 'visible-mobile');
+      } else {
+        waNavBtn.classList.remove('visible-whatsapp', 'visible-mobile');
+      }
+    }
+
+    function onScroll() {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          updateWhatsAppVisibility();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', updateWhatsAppVisibility, { passive: true });
+    updateWhatsAppVisibility();
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initMobileHeaderMailVisibility);
+    document.addEventListener('DOMContentLoaded', initHeaderActionsVisibility);
   } else {
-    initMobileHeaderMailVisibility();
+    initHeaderActionsVisibility();
   }
 
 })();
