@@ -2215,7 +2215,9 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
 }
 
 .apple-promo-media img[src*=".png"],
-.apple-promo-media img[src*="hero-slides/1.jpg"] {
+.apple-promo-media img[src*="hero-slides/1.jpg"],
+.apple-promo-media img[data-vp-src*=".png"],
+.apple-promo-media img[data-vp-src*="hero-slides/1.jpg"] {
   object-fit: contain !important;
   padding: 14px !important;
   filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.6));
@@ -5280,3 +5282,32 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   font-size: 11.5px;
   color: rgba(255, 255, 255, 0.45);
 }
+
+/* ============================================================
+   VIEWPORT-PRIORITY PROGRESSIVE LOADER & SMOOTH RENDERING
+   ============================================================ */
+
+/* Off-screen sections deferred until active viewport finishes loading */
+[data-vp-zone="deferred"] {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 520px;
+}
+
+/* Visible and adjacent upper/lower sections render with full layout fidelity */
+[data-vp-zone="visible"],
+[data-vp-zone="adjacent"],
+[data-vp-zone="loaded"] {
+  content-visibility: visible;
+}
+
+/* Smooth non-blocking fade-in for progressively loaded upper/lower images */
+img.vp-img-deferred {
+  opacity: 0.01;
+  will-change: opacity;
+}
+
+img.vp-img-loaded {
+  opacity: 1;
+  transition: opacity 0.26s cubic-bezier(0.16, 1, 0.3, 1);
+}
+

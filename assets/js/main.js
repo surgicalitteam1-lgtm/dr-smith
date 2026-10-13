@@ -1170,4 +1170,352 @@
     initWhatsAppRouterModal();
   }
 
+  /**
+   * 19. Viewport-Priority Progressive Section & Image Loader
+   * Ensures ultra-smooth 60fps performance even on image-heavy pages:
+   *  - Stage 1 (Active Viewport / "Front Web"): Loads ONLY the sections & images currently visible
+   *    in the user's viewport first with high priority, deferring off-screen requests.
+   *  - Stage 2 (Immediate Upper & Lower Parts): Once the currently visible screen finishes loading,
+   *    automatically focuses on pre-loading and decoding the adjacent upper and lower viewport buffers.
+   *  - Stage 3 (Outward Upper & Lower Queue): Progressively loads remaining upper and lower sections
+   *    outward from the current scroll position in small non-blocking idle batches.
+   */
+  function initViewportPriorityLoader() {
+    if (window._vpPriorityLoaderInitialized) return;
+    window._vpPriorityLoaderInitialized = true;
+
+    const PLACEHOLDER_SVG = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'/%3E";
+    const deferredImages = new Set();
+    let stage1Complete = false;
+    let batchTimer = null;
+    let scrollTicking = false;
+
+    function getViewportMetrics() {
+      return {
+        vh: window.innerHeight || document.documentElement.clientHeight || 800
+      };
+    }
+
+    // Distance from element rect to the currently visible viewport [0, vh]
+    // Returns 0 if intersecting the visible screen; positive pixel distance if above or below.
+    function distanceToViewport(rect, vh) {
+      if (rect.bottom >= 0 && rect.top <= vh) {
+        return 0;
+      }
+      if (rect.bottom < 0) {
+        return -rect.bottom; // Upper part distance above top of screen
+      }
+      return rect.top - vh;  // Lower part distance below bottom of screen
+    }
+
+    function isCriticalUiImage(img) {
+      if (!img) return true;
+      if (img.closest('.apple-globalnav, .apple-mobile-drawer, .apple-wa-modal-backdrop')) {
+        return true;
+      }
+      const w = img.getAttribute('width');
+      if (w && parseInt(w, 10) > 0 && parseInt(w, 10) <= 64) {
+        return true;
+      }
+      return false;
+    }
+
+    // Restore a deferred image's original source and decode off the main thread
+    function restoreImage(img, priority) {
+      if (!img) return Promise.resolve();
+      const origSrc = img.getAttribute('data-vp-src');
+      const origSrcset = img.getAttribute('data-vp-srcset');
+
+      if (!origSrc && !origSrcset) {
+        deferredImages.delete(img);
+        return Promise.resolve();
+      }
+
+      deferredImages.delete(img);
+      if (priority) {
+        try { img.fetchPriority = priority; } catch (e) {}
+      }
+      img.setAttribute('decoding', 'async');
+      img.setAttribute('loading', 'eager');
+
+      if (origSrcset) {
+        img.setAttribute('srcset', origSrcset);
+        img.removeAttribute('data-vp-srcset');
+      }
+      if (origSrc) {
+        img.setAttribute('src', origSrc);
+        img.removeAttribute('data-vp-src');
+      }
+
+      const parentSection = img.closest('[data-vp-zone]');
+      if (parentSection) {
+        parentSection.setAttribute('data-vp-zone', 'loaded');
+      }
+
+      return new Promise(function(resolve) {
+        function finalize() {
+          img.classList.remove('vp-img-deferred');
+          img.classList.add('vp-img-loaded');
+          resolve();
+        }
+        if (typeof img.decode === 'function') {
+          img.decode().then(finalize).catch(finalize);
+        } else if (img.complete) {
+          finalize();
+        } else {
+          img.addEventListener('load', finalize, { once: true });
+          img.addEventListener('error', finalize, { once: true });
+          setTimeout(finalize, 350);
+        }
+      });
+    }
+
+    // Classify sections into visible, adjacent (upper/lower), or deferred zones
+    function updateSectionZones() {
+      const { vh } = getViewportMetrics();
+      const sections = document.querySelectorAll('section, .apple-globalfooter, .catalogue-category-section');
+      sections.forEach(function(sec) {
+        if (sec.getAttribute('data-vp-zone') === 'loaded') return;
+        const rect = sec.getBoundingClientRect();
+        const dist = distanceToViewport(rect, vh);
+        if (dist <= 48) {
+          sec.setAttribute('data-vp-zone', 'visible');
+        } else if (dist <= vh * 1.35) {
+          sec.setAttribute('data-vp-zone', 'adjacent');
+        } else if (!sec.hasAttribute('data-vp-zone')) {
+          sec.setAttribute('data-vp-zone', 'deferred');
+        }
+      });
+    }
+
+    // Stage 2 & 3: After visible viewport finishes, load immediate Upper & Lower parts, then outward
+    function processUpperAndLowerQueue() {
+      if (batchTimer) {
+        clearTimeout(batchTimer);
+        batchTimer = null;
+      }
+
+      updateSectionZones();
+
+      if (deferredImages.size === 0) {
+        // Ensure all sections are unlocked once all images are ready
+        document.querySelectorAll('[data-vp-zone="deferred"]').forEach(function(sec) {
+          sec.setAttribute('data-vp-zone', 'loaded');
+        });
+        return;
+      }
+
+      const { vh } = getViewportMetrics();
+      const visibleNow = [];
+      const adjacentUpperAndLower = [];
+      const distantUpperAndLower = [];
+
+      deferredImages.forEach(function(img) {
+        if (!document.body.contains(img)) {
+          deferredImages.delete(img);
+          return;
+        }
+        const rect = img.getBoundingClientRect();
+        const dist = distanceToViewport(rect, vh);
+        const item = { img: img, dist: dist };
+
+        if (dist <= 60) {
+          visibleNow.push(item);
+        } else if (dist <= vh * 1.4) {
+          adjacentUpperAndLower.push(item);
+        } else {
+          distantUpperAndLower.push(item);
+        }
+      });
+
+      // 1. Any image that entered the visible viewport is restored immediately
+      if (visibleNow.length > 0) {
+        visibleNow.forEach(function(item) {
+          restoreImage(item.img, 'high');
+        });
+      }
+
+      if (!stage1Complete) return;
+
+      // 2. Focus on immediate Upper & Lower parts (sorted closest to viewport edge first)
+      if (adjacentUpperAndLower.length > 0) {
+        adjacentUpperAndLower.sort(function(a, b) { return a.dist - b.dist; });
+        const batch = adjacentUpperAndLower.slice(0, 6);
+        Promise.all(batch.map(function(item) {
+          return restoreImage(item.img, 'auto');
+        })).then(function() {
+          batchTimer = setTimeout(processUpperAndLowerQueue, 25);
+        });
+        return;
+      }
+
+      // 3. Progressively load remaining Far Upper & Far Lower parts outward in idle batches of 4
+      if (distantUpperAndLower.length > 0) {
+        distantUpperAndLower.sort(function(a, b) { return a.dist - b.dist; });
+        const scheduleNext = window.requestIdleCallback || function(cb) { return setTimeout(cb, 45); };
+        scheduleNext(function() {
+          const batch = distantUpperAndLower.slice(0, 4);
+          Promise.all(batch.map(function(item) {
+            return restoreImage(item.img, 'low');
+          })).then(function() {
+            if (deferredImages.size > 0) {
+              batchTimer = setTimeout(processUpperAndLowerQueue, 40);
+            } else {
+              document.querySelectorAll('[data-vp-zone="deferred"]').forEach(function(sec) {
+                sec.setAttribute('data-vp-zone', 'loaded');
+              });
+            }
+          });
+        });
+      }
+    }
+
+    // Stage 1: Inspect all images, keep ONLY currently visible viewport active, defer upper & lower parts
+    function scanAndPrioritizeViewport(rootNodes) {
+      const { vh } = getViewportMetrics();
+      updateSectionZones();
+
+      const imgs = [];
+      rootNodes.forEach(function(node) {
+        if (!node || node.nodeType !== 1) return;
+        if (node.tagName === 'IMG') {
+          imgs.push(node);
+        } else if (node.querySelectorAll) {
+          node.querySelectorAll('img').forEach(function(i) { imgs.push(i); });
+        }
+      });
+
+      const visiblePending = [];
+
+      imgs.forEach(function(img) {
+        if (img.hasAttribute('data-vp-managed')) return;
+        img.setAttribute('data-vp-managed', 'true');
+        img.setAttribute('decoding', 'async');
+
+        if (isCriticalUiImage(img)) {
+          img.setAttribute('loading', 'eager');
+          return;
+        }
+
+        const rect = img.getBoundingClientRect();
+        const dist = distanceToViewport(rect, vh);
+
+        if (dist <= 48) {
+          // Currently visible to the user ("Front Web") -> Highest Priority!
+          img.setAttribute('loading', 'eager');
+          try { img.fetchPriority = 'high'; } catch (e) {}
+          if (!img.complete) {
+            visiblePending.push(img);
+          }
+        } else {
+          // Off-screen (Upper or Lower part) -> Defer if not already cached in memory
+          if (!img.complete) {
+            const currentSrc = img.getAttribute('src');
+            const currentSrcset = img.getAttribute('srcset');
+            if (currentSrc && !currentSrc.startsWith('data:')) {
+              img.setAttribute('data-vp-src', currentSrc);
+              if (currentSrcset) {
+                img.setAttribute('data-vp-srcset', currentSrcset);
+                img.removeAttribute('srcset');
+              }
+              img.classList.add('vp-img-deferred');
+              img.setAttribute('loading', 'lazy');
+              try { img.fetchPriority = 'low'; } catch (e) {}
+              img.setAttribute('src', PLACEHOLDER_SVG);
+              deferredImages.add(img);
+            }
+          }
+        }
+      });
+
+      return visiblePending;
+    }
+
+    // Initial Stage 1 execution
+    const initialVisiblePending = scanAndPrioritizeViewport([document.body]);
+
+    function completeStage1() {
+      if (stage1Complete) return;
+      stage1Complete = true;
+      processUpperAndLowerQueue();
+    }
+
+    if (initialVisiblePending.length === 0) {
+      // Visible viewport images are already ready; start loading Upper & Lower parts right away
+      requestAnimationFrame(completeStage1);
+    } else {
+      let remaining = initialVisiblePending.length;
+      const onVisibleImgDone = function() {
+        remaining -= 1;
+        if (remaining <= 0) {
+          completeStage1();
+        }
+      };
+      initialVisiblePending.forEach(function(img) {
+        if (img.complete) {
+          onVisibleImgDone();
+        } else {
+          img.addEventListener('load', onVisibleImgDone, { once: true });
+          img.addEventListener('error', onVisibleImgDone, { once: true });
+        }
+      });
+      // Safety cap so a single slow asset never blocks Upper & Lower loading for more than 450ms
+      setTimeout(completeStage1, 450);
+    }
+
+    // Real-time Scroll & Resize listener: immediately promote whatever enters the user's viewport
+    function onViewportShift() {
+      if (!scrollTicking) {
+        scrollTicking = true;
+        requestAnimationFrame(function() {
+          processUpperAndLowerQueue();
+          scrollTicking = false;
+        });
+      }
+    }
+
+    window.addEventListener('scroll', onViewportShift, { passive: true });
+    window.addEventListener('resize', onViewportShift, { passive: true });
+    window.addEventListener('hashchange', onViewportShift, { passive: true });
+
+    // Ensure any clicked product card/image restores its original src before any click handler reads it
+    document.addEventListener('click', function(e) {
+      const cardOrLink = e.target.closest('a, button, .apple-promo-card, .product-card, .cat-card');
+      const scope = cardOrLink || e.target;
+      if (scope && scope.querySelectorAll) {
+        scope.querySelectorAll('img[data-vp-src]').forEach(function(img) {
+          restoreImage(img, 'high');
+        });
+      }
+      if (e.target && e.target.tagName === 'IMG' && e.target.hasAttribute('data-vp-src')) {
+        restoreImage(e.target, 'high');
+      }
+    }, true);
+
+    // Watch for dynamically injected product cards/images (e.g. catalogue search/filter)
+    if (typeof MutationObserver !== 'undefined' && document.body) {
+      const observer = new MutationObserver(function(mutations) {
+        const added = [];
+        mutations.forEach(function(m) {
+          m.addedNodes.forEach(function(n) {
+            if (n.nodeType === 1) added.push(n);
+          });
+        });
+        if (added.length > 0) {
+          scanAndPrioritizeViewport(added);
+          if (stage1Complete) {
+            processUpperAndLowerQueue();
+          }
+        }
+      });
+      observer.observe(document.body, { childList: true, subtree: true });
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initViewportPriorityLoader);
+  } else {
+    initViewportPriorityLoader();
+  }
+
 })();
