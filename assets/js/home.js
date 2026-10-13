@@ -63,18 +63,8 @@
     }
 
     var mailNavBtn = document.querySelector('.apple-nav-circle-mail');
-    if (mailNavBtn && window.innerWidth <= 991) {
-      var heroActionBtn = document.querySelector('.btn-hero-whatsapp, .btn-hero-mail');
-      if (heroActionBtn) {
-        var rect = heroActionBtn.getBoundingClientRect();
-        if (rect.bottom <= 74) {
-          mailNavBtn.classList.add('visible-mobile');
-        } else {
-          mailNavBtn.classList.remove('visible-mobile');
-        }
-      }
-    } else if (mailNavBtn && window.innerWidth > 991) {
-      mailNavBtn.classList.remove('visible-mobile');
+    if (mailNavBtn) {
+      mailNavBtn.classList.add('visible-mobile');
     }
   }
 
