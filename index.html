@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <link href="assets/css/apple-theme.css?v=106.0" rel="stylesheet">
-  <link href="assets/css/swm-exact-ui.css?v=2.0" rel="stylesheet">
+  <link href="assets/css/swm-exact-ui.css?v=2.3" rel="stylesheet">
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 </head>
@@ -72,19 +72,26 @@
       <div class="d-flex align-items-center justify-content-between">
 
         <!-- Brand Identity: Dr. Smith / Surgical Wholesale Mart -->
-        <a href="index.html" class="swm-brand" aria-label="Dr. Smith - Surgical Wholesale Mart">
-          <div class="swm-brand-logo-wrap">
-            <img src="assets/img/logo.png?v=11.0" alt="Dr. Smith Logo" class="swm-brand-logo" width="34" height="34" loading="eager">
-          </div>
-          <div class="swm-brand-text">
-            <span class="swm-brand-title">SURGICAL <span>WHOLESALE MART</span></span>
-            <span class="swm-brand-subtitle">PVT. LTD. &bull; DR. SMITH HEALTHCARE</span>
-          </div>
+        <a href="index.html" class="swm-brand" aria-label="Dr. Smith Healthcare Solutions and Surgical Wholesale Mart">
+          <span class="swm-brand-primary">
+            <span class="swm-brand-logo-wrap">
+              <img src="assets/img/logo.png?v=11.0" alt="" class="swm-brand-logo" width="34" height="34" loading="eager">
+            </span>
+            <span class="swm-brand-text">
+              <span class="swm-brand-title">Dr. Smith</span>
+              <span class="swm-brand-subtitle">HEALTHCARE SOLUTIONS</span>
+            </span>
+          </span>
+          <span class="swm-brand-divider" aria-hidden="true"></span>
+          <span class="swm-wholesale-wordmark" aria-label="Surgical Wholesale Mart Private Limited">
+            <span class="swm-wholesale-name">SURGICAL<br><strong>WHOLESALE MART</strong></span>
+            <span class="swm-wholesale-subtitle">PVT. LTD.</span>
+          </span>
         </a>
         <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-                Middle Navigation Links (Desktop >= 1200px)
+                Middle Navigation Links (Desktop >= 1280px)
              ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
-        <ul class="swm-nav-links d-none d-xl-flex">
+        <ul class="swm-nav-links swm-desktop-links">
           <li><a href="index.html" class="swm-nav-link active">Home</a></li>
           <li class="dropdown">
             <a href="catalogue/index.html" class="swm-nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Products <i class="bi bi-chevron-down ms-1 small"></i></a>
@@ -101,19 +108,14 @@
           </li>
           <li><a href="turnkey-projects/index.html" class="swm-nav-link">Complete Hospital Setup</a></li>
           <li><a href="group-companies/index.html" class="swm-nav-link">Brands</a></li>
-          <li><a href="turnkey-projects/index.html" class="swm-nav-link">Services</a></li>
-          <li><a href="catalogue/index.html" class="swm-nav-link">Resources</a></li>
+          <li><a href="turnkey-projects/index.html" class="swm-nav-link">Services <i class="bi bi-chevron-down ms-1 small"></i></a></li>
+          <li><a href="catalogue/index.html" class="swm-nav-link">Resources <i class="bi bi-chevron-down ms-1 small"></i></a></li>
           <li><a href="about-us/index.html" class="swm-nav-link">About Us</a></li>
           <li><a href="contact-form/index.html" class="swm-nav-link">Contact Us</a></li>
         </ul>
 
         <!-- Right Action Buttons -->
-        <div class="d-flex align-items-center gap-2">
-          <!-- Search trigger -->
-          <button type="button" class="btn btn-outline-info rounded-circle d-flex align-items-center justify-content-center" style="width: 38px; height: 38px; border-color: rgba(0,210,255,0.4);" onclick="openGlobalSearch()" title="Instant Search">
-            <i class="bi bi-search"></i>
-          </button>
-
+        <div class="swm-header-actions d-flex align-items-center gap-2">
           <!-- Explore Catalogue (Orange Pill) -->
           <a href="catalogue/index.html" class="btn-swm-orange d-none d-sm-inline-flex" title="Explore Master Product Catalogue">
             <i class="fa-solid fa-book-open"></i>
@@ -125,10 +127,20 @@
           <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." target="_blank" rel="noopener noreferrer" class="btn-swm-green d-none d-md-inline-flex" title="Chat on WhatsApp">
             <i class="fa-brands fa-whatsapp fs-5"></i>
             <span>WhatsApp Us</span>
+            <i class="fa-solid fa-arrow-right"></i>
           </a>
 
-          <!-- Mobile Hamburger Toggle (All devices < 1200px) -->
-          <button type="button" class="btn btn-link text-white fs-2 d-xl-none p-0 ms-2" id="swmMobileToggle" aria-label="Toggle navigation menu">
+          <!-- Search trigger -->
+          <button type="button" class="swm-header-icon" onclick="openGlobalSearch()" aria-label="Search the catalogue" title="Instant Search">
+            <i class="bi bi-search"></i>
+          </button>
+
+          <a href="contact-form/index.html" class="swm-header-icon d-none d-sm-flex" aria-label="Contact Dr. Smith" title="Contact Dr. Smith">
+            <i class="bi bi-person"></i>
+          </a>
+
+          <!-- Compact navigation toggle for narrower screens -->
+          <button type="button" class="swm-header-icon swm-menu-toggle" id="swmMobileToggle" aria-label="Toggle navigation menu">
             <i class="bi bi-list"></i>
           </button>
         </div>
@@ -287,6 +299,12 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="swm-hero-photo-credit">
+      OT photos:
+      <a href="https://images.unsplash.com/photo-1551076805-e1869033e561" target="_blank" rel="noopener noreferrer">Unsplash</a>
+      <span aria-hidden="true">&middot;</span>
+      <a href="https://commons.wikimedia.org/wiki/File:Laparoscopic_operating_theatre.jpg" target="_blank" rel="noopener noreferrer">Dr. Jayesh Amin, CC BY-SA 3.0</a>
     </div>
   </section>
 
