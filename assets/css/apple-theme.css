@@ -2214,7 +2214,8 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   transition: transform 0.4s ease;
 }
 
-.apple-promo-media img[src*=".png"] {
+.apple-promo-media img[src*=".png"],
+.apple-promo-media img[src*="hero-slides/1.jpg"] {
   object-fit: contain !important;
   padding: 14px !important;
   filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.6));
