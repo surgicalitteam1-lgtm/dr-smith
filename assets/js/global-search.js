@@ -11,7 +11,7 @@
     var path = window.location.pathname.replace(/\\/g, '/');
     if (path.includes('/catalogue/') && path.split('/catalogue/')[1].includes('/')) {
       return '../../';
-    } else if (path.includes('/catalogue/') || path.includes('/about-us/') || path.includes('/turnkey-projects/') || path.includes('/group-companies/') || path.includes('/mission-values/') || path.includes('/contact-form/') || path.includes('/medical-products/')) {
+    } else if (path.includes('/catalogue/') || path.includes('/about-us/') || path.includes('/turnkey-projects/') || path.includes('/group-companies/') || path.includes('/mission-values/') || path.includes('/contact-form/') || path.includes('/medical-products/') || path.includes('/whatsapp/')) {
       return '../';
     }
     return '';
@@ -58,7 +58,8 @@
     { name: "Healthcare Goods & Clinical Supplies", dept: "Clinical Goods", keywords: "goods physiotherapy lab scientific diagnostics hospital screen scrub station mannequin", icon: "bi-box-seam-fill", url: "catalogue/goods/index.html" },
     { name: "About Dr. Smith (60+ Years Heritage)", dept: "Corporate Heritage", keywords: "about us dr smith surgical wholesale mart kamal kant mahajan danjali jhajjar factory", icon: "bi-info-circle", url: "about-us/index.html" },
     { name: "Corporate Mission & Values", dept: "Corporate Governance", keywords: "mission values quality assurance iso 13485 ce fda compliance ethics", icon: "bi-award", url: "mission-values/index.html" },
-    { name: "Global Offices & Contact Desk", dept: "Direct Communication", keywords: "contact phone toll free email delhi kapaspura jhajjar uae sharjah support", icon: "bi-telephone", url: "contact-form/index.html" }
+    { name: "Global Offices & Contact Desk", dept: "Direct Communication", keywords: "contact phone toll free email delhi kapaspura jhajjar uae sharjah support", icon: "bi-telephone", url: "contact-form/index.html" },
+    { name: "WhatsApp Direct Desks (India & Dubai)", dept: "Instant Communication", keywords: "whatsapp chat desks numbers domestic overseas export dubai uae indian supplier contact direct", icon: "bi-whatsapp", url: "whatsapp/index.html" }
   ];
 
   // Create Modal DOM dynamically if not already in document

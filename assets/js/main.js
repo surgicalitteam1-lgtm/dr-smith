@@ -986,4 +986,188 @@
     initHeaderActionsVisibility();
   }
 
+  /**
+   * 18. Global WhatsApp Region Router Modal
+   * When any WhatsApp button or trigger across the site is clicked, prompt the user
+   * with an interactive region modal before proceeding:
+   *  - Option 1 (Indian Supplier Desks): navigates to whatsapp/index.html?region=india (showing 4 domestic desks)
+   *  - Option 2 (Overseas Desk - Dubai): opens a new WhatsApp chat tab with single Dubai hotline (+971 50 891 7466)
+   *
+   * Direct WhatsApp action buttons inside the directory or modal carry .wa-direct-link / data-direct-wa="true"
+   * to bypass interception and open WhatsApp directly.
+   */
+  function initWhatsAppRouterModal() {
+    if (window._waRouterModalInitialized) return;
+    window._waRouterModalInitialized = true;
+
+    // Determine correct relative prefix to site root
+    function getSiteRootPrefix() {
+      const appleCss = document.querySelector('link[href*="apple-theme.css"]');
+      if (appleCss) {
+        const href = appleCss.getAttribute('href');
+        const idx = href.indexOf('assets/');
+        if (idx !== -1) {
+          return href.substring(0, idx);
+        }
+      }
+      const assetEl = document.querySelector('[src*="assets/"]');
+      if (assetEl) {
+        const src = assetEl.getAttribute('src');
+        const idx = src.indexOf('assets/');
+        if (idx !== -1) {
+          return src.substring(0, idx);
+        }
+      }
+      return '';
+    }
+
+    // Modal DOM Injection (if not already rendered on the page)
+    let modalEl = document.getElementById('drSmithWaModal');
+    if (!modalEl) {
+      modalEl = document.createElement('div');
+      modalEl.id = 'drSmithWaModal';
+      modalEl.className = 'apple-wa-modal-backdrop';
+      modalEl.setAttribute('role', 'dialog');
+      modalEl.setAttribute('aria-modal', 'true');
+      modalEl.setAttribute('aria-labelledby', 'waModalTitle');
+      modalEl.innerHTML = `
+        <div class="apple-wa-modal-container">
+          <button type="button" class="apple-wa-modal-close" id="drSmithWaModalClose" aria-label="Close dialog">
+            <i class="bi bi-x-lg"></i>
+          </button>
+          
+          <div class="apple-wa-modal-header">
+            <span class="apple-wa-modal-badge">
+              <i class="fa-brands fa-whatsapp"></i> Official WhatsApp Direct
+            </span>
+            <h2 class="apple-wa-modal-title" id="waModalTitle">Select Your Region / Contact Desk</h2>
+            <p class="apple-wa-modal-subtitle">
+              Choose your inquiry category to connect with our specialized hospital procurement &amp; clinical machinery specialists.
+            </p>
+          </div>
+
+          <div class="apple-wa-modal-grid">
+            <!-- Option 1: Indian Supplier Desk (Domestic - 4 Numbers) -->
+            <a href="#" class="apple-wa-choice-card card-india" id="btnWaChoiceIndia">
+              <span class="apple-wa-flag">🇮🇳</span>
+              <span class="apple-wa-choice-tag tag-india">4 Departmental Desks</span>
+              <h3 class="apple-wa-choice-title">Indian Supplier Desks</h3>
+              <p class="apple-wa-choice-desc">
+                Pan-India turnkey hospital setup, critical care machines, ICU motorized beds &amp; institutional tenders.
+              </p>
+              <span class="apple-wa-choice-btn btn-choice-india">
+                View 4 Desks &amp; Direct Numbers <i class="bi bi-arrow-right"></i>
+              </span>
+            </a>
+
+            <!-- Option 2: Overseas Desk - Dubai (International - 1 Number) -->
+            <a href="#" class="apple-wa-choice-card card-dubai" id="btnWaChoiceDubai">
+              <span class="apple-wa-flag">🇦🇪</span>
+              <span class="apple-wa-choice-tag tag-dubai">Direct WhatsApp Line</span>
+              <h3 class="apple-wa-choice-title">Overseas Desk (Dubai)</h3>
+              <p class="apple-wa-choice-desc">
+                Middle East, GCC, Africa &amp; global export projects. Direct hotline (+971 50 891 7466).
+              </p>
+              <span class="apple-wa-choice-btn btn-choice-dubai">
+                <i class="fa-brands fa-whatsapp"></i> Chat with Dubai Line (1 Line)
+              </span>
+            </a>
+          </div>
+
+          <div class="apple-wa-modal-footer">
+            Dr. Smith Healthcare Global Supply Directorate • Instant Response • Verified Desks
+          </div>
+        </div>
+      `;
+      document.body.appendChild(modalEl);
+    }
+
+    const modalCloseBtn = document.getElementById('drSmithWaModalClose');
+    const choiceIndiaBtn = document.getElementById('btnWaChoiceIndia');
+    const choiceDubaiBtn = document.getElementById('btnWaChoiceDubai');
+
+    function openModal() {
+      // Auto-close mobile drawer if active
+      const mobileDrawer = document.getElementById('apple-mobile-drawer');
+      const mobileBackdrop = document.getElementById('appleMobileBackdrop');
+      if (mobileDrawer) mobileDrawer.classList.remove('active');
+      if (mobileBackdrop) mobileBackdrop.classList.remove('active');
+      document.body.classList.remove('mobile-nav-active');
+
+      modalEl.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      modalEl.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    if (modalCloseBtn) {
+      modalCloseBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        closeModal();
+      });
+    }
+
+    // Backdrop click closes modal
+    modalEl.addEventListener('click', function(e) {
+      if (e.target === modalEl) {
+        closeModal();
+      }
+    });
+
+    // Escape key closes modal
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && modalEl.classList.contains('active')) {
+        closeModal();
+      }
+    });
+
+    // Option 1 Click: Indian Supplier Desk (Navigate to whatsapp/index.html?region=india)
+    if (choiceIndiaBtn) {
+      choiceIndiaBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const rootPrefix = getSiteRootPrefix();
+        closeModal();
+        window.location.href = rootPrefix + 'whatsapp/index.html?region=india';
+      });
+    }
+
+    // Option 2 Click: Overseas Desk (Dubai) (Open WhatsApp with single Dubai number in new tab)
+    if (choiceDubaiBtn) {
+      choiceDubaiBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        closeModal();
+        const dubaiWaUrl = 'https://wa.me/971508917466?text=Hello%20Dr.%20Smith%20Healthcare%20Overseas%20Desk%20(Dubai),%20I%20would%20like%20to%20inquire%20about%20International%20Hospital%20Projects%20and%20Export.';
+        window.open(dubaiWaUrl, '_blank', 'noopener,noreferrer');
+      });
+    }
+
+    // Global Delegated Click Listener: Intercept all WhatsApp triggers across the website
+    document.addEventListener('click', function(e) {
+      // Find closest link or button that triggers WhatsApp
+      const trigger = e.target.closest('a[href*="wa.me"], a[href*="whatsapp.com"], .apple-nav-circle-whatsapp, .btn-hero-whatsapp, .apple-mobile-pill-wa, [data-wa-trigger]');
+      if (!trigger) return;
+
+      // Bypass interception if marked as direct link or inside modal
+      if (trigger.classList.contains('wa-direct-link') ||
+          trigger.getAttribute('data-direct-wa') === 'true' ||
+          modalEl.contains(trigger)) {
+        return;
+      }
+
+      // Otherwise intercept and show router modal
+      e.preventDefault();
+      e.stopPropagation();
+      openModal();
+    }, true);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initWhatsAppRouterModal);
+  } else {
+    initWhatsAppRouterModal();
+  }
+
 })();
