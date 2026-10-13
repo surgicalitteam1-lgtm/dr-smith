@@ -944,8 +944,18 @@
     const waNavBtn = document.querySelector('.apple-nav-circle-whatsapp');
     if (!waNavBtn) return;
 
-    const heroActionBtn = document.querySelector('.btn-hero-whatsapp');
-    if (!heroActionBtn) {
+    function getActiveHeroWhatsAppBtn() {
+      const btns = document.querySelectorAll('.btn-hero-whatsapp');
+      for (let i = 0; i < btns.length; i++) {
+        if (btns[i].getClientRects().length > 0) {
+          return btns[i];
+        }
+      }
+      return btns[0] || null;
+    }
+
+    const initialHeroBtn = getActiveHeroWhatsAppBtn();
+    if (!initialHeroBtn) {
       // Subpages without hero whatsapp button: always visible
       waNavBtn.classList.add('visible-whatsapp', 'visible-mobile');
       return;
@@ -955,7 +965,8 @@
     let ticking = false;
 
     function updateWhatsAppVisibility() {
-      const rect = heroActionBtn.getBoundingClientRect();
+      const activeHeroBtn = getActiveHeroWhatsAppBtn() || initialHeroBtn;
+      const rect = activeHeroBtn.getBoundingClientRect();
       // 74px accounts for the fixed header height
       const isPastHero = rect.bottom <= 74;
       if (isPastHero) {
@@ -1198,7 +1209,11 @@
 
     // Distance from element rect to the currently visible viewport [0, vh]
     // Returns 0 if intersecting the visible screen; positive pixel distance if above or below.
-    function distanceToViewport(rect, vh) {
+    // Elements inside display:none containers (e.g. inactive responsive view) return vh * 2.5.
+    function distanceToViewport(rect, vh, el) {
+      if (el && typeof el.getClientRects === 'function' && el.getClientRects().length === 0) {
+        return vh * 2.5;
+      }
       if (rect.bottom >= 0 && rect.top <= vh) {
         return 0;
       }
@@ -1277,7 +1292,7 @@
       sections.forEach(function(sec) {
         if (sec.getAttribute('data-vp-zone') === 'loaded') return;
         const rect = sec.getBoundingClientRect();
-        const dist = distanceToViewport(rect, vh);
+        const dist = distanceToViewport(rect, vh, sec);
         if (dist <= 48) {
           sec.setAttribute('data-vp-zone', 'visible');
         } else if (dist <= vh * 1.35) {
@@ -1316,7 +1331,7 @@
           return;
         }
         const rect = img.getBoundingClientRect();
-        const dist = distanceToViewport(rect, vh);
+        const dist = distanceToViewport(rect, vh, img);
         const item = { img: img, dist: dist };
 
         if (dist <= 60) {
@@ -1398,7 +1413,7 @@
         }
 
         const rect = img.getBoundingClientRect();
-        const dist = distanceToViewport(rect, vh);
+        const dist = distanceToViewport(rect, vh, img);
 
         if (dist <= 48) {
           // Currently visible to the user ("Front Web") -> Highest Priority!
