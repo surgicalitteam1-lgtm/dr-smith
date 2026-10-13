@@ -1,0 +1,905 @@
+html_content = '''<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0" name="viewport">
+  <meta name="theme-color" content="#020917">
+  <title>Dr. Smith — India's First Surgical Wholesale Mart | Hospital Solutions</title>
+  <meta name="description"
+    content="Dr. Smith (Surgical Wholesale Mart Pvt. Ltd.) is India's premier one-stop solution for turnkey hospital setups, modular operation theatres, ICU equipment, hospital beds, and clinical infrastructure.">
+  <meta name="keywords"
+    content="Dr. Smith, Surgical Wholesale Mart, India surgical wholesale, hospital equipment, turnkey hospital, modular OT, ICU beds, medical supply">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link href="assets/css/apple-theme.css?v=106.0" rel="stylesheet">
+  <link href="assets/css/swm-exact-ui.css?v=2.0" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+</head>
+
+<body class="swm-exact-ui">
+
+  <!-- ============================================================
+       1. TOP UTILITY BAR (DESKTOP & TABLET LANDSCAPE)
+       ============================================================ -->
+  <aside class="swm-topbar d-none d-lg-block" aria-label="Quick Communication Bar">
+    <div class="container-fluid px-xl-5 px-lg-4">
+      <div class="d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center gap-3">
+          <span class="text-white-50"><i class="bi bi-shield-check text-info me-1"></i> ISO 13485:2016 Certified &bull; CE &bull; NABH Healthcare Infrastructure</span>
+        </div>
+        <div class="d-flex align-items-center">
+          <a href="tel:+919599081020" title="Call Official Desk"><i class="fa-solid fa-phone text-info"></i> +91 95990 81020</a>
+          <span class="topbar-divider">|</span>
+          <a href="mailto:info@drsmith.co.in" title="Email Inquiries"><i class="fa-solid fa-envelope text-info"></i> info@drsmith.co.in</a>
+          <span class="topbar-divider">|</span>
+          <a href="about-us/index.html#careers" title="Careers at Dr. Smith"><i class="fa-solid fa-user-tie"></i> Career</a>
+          <span class="topbar-divider">|</span>
+          <a href="contact-form/index.html" title="Customer Support"><i class="fa-solid fa-headset"></i> Support</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ============================================================
+       2. PRIMARY NAVIGATION HEADER (RESPONSIVE ALL DEVICES)
+       ============================================================ -->
+  <nav class="swm-navbar" id="swmMainNavbar" aria-label="Main Navigation">
+    <div class="container-fluid px-xl-5 px-lg-4 px-3">
+      <div class="d-flex align-items-center justify-content-between">
+
+        <!-- Brand Identity: Dr. Smith / Surgical Wholesale Mart -->
+        <a href="index.html" class="swm-brand" aria-label="Dr. Smith - Surgical Wholesale Mart">
+          <div class="swm-brand-logo-wrap">
+            <img src="assets/img/logo.png?v=11.0" alt="Dr. Smith Logo" class="swm-brand-logo" width="34" height="34" loading="eager">
+          </div>
+          <div class="swm-brand-text">
+            <span class="swm-brand-title">SURGICAL <span>WHOLESALE MART</span></span>
+            <span class="swm-brand-subtitle">PVT. LTD. &bull; DR. SMITH HEALTHCARE</span>
+          </div>
+        </a>
+
+        <!-- Middle Navigation Links (Desktop >= 1200px) -->
+        <ul class="swm-nav-links d-none d-xl-flex">
+          <li><a href="index.html" class="swm-nav-link active">Home</a></li>
+          <li class="dropdown">
+            <a href="catalogue/index.html" class="swm-nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Products <i class="bi bi-chevron-down ms-1 small"></i></a>
+            <ul class="dropdown-menu dropdown-menu-dark" style="background: rgba(3, 14, 38, 0.98); border: 1px solid rgba(0, 210, 255, 0.25); border-radius: 12px; padding: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.6);">
+              <li><a class="dropdown-item text-white py-2" href="catalogue/beds/index.html"><i class="bi bi-hospital me-2 text-info"></i> ICU &amp; Hospital Beds</a></li>
+              <li><a class="dropdown-item text-white py-2" href="catalogue/modular-ot/index.html"><i class="bi bi-brightness-high me-2 text-info"></i> Modular Operation Theatres</a></li>
+              <li><a class="dropdown-item text-white py-2" href="catalogue/ventilators/index.html"><i class="bi bi-lungs me-2 text-info"></i> ICU Ventilators &amp; Anesthesia</a></li>
+              <li><a class="dropdown-item text-white py-2" href="catalogue/patient-monitor/index.html"><i class="bi bi-activity me-2 text-info"></i> Patient Multipara Monitors</a></li>
+              <li><a class="dropdown-item text-white py-2" href="catalogue/autoclaves/index.html"><i class="bi bi-shield-check me-2 text-info"></i> Autoclaves &amp; CSSD Units</a></li>
+              <li><a class="dropdown-item text-white py-2" href="catalogue/c-arm-machine/index.html"><i class="bi bi-broadcast-pin me-2 text-info"></i> C-Arm &amp; Radiology Equipment</a></li>
+              <li><hr class="dropdown-divider border-secondary my-1"></li>
+              <li><a class="dropdown-item text-info fw-bold py-2" href="catalogue/index.html"><i class="bi bi-grid-fill me-2"></i> View All 50+ Product Categories &rarr;</a></li>
+            </ul>
+          </li>
+          <li><a href="turnkey-projects/index.html" class="swm-nav-link">Complete Hospital Setup</a></li>
+          <li><a href="group-companies/index.html" class="swm-nav-link">Brands</a></li>
+          <li><a href="turnkey-projects/index.html" class="swm-nav-link">Services</a></li>
+          <li><a href="catalogue/index.html" class="swm-nav-link">Resources</a></li>
+          <li><a href="about-us/index.html" class="swm-nav-link">About Us</a></li>
+          <li><a href="contact-form/index.html" class="swm-nav-link">Contact Us</a></li>
+        </ul>
+
+        <!-- Right Action Buttons -->
+        <div class="d-flex align-items-center gap-2">
+          <!-- Search trigger -->
+          <button type="button" class="btn btn-outline-info rounded-circle d-flex align-items-center justify-content-center" style="width: 38px; height: 38px; border-color: rgba(0,210,255,0.4);" onclick="openGlobalSearch()" title="Instant Search">
+            <i class="bi bi-search"></i>
+          </button>
+
+          <!-- Explore Catalogue (Orange Pill) -->
+          <a href="catalogue/index.html" class="btn-swm-orange d-none d-sm-inline-flex" title="Explore Master Product Catalogue">
+            <i class="fa-solid fa-book-open"></i>
+            <span>Explore Catalogue</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+          <!-- WhatsApp Us (Green Pill) -->
+          <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." target="_blank" rel="noopener noreferrer" class="btn-swm-green d-none d-md-inline-flex" title="Chat on WhatsApp">
+            <i class="fa-brands fa-whatsapp fs-5"></i>
+            <span>WhatsApp Us</span>
+          </a>
+
+          <!-- Mobile Hamburger Toggle (All devices < 1200px) -->
+          <button type="button" class="btn btn-link text-white fs-2 d-xl-none p-0 ms-2" id="swmMobileToggle" aria-label="Toggle navigation menu">
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Drawer Backdrop Overlay -->
+  <div class="apple-mobile-backdrop" id="appleMobileBackdrop"></div>
+
+  <!-- Mobile Menu Drawer Overlay (Full support for Touch & Mobile Devices) -->
+  <div class="apple-mobile-drawer" id="apple-mobile-drawer">
+    <div class="apple-mobile-drawer-header">
+      <div class="d-flex align-items-center gap-2">
+        <img src="assets/img/logo.png?v=11.0" alt="Logo" width="28" height="28">
+        <span class="apple-mobile-drawer-tag"><i class="bi bi-hospital"></i> Dr. Smith Menu</span>
+      </div>
+      <button type="button" class="apple-mobile-drawer-close" id="appleMobileDrawerClose" aria-label="Close Navigation Menu">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
+    <div class="apple-mobile-grid">
+      <a href="index.html" class="apple-mobile-tile active">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-house-door-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Home</span>
+          <span class="apple-mobile-tile-sub">Overview</span>
+        </div>
+      </a>
+      <a href="catalogue/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-grid-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Catalogue</span>
+          <span class="apple-mobile-tile-sub">50+ Categories</span>
+        </div>
+      </a>
+      <a href="turnkey-projects/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-hospital-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Turnkey Setup</span>
+          <span class="apple-mobile-tile-sub">50–500 Beds</span>
+        </div>
+      </a>
+      <a href="catalogue/modular-ot/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-activity"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Modular OT</span>
+          <span class="apple-mobile-tile-sub">Cleanrooms</span>
+        </div>
+      </a>
+      <a href="about-us/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-shield-check"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">About Us</span>
+          <span class="apple-mobile-tile-sub">Heritage</span>
+        </div>
+      </a>
+      <a href="contact-form/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-envelope-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Contact</span>
+          <span class="apple-mobile-tile-sub">Global Offices</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="apple-mobile-cta-box">
+      <a href="catalogue/index.html" class="btn-swm-orange w-100 justify-content-center mb-2">
+        <i class="fa-solid fa-book-open"></i> Explore Catalogue &rarr;
+      </a>
+      <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions."
+        target="_blank" rel="noopener noreferrer" class="btn-swm-green w-100 justify-content-center mb-3">
+        <i class="fa-brands fa-whatsapp fs-5"></i> Chat on WhatsApp
+      </a>
+      <div class="d-flex align-items-center justify-content-center gap-3 text-muted small pt-2 border-top border-secondary">
+        <a href="tel:+919599081020" class="text-white text-decoration-none"><i class="fa-solid fa-phone text-info me-1"></i> +91 95990 81020</a>
+        <span>&bull;</span>
+        <a href="mailto:info@drsmith.co.in" class="text-white text-decoration-none"><i class="fa-solid fa-envelope text-info me-1"></i> Email Us</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       3. HERO SECTION (HIGH-TECH OT ROOM SHOWROOM)
+       ============================================================ -->
+  <section class="swm-hero-section" id="hero">
+    <div class="container-fluid px-xl-5 px-lg-4 px-3">
+      <div class="row align-items-center">
+        <div class="col-lg-7 col-xl-6">
+          <div class="swm-hero-content">
+
+            <!-- Eyebrow label -->
+            <div class="swm-hero-eyebrow">
+              <span class="orange-dash">&mdash;</span> EXCELLENCE IN HEALTHCARE
+            </div>
+
+            <!-- Main Headline -->
+            <h1 class="swm-hero-title">
+              <span class="title-bar">|</span> India's First<br>
+              <span class="title-accent">Surgical Wholesale Mart</span>
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="swm-hero-subtitle">
+              Where you can experience the product<br class="d-none d-sm-inline">
+              before even purchasing it.
+            </p>
+
+            <!-- Tagline in Orange -->
+            <div class="swm-hero-slogan-orange">
+              Kyunki yahan sab milta hai.
+            </div>
+
+            <!-- 4 Circular Feature Badges in horizontal row -->
+            <div class="swm-hero-badges-row">
+              <!-- Badge 1: Bulk Stock Ready -->
+              <div class="swm-hero-badge-pill">
+                <span class="swm-badge-icon-circle"><i class="fa-solid fa-boxes-stacked"></i></span>
+                <span>Bulk Stock Ready</span>
+              </div>
+
+              <!-- Badge 2: 24x7 Service -->
+              <div class="swm-hero-badge-pill">
+                <span class="swm-badge-icon-circle"><i class="fa-solid fa-headset"></i></span>
+                <span>24 &times; 7 Service</span>
+              </div>
+
+              <!-- Badge 3: 1 Year Warranty -->
+              <div class="swm-hero-badge-pill">
+                <span class="swm-badge-icon-circle"><i class="fa-solid fa-shield-halved"></i></span>
+                <span>1 Year Replacement Warranty</span>
+              </div>
+
+              <!-- Badge 4: Pan India Delivery -->
+              <div class="swm-hero-badge-pill">
+                <span class="swm-badge-icon-circle"><i class="fa-solid fa-truck-fast"></i></span>
+                <span>Pan India Delivery</span>
+              </div>
+            </div>
+
+            <!-- Hero Action Buttons -->
+            <div class="swm-hero-cta-group">
+              <a href="catalogue/index.html" class="btn-swm-orange">
+                <span>Explore Catalogue</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+
+              <a href="javascript:void(0)" class="btn-swm-video" onclick="openAppleDrawer('Turnkey Hospital Setup')" title="Watch Video Demonstration">
+                <span class="play-circle"><i class="fa-solid fa-play" style="margin-left: 2px;"></i></span>
+                <span>Watch Video</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       4. SHOP BY CATEGORY SECTION (6 EXACT GLASS CARDS)
+       ============================================================ -->
+  <section class="swm-category-section" id="categories">
+    <div class="container-fluid px-xl-5 px-lg-4 px-3">
+
+      <!-- Section Header -->
+      <div class="swm-section-header">
+        <h2 class="swm-section-title">
+          <span class="orange-dash">&mdash;</span> Shop by Category
+        </h2>
+        <a href="catalogue/index.html" class="swm-view-all-link">
+          <span>View All Categories</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <!-- 6 Category Cards Grid (Responsive: 6 on PC, 3 on Tablet, 2 on Mobile) -->
+      <div class="swm-cards-grid">
+
+        <!-- Card 1: Patient Monitoring, Ventilators & Anesthesia -->
+        <a href="catalogue/anesthesia-workstation/index.html" class="swm-cat-card" title="Patient Monitoring, Ventilators &amp; Anesthesia">
+          <div class="swm-cat-img-box">
+            <img src="assets/img/ui-design/cat_1_monitoring.png" alt="Patient Monitoring, Ventilators and Anesthesia Systems" loading="lazy">
+          </div>
+          <div class="swm-cat-footer">
+            <span class="swm-cat-name">Patient Monitoring, Ventilators &amp; Anesthesia</span>
+            <span class="swm-cat-circle-btn"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- Card 2: Operation Theatre Equipment -->
+        <a href="catalogue/modular-ot/index.html" class="swm-cat-card" title="Operation Theatre Equipment">
+          <div class="swm-cat-img-box">
+            <img src="assets/img/ui-design/cat_2_ot_equipment.png" alt="Operation Theatre Equipment, Lights and Tables" loading="lazy">
+          </div>
+          <div class="swm-cat-footer">
+            <span class="swm-cat-name">Operation Theatre Equipment</span>
+            <span class="swm-cat-circle-btn"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- Card 3: Infant Care & Neonatal Equipment -->
+        <a href="catalogue/baby-warmer/index.html" class="swm-cat-card" title="Infant Care &amp; Neonatal Equipment">
+          <div class="swm-cat-img-box">
+            <img src="assets/img/ui-design/cat_3_infant_care.png" alt="Infant Care and Neonatal Equipment" loading="lazy">
+          </div>
+          <div class="swm-cat-footer">
+            <span class="swm-cat-name">Infant Care &amp; Neonatal Equipment</span>
+            <span class="swm-cat-circle-btn"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- Card 4: Diagnostics & Laboratory -->
+        <a href="catalogue/ivd-products/index.html" class="swm-cat-card" title="Diagnostics &amp; Laboratory">
+          <div class="swm-cat-img-box">
+            <img src="assets/img/ui-design/cat_4_diagnostics.png" alt="Diagnostics and Clinical Laboratory Equipment" loading="lazy">
+          </div>
+          <div class="swm-cat-footer">
+            <span class="swm-cat-name">Diagnostics &amp; Laboratory</span>
+            <span class="swm-cat-circle-btn"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- Card 5: CSSD & Sterilization -->
+        <a href="catalogue/autoclaves/index.html" class="swm-cat-card" title="CSSD &amp; Sterilization">
+          <div class="swm-cat-img-box">
+            <img src="assets/img/ui-design/cat_5_cssd.png" alt="CSSD and Hospital Sterilization Units" loading="lazy">
+          </div>
+          <div class="swm-cat-footer">
+            <span class="swm-cat-name">CSSD &amp; Sterilization</span>
+            <span class="swm-cat-circle-btn"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- Card 6: Hospital Furniture -->
+        <a href="catalogue/beds/index.html" class="swm-cat-card" title="Hospital Furniture">
+          <div class="swm-cat-img-box">
+            <img src="assets/img/ui-design/cat_6_furniture.png" alt="ICU Beds and Hospital Ward Furniture" loading="lazy">
+          </div>
+          <div class="swm-cat-footer">
+            <span class="swm-cat-name">Hospital Furniture</span>
+            <span class="swm-cat-circle-btn"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       5. WHY CHOOSE US? ORBIT & TIMELINE SECTION (ALL DEVICES)
+       ============================================================ -->
+  <section class="swm-why-section" id="why-choose-us">
+    <div class="container-fluid px-xl-5 px-lg-4 px-3">
+
+      <div class="swm-timeline-container">
+
+        <!-- Connecting Dotted Glowing Line (Visible on Desktop) -->
+        <svg class="swm-timeline-svg-line" viewBox="0 0 1140 10" preserveAspectRatio="none">
+          <line x1="20" y1="5" x2="1120" y2="5" stroke="#00d2ff" stroke-width="2" stroke-dasharray="6,6" opacity="0.45" />
+        </svg>
+
+        <!-- LEFT BRANCH: 4 CIRCULAR NODES -->
+        <div class="swm-timeline-branch branch-left">
+
+          <!-- Left Node 1: Bulk Stock Ready (Green) -->
+          <div class="swm-timeline-node">
+            <div class="swm-node-circle swm-node-green">
+              <i class="fa-solid fa-boxes-stacked"></i>
+            </div>
+            <span class="swm-node-label">Bulk Stock Ready</span>
+          </div>
+
+          <!-- Left Node 2: 24x7 Service (Blue) -->
+          <div class="swm-timeline-node">
+            <div class="swm-node-circle swm-node-blue">
+              <i class="fa-solid fa-headset"></i>
+            </div>
+            <span class="swm-node-label">24 &times; 7 Service</span>
+          </div>
+
+          <!-- Left Node 3: 1 Year Replacement Warranty (Cyan) -->
+          <div class="swm-timeline-node">
+            <div class="swm-node-circle swm-node-cyan">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <span class="swm-node-label">1 Year Replacement Warranty</span>
+          </div>
+
+          <!-- Left Node 4: Product Demonstration (Orange) -->
+          <div class="swm-timeline-node">
+            <div class="swm-node-circle swm-node-orange">
+              <i class="fa-solid fa-gear"></i>
+            </div>
+            <span class="swm-node-label">Product Demonstration</span>
+          </div>
+
+        </div>
+
+        <!-- CENTER RADIANT ORB: WHY CHOOSE US? -->
+        <div class="swm-timeline-center-orb">
+          <span class="swm-orb-eyebrow">EXCELLENCE IN CARE</span>
+          <div class="swm-orb-title">
+            Why Choose
+            <span class="cyan-us">Us?</span>
+          </div>
+        </div>
+
+        <!-- RIGHT BRANCH: 4 CIRCULAR NODES -->
+        <div class="swm-timeline-branch branch-right">
+
+          <!-- Right Node 1: Complete Hospital Setup (Blue) -->
+          <div class="swm-timeline-node">
+            <div class="swm-node-circle swm-node-blue">
+              <i class="fa-solid fa-hospital"></i>
+            </div>
+            <span class="swm-node-label">Complete Hospital Setup</span>
+          </div>
+
+          <!-- Right Node 2: Pan India Delivery (Orange) -->
+          <div class="swm-timeline-node">
+            <div class="swm-node-circle swm-node-orange">
+              <i class="fa-solid fa-truck-fast"></i>
+            </div>
+            <span class="swm-node-label">Pan India Delivery</span>
+          </div>
+
+          <!-- Right Node 3: Installation & Training Support (Cyan) -->
+          <div class="swm-timeline-node">
+            <div class="swm-node-circle swm-node-cyan">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+            </div>
+            <span class="swm-node-label">Installation &amp; Training Support</span>
+          </div>
+
+          <!-- Right Node 4: Dedicated Account Manager (Purple) -->
+          <div class="swm-timeline-node">
+            <div class="swm-node-circle swm-node-purple">
+              <i class="fa-solid fa-user-tie"></i>
+            </div>
+            <span class="swm-node-label">Dedicated Account Manager</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       6. SECONDARY CORPORATE STRIP (MATCHING REFERENCE UI)
+       ============================================================ -->
+  <div class="swm-navbar py-3" style="background: rgba(2, 9, 23, 0.95); border-top: 1px solid rgba(0, 162, 255, 0.15);">
+    <div class="container-fluid px-xl-5 px-lg-4 px-3">
+      <div class="d-flex align-items-center justify-content-between flex-wrap gap-3">
+
+        <!-- Logo -->
+        <a href="index.html" class="swm-brand">
+          <div class="swm-brand-logo-wrap" style="width: 38px; height: 38px;">
+            <img src="assets/img/logo.png?v=11.0" alt="Dr. Smith Logo" class="swm-brand-logo" width="28" height="28" loading="lazy">
+          </div>
+          <div class="swm-brand-text">
+            <span class="swm-brand-title" style="font-size: 1rem;">SURGICAL <span>WHOLESALE MART</span></span>
+            <span class="swm-brand-subtitle">PVT. LTD.</span>
+          </div>
+        </a>
+
+        <!-- Mid Nav Links (Desktop) -->
+        <ul class="swm-nav-links d-none d-lg-flex">
+          <li><a href="index.html" class="swm-nav-link">Home</a></li>
+          <li><a href="catalogue/index.html" class="swm-nav-link active">Products <i class="bi bi-chevron-down ms-1 small"></i></a></li>
+          <li><a href="turnkey-projects/index.html" class="swm-nav-link">Complete Hospital Setup</a></li>
+          <li><a href="group-companies/index.html" class="swm-nav-link">Brands</a></li>
+          <li><a href="turnkey-projects/index.html" class="swm-nav-link">Services</a></li>
+          <li><a href="catalogue/index.html" class="swm-nav-link">Resources</a></li>
+          <li><a href="about-us/index.html" class="swm-nav-link">About Us</a></li>
+          <li><a href="contact-form/index.html" class="swm-nav-link">Contact Us</a></li>
+        </ul>
+
+        <!-- Action Buttons -->
+        <div class="d-flex align-items-center gap-2">
+          <a href="catalogue/index.html" class="btn-swm-orange">
+            <i class="fa-solid fa-book-open"></i>
+            <span class="d-none d-sm-inline">Explore Catalogue</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." target="_blank" rel="noopener noreferrer" class="btn-swm-green">
+            <i class="fa-brands fa-whatsapp fs-5"></i>
+            <span class="d-none d-sm-inline">WhatsApp Us</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       7. OUR PRODUCT CATEGORIES SHOWCASE SECTION
+       ============================================================ -->
+  <section class="swm-showcase-section" id="product-categories-showcase">
+    <div class="container-fluid px-xl-5 px-lg-4 px-3">
+
+      <!-- Breadcrumbs -->
+      <nav aria-label="breadcrumb">
+        <div class="swm-breadcrumb">
+          <a href="index.html"><i class="fa-solid fa-house me-1"></i> Home</a>
+          <i class="fa-solid fa-chevron-right small"></i>
+          <span class="text-white">Products</span>
+        </div>
+      </nav>
+
+      <!-- Section Title & Badges Topbar -->
+      <div class="swm-showcase-topbar">
+        <div class="swm-showcase-title-box">
+          <h2 class="swm-showcase-heading">Our Product <span>Categories</span></h2>
+          <p class="swm-showcase-desc">
+            Complete range of high-quality medical equipment and solutions for hospitals, clinics and healthcare centers.
+          </p>
+        </div>
+
+        <div class="swm-showcase-features">
+          <div class="swm-feat-pill">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Trusted Quality</span>
+          </div>
+
+          <div class="swm-feat-pill">
+            <i class="fa-solid fa-truck-fast"></i>
+            <span>PAN India Delivery</span>
+          </div>
+
+          <div class="swm-feat-pill">
+            <i class="fa-solid fa-gear"></i>
+            <span>Warranty &amp; Support</span>
+          </div>
+
+          <div class="swm-feat-pill">
+            <i class="fa-solid fa-headset"></i>
+            <span>Expert Guidance</span>
+          </div>
+
+          <!-- Slogan box -->
+          <div class="swm-slogan-box">
+            <span class="slogan-line-1">One Mart.</span>
+            <span class="slogan-line-2">Every Medical Part.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flagship Categories Grid (8 Rich Product Groups from Our Catalogue) -->
+      <div class="swm-showcase-grid">
+
+        <!-- Showcase 1: ICU & Hospital Beds -->
+        <a href="catalogue/beds/index.html" class="swm-showcase-card">
+          <img src="catalogue/beds/fowler-bed-2-function-deluxe-mechanical.png" alt="Motorized 5-Function ICU Hospital Bed" class="swm-showcase-card-img" loading="lazy">
+          <div class="swm-showcase-card-body">
+            <span class="swm-showcase-card-badge">Hospital Furniture</span>
+            <h3 class="swm-showcase-card-title">ICU &amp; Hospital Beds</h3>
+            <p class="swm-showcase-card-desc">Motorized 5-function, Semi-Fowler, Fowler &amp; Plain beds with ABS panels and central locking castors.</p>
+            <div class="swm-showcase-card-action">
+              <span>View 21 Models</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </a>
+
+        <!-- Showcase 2: Modular Operation Theatres -->
+        <a href="catalogue/modular-ot/index.html" class="swm-showcase-card">
+          <img src="assets/img/infrastructure/bento-modular-ot.jpg?v=12.0" alt="Turnkey NABH Modular Operation Theatre" class="swm-showcase-card-img" loading="lazy">
+          <div class="swm-showcase-card-body">
+            <span class="swm-showcase-card-badge">Turnkey OT Setup</span>
+            <h3 class="swm-showcase-card-title">Modular Operation Theatres</h3>
+            <p class="swm-showcase-card-desc">NABH Class 100 laminar airflow cleanrooms, anti-bacterial wall cladding, ceiling pendants and hermetic doors.</p>
+            <div class="swm-showcase-card-action">
+              <span>View OT Suites</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </a>
+
+        <!-- Showcase 3: Anesthesia Workstations & Ventilators -->
+        <a href="catalogue/anesthesia-workstation/index.html" class="swm-showcase-card">
+          <img src="catalogue/anesthesia-workstation/anesthesia-machine-major-ms.png" alt="Advanced Multi-Gas Anesthesia Workstation" class="swm-showcase-card-img" loading="lazy">
+          <div class="swm-showcase-card-body">
+            <span class="swm-showcase-card-badge">Critical Care</span>
+            <h3 class="swm-showcase-card-title">Anesthesia Workstations</h3>
+            <p class="swm-showcase-card-desc">Advanced multi-gas anesthesia delivery systems, integrated ventilator, circle absorber &amp; dual vaporizers.</p>
+            <div class="swm-showcase-card-action">
+              <span>View 15 Models</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </a>
+
+        <!-- Showcase 4: Patient Multipara Monitors -->
+        <a href="catalogue/patient-monitor/index.html" class="swm-showcase-card">
+          <img src="catalogue/patient-monitor/dr-smith-5-para-bedside-patient-monitor-swm-11087.png" alt="High Precision Multipara Patient Monitor" class="swm-showcase-card-img" loading="lazy">
+          <div class="swm-showcase-card-body">
+            <span class="swm-showcase-card-badge">Monitoring Systems</span>
+            <h3 class="swm-showcase-card-title">Patient Multipara Monitors</h3>
+            <p class="swm-showcase-card-desc">12.1" and 15" high-definition touch displays, ECG, SpO2, NIBP, Dual Temp, IBP and EtCO2 monitoring.</p>
+            <div class="swm-showcase-card-action">
+              <span>View 9 Models</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </a>
+
+        <!-- Showcase 5: C-Arm Fluoroscopy Machines -->
+        <a href="catalogue/c-arm-machine/index.html" class="swm-showcase-card">
+          <img src="catalogue/c-arm-machine/c-arm-machine.png" alt="High Frequency C-Arm Fluoroscopy Imaging System" class="swm-showcase-card-img" loading="lazy">
+          <div class="swm-showcase-card-body">
+            <span class="swm-showcase-card-badge">Radiology &amp; Imaging</span>
+            <h3 class="swm-showcase-card-title">C-Arm Fluoroscopy Machines</h3>
+            <p class="swm-showcase-card-desc">High-frequency 3.5kW and 5kW mobile surgical C-arm systems with image intensifiers for orthopedic surgery.</p>
+            <div class="swm-showcase-card-action">
+              <span>View Radiology Range</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </a>
+
+        <!-- Showcase 6: Autoclaves & CSSD Sterilization -->
+        <a href="catalogue/autoclaves/index.html" class="swm-showcase-card">
+          <img src="catalogue/autoclaves/dr-smith-horizontal-autoclave-cabinet-enclosure.png" alt="Horizontal High Pressure Steam Autoclave" class="swm-showcase-card-img" loading="lazy">
+          <div class="swm-showcase-card-body">
+            <span class="swm-showcase-card-badge">Infection Control</span>
+            <h3 class="swm-showcase-card-title">Autoclaves &amp; CSSD</h3>
+            <p class="swm-showcase-card-desc">Vertical and horizontal high-pressure stainless steel steam sterilizers, flash autoclaves and instrument drums.</p>
+            <div class="swm-showcase-card-action">
+              <span>View 11 Models</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </a>
+
+        <!-- Showcase 7: Surgical Instruments & Precision Sets -->
+        <a href="catalogue/surgical-instruments/index.html" class="swm-showcase-card">
+          <img src="catalogue/surgical-instruments/dr-smith-2026-10-12-131002.png" alt="Surgical Instruments TC Forceps Scissors Sets" class="swm-showcase-card-img" loading="lazy">
+          <div class="swm-showcase-card-body">
+            <span class="swm-showcase-card-badge">Precision Surgery</span>
+            <h3 class="swm-showcase-card-title">Surgical Instruments Sets</h3>
+            <p class="swm-showcase-card-desc">German-grade stainless steel &amp; Tungsten Carbide instruments for General, Ortho, ENT, Gynec and Laparoscopy.</p>
+            <div class="swm-showcase-card-action">
+              <span>View Instrument Sets</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </a>
+
+        <!-- Showcase 8: Emergency Rescue & Trauma -->
+        <a href="catalogue/rescue-equipment/index.html" class="swm-showcase-card">
+          <img src="catalogue/rescue-equipment/dr-smith-biphasic-defibrillator-monitor-swm-11090.png" alt="Emergency Rescue Trauma Equipment Spine Board" class="swm-showcase-card-img" loading="lazy">
+          <div class="swm-showcase-card-body">
+            <span class="swm-showcase-card-badge">Emergency &amp; Trauma</span>
+            <h3 class="swm-showcase-card-title">Emergency Rescue &amp; Trauma</h3>
+            <p class="swm-showcase-card-desc">Spine boards, scoop stretchers, resuscitation Ambu kits, defibrillators and patient transit equipment.</p>
+            <div class="swm-showcase-card-action">
+              <span>View Trauma Range</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       8. CONSULTATION DRAWER BACKDROP & OFF-CANVAS
+       ============================================================ -->
+  <div class="apple-drawer-backdrop" id="appleDrawerBackdrop" onclick="closeAppleDrawer();"></div>
+
+  <div class="apple-drawer" id="appleDrawer" aria-hidden="true" role="dialog">
+    <div class="apple-drawer-header">
+      <div>
+        <h4 class="mb-0 text-white fw-bold"><i class="bi bi-file-earmark-medical me-2 text-info"></i> Official Project Consultation</h4>
+        <small class="text-white-50">Direct procurement &bull; Turnkey planning &bull; Export BOM</small>
+      </div>
+      <button type="button" class="apple-drawer-close" onclick="closeAppleDrawer();" aria-label="Close Drawer">&times;</button>
+    </div>
+    <div class="apple-drawer-body">
+      <form class="apple-drawer-form" onsubmit="handleAppleQuoteSubmit(event);">
+        <div class="form-group mb-3">
+          <label class="text-white-50 small mb-1">Scope of Interest</label>
+          <input type="text" id="drawer-product-name" value="Turnkey Hospital Setup" readonly style="background: rgba(255,255,255,0.08); font-weight: 600; color: #fff; border: 1px solid rgba(255,255,255,0.15);" class="form-control">
+        </div>
+
+        <div class="row g-2 mb-3">
+          <div class="col-md-6 form-group">
+            <label class="text-white-50 small mb-1">Your Full Name *</label>
+            <input type="text" placeholder="Dr. / Mr. / Ms." required class="form-control" style="background: rgba(255,255,255,0.05); color: #fff; border: 1px solid rgba(255,255,255,0.15);">
+          </div>
+          <div class="col-md-6 form-group">
+            <label class="text-white-50 small mb-1">Hospital / Organization *</label>
+            <input type="text" placeholder="Hospital Name" required class="form-control" style="background: rgba(255,255,255,0.05); color: #fff; border: 1px solid rgba(255,255,255,0.15);">
+          </div>
+        </div>
+
+        <div class="row g-2 mb-3">
+          <div class="col-md-6 form-group">
+            <label class="text-white-50 small mb-1">Official Email *</label>
+            <input type="email" placeholder="name@hospital.com" required class="form-control" style="background: rgba(255,255,255,0.05); color: #fff; border: 1px solid rgba(255,255,255,0.15);">
+          </div>
+          <div class="col-md-6 form-group">
+            <label class="text-white-50 small mb-1">Phone / WhatsApp *</label>
+            <input type="tel" placeholder="+91 99999 99999" required class="form-control" style="background: rgba(255,255,255,0.05); color: #fff; border: 1px solid rgba(255,255,255,0.15);">
+          </div>
+        </div>
+
+        <div class="form-group mb-3">
+          <label class="text-white-50 small mb-1">Project Scope &amp; Requirements</label>
+          <textarea rows="3" placeholder="Specify turnkey bed capacity, modular OT requirement, MGPS pipeline, or equipment procurement details..." class="form-control" style="background: rgba(255,255,255,0.05); color: #fff; border: 1px solid rgba(255,255,255,0.15);"></textarea>
+        </div>
+
+        <button type="submit" class="btn-swm-orange w-100 justify-content-center py-3">Submit Consultation Request &rarr;</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Floating Quick WhatsApp Button for All Mobile Screens -->
+  <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions."
+     target="_blank" rel="noopener noreferrer"
+     class="swm-floating-whatsapp d-md-none"
+     aria-label="Chat on WhatsApp (+91 95990 81020)">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Floating Scroll To Top Button -->
+  <button type="button" class="swm-scroll-top" id="swmScrollTopBtn" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- ============================================================
+       9. MASTER FOOTER
+       ============================================================ -->
+  <footer class="swm-footer" id="contact">
+    <div class="container-fluid px-xl-5 px-lg-4 px-3">
+      <div class="row gy-4">
+
+        <!-- Column 1: Brand & Heritage -->
+        <div class="col-lg-4">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <img src="assets/img/logo.png?v=11.0" alt="Dr. Smith Logo" width="36" height="36">
+            <span class="fw-bold fs-5 text-white">DR. SMITH HEALTHCARE</span>
+          </div>
+          <p class="small text-muted mb-3" style="line-height: 1.6;">
+            A premier division of <strong>Surgical Wholesale Mart Pvt. Ltd.</strong> with over 60+ years of healthcare manufacturing legacy. Providing turnkey hospital infrastructure, modular OT cleanrooms, critical care medical equipment, and hospital furniture across India and 40+ export nations.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary btn-sm rounded-circle"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/919599081020" target="_blank" rel="noopener noreferrer" class="btn btn-outline-success btn-sm rounded-circle"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:info@drsmith.co.in" class="btn btn-outline-info btn-sm rounded-circle"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="col-6 col-lg-2">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="catalogue/index.html">All Products</a></li>
+            <li><a href="turnkey-projects/index.html">Turnkey Projects</a></li>
+            <li><a href="about-us/index.html">About Dr. Smith</a></li>
+            <li><a href="group-companies/index.html">Group Companies</a></li>
+            <li><a href="contact-form/index.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Flagship Categories -->
+        <div class="col-6 col-lg-3">
+          <h5>Core Infrastructure</h5>
+          <ul>
+            <li><a href="catalogue/beds/index.html">ICU &amp; Hospital Beds</a></li>
+            <li><a href="catalogue/modular-ot/index.html">Modular Operation Theatres</a></li>
+            <li><a href="catalogue/anesthesia-workstation/index.html">Anesthesia Workstations</a></li>
+            <li><a href="catalogue/ventilators/index.html">ICU Ventilators &amp; BiPAP</a></li>
+            <li><a href="catalogue/c-arm-machine/index.html">C-Arm Fluoroscopy</a></li>
+            <li><a href="catalogue/autoclaves/index.html">CSSD Autoclaves</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact & Global Desks -->
+        <div class="col-lg-3">
+          <h5>Global Desks &amp; Works</h5>
+          <p class="small text-muted mb-2">
+            <strong class="text-white"><i class="fa-solid fa-industry text-info me-1"></i> Manufacturing Plant:</strong><br>
+            Model Economic Township (METL), Reliance Industrial Plot, Jhajjar, Haryana.
+          </p>
+          <p class="small text-muted mb-2">
+            <strong class="text-white"><i class="fa-solid fa-building text-info me-1"></i> Corporate Head Office:</strong><br>
+            Kapashera Estate, New Delhi 110037.
+          </p>
+          <p class="small text-muted mb-0">
+            <strong class="text-white"><i class="fa-solid fa-globe text-info me-1"></i> Middle East Desk:</strong><br>
+            Sharjah Media City (Shams), UAE &bull; <a href="tel:+971508917466" class="text-info">+971 50 891 7466</a>
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="swm-footer-bottom">
+        <div>
+          &copy; 2026 <strong>Dr. Smith Healthcare Solutions</strong> (Surgical Wholesale Mart Pvt. Ltd.). All Rights Reserved.
+        </div>
+        <div class="d-flex gap-3 mt-2 mt-md-0">
+          <a href="privacy.html" class="text-muted text-decoration-none small">Privacy Policy</a>
+          <span class="text-muted">&bull;</span>
+          <a href="terms.html" class="text-muted text-decoration-none small">Terms of Service</a>
+          <span class="text-muted">&bull;</span>
+          <a href=".well-known/security.txt" class="text-muted text-decoration-none small">Security</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js?v=94.0"></script>
+  <script src="assets/js/global-search.js?v=44.0"></script>
+
+  <!-- Mobile Drawer & Responsive Controllers -->
+  <script>
+    (function() {
+      const toggleBtn = document.getElementById('swmMobileToggle');
+      const drawer = document.getElementById('apple-mobile-drawer');
+      const backdrop = document.getElementById('appleMobileBackdrop');
+      const closeBtn = document.getElementById('appleMobileDrawerClose');
+
+      function openDrawer() {
+        if (drawer) drawer.classList.add('open');
+        if (backdrop) backdrop.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeDrawer() {
+        if (drawer) drawer.classList.remove('open');
+        if (backdrop) backdrop.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+
+      if (toggleBtn) toggleBtn.addEventListener('click', openDrawer);
+      if (backdrop) backdrop.addEventListener('click', closeDrawer);
+      if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+
+      // Sticky Navbar Shadow & Scroll-to-Top on scroll
+      const navbar = document.getElementById('swmMainNavbar');
+      const scrollTopBtn = document.getElementById('swmScrollTopBtn');
+
+      window.addEventListener('scroll', function() {
+        if (navbar) {
+          if (window.scrollY > 30) {
+            navbar.classList.add('scrolled');
+          } else {
+            navbar.classList.remove('scrolled');
+          }
+        }
+        if (scrollTopBtn) {
+          if (window.scrollY > 200) {
+            scrollTopBtn.classList.add('visible');
+          } else {
+            scrollTopBtn.classList.remove('visible');
+          }
+        }
+      }, { passive: true });
+
+      if (scrollTopBtn) {
+        scrollTopBtn.addEventListener('click', function() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
+    })();
+  </script>
+
+</body>
+
+</html>
+'''
+
+with open('index.html', 'w', encoding='utf-8') as f:
+    f.write(html_content)
+
+print(f"Successfully wrote index.html with {len(html_content)} characters.")

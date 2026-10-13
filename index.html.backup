@@ -1,0 +1,2913 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="theme-color" content="#030712">
+  <title>Dr. Smith — One-Stop Solution to All Your Hospital Related Needs</title>
+  <meta name="description"
+    content="Dr. Smith (Surgical Wholesale Mart Pvt. Ltd.) is the one-stop solution for all your hospital related needs: turnkey construction, NABH modular operation theatres, MGPS medical gas pipelines, and global medical supply.">
+  <meta name="keywords"
+    content="Dr. Smith, one stop solution hospital needs, turnkey hospital projects, hospital construction, modular operation theatre, medical gas pipeline, surgical infrastructure">
+
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/apple-theme.css?v=106.0" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+</head>
+
+<body class="apple-body has-hero-whatsapp">
+
+  <!-- ============================================================
+       1. GLOBAL NAVIGATION HEADER
+       ============================================================ -->
+  <nav class="apple-globalnav" aria-label="Global">
+    <div class="apple-globalnav-inner">
+
+      <!-- Brand & Corporate Identity -->
+      <a href="index.html" class="apple-nav-brand" aria-label="Dr. Smith Hospital Solutions">
+        <div class="brand-asterisk-icon">
+          <img src="assets/img/logo.png?v=11.0" alt="Dr. Smith Emblem Logo" class="apple-nav-logo-img" width="36"
+            height="36" decoding="async" loading="eager">
+        </div>
+        <div class="apple-nav-brand-text">
+          <span class="apple-nav-brand-title">Dr. Smith</span>
+          <span class="apple-nav-brand-subtitle">HOSPITAL SOLUTIONS</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="apple-nav-links">
+        <li class="apple-nav-item">
+          <a href="index.html" class="apple-nav-link nav-active">Home</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="catalogue/index.html" class="apple-nav-link">Products</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="turnkey-projects/index.html" class="apple-nav-link">Turnkey Solutions</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="about-us/index.html" class="apple-nav-link">About Us</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="contact-form/index.html" class="apple-nav-link">Contact</a>
+        </li>
+      </ul>
+
+      <!-- Action Utilities -->
+      <div class="apple-nav-actions">
+        <!-- Contact / Mail Form Button -->
+        <a href="contact-form/index.html" class="apple-nav-circle-btn apple-nav-circle-mail"
+          aria-label="Send Enquiry &amp; Contact Us" title="Send Enquiry / Request Quotation (BOM &amp; Consultation)">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+
+        <!-- WhatsApp Circle Button -->
+        <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions."
+          class="apple-nav-circle-btn apple-nav-circle-whatsapp" target="_blank"
+          rel="noopener noreferrer" aria-label="Chat with Dr. Smith Healthcare on WhatsApp (+91 95990 81020)"
+          title="WhatsApp Direct (+91 95990 81020) • 24/7 Fast Inquiry">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <!-- Menu Toggle Button -->
+        <button type="button" class="apple-nav-circle-btn" id="apple-mobile-menu-btn"
+          aria-label="Toggle Navigation Menu" title="Menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Drawer Backdrop Overlay -->
+  <div class="apple-mobile-backdrop" id="appleMobileBackdrop"></div>
+
+  <!-- Mobile Menu Drawer Overlay -->
+  <div class="apple-mobile-drawer" id="apple-mobile-drawer">
+    <div class="apple-mobile-drawer-header">
+      <span class="apple-mobile-drawer-tag"><i class="bi bi-hospital"></i> Dr. Smith Quick Menu</span>
+      <button type="button" class="apple-mobile-drawer-close" id="appleMobileDrawerClose"
+        aria-label="Close Navigation Menu">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
+    <div class="apple-mobile-grid">
+      <a href="index.html" class="apple-mobile-tile active">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-house-door-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Home</span>
+          <span class="apple-mobile-tile-sub">Overview</span>
+        </div>
+      </a>
+      <a href="catalogue/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-grid-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Catalogue</span>
+          <span class="apple-mobile-tile-sub">50+ Categories</span>
+        </div>
+      </a>
+      <a href="turnkey-projects/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-hospital-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Turnkey Setup</span>
+          <span class="apple-mobile-tile-sub">50–500 Beds</span>
+        </div>
+      </a>
+      <a href="catalogue/modular-ot/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-activity"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Modular OT</span>
+          <span class="apple-mobile-tile-sub">Cleanrooms</span>
+        </div>
+      </a>
+      <a href="about-us/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-shield-check"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">About Us</span>
+          <span class="apple-mobile-tile-sub">Heritage</span>
+        </div>
+      </a>
+      <a href="contact-form/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-envelope-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Contact</span>
+          <span class="apple-mobile-tile-sub">Global Offices</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="apple-mobile-cta-box">
+      <a href="contact-form/index.html" class="apple-mobile-btn-consultation">
+        <i class="bi bi-building-check me-2"></i> Request Project Consultation <i class="bi bi-arrow-right ms-auto"></i>
+      </a>
+
+      <div class="apple-mobile-contact-grid">
+        <a href="tel:18008917466" class="apple-mobile-contact-pill apple-mobile-pill-tel">
+          <i class="bi bi-telephone-fill"></i>
+          <span>1800 891 7466<small>National Toll-Free</small></span>
+        </a>
+        <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions."
+          target="_blank" rel="noopener noreferrer" class="apple-mobile-contact-pill apple-mobile-pill-wa">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>WhatsApp Desk<small>24/7 Fast Inquiry</small></span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       PC-EXCLUSIVE FLAGSHIP HOME PAGE EXPERIENCE (>= 992px ONLY)
+       Mobile & Tablet view (<= 991px) is 100% untouched below
+       ============================================================ -->
+  <div class="home-pc-unique-view" id="pcHomeExperience">
+
+    <!-- PC TOP CATEGORY BANNERS SHOWCASE (DIRECTLY UNDER HEADER) -->
+    <section class="pc-category-banners-deck" aria-label="Main Product Category Banners">
+      <div class="pc-shell">
+
+        <!-- PART 1: FULL-WIDTH PANORAMIC CATEGORY HERO BANNER SLIDER -->
+        <div class="pc-cat-hero-slider" id="pcCatHeroSlider">
+
+          <!-- Banner Slide 1: Modular OT & Surgical Lights -->
+          <div class="pc-cat-banner-slide active" data-cat-slide="0">
+            <div class="pc-cat-slide-bg" style="background-image: url('assets/img/infrastructure/bento-modular-ot.jpg?v=12.0');"></div>
+            <div class="pc-cat-slide-overlay"></div>
+            <div class="pc-cat-slide-content">
+              <div class="pc-cat-slide-left">
+                <div class="pc-cat-slide-badges">
+                  <span class="pc-cat-pill-live"><span class="pc-pulse-dot"></span> FLAGSHIP CATEGORY 01 / 06</span>
+                  <span class="pc-cat-pill-sub">CLASS 100 CLEANROOMS &amp; LED OPTICS</span>
+                </div>
+                <h2 class="pc-cat-slide-title">Modular Operation Theatres &amp; Surgical Lights</h2>
+                <p class="pc-cat-slide-desc">
+                  Turnkey NABH/JCI sterile modular OT suites, HEPA H14 laminar airflow ceilings, surgeon control consoles, and 160,000 Lux shadowless hexa-dome LED surgical illumination.
+                </p>
+                <div class="pc-cat-slide-tags">
+                  <span>Hexa-Dome OT Lights</span>
+                  <span>SS 304 Wall Panels</span>
+                  <span>Laminar Airflow</span>
+                  <span>Hermetic Doors</span>
+                </div>
+                <div class="pc-cat-slide-actions">
+                  <a href="catalogue/modular-ot/index.html" class="pc-btn-flagship-primary">
+                    <span>Explore Modular OT &amp; Lights</span>
+                    <span class="pc-btn-arrow"><i class="bi bi-arrow-up-right"></i></span>
+                  </a>
+                  <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20Modular%20OT%20and%20Surgical%20Lights."
+                     target="_blank" rel="noopener noreferrer"
+                     class="pc-btn-flagship-wa btn-hero-whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>WhatsApp Desk</span>
+                  </a>
+                </div>
+              </div>
+              <div class="pc-cat-slide-right">
+                <div class="pc-cat-slide-VisualHalo"></div>
+                <img src="assets/img/hero-slides/1.jpg" alt="Modular Operation Theatres and Shadowless LED Surgical Lights" class="pc-cat-slide-main-img" loading="eager" decoding="async">
+                <span class="pc-cat-slide-img-caption"><i class="bi bi-patch-check-fill"></i> 5-Dome Hexa LED Surgical Light • 160,000 Lux</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Banner Slide 2: Hospital & ICU Beds / Furniture -->
+          <div class="pc-cat-banner-slide" data-cat-slide="1">
+            <div class="pc-cat-slide-bg" style="background-image: url('assets/img/infrastructure/hero-hospital-modern-glass.jpg?v=6.0');"></div>
+            <div class="pc-cat-slide-overlay"></div>
+            <div class="pc-cat-slide-content">
+              <div class="pc-cat-slide-left">
+                <div class="pc-cat-slide-badges">
+                  <span class="pc-cat-pill-live"><span class="pc-pulse-dot"></span> FLAGSHIP CATEGORY 02 / 06</span>
+                  <span class="pc-cat-pill-sub">20 SUBCATEGORIES • IN-HOUSE OEM PLANT</span>
+                </div>
+                <h2 class="pc-cat-slide-title">Hospital Furniture &amp; Motorized ICU Beds</h2>
+                <p class="pc-cat-slide-desc">
+                  Precision-engineered 7-Function &amp; 5-Function electric ICU beds with integrated digital weighing scales, Fowler recovery beds, hydraulic trauma stretchers, and ward furniture.
+                </p>
+                <div class="pc-cat-slide-tags">
+                  <span>7-Function Electric ICU</span>
+                  <span>Fowler &amp; Semi-Fowler</span>
+                  <span>Pediatric Cribs</span>
+                  <span>Crash Carts &amp; Trolleys</span>
+                </div>
+                <div class="pc-cat-slide-actions">
+                  <a href="catalogue/furniture/index.html" class="pc-btn-flagship-primary">
+                    <span>Explore Hospital Furniture (20)</span>
+                    <span class="pc-btn-arrow"><i class="bi bi-arrow-up-right"></i></span>
+                  </a>
+                  <a href="catalogue/beds/index.html" class="pc-btn-flagship-ghost">
+                    <i class="bi bi-hospital"></i>
+                    <span>View All 11 ICU &amp; Ward Beds</span>
+                  </a>
+                </div>
+              </div>
+              <div class="pc-cat-slide-right">
+                <div class="pc-cat-slide-VisualHalo"></div>
+                <img src="catalogue/beds/icu-bed-7-function-deluxe.png" alt="7-Function Luxury Electric ICU Hospital Bed" class="pc-cat-slide-main-img" loading="lazy" decoding="async">
+                <span class="pc-cat-slide-img-caption"><i class="bi bi-patch-check-fill"></i> DSM-ICU-7D Luxury Motorized ICU Bed</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Banner Slide 3: Critical Care Equipments & Ventilators -->
+          <div class="pc-cat-banner-slide" data-cat-slide="2">
+            <div class="pc-cat-slide-bg" style="background-image: url('assets/img/infrastructure/bento-mgps-pipeline.jpg?v=12.0');"></div>
+            <div class="pc-cat-slide-overlay"></div>
+            <div class="pc-cat-slide-content">
+              <div class="pc-cat-slide-left">
+                <div class="pc-cat-slide-badges">
+                  <span class="pc-cat-pill-live"><span class="pc-pulse-dot"></span> FLAGSHIP CATEGORY 03 / 06</span>
+                  <span class="pc-cat-pill-sub">22 SUBCATEGORIES • CE &amp; US FDA</span>
+                </div>
+                <h2 class="pc-cat-slide-title">Critical Care Equipments &amp; ICU Ventilators</h2>
+                <p class="pc-cat-slide-desc">
+                  Complete life-support equipment portfolio including invasive/NIV turbine ICU ventilators, Prestige anesthesia workstations, biphasic defibrillators, and infusion workstations.
+                </p>
+                <div class="pc-cat-slide-tags">
+                  <span>ICU Ventilators</span>
+                  <span>Anesthesia Workstations</span>
+                  <span>Defibrillators &amp; AED</span>
+                  <span>BiPAP &amp; HFNC</span>
+                </div>
+                <div class="pc-cat-slide-actions">
+                  <a href="catalogue/equipments/index.html" class="pc-btn-flagship-primary">
+                    <span>Explore All 22 Equipment Ranges</span>
+                    <span class="pc-btn-arrow"><i class="bi bi-arrow-up-right"></i></span>
+                  </a>
+                  <a href="catalogue/ventilators/index.html" class="pc-btn-flagship-ghost">
+                    <i class="bi bi-lungs"></i>
+                    <span>ICU Ventilators</span>
+                  </a>
+                </div>
+              </div>
+              <div class="pc-cat-slide-right">
+                <div class="pc-cat-slide-VisualHalo"></div>
+                <img src="catalogue/ventilators/dr-smith-flagship-critical-care-ventilator-swm-11129.png" alt="Flagship Critical Care ICU Ventilator" class="pc-cat-slide-main-img" loading="lazy" decoding="async">
+                <span class="pc-cat-slide-img-caption"><i class="bi bi-patch-check-fill"></i> SWM-11129 Flagship ICU Turbine Ventilator</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Banner Slide 4: Electro-Hydraulic Operating Tables & Anesthesia -->
+          <div class="pc-cat-banner-slide" data-cat-slide="3">
+            <div class="pc-cat-slide-bg" style="background-image: url('assets/img/infrastructure/bento-modular-ot.jpg?v=12.0');"></div>
+            <div class="pc-cat-slide-overlay"></div>
+            <div class="pc-cat-slide-content">
+              <div class="pc-cat-slide-left">
+                <div class="pc-cat-slide-badges">
+                  <span class="pc-cat-pill-live"><span class="pc-pulse-dot"></span> FLAGSHIP CATEGORY 04 / 06</span>
+                  <span class="pc-cat-pill-sub">C-ARM COMPATIBLE SURGICAL PLATFORMS</span>
+                </div>
+                <h2 class="pc-cat-slide-title">Electro-Hydraulic OT Tables &amp; Anesthesia</h2>
+                <p class="pc-cat-slide-desc">
+                  C-Arm radiolucent longitudinal top-slide operating tables with orthopedic attachments, paired with digital anesthesia machines and integrated circle absorber systems.
+                </p>
+                <div class="pc-cat-slide-tags">
+                  <span>Electric C-Arm OT Tables</span>
+                  <span>Ortho &amp; Neuro Attachments</span>
+                  <span>Prestige Plus Anesthesia</span>
+                  <span>Electrosurgical Cautery</span>
+                </div>
+                <div class="pc-cat-slide-actions">
+                  <a href="catalogue/ot-tables/index.html" class="pc-btn-flagship-primary">
+                    <span>Explore Operating Tables</span>
+                    <span class="pc-btn-arrow"><i class="bi bi-arrow-up-right"></i></span>
+                  </a>
+                  <a href="catalogue/anesthesia-workstation/index.html" class="pc-btn-flagship-ghost">
+                    <i class="bi bi-activity"></i>
+                    <span>Anesthesia Workstations</span>
+                  </a>
+                </div>
+              </div>
+              <div class="pc-cat-slide-right">
+                <div class="pc-cat-slide-VisualHalo"></div>
+                <img src="catalogue/ot-tables/dr-smith-prestige-electric-c-arm-ot-table.png" alt="Electro-Hydraulic C-Arm Operating Table" class="pc-cat-slide-main-img" loading="lazy" decoding="async">
+                <span class="pc-cat-slide-img-caption"><i class="bi bi-patch-check-fill"></i> Prestige Electric C-Arm Operating Table</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Banner Slide 5: C-Arm Fluoroscopy & Diagnostic Radiology -->
+          <div class="pc-cat-banner-slide" data-cat-slide="4">
+            <div class="pc-cat-slide-bg" style="background-image: url('assets/img/infrastructure/hero-hospital-modern-glass.jpg?v=6.0');"></div>
+            <div class="pc-cat-slide-overlay"></div>
+            <div class="pc-cat-slide-content">
+              <div class="pc-cat-slide-left">
+                <div class="pc-cat-slide-badges">
+                  <span class="pc-cat-pill-live"><span class="pc-pulse-dot"></span> FLAGSHIP CATEGORY 05 / 06</span>
+                  <span class="pc-cat-pill-sub">AERB COMPLIANT DIAGNOSTIC IMAGING</span>
+                </div>
+                <h2 class="pc-cat-slide-title">Radiology Equipments, C-Arm &amp; Ultrasound</h2>
+                <p class="pc-cat-slide-desc">
+                  High-frequency mobile surgical C-Arm image intensifiers, digital radiography X-ray systems, and 4D color Doppler ultrasound workstations for diagnostic precision.
+                </p>
+                <div class="pc-cat-slide-tags">
+                  <span>High-Freq Mobile C-Arm</span>
+                  <span>Color Doppler Ultrasound</span>
+                  <span>Digital X-Ray Suites</span>
+                  <span>Radiation Shielding</span>
+                </div>
+                <div class="pc-cat-slide-actions">
+                  <a href="catalogue/radiology-equipments/index.html" class="pc-btn-flagship-primary">
+                    <span>Explore Radiology Equipments</span>
+                    <span class="pc-btn-arrow"><i class="bi bi-arrow-up-right"></i></span>
+                  </a>
+                  <a href="catalogue/c-arm-machine/index.html" class="pc-btn-flagship-ghost">
+                    <i class="bi bi-broadcast-pin"></i>
+                    <span>C-Arm Machines</span>
+                  </a>
+                </div>
+              </div>
+              <div class="pc-cat-slide-right">
+                <div class="pc-cat-slide-VisualHalo"></div>
+                <img src="catalogue/c-arm-machine/allengers-high-frequency-mobile-c-arm.png" alt="High Frequency Mobile Surgical C-Arm Machine" class="pc-cat-slide-main-img" loading="lazy" decoding="async">
+                <span class="pc-cat-slide-img-caption"><i class="bi bi-patch-check-fill"></i> High-Frequency Surgical C-Arm Fluoroscopy</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Banner Slide 6: NICU Infant Care, Autoclaves & Surgical Instruments -->
+          <div class="pc-cat-banner-slide" data-cat-slide="5">
+            <div class="pc-cat-slide-bg" style="background-image: url('assets/img/infrastructure/bento-mgps-pipeline.jpg?v=12.0');"></div>
+            <div class="pc-cat-slide-overlay"></div>
+            <div class="pc-cat-slide-content">
+              <div class="pc-cat-slide-left">
+                <div class="pc-cat-slide-badges">
+                  <span class="pc-cat-pill-live"><span class="pc-pulse-dot"></span> FLAGSHIP CATEGORY 06 / 06</span>
+                  <span class="pc-cat-pill-sub">NICU • CSSD STERILIZATION • INSTRUMENTS</span>
+                </div>
+                <h2 class="pc-cat-slide-title">NICU Warmers, Autoclaves &amp; Surgical Instruments</h2>
+                <p class="pc-cat-slide-desc">
+                  Servo-controlled infant radiant warmers &amp; neonatal incubators, horizontal/vertical high-pressure steam autoclaves, and tungsten-carbide surgical instrument sets.
+                </p>
+                <div class="pc-cat-slide-tags">
+                  <span>Infant Radiant Warmers</span>
+                  <span>Horizontal &amp; Vertical Autoclaves</span>
+                  <span>Surgical Instrument Sets</span>
+                  <span>Biobin &amp; Disposables</span>
+                </div>
+                <div class="pc-cat-slide-actions">
+                  <a href="catalogue/nic-machines/index.html" class="pc-btn-flagship-primary">
+                    <span>Explore NICU &amp; Infant Care</span>
+                    <span class="pc-btn-arrow"><i class="bi bi-arrow-up-right"></i></span>
+                  </a>
+                  <a href="catalogue/autoclaves/index.html" class="pc-btn-flagship-ghost">
+                    <i class="bi bi-shield-check"></i>
+                    <span>Autoclaves &amp; CSSD</span>
+                  </a>
+                </div>
+              </div>
+              <div class="pc-cat-slide-right">
+                <div class="pc-cat-slide-VisualHalo"></div>
+                <img src="catalogue/baby-warmer/baby-warmer-super-deluxe.png" alt="NICU Super Deluxe Infant Radiant Warmer" class="pc-cat-slide-main-img" loading="lazy" decoding="async">
+                <span class="pc-cat-slide-img-caption"><i class="bi bi-patch-check-fill"></i> Super Deluxe Servo Infant Radiant Warmer</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider Prev / Next Arrows -->
+          <button type="button" class="pc-cat-slider-arrow arrow-prev" onclick="stepPcCatBanner(-1)" aria-label="Previous Category Banner">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <button type="button" class="pc-cat-slider-arrow arrow-next" onclick="stepPcCatBanner(1)" aria-label="Next Category Banner">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+
+          <!-- Bottom Interactive Category Banner Selector Bar -->
+          <div class="pc-cat-slider-tabs" role="tablist">
+            <button type="button" class="pc-cat-slider-tab active" onclick="goToPcCatBanner(0, this)">
+              <img src="assets/img/hero-slides/1.jpg" alt="Modular OT" loading="eager" decoding="async">
+              <div><strong>Modular OT &amp; Lights</strong><span>Class 100 Suites</span></div>
+            </button>
+            <button type="button" class="pc-cat-slider-tab" onclick="goToPcCatBanner(1, this)">
+              <img src="catalogue/beds/icu-bed-7-function-deluxe.png" alt="Hospital Beds" loading="eager" decoding="async">
+              <div><strong>Hospital &amp; ICU Beds</strong><span>20 Subcategories</span></div>
+            </button>
+            <button type="button" class="pc-cat-slider-tab" onclick="goToPcCatBanner(2, this)">
+              <img src="catalogue/ventilators/dr-smith-flagship-critical-care-ventilator-swm-11129.png" alt="Equipments" loading="eager" decoding="async">
+              <div><strong>ICU &amp; Equipments</strong><span>22 Subcategories</span></div>
+            </button>
+            <button type="button" class="pc-cat-slider-tab" onclick="goToPcCatBanner(3, this)">
+              <img src="catalogue/ot-tables/dr-smith-prestige-electric-c-arm-ot-table.png" alt="OT Tables" loading="eager" decoding="async">
+              <div><strong>OT Tables &amp; Anesthesia</strong><span>Surgical Range</span></div>
+            </button>
+            <button type="button" class="pc-cat-slider-tab" onclick="goToPcCatBanner(4, this)">
+              <img src="catalogue/c-arm-machine/allengers-high-frequency-mobile-c-arm.png" alt="Radiology" loading="eager" decoding="async">
+              <div><strong>C-Arm &amp; Radiology</strong><span>Digital Imaging</span></div>
+            </button>
+            <button type="button" class="pc-cat-slider-tab" onclick="goToPcCatBanner(5, this)">
+              <img src="catalogue/baby-warmer/baby-warmer-super-deluxe.png" alt="NICU and Autoclaves" loading="eager" decoding="async">
+              <div><strong>NICU, CSSD &amp; Tools</strong><span>Warmers &amp; Autoclaves</span></div>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- PART 2: WIDE PANORAMIC CATEGORY IMAGE BANNERS GRID (ALL MAIN CATEGORIES AS BANNERS) -->
+        <div class="pc-wide-cat-banners-grid">
+
+          <!-- Wide Banner 1 (Span 6): Critical Care & OT Equipments -->
+          <a href="catalogue/equipments/index.html" class="pc-wide-cat-banner banner-span-6">
+            <div class="pc-wide-banner-text">
+              <span class="pc-wide-banner-badge">22 SUBCATEGORIES • CRITICAL CARE &amp; OT</span>
+              <h3>Medical &amp; ICU Equipments</h3>
+              <p>Anesthesia Workstations, ICU Ventilators, Patient Monitors, Defibrillators, BiPAP/CPAP, Cautery, Dialysis &amp; Suction Machines.</p>
+              <span class="pc-wide-banner-cta">Browse All 22 Equipment Categories <i class="bi bi-arrow-right"></i></span>
+            </div>
+            <div class="pc-wide-banner-visual">
+              <img src="catalogue/anesthesia-workstation/dr-smith-anesthesia-workstation-prestige-plus.png" alt="Medical and ICU Equipments Banner" loading="eager" decoding="async">
+            </div>
+          </a>
+
+          <!-- Wide Banner 2 (Span 6): Hospital Furniture & ICU Beds -->
+          <a href="catalogue/furniture/index.html" class="pc-wide-cat-banner banner-span-6">
+            <div class="pc-wide-banner-text">
+              <span class="pc-wide-banner-badge">20 SUBCATEGORIES • IN-HOUSE OEM PLANT</span>
+              <h3>Hospital Furniture &amp; ICU Beds</h3>
+              <p>7-Function &amp; 5-Function Electric ICU Beds, Fowler Beds, OT Tables, Stretcher Trolleys, Pediatric Beds, Lockers &amp; Ward Furniture.</p>
+              <span class="pc-wide-banner-cta">Browse All 20 Furniture Categories <i class="bi bi-arrow-right"></i></span>
+            </div>
+            <div class="pc-wide-banner-visual">
+              <img src="catalogue/beds/icu-bed-7-function-deluxe.png" alt="Hospital Furniture and ICU Beds Banner" loading="eager" decoding="async">
+            </div>
+          </a>
+
+          <!-- Wide Banner 3 (Span 4): Modular OT & Shadowless Lights -->
+          <a href="catalogue/modular-ot/index.html" class="pc-wide-cat-banner banner-span-4">
+            <div class="pc-wide-banner-text">
+              <span class="pc-wide-banner-badge">SURGICAL SUITES</span>
+              <h3>Modular OT &amp; LED Lights</h3>
+              <p>Class 100 cleanrooms, HEPA laminar ceilings &amp; shadowless hexa-LED domes.</p>
+              <span class="pc-wide-banner-cta">Explore OT Range <i class="bi bi-arrow-right"></i></span>
+            </div>
+            <div class="pc-wide-banner-visual">
+              <img src="assets/img/hero-slides/1.jpg" alt="Modular OT and Surgical Lights Banner" loading="eager" decoding="async">
+            </div>
+          </a>
+
+          <!-- Wide Banner 4 (Span 4): Patient Monitors & Cardiac Care -->
+          <a href="catalogue/patient-monitor/index.html" class="pc-wide-cat-banner banner-span-4">
+            <div class="pc-wide-banner-text">
+              <span class="pc-wide-banner-badge">ICU TELEMETRY</span>
+              <h3>Patient Monitors &amp; ECG</h3>
+              <p>Multi-parameter touch ICU monitors, central nursing stations &amp; 12-channel ECG.</p>
+              <span class="pc-wide-banner-cta">Explore Monitors <i class="bi bi-arrow-right"></i></span>
+            </div>
+            <div class="pc-wide-banner-visual">
+              <img src="catalogue/beds/icu-bed-7-function-luxury-electric.png" alt="Patient Monitors Banner" loading="eager" decoding="async">
+            </div>
+          </a>
+
+          <!-- Wide Banner 5 (Span 4): Radiology & C-Arm Machines -->
+          <a href="catalogue/radiology-equipments/index.html" class="pc-wide-cat-banner banner-span-4">
+            <div class="pc-wide-banner-text">
+              <span class="pc-wide-banner-badge">2 SUBCATEGORIES • IMAGING</span>
+              <h3>Radiology &amp; C-Arm</h3>
+              <p>High-frequency mobile C-Arm fluoroscopy &amp; color Doppler ultrasound systems.</p>
+              <span class="pc-wide-banner-cta">Explore Radiology <i class="bi bi-arrow-right"></i></span>
+            </div>
+            <div class="pc-wide-banner-visual">
+              <img src="catalogue/c-arm-machine/allengers-high-frequency-mobile-c-arm.png" alt="Radiology and C-Arm Banner" loading="eager" decoding="async">
+            </div>
+          </a>
+
+          <!-- Wide Banner 6 (Span 4): NICU & Infant Care Machines -->
+          <a href="catalogue/nic-machines/index.html" class="pc-wide-cat-banner banner-span-4">
+            <div class="pc-wide-banner-text">
+              <span class="pc-wide-banner-badge">2 SUBCATEGORIES • NEONATAL</span>
+              <h3>NICU &amp; Baby Warmers</h3>
+              <p>Infant radiant warmers, LED phototherapy units, neonatal incubators &amp; baby cots.</p>
+              <span class="pc-wide-banner-cta">Explore NICU Range <i class="bi bi-arrow-right"></i></span>
+            </div>
+            <div class="pc-wide-banner-visual">
+              <img src="catalogue/baby-warmer/baby-warmer-super-deluxe.png" alt="NICU Machines Banner" loading="lazy" decoding="async">
+            </div>
+          </a>
+
+          <!-- Wide Banner 7 (Span 4): Autoclaves & CSSD Sterilization -->
+          <a href="catalogue/autoclaves/index.html" class="pc-wide-cat-banner banner-span-4">
+            <div class="pc-wide-banner-text">
+              <span class="pc-wide-banner-badge">STERILIZATION &amp; CSSD</span>
+              <h3>Autoclaves &amp; Sterilizers</h3>
+              <p>Horizontal cylindrical autoclaves, vertical high-pressure steam &amp; ETO sterilizers.</p>
+              <span class="pc-wide-banner-cta">Explore Autoclaves <i class="bi bi-arrow-right"></i></span>
+            </div>
+            <div class="pc-wide-banner-visual">
+              <img src="catalogue/autoclaves/dr-smith-horizontal-cylindrical-autoclave-digital.png" alt="Autoclaves Banner" loading="lazy" decoding="async">
+            </div>
+          </a>
+
+          <!-- Wide Banner 8 (Span 4): Surgical Instruments & Disposables -->
+          <a href="catalogue/instruments/index.html" class="pc-wide-cat-banner banner-span-4">
+            <div class="pc-wide-banner-text">
+              <span class="pc-wide-banner-badge">5 SUBCATEGORIES • SURGICAL</span>
+              <h3>Instruments &amp; Disposables</h3>
+              <p>SS surgical instrument sets, hollowware trays, biobin waste systems &amp; OT scrubs.</p>
+              <span class="pc-wide-banner-cta">Explore Instruments <i class="bi bi-arrow-right"></i></span>
+            </div>
+            <div class="pc-wide-banner-visual">
+              <img src="catalogue/surgical-instruments/dr-smith-surgical-instrument-tray-set.png" alt="Surgical Instruments Banner" loading="lazy" decoding="async">
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PC SECTION 1: SPATIAL MEDICAL ENGINEERING COMMAND HERO -->
+    <section class="pc-cmd-hero">
+      <div class="pc-cmd-ambient-glow pc-glow-1"></div>
+      <div class="pc-cmd-ambient-glow pc-glow-2"></div>
+      <div class="pc-cmd-grid-overlay"></div>
+
+      <div class="pc-shell">
+        <!-- Top Architectural Telemetry Ribbon -->
+        <div class="pc-telemetry-bar">
+          <div class="pc-telemetry-left">
+            <span class="pc-live-indicator"><span class="pc-pulse-dot"></span> EST. 1960 • OEM MANUFACTURING &amp; TURNKEY INFRASTRUCTURE</span>
+            <span class="pc-telemetry-divider">|</span>
+            <span class="pc-telemetry-cert"><i class="bi bi-shield-fill-check"></i> ISO 13485:2016 • CE • US FDA • NABH / JCI</span>
+          </div>
+          <div class="pc-telemetry-nav">
+            <a href="#pc-departments" class="pc-quick-jump"><i class="bi bi-layers"></i> Clinical Zones</a>
+            <a href="#pc-showroom" class="pc-quick-jump"><i class="bi bi-grid-1x2"></i> Equipment Dock</a>
+            <a href="#pc-turnkey-matrix" class="pc-quick-jump"><i class="bi bi-diagram-3"></i> Turnkey Matrix</a>
+            <a href="#pc-governance" class="pc-quick-jump"><i class="bi bi-globe2"></i> Global Hubs</a>
+          </div>
+        </div>
+
+        <!-- Main Widescreen Split Console -->
+        <div class="pc-hero-workspace">
+
+          <!-- Left Column: Architectural Narrative & Command Actions -->
+          <div class="pc-hero-left-pane">
+            <div class="pc-eyebrow-tag">
+              <span class="pc-tag-code">SYS // DR-SMITH-2026</span>
+              <span>INDIA'S PREMIER HOSPITAL TURNKEY &amp; MEDICAL DEVICE OEM</span>
+            </div>
+
+            <h1 class="pc-display-title">
+              Architecting Next-Gen
+              <span class="pc-gradient-text">Clinical Infrastructure</span>
+              &amp; Life-Support Systems.
+            </h1>
+
+            <p class="pc-lead-paragraph">
+              Backed by six decades of precision medical manufacturing and <strong>500+ commissioned hospital projects</strong> across India, GCC, and Africa. From <strong>Class 100 Modular Operation Theatres</strong> and <strong>HTM 02-01 Medical Gas Pipelines</strong> to motorized ICU beds and critical care electronics—engineered under one roof.
+            </p>
+
+            <!-- Primary Command CTA Dock -->
+            <div class="pc-cta-command-bar">
+              <a href="catalogue/index.html" class="pc-btn-flagship-primary">
+                <span>Explore 50+ Product Catalogue</span>
+                <span class="pc-btn-arrow"><i class="bi bi-arrow-up-right"></i></span>
+              </a>
+
+              <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions."
+                 target="_blank" rel="noopener noreferrer"
+                 class="pc-btn-flagship-wa btn-hero-whatsapp"
+                 aria-label="Chat with Dr. Smith Healthcare on WhatsApp"
+                 title="Chat on WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>WhatsApp Desk</span>
+              </a>
+
+              <button type="button" class="pc-btn-flagship-ghost" onclick="openAppleDrawer('Turnkey Hospital Setup'); return false;">
+                <i class="bi bi-sliders"></i>
+                <span>Configure Turnkey Quote</span>
+              </button>
+            </div>
+
+            <!-- 4-Pillar Live Engineering Metrics Matrix -->
+            <div class="pc-hero-kpi-grid">
+              <div class="pc-kpi-card">
+                <div class="pc-kpi-val">60<span>+ Yrs</span></div>
+                <div class="pc-kpi-lbl">Manufacturing Legacy</div>
+                <div class="pc-kpi-sub">Since 1960 • METL Jhajjar</div>
+              </div>
+              <div class="pc-kpi-card">
+                <div class="pc-kpi-val">500<span>+</span></div>
+                <div class="pc-kpi-lbl">Hospitals Equipped</div>
+                <div class="pc-kpi-sub">50 to 500+ Bed Turnkey</div>
+              </div>
+              <div class="pc-kpi-card">
+                <div class="pc-kpi-val">50<span>+</span></div>
+                <div class="pc-kpi-lbl">Clinical Categories</div>
+                <div class="pc-kpi-sub">350+ Certified SKUs</div>
+              </div>
+              <div class="pc-kpi-card">
+                <div class="pc-kpi-val">25<span>+</span></div>
+                <div class="pc-kpi-lbl">Export Countries</div>
+                <div class="pc-kpi-sub">India • UAE • Africa</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Flagship Hardware Studio Podium -->
+          <div class="pc-hero-right-stage">
+            <div class="pc-stage-glass-frame">
+
+              <!-- Top Stage Header -->
+              <div class="pc-stage-topbar">
+                <div class="pc-stage-status">
+                  <span class="pc-stage-dot"></span>
+                  <span id="pcStageCode">UNIT 01 // HEXA-LED SURGICAL ILLUMINATION</span>
+                </div>
+                <a href="catalogue/index.html" id="pcStageDirectLink" class="pc-stage-inspect-btn">
+                  Inspect System <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+
+              <!-- Interactive Visual Canvas (4 Switchable Flagship Panes) -->
+              <div class="pc-stage-viewport">
+
+                <!-- Slide 1: 5-Dome Surgical Light (Default Active) -->
+                <div class="pc-stage-pane active" data-stage-pane="0">
+                  <div class="pc-stage-halo"></div>
+                  <img src="assets/img/hero-slides/1.jpg"
+                       alt="Hexa-Dome Shadowless LED Surgical Illumination System"
+                       class="pc-stage-img pc-stage-img-cutout"
+                       loading="eager" decoding="async">
+                  <div class="pc-floating-spec spec-tl">
+                    <i class="bi bi-brightness-high-fill"></i>
+                    <div><strong>160,000 Lux</strong><span>Shadowless Output</span></div>
+                  </div>
+                  <div class="pc-floating-spec spec-br">
+                    <i class="bi bi-cpu-fill"></i>
+                    <div><strong>Ra &gt; 96 CRI</strong><span>Osram Medical LEDs</span></div>
+                  </div>
+                </div>
+
+                <!-- Slide 2: 7-Function Luxury ICU Bed -->
+                <div class="pc-stage-pane" data-stage-pane="1">
+                  <div class="pc-stage-halo"></div>
+                  <img src="catalogue/beds/icu-bed-7-function-deluxe.png"
+                       alt="7-Function Luxury Electric Motorized ICU Bed"
+                       class="pc-stage-img pc-stage-img-cutout"
+                       loading="lazy" decoding="async">
+                  <div class="pc-floating-spec spec-tl">
+                    <i class="bi bi-sliders2-vertical"></i>
+                    <div><strong>7 Motorized</strong><span>Linak Actuator System</span></div>
+                  </div>
+                  <div class="pc-floating-spec spec-br">
+                    <i class="bi bi-heart-pulse-fill"></i>
+                    <div><strong>Digital Scale</strong><span>One-Touch CPR &amp; Chair</span></div>
+                  </div>
+                </div>
+
+                <!-- Slide 3: Class 100 Modular OT Suite -->
+                <div class="pc-stage-pane" data-stage-pane="2">
+                  <div class="pc-stage-halo"></div>
+                  <img src="assets/img/infrastructure/bento-modular-ot.jpg?v=12.0"
+                       alt="Class 100 Prefabricated Modular Operation Theatre"
+                       class="pc-stage-img pc-stage-img-cover"
+                       loading="lazy" decoding="async">
+                  <div class="pc-floating-spec spec-tl">
+                    <i class="bi bi-wind"></i>
+                    <div><strong>ISO Class 5</strong><span>HEPA H14 Laminar Flow</span></div>
+                  </div>
+                  <div class="pc-floating-spec spec-br">
+                    <i class="bi bi-shield-check"></i>
+                    <div><strong>SS 304 Panels</strong><span>Antibacterial Seamless</span></div>
+                  </div>
+                </div>
+
+                <!-- Slide 4: Multi-Parameter ICU Monitor & Critical Care -->
+                <div class="pc-stage-pane" data-stage-pane="3">
+                  <div class="pc-stage-halo"></div>
+                  <img src="catalogue/beds/icu-bed-7-function-luxury-electric.png"
+                       alt="Multi-Parameter ICU Patient Monitor"
+                       class="pc-stage-img pc-stage-img-cutout"
+                       loading="lazy" decoding="async">
+                  <div class="pc-floating-spec spec-tl">
+                    <i class="bi bi-activity"></i>
+                    <div><strong>8-Parameter</strong><span>ECG • SpO2 • EtCO2 • IBP</span></div>
+                  </div>
+                  <div class="pc-floating-spec spec-br">
+                    <i class="bi bi-wifi"></i>
+                    <div><strong>HL7 Network</strong><span>Central ICU Telemetry</span></div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Stage Bottom Caption & Interactive 4-Tab Hardware Switcher -->
+              <div class="pc-stage-footer">
+                <div class="pc-stage-caption">
+                  <h3 id="pcStageTitle">5-Dome Hexagonal Shadowless LED OT Light</h3>
+                  <p id="pcStageDesc">Aerospace-grade laminar-compatible surgical dome with digital color temperature tuning (3800K–5000K) and HD camera readiness.</p>
+                </div>
+
+                <div class="pc-stage-dock" role="tablist" aria-label="Flagship System Selector">
+                  <button type="button" class="pc-dock-btn active"
+                          onclick="switchPcHeroStage(0, 'UNIT 01 // HEXA-LED SURGICAL ILLUMINATION', '5-Dome Hexagonal Shadowless LED OT Light', 'Aerospace-grade laminar-compatible surgical dome with digital color temperature tuning (3800K–5000K) and HD camera readiness.', 'catalogue/modular-ot/index.html', this)">
+                    <span class="pc-dock-num">01</span>
+                    <span class="pc-dock-name">Hexa-LED OT Light</span>
+                  </button>
+                  <button type="button" class="pc-dock-btn"
+                          onclick="switchPcHeroStage(1, 'UNIT 02 // MOTORIZED CRITICAL CARE BED', '7-Function Luxury Electric ICU Care Bed', 'Quadruple Linak medical actuators, integrated patient weighing scale, radiolucent X-ray backrest, and dual nurse control panels.', 'catalogue/beds/index.html', this)">
+                    <span class="pc-dock-num">02</span>
+                    <span class="pc-dock-name">7-Func ICU Bed</span>
+                  </button>
+                  <button type="button" class="pc-dock-btn"
+                          onclick="switchPcHeroStage(2, 'UNIT 03 // CLASS 100 CLEANROOM SUITE', 'Prefabricated Modular Operation Theatre', 'Turnkey NABH/JCI sterile surgical suite with laminar airflow ceiling, hermetic sliding doors, and surgeon control panel.', 'catalogue/modular-ot/index.html', this)">
+                    <span class="pc-dock-num">03</span>
+                    <span class="pc-dock-name">Modular OT Suite</span>
+                  </button>
+                  <button type="button" class="pc-dock-btn"
+                          onclick="switchPcHeroStage(3, 'UNIT 04 // ICU TELEMETRY & LIFE SUPPORT', 'Multi-Parameter ICU Patient Monitor', 'High-acuity hemodynamic &amp; respiratory monitoring with arrhythmia detection, drug dose calculation, and central station link.', 'catalogue/patient-monitor/index.html', this)">
+                    <span class="pc-dock-num">04</span>
+                    <span class="pc-dock-name">ICU Life Monitor</span>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PC SECTION 2: INTERACTIVE HOSPITAL DEPARTMENT & FLOORPLAN MATRIX -->
+    <section class="pc-dept-explorer-section" id="pc-departments">
+      <div class="pc-shell">
+
+        <div class="pc-sec-header-split">
+          <div>
+            <span class="pc-sec-tag">01 // CLINICAL ARCHITECTURE EXPLORER</span>
+            <h2 class="pc-sec-heading">Interactive Hospital Department Matrix</h2>
+          </div>
+          <p class="pc-sec-subtext">
+            Select any hospital zone below to inspect our integrated turnkey engineering, cleanroom infrastructure, and department-specific medical machinery.
+          </p>
+        </div>
+
+        <div class="pc-dept-console">
+
+          <!-- Left Rail: 6 Clinical Zones -->
+          <div class="pc-dept-rail" role="tablist">
+            <button type="button" class="pc-dept-tab active" onclick="switchPcDeptTab(0, this)">
+              <span class="pc-dept-idx">ZONE 01</span>
+              <div class="pc-dept-tab-body">
+                <strong>Modular Operation Theatres</strong>
+                <small>Class 100 Cleanrooms • OT Lights &amp; Tables</small>
+              </div>
+              <i class="bi bi-arrow-right-short pc-dept-arrow"></i>
+            </button>
+
+            <button type="button" class="pc-dept-tab" onclick="switchPcDeptTab(1, this)">
+              <span class="pc-dept-idx">ZONE 02</span>
+              <div class="pc-dept-tab-body">
+                <strong>ICU &amp; Critical Life Support</strong>
+                <small>Ventilators • Multi-Para Monitors • Defibrillators</small>
+              </div>
+              <i class="bi bi-arrow-right-short pc-dept-arrow"></i>
+            </button>
+
+            <button type="button" class="pc-dept-tab" onclick="switchPcDeptTab(2, this)">
+              <span class="pc-dept-idx">ZONE 03</span>
+              <div class="pc-dept-tab-body">
+                <strong>Motorized ICU &amp; Ward Beds</strong>
+                <small>7-Function Electric • Fowler • Stretchers</small>
+              </div>
+              <i class="bi bi-arrow-right-short pc-dept-arrow"></i>
+            </button>
+
+            <button type="button" class="pc-dept-tab" onclick="switchPcDeptTab(3, this)">
+              <span class="pc-dept-idx">ZONE 04</span>
+              <div class="pc-dept-tab-body">
+                <strong>Medical Gas Pipeline (MGPS)</strong>
+                <small>HTM 02-01 Manifolds • Copper Piping • Pendants</small>
+              </div>
+              <i class="bi bi-arrow-right-short pc-dept-arrow"></i>
+            </button>
+
+            <button type="button" class="pc-dept-tab" onclick="switchPcDeptTab(4, this)">
+              <span class="pc-dept-idx">ZONE 05</span>
+              <div class="pc-dept-tab-body">
+                <strong>Diagnostic Imaging &amp; Radiology</strong>
+                <small>High-Freq C-Arm • Digital X-Ray • Ultrasound</small>
+              </div>
+              <i class="bi bi-arrow-right-short pc-dept-arrow"></i>
+            </button>
+
+            <button type="button" class="pc-dept-tab" onclick="switchPcDeptTab(5, this)">
+              <span class="pc-dept-idx">ZONE 06</span>
+              <div class="pc-dept-tab-body">
+                <strong>Dialysis, CSSD &amp; Neonatal NICU</strong>
+                <small>Hemodialysis RO • Autoclaves • Infant Care</small>
+              </div>
+              <i class="bi bi-arrow-right-short pc-dept-arrow"></i>
+            </button>
+          </div>
+
+          <!-- Right Stage: Department Blueprint & Dual Product Preview -->
+          <div class="pc-dept-stage-box">
+
+            <!-- Zone 01 Content -->
+            <div class="pc-dept-panel active" data-dept-panel="0">
+              <div class="pc-dept-panel-grid">
+                <div class="pc-dept-info-col">
+                  <div class="pc-dept-badges">
+                    <span class="pc-badge-cyan">ISO CLASS 5 / CLASS 100</span>
+                    <span class="pc-badge-outline">NABH &amp; JCI COMPLIANT</span>
+                  </div>
+                  <h3>Turnkey Prefabricated Modular OT Suites</h3>
+                  <p>
+                    Complete sterile surgical environments engineered with antibacterial SS 304 / HPL wall cladding, ceiling-mounted HEPA H14 laminar airflow diffusers, hermetic sliding doors, X-ray view screens, and touchscreen surgeon control consoles.
+                  </p>
+                  <ul class="pc-dept-spec-list">
+                    <li><i class="bi bi-check2-circle"></i> Positive pressure differential &amp; AHU climate automation</li>
+                    <li><i class="bi bi-check2-circle"></i> Hexagonal shadowless LED surgical domes &amp; C-Arm electro-hydraulic OT tables</li>
+                    <li><i class="bi bi-check2-circle"></i> Anti-static conductive vinyl flooring &amp; motorized anesthesia pendants</li>
+                  </ul>
+                  <div class="pc-dept-actions">
+                    <a href="catalogue/modular-ot/index.html" class="pc-btn-solid">Explore Modular OT Catalogue <i class="bi bi-arrow-right"></i></a>
+                    <a href="turnkey-projects/index.html" class="pc-btn-outline">Turnkey Cleanroom Specs</a>
+                  </div>
+                </div>
+                <div class="pc-dept-media-col">
+                  <div class="pc-dept-primary-img">
+                    <img src="assets/img/infrastructure/bento-modular-ot.jpg?v=12.0" alt="Modular Operation Theatre Cleanroom" loading="lazy" decoding="async">
+                    <span class="pc-media-tag">Class 100 Surgical Cleanroom</span>
+                  </div>
+                  <div class="pc-dept-secondary-card">
+                    <img src="assets/img/hero-slides/1.jpg" alt="Hexa-Dome LED Surgical Light" loading="lazy" decoding="async">
+                    <div>
+                      <strong>5-Dome Hexa LED Surgical Light</strong>
+                      <span>160,000 Lux • German Osram Optics</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Zone 02 Content -->
+            <div class="pc-dept-panel" data-dept-panel="1">
+              <div class="pc-dept-panel-grid">
+                <div class="pc-dept-info-col">
+                  <div class="pc-dept-badges">
+                    <span class="pc-badge-cyan">HIGH-ACUITY CRITICAL CARE</span>
+                    <span class="pc-badge-outline">CE &amp; US FDA CONFORMING</span>
+                  </div>
+                  <h3>Intensive Care Unit (ICU) &amp; Life Support</h3>
+                  <p>
+                    Mission-critical respiratory, hemodynamic, and emergency resuscitation technology engineered for 24/7 continuous operation in adult, pediatric, and neonatal ICUs across tertiary care hospitals.
+                  </p>
+                  <ul class="pc-dept-spec-list">
+                    <li><i class="bi bi-check2-circle"></i> Turbine &amp; pneumatic ICU ventilators with invasive/non-invasive modes</li>
+                    <li><i class="bi bi-check2-circle"></i> 12" to 15" modular multi-parameter patient monitors with central telemetry</li>
+                    <li><i class="bi bi-check2-circle"></i> Biphasic defibrillators, volumetric infusion &amp; syringe pump workstations</li>
+                  </ul>
+                  <div class="pc-dept-actions">
+                    <a href="catalogue/ventilators/index.html" class="pc-btn-solid">ICU Ventilators <i class="bi bi-arrow-right"></i></a>
+                    <a href="catalogue/patient-monitor/index.html" class="pc-btn-outline">Patient Monitors</a>
+                  </div>
+                </div>
+                <div class="pc-dept-media-col">
+                  <div class="pc-dept-primary-img">
+                    <img src="assets/img/hero-slides/3.png" alt="ICU Critical Care Equipment" loading="lazy" decoding="async">
+                    <span class="pc-media-tag">ICU Life-Support Ecosystem</span>
+                  </div>
+                  <div class="pc-dept-secondary-card">
+                    <img src="catalogue/beds/icu-bed-7-function-luxury-electric.png" alt="Multi-Parameter ICU Monitor" loading="lazy" decoding="async">
+                    <div>
+                      <strong>Multi-Parameter ICU Telemetry</strong>
+                      <span>ECG • SpO2 • NIBP • EtCO2 • IBP</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Zone 03 Content -->
+            <div class="pc-dept-panel" data-dept-panel="2">
+              <div class="pc-dept-panel-grid">
+                <div class="pc-dept-info-col">
+                  <div class="pc-dept-badges">
+                    <span class="pc-badge-cyan">IN-HOUSE OEM PRODUCTION</span>
+                    <span class="pc-badge-outline">METL JHAJJAR PLANT</span>
+                  </div>
+                  <h3>Motorized ICU Beds &amp; Hospital Furniture</h3>
+                  <p>
+                    Manufactured at our automated METL Jhajjar facility using CNC laser cutting, robotic welding, and 9-tank pre-treatment antimicrobial epoxy powder coating for decades of corrosion-free clinical reliability.
+                  </p>
+                  <ul class="pc-dept-spec-list">
+                    <li><i class="bi bi-check2-circle"></i> 7-Function &amp; 5-Function electric ICU beds with weighing scales &amp; CPR release</li>
+                    <li><i class="bi bi-check2-circle"></i> Split ABS tuck-away safety rails with embedded angle indicators &amp; nurse controls</li>
+                    <li><i class="bi bi-check2-circle"></i> Hydraulic trauma stretchers, pediatric cribs, and LDR delivery beds</li>
+                  </ul>
+                  <div class="pc-dept-actions">
+                    <a href="catalogue/beds/index.html" class="pc-btn-solid">View All 11 Bed Models <i class="bi bi-arrow-right"></i></a>
+                    <a href="catalogue/index.html" class="pc-btn-outline">Ward Furniture</a>
+                  </div>
+                </div>
+                <div class="pc-dept-media-col">
+                  <div class="pc-dept-primary-img pc-img-contain-dark">
+                    <img src="catalogue/beds/icu-bed-7-function-deluxe.png" alt="7-Function Luxury Electric ICU Bed" loading="lazy" decoding="async">
+                    <span class="pc-media-tag">DSM-ICU-7D Flagship Bed</span>
+                  </div>
+                  <div class="pc-dept-secondary-card">
+                    <img src="catalogue/beds/icu-bed-5-function-electric-abs.png" alt="5-Function Electric ICU Bed" loading="lazy" decoding="async">
+                    <div>
+                      <strong>5-Function Motorized ICU Bed</strong>
+                      <span>Quad Actuator • ABS Head/Foot Boards</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Zone 04 Content -->
+            <div class="pc-dept-panel" data-dept-panel="3">
+              <div class="pc-dept-panel-grid">
+                <div class="pc-dept-info-col">
+                  <div class="pc-dept-badges">
+                    <span class="pc-badge-cyan">HTM 02-01 &amp; NFPA 99</span>
+                    <span class="pc-badge-outline">ZERO-LEAKAGE CERTIFIED</span>
+                  </div>
+                  <h3>Medical Gas Pipeline Systems (MGPS)</h3>
+                  <p>
+                    End-to-end life-support gas distribution engineered to British HTM 02-01 and US NFPA 99 standards—delivering uninterrupted Oxygen, Nitrous Oxide, Medical Air, CO2, and Vacuum to every bedside and OT.
+                  </p>
+                  <ul class="pc-dept-spec-list">
+                    <li><i class="bi bi-check2-circle"></i> Fully automatic gas manifold rooms with digital changeover &amp; master alarms</li>
+                    <li><i class="bi bi-check2-circle"></i> Medical-grade degreased copper piping with zone valve boxes &amp; area sensors</li>
+                    <li><i class="bi bi-check2-circle"></i> Ceiling surgical pendants, ICU bedhead trunking panels &amp; quick-connect outlets</li>
+                  </ul>
+                  <div class="pc-dept-actions">
+                    <a href="turnkey-projects/index.html" class="pc-btn-solid">Explore MGPS Engineering <i class="bi bi-arrow-right"></i></a>
+                    <a href="contact-form/index.html" class="pc-btn-outline">Request Site Audit</a>
+                  </div>
+                </div>
+                <div class="pc-dept-media-col">
+                  <div class="pc-dept-primary-img">
+                    <img src="assets/img/infrastructure/bento-mgps-pipeline.jpg?v=12.0" alt="MGPS Medical Gas Pipeline System" loading="lazy" decoding="async">
+                    <span class="pc-media-tag">HTM 02-01 Copper Manifold &amp; Piping</span>
+                  </div>
+                  <div class="pc-dept-secondary-card">
+                    <img src="assets/img/infrastructure/hero-hospital-modern-glass.jpg?v=6.0" alt="Turnkey Hospital MEP" loading="lazy" decoding="async">
+                    <div>
+                      <strong>Central Oxygen &amp; Vacuum Plant</strong>
+                      <span>24/7 Redundant Manifold Control</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Zone 05 Content -->
+            <div class="pc-dept-panel" data-dept-panel="4">
+              <div class="pc-dept-panel-grid">
+                <div class="pc-dept-info-col">
+                  <div class="pc-dept-badges">
+                    <span class="pc-badge-cyan">AERB COMPLIANT SHIELDING</span>
+                    <span class="pc-badge-outline">LOW-DOSE FLUOROSCOPY</span>
+                  </div>
+                  <h3>C-Arm Fluoroscopy &amp; Digital Radiology</h3>
+                  <p>
+                    High-frequency intraoperative C-Arm fluoroscopy, digital radiography (DR) suites, portable bedside X-ray units, and color Doppler ultrasound consoles with turnkey lead-lined room shielding.
+                  </p>
+                  <ul class="pc-dept-spec-list">
+                    <li><i class="bi bi-check2-circle"></i> High-frequency mobile C-Arm image intensifier &amp; flat-panel detector systems</li>
+                    <li><i class="bi bi-check2-circle"></i> 100mA to 500mA digital X-ray rooms with PACS/DICOM 3.0 integration</li>
+                    <li><i class="bi bi-check2-circle"></i> Turnkey lead-lined doors, barium plastering &amp; radiation safety accessories</li>
+                  </ul>
+                  <div class="pc-dept-actions">
+                    <a href="catalogue/index.html" class="pc-btn-solid">Explore Imaging Systems <i class="bi bi-arrow-right"></i></a>
+                    <a href="turnkey-projects/index.html" class="pc-btn-outline">Radiology Turnkey</a>
+                  </div>
+                </div>
+                <div class="pc-dept-media-col">
+                  <div class="pc-dept-primary-img pc-img-contain-dark">
+                    <img src="assets/img/hero-slides/2.png" alt="Digital C-Arm and Diagnostic Imaging" loading="lazy" decoding="async">
+                    <span class="pc-media-tag">High-Frequency Surgical C-Arm</span>
+                  </div>
+                  <div class="pc-dept-secondary-card">
+                    <img src="assets/img/hero-slides/4.png" alt="Anesthesia and OT Systems" loading="lazy" decoding="async">
+                    <div>
+                      <strong>Intraoperative Imaging &amp; OT</strong>
+                      <span>DICOM 3.0 • Ultra-Low Radiation Dose</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Zone 06 Content -->
+            <div class="pc-dept-panel" data-dept-panel="5">
+              <div class="pc-dept-panel-grid">
+                <div class="pc-dept-info-col">
+                  <div class="pc-dept-badges">
+                    <span class="pc-badge-cyan">SPECIALIZED CLINICAL SUITES</span>
+                    <span class="pc-badge-outline">TURNKEY DEPARTMENT SETUP</span>
+                  </div>
+                  <h3>Hemodialysis RO, CSSD Sterilization &amp; NICU</h3>
+                  <p>
+                    Complete departmental commissioning for nephrology dialysis centers, Central Sterile Supply Departments (CSSD), and Neonatal Intensive Care Units (NICU) with full infection-control compliance.
+                  </p>
+                  <ul class="pc-dept-spec-list">
+                    <li><i class="bi bi-check2-circle"></i> Automated hemodialysis machines, dialysis chairs &amp; medical-grade RO plants</li>
+                    <li><i class="bi bi-check2-circle"></i> Double-door high-pressure steam autoclaves, ETO sterilizers &amp; ultrasonic washers</li>
+                    <li><i class="bi bi-check2-circle"></i> Infant radiant warmers, LED phototherapy units &amp; neonatal incubators</li>
+                  </ul>
+                  <div class="pc-dept-actions">
+                    <a href="catalogue/index.html" class="pc-btn-solid">Explore Specialized Units <i class="bi bi-arrow-right"></i></a>
+                    <a href="contact-form/index.html" class="pc-btn-outline">Consult Specialists</a>
+                  </div>
+                </div>
+                <div class="pc-dept-media-col">
+                  <div class="pc-dept-primary-img pc-img-contain-dark">
+                    <img src="catalogue/beds/pediatric-crib-bed-hospital.png" alt="Pediatric and Neonatal Care" loading="lazy" decoding="async">
+                    <span class="pc-media-tag">Pediatric &amp; Neonatal Care Systems</span>
+                  </div>
+                  <div class="pc-dept-secondary-card">
+                    <img src="catalogue/beds/semi-fowler-bed-electric-collapsible.png" alt="Maternity and Specialized Care" loading="lazy" decoding="async">
+                    <div>
+                      <strong>Maternity, NICU &amp; Renal Care</strong>
+                      <span>End-to-End Departmental Outfitting</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PC SECTION 3: FLAGSHIP HOSPITAL BEDS & CLINICAL HARDWARE SHOWROOM DOCK -->
+    <section class="pc-showroom-section" id="pc-showroom">
+      <div class="pc-shell">
+
+        <div class="pc-showroom-top">
+          <div>
+            <span class="pc-sec-tag">02 // OEM MANUFACTURING SHOWROOM</span>
+            <h2 class="pc-sec-heading">Flagship Hospital Beds &amp; Patient Care Matrix</h2>
+          </div>
+
+          <!-- Interactive Filter Pills -->
+          <div class="pc-filter-pill-bar" role="tablist">
+            <button type="button" class="pc-filter-pill active" onclick="filterPcShowroom('all', this)">All Flagship Units (11)</button>
+            <button type="button" class="pc-filter-pill" onclick="filterPcShowroom('icu', this)">Electric &amp; Manual ICU (5)</button>
+            <button type="button" class="pc-filter-pill" onclick="filterPcShowroom('fowler', this)">Fowler &amp; Ward Care (5)</button>
+            <button type="button" class="pc-filter-pill" onclick="filterPcShowroom('specialty', this)">Pediatric &amp; Specialty (1)</button>
+          </div>
+        </div>
+
+        <!-- 11-Unit Widescreen Architectural Grid -->
+        <div class="pc-showroom-grid" id="pcShowroomGrid">
+
+          <!-- Unit 1 -->
+          <div class="pc-unit-card" data-pc-cat="icu">
+            <div class="pc-unit-header">
+              <span class="pc-unit-code">DSM-ICU-7D</span>
+              <span class="pc-unit-tag tag-flagship">7-Function Electric</span>
+            </div>
+            <div class="pc-unit-media">
+              <img src="catalogue/beds/icu-bed-7-function-deluxe.png" alt="7-Function Luxury Electric ICU Bed" loading="lazy" decoding="async">
+            </div>
+            <div class="pc-unit-body">
+              <h4>7-Function Luxury Electric ICU Bed</h4>
+              <p>Integrated digital weighing scale, cardiac chair position, radiolucent backrest &amp; quad Linak actuators.</p>
+              <div class="pc-unit-footer">
+                <a href="catalogue/beds/index.html" class="pc-unit-link">Technical Specs <i class="bi bi-arrow-up-right"></i></a>
+                <button type="button" class="pc-unit-quote" onclick="openAppleDrawer('7-Function Luxury Electric ICU Bed'); return false;">Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Unit 2 -->
+          <div class="pc-unit-card" data-pc-cat="icu">
+            <div class="pc-unit-header">
+              <span class="pc-unit-code">DSM-ICU-5E</span>
+              <span class="pc-unit-tag tag-flagship">5-Function Electric</span>
+            </div>
+            <div class="pc-unit-media">
+              <img src="catalogue/beds/icu-bed-5-function-electric-abs.png" alt="5-Function Motorized Electric ICU Bed" loading="lazy" decoding="async">
+            </div>
+            <div class="pc-unit-body">
+              <h4>5-Function Motorized Electric ICU Bed</h4>
+              <p>Motorized backrest, knee rest, height adjustment, Trendelenburg &amp; reverse Trendelenburg with ABS rails.</p>
+              <div class="pc-unit-footer">
+                <a href="catalogue/beds/index.html" class="pc-unit-link">Technical Specs <i class="bi bi-arrow-up-right"></i></a>
+                <button type="button" class="pc-unit-quote" onclick="openAppleDrawer('5-Function Electric ICU Bed'); return false;">Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Unit 3 -->
+          <div class="pc-unit-card" data-pc-cat="fowler">
+            <div class="pc-unit-header">
+              <span class="pc-unit-code">DSM-FOW-3E</span>
+              <span class="pc-unit-tag">3-Function Electric</span>
+            </div>
+            <div class="pc-unit-media">
+              <img src="catalogue/beds/fowler-bed-3-function-electric-collapsible.png" alt="3-Function Electric Fowler Bed" loading="lazy" decoding="async">
+            </div>
+            <div class="pc-unit-body">
+              <h4>3-Function Electric Fowler Hospital Bed</h4>
+              <p>Motorized backrest, knee rest &amp; hi-low elevation with collapsible safety rails and nurse handset.</p>
+              <div class="pc-unit-footer">
+                <a href="catalogue/beds/index.html" class="pc-unit-link">Technical Specs <i class="bi bi-arrow-up-right"></i></a>
+                <button type="button" class="pc-unit-quote" onclick="openAppleDrawer('3-Function Electric Fowler Bed'); return false;">Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Unit 4 -->
+          <div class="pc-unit-card" data-pc-cat="icu">
+            <div class="pc-unit-header">
+              <span class="pc-unit-code">DSM-ICU-5M</span>
+              <span class="pc-unit-tag">5-Function Manual</span>
+            </div>
+            <div class="pc-unit-media">
+              <img src="catalogue/beds/icu-bed-5-function-mechanical-abs.png" alt="5-Function Mechanical ICU Bed" loading="lazy" decoding="async">
+            </div>
+            <div class="pc-unit-body">
+              <h4>5-Function Heavy-Duty Mechanical ICU Bed</h4>
+              <p>Precision 5-crank mechanical screw system with split ABS safety rails and central locking castors.</p>
+              <div class="pc-unit-footer">
+                <a href="catalogue/beds/index.html" class="pc-unit-link">Technical Specs <i class="bi bi-arrow-up-right"></i></a>
+                <button type="button" class="pc-unit-quote" onclick="openAppleDrawer('5-Function Mechanical ICU Bed'); return false;">Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Unit 5 -->
+          <div class="pc-unit-card" data-pc-cat="fowler">
+            <div class="pc-unit-header">
+              <span class="pc-unit-code">DSM-FOW-2M</span>
+              <span class="pc-unit-tag">Manual Fowler</span>
+            </div>
+            <div class="pc-unit-media">
+              <img src="catalogue/beds/fowler-bed-2-function-deluxe-mechanical.png" alt="Deluxe 2-Function Manual Fowler Bed" loading="lazy" decoding="async">
+            </div>
+            <div class="pc-unit-body">
+              <h4>Deluxe 2-Function Manual Fowler Bed</h4>
+              <p>Dual crank mechanism for independent backrest and knee elevation with detachable ABS head/foot boards.</p>
+              <div class="pc-unit-footer">
+                <a href="catalogue/beds/index.html" class="pc-unit-link">Technical Specs <i class="bi bi-arrow-up-right"></i></a>
+                <button type="button" class="pc-unit-quote" onclick="openAppleDrawer('Deluxe 2-Function Fowler Bed'); return false;">Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Unit 6 -->
+          <div class="pc-unit-card" data-pc-cat="icu">
+            <div class="pc-unit-header">
+              <span class="pc-unit-code">DSM-ICU-3E</span>
+              <span class="pc-unit-tag">3-Function Electric</span>
+            </div>
+            <div class="pc-unit-media">
+              <img src="catalogue/beds/icu-bed-3-function-electric-abs.png" alt="3-Function Electric ICU Ward Bed" loading="lazy" decoding="async">
+            </div>
+            <div class="pc-unit-body">
+              <h4>3-Function Electric ICU / Ward Bed</h4>
+              <p>Motorized height, backrest, and knee angle positioning with molded ABS panels and IV pole mounts.</p>
+              <div class="pc-unit-footer">
+                <a href="catalogue/beds/index.html" class="pc-unit-link">Technical Specs <i class="bi bi-arrow-up-right"></i></a>
+                <button type="button" class="pc-unit-quote" onclick="openAppleDrawer('3-Function ICU Ward Bed'); return false;">Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Unit 7 -->
+          <div class="pc-unit-card" data-pc-cat="fowler">
+            <div class="pc-unit-header">
+              <span class="pc-unit-code">DSM-FOW-ED</span>
+              <span class="pc-unit-tag">Electric Fowler</span>
+            </div>
+            <div class="pc-unit-media">
+              <img src="catalogue/beds/fowler-bed-electric-deluxe-collapsible.png" alt="Electric Fowler Deluxe Bed" loading="lazy" decoding="async">
+            </div>
+            <div class="pc-unit-body">
+              <h4>Electric Fowler Deluxe Patient Bed</h4>
+              <p>Whisper-quiet motorized actuator drive with aluminum collapsible rails and perforated CRCA steel platform.</p>
+              <div class="pc-unit-footer">
+                <a href="catalogue/beds/index.html" class="pc-unit-link">Technical Specs <i class="bi bi-arrow-up-right"></i></a>
+                <button type="button" class="pc-unit-quote" onclick="openAppleDrawer('Electric Fowler Deluxe Bed'); return false;">Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Unit 8 -->
+          <div class="pc-unit-card" data-pc-cat="icu">
+            <div class="pc-unit-header">
+              <span class="pc-unit-code">DSM-ICU-3M</span>
+              <span class="pc-unit-tag">3-Crank Manual</span>
+            </div>
+            <div class="pc-unit-media">
+              <img src="catalogue/beds/icu-bed-3-crank-manual-abs.png" alt="3-Crank Manual ICU Bed" loading="lazy" decoding="async">
+            </div>
+            <div class="pc-unit-body">
+              <h4>3-Crank Manual ICU Hospital Bed</h4>
+              <p>Smooth 3-crank hi-low, backrest, and knee rest positioning with ABS safety side rails and bumper wheels.</p>
+              <div class="pc-unit-footer">
+                <a href="catalogue/beds/index.html" class="pc-unit-link">Technical Specs <i class="bi bi-arrow-up-right"></i></a>
+                <button type="button" class="pc-unit-quote" onclick="openAppleDrawer('3-Crank Manual ICU Bed'); return false;">Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Unit 9 -->
+          <div class="pc-unit-card" data-pc-cat="fowler">
+            <div class="pc-unit-header">
+              <span class="pc-unit-code">DSM-FOW-3M</span>
+              <span class="pc-unit-tag">3-Crank Fowler</span>
+            </div>
+            <div class="pc-unit-media">
+              <img src="catalogue/beds/fowler-bed-3-crank-manual-mattress.png" alt="3-Crank Mechanical Fowler Bed with Mattress" loading="lazy" decoding="async">
+            </div>
+            <div class="pc-unit-body">
+              <h4>3-Crank Fowler Bed with Mattress</h4>
+              <p>Complete institutional ward bed system with 4-section medical mattress and foldable crank handles.</p>
+              <div class="pc-unit-footer">
+                <a href="catalogue/beds/index.html" class="pc-unit-link">Technical Specs <i class="bi bi-arrow-up-right"></i></a>
+                <button type="button" class="pc-unit-quote" onclick="openAppleDrawer('3-Crank Fowler Bed with Mattress'); return false;">Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Unit 10 -->
+          <div class="pc-unit-card" data-pc-cat="fowler">
+            <div class="pc-unit-header">
+              <span class="pc-unit-code">DSM-SFW-EL</span>
+              <span class="pc-unit-tag">Electric Semi-Fowler</span>
+            </div>
+            <div class="pc-unit-media">
+              <img src="catalogue/beds/semi-fowler-bed-electric-collapsible.png" alt="Electric Semi-Fowler Bed" loading="lazy" decoding="async">
+            </div>
+            <div class="pc-unit-body">
+              <h4>Electric Semi-Fowler Recovery Bed</h4>
+              <p>Motorized backrest elevation with collapsible side rails and antimicrobial epoxy powder-coated frame.</p>
+              <div class="pc-unit-footer">
+                <a href="catalogue/beds/index.html" class="pc-unit-link">Technical Specs <i class="bi bi-arrow-up-right"></i></a>
+                <button type="button" class="pc-unit-quote" onclick="openAppleDrawer('Electric Semi-Fowler Bed'); return false;">Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Unit 11 -->
+          <div class="pc-unit-card" data-pc-cat="specialty">
+            <div class="pc-unit-header">
+              <span class="pc-unit-code">DSM-PED-01</span>
+              <span class="pc-unit-tag">Pediatric Care</span>
+            </div>
+            <div class="pc-unit-media">
+              <img src="catalogue/beds/pediatric-crib-bed-hospital.png" alt="Pediatric Hospital Crib Bed" loading="lazy" decoding="async">
+            </div>
+            <div class="pc-unit-body">
+              <h4>Pediatric Safety Hospital Crib Bed</h4>
+              <p>Full-height drop-side safety rails, child-safe latch mechanism, and adjustable backrest for PICU wards.</p>
+              <div class="pc-unit-footer">
+                <a href="catalogue/beds/index.html" class="pc-unit-link">Technical Specs <i class="bi bi-arrow-up-right"></i></a>
+                <button type="button" class="pc-unit-quote" onclick="openAppleDrawer('Pediatric Safety Hospital Crib Bed'); return false;">Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 12th Card: Full 50+ Category Catalogue Portal Card -->
+          <div class="pc-unit-card pc-unit-portal-card" data-pc-cat="all">
+            <div class="pc-portal-inner">
+              <span class="pc-portal-badge"><i class="bi bi-grid-3x3-gap-fill"></i> FULL MASTER DIRECTORY</span>
+              <h4>Explore All 50+ Clinical Categories</h4>
+              <p>Browse 350+ ISO &amp; CE certified products across Modular OT, ICU Ventilators, Anesthesia, C-Arm, CSSD, and Hospital Furniture.</p>
+              <a href="catalogue/index.html" class="pc-btn-solid w-100 justify-content-center">
+                Launch Master Catalogue <i class="bi bi-arrow-right ms-2"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PC SECTION 4: WHY CHOOSE DR. SMITH & TURNKEY EXECUTION ARCHITECTURE -->
+    <section class="pc-turnkey-matrix-section" id="pc-turnkey-matrix">
+      <div class="pc-shell">
+
+        <div class="pc-turnkey-split">
+
+          <!-- Left Column: Visual CAD Blueprint & Corporate Video/Facility Card -->
+          <div class="pc-turnkey-left">
+            <span class="pc-sec-tag">03 // INTEGRATED TURNKEY ENGINEERING</span>
+            <h2 class="pc-sec-heading">From Bare Shell to NABH-Accredited Commissioning.</h2>
+            <p class="pc-turnkey-lead">
+              Unlike fragmented equipment traders, Dr. Smith combines in-house OEM medical device manufacturing at METL Jhajjar with complete civil, MEP, cleanroom, and life-support gas engineering.
+            </p>
+
+            <!-- Why Choose Us Visual Infographic Blueprint -->
+            <div class="pc-why-blueprint-card">
+              <img src="catalogue/why choose.png" alt="Why Choose Dr. Smith Healthcare Infographic" loading="lazy" decoding="async">
+            </div>
+
+            <!-- Facility Showcase Bar -->
+            <div class="pc-facility-highlight">
+              <img src="assets/img/infrastructure/hero-hospital-modern-glass.jpg?v=6.0" alt="Dr. Smith Turnkey Hospital Facility" loading="lazy" decoding="async">
+              <div class="pc-facility-highlight-text">
+                <span class="pc-facility-eyebrow">LANDMARK TRACK RECORD</span>
+                <h4>500-Bedded Government Hospital &amp; 125+ Ventilator Rollout</h4>
+                <p>Equipped a 500-bedded government hospital inaugurated by the Home Minister of India (Mr. Amit Shah) and deployed 125+ ICU ventilators nationwide for The Art of Living Organization.</p>
+                <a href="about-us/index.html" class="pc-inline-link">Read Our 60-Year Corporate Story <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: 6-Pillar Engineering & SLA Matrix -->
+          <div class="pc-turnkey-right">
+            <div class="pc-pillar-grid">
+
+              <div class="pc-pillar-card">
+                <div class="pc-pillar-top">
+                  <span class="pc-pillar-num">01</span>
+                  <div class="pc-pillar-icon"><i class="bi bi-award-fill"></i></div>
+                </div>
+                <h4>60+ Years Heritage &amp; 500+ Hospitals</h4>
+                <p>Founded in 1960, Surgical Wholesale Mart Pvt. Ltd. (Dr. Smith) has executed 500+ turnkey hospital projects across India, Middle East, and Africa.</p>
+              </div>
+
+              <div class="pc-pillar-card">
+                <div class="pc-pillar-top">
+                  <span class="pc-pillar-num">02</span>
+                  <div class="pc-pillar-icon"><i class="bi bi-hospital-fill"></i></div>
+                </div>
+                <h4>50 to 500+ Bed Turnkey Execution</h4>
+                <p>Single-window EPC execution covering hospital architectural zoning, civil work, HVAC, electricals, Modular OT, MGPS, and full furniture/equipment supply.</p>
+              </div>
+
+              <div class="pc-pillar-card">
+                <div class="pc-pillar-top">
+                  <span class="pc-pillar-num">03</span>
+                  <div class="pc-pillar-icon"><i class="bi bi-wind"></i></div>
+                </div>
+                <h4>Class 100 Modular OT &amp; Cleanrooms</h4>
+                <p>ISO Class 5 laminar airflow surgical theatres, SS 304 antibacterial wall systems, hermetic doors, and digital surgeon touch control panels.</p>
+              </div>
+
+              <div class="pc-pillar-card">
+                <div class="pc-pillar-top">
+                  <span class="pc-pillar-num">04</span>
+                  <div class="pc-pillar-icon"><i class="bi bi-diagram-3-fill"></i></div>
+                </div>
+                <h4>HTM 02-01 Medical Gas (MGPS)</h4>
+                <p>NFPA 99 &amp; HTM 02-01 certified central oxygen manifolds, medical air/vacuum plants, degreased copper pipelines, and ceiling pendants.</p>
+              </div>
+
+              <div class="pc-pillar-card">
+                <div class="pc-pillar-top">
+                  <span class="pc-pillar-num">05</span>
+                  <div class="pc-pillar-icon"><i class="bi bi-globe-americas"></i></div>
+                </div>
+                <h4>International Ministry Supplier</h4>
+                <p>Official supplier to international health ministries including the Ministry of Health &amp; Child Care, Zimbabwe, and 25+ global export destinations.</p>
+              </div>
+
+              <div class="pc-pillar-card">
+                <div class="pc-pillar-top">
+                  <span class="pc-pillar-num">06</span>
+                  <div class="pc-pillar-icon"><i class="bi bi-shield-fill-check"></i></div>
+                </div>
+                <h4>1-Year Free Warranty &amp; 24/7 SLA</h4>
+                <p>ISO 13485:2016, CE &amp; US FDA conforming clinical devices backed by 1-year free comprehensive warranty and pan-India biomedical engineers.</p>
+              </div>
+
+            </div>
+
+            <!-- Bottom Turnkey Action Bar -->
+            <div class="pc-turnkey-cta-strip">
+              <div>
+                <strong>Planning a New Hospital or Departmental Upgrade?</strong>
+                <span>Get architectural layouts, BOQ estimation, and turnkey compliance consulting.</span>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="turnkey-projects/index.html" class="pc-btn-solid">Turnkey Capabilities</a>
+                <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20Turnkey%20Hospital%20Projects."
+                   target="_blank" rel="noopener noreferrer" class="pc-btn-wa-inline">
+                  <i class="fa-brands fa-whatsapp"></i> WhatsApp Engineers
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PC SECTION 5: INSTITUTIONAL CLIENT NETWORK & GLOBAL CERTIFICATIONS DOCK -->
+    <section class="pc-trust-dock-section" id="pc-global-network">
+      <div class="pc-shell">
+
+        <div class="pc-trust-box">
+          <div class="pc-trust-top-row">
+            <div>
+              <span class="pc-sec-tag">04 // INSTITUTIONAL TRUST &amp; ACCREDITATIONS</span>
+              <h3 class="pc-trust-title">Trusted by Leading Healthcare Institutions &amp; Global Ministries</h3>
+            </div>
+            <div class="pc-cert-pill-cluster">
+              <span><i class="bi bi-patch-check-fill"></i> ISO 9001:2015</span>
+              <span><i class="bi bi-shield-fill-check"></i> ISO 13485:2016</span>
+              <span><i class="bi bi-globe2"></i> CE Certified</span>
+              <span><i class="bi bi-award-fill"></i> US FDA</span>
+              <span><i class="bi bi-hospital"></i> NABH &amp; JCI</span>
+              <span><i class="bi bi-check-circle-fill"></i> GMP &amp; BIFMA</span>
+            </div>
+          </div>
+
+          <!-- 10 Institutional Client Logos in a Clean Widescreen 10-Column Architectural Grid -->
+          <div class="pc-client-logo-grid">
+            <div class="pc-client-cell"><img src="assets/img/clients/clients-1.webp" alt="Hospital Partner 1" loading="lazy" decoding="async"></div>
+            <div class="pc-client-cell"><img src="assets/img/clients/clients-2.webp" alt="Hospital Partner 2" loading="lazy" decoding="async"></div>
+            <div class="pc-client-cell"><img src="assets/img/clients/clients-3.webp" alt="Hospital Partner 3" loading="lazy" decoding="async"></div>
+            <div class="pc-client-cell"><img src="assets/img/clients/clients-4.webp" alt="Hospital Partner 4" loading="lazy" decoding="async"></div>
+            <div class="pc-client-cell"><img src="assets/img/clients/clients-5.webp" alt="Hospital Partner 5" loading="lazy" decoding="async"></div>
+            <div class="pc-client-cell"><img src="assets/img/clients/clients-6.webp" alt="Hospital Partner 6" loading="lazy" decoding="async"></div>
+            <div class="pc-client-cell"><img src="assets/img/clients/clients-7.webp" alt="Hospital Partner 7" loading="lazy" decoding="async"></div>
+            <div class="pc-client-cell"><img src="assets/img/clients/clients-8.webp" alt="Hospital Partner 8" loading="lazy" decoding="async"></div>
+            <div class="pc-client-cell"><img src="assets/img/clients/clients-9.webp" alt="Hospital Partner 9" loading="lazy" decoding="async"></div>
+            <div class="pc-client-cell"><img src="assets/img/clients/clients-10.webp" alt="Hospital Partner 10" loading="lazy" decoding="async"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PC SECTION 6: GLOBAL INFRASTRUCTURE HUBS, EXECUTIVE COUNCIL & INTERACTIVE FAQ CONSOLE -->
+    <section class="pc-governance-section" id="pc-governance">
+      <div class="pc-shell">
+
+        <!-- Part A: 3 Global Headquarters & Manufacturing Hubs -->
+        <div class="pc-sec-header-split">
+          <div>
+            <span class="pc-sec-tag">05 // GLOBAL COMMAND CENTERS &amp; LEADERSHIP</span>
+            <h2 class="pc-sec-heading">Corporate Headquarters, Manufacturing &amp; Governance</h2>
+          </div>
+          <p class="pc-sec-subtext">
+            Strategically positioned across New Delhi, METL Jhajjar (Haryana), and SAIF Zone (Sharjah, UAE) to serve domestic and international hospital projects.
+          </p>
+        </div>
+
+        <div class="pc-hub-grid">
+          <div class="pc-hub-card">
+            <div class="pc-hub-top">
+              <span class="pc-hub-badge">HQ // INDIA</span>
+              <i class="bi bi-buildings-fill pc-hub-icon"></i>
+            </div>
+            <h4>Corporate Global Head Office</h4>
+            <p class="pc-hub-loc">New Delhi, India</p>
+            <p class="pc-hub-addr">Plot No. 75/02, Shri Sai Complex, Ground Floor, Kapashera Border, New Delhi – 110037</p>
+            <div class="pc-hub-meta">
+              <span><i class="bi bi-telephone-fill"></i> Toll-Free: 1800 891 7466</span>
+            </div>
+          </div>
+
+          <div class="pc-hub-card pc-hub-featured">
+            <div class="pc-hub-top">
+              <span class="pc-hub-badge">OEM PLANT // HARYANA</span>
+              <i class="bi bi-gear-wide-connected pc-hub-icon"></i>
+            </div>
+            <h4>Primary Manufacturing Plant</h4>
+            <p class="pc-hub-loc">METL Jhajjar, Haryana</p>
+            <p class="pc-hub-addr">Model Economic Township (METL), Jhajjar, Haryana – Automated CNC, Robotic Welding &amp; Cleanroom Assembly</p>
+            <div class="pc-hub-meta">
+              <span><i class="bi bi-shield-check"></i> ISO 13485:2016 &amp; CE Certified Plant</span>
+            </div>
+          </div>
+
+          <div class="pc-hub-card">
+            <div class="pc-hub-top">
+              <span class="pc-hub-badge">EXPORT HUB // UAE</span>
+              <i class="bi bi-globe2 pc-hub-icon"></i>
+            </div>
+            <h4>Overseas International Office</h4>
+            <p class="pc-hub-loc">Sharjah, United Arab Emirates</p>
+            <p class="pc-hub-addr">Q4-223, SAIF Zone, Sharjah, UAE – Middle East, GCC &amp; African Institutional Supply</p>
+            <div class="pc-hub-meta">
+              <span><i class="bi bi-envelope-fill"></i> info@drsmith.co.in</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Part B: 5-Column Executive Leadership Board -->
+        <div class="pc-exec-board">
+          <div class="pc-exec-header">
+            <h3>Executive Leadership Council</h3>
+            <span>Guiding global healthcare engineering with clinical insight and operational excellence</span>
+          </div>
+
+          <div class="pc-exec-grid">
+            <div class="pc-exec-card">
+              <div class="pc-exec-avatar">KM</div>
+              <h4>Kamal Kant Mahajan</h4>
+              <span class="pc-exec-role">Chairman</span>
+              <p>35+ years leading healthcare industry growth, nationwide distribution, and international medical supply.</p>
+            </div>
+
+            <div class="pc-exec-card">
+              <div class="pc-exec-avatar">DM</div>
+              <h4>Danjali Mahajan</h4>
+              <span class="pc-exec-role">CEO &amp; Finance / Export Head</span>
+              <p>Expert in project finance, financial planning, process optimization, and global export compliance.</p>
+            </div>
+
+            <div class="pc-exec-card">
+              <div class="pc-exec-avatar">NM</div>
+              <h4>Naman Mahajan</h4>
+              <span class="pc-exec-role">Chief Marketing Officer</span>
+              <p>Spearheading digital healthcare strategy, product innovation, institutional partnerships, and global trade.</p>
+            </div>
+
+            <div class="pc-exec-card">
+              <div class="pc-exec-avatar">RM</div>
+              <h4>Ritika Mahajan</h4>
+              <span class="pc-exec-role">Head Purchase &amp; Branch Ops</span>
+              <p>Directing strategic raw material procurement and nationwide branch logistics with strict quality benchmarks.</p>
+            </div>
+
+            <div class="pc-exec-card">
+              <div class="pc-exec-avatar">RK</div>
+              <h4>Ravi Kumar</h4>
+              <span class="pc-exec-role">Head Sales &amp; Specialised Products</span>
+              <p>Directing critical care equipment deployments, institutional turnkey tenders, and hospital client success.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Part C: Interactive Split-Screen FAQ & Direct Procurement Console -->
+        <div class="pc-faq-rfq-console">
+
+          <!-- Left: Interactive FAQ Accordion -->
+          <div class="pc-faq-pane">
+            <span class="pc-sec-tag">06 // TECHNICAL &amp; PROCUREMENT KNOWLEDGE BASE</span>
+            <h3 class="pc-faq-heading">Frequently Asked Questions</h3>
+
+            <div class="pc-faq-stack">
+              <div class="apple-faq-item active">
+                <button class="apple-faq-question" onclick="toggleAppleFaq(this);">
+                  <span>What turnkey hospital solutions does Dr. Smith provide?</span>
+                  <i class="bi bi-plus-lg apple-faq-icon"></i>
+                </button>
+                <div class="apple-faq-answer">
+                  <p>Dr. Smith is an end-to-end partner for complete hospital construction and infrastructure: NABH/JCI compliant hospital architectural design, civil construction, MEP services, prefabricated modular operation theatres (OT), medical gas pipeline systems (MGPS), ICU setup, and full equipment outfitting.</p>
+                </div>
+              </div>
+
+              <div class="apple-faq-item">
+                <button class="apple-faq-question" onclick="toggleAppleFaq(this);">
+                  <span>What international quality certifications govern your facilities?</span>
+                  <i class="bi bi-plus-lg apple-faq-icon"></i>
+                </button>
+                <div class="apple-faq-answer">
+                  <p>Our company is certified under ISO 9001:2015, ISO 13485:2016 (Medical Devices Quality Management System), ISO 14001:2015, OHSAS 45001:2018, BIFMA, GMP, CE, and US FDA conformity benchmarks.</p>
+                </div>
+              </div>
+
+              <div class="apple-faq-item">
+                <button class="apple-faq-question" onclick="toggleAppleFaq(this);">
+                  <span>Can you outline your track record in major government and private hospital projects?</span>
+                  <i class="bi bi-plus-lg apple-faq-icon"></i>
+                </button>
+                <div class="apple-faq-answer">
+                  <p>Dr. Smith equipped a landmark 500-bedded government hospital facility inaugurated by the Home Minister of India (Mr. Amit Shah), installed 125+ ICU ventilators for The Art of Living Organization, and supplies government health ministries internationally, including the Ministry of Health &amp; Child Care, Zimbabwe.</p>
+                </div>
+              </div>
+
+              <div class="apple-faq-item">
+                <button class="apple-faq-question" onclick="toggleAppleFaq(this);">
+                  <span>Where are your physical headquarters and manufacturing plants situated?</span>
+                  <i class="bi bi-plus-lg apple-faq-icon"></i>
+                </button>
+                <div class="apple-faq-answer">
+                  <p>Our Corporate Global Head Office is located at Plot No. 75/02, Shri Sai Complex, Ground Floor, Kapashera Border, New Delhi – 110037, India. Our primary manufacturing plant is at METL, Jhajjar, Haryana. Our Overseas International Head Office is at Q4-223, SAIF Zone, Sharjah, United Arab Emirates.</p>
+                </div>
+              </div>
+
+              <div class="apple-faq-item">
+                <button class="apple-faq-question" onclick="toggleAppleFaq(this);">
+                  <span>Where can I explore the complete medical equipment and furniture catalogue?</span>
+                  <i class="bi bi-plus-lg apple-faq-icon"></i>
+                </button>
+                <div class="apple-faq-answer">
+                  <p>You can access our full categorized catalogue with over 50 product categories, ICU bed models, OT tables, surgical lights, and diagnostic systems by clicking <a href="catalogue/index.html" class="apple-link">Explore Catalogue</a> or navigating to specific department lines from the top menu.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Direct Procurement & Turnkey Dispatch Terminal -->
+          <div class="pc-rfq-terminal">
+            <div class="pc-rfq-badge"><i class="bi bi-lightning-charge-fill"></i> PRIORITY INSTITUTIONAL DESK</div>
+            <h3>Let's Build a Healthier Tomorrow.</h3>
+            <p>
+              Connect directly with our biomedical engineers, turnkey hospital architects, or international export desk for customized BOQs, tender documentation, and factory pricing.
+            </p>
+
+            <div class="pc-rfq-channels">
+              <div class="pc-rfq-channel-item">
+                <i class="bi bi-telephone-inbound-fill"></i>
+                <div>
+                  <small>National Toll-Free Helpline</small>
+                  <strong>1800 891 7466</strong>
+                </div>
+              </div>
+              <div class="pc-rfq-channel-item">
+                <i class="bi bi-envelope-paper-fill"></i>
+                <div>
+                  <small>Official Tender &amp; Export Desk</small>
+                  <strong>info@drsmith.co.in</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="pc-rfq-actions">
+              <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions."
+                 target="_blank" rel="noopener noreferrer"
+                 class="pc-btn-rfq-wa">
+                <i class="fa-brands fa-whatsapp"></i> Connect on WhatsApp Desk
+              </a>
+              <a href="contact-form/index.html" class="pc-btn-rfq-form">
+                Open Formal Inquiry Form <i class="bi bi-arrow-right"></i>
+              </a>
+              <button type="button" class="pc-btn-rfq-drawer" onclick="openAppleDrawer('Turnkey Hospital Setup'); return false;">
+                <i class="bi bi-sliders"></i> Instant Quote Drawer
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ============================================================
+       MOBILE & TABLET VIEW (<= 991px ONLY — 100% UNTOUCHED)
+       ============================================================ -->
+  <div class="home-mobile-view-only">
+
+  <!-- ============================================================
+       2. HERO SECTION (SPLIT 2-COLUMN DESIGN)
+       ============================================================ -->
+  <section class="hero-split-section">
+    <div class="hero-split-container">
+      <div class="row align-items-center g-4 g-lg-5">
+
+        <!-- Left Column: Content -->
+        <div class="col-lg-6 hero-left-col">
+          <div class="hero-pill-badge">
+            <i class="bi bi-shield-check"></i> Trusted Medical Equipment Supplier
+          </div>
+
+          <h1 class="hero-final-title">
+            One-Stop Solution to<br>
+            All <span class="hero-blue-accent">Your Hospital Related<br class="d-none d-md-block"> Needs</span>
+          </h1>
+
+          <div class="hero-accent-line"></div>
+
+          <p class="hero-final-desc">
+            Backed by a 60-year legacy and 500+ hospital projects, delivering NABH-certified turnkey infrastructure,
+            sterile modular OT suites, and cutting-edge clinical equipment with pan-India support.
+          </p>
+
+          <div class="hero-final-actions">
+            <a href="catalogue/index.html" class="btn-hero-primary">
+              Explore Catalogue <i class="bi bi-arrow-right"></i>
+            </a>
+            <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." target="_blank" rel="noopener noreferrer" class="btn-hero-whatsapp" aria-label="Chat with Dr. Smith Healthcare on WhatsApp" title="Chat on WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+            </a>
+          </div>
+
+          <!-- Infinite Auto-Scrolling Trust Ticker (20% Smaller, Untouchable, Smooth Right-to-Left) -->
+          <div class="hero-trust-marquee" aria-label="Company Credentials and Certifications">
+            <div class="hero-trust-track">
+              <!-- Set 1 -->
+              <span class="hero-trust-chip"><i class="bi bi-shield-check"></i> NABH &amp; JCI Standards</span>
+              <span class="hero-trust-chip"><i class="bi bi-patch-check-fill"></i> ISO 13485:2016 Certified</span>
+              <span class="hero-trust-chip"><i class="bi bi-building-check"></i> 500+ Hospitals Equipped</span>
+              <span class="hero-trust-chip"><i class="bi bi-award-fill"></i> 60+ Years Manufacturing Heritage</span>
+              <span class="hero-trust-chip"><i class="bi bi-hospital"></i> 50 to 500+ Bed Turnkey Setup</span>
+              <span class="hero-trust-chip"><i class="bi bi-activity"></i> Class 100 Modular OT Cleanrooms</span>
+              <span class="hero-trust-chip"><i class="bi bi-diagram-3-fill"></i> HTM 02-01 MGPS Gas Pipelines</span>
+              <span class="hero-trust-chip"><i class="bi bi-globe2"></i> 25+ Global Export Countries</span>
+              <span class="hero-trust-chip"><i class="bi bi-grid-fill"></i> 50+ Product Categories</span>
+              <span class="hero-trust-chip"><i class="bi bi-shield-fill-plus"></i> 1 Year Free Comprehensive
+                Warranty</span>
+              <span class="hero-trust-chip"><i class="bi bi-check-circle-fill"></i> CE &amp; US FDA Conformity</span>
+
+              <!-- Duplicate Set for Seamless Loop -->
+              <span class="hero-trust-chip"><i class="bi bi-shield-check"></i> NABH &amp; JCI Standards</span>
+              <span class="hero-trust-chip"><i class="bi bi-patch-check-fill"></i> ISO 13485:2016 Certified</span>
+              <span class="hero-trust-chip"><i class="bi bi-building-check"></i> 500+ Hospitals Equipped</span>
+              <span class="hero-trust-chip"><i class="bi bi-award-fill"></i> 60+ Years Manufacturing Heritage</span>
+              <span class="hero-trust-chip"><i class="bi bi-hospital"></i> 50 to 500+ Bed Turnkey Setup</span>
+              <span class="hero-trust-chip"><i class="bi bi-activity"></i> Class 100 Modular OT Cleanrooms</span>
+              <span class="hero-trust-chip"><i class="bi bi-diagram-3-fill"></i> HTM 02-01 MGPS Gas Pipelines</span>
+              <span class="hero-trust-chip"><i class="bi bi-globe2"></i> 25+ Global Export Countries</span>
+              <span class="hero-trust-chip"><i class="bi bi-grid-fill"></i> 50+ Product Categories</span>
+              <span class="hero-trust-chip"><i class="bi bi-shield-fill-plus"></i> 1 Year Free Comprehensive
+                Warranty</span>
+              <span class="hero-trust-chip"><i class="bi bi-check-circle-fill"></i> CE &amp; US FDA Conformity</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Image Visual (Commented out for later use) -->
+        <!-- <div class="col-lg-6 hero-right-col d-flex align-items-center justify-content-center">
+          <img src="why choose us/why choose us .jpg" alt="Dr. Smith Medical Equipment &amp; Turnkey Hospital Solutions" class="img-fluid" loading="eager" decoding="async">
+        </div> -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       WHY CHOOSE DR. SMITH (TRANSPARENT INFOGRAPHIC)
+       ============================================================ -->
+  <section class="why-choose-transparent-section text-center" id="why-choose">
+    <div class="container text-center">
+      <img src="catalogue/why choose.png" alt="Why Choose Dr. Smith" class="why-choose-transparent-img img-fluid" loading="eager" width="2176" height="1836" decoding="async">
+    </div>
+  </section>
+
+  <!-- ============================================================
+       3. FEATURED MEDICAL EQUIPMENT (CAROUSEL)
+       ============================================================ -->
+  <section class="featured-products-section">
+    <div class="featured-products-container">
+
+      <!-- Section Blue Accent Divider Line (Left-to-Right Shaded Fade) -->
+      <div class="featured-top-divider" aria-hidden="true"></div>
+
+      <!-- Section Header -->
+      <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
+        <div>
+          <h2 class="featured-section-title mb-1">Featured Medical Equipment</h2>
+          <p class="featured-section-subhead mb-0">High-quality, reliable and hospital-grade medical equipment for
+            better care.</p>
+        </div>
+        <a href="catalogue/index.html" class="btn-outline-pill-cyan">
+          View All Products <i class="bi bi-arrow-right ms-1"></i>
+        </a>
+      </div>
+
+      <!-- Carousel with navigation arrows -->
+      <div class="featured-carousel-wrapper" id="equipment-carousel">
+        <button class="carousel-nav-btn carousel-nav-prev" id="equipment-prev-btn" aria-label="Previous Products"><i
+            class="bi bi-chevron-left"></i></button>
+
+        <div class="equipment-track-container">
+          <div class="equipment-track">
+
+            <!-- Bed 1: 7-Function Luxury Electric ICU Bed -->
+            <div class="product-dark-card">
+              <div class="product-img-box">
+                <img src="catalogue/beds/icu-bed-7-function-deluxe.png"
+                  alt="7-Function Luxury Electric ICU Bed" loading="lazy" decoding="async">
+              </div>
+              <div class="product-info-box">
+                <h3 class="product-card-title">7-Function Luxury ICU Bed</h3>
+                <p class="product-card-desc">Electric ICU &bull; 7-Function</p>
+                <a href="catalogue/beds/index.html" class="product-card-link">
+                  View Details <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Bed 2: 5-Function Motorized Electric ICU Bed -->
+            <div class="product-dark-card">
+              <div class="product-img-box">
+                <img src="catalogue/beds/icu-bed-5-function-electric-abs.png"
+                  alt="5-Function Motorized Electric ICU Bed" loading="lazy" decoding="async">
+              </div>
+              <div class="product-info-box">
+                <h3 class="product-card-title">5-Function Electric ICU Bed</h3>
+                <p class="product-card-desc">Electric ICU &bull; 5-Function</p>
+                <a href="catalogue/beds/index.html" class="product-card-link">
+                  View Details <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Bed 3: 3-Function Electric Fowler Bed -->
+            <div class="product-dark-card">
+              <div class="product-img-box">
+                <img src="catalogue/beds/fowler-bed-3-function-electric-collapsible.png"
+                  alt="3-Function Electric Fowler Bed" loading="lazy" decoding="async">
+              </div>
+              <div class="product-info-box">
+                <h3 class="product-card-title">3-Function Electric Fowler</h3>
+                <p class="product-card-desc">Electric Fowler &bull; 3-Function</p>
+                <a href="catalogue/beds/index.html" class="product-card-link">
+                  View Details <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Bed 4: 5-Function Mechanical ICU Bed -->
+            <div class="product-dark-card">
+              <div class="product-img-box">
+                <img src="catalogue/beds/icu-bed-5-function-mechanical-abs.png" alt="5-Function Mechanical ICU Bed"
+                  loading="lazy" decoding="async">
+              </div>
+              <div class="product-info-box">
+                <h3 class="product-card-title">5-Function Mechanical Bed</h3>
+                <p class="product-card-desc">Manual ICU &bull; 5-Crank</p>
+                <a href="catalogue/beds/index.html" class="product-card-link">
+                  View Details <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Bed 5: Deluxe 2-Function Manual Fowler Bed -->
+            <div class="product-dark-card">
+              <div class="product-img-box">
+                <img src="catalogue/beds/fowler-bed-2-function-deluxe-mechanical.png"
+                  alt="Deluxe 2-Function Manual Fowler Bed" loading="lazy" decoding="async">
+              </div>
+              <div class="product-info-box">
+                <h3 class="product-card-title">Deluxe 2-Function Fowler</h3>
+                <p class="product-card-desc">Manual Fowler &bull; 2-Crank</p>
+                <a href="catalogue/beds/index.html" class="product-card-link">
+                  View Details <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Bed 6: 3-Function Electric ICU / Ward Bed -->
+            <div class="product-dark-card">
+              <div class="product-img-box">
+                <img src="catalogue/beds/icu-bed-3-function-electric-abs.png" alt="3-Function Electric ICU / Ward Bed"
+                  loading="lazy" decoding="async">
+              </div>
+              <div class="product-info-box">
+                <h3 class="product-card-title">3-Function ICU Ward Bed</h3>
+                <p class="product-card-desc">Electric ICU &bull; 3-Function</p>
+                <a href="catalogue/beds/index.html" class="product-card-link">
+                  View Details <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Bed 7: Electric Fowler Bed with Collapsible Rails -->
+            <div class="product-dark-card">
+              <div class="product-img-box">
+                <img src="catalogue/beds/fowler-bed-electric-deluxe-collapsible.png"
+                  alt="Electric Fowler Bed with Collapsible Rails" loading="lazy" decoding="async">
+              </div>
+              <div class="product-info-box">
+                <h3 class="product-card-title">Electric Fowler Deluxe</h3>
+                <p class="product-card-desc">Electric Fowler &bull; Motorized</p>
+                <a href="catalogue/beds/index.html" class="product-card-link">
+                  View Details <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Bed 8: 3-Crank Manual ICU Bed -->
+            <div class="product-dark-card">
+              <div class="product-img-box">
+                <img src="catalogue/beds/icu-bed-3-crank-manual-abs.png" alt="3-Crank Manual ICU Bed" loading="lazy" decoding="async">
+              </div>
+              <div class="product-info-box">
+                <h3 class="product-card-title">3-Crank Manual ICU Bed</h3>
+                <p class="product-card-desc">Manual ICU &bull; 3-Crank</p>
+                <a href="catalogue/beds/index.html" class="product-card-link">
+                  View Details <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Bed 9: 3-Crank Mechanical Fowler Bed with Mattress -->
+            <div class="product-dark-card">
+              <div class="product-img-box">
+                <img src="catalogue/beds/fowler-bed-3-crank-manual-mattress.png"
+                  alt="3-Crank Mechanical Fowler Bed with Mattress" loading="lazy" decoding="async">
+              </div>
+              <div class="product-info-box">
+                <h3 class="product-card-title">3-Crank Fowler with Mattress</h3>
+                <p class="product-card-desc">Manual Fowler &bull; 3-Crank</p>
+                <a href="catalogue/beds/index.html" class="product-card-link">
+                  View Details <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Bed 10: Electric Semi-Fowler Bed -->
+            <div class="product-dark-card">
+              <div class="product-img-box">
+                <img src="catalogue/beds/semi-fowler-bed-electric-collapsible.png" alt="Electric Semi-Fowler Bed"
+                  loading="lazy" decoding="async">
+              </div>
+              <div class="product-info-box">
+                <h3 class="product-card-title">Electric Semi-Fowler Bed</h3>
+                <p class="product-card-desc">Electric Semi-Fowler &bull; Motorized</p>
+                <a href="catalogue/beds/index.html" class="product-card-link">
+                  View Details <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Bed 11: Pediatric Crib Bed -->
+            <div class="product-dark-card">
+              <div class="product-img-box">
+                <img src="catalogue/beds/pediatric-crib-bed-hospital.png" alt="Pediatric Hospital Crib Bed"
+                  loading="lazy" decoding="async">
+              </div>
+              <div class="product-info-box">
+                <h3 class="product-card-title">Pediatric Crib Bed</h3>
+                <p class="product-card-desc">Pediatric &bull; Ward Care</p>
+                <a href="catalogue/beds/index.html" class="product-card-link">
+                  View Details <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <button class="carousel-nav-btn carousel-nav-next" id="equipment-next-btn" aria-label="Next Products"><i
+            class="bi bi-chevron-right"></i></button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       4. WHY CHOOSE US (QUALITY, COMPLIANCE, TRUST)
+       ============================================================ -->
+  <section class="why-choose-section">
+    <div class="why-choose-container">
+
+      <div class="mb-5 text-start">
+        <div class="why-eyebrow-line">Why Choose Us &mdash;</div>
+        <h2 class="section-dark-title">Quality, Compliance &amp; Clinical Trust</h2>
+        <p class="why-section-subhead">Setting national benchmarks in healthcare architecture, medical device
+          manufacturing, and turnkey hospital delivery.</p>
+      </div>
+
+      <div class="row g-2 g-sm-3 g-lg-4">
+
+        <!-- Feature 1: NABH & JCI Compliance -->
+        <div class="col-6">
+          <div class="why-feature-box">
+            <div class="why-icon-circle">
+              <i class="bi bi-shield-check"></i>
+            </div>
+            <div class="why-box-content">
+              <h4 class="why-box-title">NABH &amp; JCI Compliance</h4>
+              <p class="why-box-desc">Strict architectural and clinical workflow engineering conforming to NABH, JCI,
+                and AERB hospital accreditation standards.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 2: 60+ Years Legacy -->
+        <div class="col-6">
+          <div class="why-feature-box">
+            <div class="why-icon-circle">
+              <i class="bi bi-award-fill"></i>
+            </div>
+            <div class="why-box-content">
+              <h4 class="why-box-title">60+ Years Manufacturing Heritage</h4>
+              <p class="why-box-desc">Over six decades of precision hospital furniture and surgical equipment
+                fabrication trusted by 500+ medical institutions.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 3: Turnkey Solutions -->
+        <div class="col-6">
+          <div class="why-feature-box">
+            <div class="why-icon-circle">
+              <i class="bi bi-hospital"></i>
+            </div>
+            <div class="why-box-content">
+              <h4 class="why-box-title">50 to 500+ Bed Turnkey Setup</h4>
+              <p class="why-box-desc">Complete end-to-end hospital commissioning covering civil, MEP, patient wards, ICU
+                setups, and specialized diagnostic suites.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 4: Modular OT Cleanrooms -->
+        <div class="col-6">
+          <div class="why-feature-box">
+            <div class="why-icon-circle">
+              <i class="bi bi-activity"></i>
+            </div>
+            <div class="why-box-content">
+              <h4 class="why-box-title">Class 100 Modular OT Cleanrooms</h4>
+              <p class="why-box-desc">ISO 14644 certified laminar airflow surgical theatres with antimicrobial hermetic
+                panels, ceiling pendants, and scrub stations.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 5: HTM 02-01 MGPS Pipelines -->
+        <div class="col-6">
+          <div class="why-feature-box">
+            <div class="why-icon-circle">
+              <i class="bi bi-diagram-3-fill"></i>
+            </div>
+            <div class="why-box-content">
+              <h4 class="why-box-title">HTM 02-01 MGPS Gas Pipelines</h4>
+              <p class="why-box-desc">Centralized medical gas generation plants, multi-cylinder oxygen manifolds, vacuum
+                stations, and digital area alarm panels.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 6: Certified Devices & SLA -->
+        <div class="col-6">
+          <div class="why-feature-box">
+            <div class="why-icon-circle">
+              <i class="bi bi-patch-check-fill"></i>
+            </div>
+            <div class="why-box-content">
+              <h4 class="why-box-title">Certified Devices &amp; 24/7 SLA</h4>
+              <p class="why-box-desc">ISO 13485:2016, CE &amp; US FDA conforming clinical technology backed by pan-India
+                biomedical engineers and rapid OEM spares.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       5. ABOUT US (BUILDING BETTER HEALTHCARE FACILITIES)
+       ============================================================ -->
+  <section class="about-overview-section">
+    <div class="about-overview-container">
+
+      <div class="row g-4 align-items-center">
+
+        <!-- :::::::::::::::::::::::::::::::::::::::
+                  Video about the company
+             ::::::::::::::::::::::::::::::::::::::: -->
+        <!-- Left: Facility Video / Image Showcase -->
+        <div class="col-lg-4">
+          <div class="about-video-box">
+            <img src="assets/img/infrastructure/hero-hospital-modern-glass.jpg?v=6.0"
+              alt="Dr Smith Healthcare Facilities Video" loading="lazy" decoding="async">
+            <div class="video-play-overlay">
+              <div class="video-play-circle" title="Play Video">
+                <i class="bi bi-play-fill"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Center: Narrative Content -->
+        <div class="col-lg-5 ps-lg-4">
+          <div class="about-pill-label mb-2">About Us</div>
+          <h3 class="about-lead-title">Building Better Healthcare Facilities</h3>
+          <p class="about-lead-text">
+            Dr. Smith Hospital Solutions is a trusted partner in hospital infrastructure and medical equipment,
+            delivering innovative, safe and sustainable solutions for healthcare institutions.
+          </p>
+          <a href="about-us/index.html" class="btn-cyan-pill">
+            Learn More <i class="bi bi-arrow-right ms-2"></i>
+          </a>
+        </div>
+
+        <!-- Right: 3 Stats Badges -->
+        <div class="col-lg-3">
+          <div class="stats-stacked-list">
+
+            <div class="stat-badge-box">
+              <div class="stat-icon-circle">
+                <i class="bi bi-building"></i>
+              </div>
+              <div>
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Projects Completed</div>
+              </div>
+            </div>
+
+            <div class="stat-badge-box">
+              <div class="stat-icon-circle">
+                <i class="bi bi-people-fill"></i>
+              </div>
+              <div>
+                <div class="stat-number">200+</div>
+                <div class="stat-label">Happy Clients</div>
+              </div>
+            </div>
+
+            <div class="stat-badge-box">
+              <div class="stat-icon-circle">
+                <i class="bi bi-stopwatch-fill"></i>
+              </div>
+              <div>
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Compliance Focused</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       6. TURNKEY INFRASTRUCTURE PILLARS (DARK BENTO SHOWCASE)
+       ============================================================ -->
+  <section class="apple-promos-section">
+    <div class="apple-promos-container">
+
+      <div class="text-center mb-5">
+        <span class="about-pill-label mb-2">Turnkey Capabilities</span>
+        <h2 class="section-dark-title">Comprehensive Hospital Infrastructure</h2>
+        <p class="section-dark-subhead">Engineered with NABH, JCI, and international hospital standards.</p>
+      </div>
+
+      <div class="apple-promo-grid">
+
+        <!-- Promo 1: Modular OT Cleanrooms -->
+        <div class="apple-promo-card">
+          <span class="apple-promo-eyebrow">Surgical Excellence</span>
+          <h3 class="apple-promo-title">Modular Operation Theatres</h3>
+          <p class="apple-promo-desc">Class 100/1000 laminar airflow diffusers, hermetic sliding doors, and digital
+            surgeon touch consoles.</p>
+          <div class="apple-promo-actions">
+            <a href="catalogue/modular-ot/index.html" class="apple-btn-pill">Explore OT Systems</a>
+            <a href="turnkey-projects/index.html" class="apple-link">View Cleanrooms <i
+                class="bi bi-chevron-right"></i></a>
+          </div>
+          <div class="apple-promo-media">
+            <img src="assets/img/infrastructure/bento-modular-ot.jpg?v=12.0" alt="Modular OT Surgical Suite"
+              loading="lazy" decoding="async">
+          </div>
+        </div>
+
+        <!-- Promo 2: Medical Gas Pipeline Systems (MGPS) -->
+        <div class="apple-promo-card">
+          <span class="apple-promo-eyebrow">Life-Support Engineering</span>
+          <h3 class="apple-promo-title">Medical Gas Pipeline (MGPS)</h3>
+          <p class="apple-promo-desc">HTM 02-01 and NFPA 99 compliant manifolds, copper distribution, digital alarm
+            valves, and terminal outlets.</p>
+          <div class="apple-promo-actions">
+            <a href="turnkey-projects/index.html" class="apple-btn-pill">MGPS Solutions</a>
+            <a href="catalogue/index.html" class="apple-link">Gas Infrastructure <i class="bi bi-chevron-right"></i></a>
+          </div>
+          <div class="apple-promo-media">
+            <img src="assets/img/infrastructure/bento-mgps-pipeline.jpg?v=12.0" alt="MGPS Medical Gas Systems"
+              loading="lazy" decoding="async">
+          </div>
+        </div>
+
+        <!-- Promo 3: Critical Care & Life Support -->
+        <div class="apple-promo-card">
+          <span class="apple-promo-eyebrow">ICU &amp; Emergency Care</span>
+          <h3 class="apple-promo-title">Critical Care Life Support</h3>
+          <p class="apple-promo-desc">Advanced multi-parameter patient monitors, turbine ICU ventilators,
+            defibrillators, and syringe infusion pumps.</p>
+          <div class="apple-promo-actions">
+            <a href="catalogue/ventilators/index.html" class="apple-btn-pill">ICU Ventilators</a>
+            <a href="catalogue/patient-monitor/index.html" class="apple-link">Patient Monitors <i
+                class="bi bi-chevron-right"></i></a>
+          </div>
+          <div class="apple-promo-media">
+            <img src="catalogue/beds/icu-bed-7-function-luxury-electric.png" alt="Advanced Multi-Parameter ICU Patient Monitor"
+              loading="lazy" decoding="async">
+          </div>
+        </div>
+
+        <!-- Promo 4: Surgical Illumination & OT Tables -->
+        <div class="apple-promo-card">
+          <span class="apple-promo-eyebrow">Precision Surgical Technology</span>
+          <h3 class="apple-promo-title">Surgical Lights &amp; Tables</h3>
+          <p class="apple-promo-desc">Shadowless dual-dome LED surgical lights and electro-hydraulic multi-positioning
+            operating tables.</p>
+          <div class="apple-promo-actions">
+            <a href="catalogue/index.html" class="apple-btn-pill">OT Tables &amp; Lights</a>
+            <a href="catalogue/index.html" class="apple-link">Surgical Range <i class="bi bi-chevron-right"></i></a>
+          </div>
+          <div class="apple-promo-media">
+            <img src="assets/img/hero-slides/1.jpg" alt="Shadowless LED Surgical Light and Multi-Positioning Operating Table" loading="lazy" decoding="async">
+          </div>
+        </div>
+
+        <!-- Promo 5: Hemodialysis & Nephrology -->
+        <div class="apple-promo-card">
+          <span class="apple-promo-eyebrow">Renal Care Technology</span>
+          <h3 class="apple-promo-title">Hemodialysis &amp; RO Plants</h3>
+          <p class="apple-promo-desc">Turnkey dialysis department setups, automated hemodialysis machines, and
+            medical-grade RO purification systems.</p>
+          <div class="apple-promo-actions">
+            <a href="catalogue/index.html" class="apple-btn-pill">Dialysis Setup</a>
+            <a href="turnkey-projects/index.html" class="apple-link">Turnkey Units <i
+                class="bi bi-chevron-right"></i></a>
+          </div>
+          <div class="apple-promo-media">
+            <img src="assets/img/infrastructure/hero-hospital-modern-glass.jpg?v=6.0" alt="Renal Care Infrastructure"
+              loading="lazy" decoding="async">
+          </div>
+        </div>
+
+        <!-- Promo 6: Diagnostic Imaging & Radiology -->
+        <div class="apple-promo-card">
+          <span class="apple-promo-eyebrow">Advanced Diagnostic Imaging</span>
+          <h3 class="apple-promo-title">C-Arm &amp; Digital Radiology</h3>
+          <p class="apple-promo-desc">High-frequency digital fluoroscopy C-Arm systems, mobile X-Ray units, ultrasound
+            consoles, and lead-lined radiation shielding.</p>
+          <div class="apple-promo-actions">
+            <a href="catalogue/index.html" class="apple-btn-pill">Radiology Systems</a>
+            <a href="turnkey-projects/index.html" class="apple-link">Imaging Suites <i
+                class="bi bi-chevron-right"></i></a>
+          </div>
+          <div class="apple-promo-media">
+            <img src="assets/img/hero-slides/2.png" alt="Diagnostic Imaging Systems" loading="lazy" decoding="async">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       7. GLOBAL QUALITY COMPLIANCE & ACCREDITATIONS MARQUEE
+       ============================================================ -->
+  <section class="apple-marquee-section">
+    <div class="apple-marquee-container">
+      <span class="apple-eyebrow text-center d-block mb-3">Global Quality Certifications</span>
+      <h3 class="text-center mb-4 text-white" style="font-size: 20px; font-weight: 700;">Certified to Highest
+        International Medical Standards</h3>
+
+      <div class="apple-marquee-wrapper">
+        <div class="apple-marquee-track">
+          <span class="apple-marquee-pill"><i class="bi bi-patch-check-fill text-primary"></i> ISO 9001:2015</span>
+          <span class="apple-marquee-pill"><i class="bi bi-shield-fill-check text-primary"></i> ISO 13485:2016 Medical
+            Devices</span>
+          <span class="apple-marquee-pill"><i class="bi bi-globe2 text-primary"></i> CE Certified (EU Norms)</span>
+          <span class="apple-marquee-pill"><i class="bi bi-award-fill text-primary"></i> US FDA Conformity</span>
+          <span class="apple-marquee-pill"><i class="bi bi-hospital text-primary"></i> NABH Architectural
+            Standards</span>
+          <span class="apple-marquee-pill"><i class="bi bi-building-check text-primary"></i> JCI Hospital
+            Conformity</span>
+          <span class="apple-marquee-pill"><i class="bi bi-tree-fill text-primary"></i> ISO 14001:2015
+            Environmental</span>
+          <span class="apple-marquee-pill"><i class="bi bi-shield-shaded text-primary"></i> OHSAS 45001:2018
+            Safety</span>
+          <span class="apple-marquee-pill"><i class="bi bi-check-circle-fill text-primary"></i> GMP &amp; BIFMA
+            Certified</span>
+
+          <!-- Duplicate for seamless infinite loop -->
+          <span class="apple-marquee-pill"><i class="bi bi-patch-check-fill text-primary"></i> ISO 9001:2015</span>
+          <span class="apple-marquee-pill"><i class="bi bi-shield-fill-check text-primary"></i> ISO 13485:2016 Medical
+            Devices</span>
+          <span class="apple-marquee-pill"><i class="bi bi-globe2 text-primary"></i> CE Certified (EU Norms)</span>
+          <span class="apple-marquee-pill"><i class="bi bi-award-fill text-primary"></i> US FDA Conformity</span>
+          <span class="apple-marquee-pill"><i class="bi bi-hospital text-primary"></i> NABH Architectural
+            Standards</span>
+          <span class="apple-marquee-pill"><i class="bi bi-building-check text-primary"></i> JCI Hospital
+            Conformity</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       8. CORPORATE HERITAGE & INFRASTRUCTURE BENTO GRID
+       ============================================================ -->
+  <section class="apple-bento-section">
+    <div class="apple-bento-container">
+
+      <div class="text-center mb-5">
+        <span class="about-pill-label mb-2">Corporate Ecosystem</span>
+        <h2 class="section-dark-title">Pioneering Indian Medical Engineering</h2>
+        <p class="section-dark-subhead">Over 6 decades of healthcare supply, turnkey institutional tenders, and
+          multinational hospital installations.</p>
+      </div>
+
+      <div class="apple-bento-grid">
+
+        <!-- Bento 1: 60+ Years Legacy -->
+        <div class="apple-bento-cell bento-hero-cell">
+          <span class="bento-badge">Corporate Heritage</span>
+          <h3 class="bento-title">60+ Years of Manufacturing Heritage</h3>
+          <p class="bento-desc">Established in 1960, Dr. Smith (Surgical Wholesale Mart Pvt. Ltd.) has evolved into one
+            of India's largest integrated medical device manufacturers and turnkey hospital setup contractors.</p>
+          <div class="bento-stats-row">
+            <div>
+              <span class="bento-stat-num">500+</span>
+              <span class="bento-stat-label">Hospitals Setup</span>
+            </div>
+            <div>
+              <span class="bento-stat-num">200+</span>
+              <span class="bento-stat-label">Institutional Clients</span>
+            </div>
+            <div>
+              <span class="bento-stat-num">50+</span>
+              <span class="bento-stat-label">Catalogue Categories</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bento 2: Government & Landmark Track Record -->
+        <div class="apple-bento-cell">
+          <span class="bento-badge">Landmark Setup</span>
+          <h3 class="bento-title">500-Bedded Hospital Track Record</h3>
+          <p class="bento-desc">Equipped a landmark 500-bedded government hospital facility inaugurated by the Home
+            Minister of India (Mr. Amit Shah).</p>
+        </div>
+
+        <!-- Bento 3: International Healthcare Projects -->
+        <div class="apple-bento-cell">
+          <span class="bento-badge">Global Health</span>
+          <h3 class="bento-title">International Government Supplier</h3>
+          <p class="bento-desc">Official supplier to international health ministries including the Ministry of Health
+            &amp; Child Care, Zimbabwe, and humanitarian relief organizations.</p>
+        </div>
+
+        <!-- Bento 4: 125+ Ventilator Deployment -->
+        <div class="apple-bento-cell">
+          <span class="bento-badge">Emergency Response</span>
+          <h3 class="bento-title">125+ ICU Ventilator Deployment</h3>
+          <p class="bento-desc">Installed 125+ advanced ICU ventilators across India for The Art of Living Organization
+            during national critical care expansion.</p>
+        </div>
+
+        <!-- Bento 5: State-of-the-Art Plant -->
+        <div class="apple-bento-cell">
+          <span class="bento-badge">High-Tech Facility</span>
+          <h3 class="bento-title">METL Jhajjar Manufacturing Plant</h3>
+          <p class="bento-desc">Fully automated CNC laser cutting, robotic welding, 9-tank pre-treatment powder coating,
+            and sterile cleanroom assembly lines.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       9. GLOBAL FACILITIES & HEAD OFFICES
+       ============================================================ -->
+  <section class="apple-leadership-section" id="offices">
+    <div class="apple-leadership-container">
+
+      <div class="text-center mb-5">
+        <span class="about-pill-label mb-2">Global Infrastructure</span>
+        <h2 class="section-dark-title">Headquarters &amp; Facilities</h2>
+        <p class="section-dark-subhead">Strategically situated corporate, manufacturing, and overseas export hubs.</p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Facility 1: New Delhi Global Head Office -->
+        <div class="col-md-4">
+          <div class="stat-badge-box d-block p-4 h-100">
+            <div class="stat-icon-circle mb-3"><i class="bi bi-buildings-fill"></i></div>
+            <h4 class="text-white font-weight-bold mb-2">Corporate Global Head Office</h4>
+            <p class="text-primary mb-2 small font-weight-bold">New Delhi, India</p>
+            <p class="text-muted small mb-2"><i class="bi bi-geo-alt me-1 text-primary"></i> Plot No. 75/02, Shri Sai
+              Complex, Kapashera Border, New Delhi &ndash; 110037</p>
+            <p class="text-muted small mb-0"><i class="bi bi-telephone me-1 text-primary"></i> Toll-Free: 1800 891 7466
+            </p>
+          </div>
+        </div>
+
+        <!-- Facility 2: Jhajjar Manufacturing Plant -->
+        <div class="col-md-4">
+          <div class="stat-badge-box d-block p-4 h-100">
+            <div class="stat-icon-circle mb-3"><i class="bi bi-gear-wide-connected"></i></div>
+            <h4 class="text-white font-weight-bold mb-2">Primary Manufacturing Plant</h4>
+            <p class="text-primary mb-2 small font-weight-bold">METL Jhajjar, Haryana</p>
+            <p class="text-muted small mb-2"><i class="bi bi-geo-alt me-1 text-primary"></i> Model Economic Township
+              (METL), Jhajjar, Haryana &ndash; India</p>
+            <p class="text-muted small mb-0"><i class="bi bi-shield-check me-1 text-primary"></i> ISO 13485 &amp; CE
+              Certified Medical Production</p>
+          </div>
+        </div>
+
+        <!-- Facility 3: Sharjah UAE Overseas Office -->
+        <div class="col-md-4">
+          <div class="stat-badge-box d-block p-4 h-100">
+            <div class="stat-icon-circle mb-3"><i class="bi bi-globe2"></i></div>
+            <h4 class="text-white font-weight-bold mb-2">Overseas International Office</h4>
+            <p class="text-primary mb-2 small font-weight-bold">Sharjah, United Arab Emirates</p>
+            <p class="text-muted small mb-2"><i class="bi bi-geo-alt me-1 text-primary"></i> Q4-223, SAIF Zone, Sharjah,
+              United Arab Emirates</p>
+            <p class="text-muted small mb-0"><i class="bi bi-envelope me-1 text-primary"></i> info@drsmith.co.in</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       10. EXECUTIVE LEADERSHIP
+       ============================================================ -->
+  <section class="apple-leadership-section">
+    <div class="apple-leadership-container">
+
+      <div class="text-center mb-5">
+        <span class="about-pill-label mb-2">Corporate Governance</span>
+        <h2 class="section-dark-title">Executive Leadership</h2>
+        <p class="section-dark-subhead">Guiding global healthcare engineering with clinical insight, ethical values, and
+          operational discipline.</p>
+      </div>
+
+      <div class="apple-team-grid">
+
+        <!-- Executive 1: Kamal Kant Mahajan -->
+        <div class="apple-team-card">
+          <div class="apple-team-avatar">KM</div>
+          <div class="apple-team-info">
+            <h4>Kamal Kant Mahajan</h4>
+            <span class="apple-team-role">Chairman</span>
+            <p class="apple-team-bio">Over 35 years of healthcare industry experience leading business growth,
+              nationwide distribution, and international medical supply.</p>
+          </div>
+        </div>
+
+        <!-- Executive 2: Danjali Mahajan -->
+        <div class="apple-team-card">
+          <div class="apple-team-avatar">DM</div>
+          <div class="apple-team-info">
+            <h4>Danjali Mahajan</h4>
+            <span class="apple-team-role">CEO &amp; Finance / Export Head</span>
+            <p class="apple-team-bio">Expert in project finance, financial planning, business process improvement, and
+              global export compliance.</p>
+          </div>
+        </div>
+
+        <!-- Executive 3: Naman Mahajan -->
+        <div class="apple-team-card">
+          <div class="apple-team-avatar">NM</div>
+          <div class="apple-team-info">
+            <h4>Naman Mahajan</h4>
+            <span class="apple-team-role">Chief Marketing Officer</span>
+            <p class="apple-team-bio">Spearheading digital healthcare marketing, product innovation, institutional
+              client relationships, and international trade.</p>
+          </div>
+        </div>
+
+        <!-- Executive 4: Ritika Mahajan -->
+        <div class="apple-team-card">
+          <div class="apple-team-avatar">RM</div>
+          <div class="apple-team-info">
+            <h4>Ritika Mahajan</h4>
+            <span class="apple-team-role">Head Purchase &amp; Branch Ops</span>
+            <p class="apple-team-bio">Directing strategic raw material procurement and seamless nationwide branch
+              logistics with high quality standards.</p>
+          </div>
+        </div>
+
+        <!-- Executive 5: Ravi Kumar -->
+        <div class="apple-team-card">
+          <div class="apple-team-avatar">RK</div>
+          <div class="apple-team-info">
+            <h4>Ravi Kumar</h4>
+            <span class="apple-team-role">Head Sales &amp; Specialised Products</span>
+            <p class="apple-team-bio">Directing critical care equipment deployments, institutional turnkey tenders, and
+              hospital client satisfaction.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       11. FREQUENTLY ASKED QUESTIONS (ACCORDION)
+       ============================================================ -->
+  <section class="apple-faq-section" id="faq">
+    <div class="apple-faq-container">
+
+      <div class="text-center mb-5">
+        <span class="about-pill-label mb-2">Assistance &amp; FAQs</span>
+        <h2 class="section-dark-title">Frequently Asked Questions</h2>
+        <p class="section-dark-subhead">Everything you need to know about our turnkey hospital capabilities, modular OT,
+          and global procurement.</p>
+      </div>
+
+      <div class="apple-faq-list">
+
+        <!-- FAQ Item 1 -->
+        <div class="apple-faq-item">
+          <button class="apple-faq-question" onclick="toggleAppleFaq(this);">
+            <span>What turnkey hospital solutions does Dr. Smith provide?</span>
+            <i class="bi bi-plus-lg apple-faq-icon"></i>
+          </button>
+          <div class="apple-faq-answer">
+            <p>Dr. Smith is an end-to-end partner for complete hospital construction and infrastructure: NABH/JCI
+              compliant hospital architectural design, civil construction, MEP services, prefabricated modular operation
+              theatres (OT), medical gas pipeline systems (MGPS), ICU setup, and full equipment outfitting.</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="apple-faq-item">
+          <button class="apple-faq-question" onclick="toggleAppleFaq(this);">
+            <span>What international quality certifications govern your facilities?</span>
+            <i class="bi bi-plus-lg apple-faq-icon"></i>
+          </button>
+          <div class="apple-faq-answer">
+            <p>Our company is certified under ISO 9001:2015, ISO 13485:2016 (Medical Devices Quality Management System),
+              ISO 14001:2015, OHSAS 45001:2018, BIFMA, GMP, CE, and US FDA conformity benchmarks.</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="apple-faq-item">
+          <button class="apple-faq-question" onclick="toggleAppleFaq(this);">
+            <span>Can you outline your track record in major government and private hospital projects?</span>
+            <i class="bi bi-plus-lg apple-faq-icon"></i>
+          </button>
+          <div class="apple-faq-answer">
+            <p>Dr. Smith equipped a landmark 500-bedded government hospital facility inaugurated by the Home Minister of
+              India (Mr. Amit Shah), installed 125+ ICU ventilators for The Art of Living Organization, and supplies
+              government health ministries internationally, including the Ministry of Health &amp; Child Care, Zimbabwe.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="apple-faq-item">
+          <button class="apple-faq-question" onclick="toggleAppleFaq(this);">
+            <span>Where are your physical headquarters and manufacturing plants situated?</span>
+            <i class="bi bi-plus-lg apple-faq-icon"></i>
+          </button>
+          <div class="apple-faq-answer">
+            <p>Our Corporate Global Head Office is located at Plot No. 75/02, Shri Sai Complex, Ground Floor, Kapashera
+              Border, New Delhi &ndash; 110037, India. Our primary manufacturing plant is at METL, Jhajjar, Haryana. Our
+              Overseas International Head Office is at Q4-223, SAIF Zone, Sharjah, United Arab Emirates.</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 5 -->
+        <div class="apple-faq-item">
+          <button class="apple-faq-question" onclick="toggleAppleFaq(this);">
+            <span>Where can I explore the complete medical equipment and furniture catalogue?</span>
+            <i class="bi bi-plus-lg apple-faq-icon"></i>
+          </button>
+          <div class="apple-faq-answer">
+            <p>You can access our full categorized catalogue with over 50 product categories, ICU bed models, OT tables,
+              surgical lights, and diagnostic systems by clicking <a href="catalogue/index.html"
+                class="apple-link">Explore Catalogue</a> or navigating to specific department lines from the top menu.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       12. BOTTOM CTA BANNER (LET'S BUILD A HEALTHIER TOMORROW)
+       ============================================================ -->
+  <section class="cta-banner-section">
+    <div class="cta-banner-container">
+      <div class="cta-banner-glass">
+        <div class="d-flex align-items-center gap-3">
+          <div class="cta-icon-box">
+            <i class="fa-solid fa-handshake"></i>
+          </div>
+          <div>
+            <h3 class="cta-glass-title mb-1">Let's Build a Healthier Tomorrow</h3>
+            <p class="cta-glass-desc mb-0">Your trusted partner in hospital infrastructure and medical solutions.</p>
+          </div>
+        </div>
+        <a href="contact-form/index.html" class="btn-cyan-pill">
+          Get In Touch <i class="bi bi-arrow-right ms-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  </div><!-- /.home-mobile-view-only -->
+
+  <!-- ============================================================
+       13. APPLE GLOBAL DIRECTORY FOOTER
+       ============================================================ -->
+  <footer class="apple-globalfooter">
+    <div class="apple-footer-inner">
+
+      <!-- Footer Brand Header & Fast Back-To-Top -->
+      <div class="apple-footer-brand-header">
+        <div class="apple-footer-brand-left">
+          <img src="assets/img/logo.png?v=11.0" alt="Dr. Smith Emblem Logo" class="apple-footer-brand-logo" width="32"
+            height="32" decoding="async" loading="lazy">
+          <div>
+            <div class="apple-footer-brand-title">Dr. Smith</div>
+            <span class="apple-footer-brand-subtitle">HOSPITAL SOLUTIONS</span>
+          </div>
+        </div>
+        <a href="#top" class="apple-footer-backtotop-btn"
+          onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;" aria-label="Scroll back to top">
+          <span>Top</span> <i class="bi bi-chevron-up"></i>
+        </a>
+      </div>
+
+      <!-- Notes / Footnotes -->
+      <div class="apple-footer-notes">
+        <ol>
+          <li>Medical equipment specifications, turnkey timelines, and compliance standards (ISO 9001:2015, ISO
+            13485:2016, CE, FDA) depend on specific project scopes and customized clinical configurations.</li>
+          <li>Turnkey hospital infrastructure engineering timelines depend on architectural blueprints, local regulatory
+            clearances, and civil site readiness.</li>
+          <li>Principal Global Head Office located at Kapashera Border, New Delhi; Manufacturing Plant at METL, Jhajjar,
+            Haryana; Overseas Head Office at SAIF Zone, Sharjah, UAE.</li>
+        </ol>
+      </div>
+
+      <!-- Directory Columns (Mobile Collapsible Accordions) -->
+      <div class="apple-footer-directory">
+
+        <!-- Col 1: Turnkey Solutions (Active by default on mobile) -->
+        <div class="apple-footer-col active">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="true">
+            <h4 class="apple-footer-col-title">Turnkey Solutions</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="turnkey-projects/index.html">500-Bedded Hospital Setup</a></li>
+            <li><a href="catalogue/modular-ot/index.html">Modular OT Construction</a></li>
+            <li><a href="turnkey-projects/index.html">Medical Gas Pipeline (MGPS)</a></li>
+            <li><a href="turnkey-projects/index.html">Hospital Architecture &amp; MEP</a></li>
+            <li><a href="turnkey-projects/index.html">Government &amp; Global Tenders</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 2: Group Ecosystem -->
+        <div class="apple-footer-col">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Group Ecosystem</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="about-us/index.html">Dr. Smith Healthcare</a></li>
+            <li><a href="catalogue/index.html">Surgihub Surgical Devices</a></li>
+            <li><a href="catalogue/index.html">Surgical Mall of India (SMPL)</a></li>
+            <li><a href="catalogue/index.html">MediAid Patient Care</a></li>
+            <li><a href="catalogue/index.html">Orbit Mahajan Diagnostics</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Product Catalogue -->
+        <div class="apple-footer-col">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Product Catalogue</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="catalogue/beds/index.html">Hospital &amp; ICU Beds</a></li>
+            <li><a href="catalogue/modular-ot/index.html">Modular OT Suites</a></li>
+            <li><a href="catalogue/patient-monitor/index.html">Critical Care &amp; Monitors</a></li>
+            <li><a href="catalogue/ventilators/index.html">ICU Ventilators</a></li>
+            <li><a href="catalogue/index.html">Full 50+ Categories</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Global Directory -->
+        <div class="apple-footer-col">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Global Presence</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="contact-form/index.html">New Delhi Head Office (India)</a></li>
+            <li><a href="contact-form/index.html">Jhajjar Manufacturing Plant</a></li>
+            <li><a href="contact-form/index.html">Sharjah Overseas Office (UAE)</a></li>
+            <li><a href="contact-form/index.html">Kenya &amp; Nigeria Desks</a></li>
+            <li><a href="contact-form/index.html">Patna, Kolkata, Varanasi Marts</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Compliance & Values -->
+        <div class="apple-footer-col">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Corporate &amp; Quality</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="about-us/index.html">About 60+ Years Heritage</a></li>
+            <li><a href="mission-values/index.html">Mission &amp; Values</a></li>
+            <li><a href="about-us/index.html">Executive Leadership</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Legal, Direct Connect & Country Positioned in Correct Order -->
+      <div class="apple-footer-bottom">
+        <div class="apple-footer-top-row">
+          <div class="apple-footer-country">
+            <a href="contact-form/index.html" class="apple-footer-country-badge" title="Region &amp; Language">
+              <i class="bi bi-globe me-1"></i> India (English)
+            </a>
+          </div>
+          <div class="apple-footer-quicklinks">
+            <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." target="_blank" rel="noopener noreferrer"
+              class="apple-footer-badge-link" title="Direct WhatsApp Assistance (+91 95990 81020)">
+              <i class="fa-brands fa-whatsapp text-success me-1"></i> WhatsApp Desk
+            </a>
+          </div>
+        </div>
+
+        <div class="apple-footer-divider"></div>
+
+        <div class="apple-footer-meta-row">
+          <div class="apple-footer-legal-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <span class="legal-dot">•</span>
+            <a href="terms.html">Terms of Use</a>
+            <span class="legal-dot">•</span>
+            <a href="contact-form/index.html">Sales Policy</a>
+            <span class="legal-dot">•</span>
+            <a href="contact-form/index.html">Legal</a>
+            <span class="legal-dot">•</span>
+            <a href="catalogue/index.html">Site Map</a>
+          </div>
+          <div class="apple-footer-copyright">
+            Copyright &copy; 2026 Dr. Smith Healthcare Solutions (Surgical Wholesale Mart Pvt. Ltd.). All rights
+            reserved. An ISO 9001:2015, ISO 13485:2016, CE &amp; FDA Certified Company.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       14. QUICK CONSULTATION & QUOTE MODAL
+       ============================================================ -->
+  <div class="apple-drawer-overlay" id="apple-drawer-overlay" onclick="if(event.target===this) closeAppleDrawer();">
+    <div class="apple-drawer-content">
+      <button type="button" class="apple-drawer-close" onclick="closeAppleDrawer();" aria-label="Close">
+        <i class="bi bi-x-lg"></i>
+      </button>
+
+      <div style="text-align: center; margin-bottom: 24px;">
+        <span class="apple-shelf-badge">Dr. Smith Turnkey &amp; Procurement Desk</span>
+        <h3 style="font-size: 24px; font-weight: 700; margin-top: 8px;">Request Project Consultation</h3>
+        <p style="font-size: 14px; color: var(--apple-text-secondary); margin: 0;">Speak directly with our healthcare
+          architects &amp; hospital engineering experts.</p>
+      </div>
+
+      <form class="apple-drawer-form" onsubmit="handleAppleQuoteSubmit(event);">
+        <!-- Quick Category Chips -->
+        <div class="apple-chips-container mb-3">
+          <div class="apple-chips-header mb-2">
+            <span style="font-size: 12.5px;">Requirement Category:</span>
+          </div>
+          <div class="apple-category-chips" id="drawerScopeChips">
+            <button type="button" class="apple-category-chip active" data-scope="Turnkey Hospital Setup" onclick="setDrawerScope(this, 'Turnkey Hospital Setup');"><i class="bi bi-hospital"></i> Turnkey Setup</button>
+            <button type="button" class="apple-category-chip" data-scope="Modular Operation Theatre" onclick="setDrawerScope(this, 'Modular Operation Theatre');"><i class="bi bi-brightness-high"></i> Modular OT</button>
+            <button type="button" class="apple-category-chip" data-scope="Medical Gas Pipeline" onclick="setDrawerScope(this, 'Medical Gas Pipeline');"><i class="bi bi-diagram-3"></i> MGPS Pipeline</button>
+            <button type="button" class="apple-category-chip" data-scope="ICU & Hospital Beds" onclick="setDrawerScope(this, 'ICU & Hospital Beds');"><i class="bi bi-hospital"></i> ICU Beds</button>
+            <button type="button" class="apple-category-chip" data-scope="Critical Care Equipment" onclick="setDrawerScope(this, 'Critical Care Equipment');"><i class="bi bi-heart-pulse"></i> Critical Care</button>
+          </div>
+          <input type="hidden" id="drawer-product-name" value="Turnkey Hospital Setup">
+        </div>
+
+        <div class="row g-2">
+          <div class="col-md-6 apple-form-group">
+            <label class="apple-form-label">Your Full Name <span class="req">*</span></label>
+            <div class="apple-input-icon-box">
+              <i class="bi bi-person-fill apple-input-icon"></i>
+              <input type="text" class="apple-glass-input" placeholder="Dr. / Mr. / Ms." required autocomplete="name">
+            </div>
+          </div>
+          <div class="col-md-6 apple-form-group">
+            <label class="apple-form-label">Hospital / Institution <span class="req">*</span></label>
+            <div class="apple-input-icon-box">
+              <i class="bi bi-building-fill apple-input-icon"></i>
+              <input type="text" class="apple-glass-input" placeholder="Hospital / Organization Name" required autocomplete="organization">
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-2">
+          <div class="col-md-6 apple-form-group">
+            <label class="apple-form-label">Official Email <span class="req">*</span></label>
+            <div class="apple-input-icon-box">
+              <i class="bi bi-envelope-fill apple-input-icon"></i>
+              <input type="email" class="apple-glass-input" placeholder="name@hospital.com" required autocomplete="email">
+            </div>
+          </div>
+          <div class="col-md-6 apple-form-group">
+            <label class="apple-form-label">Phone / WhatsApp <span class="req">*</span></label>
+            <div class="apple-input-icon-box">
+              <i class="bi bi-telephone-fill apple-input-icon"></i>
+              <input type="tel" class="apple-glass-input" placeholder="+91 99999 99999" required autocomplete="tel">
+            </div>
+          </div>
+        </div>
+
+        <div class="apple-form-group">
+          <label class="apple-form-label">Project Scope &amp; Requirements</label>
+          <div class="apple-input-icon-box textarea-box">
+            <i class="bi bi-chat-left-text-fill apple-input-icon"></i>
+            <textarea class="apple-glass-input apple-glass-textarea" rows="3" placeholder="Specify turnkey bed capacity, modular OT requirement, MGPS pipeline, or equipment procurement details..."></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="apple-form-submit-btn w-100 mt-2">
+          <span>Submit Consultation Request</span> <i class="bi bi-arrow-right"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Floating Scroll-To-Top Button -->
+  <a href="#top" id="scroll-top" class="scroll-top" aria-label="Scroll back to top" title="Back to top">
+    <i class="bi bi-chevron-up"></i>
+  </a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Interactive Scripts -->
+  <script src="assets/js/home.js?v=1.0"></script>
+
+  <script src="assets/js/main.js?v=94.0"></script>
+
+  <script src="assets/js/global-search.js?v=44.0"></script>
+</body>
+
+</html>
