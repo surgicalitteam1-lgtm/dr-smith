@@ -2909,3 +2909,25 @@ body.swm-exact-ui {
     transition: none;
   }
 }
+
+.swm-navbar {
+  border-bottom: 0;
+}
+
+.swm-hero-section {
+  background-color: #020917;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.swm-hero-section::before {
+  background-image:
+    linear-gradient(180deg, #020917 0%, rgba(2, 9, 23, 0) 34%),
+    linear-gradient(90deg, #020917 0%, rgba(2, 9, 23, 0.97) 27%, rgba(2, 9, 23, 0.84) 40%, rgba(2, 9, 23, 0.26) 65%, rgba(2, 9, 23, 0.06) 100%);
+  background-position: center;
+  background-size: cover;
+}
+
+.swm-hero-media {
+  background-color: #020917;
+}
