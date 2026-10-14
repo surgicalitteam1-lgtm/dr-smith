@@ -1709,3 +1709,373 @@ body.swm-exact-ui {
     justify-content: center;
   }
 }
+
+/* Homepage visual composition from the desktop reference */
+@media (min-width: 992px) {
+  .swm-navbar {
+    min-height: 74px;
+    padding: 4px 0 6px;
+    background: linear-gradient(105deg, #041a30 0%, #03152a 55%, #041d37 100%);
+    border-bottom: 1px solid rgba(0, 162, 255, 0.5);
+  }
+
+  .swm-navbar > .swm-topbar {
+    display: block !important;
+    position: absolute;
+    top: 4px;
+    right: max(24px, calc((100vw - 1440px) / 2 + 32px));
+    z-index: 2;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    color: #d7e6f1;
+    font-size: 0.62rem;
+    line-height: 1;
+  }
+
+  .swm-navbar > .swm-topbar .topbar-divider {
+    margin: 0 9px;
+  }
+
+  .swm-navbar .container-fluid > .d-flex {
+    min-height: 62px;
+    padding-top: 10px;
+    gap: 16px;
+  }
+
+  .swm-brand {
+    gap: 8px;
+  }
+
+  .swm-brand-logo-wrap {
+    width: 52px;
+    height: 52px;
+  }
+
+  .swm-brand-logo {
+    max-width: 52px;
+    max-height: 52px;
+  }
+
+  .swm-wholesale-wordmark {
+    min-width: auto;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .swm-wholesale-name {
+    font-size: 1.15rem;
+    letter-spacing: -0.5px;
+    line-height: 1;
+  }
+
+  .swm-wholesale-highlight {
+    margin-top: 2px;
+    padding: 1px 4px;
+    background: #d62431;
+    color: #ffffff;
+    font-size: 0.88rem;
+    font-weight: 800;
+    letter-spacing: -0.2px;
+    line-height: 1.05;
+    white-space: nowrap;
+  }
+
+  .swm-wholesale-subtitle {
+    align-self: center;
+    margin-top: 2px;
+    color: #e4edf5;
+    font-size: 0.5rem;
+    letter-spacing: 1.2px;
+  }
+
+  .swm-nav-links {
+    gap: clamp(9px, 1.15vw, 17px);
+  }
+
+  .swm-nav-link {
+    font-size: clamp(0.68rem, 0.78vw, 0.82rem);
+  }
+
+  .swm-header-actions {
+    gap: 8px !important;
+  }
+
+  .swm-header-actions .btn-swm-orange,
+  .swm-header-actions .btn-swm-green {
+    padding: 10px 17px;
+    font-size: 0.76rem;
+  }
+
+  .swm-header-actions .swm-header-icon {
+    display: none !important;
+  }
+
+  .swm-hero-section {
+    height: 366px;
+    min-height: 366px;
+    padding: 0;
+  }
+
+  .swm-hero-section::before {
+    background-image:
+      linear-gradient(90deg, rgba(2, 22, 42, 0.99) 0%, rgba(2, 28, 52, 0.96) 27%, rgba(2, 27, 49, 0.5) 42%, rgba(2, 15, 30, 0.08) 72%),
+      linear-gradient(0deg, rgba(4, 31, 57, 0.28), transparent 42%),
+      url('../img/ui-design/hero_ot_room.jpg');
+    background-position: center, center, center right;
+    background-size: cover;
+  }
+
+  .swm-hero-section::after {
+    display: none;
+  }
+
+  .swm-hero-photo-credit {
+    display: none;
+  }
+
+  .swm-hero-section > .container-fluid {
+    width: 100%;
+  }
+
+  .swm-hero-section .row {
+    min-height: 366px;
+    align-items: center;
+  }
+
+  .swm-hero-content {
+    max-width: 630px;
+  }
+
+  .swm-hero-eyebrow {
+    margin-bottom: 8px;
+    font-size: 0.7rem;
+    letter-spacing: 2.2px;
+  }
+
+  .swm-hero-title {
+    margin-bottom: 6px;
+    font-size: clamp(2.3rem, 3.15vw, 2.9rem);
+    line-height: 0.95;
+    letter-spacing: -1px;
+  }
+
+  .swm-hero-title .title-accent {
+    color: #00b9ef;
+    text-shadow: 0 0 20px rgba(0, 186, 239, 0.18);
+  }
+
+  .swm-hero-subtitle {
+    margin: 0;
+    font-size: 0.97rem;
+    line-height: 1.3;
+  }
+
+  .swm-hero-slogan-orange {
+    margin: 2px 0 12px;
+    font-size: 1.03rem;
+  }
+
+  .swm-hero-badges-row {
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  .swm-hero-badge-pill {
+    flex: 0 0 auto;
+    gap: 6px;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    font-size: 0.59rem;
+    line-height: 1.15;
+  }
+
+  .swm-hero-badge-pill:hover {
+    background: transparent;
+    transform: none;
+  }
+
+  .swm-badge-icon-circle {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    font-size: 0.86rem;
+  }
+
+  .swm-hero-cta-group {
+    gap: 12px;
+  }
+
+  .swm-hero-cta-group > .btn-swm-orange {
+    min-width: 200px;
+    justify-content: center;
+    padding: 11px 22px;
+    font-size: 0.84rem;
+  }
+
+  .swm-hero-cta-group .btn-swm-video {
+    padding: 4px 17px 4px 6px;
+    border: 1px solid rgba(0, 178, 239, 0.62);
+    border-radius: 40px;
+    font-size: 0.82rem;
+  }
+
+  .swm-hero-cta-group .btn-swm-video .play-circle {
+    width: 32px;
+    height: 32px;
+    font-size: 0.78rem;
+  }
+
+  .swm-category-section {
+    padding: 8px 0 11px;
+    background: linear-gradient(180deg, #062543 0%, #082d50 100%);
+  }
+
+  .swm-category-section .container-fluid {
+    padding-right: 2.65% !important;
+    padding-left: 2.65% !important;
+  }
+
+  .swm-section-header {
+    margin-bottom: 6px;
+  }
+
+  .swm-section-title {
+    gap: 10px;
+    font-size: 1.3rem;
+  }
+
+  .swm-section-title .orange-dash {
+    font-size: 1.5rem;
+  }
+
+  .swm-view-all-link {
+    font-size: 0.76rem;
+  }
+
+  .swm-cards-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 9px;
+  }
+
+  .swm-cat-card {
+    display: block;
+    aspect-ratio: 1.44;
+    padding: 0;
+    border: 1px solid rgba(116, 194, 239, 0.75);
+    border-radius: 9px;
+    background: #c8e6f7;
+    box-shadow: 0 2px 14px rgba(46, 164, 238, 0.35);
+  }
+
+  .swm-cat-card::before,
+  .swm-cat-footer {
+    display: none;
+  }
+
+  .swm-cat-img-box {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 8px;
+    background: transparent;
+  }
+
+  .swm-cat-img-box img {
+    display: block;
+    object-fit: fill;
+  }
+
+  .swm-cat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(46, 164, 238, 0.55);
+  }
+
+  .swm-why-section {
+    height: 185px;
+    padding: 0;
+    background: #06213d url('../img/ui-design/why_choose_timeline.jpg') center top / 100% auto no-repeat;
+  }
+
+  .swm-timeline-container {
+    height: 185px;
+    max-width: none;
+    opacity: 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1279.98px) {
+  .swm-navbar .container-fluid {
+    padding-right: 14px !important;
+    padding-left: 14px !important;
+  }
+
+  .swm-navbar .container-fluid > .d-flex {
+    gap: 9px;
+  }
+
+  .swm-brand {
+    gap: 5px;
+  }
+
+  .swm-brand-logo-wrap {
+    width: 42px;
+    height: 42px;
+  }
+
+  .swm-brand-logo {
+    max-width: 42px;
+    max-height: 42px;
+  }
+
+  .swm-wholesale-name {
+    font-size: 0.95rem;
+  }
+
+  .swm-wholesale-highlight {
+    font-size: 0.73rem;
+  }
+
+  .swm-nav-links {
+    gap: 8px;
+  }
+
+  .swm-nav-link {
+    font-size: 0.64rem;
+  }
+
+  .swm-header-actions {
+    gap: 5px !important;
+  }
+
+  .swm-header-actions .btn-swm-orange,
+  .swm-header-actions .btn-swm-green {
+    padding: 8px 10px;
+    font-size: 0.67rem;
+  }
+
+  .swm-hero-section,
+  .swm-hero-section .row {
+    min-height: 350px;
+    height: auto;
+  }
+
+  .swm-hero-title {
+    font-size: 2.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .swm-hero-section::after {
+    animation: none;
+  }
+}

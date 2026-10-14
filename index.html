@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <link href="assets/css/apple-theme.css?v=106.0" rel="stylesheet">
-  <link href="assets/css/swm-exact-ui.css?v=2.3" rel="stylesheet">
+  <link href="assets/css/swm-exact-ui.css?v=2.4" rel="stylesheet">
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 </head>
@@ -45,46 +45,34 @@
   <!-- ============================================================
        1. TOP UTILITY BAR (DESKTOP & TABLET LANDSCAPE)
        ============================================================ -->
-  <aside class="swm-topbar d-none d-lg-block" aria-label="Quick Communication Bar">
-    <div class="container-fluid px-xl-5 px-lg-4">
-      <div class="d-flex align-items-center justify-content-between">
-        <div class="d-flex align-items-center gap-3">
-          <span class="text-white-50"><i class="bi bi-shield-check text-info me-1"></i> ISO 13485:2016 Certified &bull; CE &bull; NABH Healthcare Infrastructure</span>
-        </div>
-        <div class="d-flex align-items-center">
-          <a href="tel:+919599081020" title="Call Official Desk"><i class="fa-solid fa-phone text-info"></i> +91 95990 81020</a>
-          <span class="topbar-divider">|</span>
-          <a href="mailto:info@drsmith.co.in" title="Email Inquiries"><i class="fa-solid fa-envelope text-info"></i> info@drsmith.co.in</a>
-          <span class="topbar-divider">|</span>
-          <a href="about-us/index.html#careers" title="Careers at Dr. Smith"><i class="fa-solid fa-user-tie"></i> Career</a>
-          <span class="topbar-divider">|</span>
-          <a href="contact-form/index.html" title="Customer Support"><i class="fa-solid fa-headset"></i> Support</a>
-        </div>
-      </div>
-    </div>
-  </aside>
-
   <!-- ============================================================
        2. PRIMARY NAVIGATION HEADER (RESPONSIVE ALL DEVICES)
        ============================================================ -->
   <nav class="swm-navbar" id="swmMainNavbar" aria-label="Main Navigation">
+    <aside class="swm-topbar d-none d-lg-block" aria-label="Quick Communication Bar">
+      <div class="d-flex align-items-center">
+        <a href="tel:+919599081020" title="Call Official Desk"><i class="fa-solid fa-phone text-info"></i> +91 95990 81020</a>
+        <span class="topbar-divider">|</span>
+        <a href="mailto:info@drsmith.co.in" title="Email Inquiries"><i class="fa-solid fa-envelope text-info"></i> info@drsmith.co.in</a>
+        <span class="topbar-divider">|</span>
+        <a href="about-us/index.html#careers" title="Careers at Dr. Smith"><i class="fa-solid fa-user-tie text-info"></i> Career</a>
+        <span class="topbar-divider">|</span>
+        <a href="contact-form/index.html" title="Customer Support"><i class="fa-solid fa-headset text-info"></i> Support</a>
+      </div>
+    </aside>
     <div class="container-fluid px-xl-5 px-lg-4 px-3">
       <div class="d-flex align-items-center justify-content-between">
 
-        <!-- Brand Identity: Dr. Smith / Surgical Wholesale Mart -->
+        <!-- Brand Identity -->
         <a href="index.html" class="swm-brand" aria-label="Dr. Smith Healthcare Solutions and Surgical Wholesale Mart">
           <span class="swm-brand-primary">
             <span class="swm-brand-logo-wrap">
-              <img src="assets/img/logo.png?v=11.0" alt="" class="swm-brand-logo" width="34" height="34" loading="eager">
-            </span>
-            <span class="swm-brand-text">
-              <span class="swm-brand-title">Dr. Smith</span>
-              <span class="swm-brand-subtitle">HEALTHCARE SOLUTIONS</span>
+              <img src="assets/img/logo.png?v=11.0" alt="Dr. Smith Healthcare Solutions" class="swm-brand-logo" width="52" height="52" loading="eager">
             </span>
           </span>
-          <span class="swm-brand-divider" aria-hidden="true"></span>
           <span class="swm-wholesale-wordmark" aria-label="Surgical Wholesale Mart Private Limited">
-            <span class="swm-wholesale-name">SURGICAL<br><strong>WHOLESALE MART</strong></span>
+            <span class="swm-wholesale-name">SURGICAL</span>
+            <strong class="swm-wholesale-highlight">WHOLESALE MART</strong>
             <span class="swm-wholesale-subtitle">PVT. LTD.</span>
           </span>
         </a>
@@ -117,25 +105,25 @@
         <!-- Right Action Buttons -->
         <div class="swm-header-actions d-flex align-items-center gap-2">
           <!-- Explore Catalogue (Orange Pill) -->
-          <a href="catalogue/index.html" class="btn-swm-orange d-none d-sm-inline-flex" title="Explore Master Product Catalogue">
+          <a href="catalogue/index.html" class="btn-swm-orange" title="Explore Master Product Catalogue">
             <i class="fa-solid fa-book-open"></i>
             <span>Explore Catalogue</span>
             <i class="fa-solid fa-arrow-right"></i>
           </a>
 
           <!-- WhatsApp Us (Green Pill) -->
-          <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." target="_blank" rel="noopener noreferrer" class="btn-swm-green d-none d-md-inline-flex" title="Chat on WhatsApp">
+          <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." target="_blank" rel="noopener noreferrer" class="btn-swm-green" title="Chat on WhatsApp">
             <i class="fa-brands fa-whatsapp fs-5"></i>
             <span>WhatsApp Us</span>
             <i class="fa-solid fa-arrow-right"></i>
           </a>
 
           <!-- Search trigger -->
-          <button type="button" class="swm-header-icon" onclick="openGlobalSearch()" aria-label="Search the catalogue" title="Instant Search">
+          <button type="button" class="swm-header-icon d-none d-xl-inline-flex" onclick="openGlobalSearch()" aria-label="Search the catalogue" title="Instant Search">
             <i class="bi bi-search"></i>
           </button>
 
-          <a href="contact-form/index.html" class="swm-header-icon d-none d-sm-flex" aria-label="Contact Dr. Smith" title="Contact Dr. Smith">
+          <a href="contact-form/index.html" class="swm-header-icon d-none d-xl-inline-flex" aria-label="Contact Dr. Smith" title="Contact Dr. Smith">
             <i class="bi bi-person"></i>
           </a>
 
@@ -242,7 +230,7 @@
             <!-- Main Headline -->
             <h1 class="swm-hero-title">
               <span class="title-bar">|</span> India's First<br>
-              <span class="title-accent">Surgical Wholesale Mart</span>
+              <span class="title-accent">Surgical<br>Wholesale Mart</span>
             </h1>
 
             <!-- Subtitle -->
@@ -331,7 +319,7 @@
         <!-- Card 1: Patient Monitoring, Ventilators & Anesthesia -->
         <a href="catalogue/anesthesia-workstation/index.html" class="swm-cat-card" title="Patient Monitoring, Ventilators &amp; Anesthesia">
           <div class="swm-cat-img-box">
-            <img src="assets/img/ui-design/cat_1_monitoring.png" alt="Patient Monitoring, Ventilators and Anesthesia Systems" loading="lazy">
+            <img src="assets/img/ui-design/cat_1_monitoring.png" alt="Patient Monitoring, Ventilators and Anesthesia Systems" width="158" height="97" loading="lazy">
           </div>
           <div class="swm-cat-footer">
             <span class="swm-cat-name">Patient Monitoring, Ventilators &amp; Anesthesia</span>
@@ -342,7 +330,7 @@
         <!-- Card 2: Operation Theatre Equipment -->
         <a href="catalogue/modular-ot/index.html" class="swm-cat-card" title="Operation Theatre Equipment">
           <div class="swm-cat-img-box">
-            <img src="assets/img/ui-design/cat_2_ot_equipment.png" alt="Operation Theatre Equipment, Lights and Tables" loading="lazy">
+            <img src="assets/img/ui-design/cat_2_ot_equipment.png" alt="Operation Theatre Equipment, Lights and Tables" width="158" height="97" loading="lazy">
           </div>
           <div class="swm-cat-footer">
             <span class="swm-cat-name">Operation Theatre Equipment</span>
@@ -353,7 +341,7 @@
         <!-- Card 3: Infant Care & Neonatal Equipment -->
         <a href="catalogue/baby-warmer/index.html" class="swm-cat-card" title="Infant Care &amp; Neonatal Equipment">
           <div class="swm-cat-img-box">
-            <img src="assets/img/ui-design/cat_3_infant_care.png" alt="Infant Care and Neonatal Equipment" loading="lazy">
+            <img src="assets/img/ui-design/cat_3_infant_care.png" alt="Infant Care and Neonatal Equipment" width="158" height="97" loading="lazy">
           </div>
           <div class="swm-cat-footer">
             <span class="swm-cat-name">Infant Care &amp; Neonatal Equipment</span>
@@ -364,7 +352,7 @@
         <!-- Card 4: Diagnostics & Laboratory -->
         <a href="catalogue/ivd-products/index.html" class="swm-cat-card" title="Diagnostics &amp; Laboratory">
           <div class="swm-cat-img-box">
-            <img src="assets/img/ui-design/cat_4_diagnostics.png" alt="Diagnostics and Clinical Laboratory Equipment" loading="lazy">
+            <img src="assets/img/ui-design/cat_4_diagnostics.png" alt="Diagnostics and Clinical Laboratory Equipment" width="158" height="97" loading="lazy">
           </div>
           <div class="swm-cat-footer">
             <span class="swm-cat-name">Diagnostics &amp; Laboratory</span>
@@ -375,7 +363,7 @@
         <!-- Card 5: CSSD & Sterilization -->
         <a href="catalogue/autoclaves/index.html" class="swm-cat-card" title="CSSD &amp; Sterilization">
           <div class="swm-cat-img-box">
-            <img src="assets/img/ui-design/cat_5_cssd.png" alt="CSSD and Hospital Sterilization Units" loading="lazy">
+            <img src="assets/img/ui-design/cat_5_cssd.png" alt="CSSD and Hospital Sterilization Units" width="158" height="97" loading="lazy">
           </div>
           <div class="swm-cat-footer">
             <span class="swm-cat-name">CSSD &amp; Sterilization</span>
@@ -386,7 +374,7 @@
         <!-- Card 6: Hospital Furniture -->
         <a href="catalogue/beds/index.html" class="swm-cat-card" title="Hospital Furniture">
           <div class="swm-cat-img-box">
-            <img src="assets/img/ui-design/cat_6_furniture.png" alt="ICU Beds and Hospital Ward Furniture" loading="lazy">
+            <img src="assets/img/ui-design/cat_6_furniture.png" alt="ICU Beds and Hospital Ward Furniture" width="159" height="97" loading="lazy">
           </div>
           <div class="swm-cat-footer">
             <span class="swm-cat-name">Hospital Furniture</span>
