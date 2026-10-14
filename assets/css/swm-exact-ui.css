@@ -2230,6 +2230,7 @@ body.swm-exact-ui {
 /* Homepage layout: match the reference using live text and product imagery. */
 .swm-hero-section::before {
   background-image:
+    linear-gradient(180deg, #03172f 0%, rgba(3, 23, 47, 0.82) 42px, rgba(3, 23, 47, 0) 150px),
     linear-gradient(90deg, #03172f 0%, rgba(3, 23, 47, 0.98) 27%, rgba(3, 23, 47, 0.84) 40%, rgba(3, 23, 47, 0.26) 65%, rgba(3, 23, 47, 0.06) 100%);
   background-position: center;
   background-size: cover;
@@ -2739,15 +2740,6 @@ body.swm-exact-ui {
     padding-left: clamp(48px, 4.7vw, 76px) !important;
   }
 
-  .swm-hero-content::before {
-    position: absolute;
-    top: 32px;
-    bottom: 0;
-    left: -32px;
-    width: 2px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.35) 0 18%, #ff681b 18% 36%, rgba(255, 255, 255, 0.18) 36% 100%);
-    content: '';
-  }
 }
 
 @media (min-width: 1600px) {
