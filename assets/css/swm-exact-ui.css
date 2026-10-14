@@ -2661,7 +2661,7 @@ body.swm-exact-ui {
 .swm-navbar {
   min-height: 64px;
   padding: 0;
-  background: #171717;
+  background: #020917;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: none;
   backdrop-filter: none;
@@ -2669,7 +2669,7 @@ body.swm-exact-ui {
 }
 
 .swm-navbar.scrolled {
-  background: #171717;
+  background: #020917;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
 }
 
@@ -2700,34 +2700,20 @@ body.swm-exact-ui {
   background: none;
 }
 
-.swm-brand-mark {
-  position: relative;
-  display: inline-block;
+.swm-brand-logo {
+  display: block;
   width: 44px;
   height: 44px;
-  flex: 0 0 44px;
-  overflow: hidden;
-  color: #00c5eb;
+  max-width: none;
+  max-height: none;
+  object-fit: contain;
 }
 
-.swm-brand-mark::before,
-.swm-brand-mark::after {
-  position: absolute;
-  top: 0;
-  left: 16px;
-  width: 12px;
-  height: 44px;
-  background: linear-gradient(180deg, #08d7f5 0%, #00a8db 100%);
-  content: '';
-}
-
-.swm-brand-mark::before {
-  transform: rotate(45deg);
-}
-
-.swm-brand-mark::after {
-  background: linear-gradient(180deg, #00a8db 0%, #10d6f2 100%);
-  transform: rotate(-45deg);
+.apple-mobile-brand-logo {
+  display: block;
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
 }
 
 .swm-brand-title {
@@ -2849,19 +2835,6 @@ body.swm-exact-ui {
   color: #fff;
 }
 
-.apple-mobile-brand-mark {
-  width: 28px;
-  height: 28px;
-  flex-basis: 28px;
-}
-
-.apple-mobile-brand-mark::before,
-.apple-mobile-brand-mark::after {
-  left: 10px;
-  width: 8px;
-  height: 28px;
-}
-
 .swm-header-contact:focus-visible,
 .swm-nav-link:focus-visible,
 .swm-brand:focus-visible,
@@ -2894,17 +2867,10 @@ body.swm-exact-ui {
   }
 
   .swm-brand-logo-wrap,
-  .swm-brand-mark {
+  .swm-brand-logo {
     width: 38px;
     height: 38px;
     flex-basis: 38px;
-  }
-
-  .swm-brand-mark::before,
-  .swm-brand-mark::after {
-    left: 13px;
-    width: 11px;
-    height: 38px;
   }
 
   .swm-brand-title {
