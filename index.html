@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <link href="assets/css/apple-theme.css?v=106.0" rel="stylesheet">
-  <link href="assets/css/swm-exact-ui.css?v=2.4" rel="stylesheet">
+  <link href="assets/css/swm-exact-ui.css?v=2.9" rel="stylesheet">
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 </head>
@@ -219,6 +219,11 @@
        3. HERO SECTION (HIGH-TECH OT ROOM SHOWROOM)
        ============================================================ -->
   <section class="swm-hero-section" id="hero">
+    <div class="swm-hero-media" aria-hidden="true">
+      <img class="active" src="assets/img/modular-ot-bg/laparoscopic-operating-theatre.jpg" alt="">
+      <img src="assets/img/modular-ot-bg/ot_suite_2.jpg" alt="">
+      <img src="assets/img/modular-ot-bg/ot_wikimedia_2.jpg" alt="">
+    </div>
     <div class="container-fluid px-xl-5 px-lg-4 px-3">
       <div class="row align-items-center">
         <div class="col-lg-7 col-xl-6">
@@ -231,7 +236,7 @@
 
             <!-- Main Headline -->
             <h1 class="swm-hero-title">
-              <span class="title-bar">|</span> India's First<br>
+              India&rsquo;s First<br>
               <span class="title-accent">Surgical</span><br>Wholesale Mart
             </h1>
 
@@ -280,15 +285,30 @@
                 <i class="fa-solid fa-arrow-right"></i>
               </a>
 
-              <a href="javascript:void(0)" class="btn-swm-video" onclick="openAppleDrawer('Turnkey Hospital Setup')" title="Watch Video Demonstration">
-                <span class="play-circle"><i class="fa-solid fa-play" style="margin-left: 2px;"></i></span>
-                <span>Watch Video</span>
+              <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions."
+                target="_blank" rel="noopener noreferrer" class="btn-swm-green">
+                <i class="fa-brands fa-whatsapp fs-5"></i>
+                <span>WhatsApp Us</span>
+                <i class="fa-solid fa-arrow-right"></i>
               </a>
             </div>
 
           </div>
         </div>
       </div>
+    </div>
+    <div class="swm-hero-pagination" aria-label="Hero slides">
+      <button type="button" class="active" aria-label="Show slide 1" aria-current="true"></button>
+      <button type="button" aria-label="Show slide 2"></button>
+      <button type="button" aria-label="Show slide 3"></button>
+    </div>
+    <div class="swm-hero-controls">
+      <button type="button" class="swm-hero-arrow" data-hero-step="-1" aria-label="Previous slide">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button type="button" class="swm-hero-arrow" data-hero-step="1" aria-label="Next slide">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
     </div>
     <div class="swm-hero-photo-credit">
       OT photos:
@@ -315,24 +335,37 @@
         </a>
       </div>
 
-      <!-- 6 Category Cards Grid (Responsive: 6 on PC, 3 on Tablet, 2 on Mobile) -->
+      <div class="swm-categories-carousel">
+        <button type="button" class="swm-category-arrow swm-category-arrow-prev" aria-label="Scroll to previous categories">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <div class="swm-categories-viewport">
       <div class="swm-cards-grid">
 
-        <!-- Card 1: Patient Monitoring, Ventilators & Anesthesia -->
-        <a href="catalogue/anesthesia-workstation/index.html" class="swm-cat-card" title="Patient Monitoring, Ventilators &amp; Anesthesia">
+        <!-- Category cards use standalone product photos with live text labels. -->
+        <a href="catalogue/patient-monitor/index.html" class="swm-cat-card" title="Patient Monitoring">
           <div class="swm-cat-img-box">
-            <img src="assets/img/ui-design/cat_1_monitoring.png" alt="Patient Monitoring, Ventilators and Anesthesia Systems" width="158" height="97" loading="lazy">
+            <img src="catalogue/patient-monitor/dr-smith-multi-para-patient-monitor-12inch.png" alt="Patient monitor" width="158" height="97" loading="lazy">
           </div>
           <div class="swm-cat-footer">
-            <span class="swm-cat-name">Patient Monitoring, Ventilators &amp; Anesthesia</span>
+            <span class="swm-cat-name">Patient Monitoring</span>
             <span class="swm-cat-circle-btn"><i class="fa-solid fa-arrow-right"></i></span>
           </div>
         </a>
 
-        <!-- Card 2: Operation Theatre Equipment -->
-        <a href="catalogue/modular-ot/index.html" class="swm-cat-card" title="Operation Theatre Equipment">
+        <a href="catalogue/ventilators/index.html" class="swm-cat-card" title="Ventilators &amp; Anesthesia">
           <div class="swm-cat-img-box">
-            <img src="assets/img/ui-design/cat_2_ot_equipment.png" alt="Operation Theatre Equipment, Lights and Tables" width="158" height="97" loading="lazy">
+            <img src="catalogue/ventilators/dr-smith-icu-mechanical-ventilator-touchscreen.png" alt="ICU ventilator" width="158" height="97" loading="lazy">
+          </div>
+          <div class="swm-cat-footer">
+            <span class="swm-cat-name">Ventilators &amp; Anesthesia</span>
+            <span class="swm-cat-circle-btn"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="catalogue/ot-lights/index.html" class="swm-cat-card" title="Operation Theatre Equipment">
+          <div class="swm-cat-img-box">
+            <img src="catalogue/ot-lights/dr-smith-ot-light-premium-globus-dome.png" alt="Surgical operating light" width="158" height="97" loading="lazy">
           </div>
           <div class="swm-cat-footer">
             <span class="swm-cat-name">Operation Theatre Equipment</span>
@@ -340,10 +373,9 @@
           </div>
         </a>
 
-        <!-- Card 3: Infant Care & Neonatal Equipment -->
         <a href="catalogue/baby-warmer/index.html" class="swm-cat-card" title="Infant Care &amp; Neonatal Equipment">
           <div class="swm-cat-img-box">
-            <img src="assets/img/ui-design/cat_3_infant_care.png" alt="Infant Care and Neonatal Equipment" width="158" height="97" loading="lazy">
+            <img src="catalogue/baby-warmer/dr-smith-infant-radiant-warmer-super-deluxe.png" alt="Infant radiant warmer" width="158" height="97" loading="lazy">
           </div>
           <div class="swm-cat-footer">
             <span class="swm-cat-name">Infant Care &amp; Neonatal Equipment</span>
@@ -351,10 +383,9 @@
           </div>
         </a>
 
-        <!-- Card 4: Diagnostics & Laboratory -->
         <a href="catalogue/ivd-products/index.html" class="swm-cat-card" title="Diagnostics &amp; Laboratory">
           <div class="swm-cat-img-box">
-            <img src="assets/img/ui-design/cat_4_diagnostics.png" alt="Diagnostics and Clinical Laboratory Equipment" width="158" height="97" loading="lazy">
+            <img src="catalogue/ivd-products/hematology-analyzer.png" alt="Hematology analyzer" width="158" height="97" loading="lazy">
           </div>
           <div class="swm-cat-footer">
             <span class="swm-cat-name">Diagnostics &amp; Laboratory</span>
@@ -362,10 +393,9 @@
           </div>
         </a>
 
-        <!-- Card 5: CSSD & Sterilization -->
         <a href="catalogue/autoclaves/index.html" class="swm-cat-card" title="CSSD &amp; Sterilization">
           <div class="swm-cat-img-box">
-            <img src="assets/img/ui-design/cat_5_cssd.png" alt="CSSD and Hospital Sterilization Units" width="158" height="97" loading="lazy">
+            <img src="catalogue/autoclaves/vertical-autoclave-radial.png" alt="Hospital sterilization autoclave" width="158" height="97" loading="lazy">
           </div>
           <div class="swm-cat-footer">
             <span class="swm-cat-name">CSSD &amp; Sterilization</span>
@@ -373,10 +403,9 @@
           </div>
         </a>
 
-        <!-- Card 6: Hospital Furniture -->
         <a href="catalogue/beds/index.html" class="swm-cat-card" title="Hospital Furniture">
           <div class="swm-cat-img-box">
-            <img src="assets/img/ui-design/cat_6_furniture.png" alt="ICU Beds and Hospital Ward Furniture" width="159" height="97" loading="lazy">
+            <img src="catalogue/beds/icu-bed-5-function-mechanical-abs.png" alt="ICU hospital bed" width="158" height="97" loading="lazy">
           </div>
           <div class="swm-cat-footer">
             <span class="swm-cat-name">Hospital Furniture</span>
@@ -384,6 +413,21 @@
           </div>
         </a>
 
+        <a href="catalogue/instruments/index.html" class="swm-cat-card" title="Surgical Instruments">
+          <div class="swm-cat-img-box">
+            <img src="catalogue/surgical-instruments/dr-smith-surgical-instrument-tray-set.png" alt="Surgical instrument tray set" width="158" height="97" loading="lazy">
+          </div>
+          <div class="swm-cat-footer">
+            <span class="swm-cat-name">Surgical Instruments</span>
+            <span class="swm-cat-circle-btn"><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+      </div>
+        </div>
+        <button type="button" class="swm-category-arrow swm-category-arrow-next" aria-label="Scroll to more categories">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
       </div>
     </div>
   </section>
@@ -862,6 +906,7 @@
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js?v=94.0"></script>
   <script src="assets/js/global-search.js?v=44.0"></script>
+  <script src="assets/js/homepage-ui.js?v=1.0"></script>
 
   <!-- Mobile Drawer & Responsive Controllers -->
   <script>
