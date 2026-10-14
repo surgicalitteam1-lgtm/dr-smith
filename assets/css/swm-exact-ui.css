@@ -2656,15 +2656,6 @@ body.swm-exact-ui {
     padding-left: clamp(48px, 4.7vw, 76px) !important;
   }
 
-  .swm-hero-content::before {
-    position: absolute;
-    top: 32px;
-    bottom: 0;
-    left: -32px;
-    width: 2px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.35) 0 18%, #ff681b 18% 36%, rgba(255, 255, 255, 0.18) 36% 100%);
-    content: '';
-  }
 }
 
 /* Reference-style primary header */
@@ -2968,6 +2959,10 @@ body.swm-exact-ui {
 
 .swm-hero-media {
   background-color: #020917;
+}
+
+.swm-hero-content {
+  transform: translateY(-36px);
 }
 
 @media (min-width: 992px) {
