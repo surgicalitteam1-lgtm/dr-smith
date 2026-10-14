@@ -1334,8 +1334,8 @@ body.swm-exact-ui {
 
   .swm-navbar .swm-header-actions {
     flex-shrink: 0;
-    gap: 4px !important;
-    margin-right: 3px;
+    gap: 10px !important;
+    margin-right: 14px;
   }
 
   .swm-navbar .swm-header-actions .btn-swm-orange,
@@ -2778,8 +2778,8 @@ body.swm-exact-ui {
 
   .swm-navbar .swm-header-actions {
     flex-shrink: 0;
-    gap: clamp(4px, 0.5vw, 9px) !important;
-    margin-right: clamp(4px, 0.5vw, 10px);
+    gap: clamp(10px, 0.65vw, 14px) !important;
+    margin-right: clamp(16px, 1vw, 24px);
   }
 
   .swm-navbar .swm-header-actions .btn-swm-orange,
