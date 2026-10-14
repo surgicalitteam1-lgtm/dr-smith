@@ -2766,9 +2766,9 @@ body.swm-exact-ui {
   color: #ff7b2b;
 }
 
-.swm-nav-link.active,
-.swm-desktop-links .dropdown.show > .swm-nav-link {
-  color: #fff;
+.swm-nav-link.active:not(:hover):not(:focus-visible),
+.swm-desktop-links .dropdown.show > .swm-nav-link:not(:hover):not(:focus-visible) {
+  color: #00d2ff;
 }
 
 .swm-nav-link.active:hover,
