@@ -2931,3 +2931,35 @@ body.swm-exact-ui {
 .swm-hero-media {
   background-color: #020917;
 }
+
+@media (min-width: 992px) {
+  .swm-hero-section {
+    height: clamp(470px, 35vw, 680px);
+    min-height: 0;
+  }
+
+  .swm-hero-media {
+    right: 0;
+    left: 38%;
+    width: 62%;
+    z-index: 1;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .swm-hero-media img {
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .swm-hero-section::before {
+    background-image:
+      linear-gradient(180deg, rgba(2, 9, 23, 0.22) 0%, rgba(2, 9, 23, 0) 22%),
+      linear-gradient(90deg, #020917 0%, #020917 34%, rgba(2, 9, 23, 0.78) 45%, rgba(2, 9, 23, 0.32) 57%, rgba(2, 9, 23, 0) 72%);
+    z-index: 2;
+  }
+
+  .swm-hero-section > .container-fluid {
+    z-index: 3;
+  }
+}
