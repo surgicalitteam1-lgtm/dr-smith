@@ -1223,7 +1223,7 @@ body.swm-exact-ui {
   transform: translateY(-3px);
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1600px) {
   .swm-desktop-links {
     display: flex;
   }
