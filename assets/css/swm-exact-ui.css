@@ -107,12 +107,13 @@ body.swm-exact-ui {
 }
 
 .swm-brand-logo-wrap {
-  width: clamp(132px, 11vw, 190px);
+  width: clamp(136px, 11.25vw, 194px);
   aspect-ratio: 180 / 49;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: translate(19px, 4px);
   flex: 0 0 auto;
 }
 
@@ -1334,8 +1335,8 @@ body.swm-exact-ui {
 
   .swm-navbar .swm-header-actions {
     flex-shrink: 0;
-    gap: 10px !important;
-    margin-right: 14px;
+    gap: 14px !important;
+    margin-right: 22px;
   }
 
   .swm-navbar .swm-header-actions .btn-swm-orange,
@@ -2778,8 +2779,8 @@ body.swm-exact-ui {
 
   .swm-navbar .swm-header-actions {
     flex-shrink: 0;
-    gap: clamp(10px, 0.65vw, 14px) !important;
-    margin-right: clamp(16px, 1vw, 24px);
+    gap: clamp(14px, 0.8vw, 18px) !important;
+    margin-right: clamp(24px, 1.2vw, 32px);
   }
 
   .swm-navbar .swm-header-actions .btn-swm-orange,
