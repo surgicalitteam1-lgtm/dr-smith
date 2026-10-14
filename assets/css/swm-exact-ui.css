@@ -2968,6 +2968,10 @@ body.swm-exact-ui {
   gap: 8px;
 }
 
+.swm-hero-title .hospital-related-accent {
+  color: #00d2ff;
+}
+
 .swm-category-section .swm-categories-carousel {
   margin-top: 16px;
 }
