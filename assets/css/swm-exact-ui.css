@@ -1304,7 +1304,7 @@ body.swm-exact-ui {
   }
 
   .swm-navbar .swm-nav-link {
-    font-size: clamp(0.66rem, 0.78vw, 0.82rem);
+    font-size: clamp(0.78rem, 0.9vw, 1rem);
   }
 
   .swm-navbar .swm-header-actions {
@@ -2805,7 +2805,7 @@ body.swm-exact-ui {
   }
 
   .swm-navbar .swm-nav-link {
-    font-size: clamp(0.66rem, 0.72vw, 0.82rem);
+    font-size: clamp(0.82rem, 1vw, 1.2rem);
   }
 
   .swm-navbar .swm-header-actions {
