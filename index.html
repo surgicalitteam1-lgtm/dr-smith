@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <link href="assets/css/apple-theme.css?v=107.0" rel="stylesheet">
-  <link href="assets/css/swm-exact-ui.css?v=23.0" rel="stylesheet">
+  <link href="assets/css/swm-exact-ui.css?v=26.0" rel="stylesheet">
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 </head>
@@ -100,7 +100,7 @@
         <!-- Right Action Buttons -->
         <div class="swm-header-actions d-flex align-items-center gap-2">
           <!-- WhatsApp Us (Green Pill) -->
-          <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." target="_blank" rel="noopener noreferrer" class="btn-swm-green" title="Chat on WhatsApp">
+          <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." target="_blank" rel="noopener noreferrer" class="btn-swm-green swm-header-whatsapp" title="Chat on WhatsApp">
             <i class="fa-brands fa-whatsapp fs-5"></i>
             <span>WhatsApp Us</span>
             <i class="fa-solid fa-arrow-right"></i>
@@ -849,7 +849,7 @@
 
   <!-- Scripts -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/main.js?v=94.0"></script>
+  <script src="assets/js/main.js?v=95.0"></script>
   <script src="assets/js/global-search.js?v=44.0"></script>
   <script src="assets/js/homepage-ui.js?v=1.0"></script>
 
@@ -883,22 +883,31 @@
       const navbar = document.getElementById('swmMainNavbar');
       const scrollTopBtn = document.getElementById('swmScrollTopBtn');
 
-      window.addEventListener('scroll', function() {
+      function updateNavbarOffset() {
         if (navbar) {
-          if (window.scrollY > 30) {
-            navbar.classList.add('scrolled');
-          } else {
-            navbar.classList.remove('scrolled');
-          }
+          document.body.style.paddingTop = `${navbar.offsetHeight}px`;
+        }
+      }
+
+      function updateScrollState() {
+        if (navbar) {
+          navbar.classList.toggle('scrolled', window.scrollY > 30);
         }
         if (scrollTopBtn) {
-          if (window.scrollY > 200) {
-            scrollTopBtn.classList.add('visible');
-          } else {
-            scrollTopBtn.classList.remove('visible');
-          }
+          scrollTopBtn.classList.toggle('visible', window.scrollY > 200);
         }
-      }, { passive: true });
+      }
+
+      window.addEventListener('scroll', updateScrollState, { passive: true });
+      window.addEventListener('resize', function() {
+        updateNavbarOffset();
+        updateScrollState();
+      });
+      if (navbar && 'ResizeObserver' in window) {
+        new ResizeObserver(updateNavbarOffset).observe(navbar);
+      }
+      updateNavbarOffset();
+      updateScrollState();
 
       if (scrollTopBtn) {
         scrollTopBtn.addEventListener('click', function() {

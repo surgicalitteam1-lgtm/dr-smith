@@ -785,34 +785,6 @@
 
 
   /**
-   * 13. Mobile & Tablet Header Scroll Behavior
-   * On mobile and tablet screens (<= 1199px wide):
-   * - Hides the header once scrolled down past 25px to maximize usable screen space.
-   * - Restores header visibility when scrolled back to the top (< 25px).
-   * - Keeps header visible on desktop screens (> 1199px).
-   */
-  function checkMobileHeader() {
-    if (window.innerWidth <= 1199) {
-      if (window.scrollY > 25) {
-        document.body.classList.add('scrolled', 'header-hidden');
-      } else {
-        document.body.classList.remove('header-hidden');
-        if (window.scrollY <= 100) {
-          document.body.classList.remove('scrolled');
-        }
-      }
-    } else {
-      document.body.classList.remove('header-hidden');
-    }
-  }
-
-  // Register listeners to ensure mobile header responds to scroll, page load, and resize
-  window.addEventListener('scroll', checkMobileHeader, { passive: true });
-  window.addEventListener('load', checkMobileHeader);
-  window.addEventListener('resize', checkMobileHeader);
-
-
-  /**
    * 14. Global Product Image Click -> Instagram Showcase Redirection
    * When a user clicks on any product card image or image link:
    * Opens Dr. Smith's official Instagram product showcase in a new tab.
