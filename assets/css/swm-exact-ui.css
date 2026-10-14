@@ -2255,6 +2255,17 @@ body.swm-exact-ui {
   gap: 14px;
 }
 
+.swm-category-group .swm-cat-name {
+  font-size: clamp(0.72rem, 0.92vw, 0.9rem);
+  line-height: 1.2;
+}
+
+.swm-category-group .swm-cat-circle-btn {
+  width: clamp(24px, 2vw, 32px);
+  height: clamp(24px, 2vw, 32px);
+  min-width: clamp(24px, 2vw, 32px);
+}
+
 .swm-category-group-clone {
   pointer-events: none;
 }
@@ -2345,25 +2356,31 @@ body.swm-exact-ui {
 
 @media (min-width: 1200px) {
   .swm-category-group .swm-cat-card {
-    flex-basis: calc((100vw - 162px) / 6);
+    flex-basis: clamp(250px, calc((100vw - 65px) / 5), 330px);
+    aspect-ratio: 1.45;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .swm-category-group .swm-cat-card {
-    flex-basis: calc((100vw - 110px) / 4);
+    flex-basis: clamp(215px, calc((100vw - 100px) / 4), 260px);
+    aspect-ratio: 1.5;
   }
 }
 
 @media (min-width: 576px) and (max-width: 991.98px) {
   .swm-category-group .swm-cat-card {
-    flex-basis: calc((100vw - 54px) / 2);
+    flex-basis: clamp(200px, calc((100vw - 100px) / 3), 280px);
+    height: auto;
+    aspect-ratio: 1.55;
   }
 }
 
 @media (max-width: 575.98px) {
   .swm-category-group .swm-cat-card {
-    flex-basis: 82vw;
+    flex-basis: clamp(180px, 62vw, 230px);
+    height: auto;
+    aspect-ratio: 1.7;
   }
 }
 
@@ -2748,15 +2765,29 @@ body.swm-exact-ui {
 }
 
 .swm-nav-link:hover,
-.swm-nav-link.active {
-  color: #00d8e7;
+.swm-nav-link:focus-visible {
+  color: #0071e3;
+}
+
+.swm-nav-link.active,
+.swm-desktop-links .dropdown.show > .swm-nav-link {
+  color: #ff7b2b;
+}
+
+.swm-nav-link.active:hover,
+.swm-desktop-links .dropdown.show > .swm-nav-link:hover {
+  color: #0071e3;
 }
 
 .swm-nav-link.active::after {
   bottom: 13px;
   height: 2px;
-  background: #00d8e7;
+  background: #ff7b2b;
   box-shadow: none;
+}
+
+.swm-nav-link.active:hover::after {
+  background: #0071e3;
 }
 
 .swm-header-actions {
@@ -2788,6 +2819,7 @@ body.swm-exact-ui {
   border-color: #e5e7eb;
   background: #fff;
   color: #14202b;
+  border-radius: 999px;
 }
 
 .swm-header-email:hover,
@@ -2802,20 +2834,26 @@ body.swm-exact-ui {
 }
 
 .swm-header-whatsapp {
-  border-color: #0aa748;
-  background: #08a847;
+  min-height: 40px;
+  padding: 0 17px;
+  border-color: #1fc765;
+  border-radius: 999px;
+  background: #1fc765;
   color: #fff;
+  font-size: 0.87rem;
+  box-shadow: 0 8px 20px rgba(31, 199, 101, 0.3);
 }
 
 .swm-header-whatsapp:hover,
 .swm-header-whatsapp:focus-visible {
-  border-color: #0bc45a;
-  background: #078e3d;
+  border-color: #19b85a;
+  background: #19b85a;
   color: #fff;
+  box-shadow: 0 10px 24px rgba(31, 199, 101, 0.38);
 }
 
 .swm-header-whatsapp i {
-  font-size: 1.25rem;
+  font-size: 1.05rem;
 }
 
 .swm-header-icon.swm-menu-toggle {
@@ -2879,6 +2917,13 @@ body.swm-exact-ui {
     min-height: 38px;
     padding: 0;
     border-radius: 9px;
+  }
+
+  .swm-header-whatsapp {
+    width: 40px;
+    min-height: 40px;
+    flex-basis: 40px;
+    border-radius: 999px;
   }
 
   .swm-header-contact span {
