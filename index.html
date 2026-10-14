@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <link href="assets/css/apple-theme.css?v=106.0" rel="stylesheet">
-  <link href="assets/css/swm-exact-ui.css?v=2.9" rel="stylesheet">
+  <link href="assets/css/swm-exact-ui.css?v=3.0" rel="stylesheet">
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 </head>
@@ -64,27 +64,21 @@
       <div class="d-flex align-items-center justify-content-between">
 
         <!-- Brand Identity -->
-        <a href="index.html" class="swm-brand" aria-label="Dr. Smith Healthcare Solutions and Surgical Wholesale Mart">
+        <a href="index.html" class="swm-brand" aria-label="Dr. Smith Healthcare Solutions">
           <span class="swm-brand-primary">
-            <span class="swm-brand-logo-wrap">
-              <img src="assets/img/logo.png?v=11.0" alt="Dr. Smith Healthcare Solutions" class="swm-brand-logo" width="52" height="52" loading="eager">
+            <span class="swm-brand-logo-wrap" aria-hidden="true">
+              <span class="swm-brand-mark"></span>
             </span>
             <span class="swm-brand-title">Dr. Smith<sup>&reg;</sup></span>
-          </span>
-          <span class="swm-brand-divider" aria-hidden="true"></span>
-          <span class="swm-wholesale-wordmark" aria-label="Surgical Wholesale Mart Private Limited">
-            <span class="swm-wholesale-name">SURGICAL</span>
-            <strong class="swm-wholesale-highlight">WHOLESALE MART</strong>
-            <span class="swm-wholesale-subtitle">PVT. LTD.</span>
           </span>
         </a>
         <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
                 Middle Navigation Links (Desktop >= 1280px)
              ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
         <ul class="swm-nav-links swm-desktop-links">
-          <li><a href="index.html" class="swm-nav-link active">Home</a></li>
+          <li><a href="index.html" class="swm-nav-link active" aria-current="page">Home</a></li>
           <li class="dropdown">
-            <a href="catalogue/index.html" class="swm-nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Products <i class="bi bi-chevron-down ms-1 small"></i></a>
+            <a href="catalogue/index.html" class="swm-nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
             <ul class="dropdown-menu dropdown-menu-dark" style="background: rgba(3, 14, 38, 0.98); border: 1px solid rgba(0, 210, 255, 0.25); border-radius: 12px; padding: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.6);">
               <li><a class="dropdown-item text-white py-2" href="catalogue/beds/index.html"><i class="bi bi-hospital me-2 text-info"></i> ICU &amp; Hospital Beds</a></li>
               <li><a class="dropdown-item text-white py-2" href="catalogue/modular-ot/index.html"><i class="bi bi-brightness-high me-2 text-info"></i> Modular Operation Theatres</a></li>
@@ -96,41 +90,24 @@
               <li><a class="dropdown-item text-info fw-bold py-2" href="catalogue/index.html"><i class="bi bi-grid-fill me-2"></i> View All 50+ Product Categories &rarr;</a></li>
             </ul>
           </li>
-          <li><a href="turnkey-projects/index.html" class="swm-nav-link">Complete Hospital Setup</a></li>
-          <li><a href="group-companies/index.html" class="swm-nav-link">Brands</a></li>
-          <li><a href="turnkey-projects/index.html" class="swm-nav-link">Services <i class="bi bi-chevron-down ms-1 small"></i></a></li>
-          <li><a href="catalogue/index.html" class="swm-nav-link">Resources <i class="bi bi-chevron-down ms-1 small"></i></a></li>
           <li><a href="about-us/index.html" class="swm-nav-link">About Us</a></li>
+          <li><a href="turnkey-projects/index.html" class="swm-nav-link">Turnkey Project</a></li>
           <li><a href="contact-form/index.html" class="swm-nav-link">Contact Us</a></li>
         </ul>
 
         <!-- Right Action Buttons -->
         <div class="swm-header-actions d-flex align-items-center gap-2">
-          <!-- Explore Catalogue (Orange Pill) -->
-          <a href="catalogue/index.html" class="btn-swm-orange" title="Explore Master Product Catalogue">
-            <i class="fa-solid fa-book-open"></i>
-            <span>Explore Catalogue</span>
-            <i class="fa-solid fa-arrow-right"></i>
+          <a href="mailto:info@drsmith.co.in" class="swm-header-contact swm-header-email" title="Email Dr. Smith">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <span>Email Us</span>
           </a>
-
-          <!-- WhatsApp Us (Green Pill) -->
-          <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." target="_blank" rel="noopener noreferrer" class="btn-swm-green" title="Chat on WhatsApp">
-            <i class="fa-brands fa-whatsapp fs-5"></i>
+          <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." target="_blank" rel="noopener noreferrer" class="swm-header-contact swm-header-whatsapp" title="Chat on WhatsApp">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
             <span>WhatsApp Us</span>
-            <i class="fa-solid fa-arrow-right"></i>
-          </a>
-
-          <!-- Search trigger -->
-          <button type="button" class="swm-header-icon d-none d-xl-inline-flex" onclick="openGlobalSearch()" aria-label="Search the catalogue" title="Instant Search">
-            <i class="bi bi-search"></i>
-          </button>
-
-          <a href="contact-form/index.html" class="swm-header-icon d-none d-xl-inline-flex" aria-label="Contact Dr. Smith" title="Contact Dr. Smith">
-            <i class="bi bi-person"></i>
           </a>
 
           <!-- Compact navigation toggle for narrower screens -->
-          <button type="button" class="swm-header-icon swm-menu-toggle" id="swmMobileToggle" aria-label="Toggle navigation menu">
+          <button type="button" class="swm-header-icon swm-menu-toggle" id="swmMobileToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="apple-mobile-drawer">
             <i class="bi bi-list"></i>
           </button>
         </div>
@@ -146,7 +123,7 @@
   <div class="apple-mobile-drawer" id="apple-mobile-drawer">
     <div class="apple-mobile-drawer-header">
       <div class="d-flex align-items-center gap-2">
-        <img src="assets/img/logo.png?v=11.0" alt="Logo" width="28" height="28">
+        <span class="swm-brand-mark apple-mobile-brand-mark" aria-hidden="true"></span>
         <span class="apple-mobile-drawer-tag"><i class="bi bi-hospital"></i> Dr. Smith Menu</span>
       </div>
       <button type="button" class="apple-mobile-drawer-close" id="appleMobileDrawerClose" aria-label="Close Navigation Menu">
@@ -919,18 +896,31 @@
       function openDrawer() {
         if (drawer) drawer.classList.add('open');
         if (backdrop) backdrop.classList.add('open');
+        if (toggleBtn) toggleBtn.setAttribute('aria-expanded', 'true');
         document.body.style.overflow = 'hidden';
       }
 
       function closeDrawer() {
         if (drawer) drawer.classList.remove('open');
         if (backdrop) backdrop.classList.remove('open');
+        if (toggleBtn) toggleBtn.setAttribute('aria-expanded', 'false');
         document.body.style.overflow = '';
       }
 
       if (toggleBtn) toggleBtn.addEventListener('click', openDrawer);
       if (backdrop) backdrop.addEventListener('click', closeDrawer);
       if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+      if (drawer) {
+        drawer.querySelectorAll('a').forEach(function(link) {
+          link.addEventListener('click', closeDrawer);
+        });
+      }
+      document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape' && drawer && drawer.classList.contains('open')) {
+          closeDrawer();
+          if (toggleBtn) toggleBtn.focus();
+        }
+      });
 
       // Sticky Navbar Shadow & Scroll-to-Top on scroll
       const navbar = document.getElementById('swmMainNavbar');

@@ -2656,3 +2656,290 @@ body.swm-exact-ui {
     content: '';
   }
 }
+
+/* Reference-style primary header */
+.swm-navbar {
+  min-height: 64px;
+  padding: 0;
+  background: #171717;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.swm-navbar.scrolled {
+  background: #171717;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.swm-navbar > .container-fluid {
+  padding-right: clamp(12px, 1.1vw, 20px) !important;
+  padding-left: clamp(12px, 1.1vw, 20px) !important;
+}
+
+.swm-navbar .container-fluid > .d-flex {
+  min-height: 64px;
+  gap: 12px;
+}
+
+.swm-brand {
+  gap: 0;
+  flex: 0 0 auto;
+}
+
+.swm-brand-primary {
+  gap: 9px;
+}
+
+.swm-brand-logo-wrap {
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  border-radius: 0;
+  background: none;
+}
+
+.swm-brand-mark {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  overflow: hidden;
+  color: #00c5eb;
+}
+
+.swm-brand-mark::before,
+.swm-brand-mark::after {
+  position: absolute;
+  top: 0;
+  left: 16px;
+  width: 12px;
+  height: 44px;
+  background: linear-gradient(180deg, #08d7f5 0%, #00a8db 100%);
+  content: '';
+}
+
+.swm-brand-mark::before {
+  transform: rotate(45deg);
+}
+
+.swm-brand-mark::after {
+  background: linear-gradient(180deg, #00a8db 0%, #10d6f2 100%);
+  transform: rotate(-45deg);
+}
+
+.swm-brand-title {
+  display: inline-flex;
+  align-items: center;
+  color: #f5f5f5;
+  font-size: clamp(1.25rem, 1.7vw, 1.75rem);
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.swm-brand-title sup {
+  font-size: 0.4em;
+}
+
+.swm-brand-divider,
+.swm-wholesale-wordmark,
+.swm-navbar > .swm-topbar {
+  display: none !important;
+}
+
+.swm-desktop-links {
+  display: none !important;
+  flex: 0 1 auto;
+  justify-content: center;
+  gap: clamp(16px, 2vw, 30px);
+}
+
+.swm-nav-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 64px;
+  padding: 0;
+  color: #f0f0f0;
+  font-size: 0.94rem;
+  font-weight: 500;
+}
+
+.swm-nav-link:hover,
+.swm-nav-link.active {
+  color: #00d8e7;
+}
+
+.swm-nav-link.active::after {
+  bottom: 13px;
+  height: 2px;
+  background: #00d8e7;
+  box-shadow: none;
+}
+
+.swm-header-actions {
+  gap: 8px !important;
+}
+
+.swm-header-contact {
+  display: inline-flex;
+  min-height: 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 0 17px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 0.87rem;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 160ms ease, border-color 160ms ease, transform 160ms ease;
+}
+
+.swm-header-contact:hover {
+  transform: translateY(-1px);
+}
+
+.swm-header-email {
+  border-color: #e5e7eb;
+  background: #fff;
+  color: #14202b;
+}
+
+.swm-header-email:hover,
+.swm-header-email:focus-visible {
+  border-color: #cbd5e1;
+  background: #f1f5f9;
+  color: #14202b;
+}
+
+.swm-header-email i {
+  font-size: 1.05rem;
+}
+
+.swm-header-whatsapp {
+  border-color: #0aa748;
+  background: #08a847;
+  color: #fff;
+}
+
+.swm-header-whatsapp:hover,
+.swm-header-whatsapp:focus-visible {
+  border-color: #0bc45a;
+  background: #078e3d;
+  color: #fff;
+}
+
+.swm-header-whatsapp i {
+  font-size: 1.25rem;
+}
+
+.swm-header-icon.swm-menu-toggle {
+  display: inline-flex !important;
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  border-color: rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+}
+
+.apple-mobile-brand-mark {
+  width: 28px;
+  height: 28px;
+  flex-basis: 28px;
+}
+
+.apple-mobile-brand-mark::before,
+.apple-mobile-brand-mark::after {
+  left: 10px;
+  width: 8px;
+  height: 28px;
+}
+
+.swm-header-contact:focus-visible,
+.swm-nav-link:focus-visible,
+.swm-brand:focus-visible,
+.swm-menu-toggle:focus-visible {
+  outline: 2px solid #00d8e7;
+  outline-offset: 3px;
+}
+
+@media (min-width: 1080px) {
+  .swm-navbar .container-fluid > .d-flex {
+    gap: clamp(12px, 1.5vw, 22px);
+  }
+
+  .swm-desktop-links {
+    display: flex !important;
+  }
+
+  .swm-header-icon.swm-menu-toggle {
+    display: none !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .swm-navbar .container-fluid > .d-flex {
+    gap: 8px;
+  }
+
+  .swm-brand-primary {
+    gap: 6px;
+  }
+
+  .swm-brand-logo-wrap,
+  .swm-brand-mark {
+    width: 38px;
+    height: 38px;
+    flex-basis: 38px;
+  }
+
+  .swm-brand-mark::before,
+  .swm-brand-mark::after {
+    left: 13px;
+    width: 11px;
+    height: 38px;
+  }
+
+  .swm-brand-title {
+    font-size: 1.18rem;
+  }
+
+  .swm-header-actions {
+    gap: 6px !important;
+  }
+
+  .swm-header-contact {
+    width: 38px;
+    min-height: 38px;
+    padding: 0;
+    border-radius: 9px;
+  }
+
+  .swm-header-contact span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+  }
+
+  .swm-header-icon.swm-menu-toggle {
+    width: 38px;
+    height: 38px;
+    flex-basis: 38px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .swm-header-contact {
+    transition: none;
+  }
+}
