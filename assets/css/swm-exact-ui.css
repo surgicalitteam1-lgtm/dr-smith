@@ -2750,35 +2750,32 @@ body.swm-exact-ui {
   align-items: center;
   min-height: 64px;
   padding: 0;
-  color: #f0f0f0;
+  color: #fff;
   font-size: 0.94rem;
   font-weight: 500;
+  text-decoration: none;
+}
+
+.swm-nav-link::after {
+  display: none !important;
+  content: none !important;
 }
 
 .swm-nav-link:hover,
 .swm-nav-link:focus-visible {
-  color: #0071e3;
+  color: #ff7b2b;
 }
 
 .swm-nav-link.active,
 .swm-desktop-links .dropdown.show > .swm-nav-link {
-  color: #ff7b2b;
+  color: #fff;
 }
 
 .swm-nav-link.active:hover,
-.swm-desktop-links .dropdown.show > .swm-nav-link:hover {
-  color: #0071e3;
-}
-
-.swm-nav-link.active::after {
-  bottom: 13px;
-  height: 2px;
-  background: #ff7b2b;
-  box-shadow: none;
-}
-
-.swm-nav-link.active:hover::after {
-  background: #0071e3;
+.swm-nav-link.active:focus-visible,
+.swm-desktop-links .dropdown.show > .swm-nav-link:hover,
+.swm-desktop-links .dropdown.show > .swm-nav-link:focus-visible {
+  color: #ff7b2b;
 }
 
 .swm-header-actions {
