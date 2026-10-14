@@ -2965,21 +2965,23 @@ body.swm-exact-ui {
   transform: translateY(-36px);
 }
 
-@media (min-width: 992px) {
-  :root {
-    --swm-first-fold-hero-height: clamp(280px, calc(100svh - 293px), 430px);
-  }
+.swm-hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
 
+@media (min-width: 992px) {
   .swm-hero-section {
-    height: var(--swm-first-fold-hero-height);
-    min-height: 0;
+    height: auto;
+    min-height: calc(100svh - 136px);
     background-color: #020917;
     isolation: isolate;
   }
 
   .swm-hero-section .row {
-    height: 100%;
-    min-height: 0;
+    height: auto;
+    min-height: calc(100svh - 136px);
   }
 
   .swm-hero-media {
@@ -3016,31 +3018,13 @@ body.swm-exact-ui {
     z-index: 2;
   }
 
-  .swm-category-section {
-    box-sizing: border-box;
-    min-height: calc(100svh - 64px - var(--swm-first-fold-hero-height));
-  }
 }
 
 @media (max-width: 991.98px) {
-  :root {
-    --swm-first-fold-hero-height: clamp(300px, calc(100svh - 270px), 520px);
-  }
-
   .swm-hero-section {
-    height: var(--swm-first-fold-hero-height);
-    min-height: 0;
+    height: auto;
+    min-height: calc(100svh - 136px);
     padding: 0;
-  }
-
-  .swm-category-section {
-    box-sizing: border-box;
-    min-height: calc(100svh - 64px - var(--swm-first-fold-hero-height));
-    padding: 8px 0 12px;
-  }
-
-  .swm-section-header {
-    margin-bottom: 6px;
   }
 
   .swm-cat-card {
@@ -3053,162 +3037,5 @@ body.swm-exact-ui {
   .swm-cat-img-box {
     height: 68%;
     margin-bottom: 3px;
-  }
-}
-
-@media (max-width: 991.98px) and (max-height: 740px) {
-  :root {
-    --swm-first-fold-hero-height: clamp(270px, calc(100svh - 270px), 470px);
-  }
-
-  .swm-hero-section {
-    height: var(--swm-first-fold-hero-height);
-  }
-
-  .swm-hero-section .container-fluid,
-  .swm-hero-section .row,
-  .swm-hero-section .row > div {
-    height: 100%;
-  }
-
-  .swm-hero-content {
-    max-height: 100%;
-    overflow: hidden;
-  }
-
-  .swm-hero-eyebrow {
-    margin-bottom: 5px;
-    font-size: 0.65rem;
-  }
-
-  .swm-hero-title {
-    margin-bottom: 6px;
-    font-size: clamp(1.55rem, 6.5vw, 2rem);
-    line-height: 1.02;
-  }
-
-  .swm-hero-subtitle {
-    margin-bottom: 4px;
-    font-size: 0.82rem;
-    line-height: 1.25;
-  }
-
-  .swm-hero-slogan-orange,
-  .swm-hero-badges-row {
-    display: none;
-  }
-
-  .swm-hero-cta-group {
-    flex-direction: row;
-    gap: 8px;
-  }
-
-  .swm-hero-cta-group > a {
-    min-width: 0;
-    padding: 8px 12px;
-    font-size: 0.75rem;
-  }
-}
-
-@media (max-width: 991.98px) and (max-height: 500px) {
-  :root {
-    --swm-first-fold-hero-height: clamp(130px, calc(100svh - 213px), 295px);
-  }
-
-  .swm-hero-section {
-    height: var(--swm-first-fold-hero-height);
-  }
-
-  .swm-category-section {
-    padding: 6px 0 8px;
-  }
-
-  .swm-cat-card {
-    height: 82px;
-    padding: 3px 6px;
-  }
-
-  .swm-cat-img-box {
-    height: 60%;
-    margin-bottom: 1px;
-  }
-
-  .swm-cat-name {
-    font-size: 0.64rem;
-    line-height: 1.1;
-  }
-
-  .swm-hero-eyebrow,
-  .swm-hero-subtitle {
-    display: none;
-  }
-
-  .swm-hero-title {
-    margin-bottom: 5px;
-    font-size: clamp(1.25rem, 4vw, 1.75rem);
-  }
-
-  .swm-hero-cta-group > a {
-    padding: 6px 10px;
-    font-size: 0.68rem;
-  }
-}
-
-@media (min-width: 992px) and (max-height: 700px) {
-  :root {
-    --swm-first-fold-hero-height: clamp(180px, calc(100svh - 220px), 430px);
-  }
-
-  .swm-hero-section {
-    height: var(--swm-first-fold-hero-height);
-  }
-
-  .swm-category-section {
-    padding: 6px 0 8px;
-  }
-
-  .swm-section-header {
-    margin-bottom: 5px;
-  }
-
-  .swm-cat-card {
-    height: clamp(90px, 17svh, 130px);
-    aspect-ratio: auto;
-  }
-
-  .swm-cat-img-box {
-    height: 65%;
-  }
-
-  .swm-hero-eyebrow {
-    margin-bottom: 6px;
-  }
-
-  .swm-hero-slogan-orange,
-  .swm-hero-badges-row {
-    display: none;
-  }
-
-  .swm-hero-title {
-    margin-bottom: 6px;
-    font-size: clamp(1.8rem, 3vw, 2.45rem);
-  }
-
-  .swm-hero-subtitle {
-    font-size: 0.88rem;
-  }
-
-  .swm-hero-slogan-orange {
-    margin-bottom: 8px;
-  }
-
-  .swm-hero-badges-row {
-    margin-bottom: 8px;
-  }
-
-  .swm-badge-icon-circle {
-    width: 30px;
-    height: 30px;
-    min-width: 30px;
   }
 }
