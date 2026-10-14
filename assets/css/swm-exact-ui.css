@@ -2940,66 +2940,36 @@ body.swm-exact-ui {
   }
 
   .swm-hero-media {
-    right: 0;
-    left: 25%;
-    width: 75%;
-    display: block;
+    inset: 0;
+    width: 100%;
     z-index: 0;
   }
 
-  .swm-hero-media img,
-  .swm-hero-media img.active {
+  .swm-hero-media img {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
+    inset: 0;
     display: block;
-    width: 42%;
+    width: 100%;
     height: 100%;
-    min-width: 0;
     object-fit: cover;
-    object-position: center;
+    object-position: center 58%;
+    opacity: 0 !important;
+    transition: opacity 700ms ease;
+  }
+
+  .swm-hero-media img.active {
     opacity: 1 !important;
-    transition: none;
-    -webkit-mask-image: linear-gradient(90deg, #000 0%, #000 76%, transparent 100%);
-    mask-image: linear-gradient(90deg, #000 0%, #000 76%, transparent 100%);
-  }
-
-  .swm-hero-media img:first-child {
-    left: 0;
-    object-position: 56% center;
-    z-index: 1;
-  }
-
-  .swm-hero-media img:nth-child(2) {
-    left: 29%;
-    object-position: 50% center;
-    z-index: 2;
-    -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 22%, #000 76%, transparent 100%);
-    mask-image: linear-gradient(90deg, transparent 0%, #000 22%, #000 76%, transparent 100%);
-  }
-
-  .swm-hero-media img:last-child {
-    left: 58%;
-    object-position: 46% center;
-    z-index: 3;
-    -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 22%, #000 100%);
-    mask-image: linear-gradient(90deg, transparent 0%, #000 22%, #000 100%);
   }
 
   .swm-hero-section::before {
     z-index: 1;
     background-image:
       linear-gradient(180deg, rgba(2, 9, 23, 0.24) 0%, rgba(2, 9, 23, 0) 20%),
-      linear-gradient(90deg, #020917 0%, #020917 15%, rgba(2, 9, 23, 0.92) 25%, rgba(2, 9, 23, 0.62) 36%, rgba(2, 9, 23, 0.2) 48%, rgba(2, 9, 23, 0.04) 62%, transparent 72%);
+      linear-gradient(90deg, #020917 0%, #020917 15%, rgba(2, 9, 23, 0.92) 25%, rgba(2, 9, 23, 0.62) 42%, rgba(2, 9, 23, 0.2) 60%, rgba(2, 9, 23, 0.04) 76%, transparent 88%);
   }
 
   .swm-hero-section > .container-fluid {
     z-index: 2;
   }
 
-  .swm-hero-pagination,
-  .swm-hero-controls {
-    display: none;
-  }
 }

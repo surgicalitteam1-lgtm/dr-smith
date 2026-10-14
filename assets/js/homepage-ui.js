@@ -31,7 +31,7 @@
     window.clearInterval(heroTimer);
     heroTimer = window.setInterval(function() {
       showSlide(currentSlide + 1);
-    }, 6500);
+    }, 4000);
   }
 
   if (hero && slides.length) {
@@ -49,10 +49,6 @@
       });
     });
 
-    hero.addEventListener('mouseenter', function() {
-      window.clearInterval(heroTimer);
-    });
-    hero.addEventListener('mouseleave', startHeroTimer);
     startHeroTimer();
   }
 
