@@ -2662,3 +2662,40 @@ body.swm-exact-ui {
     content: '';
   }
 }
+
+@media (min-width: 992px) and (max-width: 1899.98px) {
+  .swm-navbar .container-fluid > .d-flex {
+    flex-wrap: wrap;
+    row-gap: 0;
+    padding-bottom: 4px;
+  }
+
+  .swm-navbar .swm-brand {
+    order: 1;
+  }
+
+  .swm-navbar .swm-header-actions {
+    order: 2;
+  }
+
+  .swm-navbar .swm-desktop-links {
+    display: flex !important;
+    order: 3;
+    flex: 1 0 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 6px clamp(14px, 2vw, 28px);
+  }
+
+  .swm-navbar .swm-desktop-links .swm-nav-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 36px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .swm-navbar .swm-menu-toggle {
+    display: none !important;
+  }
+}

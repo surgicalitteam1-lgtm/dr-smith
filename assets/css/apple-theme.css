@@ -486,6 +486,14 @@ body.apple-mobile-menu-open .apple-mobile-backdrop {
   overscroll-behavior: none !important;
 }
 
+#appleMobileBackdrop.open {
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+  touch-action: none !important;
+  overscroll-behavior: none !important;
+}
+
 #apple-mobile-menu-btn {
   position: relative !important;
   z-index: 10000 !important;
@@ -528,6 +536,12 @@ body.apple-mobile-menu-open .apple-mobile-drawer {
   opacity: 1;
   visibility: visible;
   transform: translateY(0) scale(1);
+}
+
+#apple-mobile-drawer.open {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translateY(0) scale(1) !important;
 }
 
 .apple-mobile-drawer::-webkit-scrollbar {
@@ -7449,5 +7463,3 @@ img.vp-img-loaded {
     color: #fff;
   }
 }
-
-

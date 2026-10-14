@@ -27,8 +27,8 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <link href="assets/css/apple-theme.css?v=106.0" rel="stylesheet">
-  <link href="assets/css/swm-exact-ui.css?v=2.9" rel="stylesheet">
+  <link href="assets/css/apple-theme.css?v=107.0" rel="stylesheet">
+  <link href="assets/css/swm-exact-ui.css?v=6.0" rel="stylesheet">
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 </head>
@@ -79,7 +79,7 @@
           </span>
         </a>
         <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-                Middle Navigation Links (Desktop >= 1280px)
+                Middle Navigation Links (Desktop >= 992px)
              ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
         <ul class="swm-nav-links swm-desktop-links">
           <li><a href="index.html" class="swm-nav-link active">Home</a></li>
@@ -130,7 +130,7 @@
           </a>
 
           <!-- Compact navigation toggle for narrower screens -->
-          <button type="button" class="swm-header-icon swm-menu-toggle" id="swmMobileToggle" aria-label="Toggle navigation menu">
+          <button type="button" class="swm-header-icon swm-menu-toggle" id="swmMobileToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="apple-mobile-drawer">
             <i class="bi bi-list"></i>
           </button>
         </div>
@@ -172,8 +172,29 @@
       <a href="turnkey-projects/index.html" class="apple-mobile-tile">
         <div class="apple-mobile-tile-icon"><i class="bi bi-hospital-fill"></i></div>
         <div class="apple-mobile-tile-content">
-          <span class="apple-mobile-tile-title">Turnkey Setup</span>
+          <span class="apple-mobile-tile-title">Complete Hospital Setup</span>
           <span class="apple-mobile-tile-sub">50–500 Beds</span>
+        </div>
+      </a>
+      <a href="group-companies/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-building"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Brands</span>
+          <span class="apple-mobile-tile-sub">Our group companies</span>
+        </div>
+      </a>
+      <a href="turnkey-projects/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-tools"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Services</span>
+          <span class="apple-mobile-tile-sub">Hospital solutions</span>
+        </div>
+      </a>
+      <a href="catalogue/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-journal-text"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Resources</span>
+          <span class="apple-mobile-tile-sub">Product information</span>
         </div>
       </a>
       <a href="catalogue/modular-ot/index.html" class="apple-mobile-tile">
@@ -193,8 +214,22 @@
       <a href="contact-form/index.html" class="apple-mobile-tile">
         <div class="apple-mobile-tile-icon"><i class="bi bi-envelope-fill"></i></div>
         <div class="apple-mobile-tile-content">
-          <span class="apple-mobile-tile-title">Contact</span>
+          <span class="apple-mobile-tile-title">Contact Us</span>
           <span class="apple-mobile-tile-sub">Global Offices</span>
+        </div>
+      </a>
+      <a href="about-us/index.html#careers" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-person-workspace"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Career</span>
+          <span class="apple-mobile-tile-sub">Join our team</span>
+        </div>
+      </a>
+      <a href="contact-form/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-headset"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Support</span>
+          <span class="apple-mobile-tile-sub">Customer assistance</span>
         </div>
       </a>
     </div>
@@ -870,15 +905,17 @@
       const closeBtn = document.getElementById('appleMobileDrawerClose');
 
       function openDrawer() {
+        document.body.classList.add('apple-mobile-menu-open');
         if (drawer) drawer.classList.add('open');
         if (backdrop) backdrop.classList.add('open');
-        document.body.style.overflow = 'hidden';
+        if (toggleBtn) toggleBtn.setAttribute('aria-expanded', 'true');
       }
 
       function closeDrawer() {
+        document.body.classList.remove('apple-mobile-menu-open');
         if (drawer) drawer.classList.remove('open');
         if (backdrop) backdrop.classList.remove('open');
-        document.body.style.overflow = '';
+        if (toggleBtn) toggleBtn.setAttribute('aria-expanded', 'false');
       }
 
       if (toggleBtn) toggleBtn.addEventListener('click', openDrawer);
