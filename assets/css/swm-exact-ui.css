@@ -2763,7 +2763,13 @@ body.swm-exact-ui {
 
 .swm-nav-link:hover,
 .swm-nav-link:focus-visible {
-  color: #ff7b2b;
+  color: #00d2ff;
+}
+
+.swm-navbar .swm-desktop-links > li > .swm-nav-link:hover,
+.swm-navbar .swm-desktop-links > li > .swm-nav-link:focus-visible {
+  color: #00d2ff !important;
+  transition: none !important;
 }
 
 .swm-nav-link.active:not(:hover):not(:focus-visible),
@@ -2775,7 +2781,7 @@ body.swm-exact-ui {
 .swm-nav-link.active:focus-visible,
 .swm-desktop-links .dropdown.show > .swm-nav-link:hover,
 .swm-desktop-links .dropdown.show > .swm-nav-link:focus-visible {
-  color: #ff7b2b;
+  color: #00d2ff;
 }
 
 .swm-header-actions {
