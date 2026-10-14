@@ -430,6 +430,7 @@ body.swm-exact-ui {
 
 .swm-hero-content {
   position: relative;
+  top: -34px;
   z-index: 2;
   max-width: 620px;
 }
