@@ -1,602 +1,760 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Browse Dr. Smith's Anesthesia Workstation range for hospitals, ICUs and clinics." name="description"/>
-<meta content="#030712" name="theme-color"/>
-<title>Anesthesia Workstation | Dr. Smith Catalogue</title>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&amp;family=Open+Sans:wght@300;400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-<link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
-<link href="../../assets/img/favicon.png" rel="icon" type="image/png"/>
-<link href="../../assets/img/apple-touch-icon.png" rel="apple-touch-icon"/>
-<link href="../css/catalogue.css?v=47.0" rel="stylesheet"/>
-<link href="../../assets/css/apple-theme.css?v=106.0" rel="stylesheet"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse Dr. Smith's Anesthesia Workstation range for hospitals, ICUs and clinics.">
+    <meta name="theme-color" content="#030712">
+    <title>Anesthesia Workstation | Dr. Smith Catalogue</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+
+    <link href="../css/catalogue.css?v=47.0" rel="stylesheet">
+  <link href="../../assets/css/apple-theme.css?v=106.0" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body class="apple-body catalogue-page">
-<!-- ============================================================
+  <!-- ============================================================
        1. GLOBAL NAVIGATION HEADER
        ============================================================ -->
-<nav aria-label="Global" class="apple-globalnav">
-<div class="apple-globalnav-inner">
-<!-- Brand & Corporate Identity -->
-<a aria-label="Dr. Smith Hospital Solutions" class="apple-nav-brand" href="../../index.html">
-<div class="brand-asterisk-icon">
-<img alt="Dr. Smith Emblem Logo" class="apple-nav-logo-img" decoding="async" height="36" loading="eager" src="../../assets/img/logo.png?v=11.0" width="36"/>
+  <nav class="apple-globalnav" aria-label="Global">
+    <div class="apple-globalnav-inner">
+      
+      <!-- Brand & Corporate Identity -->
+      <a href="../../index.html" class="apple-nav-brand" aria-label="Dr. Smith Hospital Solutions">
+        <div class="brand-asterisk-icon">
+          <img src="../../assets/img/logo.png?v=11.0" alt="Dr. Smith Emblem Logo" class="apple-nav-logo-img" width="36" height="36" decoding="async" loading="eager">
+        </div>
+        <div class="apple-nav-brand-text">
+          <span class="apple-nav-brand-title">Dr. Smith</span>
+          <span class="apple-nav-brand-subtitle">HOSPITAL SOLUTIONS</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="apple-nav-links">
+        <li class="apple-nav-item">
+          <a href="../../index.html" class="apple-nav-link">Home</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../../catalogue/index.html" class="apple-nav-link nav-active">Products</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../../turnkey-projects/index.html" class="apple-nav-link">Turnkey Solutions</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../../about-us/index.html" class="apple-nav-link">About Us</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../../contact-form/index.html" class="apple-nav-link">Contact</a>
+        </li>
+      </ul>
+
+                  <!-- Action Utilities -->
+      <div class="apple-nav-actions">
+        <!-- Contact / Mail Form Button -->
+        <a href="../../contact-form/index.html" class="apple-nav-circle-btn apple-nav-circle-mail"
+          aria-label="Send Enquiry &amp; Contact Us" title="Send Enquiry / Request Quotation (BOM &amp; Consultation)">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+
+        <!-- WhatsApp Circle Button -->
+        <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions."
+          class="apple-nav-circle-btn apple-nav-circle-whatsapp" target="_blank"
+          rel="noopener noreferrer" aria-label="Chat with Dr. Smith Healthcare on WhatsApp (+91 95990 81020)"
+          title="WhatsApp Direct (+91 95990 81020) • 24/7 Fast Inquiry">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <!-- Menu Toggle Button -->
+        <button type="button" class="apple-nav-circle-btn" id="apple-mobile-menu-btn"
+          aria-label="Toggle Navigation Menu" title="Menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+    <!-- Mobile Menu Drawer Backdrop Overlay -->
+  <div class="apple-mobile-backdrop" id="appleMobileBackdrop"></div>
+
+  <!-- Mobile Menu Drawer Overlay -->
+  <div class="apple-mobile-drawer" id="apple-mobile-drawer">
+    <div class="apple-mobile-drawer-header">
+      <span class="apple-mobile-drawer-tag"><i class="bi bi-hospital"></i> Dr. Smith Quick Menu</span>
+      <button type="button" class="apple-mobile-drawer-close" id="appleMobileDrawerClose" aria-label="Close Navigation Menu">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
+    <div class="apple-mobile-grid">
+      <a href="../../index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-house-door-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Home</span>
+          <span class="apple-mobile-tile-sub">Overview</span>
+        </div>
+      </a>
+      <a href="../../catalogue/index.html" class="apple-mobile-tile active">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-grid-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Catalogue</span>
+          <span class="apple-mobile-tile-sub">50+ Categories</span>
+        </div>
+      </a>
+      <a href="../../turnkey-projects/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-hospital-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Turnkey Setup</span>
+          <span class="apple-mobile-tile-sub">50–500 Beds</span>
+        </div>
+      </a>
+      <a href="../../catalogue/modular-ot/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-activity"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Modular OT</span>
+          <span class="apple-mobile-tile-sub">Cleanrooms</span>
+        </div>
+      </a>
+      <a href="../../about-us/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-shield-check"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">About Us</span>
+          <span class="apple-mobile-tile-sub">Heritage</span>
+        </div>
+      </a>
+      <a href="../../contact-form/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-envelope-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Contact</span>
+          <span class="apple-mobile-tile-sub">Global Offices</span>
+        </div>
+      </a>
+    </div>
+    
+    <div class="apple-mobile-cta-box">
+      <a href="../../contact-form/index.html" class="apple-mobile-btn-consultation">
+        <i class="bi bi-building-check me-2"></i> Request Project Consultation <i class="bi bi-arrow-right ms-auto"></i>
+      </a>
+
+      <div class="apple-mobile-contact-grid">
+        <a href="tel:18008917466" class="apple-mobile-contact-pill apple-mobile-pill-tel">
+          <i class="bi bi-telephone-fill"></i>
+          <span>1800 891 7466<small>National Toll-Free</small></span>
+        </a>
+        <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." target="_blank" rel="noopener noreferrer" class="apple-mobile-contact-pill apple-mobile-pill-wa">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>WhatsApp Desk<small>24/7 Fast Inquiry</small></span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+      
+
+    <main>
+        <section class="catalogue-hero catalogue-hero--compact">
+            <div class="container">
+                <nav class="catalogue-breadcrumb" aria-label="Breadcrumb">
+                    <a href="../../index.html">Home</a>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="../index.html#catalogue">Catalogue</a>
+                    <i class="bi bi-chevron-right"></i>
+                    <span aria-current="page">Anesthesia Workstation</span>
+                </nav>
+                <div class="row align-items-center">
+                    <div class="col-lg-9">
+                        <span class="catalogue-eyebrow">Anesthesia & OT</span>
+                        <h1>Anesthesia Workstation</h1>
+                        <p>Advanced anesthesia workstations, integrated ventilators, multi-gas vaporizers, and mechanical anesthesia apparatus.</p>
+                        <a class="catalogue-button catalogue-button--ghost" href="../index.html#catalogue">
+                            <i class="bi bi-arrow-left"></i> Back to full catalogue
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalogue-section">
+            <div class="container">
+                  
+                <p class="catalogue-count">Showing <strong>15</strong> products</p>
+
+                <div class="category-search-wrapper mb-4" style="max-width: 500px;">
+                    <div class="input-group">
+                        <span class="input-group-text bg-white border-end-0"><i class="bi bi-search text-muted"></i></span>
+                        <input type="text" id="categoryProductSearch" class="form-control border-start-0 ps-0" placeholder="Filter anesthesia workstation..." aria-label="Filter products">
+                    </div>
+                </div>
+                <script src="../../assets/js/catalogue-filters.js?v=1.0"></script>
+                <div class="row g-4" id="products-grid">
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="anesthesia workstation prestige-i" data-badge="prestige-i">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Anesthesia Workstation Prestige-I on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-anesthesia-workstation-prestige-plus.png" alt="Anesthesia Workstation Prestige-I" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Prestige-I</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Anesthesia & OT</span>
+                                <h3>Anesthesia Workstation Prestige-I</h3>
+                                <p>Pneumatically driven, electronically controlled anesthesia workstation suitable for adult and paediatric patient care.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Pneumatically driven, electronically controlled integrated ventilator</li>
+                                <li>Two high-precision agent-specific vaporizers (Isoflurane / Halothane / Sevoflurane)</li>
+                                <li>Upgraded integrated Circle Absorber with dual CO2 absorbing canisters</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Anesthesia%20Workstation%20Prestige-I">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="anesthesia workstation premium prestige" data-badge="premium prestige">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Anesthesia Workstation Premium Prestige on Instagram" title="View on Instagram">
+                                    <img src="anesthesia-workstation-premium.png" alt="Anesthesia Workstation Premium Prestige" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Premium Prestige</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Anesthesia & OT</span>
+                                <h3>Anesthesia Workstation Premium Prestige</h3>
+                                <p>High-end anesthesia delivery platform with colour touch interface, active gas scavenging, and integrated patient monitoring rails.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Colour touch standardized user interface minimizing user errors</li>
+                                <li>Integrated workplace LED illumination for dark theatre operations</li>
+                                <li>Additional LCD showing volume supply, FiO2 and power status</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Anesthesia%20Workstation%20Premium%20Prestige">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="anesthesia workstation (certified pre-owned)" data-badge="certified pre-owned">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Anesthesia Workstation (Certified Pre-Owned) on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-datex-ohmeda-anesthesia-workstation.png" alt="Anesthesia Workstation (Certified Pre-Owned)" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Certified Pre-Owned</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Anesthesia & OT</span>
+                                <h3>Anesthesia Workstation (Certified Pre-Owned)</h3>
+                                <p>Fully inspected, factory-calibrated pre-owned anesthesia workstation offering premium theatre capability at high value.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Multi-tier monitoring shelves and precision gas rotameter tubes</li>
+                                <li>Fully tested ventilator and soda lime canister system</li>
+                                <li>Backed by Dr. Smith comprehensive warranty and service support</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Anesthesia%20Workstation%20%28Certified%20Pre-Owned%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="optema life line hope anesthesia workstation" data-badge="optema hope">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Optema Life Line Hope Anesthesia Workstation on Instagram" title="View on Instagram">
+                                    <img src="anesthesia-optema-hope.png" alt="Optema Life Line Hope Anesthesia Workstation" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Optema Hope</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Anesthesia & OT</span>
+                                <h3>Optema Life Line Hope Anesthesia Workstation</h3>
+                                <p>Advanced multi-gas anesthesia system equipped with integrated tidal volume monitoring, electronic PEEP, and dual vaporizers.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Integrated ventilator supporting IPPV, SIMV, and Manual modes</li>
+                                <li>Dual vaporizer manifold with interlock safety mechanism</li>
+                                <li>Integrated Circle Absorber with bypass valve for canister replacement</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Optema%20Life%20Line%20Hope%20Anesthesia%20Workstation">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="optema life line compact workstation" data-badge="optema compact">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Optema Life Line Compact Workstation on Instagram" title="View on Instagram">
+                                    <img src="anesthesia-optema-compact.png" alt="Optema Life Line Compact Workstation" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Optema Compact</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Anesthesia & OT</span>
+                                <h3>Optema Life Line Compact Workstation</h3>
+                                <p>Compact anesthesia delivery workstation optimized for day-care surgery centres, satellite OTs, and ambulatory surgical clinics.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Small footprint chassis on high-stability lockable antistatic castors</li>
+                                <li>Two-gas rotameter system with oxygen ratio controller</li>
+                                <li>Mounted with precision agent vaporizer and canister absorber</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Optema%20Life%20Line%20Compact%20Workstation">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="top tech co2 circle absorber system" data-badge="circle absorber">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Top Tech CO2 Circle Absorber System on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-circle-absorber-system.png" alt="Top Tech CO2 Circle Absorber System" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Circle Absorber</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Anesthesia & OT</span>
+                                <h3>Top Tech CO2 Circle Absorber System</h3>
+                                <p>Upgraded integrated closed-circuit carbon dioxide absorber system with dual soda-lime canisters and APL pressure relief valve.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Twin large-volume transparent soda lime canisters</li>
+                                <li>APL (Adjustable Pressure Limiting) valve with quick switch lever</li>
+                                <li>Non-return inspiratory and expiratory valves preventing rebreathing</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Top%20Tech%20CO2%20Circle%20Absorber%20System">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="precision anesthetic agent vaporizer" data-badge="vaporizer">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Precision Anesthetic Agent Vaporizer on Instagram" title="View on Instagram">
+                                    <img src="anesthesia-vaporizer.png" alt="Precision Anesthetic Agent Vaporizer" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Vaporizer</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Anesthesia & OT</span>
+                                <h3>Precision Anesthetic Agent Vaporizer</h3>
+                                <p>Temperature and flow-compensated agent-specific precision vaporizer for Isoflurane, Sevoflurane, and Halothane.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Automatic temperature and flow rate compensation (0.2 to 15 L/min)</li>
+                                <li>Selectatec-compatible key-filler or pour-fill safety system</li>
+                                <li>High delivery concentration accuracy across long surgical cases</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Precision%20Anesthetic%20Agent%20Vaporizer">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="anesthesia machine minor ms" data-badge="minor ms">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Anesthesia Machine Minor MS on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-anesthesia-machine-minor-ms-real.png" alt="Anesthesia Machine Minor MS" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Minor MS</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Anesthesia & OT</span>
+                                <h3>Anesthesia Machine Minor MS</h3>
+                                <p>Compact two-gas anesthesia machine with powder-coated steel tubular frame and dual rotameter tubes.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Two-gas system (O2 & N2O) with oxygen failure protection device</li>
+                                <li>Powder coated mild steel frame with antistatic castors</li>
+                                <li>Provision for mounting vaporizer and circle absorber</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Anesthesia%20Machine%20Minor%20MS">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="anesthesia machine major ms" data-badge="major ms">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Anesthesia Machine Major MS on Instagram" title="View on Instagram">
+                                    <img src="anesthesia-machine-major-ms.png" alt="Anesthesia Machine Major MS" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Major MS</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Anesthesia & OT</span>
+                                <h3>Anesthesia Machine Major MS</h3>
+                                <p>Four-gas rotameter anesthesia trolley with dual shelf space, emergency oxygen flush, and cylinder yokes.</p>
+                                <ul class="catalogue-card__details">
+                                <li>High-precision 4-tube rotameter bank with illumination</li>
+                                <li>Anti-hypoxic guard ensuring minimum 25% oxygen concentration</li>
+                                <li>Large stainless steel work surface with writing table</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Anesthesia%20Machine%20Major%20MS">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="anesthesia machine minor ss" data-badge="minor ss">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Anesthesia Machine Minor SS on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-anesthesia-trolley-minor-ss.png" alt="Anesthesia Machine Minor SS" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Minor SS</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Anesthesia & OT</span>
+                                <h3>Anesthesia Machine Minor SS</h3>
+                                <p>All stainless steel construction minor anesthesia apparatus ideal for hygienic minor operating rooms.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Rust-proof AISI 304 stainless steel frame and table top</li>
+                                <li>Dual-gas rotameter with pin-index cylinder yokes</li>
+                                <li>Antistatic castor wheels with pedal brakes</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Anesthesia%20Machine%20Minor%20SS">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="anesthesia machine major ss" data-badge="major ss">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Anesthesia Machine Major SS on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-anesthesia-trolley-major-ss.png" alt="Anesthesia Machine Major SS" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Major SS</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Anesthesia & OT</span>
+                                <h3>Anesthesia Machine Major SS</h3>
+                                <p>Full stainless steel heavy surgical anesthesia machine equipped with nitrous oxide cutoff and gas cylinder carriers.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Complete stainless steel chassis and top instrument tray</li>
+                                <li>4-tube flowmeter with hypoxic guard and N2O automatic cutoff</li>
+                                <li>Built-in emergency oxygen flush (35 - 75 L/min)</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Anesthesia%20Machine%20Major%20SS">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="anesthesia machine prestige eco" data-badge="prestige eco">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Anesthesia Machine Prestige ECO on Instagram" title="View on Instagram">
+                                    <img src="anesthesia-machine-prestige-eco.png" alt="Anesthesia Machine Prestige ECO" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Prestige ECO</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Anesthesia & OT</span>
+                                <h3>Anesthesia Machine Prestige ECO</h3>
+                                <p>Modern ergonomic anesthesia unit with enclosed trolley housing, storage drawers and integrated vaporizer mounts.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Streamlined enclosed console with multiple utility drawers</li>
+                                <li>Calibrated Selectatec-compatible vaporizer interlock system</li>
+                                <li>Centralized gas pipeline inlets with pressure gauges</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Anesthesia%20Machine%20Prestige%20ECO">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="bpl penlon flo-6 anesthesia workstation ventilator" data-badge="bpl penlon flo-6">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View BPL Penlon Flo-6 Anesthesia Workstation on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-bpl-penlon-flo6-anesthesia-workstation.png" alt="BPL Penlon Flo-6 Anesthesia Workstation" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">BPL Penlon &bull; Flo-6</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Anesthesia & OT Platforms</span>
+                                <h3>BPL Penlon Flo-6 Anesthesia Workstation</h3>
+                                <p>Advanced multi-gas anesthesia workstation featuring integrated color ventilator display, twin pipeline pressure dials, precision flowmeters, and dual drawer base.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Integrated high-performance ventilator with multi-mode volume and pressure support</li>
+                                <li>Selectatec-compatible agent vaporizer interlock mounting system</li>
+                                <li>Ergonomic writing surface, O2 flush control, and integrated circle absorber</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=BPL%20Penlon%20Flo-6%20Anesthesia%20Workstation">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith ventilator integrated anesthesia workstation" data-badge="touchscreen icu/ot">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Ventilator Integrated Anesthesia Workstation on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-anesthesia-workstation-ventilator-integrated.png" alt="Dr. Smith Ventilator Integrated Anesthesia Workstation" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Touchscreen ICU/OT</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Dr. Smith Flagship</span>
+                                <h3>Dr. Smith Integrated Ventilator Anesthesia Workstation</h3>
+                                <p>Top-tier anesthesia delivery station with full color ventilator screen, 6-gauge pipeline monitoring array, ascending bellows, and dual deep equipment drawers.</p>
+                                <ul class="catalogue-card__details">
+                                <li>High-precision multi-parameter ventilator display tracking waveforms and loops</li>
+                                <li>Hexagonal 6-gauge pressure monitoring console for O2, N2O, and medical air</li>
+                                <li>Heavy-duty swivel castors with individual foot brake locks and antistatic wheels</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Integrated%20Ventilator%20Anesthesia%20Workstation">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith prestige deluxe anesthesia station" data-badge="prestige deluxe">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Prestige Deluxe Anesthesia Station on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-anesthesia-workstation-prestige-deluxe.png" alt="Dr. Smith Prestige Deluxe Anesthesia Station" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Prestige Deluxe &bull; 2-Drawer</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Anesthesia Delivery</span>
+                                <h3>Dr. Smith Prestige Deluxe Anesthesia Station</h3>
+                                <p>Comprehensive theatre anesthesia station with top digital monitor unit, multi-tube cascade rotameter block, and side-mounted dual canister circle absorber.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Dual drawer lockable modular cabinet with auxiliary electrical power sockets</li>
+                                <li>Cascade illuminated rotameter tubes with hypoxic guard safety mechanism</li>
+                                <li>Integrated side mounting bracket for canister absorber and breathing circuit</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Prestige%20Deluxe%20Anesthesia%20Station">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
 </div>
-<div class="apple-nav-brand-text">
-<span class="apple-nav-brand-title">Dr. Smith</span>
-<span class="apple-nav-brand-subtitle">HOSPITAL SOLUTIONS</span>
-</div>
-</a>
-<!-- Navigation Links -->
-<ul class="apple-nav-links"><li class="apple-nav-item"><a class="apple-nav-link" href="../../index.html">Home</a></li><li class="apple-nav-item"><a class="apple-nav-link nav-active" href="../index.html">Products</a></li><li class="apple-nav-item"><a class="apple-nav-link" href="../../about-us/index.html">About us</a></li><li class="apple-nav-item"><a class="apple-nav-link" href="../../turnkey-projects/index.html">turnkey project</a></li><li class="apple-nav-item"><a class="apple-nav-link" href="../../contact-form/index.html">Contact Us</a></li></ul><!-- Action Utilities -->
-<div class="apple-nav-actions">
-<!-- Contact / Mail Form Button -->
-<a aria-label="Send Enquiry &amp; Contact Us" class="apple-nav-circle-btn apple-nav-circle-mail" href="../../contact-form/index.html" title="Send Enquiry / Request Quotation (BOM &amp; Consultation)">
-<i class="fa-solid fa-envelope"></i>
-</a>
-<!-- WhatsApp Circle Button -->
-<a aria-label="Chat with Dr. Smith Healthcare on WhatsApp (+91 95990 81020)" class="apple-nav-circle-btn apple-nav-circle-whatsapp" href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." rel="noopener noreferrer" target="_blank" title="WhatsApp Direct (+91 95990 81020) • 24/7 Fast Inquiry">
-<i class="fa-brands fa-whatsapp"></i>
-</a>
-<!-- Menu Toggle Button -->
-<button aria-label="Toggle Navigation Menu" class="apple-nav-circle-btn" id="apple-mobile-menu-btn" title="Menu" type="button">
-<i class="bi bi-list"></i>
-</button>
-</div>
-</div>
-</nav>
-<!-- Mobile Menu Drawer Backdrop Overlay -->
-<div class="apple-mobile-backdrop" id="appleMobileBackdrop"></div>
-<!-- Mobile Menu Drawer Overlay -->
-<div class="apple-mobile-drawer" id="apple-mobile-drawer">
-<div class="apple-mobile-drawer-header">
-<span class="apple-mobile-drawer-tag"><i class="bi bi-hospital"></i> Dr. Smith Quick Menu</span>
-<button aria-label="Close Navigation Menu" class="apple-mobile-drawer-close" id="appleMobileDrawerClose" type="button">
-<i class="bi bi-x-lg"></i>
-</button>
-</div>
-<div class="apple-mobile-grid"><a class="apple-mobile-tile" href="../../index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-house-door-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">Home</span><span class="apple-mobile-tile-sub">Overview</span></div></a><a class="apple-mobile-tile active" href="../index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-grid-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">Products</span><span class="apple-mobile-tile-sub">Browse categories</span></div></a><a class="apple-mobile-tile" href="../../about-us/index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-shield-check"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">About us</span><span class="apple-mobile-tile-sub">Our story</span></div></a><a class="apple-mobile-tile" href="../../turnkey-projects/index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-hospital-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">turnkey project</span><span class="apple-mobile-tile-sub">Setup solutions</span></div></a><a class="apple-mobile-tile" href="../../contact-form/index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-envelope-paper-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">Contact Us</span><span class="apple-mobile-tile-sub">Get in touch</span></div></a></div>
-<section class="catalogue-section">
-<div class="container">
-<p class="catalogue-count">Showing <strong>15</strong> products</p>
-<div class="category-search-wrapper mb-4" style="max-width: 500px;">
-<div class="input-group">
-<span class="input-group-text bg-white border-end-0"><i class="bi bi-search text-muted"></i></span>
-<input aria-label="Filter products" class="form-control border-start-0 ps-0" id="categoryProductSearch" placeholder="Filter anesthesia workstation..." type="text"/>
-</div>
-</div>
-<script src="../../assets/js/catalogue-filters.js?v=1.0"></script>
-<div class="row g-4" id="products-grid">
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="prestige-i" data-title="anesthesia workstation prestige-i">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Anesthesia Workstation Prestige-I on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Anesthesia Workstation Prestige-I" decoding="async" loading="lazy" src="dr-smith-anesthesia-workstation-prestige-plus.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Prestige-I</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Anesthesia &amp; OT</span>
-<h3>Anesthesia Workstation Prestige-I</h3>
-<p>Pneumatically driven, electronically controlled anesthesia workstation suitable for adult and paediatric patient care.</p>
-<ul class="catalogue-card__details">
-<li>Pneumatically driven, electronically controlled integrated ventilator</li>
-<li>Two high-precision agent-specific vaporizers (Isoflurane / Halothane / Sevoflurane)</li>
-<li>Upgraded integrated Circle Absorber with dual CO2 absorbing canisters</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Anesthesia%20Workstation%20Prestige-I">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="premium prestige" data-title="anesthesia workstation premium prestige">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Anesthesia Workstation Premium Prestige on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Anesthesia Workstation Premium Prestige" decoding="async" loading="lazy" src="anesthesia-workstation-premium.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Premium Prestige</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Anesthesia &amp; OT</span>
-<h3>Anesthesia Workstation Premium Prestige</h3>
-<p>High-end anesthesia delivery platform with colour touch interface, active gas scavenging, and integrated patient monitoring rails.</p>
-<ul class="catalogue-card__details">
-<li>Colour touch standardized user interface minimizing user errors</li>
-<li>Integrated workplace LED illumination for dark theatre operations</li>
-<li>Additional LCD showing volume supply, FiO2 and power status</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Anesthesia%20Workstation%20Premium%20Prestige">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="certified pre-owned" data-title="anesthesia workstation (certified pre-owned)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Anesthesia Workstation (Certified Pre-Owned) on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Anesthesia Workstation (Certified Pre-Owned)" decoding="async" loading="lazy" src="dr-smith-datex-ohmeda-anesthesia-workstation.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Certified Pre-Owned</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Anesthesia &amp; OT</span>
-<h3>Anesthesia Workstation (Certified Pre-Owned)</h3>
-<p>Fully inspected, factory-calibrated pre-owned anesthesia workstation offering premium theatre capability at high value.</p>
-<ul class="catalogue-card__details">
-<li>Multi-tier monitoring shelves and precision gas rotameter tubes</li>
-<li>Fully tested ventilator and soda lime canister system</li>
-<li>Backed by Dr. Smith comprehensive warranty and service support</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Anesthesia%20Workstation%20%28Certified%20Pre-Owned%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="optema hope" data-title="optema life line hope anesthesia workstation">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Optema Life Line Hope Anesthesia Workstation on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Optema Life Line Hope Anesthesia Workstation" decoding="async" loading="lazy" src="anesthesia-optema-hope.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Optema Hope</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Anesthesia &amp; OT</span>
-<h3>Optema Life Line Hope Anesthesia Workstation</h3>
-<p>Advanced multi-gas anesthesia system equipped with integrated tidal volume monitoring, electronic PEEP, and dual vaporizers.</p>
-<ul class="catalogue-card__details">
-<li>Integrated ventilator supporting IPPV, SIMV, and Manual modes</li>
-<li>Dual vaporizer manifold with interlock safety mechanism</li>
-<li>Integrated Circle Absorber with bypass valve for canister replacement</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Optema%20Life%20Line%20Hope%20Anesthesia%20Workstation">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="optema compact" data-title="optema life line compact workstation">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Optema Life Line Compact Workstation on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Optema Life Line Compact Workstation" decoding="async" loading="lazy" src="anesthesia-optema-compact.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Optema Compact</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Anesthesia &amp; OT</span>
-<h3>Optema Life Line Compact Workstation</h3>
-<p>Compact anesthesia delivery workstation optimized for day-care surgery centres, satellite OTs, and ambulatory surgical clinics.</p>
-<ul class="catalogue-card__details">
-<li>Small footprint chassis on high-stability lockable antistatic castors</li>
-<li>Two-gas rotameter system with oxygen ratio controller</li>
-<li>Mounted with precision agent vaporizer and canister absorber</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Optema%20Life%20Line%20Compact%20Workstation">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="circle absorber" data-title="top tech co2 circle absorber system">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Top Tech CO2 Circle Absorber System on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Top Tech CO2 Circle Absorber System" decoding="async" loading="lazy" src="dr-smith-circle-absorber-system.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Circle Absorber</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Anesthesia &amp; OT</span>
-<h3>Top Tech CO2 Circle Absorber System</h3>
-<p>Upgraded integrated closed-circuit carbon dioxide absorber system with dual soda-lime canisters and APL pressure relief valve.</p>
-<ul class="catalogue-card__details">
-<li>Twin large-volume transparent soda lime canisters</li>
-<li>APL (Adjustable Pressure Limiting) valve with quick switch lever</li>
-<li>Non-return inspiratory and expiratory valves preventing rebreathing</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Top%20Tech%20CO2%20Circle%20Absorber%20System">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="vaporizer" data-title="precision anesthetic agent vaporizer">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Precision Anesthetic Agent Vaporizer on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Precision Anesthetic Agent Vaporizer" decoding="async" loading="lazy" src="anesthesia-vaporizer.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Vaporizer</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Anesthesia &amp; OT</span>
-<h3>Precision Anesthetic Agent Vaporizer</h3>
-<p>Temperature and flow-compensated agent-specific precision vaporizer for Isoflurane, Sevoflurane, and Halothane.</p>
-<ul class="catalogue-card__details">
-<li>Automatic temperature and flow rate compensation (0.2 to 15 L/min)</li>
-<li>Selectatec-compatible key-filler or pour-fill safety system</li>
-<li>High delivery concentration accuracy across long surgical cases</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Precision%20Anesthetic%20Agent%20Vaporizer">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="minor ms" data-title="anesthesia machine minor ms">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Anesthesia Machine Minor MS on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Anesthesia Machine Minor MS" decoding="async" loading="lazy" src="dr-smith-anesthesia-machine-minor-ms-real.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Minor MS</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Anesthesia &amp; OT</span>
-<h3>Anesthesia Machine Minor MS</h3>
-<p>Compact two-gas anesthesia machine with powder-coated steel tubular frame and dual rotameter tubes.</p>
-<ul class="catalogue-card__details">
-<li>Two-gas system (O2 &amp; N2O) with oxygen failure protection device</li>
-<li>Powder coated mild steel frame with antistatic castors</li>
-<li>Provision for mounting vaporizer and circle absorber</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Anesthesia%20Machine%20Minor%20MS">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="major ms" data-title="anesthesia machine major ms">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Anesthesia Machine Major MS on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Anesthesia Machine Major MS" decoding="async" loading="lazy" src="anesthesia-machine-major-ms.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Major MS</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Anesthesia &amp; OT</span>
-<h3>Anesthesia Machine Major MS</h3>
-<p>Four-gas rotameter anesthesia trolley with dual shelf space, emergency oxygen flush, and cylinder yokes.</p>
-<ul class="catalogue-card__details">
-<li>High-precision 4-tube rotameter bank with illumination</li>
-<li>Anti-hypoxic guard ensuring minimum 25% oxygen concentration</li>
-<li>Large stainless steel work surface with writing table</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Anesthesia%20Machine%20Major%20MS">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="minor ss" data-title="anesthesia machine minor ss">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Anesthesia Machine Minor SS on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Anesthesia Machine Minor SS" decoding="async" loading="lazy" src="dr-smith-anesthesia-trolley-minor-ss.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Minor SS</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Anesthesia &amp; OT</span>
-<h3>Anesthesia Machine Minor SS</h3>
-<p>All stainless steel construction minor anesthesia apparatus ideal for hygienic minor operating rooms.</p>
-<ul class="catalogue-card__details">
-<li>Rust-proof AISI 304 stainless steel frame and table top</li>
-<li>Dual-gas rotameter with pin-index cylinder yokes</li>
-<li>Antistatic castor wheels with pedal brakes</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Anesthesia%20Machine%20Minor%20SS">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="major ss" data-title="anesthesia machine major ss">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Anesthesia Machine Major SS on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Anesthesia Machine Major SS" decoding="async" loading="lazy" src="dr-smith-anesthesia-trolley-major-ss.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Major SS</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Anesthesia &amp; OT</span>
-<h3>Anesthesia Machine Major SS</h3>
-<p>Full stainless steel heavy surgical anesthesia machine equipped with nitrous oxide cutoff and gas cylinder carriers.</p>
-<ul class="catalogue-card__details">
-<li>Complete stainless steel chassis and top instrument tray</li>
-<li>4-tube flowmeter with hypoxic guard and N2O automatic cutoff</li>
-<li>Built-in emergency oxygen flush (35 - 75 L/min)</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Anesthesia%20Machine%20Major%20SS">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="prestige eco" data-title="anesthesia machine prestige eco">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Anesthesia Machine Prestige ECO on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Anesthesia Machine Prestige ECO" decoding="async" loading="lazy" src="anesthesia-machine-prestige-eco.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Prestige ECO</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Anesthesia &amp; OT</span>
-<h3>Anesthesia Machine Prestige ECO</h3>
-<p>Modern ergonomic anesthesia unit with enclosed trolley housing, storage drawers and integrated vaporizer mounts.</p>
-<ul class="catalogue-card__details">
-<li>Streamlined enclosed console with multiple utility drawers</li>
-<li>Calibrated Selectatec-compatible vaporizer interlock system</li>
-<li>Centralized gas pipeline inlets with pressure gauges</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Anesthesia%20Machine%20Prestige%20ECO">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="bpl penlon flo-6" data-title="bpl penlon flo-6 anesthesia workstation ventilator">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View BPL Penlon Flo-6 Anesthesia Workstation on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="BPL Penlon Flo-6 Anesthesia Workstation" decoding="async" loading="lazy" src="dr-smith-bpl-penlon-flo6-anesthesia-workstation.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">BPL Penlon • Flo-6</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Anesthesia &amp; OT Platforms</span>
-<h3>BPL Penlon Flo-6 Anesthesia Workstation</h3>
-<p>Advanced multi-gas anesthesia workstation featuring integrated color ventilator display, twin pipeline pressure dials, precision flowmeters, and dual drawer base.</p>
-<ul class="catalogue-card__details">
-<li>Integrated high-performance ventilator with multi-mode volume and pressure support</li>
-<li>Selectatec-compatible agent vaporizer interlock mounting system</li>
-<li>Ergonomic writing surface, O2 flush control, and integrated circle absorber</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=BPL%20Penlon%20Flo-6%20Anesthesia%20Workstation">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="touchscreen icu/ot" data-title="dr. smith ventilator integrated anesthesia workstation">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Ventilator Integrated Anesthesia Workstation on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Ventilator Integrated Anesthesia Workstation" decoding="async" loading="lazy" src="dr-smith-anesthesia-workstation-ventilator-integrated.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Touchscreen ICU/OT</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Dr. Smith Flagship</span>
-<h3>Dr. Smith Integrated Ventilator Anesthesia Workstation</h3>
-<p>Top-tier anesthesia delivery station with full color ventilator screen, 6-gauge pipeline monitoring array, ascending bellows, and dual deep equipment drawers.</p>
-<ul class="catalogue-card__details">
-<li>High-precision multi-parameter ventilator display tracking waveforms and loops</li>
-<li>Hexagonal 6-gauge pressure monitoring console for O2, N2O, and medical air</li>
-<li>Heavy-duty swivel castors with individual foot brake locks and antistatic wheels</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Integrated%20Ventilator%20Anesthesia%20Workstation">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="prestige deluxe" data-title="dr. smith prestige deluxe anesthesia station">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Prestige Deluxe Anesthesia Station on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Prestige Deluxe Anesthesia Station" decoding="async" loading="lazy" src="dr-smith-anesthesia-workstation-prestige-deluxe.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Prestige Deluxe • 2-Drawer</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Anesthesia Delivery</span>
-<h3>Dr. Smith Prestige Deluxe Anesthesia Station</h3>
-<p>Comprehensive theatre anesthesia station with top digital monitor unit, multi-tube cascade rotameter block, and side-mounted dual canister circle absorber.</p>
-<ul class="catalogue-card__details">
-<li>Dual drawer lockable modular cabinet with auxiliary electrical power sockets</li>
-<li>Cascade illuminated rotameter tubes with hypoxic guard safety mechanism</li>
-<li>Integrated side mounting bracket for canister absorber and breathing circuit</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Prestige%20Deluxe%20Anesthesia%20Station">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-</div>
-</div>
-</section>
-<section class="catalogue-section">
-<div class="container">
-<div class="catalogue-cta d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4">
-<div>
-<h2>Can't find what you're looking for?</h2>
-<p>Share your requirements and our team will recommend the best fit from our full range.</p>
-</div>
-<a class="catalogue-button flex-shrink-0" href="../../contact-form/index.html">
+
+            </div>
+        </section>
+
+        <section class="catalogue-section">
+            <div class="container">
+                <div class="catalogue-cta d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4">
+                    <div>
+                        <h2>Can't find what you're looking for?</h2>
+                        <p>Share your requirements and our team will recommend the best fit from our full range.</p>
+                    </div>
+                    <a class="catalogue-button flex-shrink-0" href="../../contact-form/index.html">
                         Contact our team <i class="bi bi-arrow-right"></i>
-</a>
-</div>
-</div>
-</section>
-<!-- ============================================================
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+      <!-- ============================================================
        GLOBAL DIRECTORY FOOTER
        ============================================================ -->
-<!-- Drawer Modal -->
-<!-- ============================================================
+  
+
+  <!-- Drawer Modal -->
+    <!-- ============================================================
        GLOBAL DIRECTORY FOOTER
        ============================================================ -->
-<footer class="apple-globalfooter">
-<div class="apple-footer-inner">
-<!-- Footer Brand Header & Fast Back-To-Top -->
-<div class="apple-footer-brand-header">
-<div class="apple-footer-brand-left">
-<img alt="Dr. Smith Emblem Logo" class="apple-footer-brand-logo" decoding="async" height="32" loading="lazy" src="../../assets/img/logo.png?v=11.0" width="32"/>
-<div>
-<div class="apple-footer-brand-title">Dr. Smith</div>
-<span class="apple-footer-brand-subtitle">HOSPITAL SOLUTIONS</span>
-</div>
-</div>
-<a aria-label="Scroll back to top" class="apple-footer-backtotop-btn" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">
-<span>Top</span> <i class="bi bi-chevron-up"></i>
-</a>
-</div>
-<!-- Notes / Footnotes -->
-<div class="apple-footer-notes">
-<ol>
-<li>Medical equipment specifications, turnkey timelines, and compliance standards (ISO 9001:2015, ISO
+  <footer class="apple-globalfooter">
+    <div class="apple-footer-inner">
+
+      <!-- Footer Brand Header & Fast Back-To-Top -->
+      <div class="apple-footer-brand-header">
+        <div class="apple-footer-brand-left">
+          <img src="../../assets/img/logo.png?v=11.0" alt="Dr. Smith Emblem Logo" class="apple-footer-brand-logo" width="32"
+            height="32" decoding="async" loading="lazy">
+          <div>
+            <div class="apple-footer-brand-title">Dr. Smith</div>
+            <span class="apple-footer-brand-subtitle">HOSPITAL SOLUTIONS</span>
+          </div>
+        </div>
+        <a href="#top" class="apple-footer-backtotop-btn"
+          onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;" aria-label="Scroll back to top">
+          <span>Top</span> <i class="bi bi-chevron-up"></i>
+        </a>
+      </div>
+
+      <!-- Notes / Footnotes -->
+      <div class="apple-footer-notes">
+        <ol>
+          <li>Medical equipment specifications, turnkey timelines, and compliance standards (ISO 9001:2015, ISO
             13485:2016, CE, FDA) depend on specific project scopes and customized clinical configurations.</li>
-<li>Turnkey hospital infrastructure engineering timelines depend on architectural blueprints, local regulatory
+          <li>Turnkey hospital infrastructure engineering timelines depend on architectural blueprints, local regulatory
             clearances, and civil site readiness.</li>
-<li>Principal Global Head Office located at Kapashera Border, New Delhi; Manufacturing Plant at METL, Jhajjar,
+          <li>Principal Global Head Office located at Kapashera Border, New Delhi; Manufacturing Plant at METL, Jhajjar,
             Haryana; Overseas Head Office at SAIF Zone, Sharjah, UAE.</li>
-</ol>
-</div>
-<!-- Directory Columns (Mobile Collapsible Accordions) -->
-<div class="apple-footer-directory">
-<!-- Col 1: Turnkey Solutions (Active by default on mobile) -->
-<div class="apple-footer-col active">
-<button aria-expanded="true" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Turnkey Solutions</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../../turnkey-projects/index.html">500-Bedded Hospital Setup</a></li>
-<li><a href="../../catalogue/modular-ot/index.html">Modular OT Construction</a></li>
-<li><a href="../../turnkey-projects/index.html">Medical Gas Pipeline (MGPS)</a></li>
-<li><a href="../../turnkey-projects/index.html">Hospital Architecture &amp; MEP</a></li>
-<li><a href="../../turnkey-projects/index.html">Government &amp; Global Tenders</a></li>
-</ul>
-</div>
-<!-- Col 2: Group Ecosystem -->
-<div class="apple-footer-col">
-<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Group Ecosystem</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../../about-us/index.html">Dr. Smith Healthcare</a></li>
-<li><a href="../../catalogue/index.html">Surgihub Surgical Devices</a></li>
-<li><a href="../../catalogue/index.html">Surgical Mall of India (SMPL)</a></li>
-<li><a href="../../catalogue/index.html">MediAid Patient Care</a></li>
-<li><a href="../../catalogue/index.html">Orbit Mahajan Diagnostics</a></li>
-</ul>
-</div>
-<!-- Col 3: Product Catalogue -->
-<div class="apple-footer-col">
-<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Product Catalogue</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../../catalogue/beds/index.html">Hospital &amp; ICU Beds</a></li>
-<li><a href="../../catalogue/modular-ot/index.html">Modular OT Suites</a></li>
-<li><a href="../../catalogue/patient-monitor/index.html">Critical Care &amp; Monitors</a></li>
-<li><a href="../../catalogue/ventilators/index.html">ICU Ventilators</a></li>
-<li><a href="../../catalogue/index.html">Full 50+ Categories</a></li>
-</ul>
-</div>
-<!-- Col 4: Global Directory -->
-<div class="apple-footer-col">
-<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Global Presence</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../../contact-form/index.html">New Delhi Head Office (India)</a></li>
-<li><a href="../../contact-form/index.html">Jhajjar Manufacturing Plant</a></li>
-<li><a href="../../contact-form/index.html">Sharjah Overseas Office (UAE)</a></li>
-<li><a href="../../contact-form/index.html">Kenya &amp; Nigeria Desks</a></li>
-<li><a href="../../contact-form/index.html">Patna, Kolkata, Varanasi Marts</a></li>
-</ul>
-</div>
-<!-- Col 5: Compliance & Values -->
-<div class="apple-footer-col">
-<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Corporate &amp; Quality</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../../about-us/index.html">About 60+ Years Heritage</a></li>
-<li><a href="../../mission-values/index.html">Mission &amp; Values</a></li>
-<li><a href="../../about-us/index.html">Executive Leadership</a></li>
-<li><a href="../../privacy.html">Privacy Policy</a></li>
-<li><a href="../../terms.html">Terms of Service</a></li>
-</ul>
-</div>
-</div>
-<!-- Footer Bottom Legal, Direct Connect & Country Positioned in Correct Order -->
-<div class="apple-footer-bottom">
-<div class="apple-footer-top-row">
-<div class="apple-footer-country">
-<a class="apple-footer-country-badge" href="../../contact-form/index.html" title="Region &amp; Language">
-<i class="bi bi-globe me-1"></i> India (English)
+        </ol>
+      </div>
+
+      <!-- Directory Columns (Mobile Collapsible Accordions) -->
+      <div class="apple-footer-directory">
+
+        <!-- Col 1: Turnkey Solutions (Active by default on mobile) -->
+        <div class="apple-footer-col active">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="true">
+            <h4 class="apple-footer-col-title">Turnkey Solutions</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../../turnkey-projects/index.html">500-Bedded Hospital Setup</a></li>
+            <li><a href="../../catalogue/modular-ot/index.html">Modular OT Construction</a></li>
+            <li><a href="../../turnkey-projects/index.html">Medical Gas Pipeline (MGPS)</a></li>
+            <li><a href="../../turnkey-projects/index.html">Hospital Architecture &amp; MEP</a></li>
+            <li><a href="../../turnkey-projects/index.html">Government &amp; Global Tenders</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 2: Group Ecosystem -->
+        <div class="apple-footer-col">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Group Ecosystem</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../../about-us/index.html">Dr. Smith Healthcare</a></li>
+            <li><a href="../../catalogue/index.html">Surgihub Surgical Devices</a></li>
+            <li><a href="../../catalogue/index.html">Surgical Mall of India (SMPL)</a></li>
+            <li><a href="../../catalogue/index.html">MediAid Patient Care</a></li>
+            <li><a href="../../catalogue/index.html">Orbit Mahajan Diagnostics</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Product Catalogue -->
+        <div class="apple-footer-col">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Product Catalogue</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../../catalogue/beds/index.html">Hospital &amp; ICU Beds</a></li>
+            <li><a href="../../catalogue/modular-ot/index.html">Modular OT Suites</a></li>
+            <li><a href="../../catalogue/patient-monitor/index.html">Critical Care &amp; Monitors</a></li>
+            <li><a href="../../catalogue/ventilators/index.html">ICU Ventilators</a></li>
+            <li><a href="../../catalogue/index.html">Full 50+ Categories</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Global Directory -->
+        <div class="apple-footer-col">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Global Presence</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../../contact-form/index.html">New Delhi Head Office (India)</a></li>
+            <li><a href="../../contact-form/index.html">Jhajjar Manufacturing Plant</a></li>
+            <li><a href="../../contact-form/index.html">Sharjah Overseas Office (UAE)</a></li>
+            <li><a href="../../contact-form/index.html">Kenya &amp; Nigeria Desks</a></li>
+            <li><a href="../../contact-form/index.html">Patna, Kolkata, Varanasi Marts</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Compliance & Values -->
+        <div class="apple-footer-col">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Corporate &amp; Quality</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../../about-us/index.html">About 60+ Years Heritage</a></li>
+            <li><a href="../../mission-values/index.html">Mission &amp; Values</a></li>
+            <li><a href="../../about-us/index.html">Executive Leadership</a></li>
+            <li><a href="../../privacy.html">Privacy Policy</a></li>
+            <li><a href="../../terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Legal, Direct Connect & Country Positioned in Correct Order -->
+      <div class="apple-footer-bottom">
+        <div class="apple-footer-top-row">
+          <div class="apple-footer-country">
+            <a href="../../contact-form/index.html" class="apple-footer-country-badge" title="Region &amp; Language">
+              <i class="bi bi-globe me-1"></i> India (English)
             </a>
-</div>
-<div class="apple-footer-quicklinks">
-<a class="apple-footer-badge-link" href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." rel="noopener noreferrer" target="_blank" title="Direct WhatsApp Assistance (+91 95990 81020)">
-<i class="fa-brands fa-whatsapp text-success me-1"></i> WhatsApp Desk
+          </div>
+          <div class="apple-footer-quicklinks">
+            <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." target="_blank" rel="noopener noreferrer"
+              class="apple-footer-badge-link" title="Direct WhatsApp Assistance (+91 95990 81020)">
+              <i class="fa-brands fa-whatsapp text-success me-1"></i> WhatsApp Desk
             </a>
-</div>
-</div>
-<div class="apple-footer-divider"></div>
-<div class="apple-footer-meta-row">
-<div class="apple-footer-legal-links">
-<a href="../../privacy.html">Privacy Policy</a>
-<span class="legal-dot">•</span>
-<a href="../../terms.html">Terms of Use</a>
-<span class="legal-dot">•</span>
-<a href="../../contact-form/index.html">Sales Policy</a>
-<span class="legal-dot">•</span>
-<a href="../../contact-form/index.html">Legal</a>
-<span class="legal-dot">•</span>
-<a href="../../catalogue/index.html">Site Map</a>
-</div>
-<div class="apple-footer-copyright">
-            Copyright © 2026 Dr. Smith Healthcare Solutions (Surgical Wholesale Mart Pvt. Ltd.). All rights
+          </div>
+        </div>
+
+        <div class="apple-footer-divider"></div>
+
+        <div class="apple-footer-meta-row">
+          <div class="apple-footer-legal-links">
+            <a href="../../privacy.html">Privacy Policy</a>
+            <span class="legal-dot">•</span>
+            <a href="../../terms.html">Terms of Use</a>
+            <span class="legal-dot">•</span>
+            <a href="../../contact-form/index.html">Sales Policy</a>
+            <span class="legal-dot">•</span>
+            <a href="../../contact-form/index.html">Legal</a>
+            <span class="legal-dot">•</span>
+            <a href="../../catalogue/index.html">Site Map</a>
+          </div>
+          <div class="apple-footer-copyright">
+            Copyright &copy; 2026 Dr. Smith Healthcare Solutions (Surgical Wholesale Mart Pvt. Ltd.). All rights
             reserved. An ISO 9001:2015, ISO 13485:2016, CE &amp; FDA Certified Company.
           </div>
-</div>
-</div>
-</div>
-</footer>
-<!-- Drawer Modal -->
-<div class="apple-drawer-overlay" id="apple-drawer-overlay" onclick="if(event.target===this) closeAppleDrawer();">
-<div class="apple-drawer-content">
-<button aria-label="Close" class="apple-drawer-close" onclick="closeAppleDrawer();" type="button">
-<i class="bi bi-x-lg"></i>
-</button>
-<div style="text-align: center; margin-bottom: 24px;">
-<span class="apple-shelf-badge">Dr. Smith Turnkey &amp; Procurement Desk</span>
-<h3 style="font-size: 24px; font-weight: 700; margin-top: 8px;">Request Project Consultation</h3>
-<p style="font-size: 14px; color: var(--apple-text-secondary); margin: 0;">Speak directly with our healthcare architects &amp; hospital engineering experts.</p>
-</div>
-<form class="apple-drawer-form" onsubmit="handleAppleQuoteSubmit(event);">
-<div class="form-group">
-<label>Scope of Interest</label>
-<input id="drawer-product-name" readonly="" style="background: rgba(255,255,255,0.08); font-weight: 600;" type="text" value="Turnkey Hospital Setup"/>
-</div>
-<div class="row g-2">
-<div class="col-md-6 form-group">
-<label>Your Full Name *</label>
-<input placeholder="Dr. / Mr. / Ms." required="" type="text"/>
-</div>
-<div class="col-md-6 form-group">
-<label>Hospital / Institution Name *</label>
-<input placeholder="Hospital / Organization Name" required="" type="text"/>
-</div>
-</div>
-<div class="row g-2">
-<div class="col-md-6 form-group">
-<label>Official Email *</label>
-<input placeholder="name@hospital.com" required="" type="email"/>
-</div>
-<div class="col-md-6 form-group">
-<label>Phone / WhatsApp *</label>
-<input placeholder="+91 99999 99999" required="" type="tel"/>
-</div>
-</div>
-<div class="form-group">
-<label>Project Scope &amp; Requirements</label>
-<textarea placeholder="Specify turnkey bed capacity, modular OT requirement, MGPS pipeline, or equipment procurement details..." rows="3"></textarea>
-</div>
-<button class="apple-btn-pill w-100 mt-2" style="padding: 14px;" type="submit">Submit Consultation Request</button>
-</form>
-</div>
-</div>
-<script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
-<a aria-label="Scroll to top" class="scroll-top d-flex align-items-center justify-content-center" href="#" id="scroll-top">
-<i class="bi bi-arrow-up-short"></i>
-</a>
-<script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="../../assets/js/main.js?v=94.0"></script>
-<script src="../../assets/js/global-search.js?v=42.0"></script>
-</div></body>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Drawer Modal -->
+  <div class="apple-drawer-overlay" id="apple-drawer-overlay" onclick="if(event.target===this) closeAppleDrawer();">
+    <div class="apple-drawer-content">
+      <button type="button" class="apple-drawer-close" onclick="closeAppleDrawer();" aria-label="Close">
+        <i class="bi bi-x-lg"></i>
+      </button>
+      
+      <div style="text-align: center; margin-bottom: 24px;">
+        <span class="apple-shelf-badge">Dr. Smith Turnkey &amp; Procurement Desk</span>
+        <h3 style="font-size: 24px; font-weight: 700; margin-top: 8px;">Request Project Consultation</h3>
+        <p style="font-size: 14px; color: var(--apple-text-secondary); margin: 0;">Speak directly with our healthcare architects &amp; hospital engineering experts.</p>
+      </div>
+
+      <form class="apple-drawer-form" onsubmit="handleAppleQuoteSubmit(event);">
+        <div class="form-group">
+          <label>Scope of Interest</label>
+          <input type="text" id="drawer-product-name" value="Turnkey Hospital Setup" readonly style="background: rgba(255,255,255,0.08); font-weight: 600;">
+        </div>
+
+        <div class="row g-2">
+          <div class="col-md-6 form-group">
+            <label>Your Full Name *</label>
+            <input type="text" placeholder="Dr. / Mr. / Ms." required>
+          </div>
+          <div class="col-md-6 form-group">
+            <label>Hospital / Institution Name *</label>
+            <input type="text" placeholder="Hospital / Organization Name" required>
+          </div>
+        </div>
+
+        <div class="row g-2">
+          <div class="col-md-6 form-group">
+            <label>Official Email *</label>
+            <input type="email" placeholder="name@hospital.com" required>
+          </div>
+          <div class="col-md-6 form-group">
+            <label>Phone / WhatsApp *</label>
+            <input type="tel" placeholder="+91 99999 99999" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Project Scope &amp; Requirements</label>
+          <textarea rows="3" placeholder="Specify turnkey bed capacity, modular OT requirement, MGPS pipeline, or equipment procurement details..."></textarea>
+        </div>
+
+        <button type="submit" class="apple-btn-pill w-100 mt-2" style="padding: 14px;">Submit Consultation Request</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  
+
+
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to top">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/main.js?v=94.0"></script>
+  <script src="../../assets/js/global-search.js?v=42.0"></script>
+</body>
+
 </html>

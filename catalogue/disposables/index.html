@@ -1,322 +1,480 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Browse Dr. Smith's Disposables range for hospitals, ICUs and clinics." name="description"/>
-<meta content="#030712" name="theme-color"/>
-<title>Disposables | Dr. Smith Catalogue</title>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&amp;family=Open+Sans:wght@300;400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-<link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
-<link href="../../assets/img/favicon.png" rel="icon" type="image/png"/>
-<link href="../../assets/img/apple-touch-icon.png" rel="apple-touch-icon"/>
-<link href="../css/catalogue.css?v=47.0" rel="stylesheet"/>
-<link href="../../assets/css/apple-theme.css?v=106.0" rel="stylesheet"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse Dr. Smith's Disposables range for hospitals, ICUs and clinics.">
+    <meta name="theme-color" content="#030712">
+    <title>Disposables | Dr. Smith Catalogue</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+
+    <link href="../css/catalogue.css?v=47.0" rel="stylesheet">
+  <link href="../../assets/css/apple-theme.css?v=106.0" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body class="apple-body catalogue-page">
-<!-- ============================================================
+  <!-- ============================================================
        1. GLOBAL NAVIGATION HEADER
        ============================================================ -->
-<nav aria-label="Global" class="apple-globalnav">
-<div class="apple-globalnav-inner">
-<!-- Brand & Corporate Identity -->
-<a aria-label="Dr. Smith Hospital Solutions" class="apple-nav-brand" href="../../index.html">
-<div class="brand-asterisk-icon">
-<img alt="Dr. Smith Emblem Logo" class="apple-nav-logo-img" decoding="async" height="36" loading="eager" src="../../assets/img/logo.png?v=11.0" width="36"/>
-</div>
-<div class="apple-nav-brand-text">
-<span class="apple-nav-brand-title">Dr. Smith</span>
-<span class="apple-nav-brand-subtitle">HOSPITAL SOLUTIONS</span>
-</div>
-</a>
-<!-- Navigation Links -->
-<ul class="apple-nav-links"><li class="apple-nav-item"><a class="apple-nav-link" href="../../index.html">Home</a></li><li class="apple-nav-item"><a class="apple-nav-link nav-active" href="../index.html">Products</a></li><li class="apple-nav-item"><a class="apple-nav-link" href="../../about-us/index.html">About us</a></li><li class="apple-nav-item"><a class="apple-nav-link" href="../../turnkey-projects/index.html">turnkey project</a></li><li class="apple-nav-item"><a class="apple-nav-link" href="../../contact-form/index.html">Contact Us</a></li></ul><!-- Action Utilities -->
-<div class="apple-nav-actions">
-<!-- Contact / Mail Form Button -->
-<a aria-label="Send Enquiry &amp; Contact Us" class="apple-nav-circle-btn apple-nav-circle-mail" href="../../contact-form/index.html" title="Send Enquiry / Request Quotation (BOM &amp; Consultation)">
-<i class="fa-solid fa-envelope"></i>
-</a>
-<!-- WhatsApp Circle Button -->
-<a aria-label="Chat with Dr. Smith Healthcare on WhatsApp (+91 95990 81020)" class="apple-nav-circle-btn apple-nav-circle-whatsapp" href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." rel="noopener noreferrer" target="_blank" title="WhatsApp Direct (+91 95990 81020) • 24/7 Fast Inquiry">
-<i class="fa-brands fa-whatsapp"></i>
-</a>
-<!-- Menu Toggle Button -->
-<button aria-label="Toggle Navigation Menu" class="apple-nav-circle-btn" id="apple-mobile-menu-btn" title="Menu" type="button">
-<i class="bi bi-list"></i>
-</button>
-</div>
-</div>
-</nav>
-<!-- Mobile Menu Drawer Backdrop Overlay -->
-<div class="apple-mobile-backdrop" id="appleMobileBackdrop"></div>
-<!-- Mobile Menu Drawer Overlay -->
-<div class="apple-mobile-drawer" id="apple-mobile-drawer">
-<div class="apple-mobile-drawer-header">
-<span class="apple-mobile-drawer-tag"><i class="bi bi-hospital"></i> Dr. Smith Quick Menu</span>
-<button aria-label="Close Navigation Menu" class="apple-mobile-drawer-close" id="appleMobileDrawerClose" type="button">
-<i class="bi bi-x-lg"></i>
-</button>
-</div>
-<div class="apple-mobile-grid"><a class="apple-mobile-tile" href="../../index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-house-door-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">Home</span><span class="apple-mobile-tile-sub">Overview</span></div></a><a class="apple-mobile-tile active" href="../index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-grid-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">Products</span><span class="apple-mobile-tile-sub">Browse categories</span></div></a><a class="apple-mobile-tile" href="../../about-us/index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-shield-check"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">About us</span><span class="apple-mobile-tile-sub">Our story</span></div></a><a class="apple-mobile-tile" href="../../turnkey-projects/index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-hospital-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">turnkey project</span><span class="apple-mobile-tile-sub">Setup solutions</span></div></a><a class="apple-mobile-tile" href="../../contact-form/index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-envelope-paper-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">Contact Us</span><span class="apple-mobile-tile-sub">Get in touch</span></div></a></div>
-<section class="catalogue-section">
-<div class="container">
-<p class="catalogue-count">Showing <strong>2</strong> products</p>
-<div class="row g-4" id="products-grid">
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="medical apparel" data-title="medical scrub suits &amp; ot uniforms">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Medical Scrub Suits &amp; OT Uniforms on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Medical Scrub Suits &amp; OT Uniforms" decoding="async" loading="lazy" src="medical-scrub-suits.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Medical Apparel</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Hospital consumables &amp; apparel</span>
-<h3>Medical Dresses &amp; OT Uniforms (SWM 11137)</h3>
-<p>High-comfort breathable medical scrub suits and OT dresses engineered for doctors, surgeons and nursing professionals.</p>
-<ul class="catalogue-card__details">
-<li>Antimicrobial, breathable, fluid-resistant blended fabric</li>
-<li>V-neck tunic with multiple utility chest and hip pockets</li>
-<li>Available in all standard hospital colour codes and sizes</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Medical%20Scrub%20Suits%20%26%20OT%20Uniforms">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="sterile foley catheter" data-title="nuvocath sterile foley balloon catheter 2-way">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View NuvoCath Foley Balloon Catheter on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="NuvoCath Sterile Foley Balloon Catheter 2-Way" decoding="async" loading="lazy" src="nuvocath-foley-balloon-catheter.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Sterile Foley Catheter</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Disposables • Urology Care</span>
-<h3>NuvoCath Sterile Foley Balloon Catheter (2-Way)</h3>
-<p>Medical-grade silicone-coated natural latex 2-way indwelling Foley balloon catheter designed for trauma, post-operative, and long-term urinary drainage.</p>
-<ul class="catalogue-card__details">
-<li>Symmetrical balloon inflation with reinforced tip and smooth lateral eyes</li>
-<li>Color-coded inflation valve socket matching international Charrière/French sizes</li>
-<li>Sterile EO blister packaging ensuring dependable clinical infection control</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=NuvoCath%20Sterile%20Foley%20Balloon%20Catheter">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-</div>
-</div>
-</section>
-<section class="catalogue-section">
-<div class="container">
-<div class="catalogue-cta d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4">
-<div>
-<h2>Can't find what you're looking for?</h2>
-<p>Share your requirements and our team will recommend the best fit from our full range.</p>
-</div>
-<a class="catalogue-button flex-shrink-0" href="../../contact-form/index.html">
+  <nav class="apple-globalnav" aria-label="Global">
+    <div class="apple-globalnav-inner">
+      
+      <!-- Brand & Corporate Identity -->
+      <a href="../../index.html" class="apple-nav-brand" aria-label="Dr. Smith Hospital Solutions">
+        <div class="brand-asterisk-icon">
+          <img src="../../assets/img/logo.png?v=11.0" alt="Dr. Smith Emblem Logo" class="apple-nav-logo-img" width="36" height="36" decoding="async" loading="eager">
+        </div>
+        <div class="apple-nav-brand-text">
+          <span class="apple-nav-brand-title">Dr. Smith</span>
+          <span class="apple-nav-brand-subtitle">HOSPITAL SOLUTIONS</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="apple-nav-links">
+        <li class="apple-nav-item">
+          <a href="../../index.html" class="apple-nav-link">Home</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../../catalogue/index.html" class="apple-nav-link nav-active">Products</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../../turnkey-projects/index.html" class="apple-nav-link">Turnkey Solutions</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../../about-us/index.html" class="apple-nav-link">About Us</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../../contact-form/index.html" class="apple-nav-link">Contact</a>
+        </li>
+      </ul>
+
+                  <!-- Action Utilities -->
+      <div class="apple-nav-actions">
+        <!-- Contact / Mail Form Button -->
+        <a href="../../contact-form/index.html" class="apple-nav-circle-btn apple-nav-circle-mail"
+          aria-label="Send Enquiry &amp; Contact Us" title="Send Enquiry / Request Quotation (BOM &amp; Consultation)">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+
+        <!-- WhatsApp Circle Button -->
+        <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions."
+          class="apple-nav-circle-btn apple-nav-circle-whatsapp" target="_blank"
+          rel="noopener noreferrer" aria-label="Chat with Dr. Smith Healthcare on WhatsApp (+91 95990 81020)"
+          title="WhatsApp Direct (+91 95990 81020) • 24/7 Fast Inquiry">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <!-- Menu Toggle Button -->
+        <button type="button" class="apple-nav-circle-btn" id="apple-mobile-menu-btn"
+          aria-label="Toggle Navigation Menu" title="Menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+    <!-- Mobile Menu Drawer Backdrop Overlay -->
+  <div class="apple-mobile-backdrop" id="appleMobileBackdrop"></div>
+
+  <!-- Mobile Menu Drawer Overlay -->
+  <div class="apple-mobile-drawer" id="apple-mobile-drawer">
+    <div class="apple-mobile-drawer-header">
+      <span class="apple-mobile-drawer-tag"><i class="bi bi-hospital"></i> Dr. Smith Quick Menu</span>
+      <button type="button" class="apple-mobile-drawer-close" id="appleMobileDrawerClose" aria-label="Close Navigation Menu">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
+    <div class="apple-mobile-grid">
+      <a href="../../index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-house-door-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Home</span>
+          <span class="apple-mobile-tile-sub">Overview</span>
+        </div>
+      </a>
+      <a href="../../catalogue/index.html" class="apple-mobile-tile active">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-grid-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Catalogue</span>
+          <span class="apple-mobile-tile-sub">50+ Categories</span>
+        </div>
+      </a>
+      <a href="../../turnkey-projects/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-hospital-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Turnkey Setup</span>
+          <span class="apple-mobile-tile-sub">50–500 Beds</span>
+        </div>
+      </a>
+      <a href="../../catalogue/modular-ot/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-activity"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Modular OT</span>
+          <span class="apple-mobile-tile-sub">Cleanrooms</span>
+        </div>
+      </a>
+      <a href="../../about-us/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-shield-check"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">About Us</span>
+          <span class="apple-mobile-tile-sub">Heritage</span>
+        </div>
+      </a>
+      <a href="../../contact-form/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-envelope-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Contact</span>
+          <span class="apple-mobile-tile-sub">Global Offices</span>
+        </div>
+      </a>
+    </div>
+    
+    <div class="apple-mobile-cta-box">
+      <a href="../../contact-form/index.html" class="apple-mobile-btn-consultation">
+        <i class="bi bi-building-check me-2"></i> Request Project Consultation <i class="bi bi-arrow-right ms-auto"></i>
+      </a>
+
+      <div class="apple-mobile-contact-grid">
+        <a href="tel:18008917466" class="apple-mobile-contact-pill apple-mobile-pill-tel">
+          <i class="bi bi-telephone-fill"></i>
+          <span>1800 891 7466<small>National Toll-Free</small></span>
+        </a>
+        <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." target="_blank" rel="noopener noreferrer" class="apple-mobile-contact-pill apple-mobile-pill-wa">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>WhatsApp Desk<small>24/7 Fast Inquiry</small></span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+      
+
+    <main>
+        <section class="catalogue-hero catalogue-hero--compact">
+            <div class="container">
+                <nav class="catalogue-breadcrumb" aria-label="Breadcrumb">
+                    <a href="../../index.html">Home</a>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="../index.html#catalogue">Catalogue</a>
+                    <i class="bi bi-chevron-right"></i>
+                    <span aria-current="page">Disposables</span>
+                </nav>
+                <div class="row align-items-center">
+                    <div class="col-lg-9">
+                        <span class="catalogue-eyebrow">Hospital consumables & apparel</span>
+                        <h1>Disposables</h1>
+                        <p>Sterile surgical apparel, disposable video laryngoscope blades, patient drapes and hospital protective wear.</p>
+                        <a class="catalogue-button catalogue-button--ghost" href="../index.html#catalogue">
+                            <i class="bi bi-arrow-left"></i> Back to full catalogue
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalogue-section">
+            <div class="container">
+                  
+                <p class="catalogue-count">Showing <strong>2</strong> products</p>
+
+                <div class="row g-4" id="products-grid">
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="medical scrub suits & ot uniforms" data-badge="medical apparel">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Medical Scrub Suits & OT Uniforms on Instagram" title="View on Instagram">
+                                    <img src="medical-scrub-suits.png" alt="Medical Scrub Suits & OT Uniforms" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Medical Apparel</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Hospital consumables & apparel</span>
+                                <h3>Medical Dresses &amp; OT Uniforms (SWM 11137)</h3>
+                                <p>High-comfort breathable medical scrub suits and OT dresses engineered for doctors, surgeons and nursing professionals.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Antimicrobial, breathable, fluid-resistant blended fabric</li>
+                                <li>V-neck tunic with multiple utility chest and hip pockets</li>
+                                <li>Available in all standard hospital colour codes and sizes</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Medical%20Scrub%20Suits%20%26%20OT%20Uniforms">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="nuvocath sterile foley balloon catheter 2-way" data-badge="sterile foley catheter">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View NuvoCath Foley Balloon Catheter on Instagram" title="View on Instagram">
+                                    <img src="nuvocath-foley-balloon-catheter.png" alt="NuvoCath Sterile Foley Balloon Catheter 2-Way" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Sterile Foley Catheter</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Disposables &bull; Urology Care</span>
+                                <h3>NuvoCath Sterile Foley Balloon Catheter (2-Way)</h3>
+                                <p>Medical-grade silicone-coated natural latex 2-way indwelling Foley balloon catheter designed for trauma, post-operative, and long-term urinary drainage.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Symmetrical balloon inflation with reinforced tip and smooth lateral eyes</li>
+                                <li>Color-coded inflation valve socket matching international Charrière/French sizes</li>
+                                <li>Sterile EO blister packaging ensuring dependable clinical infection control</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=NuvoCath%20Sterile%20Foley%20Balloon%20Catheter">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="catalogue-section">
+            <div class="container">
+                <div class="catalogue-cta d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4">
+                    <div>
+                        <h2>Can't find what you're looking for?</h2>
+                        <p>Share your requirements and our team will recommend the best fit from our full range.</p>
+                    </div>
+                    <a class="catalogue-button flex-shrink-0" href="../../contact-form/index.html">
                         Contact our team <i class="bi bi-arrow-right"></i>
-</a>
-</div>
-</div>
-</section>
-<!-- ============================================================
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+      <!-- ============================================================
        GLOBAL DIRECTORY FOOTER
        ============================================================ -->
-<!-- Drawer Modal -->
-<!-- ============================================================
+  
+
+  <!-- Drawer Modal -->
+    <!-- ============================================================
        GLOBAL DIRECTORY FOOTER
        ============================================================ -->
-<footer class="apple-globalfooter">
-<div class="apple-footer-inner">
-<!-- Footer Brand Header & Fast Back-To-Top -->
-<div class="apple-footer-brand-header">
-<div class="apple-footer-brand-left">
-<img alt="Dr. Smith Emblem Logo" class="apple-footer-brand-logo" decoding="async" height="32" loading="lazy" src="../../assets/img/logo.png?v=11.0" width="32"/>
-<div>
-<div class="apple-footer-brand-title">Dr. Smith</div>
-<span class="apple-footer-brand-subtitle">HOSPITAL SOLUTIONS</span>
-</div>
-</div>
-<a aria-label="Scroll back to top" class="apple-footer-backtotop-btn" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">
-<span>Top</span> <i class="bi bi-chevron-up"></i>
-</a>
-</div>
-<!-- Notes / Footnotes -->
-<div class="apple-footer-notes">
-<ol>
-<li>Medical equipment specifications, turnkey timelines, and compliance standards (ISO 9001:2015, ISO
+  <footer class="apple-globalfooter">
+    <div class="apple-footer-inner">
+
+      <!-- Footer Brand Header & Fast Back-To-Top -->
+      <div class="apple-footer-brand-header">
+        <div class="apple-footer-brand-left">
+          <img src="../../assets/img/logo.png?v=11.0" alt="Dr. Smith Emblem Logo" class="apple-footer-brand-logo" width="32"
+            height="32" decoding="async" loading="lazy">
+          <div>
+            <div class="apple-footer-brand-title">Dr. Smith</div>
+            <span class="apple-footer-brand-subtitle">HOSPITAL SOLUTIONS</span>
+          </div>
+        </div>
+        <a href="#top" class="apple-footer-backtotop-btn"
+          onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;" aria-label="Scroll back to top">
+          <span>Top</span> <i class="bi bi-chevron-up"></i>
+        </a>
+      </div>
+
+      <!-- Notes / Footnotes -->
+      <div class="apple-footer-notes">
+        <ol>
+          <li>Medical equipment specifications, turnkey timelines, and compliance standards (ISO 9001:2015, ISO
             13485:2016, CE, FDA) depend on specific project scopes and customized clinical configurations.</li>
-<li>Turnkey hospital infrastructure engineering timelines depend on architectural blueprints, local regulatory
+          <li>Turnkey hospital infrastructure engineering timelines depend on architectural blueprints, local regulatory
             clearances, and civil site readiness.</li>
-<li>Principal Global Head Office located at Kapashera Border, New Delhi; Manufacturing Plant at METL, Jhajjar,
+          <li>Principal Global Head Office located at Kapashera Border, New Delhi; Manufacturing Plant at METL, Jhajjar,
             Haryana; Overseas Head Office at SAIF Zone, Sharjah, UAE.</li>
-</ol>
-</div>
-<!-- Directory Columns (Mobile Collapsible Accordions) -->
-<div class="apple-footer-directory">
-<!-- Col 1: Turnkey Solutions (Active by default on mobile) -->
-<div class="apple-footer-col active">
-<button aria-expanded="true" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Turnkey Solutions</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../../turnkey-projects/index.html">500-Bedded Hospital Setup</a></li>
-<li><a href="../../catalogue/modular-ot/index.html">Modular OT Construction</a></li>
-<li><a href="../../turnkey-projects/index.html">Medical Gas Pipeline (MGPS)</a></li>
-<li><a href="../../turnkey-projects/index.html">Hospital Architecture &amp; MEP</a></li>
-<li><a href="../../turnkey-projects/index.html">Government &amp; Global Tenders</a></li>
-</ul>
-</div>
-<!-- Col 2: Group Ecosystem -->
-<div class="apple-footer-col">
-<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Group Ecosystem</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../../about-us/index.html">Dr. Smith Healthcare</a></li>
-<li><a href="../../catalogue/index.html">Surgihub Surgical Devices</a></li>
-<li><a href="../../catalogue/index.html">Surgical Mall of India (SMPL)</a></li>
-<li><a href="../../catalogue/index.html">MediAid Patient Care</a></li>
-<li><a href="../../catalogue/index.html">Orbit Mahajan Diagnostics</a></li>
-</ul>
-</div>
-<!-- Col 3: Product Catalogue -->
-<div class="apple-footer-col">
-<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Product Catalogue</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../../catalogue/beds/index.html">Hospital &amp; ICU Beds</a></li>
-<li><a href="../../catalogue/modular-ot/index.html">Modular OT Suites</a></li>
-<li><a href="../../catalogue/patient-monitor/index.html">Critical Care &amp; Monitors</a></li>
-<li><a href="../../catalogue/ventilators/index.html">ICU Ventilators</a></li>
-<li><a href="../../catalogue/index.html">Full 50+ Categories</a></li>
-</ul>
-</div>
-<!-- Col 4: Global Directory -->
-<div class="apple-footer-col">
-<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Global Presence</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../../contact-form/index.html">New Delhi Head Office (India)</a></li>
-<li><a href="../../contact-form/index.html">Jhajjar Manufacturing Plant</a></li>
-<li><a href="../../contact-form/index.html">Sharjah Overseas Office (UAE)</a></li>
-<li><a href="../../contact-form/index.html">Kenya &amp; Nigeria Desks</a></li>
-<li><a href="../../contact-form/index.html">Patna, Kolkata, Varanasi Marts</a></li>
-</ul>
-</div>
-<!-- Col 5: Compliance & Values -->
-<div class="apple-footer-col">
-<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Corporate &amp; Quality</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../../about-us/index.html">About 60+ Years Heritage</a></li>
-<li><a href="../../mission-values/index.html">Mission &amp; Values</a></li>
-<li><a href="../../about-us/index.html">Executive Leadership</a></li>
-<li><a href="../../privacy.html">Privacy Policy</a></li>
-<li><a href="../../terms.html">Terms of Service</a></li>
-</ul>
-</div>
-</div>
-<!-- Footer Bottom Legal, Direct Connect & Country Positioned in Correct Order -->
-<div class="apple-footer-bottom">
-<div class="apple-footer-top-row">
-<div class="apple-footer-country">
-<a class="apple-footer-country-badge" href="../../contact-form/index.html" title="Region &amp; Language">
-<i class="bi bi-globe me-1"></i> India (English)
+        </ol>
+      </div>
+
+      <!-- Directory Columns (Mobile Collapsible Accordions) -->
+      <div class="apple-footer-directory">
+
+        <!-- Col 1: Turnkey Solutions (Active by default on mobile) -->
+        <div class="apple-footer-col active">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="true">
+            <h4 class="apple-footer-col-title">Turnkey Solutions</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../../turnkey-projects/index.html">500-Bedded Hospital Setup</a></li>
+            <li><a href="../../catalogue/modular-ot/index.html">Modular OT Construction</a></li>
+            <li><a href="../../turnkey-projects/index.html">Medical Gas Pipeline (MGPS)</a></li>
+            <li><a href="../../turnkey-projects/index.html">Hospital Architecture &amp; MEP</a></li>
+            <li><a href="../../turnkey-projects/index.html">Government &amp; Global Tenders</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 2: Group Ecosystem -->
+        <div class="apple-footer-col">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Group Ecosystem</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../../about-us/index.html">Dr. Smith Healthcare</a></li>
+            <li><a href="../../catalogue/index.html">Surgihub Surgical Devices</a></li>
+            <li><a href="../../catalogue/index.html">Surgical Mall of India (SMPL)</a></li>
+            <li><a href="../../catalogue/index.html">MediAid Patient Care</a></li>
+            <li><a href="../../catalogue/index.html">Orbit Mahajan Diagnostics</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Product Catalogue -->
+        <div class="apple-footer-col">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Product Catalogue</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../../catalogue/beds/index.html">Hospital &amp; ICU Beds</a></li>
+            <li><a href="../../catalogue/modular-ot/index.html">Modular OT Suites</a></li>
+            <li><a href="../../catalogue/patient-monitor/index.html">Critical Care &amp; Monitors</a></li>
+            <li><a href="../../catalogue/ventilators/index.html">ICU Ventilators</a></li>
+            <li><a href="../../catalogue/index.html">Full 50+ Categories</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Global Directory -->
+        <div class="apple-footer-col">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Global Presence</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../../contact-form/index.html">New Delhi Head Office (India)</a></li>
+            <li><a href="../../contact-form/index.html">Jhajjar Manufacturing Plant</a></li>
+            <li><a href="../../contact-form/index.html">Sharjah Overseas Office (UAE)</a></li>
+            <li><a href="../../contact-form/index.html">Kenya &amp; Nigeria Desks</a></li>
+            <li><a href="../../contact-form/index.html">Patna, Kolkata, Varanasi Marts</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Compliance & Values -->
+        <div class="apple-footer-col">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Corporate &amp; Quality</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../../about-us/index.html">About 60+ Years Heritage</a></li>
+            <li><a href="../../mission-values/index.html">Mission &amp; Values</a></li>
+            <li><a href="../../about-us/index.html">Executive Leadership</a></li>
+            <li><a href="../../privacy.html">Privacy Policy</a></li>
+            <li><a href="../../terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Legal, Direct Connect & Country Positioned in Correct Order -->
+      <div class="apple-footer-bottom">
+        <div class="apple-footer-top-row">
+          <div class="apple-footer-country">
+            <a href="../../contact-form/index.html" class="apple-footer-country-badge" title="Region &amp; Language">
+              <i class="bi bi-globe me-1"></i> India (English)
             </a>
-</div>
-<div class="apple-footer-quicklinks">
-<a class="apple-footer-badge-link" href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." rel="noopener noreferrer" target="_blank" title="Direct WhatsApp Assistance (+91 95990 81020)">
-<i class="fa-brands fa-whatsapp text-success me-1"></i> WhatsApp Desk
+          </div>
+          <div class="apple-footer-quicklinks">
+            <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." target="_blank" rel="noopener noreferrer"
+              class="apple-footer-badge-link" title="Direct WhatsApp Assistance (+91 95990 81020)">
+              <i class="fa-brands fa-whatsapp text-success me-1"></i> WhatsApp Desk
             </a>
-</div>
-</div>
-<div class="apple-footer-divider"></div>
-<div class="apple-footer-meta-row">
-<div class="apple-footer-legal-links">
-<a href="../../privacy.html">Privacy Policy</a>
-<span class="legal-dot">•</span>
-<a href="../../terms.html">Terms of Use</a>
-<span class="legal-dot">•</span>
-<a href="../../contact-form/index.html">Sales Policy</a>
-<span class="legal-dot">•</span>
-<a href="../../contact-form/index.html">Legal</a>
-<span class="legal-dot">•</span>
-<a href="../../catalogue/index.html">Site Map</a>
-</div>
-<div class="apple-footer-copyright">
-            Copyright © 2026 Dr. Smith Healthcare Solutions (Surgical Wholesale Mart Pvt. Ltd.). All rights
+          </div>
+        </div>
+
+        <div class="apple-footer-divider"></div>
+
+        <div class="apple-footer-meta-row">
+          <div class="apple-footer-legal-links">
+            <a href="../../privacy.html">Privacy Policy</a>
+            <span class="legal-dot">•</span>
+            <a href="../../terms.html">Terms of Use</a>
+            <span class="legal-dot">•</span>
+            <a href="../../contact-form/index.html">Sales Policy</a>
+            <span class="legal-dot">•</span>
+            <a href="../../contact-form/index.html">Legal</a>
+            <span class="legal-dot">•</span>
+            <a href="../../catalogue/index.html">Site Map</a>
+          </div>
+          <div class="apple-footer-copyright">
+            Copyright &copy; 2026 Dr. Smith Healthcare Solutions (Surgical Wholesale Mart Pvt. Ltd.). All rights
             reserved. An ISO 9001:2015, ISO 13485:2016, CE &amp; FDA Certified Company.
           </div>
-</div>
-</div>
-</div>
-</footer>
-<!-- Drawer Modal -->
-<div class="apple-drawer-overlay" id="apple-drawer-overlay" onclick="if(event.target===this) closeAppleDrawer();">
-<div class="apple-drawer-content">
-<button aria-label="Close" class="apple-drawer-close" onclick="closeAppleDrawer();" type="button">
-<i class="bi bi-x-lg"></i>
-</button>
-<div style="text-align: center; margin-bottom: 24px;">
-<span class="apple-shelf-badge">Dr. Smith Turnkey &amp; Procurement Desk</span>
-<h3 style="font-size: 24px; font-weight: 700; margin-top: 8px;">Request Project Consultation</h3>
-<p style="font-size: 14px; color: var(--apple-text-secondary); margin: 0;">Speak directly with our healthcare architects &amp; hospital engineering experts.</p>
-</div>
-<form class="apple-drawer-form" onsubmit="handleAppleQuoteSubmit(event);">
-<div class="form-group">
-<label>Scope of Interest</label>
-<input id="drawer-product-name" readonly="" style="background: rgba(255,255,255,0.08); font-weight: 600;" type="text" value="Turnkey Hospital Setup"/>
-</div>
-<div class="row g-2">
-<div class="col-md-6 form-group">
-<label>Your Full Name *</label>
-<input placeholder="Dr. / Mr. / Ms." required="" type="text"/>
-</div>
-<div class="col-md-6 form-group">
-<label>Hospital / Institution Name *</label>
-<input placeholder="Hospital / Organization Name" required="" type="text"/>
-</div>
-</div>
-<div class="row g-2">
-<div class="col-md-6 form-group">
-<label>Official Email *</label>
-<input placeholder="name@hospital.com" required="" type="email"/>
-</div>
-<div class="col-md-6 form-group">
-<label>Phone / WhatsApp *</label>
-<input placeholder="+91 99999 99999" required="" type="tel"/>
-</div>
-</div>
-<div class="form-group">
-<label>Project Scope &amp; Requirements</label>
-<textarea placeholder="Specify turnkey bed capacity, modular OT requirement, MGPS pipeline, or equipment procurement details..." rows="3"></textarea>
-</div>
-<button class="apple-btn-pill w-100 mt-2" style="padding: 14px;" type="submit">Submit Consultation Request</button>
-</form>
-</div>
-</div>
-<script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
-<a aria-label="Scroll to top" class="scroll-top d-flex align-items-center justify-content-center" href="#" id="scroll-top">
-<i class="bi bi-arrow-up-short"></i>
-</a>
-<script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="../../assets/js/main.js?v=94.0"></script>
-<script src="../../assets/js/global-search.js?v=42.0"></script>
-</div></body>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Drawer Modal -->
+  <div class="apple-drawer-overlay" id="apple-drawer-overlay" onclick="if(event.target===this) closeAppleDrawer();">
+    <div class="apple-drawer-content">
+      <button type="button" class="apple-drawer-close" onclick="closeAppleDrawer();" aria-label="Close">
+        <i class="bi bi-x-lg"></i>
+      </button>
+      
+      <div style="text-align: center; margin-bottom: 24px;">
+        <span class="apple-shelf-badge">Dr. Smith Turnkey &amp; Procurement Desk</span>
+        <h3 style="font-size: 24px; font-weight: 700; margin-top: 8px;">Request Project Consultation</h3>
+        <p style="font-size: 14px; color: var(--apple-text-secondary); margin: 0;">Speak directly with our healthcare architects &amp; hospital engineering experts.</p>
+      </div>
+
+      <form class="apple-drawer-form" onsubmit="handleAppleQuoteSubmit(event);">
+        <div class="form-group">
+          <label>Scope of Interest</label>
+          <input type="text" id="drawer-product-name" value="Turnkey Hospital Setup" readonly style="background: rgba(255,255,255,0.08); font-weight: 600;">
+        </div>
+
+        <div class="row g-2">
+          <div class="col-md-6 form-group">
+            <label>Your Full Name *</label>
+            <input type="text" placeholder="Dr. / Mr. / Ms." required>
+          </div>
+          <div class="col-md-6 form-group">
+            <label>Hospital / Institution Name *</label>
+            <input type="text" placeholder="Hospital / Organization Name" required>
+          </div>
+        </div>
+
+        <div class="row g-2">
+          <div class="col-md-6 form-group">
+            <label>Official Email *</label>
+            <input type="email" placeholder="name@hospital.com" required>
+          </div>
+          <div class="col-md-6 form-group">
+            <label>Phone / WhatsApp *</label>
+            <input type="tel" placeholder="+91 99999 99999" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Project Scope &amp; Requirements</label>
+          <textarea rows="3" placeholder="Specify turnkey bed capacity, modular OT requirement, MGPS pipeline, or equipment procurement details..."></textarea>
+        </div>
+
+        <button type="submit" class="apple-btn-pill w-100 mt-2" style="padding: 14px;">Submit Consultation Request</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  
+
+
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to top">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/main.js?v=94.0"></script>
+  <script src="../../assets/js/global-search.js?v=42.0"></script>
+</body>
+
 </html>

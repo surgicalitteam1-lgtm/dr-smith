@@ -1,770 +1,929 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Browse Dr. Smith's Ward Furniture range for hospitals, ICUs and clinics." name="description"/>
-<meta content="#030712" name="theme-color"/>
-<title>Ward Furniture | Dr. Smith Catalogue</title>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&amp;family=Open+Sans:wght@300;400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-<link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
-<link href="../../assets/img/favicon.png" rel="icon" type="image/png"/>
-<link href="../../assets/img/apple-touch-icon.png" rel="apple-touch-icon"/>
-<link href="../css/catalogue.css?v=47.0" rel="stylesheet"/>
-<link href="../../assets/css/apple-theme.css?v=106.0" rel="stylesheet"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse Dr. Smith's Ward Furniture range for hospitals, ICUs and clinics.">
+    <meta name="theme-color" content="#030712">
+    <title>Ward Furniture | Dr. Smith Catalogue</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+
+    <link href="../css/catalogue.css?v=47.0" rel="stylesheet">
+  <link href="../../assets/css/apple-theme.css?v=106.0" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body class="apple-body catalogue-page">
-<!-- ============================================================
+  <!-- ============================================================
        1. GLOBAL NAVIGATION HEADER
        ============================================================ -->
-<nav aria-label="Global" class="apple-globalnav">
-<div class="apple-globalnav-inner">
-<!-- Brand & Corporate Identity -->
-<a aria-label="Dr. Smith Hospital Solutions" class="apple-nav-brand" href="../../index.html">
-<div class="brand-asterisk-icon">
-<img alt="Dr. Smith Emblem Logo" class="apple-nav-logo-img" decoding="async" height="36" loading="eager" src="../../assets/img/logo.png?v=11.0" width="36"/>
-</div>
-<div class="apple-nav-brand-text">
-<span class="apple-nav-brand-title">Dr. Smith</span>
-<span class="apple-nav-brand-subtitle">HOSPITAL SOLUTIONS</span>
-</div>
-</a>
-<!-- Navigation Links -->
-<ul class="apple-nav-links"><li class="apple-nav-item"><a class="apple-nav-link" href="../../index.html">Home</a></li><li class="apple-nav-item"><a class="apple-nav-link nav-active" href="../index.html">Products</a></li><li class="apple-nav-item"><a class="apple-nav-link" href="../../about-us/index.html">About us</a></li><li class="apple-nav-item"><a class="apple-nav-link" href="../../turnkey-projects/index.html">turnkey project</a></li><li class="apple-nav-item"><a class="apple-nav-link" href="../../contact-form/index.html">Contact Us</a></li></ul><!-- Action Utilities -->
-<div class="apple-nav-actions">
-<!-- Contact / Mail Form Button -->
-<a aria-label="Send Enquiry &amp; Contact Us" class="apple-nav-circle-btn apple-nav-circle-mail" href="../../contact-form/index.html" title="Send Enquiry / Request Quotation (BOM &amp; Consultation)">
-<i class="fa-solid fa-envelope"></i>
-</a>
-<!-- WhatsApp Circle Button -->
-<a aria-label="Chat with Dr. Smith Healthcare on WhatsApp (+91 95990 81020)" class="apple-nav-circle-btn apple-nav-circle-whatsapp" href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." rel="noopener noreferrer" target="_blank" title="WhatsApp Direct (+91 95990 81020) • 24/7 Fast Inquiry">
-<i class="fa-brands fa-whatsapp"></i>
-</a>
-<!-- Menu Toggle Button -->
-<button aria-label="Toggle Navigation Menu" class="apple-nav-circle-btn" id="apple-mobile-menu-btn" title="Menu" type="button">
-<i class="bi bi-list"></i>
-</button>
-</div>
-</div>
-</nav>
-<!-- Mobile Menu Drawer Backdrop Overlay -->
-<div class="apple-mobile-backdrop" id="appleMobileBackdrop"></div>
-<!-- Mobile Menu Drawer Overlay -->
-<div class="apple-mobile-drawer" id="apple-mobile-drawer">
-<div class="apple-mobile-drawer-header">
-<span class="apple-mobile-drawer-tag"><i class="bi bi-hospital"></i> Dr. Smith Quick Menu</span>
-<button aria-label="Close Navigation Menu" class="apple-mobile-drawer-close" id="appleMobileDrawerClose" type="button">
-<i class="bi bi-x-lg"></i>
-</button>
-</div>
-<div class="apple-mobile-grid"><a class="apple-mobile-tile" href="../../index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-house-door-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">Home</span><span class="apple-mobile-tile-sub">Overview</span></div></a><a class="apple-mobile-tile active" href="../index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-grid-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">Products</span><span class="apple-mobile-tile-sub">Browse categories</span></div></a><a class="apple-mobile-tile" href="../../about-us/index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-shield-check"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">About us</span><span class="apple-mobile-tile-sub">Our story</span></div></a><a class="apple-mobile-tile" href="../../turnkey-projects/index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-hospital-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">turnkey project</span><span class="apple-mobile-tile-sub">Setup solutions</span></div></a><a class="apple-mobile-tile" href="../../contact-form/index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-envelope-paper-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">Contact Us</span><span class="apple-mobile-tile-sub">Get in touch</span></div></a></div>
-<section class="catalogue-section">
-<div class="container">
-<p class="catalogue-count">Showing <strong>23</strong> products</p>
-<div class="category-search-wrapper mb-4" style="max-width: 500px;">
-<div class="input-group">
-<span class="input-group-text bg-white border-end-0"><i class="bi bi-search text-muted"></i></span>
-<input aria-label="Filter products" class="form-control border-start-0 ps-0" id="categoryProductSearch" placeholder="Filter ward furniture..." type="text"/>
-</div>
-</div>
-<script src="../../assets/js/catalogue-filters.js?v=1.0"></script>
-<div class="row g-4" id="products-grid">
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="cubicle track" data-title="i.c.u &amp; wards curtaining (swm 11138)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View ICU &amp; Hospital Ward Privacy Curtains on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="ICU &amp; Hospital Ward Privacy Curtains" decoding="async" loading="lazy" src="icu-ward-curtaining.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Cubicle Track</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Hospital Furniture &amp; Ward Infrastructure</span>
-<h3>I.C.U &amp; Wards Curtaining (SWM 11138)</h3>
-<p>Hospital cubicle track curtaining system with flame retardant, antimicrobial fabric and open ventilation top mesh.</p>
-<ul class="catalogue-card__details">
-<li>Inherently flame retardant (FR) and antimicrobial treated fabric</li>
-<li>Top ventilation mesh compliant with ceiling fire sprinkler standards</li>
-<li>Heavy-duty aluminium ceiling tracks with silent wheeled runners</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=ICU%20%26%20Hospital%20Ward%20Privacy%20Curtains">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="ward privacy" data-title="hospital three &amp; four fold screen (swm 11051)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Hospital Three &amp; Four Fold Ward Screen on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Hospital Three &amp; Four Fold Ward Screen" decoding="async" loading="lazy" src="hospital-screen-three-four-fold.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Ward Privacy</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Hospital Furniture &amp; Ward Infrastructure</span>
-<h3>Hospital Three &amp; Four Fold Screen (SWM 11051)</h3>
-<p>Mobile folding ward privacy screen fitted with washable curtains and smooth swivelling castor wheels.</p>
-<ul class="catalogue-card__details">
-<li>Available in 3-panel and 4-panel folding configurations</li>
-<li>High-quality washable fabric privacy curtains with wire springs</li>
-<li>Epoxy coated steel tubular frame on 50mm smooth castors</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Hospital%20Three%20%26%20Four%20Fold%20Ward%20Screen">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="infusion stand" data-title="iv stand ms &amp; ss (swm 11083)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View I.V Stand (M.S &amp; S.S) on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="I.V Stand (M.S &amp; S.S)" decoding="async" loading="lazy" src="iv-stand.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Infusion Stand</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Hospital Furniture &amp; Ward Infrastructure</span>
-<h3>IV Stand MS &amp; SS (SWM 11083)</h3>
-<p>Heavy-duty intravenous infusion stand with stainless steel telescopic rod, 4-hook top and weighted 5-leg castor base.</p>
-<ul class="catalogue-card__details">
-<li>Stainless steel telescopic inner pipe with secure lock knob</li>
-<li>Four-prong stainless steel top hooks for multiple IV bottles</li>
-<li>Heavy weighted 5-prong mobile base on 50mm swivelling castors</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=I.V%20Stand%20%28M.S%20%26%20S.S%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="bed cum chair" data-title="hospital attendant bed cum chair">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Hospital Attendant Bed Cum Chair on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Hospital Attendant Bed Cum Chair" decoding="async" loading="lazy" src="attendant-bed-cum-chair.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Bed Cum Chair</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Patient Ward Infrastructure</span>
-<h3>Hospital Attendant Bed Cum Chair</h3>
-<p>Space-saving attendant companion furniture that converts effortlessly from an armchair into a full-length sleeper cot.</p>
-<ul class="catalogue-card__details">
-<li>Smooth fold-out mechanism transforming chair to comfortable bed</li>
-<li>High-density foam cushions upholstered in wipe-clean faux leather</li>
-<li>Robust epoxy powder-coated tubular steel framework</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Hospital%20Attendant%20Bed%20Cum%20Chair">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="bedside storage" data-title="bedside locker semi deluxe">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Bedside Locker Semi Deluxe on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Bedside Locker Semi Deluxe" decoding="async" loading="lazy" src="bed-side-locker-semi-deluxe.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Bedside Storage</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Patient Ward Infrastructure</span>
-<h3>Bedside Locker Semi Deluxe</h3>
-<p>Hygienic bedside cabinet for patient personal storage with stainless steel recessed top and lower storage cupboard.</p>
-<ul class="catalogue-card__details">
-<li>Pressed stainless steel top with raised three-side spill rim</li>
-<li>Smooth-glide utility drawer and ventilated louvered cabinet</li>
-<li>Anti-rust pre-treated epoxy powder-coated finish</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Bedside%20Locker%20Semi%20Deluxe">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="ot &amp; ward basin" data-title="stainless steel kick bucket with trolley">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Stainless Steel Kick Bucket with Trolley on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Stainless Steel Kick Bucket with Trolley" decoding="async" loading="lazy" src="kick-bucket.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">OT &amp; Ward Basin</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Clinical Waste &amp; Ward Furniture</span>
-<h3>Stainless Steel Kick Bucket with Trolley</h3>
-<p>Heavy-duty seamless stainless steel kick bucket housed in a circular rubber-buffered rolling base for OT and surgical suites.</p>
-<ul class="catalogue-card__details">
-<li>Seamless deep-drawn 304-grade stainless steel bucket bowl</li>
-<li>Perimeter protective rubber bumper ring prevents wall damage</li>
-<li>Mounted on 3 heavy-duty swivel castors for effortless foot nudging</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Stainless%20Steel%20Kick%20Bucket%20with%20Trolley">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="medicine distribution" data-title="dr. smith stainless steel medicine distribution trolley">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Stainless Steel Medicine Distribution Trolley on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Stainless Steel Medicine Distribution Trolley" decoding="async" loading="lazy" src="dr-smith-medicine-distribution-trolley-ss.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Medicine Distribution</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Ward Medication Systems</span>
-<h3>Dr. Smith Stainless Steel Medicine Distribution Trolley</h3>
-<p>High-capacity medical administration trolley with 6 lockable modular drawers, top guard rails, and lower utility shelf.</p>
-<ul class="catalogue-card__details">
-<li>6 modular slide-out lockable medicine storage drawers</li>
-<li>Hygienic 304 stainless steel top work surface with 3-sided guard rail</li>
-<li>Smooth directional push handles and 100mm medical castors</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Stainless%20Steel%20Medicine%20Distribution%20Trolley">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="double step stool" data-title="dr. smith stainless steel double step stool (dimpled)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Stainless Steel Double Step Stool with Dimpled Tread on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Stainless Steel Double Step Stool with Dimpled Tread" decoding="async" loading="lazy" src="dr-smith-double-step-stool-dimpled-ss.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Double Step Stool</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Patient Accessibility Furniture</span>
-<h3>Dr. Smith Stainless Steel Double Step Stool (Dimpled)</h3>
-<p>Sanitary double-tier patient bedside step stool crafted from polished stainless steel with raised dimpled slip-resistant tread plates.</p>
-<ul class="catalogue-card__details">
-<li>Heavy-gauge stainless steel steps with permanent embossed traction dots</li>
-<li>Reinforced square tubular legs supporting up to 180 kg load</li>
-<li>Non-marking anti-slip rubber floor gripping feet</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Stainless%20Steel%20Double%20Step%20Stool%20%28Dimpled%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="double step stool" data-title="dr. smith tubular double step stool (rubber tread)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Tubular Double Step Stool with Anti-Skid Rubber Tread on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Tubular Double Step Stool with Anti-Skid Rubber Tread" decoding="async" loading="lazy" src="dr-smith-tubular-double-step-stool-rubber-tread.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Double Step Stool</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Patient Accessibility Furniture</span>
-<h3>Dr. Smith Tubular Double Step Stool (Rubber Tread)</h3>
-<p>Curved tubular stainless steel dual step stool featuring heavy-duty studded rubber mats for maximum patient traction.</p>
-<ul class="catalogue-card__details">
-<li>Durable coin-pattern anti-skid rubber tread mats with aluminium edging</li>
-<li>Seamless curved tubular stainless steel frame</li>
-<li>Protective rubber ferrules on all four legs</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Tubular%20Double%20Step%20Stool%20%28Rubber%20Tread%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="infusion stand" data-title="dr. smith telescopic iv stand (heavy polymer base)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Telescopic IV Stand with Heavy Polymer Base on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Telescopic IV Stand with Heavy Polymer Base" decoding="async" loading="lazy" src="dr-smith-telescopic-iv-stand-polymer-base.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Infusion Stand</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Intravenous Therapy</span>
-<h3>Dr. Smith Telescopic IV Stand (Heavy Polymer Base)</h3>
-<p>Mobile telescopic intravenous pole with 4 multi-bottle hooks and tip-resistant 5-star molded polymer weighted base.</p>
-<ul class="catalogue-card__details">
-<li>Stainless steel inner telescoping rod with quick-lock collar knob</li>
-<li>4-point stainless steel ram-horn bottle suspension hooks</li>
-<li>Weighted 5-star polymer base with smooth-rolling swivel castors</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Telescopic%20IV%20Stand%20%28Heavy%20Polymer%20Base%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="infusion stand" data-title="dr. smith epoxy powder coated telescopic iv stand">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Epoxy Powder Coated Telescopic IV Stand on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Epoxy Powder Coated Telescopic IV Stand" decoding="async" loading="lazy" src="dr-smith-white-epoxy-telescopic-iv-stand.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Infusion Stand</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Intravenous Therapy</span>
-<h3>Dr. Smith Epoxy Powder Coated Telescopic IV Stand</h3>
-<p>Clinical infusion pole featuring electrostatically powder-coated white finish, two bottle hooks, and weighted mobile base.</p>
-<ul class="catalogue-card__details">
-<li>Antimicrobial epoxy powder-coated mast with smooth height adjustment</li>
-<li>Twin stainless steel drip hooks with secure containment bends</li>
-<li>Low-profile heavy cast-iron mobile base preventing accidental tipping</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Epoxy%20Powder%20Coated%20Telescopic%20IV%20Stand">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="ss infusion stand" data-title="dr. smith stainless steel telescopic iv stand (2 hooks)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Stainless Steel Telescopic IV Stand - 2 Hooks on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Stainless Steel Telescopic IV Stand - 2 Hooks" decoding="async" loading="lazy" src="dr-smith-ss-telescopic-iv-stand-2-hooks.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">SS Infusion Stand</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Intravenous Therapy</span>
-<h3>Dr. Smith Stainless Steel Telescopic IV Stand (2 Hooks)</h3>
-<p>Surgical-grade stainless steel IV stand with two infusion hooks, height locking thumb nut, and stable castor base.</p>
-<ul class="catalogue-card__details">
-<li>Corrosion-proof stainless steel pole adjustable from 135 to 240 cm</li>
-<li>Dual balanced hooks supporting standard infusion bottles and bags</li>
-<li>Silent-glide 50mm castor wheels with floor level balance</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Stainless%20Steel%20Telescopic%20IV%20Stand%20%282%20Hooks%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="all stainless steel" data-title="dr. smith full stainless steel 5-leg iv stand (4 hooks)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Full Stainless Steel 5-Leg IV Stand on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Full Stainless Steel 5-Leg IV Stand" decoding="async" loading="lazy" src="dr-smith-full-ss-five-leg-iv-stand.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">All Stainless Steel</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Intravenous Therapy</span>
-<h3>Dr. Smith Full Stainless Steel 5-Leg IV Stand (4 Hooks)</h3>
-<p>All-stainless steel mobile infusion stand with 5-star stainless square tube base and 4 bottle suspension hooks.</p>
-<ul class="catalogue-card__details">
-<li>Heavy-gauge 304 stainless steel base and mast construction</li>
-<li>4 heavy-duty bottle hooks with center stabilizer finial</li>
-<li>High-durability conductive castors suitable for cleanrooms and OT</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Full%20Stainless%20Steel%205-Leg%20IV%20Stand%20%284%20Hooks%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="single step stool" data-title="dr. smith heavy-duty stainless steel single step stool">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Heavy-Duty Stainless Steel Single Step Stool on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Heavy-Duty Stainless Steel Single Step Stool" decoding="async" loading="lazy" src="dr-smith-heavy-duty-ss-single-step-stool.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Single Step Stool</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Patient Accessibility Furniture</span>
-<h3>Dr. Smith Heavy-Duty Stainless Steel Single Step Stool</h3>
-<p>Heavy-duty single-step surgical examination stool fabricated from square stainless steel tube with perforated dimpled top.</p>
-<ul class="catalogue-card__details">
-<li>Reinforced 304-grade square tube box frame construction</li>
-<li>Perforated non-slip stainless steel stepping platform</li>
-<li>Heavy rubber feet for maximum grip and floor surface protection</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Heavy-Duty%20Stainless%20Steel%20Single%20Step%20Stool">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="ward privacy screen" data-title="dr. smith 4-panel folding ward privacy screen (green)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith 4-Panel Folding Hospital Ward Screen - Green on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith 4-Panel Folding Hospital Ward Screen - Green" decoding="async" loading="lazy" src="dr-smith-four-panel-folding-ward-screen-green.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Ward Privacy Screen</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Ward Furniture &amp; Infrastructure</span>
-<h3>Dr. Smith 4-Panel Folding Ward Privacy Screen (Green)</h3>
-<p>Four-panel concertina folding privacy divider screen mounted on swivel wheels with washable medical green curtain panels.</p>
-<ul class="catalogue-card__details">
-<li>4 interlocking folding frames with 360-degree brass hinge pivots</li>
-<li>Antimicrobial washable hospital green privacy curtains with tension wires</li>
-<li>Heavy-duty tubular framework mounted on 8 swivel castors</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%204-Panel%20Folding%20Ward%20Privacy%20Screen%20%28Green%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="rescue &amp; transfer" data-title="dr. smith emergency patient transfer sheet &amp; spine board">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Emergency Patient Transfer Sheet &amp; Folding Spine Board on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Emergency Patient Transfer Sheet &amp; Folding Spine Board" decoding="async" loading="lazy" src="dr-smith-emergency-spine-board-transfer-sheet.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Rescue &amp; Transfer</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Emergency Care &amp; Patient Handling</span>
-<h3>Dr. Smith Emergency Patient Transfer Sheet &amp; Spine Board</h3>
-<p>Foldable heavy-duty patient immobilization transfer stretcher complete with durable carrying case and reinforced grip loops.</p>
-<ul class="catalogue-card__details">
-<li>High-strength tear-resistant waterproof coated nylon patient carrier</li>
-<li>Reinforced webbing handles around perimeter for multi-person carry</li>
-<li>Includes heavy-duty zippered protective travel tote with handles</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Emergency%20Patient%20Transfer%20Sheet%20%26%20Spine%20Board">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="infusion stand" data-title="dr. smith telescopic iv stand (4-prong ram top)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Telescopic IV Stand with 4-Prong Ram Top on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Telescopic IV Stand with 4-Prong Ram Top" decoding="async" loading="lazy" src="dr-smith-telescopic-iv-stand-4-prong-top.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Infusion Stand</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Intravenous Therapy</span>
-<h3>Dr. Smith Telescopic IV Stand (4-Prong Ram Top)</h3>
-<p>Heavy-duty ward IV pole with stainless mast, four curled bottle safety loops, and low-center-of-gravity 5-prong base.</p>
-<ul class="catalogue-card__details">
-<li>Four curved retention loops preventing bottle dislodgement</li>
-<li>Quick-adjustment ergonomic tightening grip for height setting</li>
-<li>5-star anti-static wheeled base engineered against tip hazards</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Telescopic%20IV%20Stand%20%284-Prong%20Ram%20Top%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="infusion stand" data-title="dr. smith smooth-glide telescopic infusion pole (2 hooks)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Smooth-Glide Telescopic Infusion Pole with 2 Hooks on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Smooth-Glide Telescopic Infusion Pole with 2 Hooks" decoding="async" loading="lazy" src="dr-smith-telescopic-iv-pole-smooth-glide.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Infusion Stand</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Intravenous Therapy</span>
-<h3>Dr. Smith Smooth-Glide Telescopic Infusion Pole (2 Hooks)</h3>
-<p>Lightweight mobile infusion pole designed for general ward use with smooth-rolling swivel castors and twin suspension arms.</p>
-<ul class="catalogue-card__details">
-<li>Seamless stainless steel telescoping rod with blue thumb lock</li>
-<li>Compact 5-star footprint easily navigates crowded hospital corridors</li>
-<li>Corrosion-resistant materials withstand hospital grade disinfectants</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Smooth-Glide%20Telescopic%20Infusion%20Pole%20%282%20Hooks%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="double step stool" data-title="dr. smith epoxy coated double step patient foot stool">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Epoxy Powder Coated Double Step Patient Foot Stool on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Epoxy Powder Coated Double Step Patient Foot Stool" decoding="async" loading="lazy" src="dr-smith-epoxy-coated-double-step-stool.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Double Step Stool</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Patient Accessibility Furniture</span>
-<h3>Dr. Smith Epoxy Coated Double Step Patient Foot Stool</h3>
-<p>Durable tubular steel two-tier patient stepping bench finished in hygienic white powder coating with studded rubber treads.</p>
-<ul class="catalogue-card__details">
-<li>Two-level stepping platforms with heavy studded black safety treads</li>
-<li>High-grade steel pipe framework with cross-braced support bars</li>
-<li>Heavy-duty non-slip rubber caps on all 4 base contact points</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Epoxy%20Coated%20Double%20Step%20Patient%20Foot%20Stool">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="bed accessory" data-title="dr. smith bed-mounted telescopic iv infusion pole">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Bed-Mounted Telescopic Stainless Steel IV Pole on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Bed-Mounted Telescopic Stainless Steel IV Pole" decoding="async" loading="lazy" src="dr-smith-bed-mounted-telescopic-iv-pole.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Bed Accessory</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Intravenous Therapy</span>
-<h3>Dr. Smith Bed-Mounted Telescopic IV Infusion Pole</h3>
-<p>Detachable stainless steel IV pole with universal socket pin designed to insert directly into corner IV sockets of hospital beds.</p>
-<ul class="catalogue-card__details">
-<li>Standard universal mounting stem fits all hospital bed corner sockets</li>
-<li>Telescoping stainless steel extension with twist-lock collar</li>
-<li>Two heavy-duty drop-forged bottle hooks with blue safety caps</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Bed-Mounted%20Telescopic%20IV%20Infusion%20Pole">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="crash cart multi-bin" data-title="dr. smith multi-bin emergency crash cart trolley">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Stainless Steel Emergency Crash Cart with Sorting Bins on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Stainless Steel Emergency Crash Cart with Sorting Bins" decoding="async" loading="lazy" src="dr-smith-crash-cart-multi-bin-emergency-trolley.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Crash Cart Multi-Bin</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Emergency Resuscitation Infrastructure</span>
-<h3>Dr. Smith Multi-Bin Emergency Crash Cart Trolley</h3>
-<p>Comprehensive stainless steel emergency resuscitation cart featuring top medicine organizer shelf, color-coded bins, and 6 lockable drawers.</p>
-<ul class="catalogue-card__details">
-<li>Upper tier with 6 color-coded rapid-access medication bins</li>
-<li>6 modular slide-out lockable supply drawers with labeling slots</li>
-<li>Stainless steel side rail, utility work surface, and push handlebar</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Multi-Bin%20Emergency%20Crash%20Cart%20Trolley">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="deluxe abs crash cart" data-title="dr. smith deluxe abs emergency resuscitation crash cart">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Deluxe ABS Emergency Resuscitation Crash Cart on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Deluxe ABS Emergency Resuscitation Crash Cart" decoding="async" loading="lazy" src="dr-smith-deluxe-abs-emergency-resuscitation-crash-cart.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Deluxe ABS Crash Cart</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Emergency Resuscitation Infrastructure</span>
-<h3>Dr. Smith Deluxe ABS Emergency Resuscitation Crash Cart</h3>
-<p>State-of-the-art polymer crash cart equipped with swivel defibrillator shelf, telescopic IV pole, central key lock, and waste bins.</p>
-<ul class="catalogue-card__details">
-<li>High-impact molded ABS countertop with integrated side push handle</li>
-<li>360-degree rotating defibrillator monitor tray and telescopic IV pole</li>
-<li>Central key locking system securing all 5 sliding supply drawers</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Deluxe%20ABS%20Emergency%20Resuscitation%20Crash%20Cart">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="single step stool" data-title="dr. smith white tubular single step patient stool">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith White Tubular Single Step Patient Stool on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith White Tubular Single Step Patient Stool" decoding="async" loading="lazy" src="dr-smith-white-tubular-single-step-stool.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Single Step Stool</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Patient Accessibility Furniture</span>
-<h3>Dr. Smith White Tubular Single Step Patient Stool</h3>
-<p>Standard single-tier patient step stool with white epoxy powder-coated tubular steel frame and grooved rubber safety mat.</p>
-<ul class="catalogue-card__details">
-<li>Anti-skid ribbed black rubber stepping surface with aluminium perimeter bead</li>
-<li>High-strength tubular steel frame with reinforced connecting crossbars</li>
-<li>Durable rubber feet preventing movement during patient mount and dismount</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20White%20Tubular%20Single%20Step%20Patient%20Stool">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-</div>
-</div>
-</section>
-<section class="catalogue-section">
-<div class="container">
-<div class="catalogue-cta d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4">
-<div>
-<h2>Can't find what you're looking for?</h2>
-<p>Share your requirements and our team will recommend the best fit from our full range.</p>
-</div>
-<a class="catalogue-button flex-shrink-0" href="../../contact-form/index.html">
+  <nav class="apple-globalnav" aria-label="Global">
+    <div class="apple-globalnav-inner">
+      
+      <!-- Brand & Corporate Identity -->
+      <a href="../../index.html" class="apple-nav-brand" aria-label="Dr. Smith Hospital Solutions">
+        <div class="brand-asterisk-icon">
+          <img src="../../assets/img/logo.png?v=11.0" alt="Dr. Smith Emblem Logo" class="apple-nav-logo-img" width="36" height="36" decoding="async" loading="eager">
+        </div>
+        <div class="apple-nav-brand-text">
+          <span class="apple-nav-brand-title">Dr. Smith</span>
+          <span class="apple-nav-brand-subtitle">HOSPITAL SOLUTIONS</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="apple-nav-links">
+        <li class="apple-nav-item">
+          <a href="../../index.html" class="apple-nav-link">Home</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../../catalogue/index.html" class="apple-nav-link nav-active">Products</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../../turnkey-projects/index.html" class="apple-nav-link">Turnkey Solutions</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../../about-us/index.html" class="apple-nav-link">About Us</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../../contact-form/index.html" class="apple-nav-link">Contact</a>
+        </li>
+      </ul>
+
+                  <!-- Action Utilities -->
+      <div class="apple-nav-actions">
+        <!-- Contact / Mail Form Button -->
+        <a href="../../contact-form/index.html" class="apple-nav-circle-btn apple-nav-circle-mail"
+          aria-label="Send Enquiry &amp; Contact Us" title="Send Enquiry / Request Quotation (BOM &amp; Consultation)">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+
+        <!-- WhatsApp Circle Button -->
+        <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions."
+          class="apple-nav-circle-btn apple-nav-circle-whatsapp" target="_blank"
+          rel="noopener noreferrer" aria-label="Chat with Dr. Smith Healthcare on WhatsApp (+91 95990 81020)"
+          title="WhatsApp Direct (+91 95990 81020) • 24/7 Fast Inquiry">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <!-- Menu Toggle Button -->
+        <button type="button" class="apple-nav-circle-btn" id="apple-mobile-menu-btn"
+          aria-label="Toggle Navigation Menu" title="Menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+    <!-- Mobile Menu Drawer Backdrop Overlay -->
+  <div class="apple-mobile-backdrop" id="appleMobileBackdrop"></div>
+
+  <!-- Mobile Menu Drawer Overlay -->
+  <div class="apple-mobile-drawer" id="apple-mobile-drawer">
+    <div class="apple-mobile-drawer-header">
+      <span class="apple-mobile-drawer-tag"><i class="bi bi-hospital"></i> Dr. Smith Quick Menu</span>
+      <button type="button" class="apple-mobile-drawer-close" id="appleMobileDrawerClose" aria-label="Close Navigation Menu">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
+    <div class="apple-mobile-grid">
+      <a href="../../index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-house-door-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Home</span>
+          <span class="apple-mobile-tile-sub">Overview</span>
+        </div>
+      </a>
+      <a href="../../catalogue/index.html" class="apple-mobile-tile active">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-grid-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Catalogue</span>
+          <span class="apple-mobile-tile-sub">50+ Categories</span>
+        </div>
+      </a>
+      <a href="../../turnkey-projects/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-hospital-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Turnkey Setup</span>
+          <span class="apple-mobile-tile-sub">50–500 Beds</span>
+        </div>
+      </a>
+      <a href="../../catalogue/modular-ot/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-activity"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Modular OT</span>
+          <span class="apple-mobile-tile-sub">Cleanrooms</span>
+        </div>
+      </a>
+      <a href="../../about-us/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-shield-check"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">About Us</span>
+          <span class="apple-mobile-tile-sub">Heritage</span>
+        </div>
+      </a>
+      <a href="../../contact-form/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-envelope-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Contact</span>
+          <span class="apple-mobile-tile-sub">Global Offices</span>
+        </div>
+      </a>
+    </div>
+    
+    <div class="apple-mobile-cta-box">
+      <a href="../../contact-form/index.html" class="apple-mobile-btn-consultation">
+        <i class="bi bi-building-check me-2"></i> Request Project Consultation <i class="bi bi-arrow-right ms-auto"></i>
+      </a>
+
+      <div class="apple-mobile-contact-grid">
+        <a href="tel:18008917466" class="apple-mobile-contact-pill apple-mobile-pill-tel">
+          <i class="bi bi-telephone-fill"></i>
+          <span>1800 891 7466<small>National Toll-Free</small></span>
+        </a>
+        <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." target="_blank" rel="noopener noreferrer" class="apple-mobile-contact-pill apple-mobile-pill-wa">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>WhatsApp Desk<small>24/7 Fast Inquiry</small></span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+      
+
+    <main>
+        <section class="catalogue-hero catalogue-hero--compact">
+            <div class="container">
+                <nav class="catalogue-breadcrumb" aria-label="Breadcrumb">
+                    <a href="../../index.html">Home</a>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="../index.html#catalogue">Catalogue</a>
+                    <i class="bi bi-chevron-right"></i>
+                    <span aria-current="page">Ward Furniture</span>
+                </nav>
+                <div class="row align-items-center">
+                    <div class="col-lg-9">
+                        <span class="catalogue-eyebrow">Hospital furniture & ward infrastructure</span>
+                        <h1>Ward Furniture</h1>
+                        <p>Hospital ward cubicle curtaining, patient bed screens, and heavy-duty IV infusion stands.</p>
+                        <a class="catalogue-button catalogue-button--ghost" href="../index.html#catalogue">
+                            <i class="bi bi-arrow-left"></i> Back to full catalogue
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalogue-section">
+            <div class="container">
+                  
+                <p class="catalogue-count">Showing <strong>23</strong> products</p>
+                <div class="category-search-wrapper mb-4" style="max-width: 500px;">
+                    <div class="input-group">
+                        <span class="input-group-text bg-white border-end-0"><i class="bi bi-search text-muted"></i></span>
+                        <input type="text" id="categoryProductSearch" class="form-control border-start-0 ps-0" placeholder="Filter ward furniture..." aria-label="Filter products">
+                    </div>
+                </div>
+                <script src="../../assets/js/catalogue-filters.js?v=1.0"></script>
+
+
+                <div class="row g-4" id="products-grid">
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="i.c.u & wards curtaining (swm 11138)" data-badge="cubicle track">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View ICU & Hospital Ward Privacy Curtains on Instagram" title="View on Instagram">
+                                    <img src="icu-ward-curtaining.png" alt="ICU & Hospital Ward Privacy Curtains" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Cubicle Track</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Hospital Furniture & Ward Infrastructure</span>
+                                <h3>I.C.U & Wards Curtaining (SWM 11138)</h3>
+                                <p>Hospital cubicle track curtaining system with flame retardant, antimicrobial fabric and open ventilation top mesh.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Inherently flame retardant (FR) and antimicrobial treated fabric</li>
+                                    <li>Top ventilation mesh compliant with ceiling fire sprinkler standards</li>
+                                    <li>Heavy-duty aluminium ceiling tracks with silent wheeled runners</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=ICU%20%26%20Hospital%20Ward%20Privacy%20Curtains">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="hospital three & four fold screen (swm 11051)" data-badge="ward privacy">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Hospital Three & Four Fold Ward Screen on Instagram" title="View on Instagram">
+                                    <img src="hospital-screen-three-four-fold.png" alt="Hospital Three & Four Fold Ward Screen" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Ward Privacy</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Hospital Furniture & Ward Infrastructure</span>
+                                <h3>Hospital Three & Four Fold Screen (SWM 11051)</h3>
+                                <p>Mobile folding ward privacy screen fitted with washable curtains and smooth swivelling castor wheels.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Available in 3-panel and 4-panel folding configurations</li>
+                                    <li>High-quality washable fabric privacy curtains with wire springs</li>
+                                    <li>Epoxy coated steel tubular frame on 50mm smooth castors</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Hospital%20Three%20%26%20Four%20Fold%20Ward%20Screen">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="iv stand ms & ss (swm 11083)" data-badge="infusion stand">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View I.V Stand (M.S & S.S) on Instagram" title="View on Instagram">
+                                    <img src="iv-stand.png" alt="I.V Stand (M.S & S.S)" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Infusion Stand</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Hospital Furniture & Ward Infrastructure</span>
+                                <h3>IV Stand MS & SS (SWM 11083)</h3>
+                                <p>Heavy-duty intravenous infusion stand with stainless steel telescopic rod, 4-hook top and weighted 5-leg castor base.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Stainless steel telescopic inner pipe with secure lock knob</li>
+                                    <li>Four-prong stainless steel top hooks for multiple IV bottles</li>
+                                    <li>Heavy weighted 5-prong mobile base on 50mm swivelling castors</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=I.V%20Stand%20%28M.S%20%26%20S.S%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="hospital attendant bed cum chair" data-badge="bed cum chair">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Hospital Attendant Bed Cum Chair on Instagram" title="View on Instagram">
+                                    <img src="attendant-bed-cum-chair.png" alt="Hospital Attendant Bed Cum Chair" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Bed Cum Chair</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Patient Ward Infrastructure</span>
+                                <h3>Hospital Attendant Bed Cum Chair</h3>
+                                <p>Space-saving attendant companion furniture that converts effortlessly from an armchair into a full-length sleeper cot.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Smooth fold-out mechanism transforming chair to comfortable bed</li>
+                                    <li>High-density foam cushions upholstered in wipe-clean faux leather</li>
+                                    <li>Robust epoxy powder-coated tubular steel framework</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Hospital%20Attendant%20Bed%20Cum%20Chair">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="bedside locker semi deluxe" data-badge="bedside storage">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Bedside Locker Semi Deluxe on Instagram" title="View on Instagram">
+                                    <img src="bed-side-locker-semi-deluxe.png" alt="Bedside Locker Semi Deluxe" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Bedside Storage</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Patient Ward Infrastructure</span>
+                                <h3>Bedside Locker Semi Deluxe</h3>
+                                <p>Hygienic bedside cabinet for patient personal storage with stainless steel recessed top and lower storage cupboard.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Pressed stainless steel top with raised three-side spill rim</li>
+                                    <li>Smooth-glide utility drawer and ventilated louvered cabinet</li>
+                                    <li>Anti-rust pre-treated epoxy powder-coated finish</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Bedside%20Locker%20Semi%20Deluxe">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="stainless steel kick bucket with trolley" data-badge="ot & ward basin">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Stainless Steel Kick Bucket with Trolley on Instagram" title="View on Instagram">
+                                    <img src="kick-bucket.png" alt="Stainless Steel Kick Bucket with Trolley" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">OT & Ward Basin</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Clinical Waste & Ward Furniture</span>
+                                <h3>Stainless Steel Kick Bucket with Trolley</h3>
+                                <p>Heavy-duty seamless stainless steel kick bucket housed in a circular rubber-buffered rolling base for OT and surgical suites.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Seamless deep-drawn 304-grade stainless steel bucket bowl</li>
+                                    <li>Perimeter protective rubber bumper ring prevents wall damage</li>
+                                    <li>Mounted on 3 heavy-duty swivel castors for effortless foot nudging</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Stainless%20Steel%20Kick%20Bucket%20with%20Trolley">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith stainless steel medicine distribution trolley" data-badge="medicine distribution">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Stainless Steel Medicine Distribution Trolley on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-medicine-distribution-trolley-ss.png" alt="Dr. Smith Stainless Steel Medicine Distribution Trolley" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Medicine Distribution</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Ward Medication Systems</span>
+                                <h3>Dr. Smith Stainless Steel Medicine Distribution Trolley</h3>
+                                <p>High-capacity medical administration trolley with 6 lockable modular drawers, top guard rails, and lower utility shelf.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>6 modular slide-out lockable medicine storage drawers</li>
+                                    <li>Hygienic 304 stainless steel top work surface with 3-sided guard rail</li>
+                                    <li>Smooth directional push handles and 100mm medical castors</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Stainless%20Steel%20Medicine%20Distribution%20Trolley">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith stainless steel double step stool (dimpled)" data-badge="double step stool">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Stainless Steel Double Step Stool with Dimpled Tread on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-double-step-stool-dimpled-ss.png" alt="Dr. Smith Stainless Steel Double Step Stool with Dimpled Tread" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Double Step Stool</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Patient Accessibility Furniture</span>
+                                <h3>Dr. Smith Stainless Steel Double Step Stool (Dimpled)</h3>
+                                <p>Sanitary double-tier patient bedside step stool crafted from polished stainless steel with raised dimpled slip-resistant tread plates.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Heavy-gauge stainless steel steps with permanent embossed traction dots</li>
+                                    <li>Reinforced square tubular legs supporting up to 180 kg load</li>
+                                    <li>Non-marking anti-slip rubber floor gripping feet</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Stainless%20Steel%20Double%20Step%20Stool%20%28Dimpled%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith tubular double step stool (rubber tread)" data-badge="double step stool">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Tubular Double Step Stool with Anti-Skid Rubber Tread on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-tubular-double-step-stool-rubber-tread.png" alt="Dr. Smith Tubular Double Step Stool with Anti-Skid Rubber Tread" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Double Step Stool</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Patient Accessibility Furniture</span>
+                                <h3>Dr. Smith Tubular Double Step Stool (Rubber Tread)</h3>
+                                <p>Curved tubular stainless steel dual step stool featuring heavy-duty studded rubber mats for maximum patient traction.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Durable coin-pattern anti-skid rubber tread mats with aluminium edging</li>
+                                    <li>Seamless curved tubular stainless steel frame</li>
+                                    <li>Protective rubber ferrules on all four legs</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Tubular%20Double%20Step%20Stool%20%28Rubber%20Tread%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith telescopic iv stand (heavy polymer base)" data-badge="infusion stand">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Telescopic IV Stand with Heavy Polymer Base on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-telescopic-iv-stand-polymer-base.png" alt="Dr. Smith Telescopic IV Stand with Heavy Polymer Base" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Infusion Stand</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Intravenous Therapy</span>
+                                <h3>Dr. Smith Telescopic IV Stand (Heavy Polymer Base)</h3>
+                                <p>Mobile telescopic intravenous pole with 4 multi-bottle hooks and tip-resistant 5-star molded polymer weighted base.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Stainless steel inner telescoping rod with quick-lock collar knob</li>
+                                    <li>4-point stainless steel ram-horn bottle suspension hooks</li>
+                                    <li>Weighted 5-star polymer base with smooth-rolling swivel castors</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Telescopic%20IV%20Stand%20%28Heavy%20Polymer%20Base%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith epoxy powder coated telescopic iv stand" data-badge="infusion stand">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Epoxy Powder Coated Telescopic IV Stand on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-white-epoxy-telescopic-iv-stand.png" alt="Dr. Smith Epoxy Powder Coated Telescopic IV Stand" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Infusion Stand</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Intravenous Therapy</span>
+                                <h3>Dr. Smith Epoxy Powder Coated Telescopic IV Stand</h3>
+                                <p>Clinical infusion pole featuring electrostatically powder-coated white finish, two bottle hooks, and weighted mobile base.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Antimicrobial epoxy powder-coated mast with smooth height adjustment</li>
+                                    <li>Twin stainless steel drip hooks with secure containment bends</li>
+                                    <li>Low-profile heavy cast-iron mobile base preventing accidental tipping</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Epoxy%20Powder%20Coated%20Telescopic%20IV%20Stand">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith stainless steel telescopic iv stand (2 hooks)" data-badge="ss infusion stand">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Stainless Steel Telescopic IV Stand - 2 Hooks on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-ss-telescopic-iv-stand-2-hooks.png" alt="Dr. Smith Stainless Steel Telescopic IV Stand - 2 Hooks" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">SS Infusion Stand</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Intravenous Therapy</span>
+                                <h3>Dr. Smith Stainless Steel Telescopic IV Stand (2 Hooks)</h3>
+                                <p>Surgical-grade stainless steel IV stand with two infusion hooks, height locking thumb nut, and stable castor base.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Corrosion-proof stainless steel pole adjustable from 135 to 240 cm</li>
+                                    <li>Dual balanced hooks supporting standard infusion bottles and bags</li>
+                                    <li>Silent-glide 50mm castor wheels with floor level balance</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Stainless%20Steel%20Telescopic%20IV%20Stand%20%282%20Hooks%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith full stainless steel 5-leg iv stand (4 hooks)" data-badge="all stainless steel">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Full Stainless Steel 5-Leg IV Stand on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-full-ss-five-leg-iv-stand.png" alt="Dr. Smith Full Stainless Steel 5-Leg IV Stand" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">All Stainless Steel</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Intravenous Therapy</span>
+                                <h3>Dr. Smith Full Stainless Steel 5-Leg IV Stand (4 Hooks)</h3>
+                                <p>All-stainless steel mobile infusion stand with 5-star stainless square tube base and 4 bottle suspension hooks.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Heavy-gauge 304 stainless steel base and mast construction</li>
+                                    <li>4 heavy-duty bottle hooks with center stabilizer finial</li>
+                                    <li>High-durability conductive castors suitable for cleanrooms and OT</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Full%20Stainless%20Steel%205-Leg%20IV%20Stand%20%284%20Hooks%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith heavy-duty stainless steel single step stool" data-badge="single step stool">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Heavy-Duty Stainless Steel Single Step Stool on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-heavy-duty-ss-single-step-stool.png" alt="Dr. Smith Heavy-Duty Stainless Steel Single Step Stool" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Single Step Stool</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Patient Accessibility Furniture</span>
+                                <h3>Dr. Smith Heavy-Duty Stainless Steel Single Step Stool</h3>
+                                <p>Heavy-duty single-step surgical examination stool fabricated from square stainless steel tube with perforated dimpled top.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Reinforced 304-grade square tube box frame construction</li>
+                                    <li>Perforated non-slip stainless steel stepping platform</li>
+                                    <li>Heavy rubber feet for maximum grip and floor surface protection</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Heavy-Duty%20Stainless%20Steel%20Single%20Step%20Stool">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith 4-panel folding ward privacy screen (green)" data-badge="ward privacy screen">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith 4-Panel Folding Hospital Ward Screen - Green on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-four-panel-folding-ward-screen-green.png" alt="Dr. Smith 4-Panel Folding Hospital Ward Screen - Green" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Ward Privacy Screen</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Ward Furniture & Infrastructure</span>
+                                <h3>Dr. Smith 4-Panel Folding Ward Privacy Screen (Green)</h3>
+                                <p>Four-panel concertina folding privacy divider screen mounted on swivel wheels with washable medical green curtain panels.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>4 interlocking folding frames with 360-degree brass hinge pivots</li>
+                                    <li>Antimicrobial washable hospital green privacy curtains with tension wires</li>
+                                    <li>Heavy-duty tubular framework mounted on 8 swivel castors</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%204-Panel%20Folding%20Ward%20Privacy%20Screen%20%28Green%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith emergency patient transfer sheet & spine board" data-badge="rescue & transfer">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Emergency Patient Transfer Sheet & Folding Spine Board on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-emergency-spine-board-transfer-sheet.png" alt="Dr. Smith Emergency Patient Transfer Sheet & Folding Spine Board" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Rescue & Transfer</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Emergency Care & Patient Handling</span>
+                                <h3>Dr. Smith Emergency Patient Transfer Sheet & Spine Board</h3>
+                                <p>Foldable heavy-duty patient immobilization transfer stretcher complete with durable carrying case and reinforced grip loops.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>High-strength tear-resistant waterproof coated nylon patient carrier</li>
+                                    <li>Reinforced webbing handles around perimeter for multi-person carry</li>
+                                    <li>Includes heavy-duty zippered protective travel tote with handles</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Emergency%20Patient%20Transfer%20Sheet%20%26%20Spine%20Board">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith telescopic iv stand (4-prong ram top)" data-badge="infusion stand">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Telescopic IV Stand with 4-Prong Ram Top on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-telescopic-iv-stand-4-prong-top.png" alt="Dr. Smith Telescopic IV Stand with 4-Prong Ram Top" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Infusion Stand</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Intravenous Therapy</span>
+                                <h3>Dr. Smith Telescopic IV Stand (4-Prong Ram Top)</h3>
+                                <p>Heavy-duty ward IV pole with stainless mast, four curled bottle safety loops, and low-center-of-gravity 5-prong base.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Four curved retention loops preventing bottle dislodgement</li>
+                                    <li>Quick-adjustment ergonomic tightening grip for height setting</li>
+                                    <li>5-star anti-static wheeled base engineered against tip hazards</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Telescopic%20IV%20Stand%20%284-Prong%20Ram%20Top%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith smooth-glide telescopic infusion pole (2 hooks)" data-badge="infusion stand">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Smooth-Glide Telescopic Infusion Pole with 2 Hooks on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-telescopic-iv-pole-smooth-glide.png" alt="Dr. Smith Smooth-Glide Telescopic Infusion Pole with 2 Hooks" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Infusion Stand</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Intravenous Therapy</span>
+                                <h3>Dr. Smith Smooth-Glide Telescopic Infusion Pole (2 Hooks)</h3>
+                                <p>Lightweight mobile infusion pole designed for general ward use with smooth-rolling swivel castors and twin suspension arms.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Seamless stainless steel telescoping rod with blue thumb lock</li>
+                                    <li>Compact 5-star footprint easily navigates crowded hospital corridors</li>
+                                    <li>Corrosion-resistant materials withstand hospital grade disinfectants</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Smooth-Glide%20Telescopic%20Infusion%20Pole%20%282%20Hooks%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith epoxy coated double step patient foot stool" data-badge="double step stool">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Epoxy Powder Coated Double Step Patient Foot Stool on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-epoxy-coated-double-step-stool.png" alt="Dr. Smith Epoxy Powder Coated Double Step Patient Foot Stool" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Double Step Stool</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Patient Accessibility Furniture</span>
+                                <h3>Dr. Smith Epoxy Coated Double Step Patient Foot Stool</h3>
+                                <p>Durable tubular steel two-tier patient stepping bench finished in hygienic white powder coating with studded rubber treads.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Two-level stepping platforms with heavy studded black safety treads</li>
+                                    <li>High-grade steel pipe framework with cross-braced support bars</li>
+                                    <li>Heavy-duty non-slip rubber caps on all 4 base contact points</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Epoxy%20Coated%20Double%20Step%20Patient%20Foot%20Stool">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith bed-mounted telescopic iv infusion pole" data-badge="bed accessory">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Bed-Mounted Telescopic Stainless Steel IV Pole on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-bed-mounted-telescopic-iv-pole.png" alt="Dr. Smith Bed-Mounted Telescopic Stainless Steel IV Pole" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Bed Accessory</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Intravenous Therapy</span>
+                                <h3>Dr. Smith Bed-Mounted Telescopic IV Infusion Pole</h3>
+                                <p>Detachable stainless steel IV pole with universal socket pin designed to insert directly into corner IV sockets of hospital beds.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Standard universal mounting stem fits all hospital bed corner sockets</li>
+                                    <li>Telescoping stainless steel extension with twist-lock collar</li>
+                                    <li>Two heavy-duty drop-forged bottle hooks with blue safety caps</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Bed-Mounted%20Telescopic%20IV%20Infusion%20Pole">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith multi-bin emergency crash cart trolley" data-badge="crash cart multi-bin">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Stainless Steel Emergency Crash Cart with Sorting Bins on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-crash-cart-multi-bin-emergency-trolley.png" alt="Dr. Smith Stainless Steel Emergency Crash Cart with Sorting Bins" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Crash Cart Multi-Bin</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Emergency Resuscitation Infrastructure</span>
+                                <h3>Dr. Smith Multi-Bin Emergency Crash Cart Trolley</h3>
+                                <p>Comprehensive stainless steel emergency resuscitation cart featuring top medicine organizer shelf, color-coded bins, and 6 lockable drawers.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Upper tier with 6 color-coded rapid-access medication bins</li>
+                                    <li>6 modular slide-out lockable supply drawers with labeling slots</li>
+                                    <li>Stainless steel side rail, utility work surface, and push handlebar</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Multi-Bin%20Emergency%20Crash%20Cart%20Trolley">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith deluxe abs emergency resuscitation crash cart" data-badge="deluxe abs crash cart">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Deluxe ABS Emergency Resuscitation Crash Cart on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-deluxe-abs-emergency-resuscitation-crash-cart.png" alt="Dr. Smith Deluxe ABS Emergency Resuscitation Crash Cart" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Deluxe ABS Crash Cart</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Emergency Resuscitation Infrastructure</span>
+                                <h3>Dr. Smith Deluxe ABS Emergency Resuscitation Crash Cart</h3>
+                                <p>State-of-the-art polymer crash cart equipped with swivel defibrillator shelf, telescopic IV pole, central key lock, and waste bins.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>High-impact molded ABS countertop with integrated side push handle</li>
+                                    <li>360-degree rotating defibrillator monitor tray and telescopic IV pole</li>
+                                    <li>Central key locking system securing all 5 sliding supply drawers</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Deluxe%20ABS%20Emergency%20Resuscitation%20Crash%20Cart">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith white tubular single step patient stool" data-badge="single step stool">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith White Tubular Single Step Patient Stool on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-white-tubular-single-step-stool.png" alt="Dr. Smith White Tubular Single Step Patient Stool" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Single Step Stool</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Patient Accessibility Furniture</span>
+                                <h3>Dr. Smith White Tubular Single Step Patient Stool</h3>
+                                <p>Standard single-tier patient step stool with white epoxy powder-coated tubular steel frame and grooved rubber safety mat.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Anti-skid ribbed black rubber stepping surface with aluminium perimeter bead</li>
+                                    <li>High-strength tubular steel frame with reinforced connecting crossbars</li>
+                                    <li>Durable rubber feet preventing movement during patient mount and dismount</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20White%20Tubular%20Single%20Step%20Patient%20Stool">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="catalogue-section">
+            <div class="container">
+                <div class="catalogue-cta d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4">
+                    <div>
+                        <h2>Can't find what you're looking for?</h2>
+                        <p>Share your requirements and our team will recommend the best fit from our full range.</p>
+                    </div>
+                    <a class="catalogue-button flex-shrink-0" href="../../contact-form/index.html">
                         Contact our team <i class="bi bi-arrow-right"></i>
-</a>
-</div>
-</div>
-</section>
-<!-- ============================================================
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+      <!-- ============================================================
        GLOBAL DIRECTORY FOOTER
        ============================================================ -->
-<!-- Drawer Modal -->
-<!-- ============================================================
+  
+
+  <!-- Drawer Modal -->
+    <!-- ============================================================
        GLOBAL DIRECTORY FOOTER
        ============================================================ -->
-<footer class="apple-globalfooter">
-<div class="apple-footer-inner">
-<!-- Footer Brand Header & Fast Back-To-Top -->
-<div class="apple-footer-brand-header">
-<div class="apple-footer-brand-left">
-<img alt="Dr. Smith Emblem Logo" class="apple-footer-brand-logo" decoding="async" height="32" loading="lazy" src="../../assets/img/logo.png?v=11.0" width="32"/>
-<div>
-<div class="apple-footer-brand-title">Dr. Smith</div>
-<span class="apple-footer-brand-subtitle">HOSPITAL SOLUTIONS</span>
-</div>
-</div>
-<a aria-label="Scroll back to top" class="apple-footer-backtotop-btn" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">
-<span>Top</span> <i class="bi bi-chevron-up"></i>
-</a>
-</div>
-<!-- Notes / Footnotes -->
-<div class="apple-footer-notes">
-<ol>
-<li>Medical equipment specifications, turnkey timelines, and compliance standards (ISO 9001:2015, ISO
+  <footer class="apple-globalfooter">
+    <div class="apple-footer-inner">
+
+      <!-- Footer Brand Header & Fast Back-To-Top -->
+      <div class="apple-footer-brand-header">
+        <div class="apple-footer-brand-left">
+          <img src="../../assets/img/logo.png?v=11.0" alt="Dr. Smith Emblem Logo" class="apple-footer-brand-logo" width="32"
+            height="32" decoding="async" loading="lazy">
+          <div>
+            <div class="apple-footer-brand-title">Dr. Smith</div>
+            <span class="apple-footer-brand-subtitle">HOSPITAL SOLUTIONS</span>
+          </div>
+        </div>
+        <a href="#top" class="apple-footer-backtotop-btn"
+          onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;" aria-label="Scroll back to top">
+          <span>Top</span> <i class="bi bi-chevron-up"></i>
+        </a>
+      </div>
+
+      <!-- Notes / Footnotes -->
+      <div class="apple-footer-notes">
+        <ol>
+          <li>Medical equipment specifications, turnkey timelines, and compliance standards (ISO 9001:2015, ISO
             13485:2016, CE, FDA) depend on specific project scopes and customized clinical configurations.</li>
-<li>Turnkey hospital infrastructure engineering timelines depend on architectural blueprints, local regulatory
+          <li>Turnkey hospital infrastructure engineering timelines depend on architectural blueprints, local regulatory
             clearances, and civil site readiness.</li>
-<li>Principal Global Head Office located at Kapashera Border, New Delhi; Manufacturing Plant at METL, Jhajjar,
+          <li>Principal Global Head Office located at Kapashera Border, New Delhi; Manufacturing Plant at METL, Jhajjar,
             Haryana; Overseas Head Office at SAIF Zone, Sharjah, UAE.</li>
-</ol>
-</div>
-<!-- Directory Columns (Mobile Collapsible Accordions) -->
-<div class="apple-footer-directory">
-<!-- Col 1: Turnkey Solutions (Active by default on mobile) -->
-<div class="apple-footer-col active">
-<button aria-expanded="true" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Turnkey Solutions</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../../turnkey-projects/index.html">500-Bedded Hospital Setup</a></li>
-<li><a href="../../catalogue/modular-ot/index.html">Modular OT Construction</a></li>
-<li><a href="../../turnkey-projects/index.html">Medical Gas Pipeline (MGPS)</a></li>
-<li><a href="../../turnkey-projects/index.html">Hospital Architecture &amp; MEP</a></li>
-<li><a href="../../turnkey-projects/index.html">Government &amp; Global Tenders</a></li>
-</ul>
-</div>
-<!-- Col 2: Group Ecosystem -->
-<div class="apple-footer-col">
-<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Group Ecosystem</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../../about-us/index.html">Dr. Smith Healthcare</a></li>
-<li><a href="../../catalogue/index.html">Surgihub Surgical Devices</a></li>
-<li><a href="../../catalogue/index.html">Surgical Mall of India (SMPL)</a></li>
-<li><a href="../../catalogue/index.html">MediAid Patient Care</a></li>
-<li><a href="../../catalogue/index.html">Orbit Mahajan Diagnostics</a></li>
-</ul>
-</div>
-<!-- Col 3: Product Catalogue -->
-<div class="apple-footer-col">
-<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Product Catalogue</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../../catalogue/beds/index.html">Hospital &amp; ICU Beds</a></li>
-<li><a href="../../catalogue/modular-ot/index.html">Modular OT Suites</a></li>
-<li><a href="../../catalogue/patient-monitor/index.html">Critical Care &amp; Monitors</a></li>
-<li><a href="../../catalogue/ventilators/index.html">ICU Ventilators</a></li>
-<li><a href="../../catalogue/index.html">Full 50+ Categories</a></li>
-</ul>
-</div>
-<!-- Col 4: Global Directory -->
-<div class="apple-footer-col">
-<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Global Presence</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../../contact-form/index.html">New Delhi Head Office (India)</a></li>
-<li><a href="../../contact-form/index.html">Jhajjar Manufacturing Plant</a></li>
-<li><a href="../../contact-form/index.html">Sharjah Overseas Office (UAE)</a></li>
-<li><a href="../../contact-form/index.html">Kenya &amp; Nigeria Desks</a></li>
-<li><a href="../../contact-form/index.html">Patna, Kolkata, Varanasi Marts</a></li>
-</ul>
-</div>
-<!-- Col 5: Compliance & Values -->
-<div class="apple-footer-col">
-<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Corporate &amp; Quality</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../../about-us/index.html">About 60+ Years Heritage</a></li>
-<li><a href="../../mission-values/index.html">Mission &amp; Values</a></li>
-<li><a href="../../about-us/index.html">Executive Leadership</a></li>
-<li><a href="../../privacy.html">Privacy Policy</a></li>
-<li><a href="../../terms.html">Terms of Service</a></li>
-</ul>
-</div>
-</div>
-<!-- Footer Bottom Legal, Direct Connect & Country Positioned in Correct Order -->
-<div class="apple-footer-bottom">
-<div class="apple-footer-top-row">
-<div class="apple-footer-country">
-<a class="apple-footer-country-badge" href="../../contact-form/index.html" title="Region &amp; Language">
-<i class="bi bi-globe me-1"></i> India (English)
+        </ol>
+      </div>
+
+      <!-- Directory Columns (Mobile Collapsible Accordions) -->
+      <div class="apple-footer-directory">
+
+        <!-- Col 1: Turnkey Solutions (Active by default on mobile) -->
+        <div class="apple-footer-col active">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="true">
+            <h4 class="apple-footer-col-title">Turnkey Solutions</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../../turnkey-projects/index.html">500-Bedded Hospital Setup</a></li>
+            <li><a href="../../catalogue/modular-ot/index.html">Modular OT Construction</a></li>
+            <li><a href="../../turnkey-projects/index.html">Medical Gas Pipeline (MGPS)</a></li>
+            <li><a href="../../turnkey-projects/index.html">Hospital Architecture &amp; MEP</a></li>
+            <li><a href="../../turnkey-projects/index.html">Government &amp; Global Tenders</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 2: Group Ecosystem -->
+        <div class="apple-footer-col">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Group Ecosystem</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../../about-us/index.html">Dr. Smith Healthcare</a></li>
+            <li><a href="../../catalogue/index.html">Surgihub Surgical Devices</a></li>
+            <li><a href="../../catalogue/index.html">Surgical Mall of India (SMPL)</a></li>
+            <li><a href="../../catalogue/index.html">MediAid Patient Care</a></li>
+            <li><a href="../../catalogue/index.html">Orbit Mahajan Diagnostics</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Product Catalogue -->
+        <div class="apple-footer-col">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Product Catalogue</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../../catalogue/beds/index.html">Hospital &amp; ICU Beds</a></li>
+            <li><a href="../../catalogue/modular-ot/index.html">Modular OT Suites</a></li>
+            <li><a href="../../catalogue/patient-monitor/index.html">Critical Care &amp; Monitors</a></li>
+            <li><a href="../../catalogue/ventilators/index.html">ICU Ventilators</a></li>
+            <li><a href="../../catalogue/index.html">Full 50+ Categories</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Global Directory -->
+        <div class="apple-footer-col">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Global Presence</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../../contact-form/index.html">New Delhi Head Office (India)</a></li>
+            <li><a href="../../contact-form/index.html">Jhajjar Manufacturing Plant</a></li>
+            <li><a href="../../contact-form/index.html">Sharjah Overseas Office (UAE)</a></li>
+            <li><a href="../../contact-form/index.html">Kenya &amp; Nigeria Desks</a></li>
+            <li><a href="../../contact-form/index.html">Patna, Kolkata, Varanasi Marts</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Compliance & Values -->
+        <div class="apple-footer-col">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Corporate &amp; Quality</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../../about-us/index.html">About 60+ Years Heritage</a></li>
+            <li><a href="../../mission-values/index.html">Mission &amp; Values</a></li>
+            <li><a href="../../about-us/index.html">Executive Leadership</a></li>
+            <li><a href="../../privacy.html">Privacy Policy</a></li>
+            <li><a href="../../terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Legal, Direct Connect & Country Positioned in Correct Order -->
+      <div class="apple-footer-bottom">
+        <div class="apple-footer-top-row">
+          <div class="apple-footer-country">
+            <a href="../../contact-form/index.html" class="apple-footer-country-badge" title="Region &amp; Language">
+              <i class="bi bi-globe me-1"></i> India (English)
             </a>
-</div>
-<div class="apple-footer-quicklinks">
-<a class="apple-footer-badge-link" href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." rel="noopener noreferrer" target="_blank" title="Direct WhatsApp Assistance (+91 95990 81020)">
-<i class="fa-brands fa-whatsapp text-success me-1"></i> WhatsApp Desk
+          </div>
+          <div class="apple-footer-quicklinks">
+            <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." target="_blank" rel="noopener noreferrer"
+              class="apple-footer-badge-link" title="Direct WhatsApp Assistance (+91 95990 81020)">
+              <i class="fa-brands fa-whatsapp text-success me-1"></i> WhatsApp Desk
             </a>
-</div>
-</div>
-<div class="apple-footer-divider"></div>
-<div class="apple-footer-meta-row">
-<div class="apple-footer-legal-links">
-<a href="../../privacy.html">Privacy Policy</a>
-<span class="legal-dot">•</span>
-<a href="../../terms.html">Terms of Use</a>
-<span class="legal-dot">•</span>
-<a href="../../contact-form/index.html">Sales Policy</a>
-<span class="legal-dot">•</span>
-<a href="../../contact-form/index.html">Legal</a>
-<span class="legal-dot">•</span>
-<a href="../../catalogue/index.html">Site Map</a>
-</div>
-<div class="apple-footer-copyright">
-            Copyright © 2026 Dr. Smith Healthcare Solutions (Surgical Wholesale Mart Pvt. Ltd.). All rights
+          </div>
+        </div>
+
+        <div class="apple-footer-divider"></div>
+
+        <div class="apple-footer-meta-row">
+          <div class="apple-footer-legal-links">
+            <a href="../../privacy.html">Privacy Policy</a>
+            <span class="legal-dot">•</span>
+            <a href="../../terms.html">Terms of Use</a>
+            <span class="legal-dot">•</span>
+            <a href="../../contact-form/index.html">Sales Policy</a>
+            <span class="legal-dot">•</span>
+            <a href="../../contact-form/index.html">Legal</a>
+            <span class="legal-dot">•</span>
+            <a href="../../catalogue/index.html">Site Map</a>
+          </div>
+          <div class="apple-footer-copyright">
+            Copyright &copy; 2026 Dr. Smith Healthcare Solutions (Surgical Wholesale Mart Pvt. Ltd.). All rights
             reserved. An ISO 9001:2015, ISO 13485:2016, CE &amp; FDA Certified Company.
           </div>
-</div>
-</div>
-</div>
-</footer>
-<!-- Drawer Modal -->
-<div class="apple-drawer-overlay" id="apple-drawer-overlay" onclick="if(event.target===this) closeAppleDrawer();">
-<div class="apple-drawer-content">
-<button aria-label="Close" class="apple-drawer-close" onclick="closeAppleDrawer();" type="button">
-<i class="bi bi-x-lg"></i>
-</button>
-<div style="text-align: center; margin-bottom: 24px;">
-<span class="apple-shelf-badge">Dr. Smith Turnkey &amp; Procurement Desk</span>
-<h3 style="font-size: 24px; font-weight: 700; margin-top: 8px;">Request Project Consultation</h3>
-<p style="font-size: 14px; color: var(--apple-text-secondary); margin: 0;">Speak directly with our healthcare architects &amp; hospital engineering experts.</p>
-</div>
-<form class="apple-drawer-form" onsubmit="handleAppleQuoteSubmit(event);">
-<div class="form-group">
-<label>Scope of Interest</label>
-<input id="drawer-product-name" readonly="" style="background: rgba(255,255,255,0.08); font-weight: 600;" type="text" value="Turnkey Hospital Setup"/>
-</div>
-<div class="row g-2">
-<div class="col-md-6 form-group">
-<label>Your Full Name *</label>
-<input placeholder="Dr. / Mr. / Ms." required="" type="text"/>
-</div>
-<div class="col-md-6 form-group">
-<label>Hospital / Institution Name *</label>
-<input placeholder="Hospital / Organization Name" required="" type="text"/>
-</div>
-</div>
-<div class="row g-2">
-<div class="col-md-6 form-group">
-<label>Official Email *</label>
-<input placeholder="name@hospital.com" required="" type="email"/>
-</div>
-<div class="col-md-6 form-group">
-<label>Phone / WhatsApp *</label>
-<input placeholder="+91 99999 99999" required="" type="tel"/>
-</div>
-</div>
-<div class="form-group">
-<label>Project Scope &amp; Requirements</label>
-<textarea placeholder="Specify turnkey bed capacity, modular OT requirement, MGPS pipeline, or equipment procurement details..." rows="3"></textarea>
-</div>
-<button class="apple-btn-pill w-100 mt-2" style="padding: 14px;" type="submit">Submit Consultation Request</button>
-</form>
-</div>
-</div>
-<script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
-<a aria-label="Scroll to top" class="scroll-top d-flex align-items-center justify-content-center" href="#" id="scroll-top">
-<i class="bi bi-arrow-up-short"></i>
-</a>
-<script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="../../assets/js/main.js?v=94.0"></script>
-<script src="../../assets/js/global-search.js?v=42.0"></script>
-</div></body>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Drawer Modal -->
+  <div class="apple-drawer-overlay" id="apple-drawer-overlay" onclick="if(event.target===this) closeAppleDrawer();">
+    <div class="apple-drawer-content">
+      <button type="button" class="apple-drawer-close" onclick="closeAppleDrawer();" aria-label="Close">
+        <i class="bi bi-x-lg"></i>
+      </button>
+      
+      <div style="text-align: center; margin-bottom: 24px;">
+        <span class="apple-shelf-badge">Dr. Smith Turnkey &amp; Procurement Desk</span>
+        <h3 style="font-size: 24px; font-weight: 700; margin-top: 8px;">Request Project Consultation</h3>
+        <p style="font-size: 14px; color: var(--apple-text-secondary); margin: 0;">Speak directly with our healthcare architects &amp; hospital engineering experts.</p>
+      </div>
+
+      <form class="apple-drawer-form" onsubmit="handleAppleQuoteSubmit(event);">
+        <div class="form-group">
+          <label>Scope of Interest</label>
+          <input type="text" id="drawer-product-name" value="Turnkey Hospital Setup" readonly style="background: rgba(255,255,255,0.08); font-weight: 600;">
+        </div>
+
+        <div class="row g-2">
+          <div class="col-md-6 form-group">
+            <label>Your Full Name *</label>
+            <input type="text" placeholder="Dr. / Mr. / Ms." required>
+          </div>
+          <div class="col-md-6 form-group">
+            <label>Hospital / Institution Name *</label>
+            <input type="text" placeholder="Hospital / Organization Name" required>
+          </div>
+        </div>
+
+        <div class="row g-2">
+          <div class="col-md-6 form-group">
+            <label>Official Email *</label>
+            <input type="email" placeholder="name@hospital.com" required>
+          </div>
+          <div class="col-md-6 form-group">
+            <label>Phone / WhatsApp *</label>
+            <input type="tel" placeholder="+91 99999 99999" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Project Scope &amp; Requirements</label>
+          <textarea rows="3" placeholder="Specify turnkey bed capacity, modular OT requirement, MGPS pipeline, or equipment procurement details..."></textarea>
+        </div>
+
+        <button type="submit" class="apple-btn-pill w-100 mt-2" style="padding: 14px;">Submit Consultation Request</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  
+
+
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to top">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/main.js?v=94.0"></script>
+  <script src="../../assets/js/global-search.js?v=42.0"></script>
+</body>
+
 </html>

@@ -1,938 +1,1096 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Browse Dr. Smith's Hospital Trolley range for hospitals, ICUs and clinics." name="description"/>
-<meta content="#030712" name="theme-color"/>
-<title>Hospital Trolley | Dr. Smith Catalogue</title>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&amp;family=Open+Sans:wght@300;400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-<link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
-<link href="../../assets/img/favicon.png" rel="icon" type="image/png"/>
-<link href="../../assets/img/apple-touch-icon.png" rel="apple-touch-icon"/>
-<link href="../css/catalogue.css?v=47.0" rel="stylesheet"/>
-<link href="../../assets/css/apple-theme.css?v=106.0" rel="stylesheet"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse Dr. Smith's Hospital Trolley range for hospitals, ICUs and clinics.">
+    <meta name="theme-color" content="#030712">
+    <title>Hospital Trolley | Dr. Smith Catalogue</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+
+    <link href="../css/catalogue.css?v=47.0" rel="stylesheet">
+  <link href="../../assets/css/apple-theme.css?v=106.0" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body class="apple-body catalogue-page">
-<!-- ============================================================
+  <!-- ============================================================
        1. GLOBAL NAVIGATION HEADER
        ============================================================ -->
-<nav aria-label="Global" class="apple-globalnav">
-<div class="apple-globalnav-inner">
-<!-- Brand & Corporate Identity -->
-<a aria-label="Dr. Smith Hospital Solutions" class="apple-nav-brand" href="../../index.html">
-<div class="brand-asterisk-icon">
-<img alt="Dr. Smith Emblem Logo" class="apple-nav-logo-img" decoding="async" height="36" loading="eager" src="../../assets/img/logo.png?v=11.0" width="36"/>
-</div>
-<div class="apple-nav-brand-text">
-<span class="apple-nav-brand-title">Dr. Smith</span>
-<span class="apple-nav-brand-subtitle">HOSPITAL SOLUTIONS</span>
-</div>
-</a>
-<!-- Navigation Links -->
-<ul class="apple-nav-links"><li class="apple-nav-item"><a class="apple-nav-link" href="../../index.html">Home</a></li><li class="apple-nav-item"><a class="apple-nav-link nav-active" href="../index.html">Products</a></li><li class="apple-nav-item"><a class="apple-nav-link" href="../../about-us/index.html">About us</a></li><li class="apple-nav-item"><a class="apple-nav-link" href="../../turnkey-projects/index.html">turnkey project</a></li><li class="apple-nav-item"><a class="apple-nav-link" href="../../contact-form/index.html">Contact Us</a></li></ul><!-- Action Utilities -->
-<div class="apple-nav-actions">
-<!-- Contact / Mail Form Button -->
-<a aria-label="Send Enquiry &amp; Contact Us" class="apple-nav-circle-btn apple-nav-circle-mail" href="../../contact-form/index.html" title="Send Enquiry / Request Quotation (BOM &amp; Consultation)">
-<i class="fa-solid fa-envelope"></i>
-</a>
-<!-- WhatsApp Circle Button -->
-<a aria-label="Chat with Dr. Smith Healthcare on WhatsApp (+91 95990 81020)" class="apple-nav-circle-btn apple-nav-circle-whatsapp" href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." rel="noopener noreferrer" target="_blank" title="WhatsApp Direct (+91 95990 81020) • 24/7 Fast Inquiry">
-<i class="fa-brands fa-whatsapp"></i>
-</a>
-<!-- Menu Toggle Button -->
-<button aria-label="Toggle Navigation Menu" class="apple-nav-circle-btn" id="apple-mobile-menu-btn" title="Menu" type="button">
-<i class="bi bi-list"></i>
-</button>
-</div>
-</div>
-</nav>
-<!-- Mobile Menu Drawer Backdrop Overlay -->
-<div class="apple-mobile-backdrop" id="appleMobileBackdrop"></div>
-<!-- Mobile Menu Drawer Overlay -->
-<div class="apple-mobile-drawer" id="apple-mobile-drawer">
-<div class="apple-mobile-drawer-header">
-<span class="apple-mobile-drawer-tag"><i class="bi bi-hospital"></i> Dr. Smith Quick Menu</span>
-<button aria-label="Close Navigation Menu" class="apple-mobile-drawer-close" id="appleMobileDrawerClose" type="button">
-<i class="bi bi-x-lg"></i>
-</button>
-</div>
-<div class="apple-mobile-grid"><a class="apple-mobile-tile" href="../../index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-house-door-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">Home</span><span class="apple-mobile-tile-sub">Overview</span></div></a><a class="apple-mobile-tile active" href="../index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-grid-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">Products</span><span class="apple-mobile-tile-sub">Browse categories</span></div></a><a class="apple-mobile-tile" href="../../about-us/index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-shield-check"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">About us</span><span class="apple-mobile-tile-sub">Our story</span></div></a><a class="apple-mobile-tile" href="../../turnkey-projects/index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-hospital-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">turnkey project</span><span class="apple-mobile-tile-sub">Setup solutions</span></div></a><a class="apple-mobile-tile" href="../../contact-form/index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-envelope-paper-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">Contact Us</span><span class="apple-mobile-tile-sub">Get in touch</span></div></a></div>
-<section class="catalogue-section">
-<div class="container">
-<p class="catalogue-count">Showing <strong>31</strong> products</p>
-<div class="category-search-wrapper mb-4" style="max-width: 500px;">
-<div class="input-group">
-<span class="input-group-text bg-white border-end-0"><i class="bi bi-search text-muted"></i></span>
-<input aria-label="Filter products" class="form-control border-start-0 ps-0" id="categoryProductSearch" placeholder="Filter hospital trolley..." type="text"/>
-</div>
-</div>
-<script src="../../assets/js/catalogue-filters.js?v=1.0"></script>
-<div class="row g-4" id="products-grid">
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="emergency abs" data-title="crash cart with abs drawers (swm 11049)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Crash Cart with ABS Drawers on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Crash Cart with ABS Drawers" decoding="async" loading="lazy" src="crash-cart-abs.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Emergency ABS</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Emergency &amp; Resuscitation • SWM 11049</span>
-<h3>Crash Cart with ABS Drawers (SWM 11049)</h3>
-<p>Mobile emergency resuscitation trolley with high-impact ABS modular drawers, defibrillator shelf, and oxygen tank bracket.</p>
-<ul class="catalogue-card__details">
-<li>Five modular sliding ABS drawers with central key locking</li>
-<li>360° rotating defibrillator monitor tray and cardiac CPR backboard</li>
-<li>Heavy-duty 125mm castors with diagonal brake locking</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Crash%20Cart%20with%20ABS%20Drawers">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="emergency ss" data-title="crash cart with s.s drawers (swm 11050)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Crash Cart with S.S Drawers on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Crash Cart with S.S Drawers" decoding="async" loading="lazy" src="crash-cart-ss.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Emergency SS</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Emergency &amp; Resuscitation • SWM 11050</span>
-<h3>Crash Cart with S.S Drawers (SWM 11050)</h3>
-<p>All stainless steel emergency resuscitation cart featuring smooth sliding drawers, IV pole, and electrical socket extension.</p>
-<ul class="catalogue-card__details">
-<li>Heavy-gauge 304 stainless steel cabinet construction</li>
-<li>Full-extension ball bearing drawer slides with label holders</li>
-<li>Integrated telescopic stainless steel IV infusion rod</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Crash%20Cart%20with%20S.S%20Drawers">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="gas handling" data-title="cylinder trolley small &amp; jumbo (swm 11055)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Oxygen Cylinder Trolley (Small &amp; Jumbo) on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Oxygen Cylinder Trolley (Small &amp; Jumbo)" decoding="async" loading="lazy" src="cylinder-trolley-jumbo.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Gas Handling</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Medical Gas Transport • SWM 11055</span>
-<h3>Cylinder Trolley Small &amp; Jumbo (SWM 11055)</h3>
-<p>Heavy-duty tubular steel oxygen cylinder carrier with safety retention chain and large puncture-proof rubber transport wheels.</p>
-<ul class="catalogue-card__details">
-<li>Accommodates B-type (small) and D/G-type (jumbo) medical gas cylinders</li>
-<li>Safety locking chain securing cylinder firmly during transit</li>
-<li>100mm solid rubber wheels ensuring effortless doorway transit</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Oxygen%20Cylinder%20Trolley%20%28Small%20%26%20Jumbo%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="anesthetic cart" data-title="abs anesthetic cart (swm 11062)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View ABS Anesthetic Cart on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="ABS Anesthetic Cart" decoding="async" loading="lazy" src="abs-anesthetic-cart.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Anesthetic Cart</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Operating Theatre Trolleys • SWM 11062</span>
-<h3>ABS Anesthetic Cart (SWM 11062)</h3>
-<p>High-density polymer anesthesia utility workstation featuring tilt-out medication bins, syringe dispenser, and work slide.</p>
-<ul class="catalogue-card__details">
-<li>Multi-tier upper transparent tilt-out drug organizer bins</li>
-<li>Slide-out auxiliary writing surface on smooth roller bearings</li>
-<li>Concealed waste receptacle and sharps container bracket</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=ABS%20Anesthetic%20Cart">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="box type ms" data-title="instrument trolley box type ms (swm 11064)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Instrument Trolley Box Type (M.S) on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Instrument Trolley Box Type (M.S)" decoding="async" loading="lazy" src="instrument-trolley-box-ms.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Box Type MS</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Ward &amp; Clinic Trolleys • SWM 11064</span>
-<h3>Instrument Trolley Box Type MS (SWM 11064)</h3>
-<p>Powder-coated mild steel instrument trolley featuring enclosed lockable lower box cabinet and upper shelf with railings.</p>
-<ul class="catalogue-card__details">
-<li>Electrostatically powder-coated CRCA steel framework</li>
-<li>Lockable storage box keeping sterile trays and supplies secure</li>
-<li>Mounted on 100mm swivel castors with protective bumper discs</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Instrument%20Trolley%20Box%20Type%20%28M.S%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="all stainless steel" data-title="instrument trolley all ss (swm 11065)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Instrument Trolley (All S.S) on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Instrument Trolley (All S.S)" decoding="async" loading="lazy" src="instrument-trolley-all-ss.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">All Stainless Steel</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Surgical Infrastructure • SWM 11065</span>
-<h3>Instrument Trolley All SS (SWM 11065)</h3>
-<p>Sanitary 2-tier surgical instrument trolley manufactured entirely in 304 stainless steel with 3-sided guard rails.</p>
-<ul class="catalogue-card__details">
-<li>Top and bottom shelves with raised sound-deadened SS sheets</li>
-<li>3-sided protective stainless steel retaining rails on both tiers</li>
-<li>Swivelling non-marking rubber castors for silent OT maneuverability</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Instrument%20Trolley%20%28All%20S.S%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="three tier ss" data-title="instrument trolley three shelf ss (swm 11066)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Instrument Trolley Three Shelf (S.S) on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Instrument Trolley Three Shelf (S.S)" decoding="async" loading="lazy" src="instrument-trolley-three-shelf-ss.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Three Tier SS</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Surgical Infrastructure • SWM 11066</span>
-<h3>Instrument Trolley Three Shelf SS (SWM 11066)</h3>
-<p>Three-shelf stainless steel utility cart providing triple storage capacity for surgical packs, dressings, and procedure kits.</p>
-<ul class="catalogue-card__details">
-<li>Three heavy-gauge pressed stainless steel shelves with guard rails</li>
-<li>Reinforced tubular stainless steel upright frame</li>
-<li>Smooth-rolling medical swivel castors with diagonal wheel locks</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Instrument%20Trolley%20Three%20Shelf%20%28S.S%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="dressing cart" data-title="dressing trolley all ss (swm 11068)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dressing Trolley (All SS) on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dressing Trolley (All SS)" decoding="async" loading="lazy" src="dressing-trolley-all-ss.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Dressing Cart</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Ward &amp; Clinic Trolleys • SWM 11068</span>
-<h3>Dressing Trolley All SS (SWM 11068)</h3>
-<p>Complete clinical dressing cart fitted with stainless steel wash basin, waste bucket, two shelves, and perimeter guard rails.</p>
-<ul class="catalogue-card__details">
-<li>Integrated swing-out ring holders with SS bowl and refuse bucket</li>
-<li>Two seamless stainless steel shelves with sound-dampening underlays</li>
-<li>Push handle and anti-static swivel castors</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dressing%20Trolley%20%28All%20SS%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="ecg / monitor cart" data-title="e.c.g trolley (swm 11069)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View E.C.G Machine Trolley on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="E.C.G Machine Trolley" decoding="async" loading="lazy" src="ecg-trolley.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">ECG / Monitor Cart</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Diagnostic Workstations • SWM 11069</span>
-<h3>E.C.G Trolley (SWM 11069)</h3>
-<p>Dedicated mobile diagnostic trolley designed for 12-lead ECG machines with patient cable arm, accessory drawer, and lower shelf.</p>
-<ul class="catalogue-card__details">
-<li>Articulating patient cable boom arm with cable organizer clips</li>
-<li>Spacious top platform accommodating all major ECG recorder models</li>
-<li>Smooth-slide drawer for ECG paper rolls, electrodes, and suction bulbs</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=E.C.G%20Machine%20Trolley">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="linen management" data-title="linen trolley with canvas bag (swm 11070)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Soiled Linen Trolley with Canvas Bag on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Soiled Linen Trolley with Canvas Bag" decoding="async" loading="lazy" src="linen-trolley.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Linen Management</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Ward Furniture • SWM 11070</span>
-<h3>Linen Trolley with Canvas Bag (SWM 11070)</h3>
-<p>Heavy-duty soiled linen hamper trolley featuring a heavy tubular ring frame and waterproof washable canvas bag.</p>
-<ul class="catalogue-card__details">
-<li>Heavy-gauge tubular steel circular ring frame</li>
-<li>Durable waterproof canvas laundry bag with tie cords</li>
-<li>Four swivel castors ensuring agile navigation across wards</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Soiled%20Linen%20Trolley%20with%20Canvas%20Bag">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="mayo instrument" data-title="mayo trolley (swm 11077)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Mayo Instrument Trolley on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Mayo Instrument Trolley" decoding="async" loading="lazy" src="mayo-trolley.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Mayo Instrument</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Operating Theatre Trolleys • SWM 11077</span>
-<h3>Mayo Trolley (SWM 11077)</h3>
-<p>Adjustable surgical Mayo stand with removable deep stainless steel tray and pneumatic/mechanical height elevation.</p>
-<ul class="catalogue-card__details">
-<li>Removable seamless surgical-grade stainless steel instrument tray</li>
-<li>Smooth telescoping elevation mechanism with secure locking clamp</li>
-<li>U-shaped low clearance base slides easily beneath operating tables</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Mayo%20Instrument%20Trolley">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="bio-medical waste" data-title="biomedical waste foot-pedal trolley">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Biomedical Waste Foot Pedal Trolley on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Biomedical Waste Foot Pedal Trolley" decoding="async" loading="lazy" src="bio-waste-trolley.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Bio-Medical Waste</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Clinical Waste Logistics</span>
-<h3>Biomedical Waste Foot-Pedal Trolley</h3>
-<p>Color-coded biomedical waste segregation trolley featuring hands-free foot-pedal lid operation and heavy mobile base.</p>
-<ul class="catalogue-card__details">
-<li>Hands-free foot pedal lid mechanism eliminating contact contamination</li>
-<li>Color-coded bins compliant with clinical bio-waste regulatory standards</li>
-<li>Heavy tubular frame on smooth rolling castors</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Biomedical%20Waste%20Foot%20Pedal%20Trolley">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="endoscopy tower" data-title="laparoscopy tower workstation trolley">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Laparoscopy Tower Trolley on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Laparoscopy Tower Trolley" decoding="async" loading="lazy" src="laparoscopy-trolley.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Endoscopy Tower</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Operating Theatre Workstations</span>
-<h3>Laparoscopy Tower Workstation Trolley</h3>
-<p>Heavy-duty multi-tier endoscopy tower cart with adjustable monitor mount, CO2 cylinder carrier, and internal cable conduits.</p>
-<ul class="catalogue-card__details">
-<li>VESA-compatible articulating medical monitor mounting pole</li>
-<li>Four height-adjustable equipment shelves supporting heavy processors</li>
-<li>Rear cylinder cradle accommodating dual CO2 insufflator tanks</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Laparoscopy%20Tower%20Trolley">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="surgical suction" data-title="theater suction trolley with twin jars">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Theater Suction Trolley with Twin Jars on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Theater Suction Trolley with Twin Jars" decoding="async" loading="lazy" src="theater-suction-trolley.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Surgical Suction</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Operating Theatre Trolleys</span>
-<h3>Theater Suction Trolley with Twin Jars</h3>
-<p>Dedicated mobile surgical suction cart fitted with dual 2.5L polycarbonate collection bottles and vacuum gauge mount.</p>
-<ul class="catalogue-card__details">
-<li>Dual shatterproof 2500ml graduated suction jars with overflow traps</li>
-<li>Heavy stainless steel chassis with vacuum regulator bracket</li>
-<li>Anti-static swivel castors with foot brake levers</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Theater%20Suction%20Trolley%20with%20Twin%20Jars">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="mayo double pillar" data-title="dr. smith mayo instrument trolley (double pillar crank)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Mayo Instrument Trolley Double Pillar Crank on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Mayo Instrument Trolley Double Pillar Crank" decoding="async" loading="lazy" src="dr-smith-mayo-instrument-trolley-double-pillar-crank.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Mayo Double Pillar</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Operating Theatre Trolleys</span>
-<h3>Dr. Smith Mayo Instrument Trolley (Double Pillar Crank)</h3>
-<p>Heavy-duty twin pillar surgical Mayo table with precision manual gear crank elevation and reinforced deep stainless steel tray.</p>
-<ul class="catalogue-card__details">
-<li>Precision mechanical crank handle with effortless stepless elevation</li>
-<li>Twin rectangular stainless steel telescoping pillars for zero wobble</li>
-<li>Low-profile base with 4 medical swivel castors fitting beneath tables</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Mayo%20Instrument%20Trolley%20%28Double%20Pillar%20Crank%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="linen management" data-title="dr. smith soiled linen hamper (round ss frame)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Soiled Linen Hamper Round SS on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Soiled Linen Hamper Round SS" decoding="async" loading="lazy" src="dr-smith-soiled-linen-hamper-round-ss.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Linen Management</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Ward Furniture &amp; Hygiene</span>
-<h3>Dr. Smith Soiled Linen Hamper (Round SS Frame)</h3>
-<p>Sanitary circular stainless steel laundry cart equipped with heavy black waterproof canvas bag and swivel castor wheels.</p>
-<ul class="catalogue-card__details">
-<li>Seamless circular 304-grade stainless steel tubular frame</li>
-<li>Tear-proof waterproof heavy-gauge canvas bag with hanging straps</li>
-<li>Smooth-rolling non-marking swivel wheels</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Soiled%20Linen%20Hamper%20%28Round%20SS%20Frame%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="3-tier utility cart" data-title="dr. smith 3-tier utility instrument cart (green)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Three-Tier Instrument Utility Cart - Green on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Three-Tier Instrument Utility Cart - Green" decoding="async" loading="lazy" src="dr-smith-three-tier-instrument-utility-cart-green.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">3-Tier Utility Cart</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Clinical Utility Trolleys</span>
-<h3>Dr. Smith 3-Tier Utility Instrument Cart (Green)</h3>
-<p>Modern medical utility trolley featuring white epoxy frame, 3 high-capacity vibrant green trays, and quiet medical castors.</p>
-<ul class="catalogue-card__details">
-<li>Three deep-lip green powder-coated instrument trays</li>
-<li>Curved ergonomic tubular uprights with integrated push handles</li>
-<li>Twin-wheel precision swivel castors with brake locks</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%203-Tier%20Utility%20Instrument%20Cart%20%28Green%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="dressing cart" data-title="dr. smith two-tier dressing trolley (bowl &amp; bucket)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Two-Tier Dressing Trolley with Bowl &amp; Bucket on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Two-Tier Dressing Trolley with Bowl &amp; Bucket" decoding="async" loading="lazy" src="dr-smith-two-tier-dressing-trolley-bowl-bucket.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Dressing Cart</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Ward &amp; Surgical Dressing</span>
-<h3>Dr. Smith Two-Tier Dressing Trolley (Bowl &amp; Bucket)</h3>
-<p>Surgical-grade stainless steel dressing trolley featuring 2 shelves, 3-sided guard rails, and swing-out arms with SS bowl and bucket.</p>
-<ul class="catalogue-card__details">
-<li>High-grade 304 stainless steel fabrication with satin finish</li>
-<li>Swivel swing-out stainless steel ring brackets for bowl and waste pail</li>
-<li>Four 100mm medical-grade castors with foot-locking levers</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Two-Tier%20Dressing%20Trolley%20%28Bowl%20%26%20Bucket%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="electrified dressing cart" data-title="dr. smith wide dressing trolley (electric switchboard)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Wide Dressing Trolley with Switchboard on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Wide Dressing Trolley with Switchboard" decoding="async" loading="lazy" src="dr-smith-wide-dressing-trolley-switchboard.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Electrified Dressing Cart</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Surgical Infrastructure</span>
-<h3>Dr. Smith Wide Dressing Trolley (Electric Switchboard)</h3>
-<p>Extra-wide stainless steel dressing and procedure table equipped with integrated electrical switchboard and waste fixtures.</p>
-<ul class="catalogue-card__details">
-<li>Extended length stainless steel work platform with 3-sided guard rails</li>
-<li>Integrated multi-plug electrical switchboard for cautery and suction devices</li>
-<li>Swing-out stainless steel dressing bowl and waste bucket holders</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Wide%20Dressing%20Trolley%20%28Electric%20Switchboard%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="instrument table" data-title="dr. smith large instrument table (electrified)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Large Instrument Table with Electric Switchboard on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Large Instrument Table with Electric Switchboard" decoding="async" loading="lazy" src="dr-smith-large-instrument-table-electric-switchboard.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Instrument Table</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Operating Theatre Infrastructure</span>
-<h3>Dr. Smith Large Instrument Table (Electrified)</h3>
-<p>Heavy-duty 2-tier surgical instrument table featuring full 4-side retaining rim, integrated electric sockets, and reinforced frame.</p>
-<ul class="catalogue-card__details">
-<li>Deep 4-side perimeter stainless lip preventing instruments from sliding</li>
-<li>Integrated medical-grade electrical power console with on/off switch</li>
-<li>Substantial 150 kg loading capacity on heavy swivel castors</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Large%20Instrument%20Table%20%28Electrified%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="enclosed storage cart" data-title="dr. smith enclosed ss medicine cabinet trolley">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Enclosed SS Medicine Cabinet Trolley on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Enclosed SS Medicine Cabinet Trolley" decoding="async" loading="lazy" src="dr-smith-enclosed-ss-medicine-cabinet-trolley.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Enclosed Storage Cart</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Pharmacy &amp; Ward Logistics</span>
-<h3>Dr. Smith Enclosed SS Medicine Cabinet Trolley</h3>
-<p>Fully enclosed surgical stainless steel medical supply cart featuring double lockable hinged doors and internal shelves.</p>
-<ul class="catalogue-card__details">
-<li>Heavy-gauge 304 stainless steel cabinet with lockable ergonomic handle</li>
-<li>Internal shelving tiers for bulk pharmaceutical and surgical pack storage</li>
-<li>Top perimeter rim and four swivel castors with directional brakes</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Enclosed%20SS%20Medicine%20Cabinet%20Trolley">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="pharmacy dispensing" data-title="dr. smith 29-slot pharmacy dispensing cart (ss)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Multi-Compartment Pharmacy Dispensing Cart SS on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Multi-Compartment Pharmacy Dispensing Cart SS" decoding="async" loading="lazy" src="dr-smith-pigeonhole-pharmacy-dispensing-cart-ss.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Pharmacy Dispensing</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Ward Medication Systems</span>
-<h3>Dr. Smith 29-Slot Pharmacy Dispensing Cart (SS)</h3>
-<p>Prestige edition Dr. Smith branded full stainless steel medication cart featuring 20 upper pigeonholes and 9 lower bulk compartments.</p>
-<ul class="catalogue-card__details">
-<li>20 individual upper pigeonhole slots for patient-specific medications</li>
-<li>9 spacious lower compartments for IV fluids and bulk medical supplies</li>
-<li>Integrated push handle, side brackets, and heavy 100mm medical castors</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%2029-Slot%20Pharmacy%20Dispensing%20Cart%20%28SS%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="overbed table" data-title="dr. smith overbed food table (ss crank elevation)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Overbed Food Table SS Crank on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Overbed Food Table SS Crank" decoding="async" loading="lazy" src="dr-smith-overbed-food-table-ss-crank.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Overbed Table</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Patient Ward Furniture</span>
-<h3>Dr. Smith Overbed Food Table (SS Crank Elevation)</h3>
-<p>Single-pillar stainless steel overbed dining and utility table with smooth gear-crank vertical elevation and low U-base.</p>
-<ul class="catalogue-card__details">
-<li>Smooth hand crank mechanism with foldable blue handle</li>
-<li>Seamless pressed stainless steel tabletop easy to disinfect</li>
-<li>Low-profile U-shaped wheeled base slides beneath hospital beds</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Overbed%20Food%20Table%20%28SS%20Crank%20Elevation%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="housekeeping cart" data-title="dr. smith utility ward &amp; linen hamper trolley">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Utility Ward Linen Hamper Trolley on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Utility Ward Linen Hamper Trolley" decoding="async" loading="lazy" src="dr-smith-utility-ward-linen-hamper-trolley.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Housekeeping Cart</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Ward Logistics &amp; Linen</span>
-<h3>Dr. Smith Utility Ward &amp; Linen Hamper Trolley</h3>
-<p>Dual-function hospital service cart featuring 2 stainless steel utility storage shelves and an integrated heavy-duty laundry bag.</p>
-<ul class="catalogue-card__details">
-<li>Multi-tier stainless steel shelves with guard rail on top shelf</li>
-<li>Heavy-duty waterproof green canvas linen collection hamper</li>
-<li>Ergonomic push handle and 4 heavy-duty medical swivel wheels</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Utility%20Ward%20%26%20Linen%20Hamper%20Trolley">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="4-drawer treatment" data-title="dr. smith 4-drawer dressing &amp; treatment trolley">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Four-Drawer Dressing &amp; Treatment Trolley SS on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Four-Drawer Dressing &amp; Treatment Trolley SS" decoding="async" loading="lazy" src="dr-smith-four-drawer-dressing-treatment-trolley-ss.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">4-Drawer Treatment</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Ward &amp; Clinical Dressing</span>
-<h3>Dr. Smith 4-Drawer Dressing &amp; Treatment Trolley</h3>
-<p>All stainless steel clinical procedure cart equipped with 2 upper drawers, 2 lower drawers, and 2 open utility shelves.</p>
-<ul class="catalogue-card__details">
-<li>Four stainless steel utility drawers on ball bearing sliding rails</li>
-<li>Two open stainless steel shelves with 3-sided guard railings</li>
-<li>Integrated side push handle and four medical castors with brakes</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%204-Drawer%20Dressing%20%26%20Treatment%20Trolley">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="surgical bridge table" data-title="dr. smith fixed-height surgical bridge over-table">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Fixed-Height Surgical Bridge Table on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Fixed-Height Surgical Bridge Table" decoding="async" loading="lazy" src="dr-smith-fixed-height-surgical-bridge-table.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Surgical Bridge Table</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Operating Theatre Infrastructure</span>
-<h3>Dr. Smith Fixed-Height Surgical Bridge Over-Table</h3>
-<p>Heavy stainless steel surgical over-table designed to bridge across operating tables for immediate access to heavy sterile trays.</p>
-<ul class="catalogue-card__details">
-<li>Wide spanning stainless steel platform supporting large surgical sets</li>
-<li>Rigid tubular stainless steel H-frame with reinforcing crossbars</li>
-<li>Four swivel castors with smooth rolling action</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Fixed-Height%20Surgical%20Bridge%20Over-Table">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="three tier ss" data-title="dr. smith three-shelf ss instrument trolley (rails)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Three-Shelf SS Instrument Trolley with Rails on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Three-Shelf SS Instrument Trolley with Rails" decoding="async" loading="lazy" src="dr-smith-three-shelf-ss-instrument-trolley-rails.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Three Tier SS</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Operating Theatre Infrastructure</span>
-<h3>Dr. Smith Three-Shelf SS Instrument Trolley (Rails)</h3>
-<p>Three-tier surgical instrument trolley featuring heavy-gauge stainless steel shelves with 4-sided guard rails on each level.</p>
-<ul class="catalogue-card__details">
-<li>Three pressed stainless steel shelves with 4-sided perimeter rails</li>
-<li>Reinforced tubular uprights with integrated push handles</li>
-<li>Medical grade silent castors with foot-operated wheel locks</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Three-Shelf%20SS%20Instrument%20Trolley%20%28Rails%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="electrified cart" data-title="dr. smith medical equipment cart (power strip)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Equipment Cart with Power Strip SS on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Equipment Cart with Power Strip SS" decoding="async" loading="lazy" src="dr-smith-equipment-cart-power-strip-ss.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Electrified Cart</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Specialized Clinical Trolleys</span>
-<h3>Dr. Smith Medical Equipment Cart (Power Strip)</h3>
-<p>Wide 2-tier stainless steel medical device trolley with high perimeter rails and pre-installed electrical switchboard.</p>
-<ul class="catalogue-card__details">
-<li>Accommodates patient monitors, defibrillators, and electrosurgical units</li>
-<li>Multi-outlet electrical socket block with master power switch</li>
-<li>High-strength tubular frame engineered for 120 kg device loading</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Medical%20Equipment%20Cart%20%28Power%20Strip%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="linen management" data-title="dr. smith linen hamper (epoxy frame &amp; black bag)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Linen Hamper Epoxy Frame Black Bag on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Linen Hamper Epoxy Frame Black Bag" decoding="async" loading="lazy" src="dr-smith-linen-hamper-epoxy-frame-black-bag.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Linen Management</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Ward Furniture &amp; Hygiene</span>
-<h3>Dr. Smith Linen Hamper (Epoxy Frame &amp; Black Bag)</h3>
-<p>Hygienic white epoxy powder-coated tubular steel linen hamper fitted with washable waterproof black bag on wheels.</p>
-<ul class="catalogue-card__details">
-<li>Antimicrobial powder-coated tubular steel ring frame</li>
-<li>Detachable washable heavy-duty waterproof canvas collection sack</li>
-<li>Four swivel castor wheels providing rapid maneuverability</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Linen%20Hamper%20%28Epoxy%20Frame%20%26%20Black%20Bag%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="emergency crash cart" data-title="dr. smith multi-bin emergency crash cart (ss)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Crash Cart Multi-Bin Organizer SS on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Crash Cart Multi-Bin Organizer SS" decoding="async" loading="lazy" src="dr-smith-crash-cart-multi-bin-organizer-ss.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Emergency Crash Cart</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Emergency Resuscitation Infrastructure</span>
-<h3>Dr. Smith Multi-Bin Emergency Crash Cart (SS)</h3>
-<p>All stainless steel emergency resuscitation trolley featuring top medicine sorting rack with 6 colored bins and 6 lockable drawers.</p>
-<ul class="catalogue-card__details">
-<li>Overhead stainless rack with 6 color-coded rapid-access medicine bins</li>
-<li>6 lockable modular drawers with identification label plates</li>
-<li>Spacious lower stainless storage shelf and heavy medical castors</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Multi-Bin%20Emergency%20Crash%20Cart%20%28SS%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="mayo instrument stand" data-title="dr. smith mayo instrument stand (single pillar deep tray)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Mayo Instrument Stand Single Pillar Tray on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Mayo Instrument Stand Single Pillar Tray" decoding="async" loading="lazy" src="dr-smith-mayo-instrument-stand-single-pillar-tray.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Mayo Instrument Stand</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Operating Theatre Trolleys</span>
-<h3>Dr. Smith Mayo Instrument Stand (Single Pillar Deep Tray)</h3>
-<p>Single-column surgical Mayo stand with removable deep stainless steel instrument tray and screw-knob height elevation.</p>
-<ul class="catalogue-card__details">
-<li>Deep-drawn removable 304 stainless steel surgical instrument tray</li>
-<li>Telescoping column with secure ergonomic tightening collar</li>
-<li>Low-profile wheeled base effortlessly sliding under beds and tables</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Mayo%20Instrument%20Stand%20%28Single%20Pillar%20Deep%20Tray%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-</div>
-</div>
-</section>
-<section class="catalogue-section">
-<div class="container">
-<div class="catalogue-cta d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4">
-<div>
-<h2>Can't find what you're looking for?</h2>
-<p>Share your requirements and our team will recommend the best fit from our full range.</p>
-</div>
-<a class="catalogue-button flex-shrink-0" href="../../contact-form/index.html">
+  <nav class="apple-globalnav" aria-label="Global">
+    <div class="apple-globalnav-inner">
+      
+      <!-- Brand & Corporate Identity -->
+      <a href="../../index.html" class="apple-nav-brand" aria-label="Dr. Smith Hospital Solutions">
+        <div class="brand-asterisk-icon">
+          <img src="../../assets/img/logo.png?v=11.0" alt="Dr. Smith Emblem Logo" class="apple-nav-logo-img" width="36" height="36" decoding="async" loading="eager">
+        </div>
+        <div class="apple-nav-brand-text">
+          <span class="apple-nav-brand-title">Dr. Smith</span>
+          <span class="apple-nav-brand-subtitle">HOSPITAL SOLUTIONS</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="apple-nav-links">
+        <li class="apple-nav-item">
+          <a href="../../index.html" class="apple-nav-link">Home</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../../catalogue/index.html" class="apple-nav-link nav-active">Products</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../../turnkey-projects/index.html" class="apple-nav-link">Turnkey Solutions</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../../about-us/index.html" class="apple-nav-link">About Us</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../../contact-form/index.html" class="apple-nav-link">Contact</a>
+        </li>
+      </ul>
+
+                  <!-- Action Utilities -->
+      <div class="apple-nav-actions">
+        <!-- Contact / Mail Form Button -->
+        <a href="../../contact-form/index.html" class="apple-nav-circle-btn apple-nav-circle-mail"
+          aria-label="Send Enquiry &amp; Contact Us" title="Send Enquiry / Request Quotation (BOM &amp; Consultation)">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+
+        <!-- WhatsApp Circle Button -->
+        <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions."
+          class="apple-nav-circle-btn apple-nav-circle-whatsapp" target="_blank"
+          rel="noopener noreferrer" aria-label="Chat with Dr. Smith Healthcare on WhatsApp (+91 95990 81020)"
+          title="WhatsApp Direct (+91 95990 81020) • 24/7 Fast Inquiry">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <!-- Menu Toggle Button -->
+        <button type="button" class="apple-nav-circle-btn" id="apple-mobile-menu-btn"
+          aria-label="Toggle Navigation Menu" title="Menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+    <!-- Mobile Menu Drawer Backdrop Overlay -->
+  <div class="apple-mobile-backdrop" id="appleMobileBackdrop"></div>
+
+  <!-- Mobile Menu Drawer Overlay -->
+  <div class="apple-mobile-drawer" id="apple-mobile-drawer">
+    <div class="apple-mobile-drawer-header">
+      <span class="apple-mobile-drawer-tag"><i class="bi bi-hospital"></i> Dr. Smith Quick Menu</span>
+      <button type="button" class="apple-mobile-drawer-close" id="appleMobileDrawerClose" aria-label="Close Navigation Menu">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
+    <div class="apple-mobile-grid">
+      <a href="../../index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-house-door-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Home</span>
+          <span class="apple-mobile-tile-sub">Overview</span>
+        </div>
+      </a>
+      <a href="../../catalogue/index.html" class="apple-mobile-tile active">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-grid-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Catalogue</span>
+          <span class="apple-mobile-tile-sub">50+ Categories</span>
+        </div>
+      </a>
+      <a href="../../turnkey-projects/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-hospital-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Turnkey Setup</span>
+          <span class="apple-mobile-tile-sub">50–500 Beds</span>
+        </div>
+      </a>
+      <a href="../../catalogue/modular-ot/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-activity"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Modular OT</span>
+          <span class="apple-mobile-tile-sub">Cleanrooms</span>
+        </div>
+      </a>
+      <a href="../../about-us/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-shield-check"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">About Us</span>
+          <span class="apple-mobile-tile-sub">Heritage</span>
+        </div>
+      </a>
+      <a href="../../contact-form/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-envelope-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Contact</span>
+          <span class="apple-mobile-tile-sub">Global Offices</span>
+        </div>
+      </a>
+    </div>
+    
+    <div class="apple-mobile-cta-box">
+      <a href="../../contact-form/index.html" class="apple-mobile-btn-consultation">
+        <i class="bi bi-building-check me-2"></i> Request Project Consultation <i class="bi bi-arrow-right ms-auto"></i>
+      </a>
+
+      <div class="apple-mobile-contact-grid">
+        <a href="tel:18008917466" class="apple-mobile-contact-pill apple-mobile-pill-tel">
+          <i class="bi bi-telephone-fill"></i>
+          <span>1800 891 7466<small>National Toll-Free</small></span>
+        </a>
+        <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." target="_blank" rel="noopener noreferrer" class="apple-mobile-contact-pill apple-mobile-pill-wa">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>WhatsApp Desk<small>24/7 Fast Inquiry</small></span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+      
+
+    <main>
+        <section class="catalogue-hero catalogue-hero--compact">
+            <div class="container">
+                <nav class="catalogue-breadcrumb" aria-label="Breadcrumb">
+                    <a href="../../index.html">Home</a>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="../index.html#catalogue">Catalogue</a>
+                    <i class="bi bi-chevron-right"></i>
+                    <span aria-current="page">Hospital Trolley</span>
+                </nav>
+                <div class="row align-items-center">
+                    <div class="col-lg-9">
+                        <span class="catalogue-eyebrow">Hospital furniture & transport</span>
+                        <h1>Hospital Trolley</h1>
+                        <p>Medical crash carts, instrument trolleys, dressing carts, ECG carts, cylinder trolleys, and Mayo surgical stands.</p>
+                        <a class="catalogue-button catalogue-button--ghost" href="../index.html#catalogue">
+                            <i class="bi bi-arrow-left"></i> Back to full catalogue
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalogue-section">
+            <div class="container">
+                  
+                <p class="catalogue-count">Showing <strong>31</strong> products</p>
+
+                <div class="category-search-wrapper mb-4" style="max-width: 500px;">
+                    <div class="input-group">
+                        <span class="input-group-text bg-white border-end-0"><i class="bi bi-search text-muted"></i></span>
+                        <input type="text" id="categoryProductSearch" class="form-control border-start-0 ps-0" placeholder="Filter hospital trolley..." aria-label="Filter products">
+                    </div>
+                </div>
+                <script src="../../assets/js/catalogue-filters.js?v=1.0"></script>
+                <div class="row g-4" id="products-grid">
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="crash cart with abs drawers (swm 11049)" data-badge="emergency abs">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Crash Cart with ABS Drawers on Instagram" title="View on Instagram">
+                                    <img src="crash-cart-abs.png" alt="Crash Cart with ABS Drawers" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Emergency ABS</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Emergency & Resuscitation • SWM 11049</span>
+                                <h3>Crash Cart with ABS Drawers (SWM 11049)</h3>
+                                <p>Mobile emergency resuscitation trolley with high-impact ABS modular drawers, defibrillator shelf, and oxygen tank bracket.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Five modular sliding ABS drawers with central key locking</li>
+                                    <li>360° rotating defibrillator monitor tray and cardiac CPR backboard</li>
+                                    <li>Heavy-duty 125mm castors with diagonal brake locking</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Crash%20Cart%20with%20ABS%20Drawers">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="crash cart with s.s drawers (swm 11050)" data-badge="emergency ss">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Crash Cart with S.S Drawers on Instagram" title="View on Instagram">
+                                    <img src="crash-cart-ss.png" alt="Crash Cart with S.S Drawers" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Emergency SS</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Emergency & Resuscitation • SWM 11050</span>
+                                <h3>Crash Cart with S.S Drawers (SWM 11050)</h3>
+                                <p>All stainless steel emergency resuscitation cart featuring smooth sliding drawers, IV pole, and electrical socket extension.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Heavy-gauge 304 stainless steel cabinet construction</li>
+                                    <li>Full-extension ball bearing drawer slides with label holders</li>
+                                    <li>Integrated telescopic stainless steel IV infusion rod</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Crash%20Cart%20with%20S.S%20Drawers">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="cylinder trolley small & jumbo (swm 11055)" data-badge="gas handling">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Oxygen Cylinder Trolley (Small & Jumbo) on Instagram" title="View on Instagram">
+                                    <img src="cylinder-trolley-jumbo.png" alt="Oxygen Cylinder Trolley (Small & Jumbo)" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Gas Handling</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Medical Gas Transport • SWM 11055</span>
+                                <h3>Cylinder Trolley Small & Jumbo (SWM 11055)</h3>
+                                <p>Heavy-duty tubular steel oxygen cylinder carrier with safety retention chain and large puncture-proof rubber transport wheels.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Accommodates B-type (small) and D/G-type (jumbo) medical gas cylinders</li>
+                                    <li>Safety locking chain securing cylinder firmly during transit</li>
+                                    <li>100mm solid rubber wheels ensuring effortless doorway transit</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Oxygen%20Cylinder%20Trolley%20%28Small%20%26%20Jumbo%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="abs anesthetic cart (swm 11062)" data-badge="anesthetic cart">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View ABS Anesthetic Cart on Instagram" title="View on Instagram">
+                                    <img src="abs-anesthetic-cart.png" alt="ABS Anesthetic Cart" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Anesthetic Cart</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Operating Theatre Trolleys • SWM 11062</span>
+                                <h3>ABS Anesthetic Cart (SWM 11062)</h3>
+                                <p>High-density polymer anesthesia utility workstation featuring tilt-out medication bins, syringe dispenser, and work slide.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Multi-tier upper transparent tilt-out drug organizer bins</li>
+                                    <li>Slide-out auxiliary writing surface on smooth roller bearings</li>
+                                    <li>Concealed waste receptacle and sharps container bracket</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=ABS%20Anesthetic%20Cart">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="instrument trolley box type ms (swm 11064)" data-badge="box type ms">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Instrument Trolley Box Type (M.S) on Instagram" title="View on Instagram">
+                                    <img src="instrument-trolley-box-ms.png" alt="Instrument Trolley Box Type (M.S)" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Box Type MS</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Ward & Clinic Trolleys • SWM 11064</span>
+                                <h3>Instrument Trolley Box Type MS (SWM 11064)</h3>
+                                <p>Powder-coated mild steel instrument trolley featuring enclosed lockable lower box cabinet and upper shelf with railings.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Electrostatically powder-coated CRCA steel framework</li>
+                                    <li>Lockable storage box keeping sterile trays and supplies secure</li>
+                                    <li>Mounted on 100mm swivel castors with protective bumper discs</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Instrument%20Trolley%20Box%20Type%20%28M.S%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="instrument trolley all ss (swm 11065)" data-badge="all stainless steel">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Instrument Trolley (All S.S) on Instagram" title="View on Instagram">
+                                    <img src="instrument-trolley-all-ss.png" alt="Instrument Trolley (All S.S)" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">All Stainless Steel</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Surgical Infrastructure • SWM 11065</span>
+                                <h3>Instrument Trolley All SS (SWM 11065)</h3>
+                                <p>Sanitary 2-tier surgical instrument trolley manufactured entirely in 304 stainless steel with 3-sided guard rails.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Top and bottom shelves with raised sound-deadened SS sheets</li>
+                                    <li>3-sided protective stainless steel retaining rails on both tiers</li>
+                                    <li>Swivelling non-marking rubber castors for silent OT maneuverability</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Instrument%20Trolley%20%28All%20S.S%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="instrument trolley three shelf ss (swm 11066)" data-badge="three tier ss">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Instrument Trolley Three Shelf (S.S) on Instagram" title="View on Instagram">
+                                    <img src="instrument-trolley-three-shelf-ss.png" alt="Instrument Trolley Three Shelf (S.S)" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Three Tier SS</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Surgical Infrastructure • SWM 11066</span>
+                                <h3>Instrument Trolley Three Shelf SS (SWM 11066)</h3>
+                                <p>Three-shelf stainless steel utility cart providing triple storage capacity for surgical packs, dressings, and procedure kits.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Three heavy-gauge pressed stainless steel shelves with guard rails</li>
+                                    <li>Reinforced tubular stainless steel upright frame</li>
+                                    <li>Smooth-rolling medical swivel castors with diagonal wheel locks</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Instrument%20Trolley%20Three%20Shelf%20%28S.S%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dressing trolley all ss (swm 11068)" data-badge="dressing cart">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dressing Trolley (All SS) on Instagram" title="View on Instagram">
+                                    <img src="dressing-trolley-all-ss.png" alt="Dressing Trolley (All SS)" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Dressing Cart</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Ward & Clinic Trolleys • SWM 11068</span>
+                                <h3>Dressing Trolley All SS (SWM 11068)</h3>
+                                <p>Complete clinical dressing cart fitted with stainless steel wash basin, waste bucket, two shelves, and perimeter guard rails.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Integrated swing-out ring holders with SS bowl and refuse bucket</li>
+                                    <li>Two seamless stainless steel shelves with sound-dampening underlays</li>
+                                    <li>Push handle and anti-static swivel castors</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dressing%20Trolley%20%28All%20SS%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="e.c.g trolley (swm 11069)" data-badge="ecg / monitor cart">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View E.C.G Machine Trolley on Instagram" title="View on Instagram">
+                                    <img src="ecg-trolley.png" alt="E.C.G Machine Trolley" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">ECG / Monitor Cart</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Diagnostic Workstations • SWM 11069</span>
+                                <h3>E.C.G Trolley (SWM 11069)</h3>
+                                <p>Dedicated mobile diagnostic trolley designed for 12-lead ECG machines with patient cable arm, accessory drawer, and lower shelf.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Articulating patient cable boom arm with cable organizer clips</li>
+                                    <li>Spacious top platform accommodating all major ECG recorder models</li>
+                                    <li>Smooth-slide drawer for ECG paper rolls, electrodes, and suction bulbs</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=E.C.G%20Machine%20Trolley">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="linen trolley with canvas bag (swm 11070)" data-badge="linen management">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Soiled Linen Trolley with Canvas Bag on Instagram" title="View on Instagram">
+                                    <img src="linen-trolley.png" alt="Soiled Linen Trolley with Canvas Bag" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Linen Management</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Ward Furniture • SWM 11070</span>
+                                <h3>Linen Trolley with Canvas Bag (SWM 11070)</h3>
+                                <p>Heavy-duty soiled linen hamper trolley featuring a heavy tubular ring frame and waterproof washable canvas bag.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Heavy-gauge tubular steel circular ring frame</li>
+                                    <li>Durable waterproof canvas laundry bag with tie cords</li>
+                                    <li>Four swivel castors ensuring agile navigation across wards</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Soiled%20Linen%20Trolley%20with%20Canvas%20Bag">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="mayo trolley (swm 11077)" data-badge="mayo instrument">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Mayo Instrument Trolley on Instagram" title="View on Instagram">
+                                    <img src="mayo-trolley.png" alt="Mayo Instrument Trolley" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Mayo Instrument</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Operating Theatre Trolleys • SWM 11077</span>
+                                <h3>Mayo Trolley (SWM 11077)</h3>
+                                <p>Adjustable surgical Mayo stand with removable deep stainless steel tray and pneumatic/mechanical height elevation.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Removable seamless surgical-grade stainless steel instrument tray</li>
+                                    <li>Smooth telescoping elevation mechanism with secure locking clamp</li>
+                                    <li>U-shaped low clearance base slides easily beneath operating tables</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Mayo%20Instrument%20Trolley">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="biomedical waste foot-pedal trolley" data-badge="bio-medical waste">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Biomedical Waste Foot Pedal Trolley on Instagram" title="View on Instagram">
+                                    <img src="bio-waste-trolley.png" alt="Biomedical Waste Foot Pedal Trolley" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Bio-Medical Waste</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Clinical Waste Logistics</span>
+                                <h3>Biomedical Waste Foot-Pedal Trolley</h3>
+                                <p>Color-coded biomedical waste segregation trolley featuring hands-free foot-pedal lid operation and heavy mobile base.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Hands-free foot pedal lid mechanism eliminating contact contamination</li>
+                                    <li>Color-coded bins compliant with clinical bio-waste regulatory standards</li>
+                                    <li>Heavy tubular frame on smooth rolling castors</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Biomedical%20Waste%20Foot%20Pedal%20Trolley">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="laparoscopy tower workstation trolley" data-badge="endoscopy tower">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Laparoscopy Tower Trolley on Instagram" title="View on Instagram">
+                                    <img src="laparoscopy-trolley.png" alt="Laparoscopy Tower Trolley" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Endoscopy Tower</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Operating Theatre Workstations</span>
+                                <h3>Laparoscopy Tower Workstation Trolley</h3>
+                                <p>Heavy-duty multi-tier endoscopy tower cart with adjustable monitor mount, CO2 cylinder carrier, and internal cable conduits.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>VESA-compatible articulating medical monitor mounting pole</li>
+                                    <li>Four height-adjustable equipment shelves supporting heavy processors</li>
+                                    <li>Rear cylinder cradle accommodating dual CO2 insufflator tanks</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Laparoscopy%20Tower%20Trolley">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="theater suction trolley with twin jars" data-badge="surgical suction">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Theater Suction Trolley with Twin Jars on Instagram" title="View on Instagram">
+                                    <img src="theater-suction-trolley.png" alt="Theater Suction Trolley with Twin Jars" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Surgical Suction</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Operating Theatre Trolleys</span>
+                                <h3>Theater Suction Trolley with Twin Jars</h3>
+                                <p>Dedicated mobile surgical suction cart fitted with dual 2.5L polycarbonate collection bottles and vacuum gauge mount.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Dual shatterproof 2500ml graduated suction jars with overflow traps</li>
+                                    <li>Heavy stainless steel chassis with vacuum regulator bracket</li>
+                                    <li>Anti-static swivel castors with foot brake levers</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Theater%20Suction%20Trolley%20with%20Twin%20Jars">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith mayo instrument trolley (double pillar crank)" data-badge="mayo double pillar">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Mayo Instrument Trolley Double Pillar Crank on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-mayo-instrument-trolley-double-pillar-crank.png" alt="Dr. Smith Mayo Instrument Trolley Double Pillar Crank" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Mayo Double Pillar</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Operating Theatre Trolleys</span>
+                                <h3>Dr. Smith Mayo Instrument Trolley (Double Pillar Crank)</h3>
+                                <p>Heavy-duty twin pillar surgical Mayo table with precision manual gear crank elevation and reinforced deep stainless steel tray.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Precision mechanical crank handle with effortless stepless elevation</li>
+                                    <li>Twin rectangular stainless steel telescoping pillars for zero wobble</li>
+                                    <li>Low-profile base with 4 medical swivel castors fitting beneath tables</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Mayo%20Instrument%20Trolley%20%28Double%20Pillar%20Crank%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith soiled linen hamper (round ss frame)" data-badge="linen management">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Soiled Linen Hamper Round SS on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-soiled-linen-hamper-round-ss.png" alt="Dr. Smith Soiled Linen Hamper Round SS" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Linen Management</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Ward Furniture & Hygiene</span>
+                                <h3>Dr. Smith Soiled Linen Hamper (Round SS Frame)</h3>
+                                <p>Sanitary circular stainless steel laundry cart equipped with heavy black waterproof canvas bag and swivel castor wheels.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Seamless circular 304-grade stainless steel tubular frame</li>
+                                    <li>Tear-proof waterproof heavy-gauge canvas bag with hanging straps</li>
+                                    <li>Smooth-rolling non-marking swivel wheels</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Soiled%20Linen%20Hamper%20%28Round%20SS%20Frame%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith 3-tier utility instrument cart (green)" data-badge="3-tier utility cart">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Three-Tier Instrument Utility Cart - Green on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-three-tier-instrument-utility-cart-green.png" alt="Dr. Smith Three-Tier Instrument Utility Cart - Green" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">3-Tier Utility Cart</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Clinical Utility Trolleys</span>
+                                <h3>Dr. Smith 3-Tier Utility Instrument Cart (Green)</h3>
+                                <p>Modern medical utility trolley featuring white epoxy frame, 3 high-capacity vibrant green trays, and quiet medical castors.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Three deep-lip green powder-coated instrument trays</li>
+                                    <li>Curved ergonomic tubular uprights with integrated push handles</li>
+                                    <li>Twin-wheel precision swivel castors with brake locks</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%203-Tier%20Utility%20Instrument%20Cart%20%28Green%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith two-tier dressing trolley (bowl & bucket)" data-badge="dressing cart">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Two-Tier Dressing Trolley with Bowl & Bucket on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-two-tier-dressing-trolley-bowl-bucket.png" alt="Dr. Smith Two-Tier Dressing Trolley with Bowl & Bucket" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Dressing Cart</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Ward & Surgical Dressing</span>
+                                <h3>Dr. Smith Two-Tier Dressing Trolley (Bowl & Bucket)</h3>
+                                <p>Surgical-grade stainless steel dressing trolley featuring 2 shelves, 3-sided guard rails, and swing-out arms with SS bowl and bucket.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>High-grade 304 stainless steel fabrication with satin finish</li>
+                                    <li>Swivel swing-out stainless steel ring brackets for bowl and waste pail</li>
+                                    <li>Four 100mm medical-grade castors with foot-locking levers</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Two-Tier%20Dressing%20Trolley%20%28Bowl%20%26%20Bucket%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith wide dressing trolley (electric switchboard)" data-badge="electrified dressing cart">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Wide Dressing Trolley with Switchboard on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-wide-dressing-trolley-switchboard.png" alt="Dr. Smith Wide Dressing Trolley with Switchboard" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Electrified Dressing Cart</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Surgical Infrastructure</span>
+                                <h3>Dr. Smith Wide Dressing Trolley (Electric Switchboard)</h3>
+                                <p>Extra-wide stainless steel dressing and procedure table equipped with integrated electrical switchboard and waste fixtures.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Extended length stainless steel work platform with 3-sided guard rails</li>
+                                    <li>Integrated multi-plug electrical switchboard for cautery and suction devices</li>
+                                    <li>Swing-out stainless steel dressing bowl and waste bucket holders</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Wide%20Dressing%20Trolley%20%28Electric%20Switchboard%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith large instrument table (electrified)" data-badge="instrument table">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Large Instrument Table with Electric Switchboard on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-large-instrument-table-electric-switchboard.png" alt="Dr. Smith Large Instrument Table with Electric Switchboard" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Instrument Table</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Operating Theatre Infrastructure</span>
+                                <h3>Dr. Smith Large Instrument Table (Electrified)</h3>
+                                <p>Heavy-duty 2-tier surgical instrument table featuring full 4-side retaining rim, integrated electric sockets, and reinforced frame.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Deep 4-side perimeter stainless lip preventing instruments from sliding</li>
+                                    <li>Integrated medical-grade electrical power console with on/off switch</li>
+                                    <li>Substantial 150 kg loading capacity on heavy swivel castors</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Large%20Instrument%20Table%20%28Electrified%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith enclosed ss medicine cabinet trolley" data-badge="enclosed storage cart">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Enclosed SS Medicine Cabinet Trolley on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-enclosed-ss-medicine-cabinet-trolley.png" alt="Dr. Smith Enclosed SS Medicine Cabinet Trolley" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Enclosed Storage Cart</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Pharmacy & Ward Logistics</span>
+                                <h3>Dr. Smith Enclosed SS Medicine Cabinet Trolley</h3>
+                                <p>Fully enclosed surgical stainless steel medical supply cart featuring double lockable hinged doors and internal shelves.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Heavy-gauge 304 stainless steel cabinet with lockable ergonomic handle</li>
+                                    <li>Internal shelving tiers for bulk pharmaceutical and surgical pack storage</li>
+                                    <li>Top perimeter rim and four swivel castors with directional brakes</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Enclosed%20SS%20Medicine%20Cabinet%20Trolley">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith 29-slot pharmacy dispensing cart (ss)" data-badge="pharmacy dispensing">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Multi-Compartment Pharmacy Dispensing Cart SS on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-pigeonhole-pharmacy-dispensing-cart-ss.png" alt="Dr. Smith Multi-Compartment Pharmacy Dispensing Cart SS" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Pharmacy Dispensing</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Ward Medication Systems</span>
+                                <h3>Dr. Smith 29-Slot Pharmacy Dispensing Cart (SS)</h3>
+                                <p>Prestige edition Dr. Smith branded full stainless steel medication cart featuring 20 upper pigeonholes and 9 lower bulk compartments.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>20 individual upper pigeonhole slots for patient-specific medications</li>
+                                    <li>9 spacious lower compartments for IV fluids and bulk medical supplies</li>
+                                    <li>Integrated push handle, side brackets, and heavy 100mm medical castors</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%2029-Slot%20Pharmacy%20Dispensing%20Cart%20%28SS%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith overbed food table (ss crank elevation)" data-badge="overbed table">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Overbed Food Table SS Crank on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-overbed-food-table-ss-crank.png" alt="Dr. Smith Overbed Food Table SS Crank" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Overbed Table</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Patient Ward Furniture</span>
+                                <h3>Dr. Smith Overbed Food Table (SS Crank Elevation)</h3>
+                                <p>Single-pillar stainless steel overbed dining and utility table with smooth gear-crank vertical elevation and low U-base.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Smooth hand crank mechanism with foldable blue handle</li>
+                                    <li>Seamless pressed stainless steel tabletop easy to disinfect</li>
+                                    <li>Low-profile U-shaped wheeled base slides beneath hospital beds</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Overbed%20Food%20Table%20%28SS%20Crank%20Elevation%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith utility ward & linen hamper trolley" data-badge="housekeeping cart">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Utility Ward Linen Hamper Trolley on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-utility-ward-linen-hamper-trolley.png" alt="Dr. Smith Utility Ward Linen Hamper Trolley" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Housekeeping Cart</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Ward Logistics & Linen</span>
+                                <h3>Dr. Smith Utility Ward & Linen Hamper Trolley</h3>
+                                <p>Dual-function hospital service cart featuring 2 stainless steel utility storage shelves and an integrated heavy-duty laundry bag.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Multi-tier stainless steel shelves with guard rail on top shelf</li>
+                                    <li>Heavy-duty waterproof green canvas linen collection hamper</li>
+                                    <li>Ergonomic push handle and 4 heavy-duty medical swivel wheels</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Utility%20Ward%20%26%20Linen%20Hamper%20Trolley">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith 4-drawer dressing & treatment trolley" data-badge="4-drawer treatment">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Four-Drawer Dressing & Treatment Trolley SS on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-four-drawer-dressing-treatment-trolley-ss.png" alt="Dr. Smith Four-Drawer Dressing & Treatment Trolley SS" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">4-Drawer Treatment</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Ward & Clinical Dressing</span>
+                                <h3>Dr. Smith 4-Drawer Dressing & Treatment Trolley</h3>
+                                <p>All stainless steel clinical procedure cart equipped with 2 upper drawers, 2 lower drawers, and 2 open utility shelves.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Four stainless steel utility drawers on ball bearing sliding rails</li>
+                                    <li>Two open stainless steel shelves with 3-sided guard railings</li>
+                                    <li>Integrated side push handle and four medical castors with brakes</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%204-Drawer%20Dressing%20%26%20Treatment%20Trolley">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith fixed-height surgical bridge over-table" data-badge="surgical bridge table">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Fixed-Height Surgical Bridge Table on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-fixed-height-surgical-bridge-table.png" alt="Dr. Smith Fixed-Height Surgical Bridge Table" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Surgical Bridge Table</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Operating Theatre Infrastructure</span>
+                                <h3>Dr. Smith Fixed-Height Surgical Bridge Over-Table</h3>
+                                <p>Heavy stainless steel surgical over-table designed to bridge across operating tables for immediate access to heavy sterile trays.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Wide spanning stainless steel platform supporting large surgical sets</li>
+                                    <li>Rigid tubular stainless steel H-frame with reinforcing crossbars</li>
+                                    <li>Four swivel castors with smooth rolling action</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Fixed-Height%20Surgical%20Bridge%20Over-Table">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith three-shelf ss instrument trolley (rails)" data-badge="three tier ss">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Three-Shelf SS Instrument Trolley with Rails on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-three-shelf-ss-instrument-trolley-rails.png" alt="Dr. Smith Three-Shelf SS Instrument Trolley with Rails" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Three Tier SS</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Operating Theatre Infrastructure</span>
+                                <h3>Dr. Smith Three-Shelf SS Instrument Trolley (Rails)</h3>
+                                <p>Three-tier surgical instrument trolley featuring heavy-gauge stainless steel shelves with 4-sided guard rails on each level.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Three pressed stainless steel shelves with 4-sided perimeter rails</li>
+                                    <li>Reinforced tubular uprights with integrated push handles</li>
+                                    <li>Medical grade silent castors with foot-operated wheel locks</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Three-Shelf%20SS%20Instrument%20Trolley%20%28Rails%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith medical equipment cart (power strip)" data-badge="electrified cart">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Equipment Cart with Power Strip SS on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-equipment-cart-power-strip-ss.png" alt="Dr. Smith Equipment Cart with Power Strip SS" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Electrified Cart</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Specialized Clinical Trolleys</span>
+                                <h3>Dr. Smith Medical Equipment Cart (Power Strip)</h3>
+                                <p>Wide 2-tier stainless steel medical device trolley with high perimeter rails and pre-installed electrical switchboard.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Accommodates patient monitors, defibrillators, and electrosurgical units</li>
+                                    <li>Multi-outlet electrical socket block with master power switch</li>
+                                    <li>High-strength tubular frame engineered for 120 kg device loading</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Medical%20Equipment%20Cart%20%28Power%20Strip%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith linen hamper (epoxy frame & black bag)" data-badge="linen management">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Linen Hamper Epoxy Frame Black Bag on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-linen-hamper-epoxy-frame-black-bag.png" alt="Dr. Smith Linen Hamper Epoxy Frame Black Bag" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Linen Management</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Ward Furniture & Hygiene</span>
+                                <h3>Dr. Smith Linen Hamper (Epoxy Frame & Black Bag)</h3>
+                                <p>Hygienic white epoxy powder-coated tubular steel linen hamper fitted with washable waterproof black bag on wheels.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Antimicrobial powder-coated tubular steel ring frame</li>
+                                    <li>Detachable washable heavy-duty waterproof canvas collection sack</li>
+                                    <li>Four swivel castor wheels providing rapid maneuverability</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Linen%20Hamper%20%28Epoxy%20Frame%20%26%20Black%20Bag%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith multi-bin emergency crash cart (ss)" data-badge="emergency crash cart">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Crash Cart Multi-Bin Organizer SS on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-crash-cart-multi-bin-organizer-ss.png" alt="Dr. Smith Crash Cart Multi-Bin Organizer SS" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Emergency Crash Cart</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Emergency Resuscitation Infrastructure</span>
+                                <h3>Dr. Smith Multi-Bin Emergency Crash Cart (SS)</h3>
+                                <p>All stainless steel emergency resuscitation trolley featuring top medicine sorting rack with 6 colored bins and 6 lockable drawers.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Overhead stainless rack with 6 color-coded rapid-access medicine bins</li>
+                                    <li>6 lockable modular drawers with identification label plates</li>
+                                    <li>Spacious lower stainless storage shelf and heavy medical castors</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Multi-Bin%20Emergency%20Crash%20Cart%20%28SS%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith mayo instrument stand (single pillar deep tray)" data-badge="mayo instrument stand">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Mayo Instrument Stand Single Pillar Tray on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-mayo-instrument-stand-single-pillar-tray.png" alt="Dr. Smith Mayo Instrument Stand Single Pillar Tray" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Mayo Instrument Stand</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Operating Theatre Trolleys</span>
+                                <h3>Dr. Smith Mayo Instrument Stand (Single Pillar Deep Tray)</h3>
+                                <p>Single-column surgical Mayo stand with removable deep stainless steel instrument tray and screw-knob height elevation.</p>
+                                <ul class="catalogue-card__details">
+                                    <li>Deep-drawn removable 304 stainless steel surgical instrument tray</li>
+                                    <li>Telescoping column with secure ergonomic tightening collar</li>
+                                    <li>Low-profile wheeled base effortlessly sliding under beds and tables</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Mayo%20Instrument%20Stand%20%28Single%20Pillar%20Deep%20Tray%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="catalogue-section">
+            <div class="container">
+                <div class="catalogue-cta d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4">
+                    <div>
+                        <h2>Can't find what you're looking for?</h2>
+                        <p>Share your requirements and our team will recommend the best fit from our full range.</p>
+                    </div>
+                    <a class="catalogue-button flex-shrink-0" href="../../contact-form/index.html">
                         Contact our team <i class="bi bi-arrow-right"></i>
-</a>
-</div>
-</div>
-</section>
-<!-- ============================================================
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+      <!-- ============================================================
        GLOBAL DIRECTORY FOOTER
        ============================================================ -->
-<!-- Drawer Modal -->
-<!-- ============================================================
+  
+
+  <!-- Drawer Modal -->
+    <!-- ============================================================
        GLOBAL DIRECTORY FOOTER
        ============================================================ -->
-<footer class="apple-globalfooter">
-<div class="apple-footer-inner">
-<!-- Footer Brand Header & Fast Back-To-Top -->
-<div class="apple-footer-brand-header">
-<div class="apple-footer-brand-left">
-<img alt="Dr. Smith Emblem Logo" class="apple-footer-brand-logo" decoding="async" height="32" loading="lazy" src="../../assets/img/logo.png?v=11.0" width="32"/>
-<div>
-<div class="apple-footer-brand-title">Dr. Smith</div>
-<span class="apple-footer-brand-subtitle">HOSPITAL SOLUTIONS</span>
-</div>
-</div>
-<a aria-label="Scroll back to top" class="apple-footer-backtotop-btn" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">
-<span>Top</span> <i class="bi bi-chevron-up"></i>
-</a>
-</div>
-<!-- Notes / Footnotes -->
-<div class="apple-footer-notes">
-<ol>
-<li>Medical equipment specifications, turnkey timelines, and compliance standards (ISO 9001:2015, ISO
+  <footer class="apple-globalfooter">
+    <div class="apple-footer-inner">
+
+      <!-- Footer Brand Header & Fast Back-To-Top -->
+      <div class="apple-footer-brand-header">
+        <div class="apple-footer-brand-left">
+          <img src="../../assets/img/logo.png?v=11.0" alt="Dr. Smith Emblem Logo" class="apple-footer-brand-logo" width="32"
+            height="32" decoding="async" loading="lazy">
+          <div>
+            <div class="apple-footer-brand-title">Dr. Smith</div>
+            <span class="apple-footer-brand-subtitle">HOSPITAL SOLUTIONS</span>
+          </div>
+        </div>
+        <a href="#top" class="apple-footer-backtotop-btn"
+          onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;" aria-label="Scroll back to top">
+          <span>Top</span> <i class="bi bi-chevron-up"></i>
+        </a>
+      </div>
+
+      <!-- Notes / Footnotes -->
+      <div class="apple-footer-notes">
+        <ol>
+          <li>Medical equipment specifications, turnkey timelines, and compliance standards (ISO 9001:2015, ISO
             13485:2016, CE, FDA) depend on specific project scopes and customized clinical configurations.</li>
-<li>Turnkey hospital infrastructure engineering timelines depend on architectural blueprints, local regulatory
+          <li>Turnkey hospital infrastructure engineering timelines depend on architectural blueprints, local regulatory
             clearances, and civil site readiness.</li>
-<li>Principal Global Head Office located at Kapashera Border, New Delhi; Manufacturing Plant at METL, Jhajjar,
+          <li>Principal Global Head Office located at Kapashera Border, New Delhi; Manufacturing Plant at METL, Jhajjar,
             Haryana; Overseas Head Office at SAIF Zone, Sharjah, UAE.</li>
-</ol>
-</div>
-<!-- Directory Columns (Mobile Collapsible Accordions) -->
-<div class="apple-footer-directory">
-<!-- Col 1: Turnkey Solutions (Active by default on mobile) -->
-<div class="apple-footer-col active">
-<button aria-expanded="true" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Turnkey Solutions</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../../turnkey-projects/index.html">500-Bedded Hospital Setup</a></li>
-<li><a href="../../catalogue/modular-ot/index.html">Modular OT Construction</a></li>
-<li><a href="../../turnkey-projects/index.html">Medical Gas Pipeline (MGPS)</a></li>
-<li><a href="../../turnkey-projects/index.html">Hospital Architecture &amp; MEP</a></li>
-<li><a href="../../turnkey-projects/index.html">Government &amp; Global Tenders</a></li>
-</ul>
-</div>
-<!-- Col 2: Group Ecosystem -->
-<div class="apple-footer-col">
-<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Group Ecosystem</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../../about-us/index.html">Dr. Smith Healthcare</a></li>
-<li><a href="../../catalogue/index.html">Surgihub Surgical Devices</a></li>
-<li><a href="../../catalogue/index.html">Surgical Mall of India (SMPL)</a></li>
-<li><a href="../../catalogue/index.html">MediAid Patient Care</a></li>
-<li><a href="../../catalogue/index.html">Orbit Mahajan Diagnostics</a></li>
-</ul>
-</div>
-<!-- Col 3: Product Catalogue -->
-<div class="apple-footer-col">
-<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Product Catalogue</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../../catalogue/beds/index.html">Hospital &amp; ICU Beds</a></li>
-<li><a href="../../catalogue/modular-ot/index.html">Modular OT Suites</a></li>
-<li><a href="../../catalogue/patient-monitor/index.html">Critical Care &amp; Monitors</a></li>
-<li><a href="../../catalogue/ventilators/index.html">ICU Ventilators</a></li>
-<li><a href="../../catalogue/index.html">Full 50+ Categories</a></li>
-</ul>
-</div>
-<!-- Col 4: Global Directory -->
-<div class="apple-footer-col">
-<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Global Presence</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../../contact-form/index.html">New Delhi Head Office (India)</a></li>
-<li><a href="../../contact-form/index.html">Jhajjar Manufacturing Plant</a></li>
-<li><a href="../../contact-form/index.html">Sharjah Overseas Office (UAE)</a></li>
-<li><a href="../../contact-form/index.html">Kenya &amp; Nigeria Desks</a></li>
-<li><a href="../../contact-form/index.html">Patna, Kolkata, Varanasi Marts</a></li>
-</ul>
-</div>
-<!-- Col 5: Compliance & Values -->
-<div class="apple-footer-col">
-<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Corporate &amp; Quality</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../../about-us/index.html">About 60+ Years Heritage</a></li>
-<li><a href="../../mission-values/index.html">Mission &amp; Values</a></li>
-<li><a href="../../about-us/index.html">Executive Leadership</a></li>
-<li><a href="../../privacy.html">Privacy Policy</a></li>
-<li><a href="../../terms.html">Terms of Service</a></li>
-</ul>
-</div>
-</div>
-<!-- Footer Bottom Legal, Direct Connect & Country Positioned in Correct Order -->
-<div class="apple-footer-bottom">
-<div class="apple-footer-top-row">
-<div class="apple-footer-country">
-<a class="apple-footer-country-badge" href="../../contact-form/index.html" title="Region &amp; Language">
-<i class="bi bi-globe me-1"></i> India (English)
+        </ol>
+      </div>
+
+      <!-- Directory Columns (Mobile Collapsible Accordions) -->
+      <div class="apple-footer-directory">
+
+        <!-- Col 1: Turnkey Solutions (Active by default on mobile) -->
+        <div class="apple-footer-col active">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="true">
+            <h4 class="apple-footer-col-title">Turnkey Solutions</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../../turnkey-projects/index.html">500-Bedded Hospital Setup</a></li>
+            <li><a href="../../catalogue/modular-ot/index.html">Modular OT Construction</a></li>
+            <li><a href="../../turnkey-projects/index.html">Medical Gas Pipeline (MGPS)</a></li>
+            <li><a href="../../turnkey-projects/index.html">Hospital Architecture &amp; MEP</a></li>
+            <li><a href="../../turnkey-projects/index.html">Government &amp; Global Tenders</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 2: Group Ecosystem -->
+        <div class="apple-footer-col">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Group Ecosystem</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../../about-us/index.html">Dr. Smith Healthcare</a></li>
+            <li><a href="../../catalogue/index.html">Surgihub Surgical Devices</a></li>
+            <li><a href="../../catalogue/index.html">Surgical Mall of India (SMPL)</a></li>
+            <li><a href="../../catalogue/index.html">MediAid Patient Care</a></li>
+            <li><a href="../../catalogue/index.html">Orbit Mahajan Diagnostics</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Product Catalogue -->
+        <div class="apple-footer-col">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Product Catalogue</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../../catalogue/beds/index.html">Hospital &amp; ICU Beds</a></li>
+            <li><a href="../../catalogue/modular-ot/index.html">Modular OT Suites</a></li>
+            <li><a href="../../catalogue/patient-monitor/index.html">Critical Care &amp; Monitors</a></li>
+            <li><a href="../../catalogue/ventilators/index.html">ICU Ventilators</a></li>
+            <li><a href="../../catalogue/index.html">Full 50+ Categories</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Global Directory -->
+        <div class="apple-footer-col">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Global Presence</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../../contact-form/index.html">New Delhi Head Office (India)</a></li>
+            <li><a href="../../contact-form/index.html">Jhajjar Manufacturing Plant</a></li>
+            <li><a href="../../contact-form/index.html">Sharjah Overseas Office (UAE)</a></li>
+            <li><a href="../../contact-form/index.html">Kenya &amp; Nigeria Desks</a></li>
+            <li><a href="../../contact-form/index.html">Patna, Kolkata, Varanasi Marts</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Compliance & Values -->
+        <div class="apple-footer-col">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Corporate &amp; Quality</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../../about-us/index.html">About 60+ Years Heritage</a></li>
+            <li><a href="../../mission-values/index.html">Mission &amp; Values</a></li>
+            <li><a href="../../about-us/index.html">Executive Leadership</a></li>
+            <li><a href="../../privacy.html">Privacy Policy</a></li>
+            <li><a href="../../terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Legal, Direct Connect & Country Positioned in Correct Order -->
+      <div class="apple-footer-bottom">
+        <div class="apple-footer-top-row">
+          <div class="apple-footer-country">
+            <a href="../../contact-form/index.html" class="apple-footer-country-badge" title="Region &amp; Language">
+              <i class="bi bi-globe me-1"></i> India (English)
             </a>
-</div>
-<div class="apple-footer-quicklinks">
-<a class="apple-footer-badge-link" href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." rel="noopener noreferrer" target="_blank" title="Direct WhatsApp Assistance (+91 95990 81020)">
-<i class="fa-brands fa-whatsapp text-success me-1"></i> WhatsApp Desk
+          </div>
+          <div class="apple-footer-quicklinks">
+            <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." target="_blank" rel="noopener noreferrer"
+              class="apple-footer-badge-link" title="Direct WhatsApp Assistance (+91 95990 81020)">
+              <i class="fa-brands fa-whatsapp text-success me-1"></i> WhatsApp Desk
             </a>
-</div>
-</div>
-<div class="apple-footer-divider"></div>
-<div class="apple-footer-meta-row">
-<div class="apple-footer-legal-links">
-<a href="../../privacy.html">Privacy Policy</a>
-<span class="legal-dot">•</span>
-<a href="../../terms.html">Terms of Use</a>
-<span class="legal-dot">•</span>
-<a href="../../contact-form/index.html">Sales Policy</a>
-<span class="legal-dot">•</span>
-<a href="../../contact-form/index.html">Legal</a>
-<span class="legal-dot">•</span>
-<a href="../../catalogue/index.html">Site Map</a>
-</div>
-<div class="apple-footer-copyright">
-            Copyright © 2026 Dr. Smith Healthcare Solutions (Surgical Wholesale Mart Pvt. Ltd.). All rights
+          </div>
+        </div>
+
+        <div class="apple-footer-divider"></div>
+
+        <div class="apple-footer-meta-row">
+          <div class="apple-footer-legal-links">
+            <a href="../../privacy.html">Privacy Policy</a>
+            <span class="legal-dot">•</span>
+            <a href="../../terms.html">Terms of Use</a>
+            <span class="legal-dot">•</span>
+            <a href="../../contact-form/index.html">Sales Policy</a>
+            <span class="legal-dot">•</span>
+            <a href="../../contact-form/index.html">Legal</a>
+            <span class="legal-dot">•</span>
+            <a href="../../catalogue/index.html">Site Map</a>
+          </div>
+          <div class="apple-footer-copyright">
+            Copyright &copy; 2026 Dr. Smith Healthcare Solutions (Surgical Wholesale Mart Pvt. Ltd.). All rights
             reserved. An ISO 9001:2015, ISO 13485:2016, CE &amp; FDA Certified Company.
           </div>
-</div>
-</div>
-</div>
-</footer>
-<!-- Drawer Modal -->
-<div class="apple-drawer-overlay" id="apple-drawer-overlay" onclick="if(event.target===this) closeAppleDrawer();">
-<div class="apple-drawer-content">
-<button aria-label="Close" class="apple-drawer-close" onclick="closeAppleDrawer();" type="button">
-<i class="bi bi-x-lg"></i>
-</button>
-<div style="text-align: center; margin-bottom: 24px;">
-<span class="apple-shelf-badge">Dr. Smith Turnkey &amp; Procurement Desk</span>
-<h3 style="font-size: 24px; font-weight: 700; margin-top: 8px;">Request Project Consultation</h3>
-<p style="font-size: 14px; color: var(--apple-text-secondary); margin: 0;">Speak directly with our healthcare architects &amp; hospital engineering experts.</p>
-</div>
-<form class="apple-drawer-form" onsubmit="handleAppleQuoteSubmit(event);">
-<div class="form-group">
-<label>Scope of Interest</label>
-<input id="drawer-product-name" readonly="" style="background: rgba(255,255,255,0.08); font-weight: 600;" type="text" value="Turnkey Hospital Setup"/>
-</div>
-<div class="row g-2">
-<div class="col-md-6 form-group">
-<label>Your Full Name *</label>
-<input placeholder="Dr. / Mr. / Ms." required="" type="text"/>
-</div>
-<div class="col-md-6 form-group">
-<label>Hospital / Institution Name *</label>
-<input placeholder="Hospital / Organization Name" required="" type="text"/>
-</div>
-</div>
-<div class="row g-2">
-<div class="col-md-6 form-group">
-<label>Official Email *</label>
-<input placeholder="name@hospital.com" required="" type="email"/>
-</div>
-<div class="col-md-6 form-group">
-<label>Phone / WhatsApp *</label>
-<input placeholder="+91 99999 99999" required="" type="tel"/>
-</div>
-</div>
-<div class="form-group">
-<label>Project Scope &amp; Requirements</label>
-<textarea placeholder="Specify turnkey bed capacity, modular OT requirement, MGPS pipeline, or equipment procurement details..." rows="3"></textarea>
-</div>
-<button class="apple-btn-pill w-100 mt-2" style="padding: 14px;" type="submit">Submit Consultation Request</button>
-</form>
-</div>
-</div>
-<script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
-<a aria-label="Scroll to top" class="scroll-top d-flex align-items-center justify-content-center" href="#" id="scroll-top">
-<i class="bi bi-arrow-up-short"></i>
-</a>
-<script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="../../assets/js/main.js?v=94.0"></script>
-<script src="../../assets/js/global-search.js?v=42.0"></script>
-</div></body>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Drawer Modal -->
+  <div class="apple-drawer-overlay" id="apple-drawer-overlay" onclick="if(event.target===this) closeAppleDrawer();">
+    <div class="apple-drawer-content">
+      <button type="button" class="apple-drawer-close" onclick="closeAppleDrawer();" aria-label="Close">
+        <i class="bi bi-x-lg"></i>
+      </button>
+      
+      <div style="text-align: center; margin-bottom: 24px;">
+        <span class="apple-shelf-badge">Dr. Smith Turnkey &amp; Procurement Desk</span>
+        <h3 style="font-size: 24px; font-weight: 700; margin-top: 8px;">Request Project Consultation</h3>
+        <p style="font-size: 14px; color: var(--apple-text-secondary); margin: 0;">Speak directly with our healthcare architects &amp; hospital engineering experts.</p>
+      </div>
+
+      <form class="apple-drawer-form" onsubmit="handleAppleQuoteSubmit(event);">
+        <div class="form-group">
+          <label>Scope of Interest</label>
+          <input type="text" id="drawer-product-name" value="Turnkey Hospital Setup" readonly style="background: rgba(255,255,255,0.08); font-weight: 600;">
+        </div>
+
+        <div class="row g-2">
+          <div class="col-md-6 form-group">
+            <label>Your Full Name *</label>
+            <input type="text" placeholder="Dr. / Mr. / Ms." required>
+          </div>
+          <div class="col-md-6 form-group">
+            <label>Hospital / Institution Name *</label>
+            <input type="text" placeholder="Hospital / Organization Name" required>
+          </div>
+        </div>
+
+        <div class="row g-2">
+          <div class="col-md-6 form-group">
+            <label>Official Email *</label>
+            <input type="email" placeholder="name@hospital.com" required>
+          </div>
+          <div class="col-md-6 form-group">
+            <label>Phone / WhatsApp *</label>
+            <input type="tel" placeholder="+91 99999 99999" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Project Scope &amp; Requirements</label>
+          <textarea rows="3" placeholder="Specify turnkey bed capacity, modular OT requirement, MGPS pipeline, or equipment procurement details..."></textarea>
+        </div>
+
+        <button type="submit" class="apple-btn-pill w-100 mt-2" style="padding: 14px;">Submit Consultation Request</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  
+
+
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to top">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/main.js?v=94.0"></script>
+  <script src="../../assets/js/global-search.js?v=42.0"></script>
+</body>
+
 </html>

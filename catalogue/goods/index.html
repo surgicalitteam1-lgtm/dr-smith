@@ -1,451 +1,607 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Explore Dr. Smith's Healthcare Goods &amp; Clinical Supplies: physiotherapy goods, laboratory goods, scrub stations, hospital screens, and simulation mannequins." name="description"/>
-<meta content="#030712" name="theme-color"/>
-<title>Healthcare Goods &amp; Clinical Supplies | Dr. Smith Catalogue</title>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&amp;family=Open+Sans:wght@300;400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-<link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
-<link href="../../assets/img/favicon.png" rel="icon" type="image/png"/>
-<link href="../../assets/img/apple-touch-icon.png" rel="apple-touch-icon"/>
-<link href="../css/catalogue.css?v=47.0" rel="stylesheet"/>
-<link href="../../assets/css/apple-theme.css?v=106.0" rel="stylesheet"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Dr. Smith's Healthcare Goods &amp; Clinical Supplies: physiotherapy goods, laboratory goods, scrub stations, hospital screens, and simulation mannequins.">
+    <meta name="theme-color" content="#030712">
+    <title>Healthcare Goods &amp; Clinical Supplies | Dr. Smith Catalogue</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+
+    <link href="../css/catalogue.css?v=47.0" rel="stylesheet">
+    <link href="../../assets/css/apple-theme.css?v=106.0" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body class="apple-body catalogue-page">
-<!-- ============================================================
+  <!-- ============================================================
        1. GLOBAL NAVIGATION HEADER
        ============================================================ -->
-<nav aria-label="Global" class="apple-globalnav">
-<div class="apple-globalnav-inner">
-<!-- Brand & Corporate Identity -->
-<a aria-label="Dr. Smith Hospital Solutions" class="apple-nav-brand" href="../../index.html">
-<div class="brand-asterisk-icon">
-<img alt="Dr. Smith Emblem Logo" class="apple-nav-logo-img" decoding="async" height="36" loading="eager" src="../../assets/img/logo.png?v=11.0" width="36"/>
-</div>
-<div class="apple-nav-brand-text">
-<span class="apple-nav-brand-title">Dr. Smith</span>
-<span class="apple-nav-brand-subtitle">HOSPITAL SOLUTIONS</span>
-</div>
-</a>
-<!-- Navigation Links -->
-<ul class="apple-nav-links"><li class="apple-nav-item"><a class="apple-nav-link" href="../../index.html">Home</a></li><li class="apple-nav-item"><a class="apple-nav-link nav-active" href="../index.html">Products</a></li><li class="apple-nav-item"><a class="apple-nav-link" href="../../about-us/index.html">About us</a></li><li class="apple-nav-item"><a class="apple-nav-link" href="../../turnkey-projects/index.html">turnkey project</a></li><li class="apple-nav-item"><a class="apple-nav-link" href="../../contact-form/index.html">Contact Us</a></li></ul><!-- Action Utilities -->
-<div class="apple-nav-actions">
-<!-- Contact / Mail Form Button -->
-<a aria-label="Send Enquiry &amp; Contact Us" class="apple-nav-circle-btn apple-nav-circle-mail" href="../../contact-form/index.html" title="Send Enquiry / Request Quotation (BOM &amp; Consultation)">
-<i class="fa-solid fa-envelope"></i>
-</a>
-<!-- WhatsApp Circle Button -->
-<a aria-label="Chat with Dr. Smith Healthcare on WhatsApp (+91 95990 81020)" class="apple-nav-circle-btn apple-nav-circle-whatsapp" href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." rel="noopener noreferrer" target="_blank" title="WhatsApp Direct (+91 95990 81020) • 24/7 Fast Inquiry">
-<i class="fa-brands fa-whatsapp"></i>
-</a>
-<!-- Menu Toggle Button -->
-<button aria-label="Toggle Navigation Menu" class="apple-nav-circle-btn" id="apple-mobile-menu-btn" title="Menu" type="button">
-<i class="bi bi-list"></i>
-</button>
-</div>
-</div>
-</nav>
-<div class="apple-mobile-backdrop" id="appleMobileBackdrop"></div>
-<div class="apple-mobile-drawer" id="apple-mobile-drawer">
-<div class="apple-mobile-drawer-header">
-<span class="apple-mobile-drawer-tag"><i class="bi bi-hospital"></i> Dr. Smith Quick Menu</span>
-<button aria-label="Close Navigation Menu" class="apple-mobile-drawer-close" id="appleMobileDrawerClose" type="button">
-<i class="bi bi-x-lg"></i>
-</button>
-</div>
-<div class="apple-mobile-grid"><a class="apple-mobile-tile" href="../../index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-house-door-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">Home</span><span class="apple-mobile-tile-sub">Overview</span></div></a><a class="apple-mobile-tile active" href="../index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-grid-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">Products</span><span class="apple-mobile-tile-sub">Browse categories</span></div></a><a class="apple-mobile-tile" href="../../about-us/index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-shield-check"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">About us</span><span class="apple-mobile-tile-sub">Our story</span></div></a><a class="apple-mobile-tile" href="../../turnkey-projects/index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-hospital-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">turnkey project</span><span class="apple-mobile-tile-sub">Setup solutions</span></div></a><a class="apple-mobile-tile" href="../../contact-form/index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-envelope-paper-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">Contact Us</span><span class="apple-mobile-tile-sub">Get in touch</span></div></a></div>
-<section class="catalogue-section">
-<div class="container">
-<p class="catalogue-count">Showing <strong>8</strong> products</p>
-<div class="category-search-wrapper mb-4 max-w-500">
-<div class="input-group">
-<span class="input-group-text bg-white border-end-0"><i class="bi bi-search text-muted"></i></span>
-<input aria-label="Filter products" class="form-control border-start-0 ps-0" id="categoryProductSearch" placeholder="Filter healthcare goods..." type="text"/>
-</div>
-</div>
-<script src="../../assets/js/catalogue-filters.js?v=1.0"></script>
-<div class="row g-4" id="products-grid">
-<!-- Product 1 -->
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="physiotherapy" data-title="physiotherapy &amp; rehabilitation goods swm 11141 tens ultrasound">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Physiotherapy Goods on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Physiotherapy Goods SWM 11141" decoding="async" loading="lazy" src="dr-smith-physiotherapy-rehabilitation-goods.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Physiotherapy</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Rehabilitation • SWM 11141</span>
-<h3>Physiotherapy &amp; Rehabilitation Goods</h3>
-<p>Comprehensive physical therapy department package including combination TENS &amp; IFT electrotherapy units, therapeutic ultrasound, traction tables, and exercise therapy gear.</p>
-<ul class="catalogue-card__details">
-<li>Multi-channel digital TENS, IFT, and Russian stimulation current modes</li>
-<li>Therapeutic dual-frequency (1MHz / 3MHz) ultrasound therapy with watertight probe</li>
-<li>Motorized cervical and lumbar traction machine with patient safety release</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Physiotherapy%20%26%20Rehabilitation%20Goods">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<!-- Product 2 -->
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="surgical goods" data-title="general hospital &amp; surgical consumable goods swm 11142">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View General Surgical Goods on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="General Hospital &amp; Surgical Goods SWM 11142" decoding="async" loading="lazy" src="dr-smith-general-hospital-surgical-goods.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Surgical Goods</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Ward &amp; OT Supplies • SWM 11142</span>
-<h3>General Hospital &amp; Surgical Goods</h3>
-<p>Bulk clinical disposable essentials including sterile surgical drapes, sutures, gauze rolls, IV cannulas, Foley catheters, and personal protective equipment.</p>
-<ul class="catalogue-card__details">
-<li>Sterile reinforced SMS non-woven surgical gowns and theatre drapes</li>
-<li>High-grade non-toxic PVC endotracheal tubes and suction catheters</li>
-<li>Certified ISO &amp; CE marked medical consumables for wholesale procurement</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=General%20Hospital%20%26%20Surgical%20Goods">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<!-- Product 3 -->
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="scientific lab" data-title="lab diagnostics scientific laboratory goods swm 11108">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Lab Scientific Goods on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Lab Diagnostics &amp; Scientific Goods SWM 11108" decoding="async" loading="lazy" src="dr-smith-lab-diagnostics-scientific-goods.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Scientific Lab</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Pathology • SWM 11108</span>
-<h3>Lab Diagnostics &amp; Scientific Goods</h3>
-<p>Clinical laboratory instrumentation including binocular medical microscopes, digital centrifuges, micropipettes, incubator ovens, and hematology consumables.</p>
-<ul class="catalogue-card__details">
-<li>High-precision digital clinical centrifuge with brushless induction motor</li>
-<li>Binocular research microscope with plan-achromatic objectives and LED illumination</li>
-<li>Calibrated variable volume micropipettes with autoclavable tip ejectors</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Lab%20Diagnostics%20%26%20Scientific%20Goods">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<!-- Product 4 -->
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="ward privacy screen" data-title="hospital ward bedside folding privacy screen 4-fold 3-fold">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Hospital Ward Folding Privacy Screen on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Hospital Ward Folding Privacy Screen" decoding="async" loading="lazy" src="dr-smith-ward-bedside-folding-privacy-screen.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Ward Privacy Screen</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Ward Infrastructure</span>
-<h3>Hospital Ward Bedside Privacy Screen (4-Fold)</h3>
-<p>Sturdy tubular steel 4-panel folding ward partition screen mounted on 50mm smooth castors with washable flame-retardant curtains.</p>
-<ul class="catalogue-card__details">
-<li>4-fold articulating frames folding flat for compact storage</li>
-<li>Epoxy powder-coated tubular CRCA steel frame or stainless steel option</li>
-<li>Supplied with washable hospital-grade anti-microbial green/blue curtains</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Hospital%20Ward%20Bedside%20Privacy%20Screen">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<!-- Product 5 -->
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="scrub station" data-title="stainless steel surgical scrub station aisi 304 sensor">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Surgical Scrub Station on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Stainless Steel Surgical Scrub Station" decoding="async" loading="lazy" src="dr-smith-ss304-hospital-scrub-station.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Scrub Station</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">OT Hygiene &amp; Cleanroom</span>
-<h3>Stainless Steel Hospital Scrub Station</h3>
-<p>Hygienic surgical scrub sink manufactured from heavy-gauge AISI 304 stainless steel with automated infrared optical sensor or knee-paddle water control.</p>
-<ul class="catalogue-card__details">
-<li>Available in single, double, and triple-bay modular surgical scrub stations</li>
-<li>Deep sloped basin preventing water splashing with thermostatic mixing valves</li>
-<li>Automated hands-free infrared sensor or knee-operated soap and water dispensers</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Stainless%20Steel%20Hospital%20Scrub%20Station">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<!-- Product 6 -->
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="clinical simulation" data-title="medical simulation mannequins nursing training dummies swm 11143">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Simulation Mannequins on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Medical Simulation Mannequins SWM 11143" decoding="async" loading="lazy" src="dr-smith-medical-simulation-mannequins.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Clinical Simulation</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Medical Education • SWM 11143</span>
-<h3>Medical Simulation Mannequins &amp; Training Dummies</h3>
-<p>Full-body clinical training mannequins for nursing colleges, CPR resuscitation training, venipuncture IV insertion, and obstetric delivery simulation.</p>
-<ul class="catalogue-card__details">
-<li>Full-articulation realistic PVC body simulating adult, child, and infant anatomy</li>
-<li>CPR feedback monitor showing compression depth, rate, and lung ventilation volume</li>
-<li>Exchangeable modules for catheterization, tracheostomy, and intramuscular injection</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Medical%20Simulation%20Mannequins%20%26%20Training%20Dummies">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<!-- Product 7 -->
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="ent diagnostics" data-title="diagnostic ent headlight &amp; otoscope ophthalmoscope set">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Diagnostic ENT Headlight on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Diagnostic ENT Headlight &amp; Otoscope Set" decoding="async" loading="lazy" src="dr-smith-diagnostic-ent-headlight-otoscope.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">ENT Diagnostics</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Diagnostic Examination</span>
-<h3>Diagnostic ENT Headlight &amp; Otoscope Set</h3>
-<p>High-luminosity surgical LED wireless headlight combined with fiberoptic diagnostic otoscope and direct ophthalmoscope kit for OPD examination.</p>
-<ul class="catalogue-card__details">
-<li>Wireless rechargeable LED headlight delivering &gt;50,000 Lux spot brightness</li>
-<li>Fiberoptic cold light transmission with 3x magnifying swiveling lens</li>
-<li>Direct ophthalmoscope with 18 corrective lenses (-20D to +20D)</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Diagnostic%20ENT%20Headlight%20%26%20Otoscope%20Set">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<!-- Product 8 -->
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="ophthalmology" data-title="ophthalmic slit lamp &amp; vision testing diagnostic goods">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Ophthalmic Slit Lamp on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Ophthalmic Slit Lamp Diagnostic Goods" decoding="async" loading="lazy" src="dr-smith-ophthalmic-slit-lamp-apparatus.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Ophthalmology</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Eye Clinic Diagnostics</span>
-<h3>Ophthalmic Slit Lamp &amp; Vision Testing Goods</h3>
-<p>Stereomicroscopic slit lamp examination apparatus with multiple magnification steps, high-definition digital imaging beam splitter, and motorized table.</p>
-<ul class="catalogue-card__details">
-<li>Convergence stereoscopic microscope with 10x, 16x, and 25x magnification</li>
-<li>Slit width continuously adjustable from 0mm to 14mm with cobalt blue &amp; red-free filters</li>
-<li>Supplied with motorized smooth elevation instrument table and chin-rest assembly</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Ophthalmic%20Slit%20Lamp%20%26%20Vision%20Testing%20Goods">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-</div>
-</div>
-</section>
-<section class="catalogue-section">
-<div class="container">
-<div class="catalogue-cta d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4">
-<div>
-<h2>Institutional Procurement &amp; Medical College Setup?</h2>
-<p>Dr. Smith equips medical colleges, nursing simulation laboratories, hospital wards, and diagnostic pathology facilities with bulk wholesale supplies.</p>
-</div>
-<a class="catalogue-button flex-shrink-0" href="../../contact-form/index.html">
+  <nav class="apple-globalnav" aria-label="Global">
+    <div class="apple-globalnav-inner">
+      
+      <!-- Brand & Corporate Identity -->
+      <a href="../../index.html" class="apple-nav-brand" aria-label="Dr. Smith Hospital Solutions">
+        <div class="brand-asterisk-icon">
+          <img src="../../assets/img/logo.png?v=11.0" alt="Dr. Smith Emblem Logo" class="apple-nav-logo-img" width="36" height="36" decoding="async" loading="eager">
+        </div>
+        <div class="apple-nav-brand-text">
+          <span class="apple-nav-brand-title">Dr. Smith</span>
+          <span class="apple-nav-brand-subtitle">HOSPITAL SOLUTIONS</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="apple-nav-links">
+        <li class="apple-nav-item">
+          <a href="../../index.html" class="apple-nav-link">Home</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../../catalogue/index.html" class="apple-nav-link nav-active">Products</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../../turnkey-projects/index.html" class="apple-nav-link">Turnkey Solutions</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../../about-us/index.html" class="apple-nav-link">About Us</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../../contact-form/index.html" class="apple-nav-link">Contact</a>
+        </li>
+      </ul>
+
+      <!-- Action Utilities -->
+      <div class="apple-nav-actions">
+        <!-- Contact / Mail Form Button -->
+        <a href="../../contact-form/index.html" class="apple-nav-circle-btn apple-nav-circle-mail"
+          aria-label="Send Enquiry &amp; Contact Us" title="Send Enquiry / Request Quotation (BOM &amp; Consultation)">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+
+        <!-- WhatsApp Circle Button -->
+        <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions."
+          class="apple-nav-circle-btn apple-nav-circle-whatsapp" target="_blank"
+          rel="noopener noreferrer" aria-label="Chat with Dr. Smith Healthcare on WhatsApp (+91 95990 81020)"
+          title="WhatsApp Direct (+91 95990 81020) • 24/7 Fast Inquiry">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <!-- Menu Toggle Button -->
+        <button type="button" class="apple-nav-circle-btn" id="apple-mobile-menu-btn"
+          aria-label="Toggle Navigation Menu" title="Menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+  <div class="apple-mobile-backdrop" id="appleMobileBackdrop"></div>
+
+  <div class="apple-mobile-drawer" id="apple-mobile-drawer">
+    <div class="apple-mobile-drawer-header">
+      <span class="apple-mobile-drawer-tag"><i class="bi bi-hospital"></i> Dr. Smith Quick Menu</span>
+      <button type="button" class="apple-mobile-drawer-close" id="appleMobileDrawerClose" aria-label="Close Navigation Menu">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
+    <div class="apple-mobile-grid">
+      <a href="../../index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-house-door-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Home</span>
+          <span class="apple-mobile-tile-sub">Overview</span>
+        </div>
+      </a>
+      <a href="../../catalogue/index.html" class="apple-mobile-tile active">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-grid-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Catalogue</span>
+          <span class="apple-mobile-tile-sub">50+ Categories</span>
+        </div>
+      </a>
+      <a href="../../turnkey-projects/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-hospital-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Turnkey Setup</span>
+          <span class="apple-mobile-tile-sub">50–500 Beds</span>
+        </div>
+      </a>
+      <a href="../../catalogue/modular-ot/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-activity"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Modular OT</span>
+          <span class="apple-mobile-tile-sub">Cleanrooms</span>
+        </div>
+      </a>
+      <a href="../../about-us/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-shield-check"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">About Us</span>
+          <span class="apple-mobile-tile-sub">Heritage</span>
+        </div>
+      </a>
+      <a href="../../contact-form/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-envelope-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Contact</span>
+          <span class="apple-mobile-tile-sub">Global Offices</span>
+        </div>
+      </a>
+    </div>
+    
+    <div class="apple-mobile-cta-box">
+      <button type="button" class="apple-mobile-btn-consultation" onclick="openAppleDrawer('Healthcare Goods &amp; Supplies Consultation');">
+        <i class="bi bi-building-check me-2"></i> Request Project Consultation <i class="bi bi-arrow-right ms-auto"></i>
+      </button>
+
+      <div class="apple-mobile-contact-grid">
+        <a href="tel:18008917466" class="apple-mobile-contact-pill apple-mobile-pill-tel">
+          <i class="bi bi-telephone-fill"></i>
+          <span>1800 891 7466<small>National Toll-Free</small></span>
+        </a>
+        <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20healthcare%20goods%20and%20supplies." target="_blank" rel="noopener noreferrer" class="apple-mobile-contact-pill apple-mobile-pill-wa">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>WhatsApp Desk<small>24/7 Fast Inquiry</small></span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="catalogue-hero catalogue-hero--compact">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="../index.html">Catalogue</a></li>
+                    <li class="breadcrumb-item"><a href="../equipments/index.html">Medical Equipments</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Healthcare Goods</li>
+                </ol>
+            </nav>
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <span class="catalogue-badge">Clinical Consumables, Rehabilitation &amp; Diagnostic Goods</span>
+                    <h1 class="catalogue-title">Healthcare Goods &amp; Clinical Supplies</h1>
+                    <p class="catalogue-subtitle">Comprehensive institutional range of physiotherapy equipment, general surgical goods, laboratory diagnostics, hospital folding privacy screens, stainless surgical scrub sinks, and medical simulation mannequins.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="catalogue-section">
+        <div class="container">
+            <p class="catalogue-count">Showing <strong>8</strong> products</p>
+
+            <div class="category-search-wrapper mb-4 max-w-500">
+                <div class="input-group">
+                    <span class="input-group-text bg-white border-end-0"><i class="bi bi-search text-muted"></i></span>
+                    <input type="text" id="categoryProductSearch" class="form-control border-start-0 ps-0" placeholder="Filter healthcare goods..." aria-label="Filter products">
+                </div>
+            </div>
+            <script src="../../assets/js/catalogue-filters.js?v=1.0"></script>
+
+            <div class="row g-4" id="products-grid">
+
+                <!-- Product 1 -->
+                <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="physiotherapy & rehabilitation goods swm 11141 tens ultrasound" data-badge="physiotherapy">
+                    <article class="catalogue-card">
+                        <div class="catalogue-card__image catalogue-card__image--photo">
+                            <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Physiotherapy Goods on Instagram" title="View on Instagram">
+                                <img src="dr-smith-physiotherapy-rehabilitation-goods.png" alt="Physiotherapy Goods SWM 11141" loading="lazy" decoding="async">
+                            </a>
+                        </div>
+                        <span class="catalogue-card__badge">Physiotherapy</span>
+                        <div class="catalogue-card__body">
+                            <span class="catalogue-card__category">Rehabilitation &bull; SWM 11141</span>
+                            <h3>Physiotherapy &amp; Rehabilitation Goods</h3>
+                            <p>Comprehensive physical therapy department package including combination TENS &amp; IFT electrotherapy units, therapeutic ultrasound, traction tables, and exercise therapy gear.</p>
+                            <ul class="catalogue-card__details">
+                                <li>Multi-channel digital TENS, IFT, and Russian stimulation current modes</li>
+                                <li>Therapeutic dual-frequency (1MHz / 3MHz) ultrasound therapy with watertight probe</li>
+                                <li>Motorized cervical and lumbar traction machine with patient safety release</li>
+                            </ul>
+                            <a class="catalogue-card__link" href="../../contact-form/index.html?product=Physiotherapy%20%26%20Rehabilitation%20Goods">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="general hospital & surgical consumable goods swm 11142" data-badge="surgical goods">
+                    <article class="catalogue-card">
+                        <div class="catalogue-card__image catalogue-card__image--photo">
+                            <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View General Surgical Goods on Instagram" title="View on Instagram">
+                                <img src="dr-smith-general-hospital-surgical-goods.png" alt="General Hospital &amp; Surgical Goods SWM 11142" loading="lazy" decoding="async">
+                            </a>
+                        </div>
+                        <span class="catalogue-card__badge">Surgical Goods</span>
+                        <div class="catalogue-card__body">
+                            <span class="catalogue-card__category">Ward &amp; OT Supplies &bull; SWM 11142</span>
+                            <h3>General Hospital &amp; Surgical Goods</h3>
+                            <p>Bulk clinical disposable essentials including sterile surgical drapes, sutures, gauze rolls, IV cannulas, Foley catheters, and personal protective equipment.</p>
+                            <ul class="catalogue-card__details">
+                                <li>Sterile reinforced SMS non-woven surgical gowns and theatre drapes</li>
+                                <li>High-grade non-toxic PVC endotracheal tubes and suction catheters</li>
+                                <li>Certified ISO &amp; CE marked medical consumables for wholesale procurement</li>
+                            </ul>
+                            <a class="catalogue-card__link" href="../../contact-form/index.html?product=General%20Hospital%20%26%20Surgical%20Goods">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="lab diagnostics scientific laboratory goods swm 11108" data-badge="scientific lab">
+                    <article class="catalogue-card">
+                        <div class="catalogue-card__image catalogue-card__image--photo">
+                            <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Lab Scientific Goods on Instagram" title="View on Instagram">
+                                <img src="dr-smith-lab-diagnostics-scientific-goods.png" alt="Lab Diagnostics &amp; Scientific Goods SWM 11108" loading="lazy" decoding="async">
+                            </a>
+                        </div>
+                        <span class="catalogue-card__badge">Scientific Lab</span>
+                        <div class="catalogue-card__body">
+                            <span class="catalogue-card__category">Pathology &bull; SWM 11108</span>
+                            <h3>Lab Diagnostics &amp; Scientific Goods</h3>
+                            <p>Clinical laboratory instrumentation including binocular medical microscopes, digital centrifuges, micropipettes, incubator ovens, and hematology consumables.</p>
+                            <ul class="catalogue-card__details">
+                                <li>High-precision digital clinical centrifuge with brushless induction motor</li>
+                                <li>Binocular research microscope with plan-achromatic objectives and LED illumination</li>
+                                <li>Calibrated variable volume micropipettes with autoclavable tip ejectors</li>
+                            </ul>
+                            <a class="catalogue-card__link" href="../../contact-form/index.html?product=Lab%20Diagnostics%20%26%20Scientific%20Goods">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="hospital ward bedside folding privacy screen 4-fold 3-fold" data-badge="ward privacy screen">
+                    <article class="catalogue-card">
+                        <div class="catalogue-card__image catalogue-card__image--photo">
+                            <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Hospital Ward Folding Privacy Screen on Instagram" title="View on Instagram">
+                                <img src="dr-smith-ward-bedside-folding-privacy-screen.png" alt="Hospital Ward Folding Privacy Screen" loading="lazy" decoding="async">
+                            </a>
+                        </div>
+                        <span class="catalogue-card__badge">Ward Privacy Screen</span>
+                        <div class="catalogue-card__body">
+                            <span class="catalogue-card__category">Ward Infrastructure</span>
+                            <h3>Hospital Ward Bedside Privacy Screen (4-Fold)</h3>
+                            <p>Sturdy tubular steel 4-panel folding ward partition screen mounted on 50mm smooth castors with washable flame-retardant curtains.</p>
+                            <ul class="catalogue-card__details">
+                                <li>4-fold articulating frames folding flat for compact storage</li>
+                                <li>Epoxy powder-coated tubular CRCA steel frame or stainless steel option</li>
+                                <li>Supplied with washable hospital-grade anti-microbial green/blue curtains</li>
+                            </ul>
+                            <a class="catalogue-card__link" href="../../contact-form/index.html?product=Hospital%20Ward%20Bedside%20Privacy%20Screen">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="stainless steel surgical scrub station aisi 304 sensor" data-badge="scrub station">
+                    <article class="catalogue-card">
+                        <div class="catalogue-card__image catalogue-card__image--photo">
+                            <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Surgical Scrub Station on Instagram" title="View on Instagram">
+                                <img src="dr-smith-ss304-hospital-scrub-station.png" alt="Stainless Steel Surgical Scrub Station" loading="lazy" decoding="async">
+                            </a>
+                        </div>
+                        <span class="catalogue-card__badge">Scrub Station</span>
+                        <div class="catalogue-card__body">
+                            <span class="catalogue-card__category">OT Hygiene &amp; Cleanroom</span>
+                            <h3>Stainless Steel Hospital Scrub Station</h3>
+                            <p>Hygienic surgical scrub sink manufactured from heavy-gauge AISI 304 stainless steel with automated infrared optical sensor or knee-paddle water control.</p>
+                            <ul class="catalogue-card__details">
+                                <li>Available in single, double, and triple-bay modular surgical scrub stations</li>
+                                <li>Deep sloped basin preventing water splashing with thermostatic mixing valves</li>
+                                <li>Automated hands-free infrared sensor or knee-operated soap and water dispensers</li>
+                            </ul>
+                            <a class="catalogue-card__link" href="../../contact-form/index.html?product=Stainless%20Steel%20Hospital%20Scrub%20Station">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="medical simulation mannequins nursing training dummies swm 11143" data-badge="clinical simulation">
+                    <article class="catalogue-card">
+                        <div class="catalogue-card__image catalogue-card__image--photo">
+                            <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Simulation Mannequins on Instagram" title="View on Instagram">
+                                <img src="dr-smith-medical-simulation-mannequins.png" alt="Medical Simulation Mannequins SWM 11143" loading="lazy" decoding="async">
+                            </a>
+                        </div>
+                        <span class="catalogue-card__badge">Clinical Simulation</span>
+                        <div class="catalogue-card__body">
+                            <span class="catalogue-card__category">Medical Education &bull; SWM 11143</span>
+                            <h3>Medical Simulation Mannequins &amp; Training Dummies</h3>
+                            <p>Full-body clinical training mannequins for nursing colleges, CPR resuscitation training, venipuncture IV insertion, and obstetric delivery simulation.</p>
+                            <ul class="catalogue-card__details">
+                                <li>Full-articulation realistic PVC body simulating adult, child, and infant anatomy</li>
+                                <li>CPR feedback monitor showing compression depth, rate, and lung ventilation volume</li>
+                                <li>Exchangeable modules for catheterization, tracheostomy, and intramuscular injection</li>
+                            </ul>
+                            <a class="catalogue-card__link" href="../../contact-form/index.html?product=Medical%20Simulation%20Mannequins%20%26%20Training%20Dummies">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="diagnostic ent headlight & otoscope ophthalmoscope set" data-badge="ent diagnostics">
+                    <article class="catalogue-card">
+                        <div class="catalogue-card__image catalogue-card__image--photo">
+                            <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Diagnostic ENT Headlight on Instagram" title="View on Instagram">
+                                <img src="dr-smith-diagnostic-ent-headlight-otoscope.png" alt="Diagnostic ENT Headlight &amp; Otoscope Set" loading="lazy" decoding="async">
+                            </a>
+                        </div>
+                        <span class="catalogue-card__badge">ENT Diagnostics</span>
+                        <div class="catalogue-card__body">
+                            <span class="catalogue-card__category">Diagnostic Examination</span>
+                            <h3>Diagnostic ENT Headlight &amp; Otoscope Set</h3>
+                            <p>High-luminosity surgical LED wireless headlight combined with fiberoptic diagnostic otoscope and direct ophthalmoscope kit for OPD examination.</p>
+                            <ul class="catalogue-card__details">
+                                <li>Wireless rechargeable LED headlight delivering >50,000 Lux spot brightness</li>
+                                <li>Fiberoptic cold light transmission with 3x magnifying swiveling lens</li>
+                                <li>Direct ophthalmoscope with 18 corrective lenses (-20D to +20D)</li>
+                            </ul>
+                            <a class="catalogue-card__link" href="../../contact-form/index.html?product=Diagnostic%20ENT%20Headlight%20%26%20Otoscope%20Set">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="ophthalmic slit lamp & vision testing diagnostic goods" data-badge="ophthalmology">
+                    <article class="catalogue-card">
+                        <div class="catalogue-card__image catalogue-card__image--photo">
+                            <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Ophthalmic Slit Lamp on Instagram" title="View on Instagram">
+                                <img src="dr-smith-ophthalmic-slit-lamp-apparatus.png" alt="Ophthalmic Slit Lamp Diagnostic Goods" loading="lazy" decoding="async">
+                            </a>
+                        </div>
+                        <span class="catalogue-card__badge">Ophthalmology</span>
+                        <div class="catalogue-card__body">
+                            <span class="catalogue-card__category">Eye Clinic Diagnostics</span>
+                            <h3>Ophthalmic Slit Lamp &amp; Vision Testing Goods</h3>
+                            <p>Stereomicroscopic slit lamp examination apparatus with multiple magnification steps, high-definition digital imaging beam splitter, and motorized table.</p>
+                            <ul class="catalogue-card__details">
+                                <li>Convergence stereoscopic microscope with 10x, 16x, and 25x magnification</li>
+                                <li>Slit width continuously adjustable from 0mm to 14mm with cobalt blue &amp; red-free filters</li>
+                                <li>Supplied with motorized smooth elevation instrument table and chin-rest assembly</li>
+                            </ul>
+                            <a class="catalogue-card__link" href="../../contact-form/index.html?product=Ophthalmic%20Slit%20Lamp%20%26%20Vision%20Testing%20Goods">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="catalogue-section">
+        <div class="container">
+            <div class="catalogue-cta d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4">
+                <div>
+                    <h2>Institutional Procurement &amp; Medical College Setup?</h2>
+                    <p>Dr. Smith equips medical colleges, nursing simulation laboratories, hospital wards, and diagnostic pathology facilities with bulk wholesale supplies.</p>
+                </div>
+                <a class="catalogue-button flex-shrink-0" href="../../contact-form/index.html">
                     Request Institutional Rate Contract <i class="bi bi-arrow-right"></i>
-</a>
-</div>
-</div>
-</section>
-<footer class="apple-globalfooter">
-<div class="apple-footer-inner">
-<!-- Footer Brand Header & Fast Back-To-Top -->
-<div class="apple-footer-brand-header">
-<div class="apple-footer-brand-left">
-<img alt="Dr. Smith Emblem Logo" class="apple-footer-brand-logo" decoding="async" height="32" loading="lazy" src="../../assets/img/logo.png?v=11.0" width="32"/>
-<div>
-<div class="apple-footer-brand-title">Dr. Smith</div>
-<span class="apple-footer-brand-subtitle">HOSPITAL SOLUTIONS</span>
-</div>
-</div>
-<a aria-label="Scroll back to top" class="apple-footer-backtotop-btn" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">
-<span>Top</span> <i class="bi bi-chevron-up"></i>
-</a>
-</div>
-<!-- Notes / Footnotes -->
-<div class="apple-footer-notes">
-<ol>
-<li>Medical equipment specifications, turnkey timelines, and compliance standards (ISO 9001:2015, ISO
+                </a>
+            </div>
+        </div>
+    </section>
+  </main>
+
+  <footer class="apple-globalfooter">
+    <div class="apple-footer-inner">
+
+      <!-- Footer Brand Header & Fast Back-To-Top -->
+      <div class="apple-footer-brand-header">
+        <div class="apple-footer-brand-left">
+          <img src="../../assets/img/logo.png?v=11.0" alt="Dr. Smith Emblem Logo" class="apple-footer-brand-logo" width="32"
+            height="32" decoding="async" loading="lazy">
+          <div>
+            <div class="apple-footer-brand-title">Dr. Smith</div>
+            <span class="apple-footer-brand-subtitle">HOSPITAL SOLUTIONS</span>
+          </div>
+        </div>
+        <a href="#top" class="apple-footer-backtotop-btn"
+          onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;" aria-label="Scroll back to top">
+          <span>Top</span> <i class="bi bi-chevron-up"></i>
+        </a>
+      </div>
+
+      <!-- Notes / Footnotes -->
+      <div class="apple-footer-notes">
+        <ol>
+          <li>Medical equipment specifications, turnkey timelines, and compliance standards (ISO 9001:2015, ISO
             13485:2016, CE, FDA) depend on specific project scopes and customized clinical configurations.</li>
-<li>Turnkey hospital infrastructure engineering timelines depend on architectural blueprints, local regulatory
+          <li>Turnkey hospital infrastructure engineering timelines depend on architectural blueprints, local regulatory
             clearances, and civil site readiness.</li>
-<li>Principal Global Head Office located at Kapashera Border, New Delhi; Manufacturing Plant at METL, Jhajjar,
+          <li>Principal Global Head Office located at Kapashera Border, New Delhi; Manufacturing Plant at METL, Jhajjar,
             Haryana; Overseas Head Office at SAIF Zone, Sharjah, UAE.</li>
-</ol>
-</div>
-<!-- Directory Columns (Mobile Collapsible Accordions) -->
-<div class="apple-footer-directory">
-<!-- Col 1: Turnkey Solutions (Active by default on mobile) -->
-<div class="apple-footer-col active">
-<button aria-expanded="true" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Turnkey Solutions</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../../turnkey-projects/index.html">500-Bedded Hospital Setup</a></li>
-<li><a href="../../catalogue/modular-ot/index.html">Modular OT Construction</a></li>
-<li><a href="../../turnkey-projects/index.html">Medical Gas Pipeline (MGPS)</a></li>
-<li><a href="../../turnkey-projects/index.html">Hospital Architecture &amp; MEP</a></li>
-<li><a href="../../turnkey-projects/index.html">Government &amp; Global Tenders</a></li>
-</ul>
-</div>
-<!-- Col 2: Group Ecosystem -->
-<div class="apple-footer-col">
-<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Group Ecosystem</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../../about-us/index.html">Dr. Smith Healthcare</a></li>
-<li><a href="../../catalogue/index.html">Surgihub Surgical Devices</a></li>
-<li><a href="../../catalogue/index.html">Surgical Mall of India (SMPL)</a></li>
-<li><a href="../../catalogue/index.html">MediAid Patient Care</a></li>
-<li><a href="../../catalogue/index.html">Orbit Mahajan Diagnostics</a></li>
-</ul>
-</div>
-<!-- Col 3: Product Catalogue -->
-<div class="apple-footer-col">
-<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Product Catalogue</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../../catalogue/beds/index.html">Hospital &amp; ICU Beds</a></li>
-<li><a href="../../catalogue/modular-ot/index.html">Modular OT Suites</a></li>
-<li><a href="../../catalogue/patient-monitor/index.html">Critical Care &amp; Monitors</a></li>
-<li><a href="../../catalogue/ventilators/index.html">ICU Ventilators</a></li>
-<li><a href="../../catalogue/index.html">Full 50+ Categories</a></li>
-</ul>
-</div>
-<!-- Col 4: Global Directory -->
-<div class="apple-footer-col">
-<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Global Presence</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../../contact-form/index.html">New Delhi Head Office (India)</a></li>
-<li><a href="../../contact-form/index.html">Jhajjar Manufacturing Plant</a></li>
-<li><a href="../../contact-form/index.html">Sharjah Overseas Office (UAE)</a></li>
-<li><a href="../../contact-form/index.html">Kenya &amp; Nigeria Desks</a></li>
-<li><a href="../../contact-form/index.html">Patna, Kolkata, Varanasi Marts</a></li>
-</ul>
-</div>
-<!-- Col 5: Compliance & Values -->
-<div class="apple-footer-col">
-<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Corporate &amp; Quality</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../../about-us/index.html">About 60+ Years Heritage</a></li>
-<li><a href="../../mission-values/index.html">Mission &amp; Values</a></li>
-<li><a href="../../about-us/index.html">Executive Leadership</a></li>
-<li><a href="../../privacy.html">Privacy Policy</a></li>
-<li><a href="../../terms.html">Terms of Service</a></li>
-</ul>
-</div>
-</div>
-<!-- Footer Bottom Legal, Direct Connect & Country Positioned in Correct Order -->
-<div class="apple-footer-bottom">
-<div class="apple-footer-top-row">
-<div class="apple-footer-country">
-<a class="apple-footer-country-badge" href="../../contact-form/index.html" title="Region &amp; Language">
-<i class="bi bi-globe me-1"></i> India (English)
+        </ol>
+      </div>
+
+      <!-- Directory Columns (Mobile Collapsible Accordions) -->
+      <div class="apple-footer-directory">
+
+        <!-- Col 1: Turnkey Solutions (Active by default on mobile) -->
+        <div class="apple-footer-col active">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="true">
+            <h4 class="apple-footer-col-title">Turnkey Solutions</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../../turnkey-projects/index.html">500-Bedded Hospital Setup</a></li>
+            <li><a href="../../catalogue/modular-ot/index.html">Modular OT Construction</a></li>
+            <li><a href="../../turnkey-projects/index.html">Medical Gas Pipeline (MGPS)</a></li>
+            <li><a href="../../turnkey-projects/index.html">Hospital Architecture &amp; MEP</a></li>
+            <li><a href="../../turnkey-projects/index.html">Government &amp; Global Tenders</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 2: Group Ecosystem -->
+        <div class="apple-footer-col">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Group Ecosystem</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../../about-us/index.html">Dr. Smith Healthcare</a></li>
+            <li><a href="../../catalogue/index.html">Surgihub Surgical Devices</a></li>
+            <li><a href="../../catalogue/index.html">Surgical Mall of India (SMPL)</a></li>
+            <li><a href="../../catalogue/index.html">MediAid Patient Care</a></li>
+            <li><a href="../../catalogue/index.html">Orbit Mahajan Diagnostics</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Product Catalogue -->
+        <div class="apple-footer-col">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Product Catalogue</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../../catalogue/beds/index.html">Hospital &amp; ICU Beds</a></li>
+            <li><a href="../../catalogue/modular-ot/index.html">Modular OT Suites</a></li>
+            <li><a href="../../catalogue/patient-monitor/index.html">Critical Care &amp; Monitors</a></li>
+            <li><a href="../../catalogue/ventilators/index.html">ICU Ventilators</a></li>
+            <li><a href="../../catalogue/index.html">Full 50+ Categories</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Global Directory -->
+        <div class="apple-footer-col">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Global Presence</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../../contact-form/index.html">New Delhi Head Office (India)</a></li>
+            <li><a href="../../contact-form/index.html">Jhajjar Manufacturing Plant</a></li>
+            <li><a href="../../contact-form/index.html">Sharjah Overseas Office (UAE)</a></li>
+            <li><a href="../../contact-form/index.html">Kenya &amp; Nigeria Desks</a></li>
+            <li><a href="../../contact-form/index.html">Patna, Kolkata, Varanasi Marts</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Compliance & Values -->
+        <div class="apple-footer-col">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Corporate &amp; Quality</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../../about-us/index.html">About 60+ Years Heritage</a></li>
+            <li><a href="../../mission-values/index.html">Mission &amp; Values</a></li>
+            <li><a href="../../about-us/index.html">Executive Leadership</a></li>
+            <li><a href="../../privacy.html">Privacy Policy</a></li>
+            <li><a href="../../terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Legal, Direct Connect & Country Positioned in Correct Order -->
+      <div class="apple-footer-bottom">
+        <div class="apple-footer-top-row">
+          <div class="apple-footer-country">
+            <a href="../../contact-form/index.html" class="apple-footer-country-badge" title="Region &amp; Language">
+              <i class="bi bi-globe me-1"></i> India (English)
             </a>
-</div>
-<div class="apple-footer-quicklinks">
-<a class="apple-footer-badge-link" href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." rel="noopener noreferrer" target="_blank" title="Direct WhatsApp Assistance (+91 95990 81020)">
-<i class="fa-brands fa-whatsapp text-success me-1"></i> WhatsApp Desk
+          </div>
+          <div class="apple-footer-quicklinks">
+            <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." target="_blank" rel="noopener noreferrer"
+              class="apple-footer-badge-link" title="Direct WhatsApp Assistance (+91 95990 81020)">
+              <i class="fa-brands fa-whatsapp text-success me-1"></i> WhatsApp Desk
             </a>
-</div>
-</div>
-<div class="apple-footer-divider"></div>
-<div class="apple-footer-meta-row">
-<div class="apple-footer-legal-links">
-<a href="../../privacy.html">Privacy Policy</a>
-<span class="legal-dot">•</span>
-<a href="../../terms.html">Terms of Use</a>
-<span class="legal-dot">•</span>
-<a href="../../contact-form/index.html">Sales Policy</a>
-<span class="legal-dot">•</span>
-<a href="../../contact-form/index.html">Legal</a>
-<span class="legal-dot">•</span>
-<a href="../../catalogue/index.html">Site Map</a>
-</div>
-<div class="apple-footer-copyright">
-            Copyright © 2026 Dr. Smith Healthcare Solutions (Surgical Wholesale Mart Pvt. Ltd.). All rights
+          </div>
+        </div>
+
+        <div class="apple-footer-divider"></div>
+
+        <div class="apple-footer-meta-row">
+          <div class="apple-footer-legal-links">
+            <a href="../../privacy.html">Privacy Policy</a>
+            <span class="legal-dot">•</span>
+            <a href="../../terms.html">Terms of Use</a>
+            <span class="legal-dot">•</span>
+            <a href="../../contact-form/index.html">Sales Policy</a>
+            <span class="legal-dot">•</span>
+            <a href="../../contact-form/index.html">Legal</a>
+            <span class="legal-dot">•</span>
+            <a href="../../catalogue/index.html">Site Map</a>
+          </div>
+          <div class="apple-footer-copyright">
+            Copyright &copy; 2026 Dr. Smith Healthcare Solutions (Surgical Wholesale Mart Pvt. Ltd.). All rights
             reserved. An ISO 9001:2015, ISO 13485:2016, CE &amp; FDA Certified Company.
           </div>
-</div>
-</div>
-</div>
-</footer>
-<!-- Drawer Modal -->
-<div class="apple-drawer-overlay" id="apple-drawer-overlay" onclick="if(event.target===this) closeAppleDrawer();">
-<div class="apple-drawer-content">
-<button aria-label="Close" class="apple-drawer-close" onclick="closeAppleDrawer();" type="button">
-<i class="bi bi-x-lg"></i>
-</button>
-<div class="text-center mb-4">
-<span class="apple-shelf-badge">Dr. Smith Turnkey &amp; Procurement Desk</span>
-<h3 class="fs-4 fw-bold mt-2">Request Project Consultation</h3>
-<p class="fs-small text-secondary m-0">Speak directly with our healthcare architects &amp; hospital engineering experts.</p>
-</div>
-<form class="apple-drawer-form" onsubmit="handleAppleQuoteSubmit(event);">
-<div class="form-group">
-<label>Scope of Interest</label>
-<input class="apple-drawer-input-readonly" id="drawer-product-name" readonly="" type="text" value="Healthcare Goods &amp; Clinical Supplies"/>
-</div>
-<div class="row g-2">
-<div class="col-md-6 form-group">
-<label>Your Full Name *</label>
-<input placeholder="Dr. / Mr. / Ms." required="" type="text"/>
-</div>
-<div class="col-md-6 form-group">
-<label>Hospital / Institution Name *</label>
-<input placeholder="Hospital / Organization Name" required="" type="text"/>
-</div>
-</div>
-<div class="row g-2">
-<div class="col-md-6 form-group">
-<label>Official Email *</label>
-<input placeholder="name@hospital.com" required="" type="email"/>
-</div>
-<div class="col-md-6 form-group">
-<label>Phone / WhatsApp *</label>
-<input placeholder="+91 99999 99999" required="" type="tel"/>
-</div>
-</div>
-<div class="form-group">
-<label>Project Scope &amp; Requirements</label>
-<textarea placeholder="Specify turnkey bed capacity, modular OT requirement, MGPS pipeline, or equipment procurement details..." rows="3"></textarea>
-</div>
-<button class="apple-btn-pill w-100 mt-2 py-3" type="submit">Submit Consultation Request</button>
-</form>
-</div>
-</div>
-<a aria-label="Scroll to top" class="scroll-top d-flex align-items-center justify-content-center" href="#" id="scroll-top"><i class="bi bi-arrow-up-short"></i></a>
-<script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="../../assets/js/main.js?v=94.0"></script>
-<script src="../../assets/js/global-search.js?v=42.0"></script>
-</div></body>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Drawer Modal -->
+  <div class="apple-drawer-overlay" id="apple-drawer-overlay" onclick="if(event.target===this) closeAppleDrawer();">
+    <div class="apple-drawer-content">
+      <button type="button" class="apple-drawer-close" onclick="closeAppleDrawer();" aria-label="Close">
+        <i class="bi bi-x-lg"></i>
+      </button>
+      
+      <div class="text-center mb-4">
+        <span class="apple-shelf-badge">Dr. Smith Turnkey &amp; Procurement Desk</span>
+        <h3 class="fs-4 fw-bold mt-2">Request Project Consultation</h3>
+        <p class="fs-small text-secondary m-0">Speak directly with our healthcare architects &amp; hospital engineering experts.</p>
+      </div>
+
+      <form class="apple-drawer-form" onsubmit="handleAppleQuoteSubmit(event);">
+        <div class="form-group">
+          <label>Scope of Interest</label>
+          <input type="text" id="drawer-product-name" value="Healthcare Goods &amp; Clinical Supplies" readonly class="apple-drawer-input-readonly">
+        </div>
+
+        <div class="row g-2">
+          <div class="col-md-6 form-group">
+            <label>Your Full Name *</label>
+            <input type="text" placeholder="Dr. / Mr. / Ms." required>
+          </div>
+          <div class="col-md-6 form-group">
+            <label>Hospital / Institution Name *</label>
+            <input type="text" placeholder="Hospital / Organization Name" required>
+          </div>
+        </div>
+
+        <div class="row g-2">
+          <div class="col-md-6 form-group">
+            <label>Official Email *</label>
+            <input type="email" placeholder="name@hospital.com" required>
+          </div>
+          <div class="col-md-6 form-group">
+            <label>Phone / WhatsApp *</label>
+            <input type="tel" placeholder="+91 99999 99999" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Project Scope &amp; Requirements</label>
+          <textarea rows="3" placeholder="Specify turnkey bed capacity, modular OT requirement, MGPS pipeline, or equipment procurement details..."></textarea>
+        </div>
+
+        <button type="submit" class="apple-btn-pill w-100 mt-2 py-3">Submit Consultation Request</button>
+      </form>
+    </div>
+  </div>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to top"><i class="bi bi-arrow-up-short"></i></a>
+  <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../../assets/js/main.js?v=94.0"></script>
+  <script src="../../assets/js/global-search.js?v=42.0"></script>
+</body>
+
 </html>

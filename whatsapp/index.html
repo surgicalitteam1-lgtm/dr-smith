@@ -1,480 +1,610 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="#030712" name="theme-color"/>
-<title>WhatsApp Direct Desks | Dr. Smith Healthcare</title>
-<meta content="Connect directly with Dr. Smith Healthcare WhatsApp desks for Indian hospital supplies (4 departmental desks) and overseas export inquiries (Dubai desk)." name="description"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-<link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
-<link href="../assets/css/apple-theme.css?v=106.0" rel="stylesheet"/>
-<link href="../assets/img/favicon.png" rel="icon" type="image/png"/>
-<link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon"/>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="theme-color" content="#030712">
+  <title>WhatsApp Direct Desks | Dr. Smith Healthcare</title>
+  <meta name="description" content="Connect directly with Dr. Smith Healthcare WhatsApp desks for Indian hospital supplies (4 departmental desks) and overseas export inquiries (Dubai desk).">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="../assets/css/apple-theme.css?v=106.0" rel="stylesheet">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
 </head>
+
 <body class="apple-body">
-<!-- ============================================================
+  <!-- ============================================================
        1. GLOBAL NAVIGATION HEADER
        ============================================================ -->
-<nav aria-label="Global" class="apple-globalnav">
-<div class="apple-globalnav-inner">
-<!-- Brand & Corporate Identity -->
-<a aria-label="Dr. Smith Hospital Solutions" class="apple-nav-brand" href="../index.html">
-<div class="brand-asterisk-icon">
-<img alt="Dr. Smith Emblem Logo" class="apple-nav-logo-img" decoding="async" height="36" loading="eager" src="../assets/img/logo.png?v=11.0" width="36"/>
-</div>
-<div class="apple-nav-brand-text">
-<span class="apple-nav-brand-title">Dr. Smith</span>
-<span class="apple-nav-brand-subtitle">HOSPITAL SOLUTIONS</span>
-</div>
-</a>
-<!-- Navigation Links -->
-<ul class="apple-nav-links"><li class="apple-nav-item"><a class="apple-nav-link" href="../index.html">Home</a></li><li class="apple-nav-item"><a class="apple-nav-link" href="../catalogue/index.html">Products</a></li><li class="apple-nav-item"><a class="apple-nav-link" href="../about-us/index.html">About us</a></li><li class="apple-nav-item"><a class="apple-nav-link" href="../turnkey-projects/index.html">turnkey project</a></li><li class="apple-nav-item"><a class="apple-nav-link" href="../contact-form/index.html">Contact Us</a></li></ul><!-- Action Utilities -->
-<div class="apple-nav-actions">
-<!-- Contact / Mail Form Button -->
-<a aria-label="Send Enquiry &amp; Contact Us" class="apple-nav-circle-btn apple-nav-circle-mail" href="../contact-form/index.html" title="Send Enquiry / Request Quotation (BOM &amp; Consultation)">
-<i class="fa-solid fa-envelope"></i>
-</a>
-<!-- WhatsApp Circle Button -->
-<a aria-label="WhatsApp Directory" class="apple-nav-circle-btn apple-nav-circle-whatsapp wa-direct-link" href="#waDesks" title="WhatsApp Directory Desks">
-<i class="fa-brands fa-whatsapp"></i>
-</a>
-<!-- Menu Toggle Button -->
-<button aria-label="Toggle Navigation Menu" class="apple-nav-circle-btn" id="apple-mobile-menu-btn" title="Menu" type="button">
-<i class="bi bi-list"></i>
-</button>
-</div>
-</div>
-</nav>
-<!-- Mobile Menu Drawer Backdrop Overlay -->
-<div class="apple-mobile-backdrop" id="appleMobileBackdrop"></div>
-<!-- Mobile Menu Drawer Overlay -->
-<div class="apple-mobile-drawer" id="apple-mobile-drawer">
-<div class="apple-mobile-drawer-header">
-<span class="apple-mobile-drawer-tag"><i class="bi bi-hospital"></i> Dr. Smith Quick Menu</span>
-<button aria-label="Close Navigation Menu" class="apple-mobile-drawer-close" id="appleMobileDrawerClose" type="button">
-<i class="bi bi-x-lg"></i>
-</button>
-</div>
-<div class="apple-mobile-grid"><a class="apple-mobile-tile" href="../index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-house-door-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">Home</span><span class="apple-mobile-tile-sub">Overview</span></div></a><a class="apple-mobile-tile" href="../catalogue/index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-grid-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">Products</span><span class="apple-mobile-tile-sub">Browse categories</span></div></a><a class="apple-mobile-tile" href="../about-us/index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-shield-check"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">About us</span><span class="apple-mobile-tile-sub">Our story</span></div></a><a class="apple-mobile-tile" href="../turnkey-projects/index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-hospital-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">turnkey project</span><span class="apple-mobile-tile-sub">Setup solutions</span></div></a><a class="apple-mobile-tile" href="../contact-form/index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-envelope-paper-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">Contact Us</span><span class="apple-mobile-tile-sub">Get in touch</span></div></a></div>
-</div>
-<div class="apple-mobile-cta-box">
-<a class="apple-mobile-btn-consultation" href="../contact-form/index.html">
-<i class="bi bi-building-check me-2"></i> Request Project Consultation <i class="bi bi-arrow-right ms-auto"></i>
-</a>
-<div class="apple-mobile-contact-grid">
-<a class="apple-mobile-contact-pill apple-mobile-pill-tel" href="tel:18008917466">
-<i class="bi bi-telephone-fill"></i>
-<span>1800 891 7466<small>National Toll-Free</small></span>
-</a>
-<a class="apple-mobile-contact-pill apple-mobile-pill-wa wa-direct-link" href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." rel="noopener noreferrer" target="_blank">
-<i class="fa-brands fa-whatsapp"></i>
-<span>WhatsApp Desk<small>24/7 Fast Inquiry</small></span>
-</a>
-</div>
-</div>
-<!-- Hero Section -->
-<section class="subpage-hero-section" id="waDesks">
-<div class="container">
-<span class="subpage-hero-badge"><i class="fa-brands fa-whatsapp text-success"></i> Official 24/7 WhatsApp Direct Desks</span>
-<h1 class="subpage-hero-title">Connect with Dr. Smith Specialists</h1>
-<p class="subpage-hero-desc">Choose your inquiry region and department to connect instantly with our biomedical engineers, turnkey planners, and procurement directors.</p>
-<!-- Segmented Region Switcher -->
-<div class="wa-switcher-wrap mt-4">
-<button class="wa-switcher-pill active" id="tabBtnIndia" onclick="switchWaRegion('india')" type="button">
-<span class="wa-flag-icon">🇮🇳</span>
-<span class="wa-pill-text">Indian Supplier Desks</span>
-<span class="wa-pill-counter">4 Desks</span>
-</button>
-<button class="wa-switcher-pill" id="tabBtnDubai" onclick="switchWaRegion('dubai')" type="button">
-<span class="wa-flag-icon">🇦🇪</span>
-<span class="wa-pill-text">Overseas Desk (Dubai)</span>
-<span class="wa-pill-counter">1 Line</span>
-</button>
-</div>
-</div>
-</section>
-<!-- WhatsApp Directory Content Section -->
-<section class="py-5" style="background: #030712;">
-<div class="container">
-<!-- ==========================================
+  <nav class="apple-globalnav" aria-label="Global">
+    <div class="apple-globalnav-inner">
+      
+      <!-- Brand & Corporate Identity -->
+      <a href="../index.html" class="apple-nav-brand" aria-label="Dr. Smith Hospital Solutions">
+        <div class="brand-asterisk-icon">
+          <img src="../assets/img/logo.png?v=11.0" alt="Dr. Smith Emblem Logo" class="apple-nav-logo-img" width="36" height="36" decoding="async" loading="eager">
+        </div>
+        <div class="apple-nav-brand-text">
+          <span class="apple-nav-brand-title">Dr. Smith</span>
+          <span class="apple-nav-brand-subtitle">HOSPITAL SOLUTIONS</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="apple-nav-links">
+        <li class="apple-nav-item">
+          <a href="../index.html" class="apple-nav-link">Home</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../catalogue/index.html" class="apple-nav-link">Products</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../turnkey-projects/index.html" class="apple-nav-link">Turnkey Solutions</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../about-us/index.html" class="apple-nav-link">About Us</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../contact-form/index.html" class="apple-nav-link">Contact</a>
+        </li>
+      </ul>
+
+      <!-- Action Utilities -->
+      <div class="apple-nav-actions">
+        <!-- Contact / Mail Form Button -->
+        <a href="../contact-form/index.html" class="apple-nav-circle-btn apple-nav-circle-mail"
+          aria-label="Send Enquiry &amp; Contact Us" title="Send Enquiry / Request Quotation (BOM &amp; Consultation)">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+
+        <!-- WhatsApp Circle Button -->
+        <a href="#waDesks" class="apple-nav-circle-btn apple-nav-circle-whatsapp wa-direct-link"
+          aria-label="WhatsApp Directory" title="WhatsApp Directory Desks">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <!-- Menu Toggle Button -->
+        <button type="button" class="apple-nav-circle-btn" id="apple-mobile-menu-btn"
+          aria-label="Toggle Navigation Menu" title="Menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Drawer Backdrop Overlay -->
+  <div class="apple-mobile-backdrop" id="appleMobileBackdrop"></div>
+
+  <!-- Mobile Menu Drawer Overlay -->
+  <div class="apple-mobile-drawer" id="apple-mobile-drawer">
+    <div class="apple-mobile-drawer-header">
+      <span class="apple-mobile-drawer-tag"><i class="bi bi-hospital"></i> Dr. Smith Quick Menu</span>
+      <button type="button" class="apple-mobile-drawer-close" id="appleMobileDrawerClose" aria-label="Close Navigation Menu">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
+    <div class="apple-mobile-grid">
+      <a href="../index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-house-door-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Home</span>
+          <span class="apple-mobile-tile-sub">Overview</span>
+        </div>
+      </a>
+      <a href="../catalogue/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-grid-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Catalogue</span>
+          <span class="apple-mobile-tile-sub">50+ Categories</span>
+        </div>
+      </a>
+      <a href="../turnkey-projects/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-hospital-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Turnkey Setup</span>
+          <span class="apple-mobile-tile-sub">50–500 Beds</span>
+        </div>
+      </a>
+      <a href="../catalogue/modular-ot/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-activity"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Modular OT</span>
+          <span class="apple-mobile-tile-sub">Cleanrooms</span>
+        </div>
+      </a>
+      <a href="../about-us/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-shield-check"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">About Us</span>
+          <span class="apple-mobile-tile-sub">Heritage</span>
+        </div>
+      </a>
+      <a href="../contact-form/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-envelope-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Contact</span>
+          <span class="apple-mobile-tile-sub">Global Offices</span>
+        </div>
+      </a>
+    </div>
+    
+    <div class="apple-mobile-cta-box">
+      <a href="../contact-form/index.html" class="apple-mobile-btn-consultation">
+        <i class="bi bi-building-check me-2"></i> Request Project Consultation <i class="bi bi-arrow-right ms-auto"></i>
+      </a>
+
+      <div class="apple-mobile-contact-grid">
+        <a href="tel:18008917466" class="apple-mobile-contact-pill apple-mobile-pill-tel">
+          <i class="bi bi-telephone-fill"></i>
+          <span>1800 891 7466<small>National Toll-Free</small></span>
+        </a>
+        <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." target="_blank" rel="noopener noreferrer" class="apple-mobile-contact-pill apple-mobile-pill-wa wa-direct-link">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>WhatsApp Desk<small>24/7 Fast Inquiry</small></span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="subpage-hero-section" id="waDesks">
+    <div class="container">
+      <span class="subpage-hero-badge"><i class="fa-brands fa-whatsapp text-success"></i> Official 24/7 WhatsApp Direct Desks</span>
+      <h1 class="subpage-hero-title">Connect with Dr. Smith Specialists</h1>
+      <p class="subpage-hero-desc">Choose your inquiry region and department to connect instantly with our biomedical engineers, turnkey planners, and procurement directors.</p>
+
+      <!-- Segmented Region Switcher -->
+      <div class="wa-switcher-wrap mt-4">
+        <button type="button" class="wa-switcher-pill active" id="tabBtnIndia" onclick="switchWaRegion('india')">
+          <span class="wa-flag-icon">🇮🇳</span>
+          <span class="wa-pill-text">Indian Supplier Desks</span>
+          <span class="wa-pill-counter">4 Desks</span>
+        </button>
+        <button type="button" class="wa-switcher-pill" id="tabBtnDubai" onclick="switchWaRegion('dubai')">
+          <span class="wa-flag-icon">🇦🇪</span>
+          <span class="wa-pill-text">Overseas Desk (Dubai)</span>
+          <span class="wa-pill-counter">1 Line</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Directory Content Section -->
+  <section class="py-5" style="background: #030712;">
+    <div class="container">
+      
+      <!-- ==========================================
            TAB PANEL 1: INDIAN SUPPLIER (4 NUMBERS)
            ========================================== -->
-<div class="wa-panel active" id="panelIndia">
-<div class="wa-section-header mb-4">
-<div class="d-flex align-items-center gap-2 mb-1">
-<span class="badge bg-primary-subtle text-info border border-info border-opacity-25 px-3 py-1 rounded-pill small fw-semibold">
-<i class="bi bi-geo-alt-fill me-1"></i> Pan-India Domestic Procurement &amp; Tenders
+      <div id="panelIndia" class="wa-panel active">
+        
+        <div class="wa-section-header mb-4">
+          <div class="d-flex align-items-center gap-2 mb-1">
+            <span class="badge bg-primary-subtle text-info border border-info border-opacity-25 px-3 py-1 rounded-pill small fw-semibold">
+              <i class="bi bi-geo-alt-fill me-1"></i> Pan-India Domestic Procurement &amp; Tenders
             </span>
-<span class="badge bg-success-subtle text-success border border-success border-opacity-25 px-2 py-1 rounded-pill small">
-<i class="bi bi-circle-fill text-success" style="font-size: 7px;"></i> All Lines Active
+            <span class="badge bg-success-subtle text-success border border-success border-opacity-25 px-2 py-1 rounded-pill small">
+              <i class="bi bi-circle-fill text-success" style="font-size: 7px;"></i> All Lines Active
             </span>
-</div>
-<h2 class="h4 text-white fw-bold mb-1">Domestic Department Desks (India)</h2>
-<p class="text-secondary small mb-0">Select the dedicated clinical department for your project requirement to reach the responsible specialist directly.</p>
-</div>
-<div class="row g-4">
-<!-- Desk 1: Turnkey Hospital Setup -->
-<div class="col-lg-6">
-<div class="wa-desk-card">
-<div class="wa-desk-top">
-<div class="wa-desk-icon wa-icon-blue">
-<i class="bi bi-hospital"></i>
-</div>
-<div class="wa-desk-meta">
-<span class="wa-desk-tag">Turnkey Infrastructure</span>
-<h3 class="wa-desk-title">50–500 Bed Turnkey Hospital Setup</h3>
-</div>
-<span class="wa-status-pill"><span class="wa-live-dot"></span> 24/7 Available</span>
-</div>
-<p class="wa-desk-desc">
+          </div>
+          <h2 class="h4 text-white fw-bold mb-1">Domestic Department Desks (India)</h2>
+          <p class="text-secondary small mb-0">Select the dedicated clinical department for your project requirement to reach the responsible specialist directly.</p>
+        </div>
+
+        <div class="row g-4">
+          
+          <!-- Desk 1: Turnkey Hospital Setup -->
+          <div class="col-lg-6">
+            <div class="wa-desk-card">
+              <div class="wa-desk-top">
+                <div class="wa-desk-icon wa-icon-blue">
+                  <i class="bi bi-hospital"></i>
+                </div>
+                <div class="wa-desk-meta">
+                  <span class="wa-desk-tag">Turnkey Infrastructure</span>
+                  <h3 class="wa-desk-title">50–500 Bed Turnkey Hospital Setup</h3>
+                </div>
+                <span class="wa-status-pill"><span class="wa-live-dot"></span> 24/7 Available</span>
+              </div>
+              
+              <p class="wa-desk-desc">
                 NABH/JCI turnkey hospital planning, civil layout &amp; MEP, Modular Operation Theatres (Class 100/10,000 cleanrooms), and Medical Gas Pipeline Systems (MGPS).
               </p>
-<div class="wa-number-badge">
-<i class="fa-brands fa-whatsapp text-success fs-5"></i>
-<div>
-<span class="wa-number-label">Direct WhatsApp Line</span>
-<span class="wa-number-val">+91 95990 81020</span>
-</div>
-</div>
-<div class="wa-card-actions">
-<a class="btn-wa-action btn-wa-chat wa-direct-link" href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Turnkey%20Desk,%20I%20would%20like%20to%20inquire%20about%20Hospital%20Infrastructure%20Setup." rel="noopener noreferrer" target="_blank">
-<i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+
+              <div class="wa-number-badge">
+                <i class="fa-brands fa-whatsapp text-success fs-5"></i>
+                <div>
+                  <span class="wa-number-label">Direct WhatsApp Line</span>
+                  <span class="wa-number-val">+91 95990 81020</span>
+                </div>
+              </div>
+
+              <div class="wa-card-actions">
+                <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Turnkey%20Desk,%20I%20would%20like%20to%20inquire%20about%20Hospital%20Infrastructure%20Setup."
+                  target="_blank" rel="noopener noreferrer" class="btn-wa-action btn-wa-chat wa-direct-link">
+                  <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
                 </a>
-<a class="btn-wa-action btn-wa-call" href="tel:+919599081020">
-<i class="bi bi-telephone-fill"></i> Call Desk
+                <a href="tel:+919599081020" class="btn-wa-action btn-wa-call">
+                  <i class="bi bi-telephone-fill"></i> Call Desk
                 </a>
-</div>
-</div>
-</div>
-<!-- Desk 2: Critical Care & Medical Equipment -->
-<div class="col-lg-6">
-<div class="wa-desk-card">
-<div class="wa-desk-top">
-<div class="wa-desk-icon wa-icon-cyan">
-<i class="bi bi-activity"></i>
-</div>
-<div class="wa-desk-meta">
-<span class="wa-desk-tag">Clinical Equipment</span>
-<h3 class="wa-desk-title">Critical Care &amp; Medical Machinery</h3>
-</div>
-<span class="wa-status-pill"><span class="wa-live-dot"></span> 24/7 Available</span>
-</div>
-<p class="wa-desk-desc">
+              </div>
+            </div>
+          </div>
+
+          <!-- Desk 2: Critical Care & Medical Equipment -->
+          <div class="col-lg-6">
+            <div class="wa-desk-card">
+              <div class="wa-desk-top">
+                <div class="wa-desk-icon wa-icon-cyan">
+                  <i class="bi bi-activity"></i>
+                </div>
+                <div class="wa-desk-meta">
+                  <span class="wa-desk-tag">Clinical Equipment</span>
+                  <h3 class="wa-desk-title">Critical Care &amp; Medical Machinery</h3>
+                </div>
+                <span class="wa-status-pill"><span class="wa-live-dot"></span> 24/7 Available</span>
+              </div>
+              
+              <p class="wa-desk-desc">
                 High-end ICU ventilators, multi-parameter patient monitors, anesthesia workstations, high-frequency C-Arm imaging, AED defibrillators, and electrosurgical cautery machines.
               </p>
-<div class="wa-number-badge">
-<i class="fa-brands fa-whatsapp text-success fs-5"></i>
-<div>
-<span class="wa-number-label">Direct WhatsApp Line</span>
-<span class="wa-number-val">+91 93107 26927</span>
-</div>
-</div>
-<div class="wa-card-actions">
-<a class="btn-wa-action btn-wa-chat wa-direct-link" href="https://wa.me/9310726927?text=Hello%20Dr.%20Smith%20Equipment%20Desk,%20I%20would%20like%20to%20inquire%20about%20Medical%20Equipment%20Procurement." rel="noopener noreferrer" target="_blank">
-<i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+
+              <div class="wa-number-badge">
+                <i class="fa-brands fa-whatsapp text-success fs-5"></i>
+                <div>
+                  <span class="wa-number-label">Direct WhatsApp Line</span>
+                  <span class="wa-number-val">+91 93107 26927</span>
+                </div>
+              </div>
+
+              <div class="wa-card-actions">
+                <a href="https://wa.me/9310726927?text=Hello%20Dr.%20Smith%20Equipment%20Desk,%20I%20would%20like%20to%20inquire%20about%20Medical%20Equipment%20Procurement."
+                  target="_blank" rel="noopener noreferrer" class="btn-wa-action btn-wa-chat wa-direct-link">
+                  <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
                 </a>
-<a class="btn-wa-action btn-wa-call" href="tel:+919310726927">
-<i class="bi bi-telephone-fill"></i> Call Desk
+                <a href="tel:+919310726927" class="btn-wa-action btn-wa-call">
+                  <i class="bi bi-telephone-fill"></i> Call Desk
                 </a>
-</div>
-</div>
-</div>
-<!-- Desk 3: Hospital Furniture & ICU Beds -->
-<div class="col-lg-6">
-<div class="wa-desk-card">
-<div class="wa-desk-top">
-<div class="wa-desk-icon wa-icon-emerald">
-<i class="bi bi-hospital-fill"></i>
-</div>
-<div class="wa-desk-meta">
-<span class="wa-desk-tag">Ward Infrastructure</span>
-<h3 class="wa-desk-title">Hospital Furniture &amp; Motorized Beds</h3>
-</div>
-<span class="wa-status-pill"><span class="wa-live-dot"></span> Active Line</span>
-</div>
-<p class="wa-desk-desc">
+              </div>
+            </div>
+          </div>
+
+          <!-- Desk 3: Hospital Furniture & ICU Beds -->
+          <div class="col-lg-6">
+            <div class="wa-desk-card">
+              <div class="wa-desk-top">
+                <div class="wa-desk-icon wa-icon-emerald">
+                  <i class="bi bi-hospital-fill"></i>
+                </div>
+                <div class="wa-desk-meta">
+                  <span class="wa-desk-tag">Ward Infrastructure</span>
+                  <h3 class="wa-desk-title">Hospital Furniture &amp; Motorized Beds</h3>
+                </div>
+                <span class="wa-status-pill"><span class="wa-live-dot"></span> Active Line</span>
+              </div>
+              
+              <p class="wa-desk-desc">
                 5-function and 7-function electric luxury ICU beds, semi-fowler ward beds, motorized gynecological delivery tables, ABS bedside lockers, and overbed cardiac tables.
               </p>
-<div class="wa-number-badge">
-<i class="fa-brands fa-whatsapp text-success fs-5"></i>
-<div>
-<span class="wa-number-label">Direct WhatsApp Line</span>
-<span class="wa-number-val">+91 95990 81021</span>
-</div>
-</div>
-<div class="wa-card-actions">
-<a class="btn-wa-action btn-wa-chat wa-direct-link" href="https://wa.me/919599081021?text=Hello%20Dr.%20Smith%20Furniture%20Desk,%20I%20would%20like%20to%20inquire%20about%20ICU%20Beds%20and%20Ward%20Furniture." rel="noopener noreferrer" target="_blank">
-<i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+
+              <div class="wa-number-badge">
+                <i class="fa-brands fa-whatsapp text-success fs-5"></i>
+                <div>
+                  <span class="wa-number-label">Direct WhatsApp Line</span>
+                  <span class="wa-number-val">+91 95990 81021</span>
+                </div>
+              </div>
+
+              <div class="wa-card-actions">
+                <a href="https://wa.me/919599081021?text=Hello%20Dr.%20Smith%20Furniture%20Desk,%20I%20would%20like%20to%20inquire%20about%20ICU%20Beds%20and%20Ward%20Furniture."
+                  target="_blank" rel="noopener noreferrer" class="btn-wa-action btn-wa-chat wa-direct-link">
+                  <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
                 </a>
-<a class="btn-wa-action btn-wa-call" href="tel:+919599081021">
-<i class="bi bi-telephone-fill"></i> Call Desk
+                <a href="tel:+919599081021" class="btn-wa-action btn-wa-call">
+                  <i class="bi bi-telephone-fill"></i> Call Desk
                 </a>
-</div>
-</div>
-</div>
-<!-- Desk 4: Institutional Tenders & Consumables -->
-<div class="col-lg-6">
-<div class="wa-desk-card">
-<div class="wa-desk-top">
-<div class="wa-desk-icon wa-icon-purple">
-<i class="bi bi-file-earmark-text"></i>
-</div>
-<div class="wa-desk-meta">
-<span class="wa-desk-tag">Institutional Supply</span>
-<h3 class="wa-desk-title">Tenders, Consumables &amp; General Mart</h3>
-</div>
-<span class="wa-status-pill"><span class="wa-live-dot"></span> Active Line</span>
-</div>
-<p class="wa-desk-desc">
+              </div>
+            </div>
+          </div>
+
+          <!-- Desk 4: Institutional Tenders & Consumables -->
+          <div class="col-lg-6">
+            <div class="wa-desk-card">
+              <div class="wa-desk-top">
+                <div class="wa-desk-icon wa-icon-purple">
+                  <i class="bi bi-file-earmark-text"></i>
+                </div>
+                <div class="wa-desk-meta">
+                  <span class="wa-desk-tag">Institutional Supply</span>
+                  <h3 class="wa-desk-title">Tenders, Consumables &amp; General Mart</h3>
+                </div>
+                <span class="wa-status-pill"><span class="wa-live-dot"></span> Active Line</span>
+              </div>
+              
+              <p class="wa-desk-desc">
                 Government tenders &amp; GeM portal supply, corporate hospital chain rate contracts, stainless steel surgical holloware, sterile medical disposables, and surgical instruments.
               </p>
-<div class="wa-number-badge">
-<i class="fa-brands fa-whatsapp text-success fs-5"></i>
-<div>
-<span class="wa-number-label">Direct WhatsApp Line</span>
-<span class="wa-number-val">+91 95990 81022</span>
-</div>
-</div>
-<div class="wa-card-actions">
-<a class="btn-wa-action btn-wa-chat wa-direct-link" href="https://wa.me/919599081022?text=Hello%20Dr.%20Smith%20Tender%20Desk,%20I%20would%20like%20to%20inquire%20about%20Institutional%20Tenders%20and%20Consumables." rel="noopener noreferrer" target="_blank">
-<i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+
+              <div class="wa-number-badge">
+                <i class="fa-brands fa-whatsapp text-success fs-5"></i>
+                <div>
+                  <span class="wa-number-label">Direct WhatsApp Line</span>
+                  <span class="wa-number-val">+91 95990 81022</span>
+                </div>
+              </div>
+
+              <div class="wa-card-actions">
+                <a href="https://wa.me/919599081022?text=Hello%20Dr.%20Smith%20Tender%20Desk,%20I%20would%20like%20to%20inquire%20about%20Institutional%20Tenders%20and%20Consumables."
+                  target="_blank" rel="noopener noreferrer" class="btn-wa-action btn-wa-chat wa-direct-link">
+                  <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
                 </a>
-<a class="btn-wa-action btn-wa-call" href="tel:+919599081022">
-<i class="bi bi-telephone-fill"></i> Call Desk
+                <a href="tel:+919599081022" class="btn-wa-action btn-wa-call">
+                  <i class="bi bi-telephone-fill"></i> Call Desk
                 </a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- ==========================================
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ==========================================
            TAB PANEL 2: OVERSEAS DESK - DUBAI (1 NUMBER)
            ========================================== -->
-<div class="wa-panel" id="panelDubai">
-<div class="wa-section-header mb-4">
-<div class="d-flex align-items-center gap-2 mb-1">
-<span class="badge bg-success-subtle text-success border border-success border-opacity-25 px-3 py-1 rounded-pill small fw-semibold">
-<i class="bi bi-globe-americas me-1"></i> Middle East, GCC, Africa &amp; Global Exports
+      <div id="panelDubai" class="wa-panel">
+        
+        <div class="wa-section-header mb-4">
+          <div class="d-flex align-items-center gap-2 mb-1">
+            <span class="badge bg-success-subtle text-success border border-success border-opacity-25 px-3 py-1 rounded-pill small fw-semibold">
+              <i class="bi bi-globe-americas me-1"></i> Middle East, GCC, Africa &amp; Global Exports
             </span>
-<span class="badge bg-info-subtle text-info border border-info border-opacity-25 px-2 py-1 rounded-pill small">
-<i class="bi bi-check-circle-fill text-info" style="font-size: 8px;"></i> SAIF Zone Overseas HQ
+            <span class="badge bg-info-subtle text-info border border-info border-opacity-25 px-2 py-1 rounded-pill small">
+              <i class="bi bi-check-circle-fill text-info" style="font-size: 8px;"></i> SAIF Zone Overseas HQ
             </span>
-</div>
-<h2 class="h4 text-white fw-bold mb-1">Overseas Export Desk (Dubai, UAE)</h2>
-<p class="text-secondary small mb-0">Single dedicated direct hotline for international hospital projects, container sea freight, air consignments, and overseas tenders.</p>
-</div>
-<div class="row justify-content-center">
-<div class="col-lg-8">
-<div class="wa-desk-card wa-desk-card-spotlight">
-<div class="wa-desk-top">
-<div class="wa-desk-icon wa-icon-gold">
-<i class="bi bi-globe2"></i>
-</div>
-<div class="wa-desk-meta">
-<span class="wa-desk-tag">International Direct Line</span>
-<h3 class="wa-desk-title">Global Hospital Projects &amp; Export Directorate</h3>
-</div>
-<span class="wa-status-pill wa-status-gold"><span class="wa-live-dot wa-dot-gold"></span> 24/7 International Desk</span>
-</div>
-<p class="wa-desk-desc fs-6">
+          </div>
+          <h2 class="h4 text-white fw-bold mb-1">Overseas Export Desk (Dubai, UAE)</h2>
+          <p class="text-secondary small mb-0">Single dedicated direct hotline for international hospital projects, container sea freight, air consignments, and overseas tenders.</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="wa-desk-card wa-desk-card-spotlight">
+              <div class="wa-desk-top">
+                <div class="wa-desk-icon wa-icon-gold">
+                  <i class="bi bi-globe2"></i>
+                </div>
+                <div class="wa-desk-meta">
+                  <span class="wa-desk-tag">International Direct Line</span>
+                  <h3 class="wa-desk-title">Global Hospital Projects &amp; Export Directorate</h3>
+                </div>
+                <span class="wa-status-pill wa-status-gold"><span class="wa-live-dot wa-dot-gold"></span> 24/7 International Desk</span>
+              </div>
+              
+              <p class="wa-desk-desc fs-6">
                 Direct international desk handling turnkey hospital setup across UAE, GCC nations, Kenya, Nigeria, South Africa, and Southeast Asia. Full support for CIF shipping terms, international letters of credit (LC), customs documentation, and international CE &amp; FDA certification packages.
               </p>
-<div class="wa-features-list row g-2 my-3">
-<div class="col-sm-6">
-<div class="wa-feature-item"><i class="bi bi-check2-circle text-success me-2"></i> CIF &amp; FOB Container Shipments</div>
-</div>
-<div class="col-sm-6">
-<div class="wa-feature-item"><i class="bi bi-check2-circle text-success me-2"></i> 24h Multilingual Quotations</div>
-</div>
-<div class="col-sm-6">
-<div class="wa-feature-item"><i class="bi bi-check2-circle text-success me-2"></i> SAIF Zone Executive Liaison</div>
-</div>
-<div class="col-sm-6">
-<div class="wa-feature-item"><i class="bi bi-check2-circle text-success me-2"></i> Multi-Currency Billing (USD / AED / EUR)</div>
-</div>
-</div>
-<div class="wa-number-badge wa-badge-large">
-<i class="fa-brands fa-whatsapp text-success fs-3"></i>
-<div>
-<span class="wa-number-label">Official Overseas WhatsApp Hotline</span>
-<span class="wa-number-val">+971 50 891 7466</span>
-</div>
-</div>
-<div class="wa-card-actions mt-4">
-<a class="btn-wa-action btn-wa-chat btn-wa-large wa-direct-link" href="https://wa.me/971508917466?text=Hello%20Dr.%20Smith%20Overseas%20Desk%20(Dubai),%20I%20would%20like%20to%20inquire%20about%20International%20Hospital%20Projects%20and%20Export." rel="noopener noreferrer" target="_blank">
-<i class="fa-brands fa-whatsapp me-1"></i> Start WhatsApp Consultation (Dubai Line)
+
+              <div class="wa-features-list row g-2 my-3">
+                <div class="col-sm-6">
+                  <div class="wa-feature-item"><i class="bi bi-check2-circle text-success me-2"></i> CIF &amp; FOB Container Shipments</div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="wa-feature-item"><i class="bi bi-check2-circle text-success me-2"></i> 24h Multilingual Quotations</div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="wa-feature-item"><i class="bi bi-check2-circle text-success me-2"></i> SAIF Zone Executive Liaison</div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="wa-feature-item"><i class="bi bi-check2-circle text-success me-2"></i> Multi-Currency Billing (USD / AED / EUR)</div>
+                </div>
+              </div>
+
+              <div class="wa-number-badge wa-badge-large">
+                <i class="fa-brands fa-whatsapp text-success fs-3"></i>
+                <div>
+                  <span class="wa-number-label">Official Overseas WhatsApp Hotline</span>
+                  <span class="wa-number-val">+971 50 891 7466</span>
+                </div>
+              </div>
+
+              <div class="wa-card-actions mt-4">
+                <a href="https://wa.me/971508917466?text=Hello%20Dr.%20Smith%20Overseas%20Desk%20(Dubai),%20I%20would%20like%20to%20inquire%20about%20International%20Hospital%20Projects%20and%20Export."
+                  target="_blank" rel="noopener noreferrer" class="btn-wa-action btn-wa-chat btn-wa-large wa-direct-link">
+                  <i class="fa-brands fa-whatsapp me-1"></i> Start WhatsApp Consultation (Dubai Line)
                 </a>
-<a class="btn-wa-action btn-wa-call btn-wa-large" href="tel:+971508917466">
-<i class="bi bi-telephone-fill me-1"></i> Call International Desk
+                <a href="tel:+971508917466" class="btn-wa-action btn-wa-call btn-wa-large">
+                  <i class="bi bi-telephone-fill me-1"></i> Call International Desk
                 </a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Quick Consultation Form Banner -->
-<div class="wa-rfq-banner mt-5">
-<div class="row align-items-center">
-<div class="col-lg-8">
-<h4 class="text-white fw-bold mb-1"><i class="bi bi-file-earmark-spreadsheet-fill text-info me-2"></i> Need a Formal Quotation, Tender Document or BOM?</h4>
-<p class="text-secondary small mb-lg-0">Submit your technical specifications or architectural blueprints directly through our unified hospital consultation desk for a detailed 24-hour proposal.</p>
-</div>
-<div class="col-lg-4 text-lg-end">
-<a class="btn btn-outline-info rounded-pill px-4 py-2 fw-semibold" href="../contact-form/index.html">
-<i class="bi bi-envelope-check me-1"></i> Open Formal RFQ Form
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Consultation Form Banner -->
+      <div class="wa-rfq-banner mt-5">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <h4 class="text-white fw-bold mb-1"><i class="bi bi-file-earmark-spreadsheet-fill text-info me-2"></i> Need a Formal Quotation, Tender Document or BOM?</h4>
+            <p class="text-secondary small mb-lg-0">Submit your technical specifications or architectural blueprints directly through our unified hospital consultation desk for a detailed 24-hour proposal.</p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a href="../contact-form/index.html" class="btn btn-outline-info rounded-pill px-4 py-2 fw-semibold">
+              <i class="bi bi-envelope-check me-1"></i> Open Formal RFQ Form
             </a>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- ============================================================
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
        STANDARDIZED APPLE GLOBAL DIRECTORY FOOTER
        ============================================================ -->
-<footer class="apple-globalfooter">
-<div class="apple-footer-inner">
-<!-- Footer Brand Header & Fast Back-To-Top -->
-<div class="apple-footer-brand-header">
-<div class="apple-footer-brand-left">
-<img alt="Dr. Smith Emblem Logo" class="apple-footer-brand-logo" decoding="async" height="32" loading="eager" src="../assets/img/logo.png?v=11.0" width="32"/>
-<div>
-<div class="apple-footer-brand-title">Dr. Smith</div>
-<span class="apple-footer-brand-subtitle">HOSPITAL SOLUTIONS</span>
-</div>
-</div>
-<a aria-label="Scroll back to top" class="apple-footer-backtotop-btn" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">
-<span>Top</span> <i class="bi bi-chevron-up"></i>
-</a>
-</div>
-<!-- Notes / Footnotes -->
-<div class="apple-footer-notes">
-<ol>
-<li>Medical equipment specifications, turnkey timelines, and compliance standards (ISO 9001:2015, ISO
+  <footer class="apple-globalfooter">
+    <div class="apple-footer-inner">
+
+      <!-- Footer Brand Header & Fast Back-To-Top -->
+      <div class="apple-footer-brand-header">
+        <div class="apple-footer-brand-left">
+          <img src="../assets/img/logo.png?v=11.0" alt="Dr. Smith Emblem Logo" class="apple-footer-brand-logo" width="32"
+            height="32" decoding="async" loading="eager">
+          <div>
+            <div class="apple-footer-brand-title">Dr. Smith</div>
+            <span class="apple-footer-brand-subtitle">HOSPITAL SOLUTIONS</span>
+          </div>
+        </div>
+        <a href="#top" class="apple-footer-backtotop-btn"
+          onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;" aria-label="Scroll back to top">
+          <span>Top</span> <i class="bi bi-chevron-up"></i>
+        </a>
+      </div>
+
+      <!-- Notes / Footnotes -->
+      <div class="apple-footer-notes">
+        <ol>
+          <li>Medical equipment specifications, turnkey timelines, and compliance standards (ISO 9001:2015, ISO
             13485:2016, CE, FDA) depend on specific project scopes and customized clinical configurations.</li>
-<li>Turnkey hospital infrastructure engineering timelines depend on architectural blueprints, local regulatory
+          <li>Turnkey hospital infrastructure engineering timelines depend on architectural blueprints, local regulatory
             clearances, and civil site readiness.</li>
-<li>Principal Global Head Office located at Kapashera Border, New Delhi; Manufacturing Plant at METL, Jhajjar,
+          <li>Principal Global Head Office located at Kapashera Border, New Delhi; Manufacturing Plant at METL, Jhajjar,
             Haryana; Overseas Head Office at SAIF Zone, Sharjah, UAE.</li>
-</ol>
-</div>
-<!-- Directory Columns (Mobile Collapsible Accordions) -->
-<div class="apple-footer-directory">
-<!-- Col 1: Turnkey Solutions (Active by default on mobile) -->
-<div class="apple-footer-col active">
-<button aria-expanded="true" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Turnkey Solutions</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../turnkey-projects/index.html">500-Bedded Hospital Setup</a></li>
-<li><a href="../catalogue/modular-ot/index.html">Modular OT Construction</a></li>
-<li><a href="../turnkey-projects/index.html">Medical Gas Pipeline (MGPS)</a></li>
-<li><a href="../turnkey-projects/index.html">Hospital Architecture &amp; MEP</a></li>
-<li><a href="../turnkey-projects/index.html">Government &amp; Global Tenders</a></li>
-</ul>
-</div>
-<!-- Col 2: Group Ecosystem -->
-<div class="apple-footer-col">
-<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Group Ecosystem</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../about-us/index.html">Dr. Smith Healthcare</a></li>
-<li><a href="../catalogue/index.html">Surgihub Surgical Devices</a></li>
-<li><a href="../catalogue/index.html">Surgical Mall of India (SMPL)</a></li>
-<li><a href="../catalogue/index.html">MediAid Patient Care</a></li>
-<li><a href="../catalogue/index.html">Orbit Mahajan Diagnostics</a></li>
-</ul>
-</div>
-<!-- Col 3: Product Catalogue -->
-<div class="apple-footer-col">
-<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Product Catalogue</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../catalogue/beds/index.html">Hospital &amp; ICU Beds</a></li>
-<li><a href="../catalogue/modular-ot/index.html">Modular OT Suites</a></li>
-<li><a href="../catalogue/patient-monitor/index.html">Critical Care &amp; Monitors</a></li>
-<li><a href="../catalogue/ventilators/index.html">ICU Ventilators</a></li>
-<li><a href="../catalogue/index.html">Full 50+ Categories</a></li>
-</ul>
-</div>
-<!-- Col 4: Global Directory -->
-<div class="apple-footer-col">
-<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Global Presence</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../contact-form/index.html">New Delhi Head Office (India)</a></li>
-<li><a href="../contact-form/index.html">Jhajjar Manufacturing Plant</a></li>
-<li><a href="../contact-form/index.html">Sharjah Overseas Office (UAE)</a></li>
-<li><a href="../contact-form/index.html">Kenya &amp; Nigeria Desks</a></li>
-<li><a href="../contact-form/index.html">Patna, Kolkata, Varanasi Marts</a></li>
-</ul>
-</div>
-<!-- Col 5: Compliance & Values -->
-<div class="apple-footer-col">
-<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Corporate &amp; Quality</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../about-us/index.html">About 60+ Years Heritage</a></li>
-<li><a href="../mission-values/index.html">Mission &amp; Values</a></li>
-<li><a href="../about-us/index.html">Executive Leadership</a></li>
-<li><a href="../privacy.html">Privacy Policy</a></li>
-<li><a href="../terms.html">Terms of Service</a></li>
-</ul>
-</div>
-</div>
-<!-- Footer Bottom Legal, Direct Connect & Country Positioned in Correct Order -->
-<div class="apple-footer-bottom">
-<div class="apple-footer-top-row">
-<div class="apple-footer-country">
-<a class="apple-footer-country-badge" href="../contact-form/index.html" title="Region &amp; Language">
-<i class="bi bi-globe me-1"></i> India (English)
+        </ol>
+      </div>
+
+      <!-- Directory Columns (Mobile Collapsible Accordions) -->
+      <div class="apple-footer-directory">
+
+        <!-- Col 1: Turnkey Solutions (Active by default on mobile) -->
+        <div class="apple-footer-col active">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="true">
+            <h4 class="apple-footer-col-title">Turnkey Solutions</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../turnkey-projects/index.html">500-Bedded Hospital Setup</a></li>
+            <li><a href="../catalogue/modular-ot/index.html">Modular OT Construction</a></li>
+            <li><a href="../turnkey-projects/index.html">Medical Gas Pipeline (MGPS)</a></li>
+            <li><a href="../turnkey-projects/index.html">Hospital Architecture &amp; MEP</a></li>
+            <li><a href="../turnkey-projects/index.html">Government &amp; Global Tenders</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 2: Group Ecosystem -->
+        <div class="apple-footer-col">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Group Ecosystem</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../about-us/index.html">Dr. Smith Healthcare</a></li>
+            <li><a href="../catalogue/index.html">Surgihub Surgical Devices</a></li>
+            <li><a href="../catalogue/index.html">Surgical Mall of India (SMPL)</a></li>
+            <li><a href="../catalogue/index.html">MediAid Patient Care</a></li>
+            <li><a href="../catalogue/index.html">Orbit Mahajan Diagnostics</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Product Catalogue -->
+        <div class="apple-footer-col">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Product Catalogue</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../catalogue/beds/index.html">Hospital &amp; ICU Beds</a></li>
+            <li><a href="../catalogue/modular-ot/index.html">Modular OT Suites</a></li>
+            <li><a href="../catalogue/patient-monitor/index.html">Critical Care &amp; Monitors</a></li>
+            <li><a href="../catalogue/ventilators/index.html">ICU Ventilators</a></li>
+            <li><a href="../catalogue/index.html">Full 50+ Categories</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Global Directory -->
+        <div class="apple-footer-col">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Global Presence</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../contact-form/index.html">New Delhi Head Office (India)</a></li>
+            <li><a href="../contact-form/index.html">Jhajjar Manufacturing Plant</a></li>
+            <li><a href="../contact-form/index.html">Sharjah Overseas Office (UAE)</a></li>
+            <li><a href="../contact-form/index.html">Kenya &amp; Nigeria Desks</a></li>
+            <li><a href="../contact-form/index.html">Patna, Kolkata, Varanasi Marts</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Compliance & Values -->
+        <div class="apple-footer-col">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Corporate &amp; Quality</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../about-us/index.html">About 60+ Years Heritage</a></li>
+            <li><a href="../mission-values/index.html">Mission &amp; Values</a></li>
+            <li><a href="../about-us/index.html">Executive Leadership</a></li>
+            <li><a href="../privacy.html">Privacy Policy</a></li>
+            <li><a href="../terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Legal, Direct Connect & Country Positioned in Correct Order -->
+      <div class="apple-footer-bottom">
+        <div class="apple-footer-top-row">
+          <div class="apple-footer-country">
+            <a href="../contact-form/index.html" class="apple-footer-country-badge" title="Region &amp; Language">
+              <i class="bi bi-globe me-1"></i> India (English)
             </a>
-</div>
-<div class="apple-footer-quicklinks">
-<a class="apple-footer-badge-link wa-direct-link" href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." rel="noopener noreferrer" target="_blank" title="Direct WhatsApp Assistance (+91 95990 81020)">
-<i class="fa-brands fa-whatsapp text-success me-1"></i> WhatsApp Desk
+          </div>
+          <div class="apple-footer-quicklinks">
+            <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." target="_blank" rel="noopener noreferrer"
+              class="apple-footer-badge-link wa-direct-link" title="Direct WhatsApp Assistance (+91 95990 81020)">
+              <i class="fa-brands fa-whatsapp text-success me-1"></i> WhatsApp Desk
             </a>
-</div>
-</div>
-<div class="apple-footer-divider"></div>
-<div class="apple-footer-meta-row">
-<div class="apple-footer-legal-links">
-<a href="../privacy.html">Privacy Policy</a>
-<span class="legal-dot">•</span>
-<a href="../terms.html">Terms of Use</a>
-<span class="legal-dot">•</span>
-<a href="../contact-form/index.html">Sales Policy</a>
-<span class="legal-dot">•</span>
-<a href="../contact-form/index.html">Legal</a>
-<span class="legal-dot">•</span>
-<a href="../catalogue/index.html">Site Map</a>
-</div>
-<div class="apple-footer-copyright">
-            Copyright © 2026 Dr. Smith Healthcare Solutions (Surgical Wholesale Mart Pvt. Ltd.). All rights
+          </div>
+        </div>
+
+        <div class="apple-footer-divider"></div>
+
+        <div class="apple-footer-meta-row">
+          <div class="apple-footer-legal-links">
+            <a href="../privacy.html">Privacy Policy</a>
+            <span class="legal-dot">•</span>
+            <a href="../terms.html">Terms of Use</a>
+            <span class="legal-dot">•</span>
+            <a href="../contact-form/index.html">Sales Policy</a>
+            <span class="legal-dot">•</span>
+            <a href="../contact-form/index.html">Legal</a>
+            <span class="legal-dot">•</span>
+            <a href="../catalogue/index.html">Site Map</a>
+          </div>
+          <div class="apple-footer-copyright">
+            Copyright &copy; 2026 Dr. Smith Healthcare Solutions (Surgical Wholesale Mart Pvt. Ltd.). All rights
             reserved. An ISO 9001:2015, ISO 13485:2016, CE &amp; FDA Certified Company.
           </div>
-</div>
-</div>
-</div>
-</footer>
-<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="../assets/js/global-search.js?v=44.0"></script>
-<script src="../assets/js/main.js?v=94.0"></script>
-<script>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/global-search.js?v=44.0"></script>
+  <script src="../assets/js/main.js?v=94.0"></script>
+  <script>
     // Tab Switcher Logic
     function switchWaRegion(region) {
       var tabIndia = document.getElementById('tabBtnIndia');

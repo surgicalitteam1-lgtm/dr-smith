@@ -1,518 +1,676 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Browse Dr. Smith's Autoclaves range for hospitals, ICUs and clinics." name="description"/>
-<meta content="#030712" name="theme-color"/>
-<title>Autoclaves | Dr. Smith Catalogue</title>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&amp;family=Open+Sans:wght@300;400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-<link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
-<link href="../../assets/img/favicon.png" rel="icon" type="image/png"/>
-<link href="../../assets/img/apple-touch-icon.png" rel="apple-touch-icon"/>
-<link href="../css/catalogue.css?v=47.0" rel="stylesheet"/>
-<link href="../../assets/css/apple-theme.css?v=106.0" rel="stylesheet"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse Dr. Smith's Autoclaves range for hospitals, ICUs and clinics.">
+    <meta name="theme-color" content="#030712">
+    <title>Autoclaves | Dr. Smith Catalogue</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+
+    <link href="../css/catalogue.css?v=47.0" rel="stylesheet">
+  <link href="../../assets/css/apple-theme.css?v=106.0" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body class="apple-body catalogue-page">
-<!-- ============================================================
+  <!-- ============================================================
        1. GLOBAL NAVIGATION HEADER
        ============================================================ -->
-<nav aria-label="Global" class="apple-globalnav">
-<div class="apple-globalnav-inner">
-<!-- Brand & Corporate Identity -->
-<a aria-label="Dr. Smith Hospital Solutions" class="apple-nav-brand" href="../../index.html">
-<div class="brand-asterisk-icon">
-<img alt="Dr. Smith Emblem Logo" class="apple-nav-logo-img" decoding="async" height="36" loading="eager" src="../../assets/img/logo.png?v=11.0" width="36"/>
+  <nav class="apple-globalnav" aria-label="Global">
+    <div class="apple-globalnav-inner">
+      
+      <!-- Brand & Corporate Identity -->
+      <a href="../../index.html" class="apple-nav-brand" aria-label="Dr. Smith Hospital Solutions">
+        <div class="brand-asterisk-icon">
+          <img src="../../assets/img/logo.png?v=11.0" alt="Dr. Smith Emblem Logo" class="apple-nav-logo-img" width="36" height="36" decoding="async" loading="eager">
+        </div>
+        <div class="apple-nav-brand-text">
+          <span class="apple-nav-brand-title">Dr. Smith</span>
+          <span class="apple-nav-brand-subtitle">HOSPITAL SOLUTIONS</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="apple-nav-links">
+        <li class="apple-nav-item">
+          <a href="../../index.html" class="apple-nav-link">Home</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../../catalogue/index.html" class="apple-nav-link nav-active">Products</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../../turnkey-projects/index.html" class="apple-nav-link">Turnkey Solutions</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../../about-us/index.html" class="apple-nav-link">About Us</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../../contact-form/index.html" class="apple-nav-link">Contact</a>
+        </li>
+      </ul>
+
+                  <!-- Action Utilities -->
+      <div class="apple-nav-actions">
+        <!-- Contact / Mail Form Button -->
+        <a href="../../contact-form/index.html" class="apple-nav-circle-btn apple-nav-circle-mail"
+          aria-label="Send Enquiry &amp; Contact Us" title="Send Enquiry / Request Quotation (BOM &amp; Consultation)">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+
+        <!-- WhatsApp Circle Button -->
+        <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions."
+          class="apple-nav-circle-btn apple-nav-circle-whatsapp" target="_blank"
+          rel="noopener noreferrer" aria-label="Chat with Dr. Smith Healthcare on WhatsApp (+91 95990 81020)"
+          title="WhatsApp Direct (+91 95990 81020) • 24/7 Fast Inquiry">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <!-- Menu Toggle Button -->
+        <button type="button" class="apple-nav-circle-btn" id="apple-mobile-menu-btn"
+          aria-label="Toggle Navigation Menu" title="Menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+    <!-- Mobile Menu Drawer Backdrop Overlay -->
+  <div class="apple-mobile-backdrop" id="appleMobileBackdrop"></div>
+
+  <!-- Mobile Menu Drawer Overlay -->
+  <div class="apple-mobile-drawer" id="apple-mobile-drawer">
+    <div class="apple-mobile-drawer-header">
+      <span class="apple-mobile-drawer-tag"><i class="bi bi-hospital"></i> Dr. Smith Quick Menu</span>
+      <button type="button" class="apple-mobile-drawer-close" id="appleMobileDrawerClose" aria-label="Close Navigation Menu">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
+    <div class="apple-mobile-grid">
+      <a href="../../index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-house-door-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Home</span>
+          <span class="apple-mobile-tile-sub">Overview</span>
+        </div>
+      </a>
+      <a href="../../catalogue/index.html" class="apple-mobile-tile active">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-grid-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Catalogue</span>
+          <span class="apple-mobile-tile-sub">50+ Categories</span>
+        </div>
+      </a>
+      <a href="../../turnkey-projects/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-hospital-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Turnkey Setup</span>
+          <span class="apple-mobile-tile-sub">50–500 Beds</span>
+        </div>
+      </a>
+      <a href="../../catalogue/modular-ot/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-activity"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Modular OT</span>
+          <span class="apple-mobile-tile-sub">Cleanrooms</span>
+        </div>
+      </a>
+      <a href="../../about-us/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-shield-check"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">About Us</span>
+          <span class="apple-mobile-tile-sub">Heritage</span>
+        </div>
+      </a>
+      <a href="../../contact-form/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-envelope-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Contact</span>
+          <span class="apple-mobile-tile-sub">Global Offices</span>
+        </div>
+      </a>
+    </div>
+    
+    <div class="apple-mobile-cta-box">
+      <a href="../../contact-form/index.html" class="apple-mobile-btn-consultation">
+        <i class="bi bi-building-check me-2"></i> Request Project Consultation <i class="bi bi-arrow-right ms-auto"></i>
+      </a>
+
+      <div class="apple-mobile-contact-grid">
+        <a href="tel:18008917466" class="apple-mobile-contact-pill apple-mobile-pill-tel">
+          <i class="bi bi-telephone-fill"></i>
+          <span>1800 891 7466<small>National Toll-Free</small></span>
+        </a>
+        <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." target="_blank" rel="noopener noreferrer" class="apple-mobile-contact-pill apple-mobile-pill-wa">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>WhatsApp Desk<small>24/7 Fast Inquiry</small></span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+      
+
+    <main>
+        <section class="catalogue-hero catalogue-hero--compact">
+            <div class="container">
+                <nav class="catalogue-breadcrumb" aria-label="Breadcrumb">
+                    <a href="../../index.html">Home</a>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="../index.html#catalogue">Catalogue</a>
+                    <i class="bi bi-chevron-right"></i>
+                    <span aria-current="page">Autoclaves</span>
+                </nav>
+                <div class="row align-items-center">
+                    <div class="col-lg-9">
+                        <span class="catalogue-eyebrow">Sterilization & CSSD</span>
+                        <h1>Autoclaves</h1>
+                        <p>High-pressure saturated steam sterilizers including table-top dental autoclaves, portable vertical cookers, horizontal autoclaves, and low-temperature ETO sterilizers.</p>
+                        <a class="catalogue-button catalogue-button--ghost" href="../index.html#catalogue">
+                            <i class="bi bi-arrow-left"></i> Back to full catalogue
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalogue-section">
+            <div class="container">
+                  
+                <p class="catalogue-count">Showing <strong>11</strong> products</p>
+
+                <div class="category-search-wrapper mb-4" style="max-width: 500px;">
+                    <div class="input-group">
+                        <span class="input-group-text bg-white border-end-0"><i class="bi bi-search text-muted"></i></span>
+                        <input type="text" id="categoryProductSearch" class="form-control border-start-0 ps-0" placeholder="Filter autoclaves..." aria-label="Filter products">
+                    </div>
+                </div>
+                <script src="../../assets/js/catalogue-filters.js?v=1.0"></script>
+                <div class="row g-4" id="products-grid">
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dental autoclave (18l & 23l class b)" data-badge="class b dental">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dental Autoclave (18L & 23L Class B) on Instagram" title="View on Instagram">
+                                    <img src="dental-autoclave.png" alt="Dental Autoclave (18L & 23L Class B)" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Class B Dental &bull; 18L / 23L</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Sterilization & CSSD</span>
+                                <h3>Dental Autoclave (18L & 23L Class B)</h3>
+                                <p>Class B pre-and-post vacuum tabletop autoclave designed for hollow dental handpieces and surgical instruments.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Chamber capacity: 18 Litre and 23 Litre options</li>
+                                <li>Chamber dimensions: 250 x 355 mm / 250 x 465 mm</li>
+                                <li>Microprocessor controlled cycles with vacuum drying</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dental%20Autoclave%20%2818L%20%26%2023L%20Class%20B%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="ss & aluminium autoclave (six wing nut type)" data-badge="portable cooker">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View SS & Aluminium Autoclave (Six Wing Nut Type) on Instagram" title="View on Instagram">
+                                    <img src="ss-aluminium-wing-nut-autoclave.png" alt="SS & Aluminium Autoclave (Six Wing Nut Type)" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Six Wing Nut &bull; 21L - 39L</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Sterilization & CSSD</span>
+                                <h3>Portable Six Wing Nut Autoclave (SS & Aluminium)</h3>
+                                <p>Portable dressing pressure sterilizer with six wing-nut locking clamps, available in electric and non-electric versions.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Capacities: 21 Ltr (12x12"), 27 Ltr (12x15"), 39 Ltr (12x22")</li>
+                                <li>Dual safety valves, pressure gauge and steam release stopcock</li>
+                                <li>Available in non-electric stove and electric heating element models</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=SS%20%26%20Aluminium%20Autoclave%20%28Six%20Wing%20Nut%20Type%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="autoclave aluminium 'p' type cooker" data-badge="aluminium 'p'">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Autoclave Aluminium 'P' Type Cooker on Instagram" title="View on Instagram">
+                                    <img src="autoclave-aluminium-p-type.png" alt="Autoclave Aluminium 'P' Type Cooker" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Aluminium 'P' &bull; 12L - 40L</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Sterilization & CSSD</span>
+                                <h3>Autoclave Aluminium 'P' Type Cooker</h3>
+                                <p>Heavy-duty seamless extruded aluminium pressure sterilizer cooker with mirror finish and calibrated pressure gauge.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Sizes: 9x11" (12L), 12x12" (21L), 12x14" (25L), 12x16" (30L), 12x22" (40L)</li>
+                                <li>Tested hydraulically to double operating pressure</li>
+                                <li>Heavy bakelite handle and silicon sealing gasket</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Autoclave%20Aluminium%20%27P%27%20Type%20Cooker">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="ss digital 'p' type pressure cooker autoclave" data-badge="digital 'p' type">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View SS Digital 'P' Type Pressure Cooker Autoclave on Instagram" title="View on Instagram">
+                                    <img src="ss-digital-p-type-autoclave.png" alt="SS Digital 'P' Type Pressure Cooker Autoclave" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Digital 'P' Type &bull; 12L - 40L</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Sterilization & CSSD</span>
+                                <h3>SS Digital 'P' Type Pressure Cooker Autoclave</h3>
+                                <p>Premium stainless steel autoclave with digital temperature controller, automatic timing and safety shut-off.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Capacities from 12 Litres up to 40 Litres</li>
+                                <li>Full AISI 304 grade stainless steel construction</li>
+                                <li>Digital temperature indicator and automatic pressure cutoff</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=SS%20Digital%20%27P%27%20Type%20Pressure%20Cooker%20Autoclave">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="vertical autoclave (stainless steel nut locking)" data-badge="vertical ss">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Vertical Autoclave (Stainless Steel Nut Locking) on Instagram" title="View on Instagram">
+                                    <img src="vertical-autoclave-ss-nut.png" alt="Vertical Autoclave (Stainless Steel Nut Locking)" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Vertical SS &bull; 40L - 180L</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Sterilization & CSSD</span>
+                                <h3>Vertical Autoclave (Stainless Steel Nut Locking)</h3>
+                                <p>Heavy-duty vertical cylindrical floor autoclave with forged stainless steel nut locking clamps and immersion heater.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Sizes: 12x22" (40L), 14x22" (52L), 16x24" (75L), 18x24" (95L), 22x30" (180L)</li>
+                                <li>Heavy-gauge stainless steel inner chamber and outer lid</li>
+                                <li>Pressure control switch, water level indicator and foot lifting lid</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Vertical%20Autoclave%20%28Stainless%20Steel%20Nut%20Locking%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="vertical autoclave (ss & aluminium combined nut locking)" data-badge="combined nut">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Vertical Autoclave (SS & Aluminium Combined Nut Locking) on Instagram" title="View on Instagram">
+                                    <img src="vertical-autoclave-combined.png" alt="Vertical Autoclave (SS & Aluminium Combined Nut Locking)" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Double Walled &bull; 40L - 90L+</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Sterilization & CSSD</span>
+                                <h3>Vertical Autoclave (SS & Aluminium Combined Nut Locking)</h3>
+                                <p>High-capacity vertical steam sterilizer combining stainless steel inner chamber with an aluminium outer jacket.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Capacities: 40L, 75L, 90L, and up to 180 Litres</li>
+                                <li>Heavy bronze wing nuts with easy opening lid balance</li>
+                                <li>Electric immersion heaters with low water cut-off</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Vertical%20Autoclave%20%28SS%20%26%20Aluminium%20Combined%20Nut%20Locking%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="vertical autoclave (radial locking double wall)" data-badge="radial locking">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Vertical Autoclave (Radial Locking Double Wall) on Instagram" title="View on Instagram">
+                                    <img src="vertical-autoclave-radial.png" alt="Vertical Autoclave (Radial Locking Double Wall)" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Radial Locking &bull; 40L - 180L</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Sterilization & CSSD</span>
+                                <h3>Vertical Autoclave (Radial Locking Double Wall)</h3>
+                                <p>Double-walled vertical autoclave featuring effortless single-lever radial locking arms and steam jacketed chamber.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Heavy central radial locking wheel mechanism</li>
+                                <li>Double-walled construction for dry steam sterilization</li>
+                                <li>Capacities up to 180 Litres with safety valves and timer</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Vertical%20Autoclave%20%28Radial%20Locking%20Double%20Wall%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="ss horizontal cylindrical autoclave (triple wall)" data-badge="horizontal cssd">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View SS Horizontal Cylindrical Autoclave (Triple Wall) on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-horizontal-autoclave-cabinet-enclosure.png" alt="SS Horizontal Cylindrical Autoclave (Triple Wall)" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Horizontal CSSD &bull; 40L - 180L+</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Sterilization & CSSD</span>
+                                <h3>SS Horizontal Cylindrical Autoclave (Triple Wall)</h3>
+                                <p>Hospital CSSD high-pressure horizontal autoclave with triple-wall steam jacket, radial locking door and heavy tubular stand.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Sizes: 12x22" (40L) up to 24x48" high-capacity industrial volume</li>
+                                <li>Triple walled construction with separate steam jacket and boiler</li>
+                                <li>Heavy radial locking door with self-sealing silicone gasket</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=SS%20Horizontal%20Cylindrical%20Autoclave%20%28Triple%20Wall%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="e.t.o low-temperature gas sterilizer swm 11134" data-badge="swm 11134">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View E.T.O Low-Temperature Gas Sterilizer on Instagram" title="View on Instagram">
+                                    <img src="eto-sterilizer.png" alt="E.T.O Low-Temperature Gas Sterilizer" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">SWM 11134 &bull; ETO Gas Sterilizer</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Sterilization & CSSD</span>
+                                <h3>E.T.O Low-Temperature Gas Sterilizer (SWM 11134)</h3>
+                                <p>Official Dr. Smith SWM 11134 Ethylene Oxide (ETO) gas sterilizer designed for heat-sensitive laparoscopes, endoscopes, and polymer instruments.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Automatic cycle phases: Pre-vacuum, humidification, gas exposure, aeration</li>
+                                <li>Microprocessor controlled with temperature range 37°C - 55°C</li>
+                                <li>Built-in catalytic exhaust gas disposal safety system</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=E.T.O%20Low-Temperature%20Gas%20Sterilizer%20%28SWM%2011134%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith vertical autoclave 16x24 knob locking" data-badge="dr. smith showroom">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Vertical Autoclave 16x24 Knob Locking on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-vertical-autoclave-knob-locking-16x24.png" alt="Dr. Smith Vertical Autoclave 16x24 Knob Locking" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Dr. Smith Showroom &bull; 16"x24"</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Sterilization & CSSD</span>
+                                <h3>Dr. Smith Vertical Autoclave 16"x24" (Knob Locking)</h3>
+                                <p>Authentic Dr. Smith heavy-duty vertical floor autoclave with stainless steel mirror-finish body, dual knob locking clamps, immersion heating box and top pressure gauge.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Chamber dimensions: 16" diameter x 24" depth (approx. 75-80 Litres capacity)</li>
+                                <li>Heavy-duty tripod support legs with stable anti-vibration rubber feet</li>
+                                <li>Analog dial pressure gauge, steam release stopcock, and safety blow-off valve</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Vertical%20Autoclave%2016x24%20Knob%20Locking">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith horizontal cylindrical autoclave digital console" data-badge="digital cssd flagship">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Horizontal Cylindrical Autoclave Digital on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-horizontal-cylindrical-autoclave-digital.png" alt="Dr. Smith Horizontal Cylindrical Autoclave Digital Console" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Digital CSSD Flagship</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Hospital CSSD Engineering</span>
+                                <h3>Dr. Smith Horizontal Cylindrical Autoclave (Digital Console)</h3>
+                                <p>High-capacity hospital CSSD high-pressure horizontal sterilizer featuring dual pressure dials, single-lever radial wheel locking door, side-mounted digital microprocessor controller, and lower steam boiler.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Microprocessor digital temperature and sterilization cycle timer console</li>
+                                <li>Twin calibrated dial gauges monitoring chamber and boiler jacket pressures</li>
+                                <li>Full AISI 304/316 grade stainless steel tubular frame and pressure vessel</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Horizontal%20Cylindrical%20Autoclave%20Digital">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
 </div>
-<div class="apple-nav-brand-text">
-<span class="apple-nav-brand-title">Dr. Smith</span>
-<span class="apple-nav-brand-subtitle">HOSPITAL SOLUTIONS</span>
-</div>
-</a>
-<!-- Navigation Links -->
-<ul class="apple-nav-links"><li class="apple-nav-item"><a class="apple-nav-link" href="../../index.html">Home</a></li><li class="apple-nav-item"><a class="apple-nav-link nav-active" href="../index.html">Products</a></li><li class="apple-nav-item"><a class="apple-nav-link" href="../../about-us/index.html">About us</a></li><li class="apple-nav-item"><a class="apple-nav-link" href="../../turnkey-projects/index.html">turnkey project</a></li><li class="apple-nav-item"><a class="apple-nav-link" href="../../contact-form/index.html">Contact Us</a></li></ul><!-- Action Utilities -->
-<div class="apple-nav-actions">
-<!-- Contact / Mail Form Button -->
-<a aria-label="Send Enquiry &amp; Contact Us" class="apple-nav-circle-btn apple-nav-circle-mail" href="../../contact-form/index.html" title="Send Enquiry / Request Quotation (BOM &amp; Consultation)">
-<i class="fa-solid fa-envelope"></i>
-</a>
-<!-- WhatsApp Circle Button -->
-<a aria-label="Chat with Dr. Smith Healthcare on WhatsApp (+91 95990 81020)" class="apple-nav-circle-btn apple-nav-circle-whatsapp" href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." rel="noopener noreferrer" target="_blank" title="WhatsApp Direct (+91 95990 81020) • 24/7 Fast Inquiry">
-<i class="fa-brands fa-whatsapp"></i>
-</a>
-<!-- Menu Toggle Button -->
-<button aria-label="Toggle Navigation Menu" class="apple-nav-circle-btn" id="apple-mobile-menu-btn" title="Menu" type="button">
-<i class="bi bi-list"></i>
-</button>
-</div>
-</div>
-</nav>
-<!-- Mobile Menu Drawer Backdrop Overlay -->
-<div class="apple-mobile-backdrop" id="appleMobileBackdrop"></div>
-<!-- Mobile Menu Drawer Overlay -->
-<div class="apple-mobile-drawer" id="apple-mobile-drawer">
-<div class="apple-mobile-drawer-header">
-<span class="apple-mobile-drawer-tag"><i class="bi bi-hospital"></i> Dr. Smith Quick Menu</span>
-<button aria-label="Close Navigation Menu" class="apple-mobile-drawer-close" id="appleMobileDrawerClose" type="button">
-<i class="bi bi-x-lg"></i>
-</button>
-</div>
-<div class="apple-mobile-grid"><a class="apple-mobile-tile" href="../../index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-house-door-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">Home</span><span class="apple-mobile-tile-sub">Overview</span></div></a><a class="apple-mobile-tile active" href="../index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-grid-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">Products</span><span class="apple-mobile-tile-sub">Browse categories</span></div></a><a class="apple-mobile-tile" href="../../about-us/index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-shield-check"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">About us</span><span class="apple-mobile-tile-sub">Our story</span></div></a><a class="apple-mobile-tile" href="../../turnkey-projects/index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-hospital-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">turnkey project</span><span class="apple-mobile-tile-sub">Setup solutions</span></div></a><a class="apple-mobile-tile" href="../../contact-form/index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-envelope-paper-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">Contact Us</span><span class="apple-mobile-tile-sub">Get in touch</span></div></a></div>
-<section class="catalogue-section">
-<div class="container">
-<p class="catalogue-count">Showing <strong>11</strong> products</p>
-<div class="category-search-wrapper mb-4" style="max-width: 500px;">
-<div class="input-group">
-<span class="input-group-text bg-white border-end-0"><i class="bi bi-search text-muted"></i></span>
-<input aria-label="Filter products" class="form-control border-start-0 ps-0" id="categoryProductSearch" placeholder="Filter autoclaves..." type="text"/>
-</div>
-</div>
-<script src="../../assets/js/catalogue-filters.js?v=1.0"></script>
-<div class="row g-4" id="products-grid">
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="class b dental" data-title="dental autoclave (18l &amp; 23l class b)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dental Autoclave (18L &amp; 23L Class B) on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dental Autoclave (18L &amp; 23L Class B)" decoding="async" loading="lazy" src="dental-autoclave.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Class B Dental • 18L / 23L</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Sterilization &amp; CSSD</span>
-<h3>Dental Autoclave (18L &amp; 23L Class B)</h3>
-<p>Class B pre-and-post vacuum tabletop autoclave designed for hollow dental handpieces and surgical instruments.</p>
-<ul class="catalogue-card__details">
-<li>Chamber capacity: 18 Litre and 23 Litre options</li>
-<li>Chamber dimensions: 250 x 355 mm / 250 x 465 mm</li>
-<li>Microprocessor controlled cycles with vacuum drying</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dental%20Autoclave%20%2818L%20%26%2023L%20Class%20B%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="portable cooker" data-title="ss &amp; aluminium autoclave (six wing nut type)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View SS &amp; Aluminium Autoclave (Six Wing Nut Type) on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="SS &amp; Aluminium Autoclave (Six Wing Nut Type)" decoding="async" loading="lazy" src="ss-aluminium-wing-nut-autoclave.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Six Wing Nut • 21L - 39L</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Sterilization &amp; CSSD</span>
-<h3>Portable Six Wing Nut Autoclave (SS &amp; Aluminium)</h3>
-<p>Portable dressing pressure sterilizer with six wing-nut locking clamps, available in electric and non-electric versions.</p>
-<ul class="catalogue-card__details">
-<li>Capacities: 21 Ltr (12x12"), 27 Ltr (12x15"), 39 Ltr (12x22")</li>
-<li>Dual safety valves, pressure gauge and steam release stopcock</li>
-<li>Available in non-electric stove and electric heating element models</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=SS%20%26%20Aluminium%20Autoclave%20%28Six%20Wing%20Nut%20Type%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="aluminium 'p'" data-title="autoclave aluminium 'p' type cooker">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Autoclave Aluminium 'P' Type Cooker on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Autoclave Aluminium 'P' Type Cooker" decoding="async" loading="lazy" src="autoclave-aluminium-p-type.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Aluminium 'P' • 12L - 40L</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Sterilization &amp; CSSD</span>
-<h3>Autoclave Aluminium 'P' Type Cooker</h3>
-<p>Heavy-duty seamless extruded aluminium pressure sterilizer cooker with mirror finish and calibrated pressure gauge.</p>
-<ul class="catalogue-card__details">
-<li>Sizes: 9x11" (12L), 12x12" (21L), 12x14" (25L), 12x16" (30L), 12x22" (40L)</li>
-<li>Tested hydraulically to double operating pressure</li>
-<li>Heavy bakelite handle and silicon sealing gasket</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Autoclave%20Aluminium%20%27P%27%20Type%20Cooker">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="digital 'p' type" data-title="ss digital 'p' type pressure cooker autoclave">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View SS Digital 'P' Type Pressure Cooker Autoclave on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="SS Digital 'P' Type Pressure Cooker Autoclave" decoding="async" loading="lazy" src="ss-digital-p-type-autoclave.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Digital 'P' Type • 12L - 40L</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Sterilization &amp; CSSD</span>
-<h3>SS Digital 'P' Type Pressure Cooker Autoclave</h3>
-<p>Premium stainless steel autoclave with digital temperature controller, automatic timing and safety shut-off.</p>
-<ul class="catalogue-card__details">
-<li>Capacities from 12 Litres up to 40 Litres</li>
-<li>Full AISI 304 grade stainless steel construction</li>
-<li>Digital temperature indicator and automatic pressure cutoff</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=SS%20Digital%20%27P%27%20Type%20Pressure%20Cooker%20Autoclave">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="vertical ss" data-title="vertical autoclave (stainless steel nut locking)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Vertical Autoclave (Stainless Steel Nut Locking) on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Vertical Autoclave (Stainless Steel Nut Locking)" decoding="async" loading="lazy" src="vertical-autoclave-ss-nut.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Vertical SS • 40L - 180L</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Sterilization &amp; CSSD</span>
-<h3>Vertical Autoclave (Stainless Steel Nut Locking)</h3>
-<p>Heavy-duty vertical cylindrical floor autoclave with forged stainless steel nut locking clamps and immersion heater.</p>
-<ul class="catalogue-card__details">
-<li>Sizes: 12x22" (40L), 14x22" (52L), 16x24" (75L), 18x24" (95L), 22x30" (180L)</li>
-<li>Heavy-gauge stainless steel inner chamber and outer lid</li>
-<li>Pressure control switch, water level indicator and foot lifting lid</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Vertical%20Autoclave%20%28Stainless%20Steel%20Nut%20Locking%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="combined nut" data-title="vertical autoclave (ss &amp; aluminium combined nut locking)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Vertical Autoclave (SS &amp; Aluminium Combined Nut Locking) on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Vertical Autoclave (SS &amp; Aluminium Combined Nut Locking)" decoding="async" loading="lazy" src="vertical-autoclave-combined.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Double Walled • 40L - 90L+</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Sterilization &amp; CSSD</span>
-<h3>Vertical Autoclave (SS &amp; Aluminium Combined Nut Locking)</h3>
-<p>High-capacity vertical steam sterilizer combining stainless steel inner chamber with an aluminium outer jacket.</p>
-<ul class="catalogue-card__details">
-<li>Capacities: 40L, 75L, 90L, and up to 180 Litres</li>
-<li>Heavy bronze wing nuts with easy opening lid balance</li>
-<li>Electric immersion heaters with low water cut-off</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Vertical%20Autoclave%20%28SS%20%26%20Aluminium%20Combined%20Nut%20Locking%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="radial locking" data-title="vertical autoclave (radial locking double wall)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Vertical Autoclave (Radial Locking Double Wall) on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Vertical Autoclave (Radial Locking Double Wall)" decoding="async" loading="lazy" src="vertical-autoclave-radial.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Radial Locking • 40L - 180L</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Sterilization &amp; CSSD</span>
-<h3>Vertical Autoclave (Radial Locking Double Wall)</h3>
-<p>Double-walled vertical autoclave featuring effortless single-lever radial locking arms and steam jacketed chamber.</p>
-<ul class="catalogue-card__details">
-<li>Heavy central radial locking wheel mechanism</li>
-<li>Double-walled construction for dry steam sterilization</li>
-<li>Capacities up to 180 Litres with safety valves and timer</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Vertical%20Autoclave%20%28Radial%20Locking%20Double%20Wall%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="horizontal cssd" data-title="ss horizontal cylindrical autoclave (triple wall)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View SS Horizontal Cylindrical Autoclave (Triple Wall) on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="SS Horizontal Cylindrical Autoclave (Triple Wall)" decoding="async" loading="lazy" src="dr-smith-horizontal-autoclave-cabinet-enclosure.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Horizontal CSSD • 40L - 180L+</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Sterilization &amp; CSSD</span>
-<h3>SS Horizontal Cylindrical Autoclave (Triple Wall)</h3>
-<p>Hospital CSSD high-pressure horizontal autoclave with triple-wall steam jacket, radial locking door and heavy tubular stand.</p>
-<ul class="catalogue-card__details">
-<li>Sizes: 12x22" (40L) up to 24x48" high-capacity industrial volume</li>
-<li>Triple walled construction with separate steam jacket and boiler</li>
-<li>Heavy radial locking door with self-sealing silicone gasket</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=SS%20Horizontal%20Cylindrical%20Autoclave%20%28Triple%20Wall%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="swm 11134" data-title="e.t.o low-temperature gas sterilizer swm 11134">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View E.T.O Low-Temperature Gas Sterilizer on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="E.T.O Low-Temperature Gas Sterilizer" decoding="async" loading="lazy" src="eto-sterilizer.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">SWM 11134 • ETO Gas Sterilizer</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Sterilization &amp; CSSD</span>
-<h3>E.T.O Low-Temperature Gas Sterilizer (SWM 11134)</h3>
-<p>Official Dr. Smith SWM 11134 Ethylene Oxide (ETO) gas sterilizer designed for heat-sensitive laparoscopes, endoscopes, and polymer instruments.</p>
-<ul class="catalogue-card__details">
-<li>Automatic cycle phases: Pre-vacuum, humidification, gas exposure, aeration</li>
-<li>Microprocessor controlled with temperature range 37°C - 55°C</li>
-<li>Built-in catalytic exhaust gas disposal safety system</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=E.T.O%20Low-Temperature%20Gas%20Sterilizer%20%28SWM%2011134%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="dr. smith showroom" data-title="dr. smith vertical autoclave 16x24 knob locking">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Vertical Autoclave 16x24 Knob Locking on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Vertical Autoclave 16x24 Knob Locking" decoding="async" loading="lazy" src="dr-smith-vertical-autoclave-knob-locking-16x24.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Dr. Smith Showroom • 16"x24"</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Sterilization &amp; CSSD</span>
-<h3>Dr. Smith Vertical Autoclave 16"x24" (Knob Locking)</h3>
-<p>Authentic Dr. Smith heavy-duty vertical floor autoclave with stainless steel mirror-finish body, dual knob locking clamps, immersion heating box and top pressure gauge.</p>
-<ul class="catalogue-card__details">
-<li>Chamber dimensions: 16" diameter x 24" depth (approx. 75-80 Litres capacity)</li>
-<li>Heavy-duty tripod support legs with stable anti-vibration rubber feet</li>
-<li>Analog dial pressure gauge, steam release stopcock, and safety blow-off valve</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Vertical%20Autoclave%2016x24%20Knob%20Locking">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="digital cssd flagship" data-title="dr. smith horizontal cylindrical autoclave digital console">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Horizontal Cylindrical Autoclave Digital on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Horizontal Cylindrical Autoclave Digital Console" decoding="async" loading="lazy" src="dr-smith-horizontal-cylindrical-autoclave-digital.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Digital CSSD Flagship</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Hospital CSSD Engineering</span>
-<h3>Dr. Smith Horizontal Cylindrical Autoclave (Digital Console)</h3>
-<p>High-capacity hospital CSSD high-pressure horizontal sterilizer featuring dual pressure dials, single-lever radial wheel locking door, side-mounted digital microprocessor controller, and lower steam boiler.</p>
-<ul class="catalogue-card__details">
-<li>Microprocessor digital temperature and sterilization cycle timer console</li>
-<li>Twin calibrated dial gauges monitoring chamber and boiler jacket pressures</li>
-<li>Full AISI 304/316 grade stainless steel tubular frame and pressure vessel</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Horizontal%20Cylindrical%20Autoclave%20Digital">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-</div>
-</div>
-</section>
-<section class="catalogue-section">
-<div class="container">
-<div class="catalogue-cta d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4">
-<div>
-<h2>Can't find what you're looking for?</h2>
-<p>Share your requirements and our team will recommend the best fit from our full range.</p>
-</div>
-<a class="catalogue-button flex-shrink-0" href="../../contact-form/index.html">
+
+            </div>
+        </section>
+
+        <section class="catalogue-section">
+            <div class="container">
+                <div class="catalogue-cta d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4">
+                    <div>
+                        <h2>Can't find what you're looking for?</h2>
+                        <p>Share your requirements and our team will recommend the best fit from our full range.</p>
+                    </div>
+                    <a class="catalogue-button flex-shrink-0" href="../../contact-form/index.html">
                         Contact our team <i class="bi bi-arrow-right"></i>
-</a>
-</div>
-</div>
-</section>
-<!-- ============================================================
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+      <!-- ============================================================
        GLOBAL DIRECTORY FOOTER
        ============================================================ -->
-<!-- Drawer Modal -->
-<!-- ============================================================
+  
+
+  <!-- Drawer Modal -->
+    <!-- ============================================================
        GLOBAL DIRECTORY FOOTER
        ============================================================ -->
-<footer class="apple-globalfooter">
-<div class="apple-footer-inner">
-<!-- Footer Brand Header & Fast Back-To-Top -->
-<div class="apple-footer-brand-header">
-<div class="apple-footer-brand-left">
-<img alt="Dr. Smith Emblem Logo" class="apple-footer-brand-logo" decoding="async" height="32" loading="lazy" src="../../assets/img/logo.png?v=11.0" width="32"/>
-<div>
-<div class="apple-footer-brand-title">Dr. Smith</div>
-<span class="apple-footer-brand-subtitle">HOSPITAL SOLUTIONS</span>
-</div>
-</div>
-<a aria-label="Scroll back to top" class="apple-footer-backtotop-btn" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">
-<span>Top</span> <i class="bi bi-chevron-up"></i>
-</a>
-</div>
-<!-- Notes / Footnotes -->
-<div class="apple-footer-notes">
-<ol>
-<li>Medical equipment specifications, turnkey timelines, and compliance standards (ISO 9001:2015, ISO
+  <footer class="apple-globalfooter">
+    <div class="apple-footer-inner">
+
+      <!-- Footer Brand Header & Fast Back-To-Top -->
+      <div class="apple-footer-brand-header">
+        <div class="apple-footer-brand-left">
+          <img src="../../assets/img/logo.png?v=11.0" alt="Dr. Smith Emblem Logo" class="apple-footer-brand-logo" width="32"
+            height="32" decoding="async" loading="lazy">
+          <div>
+            <div class="apple-footer-brand-title">Dr. Smith</div>
+            <span class="apple-footer-brand-subtitle">HOSPITAL SOLUTIONS</span>
+          </div>
+        </div>
+        <a href="#top" class="apple-footer-backtotop-btn"
+          onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;" aria-label="Scroll back to top">
+          <span>Top</span> <i class="bi bi-chevron-up"></i>
+        </a>
+      </div>
+
+      <!-- Notes / Footnotes -->
+      <div class="apple-footer-notes">
+        <ol>
+          <li>Medical equipment specifications, turnkey timelines, and compliance standards (ISO 9001:2015, ISO
             13485:2016, CE, FDA) depend on specific project scopes and customized clinical configurations.</li>
-<li>Turnkey hospital infrastructure engineering timelines depend on architectural blueprints, local regulatory
+          <li>Turnkey hospital infrastructure engineering timelines depend on architectural blueprints, local regulatory
             clearances, and civil site readiness.</li>
-<li>Principal Global Head Office located at Kapashera Border, New Delhi; Manufacturing Plant at METL, Jhajjar,
+          <li>Principal Global Head Office located at Kapashera Border, New Delhi; Manufacturing Plant at METL, Jhajjar,
             Haryana; Overseas Head Office at SAIF Zone, Sharjah, UAE.</li>
-</ol>
-</div>
-<!-- Directory Columns (Mobile Collapsible Accordions) -->
-<div class="apple-footer-directory">
-<!-- Col 1: Turnkey Solutions (Active by default on mobile) -->
-<div class="apple-footer-col active">
-<button aria-expanded="true" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Turnkey Solutions</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../../turnkey-projects/index.html">500-Bedded Hospital Setup</a></li>
-<li><a href="../../catalogue/modular-ot/index.html">Modular OT Construction</a></li>
-<li><a href="../../turnkey-projects/index.html">Medical Gas Pipeline (MGPS)</a></li>
-<li><a href="../../turnkey-projects/index.html">Hospital Architecture &amp; MEP</a></li>
-<li><a href="../../turnkey-projects/index.html">Government &amp; Global Tenders</a></li>
-</ul>
-</div>
-<!-- Col 2: Group Ecosystem -->
-<div class="apple-footer-col">
-<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Group Ecosystem</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../../about-us/index.html">Dr. Smith Healthcare</a></li>
-<li><a href="../../catalogue/index.html">Surgihub Surgical Devices</a></li>
-<li><a href="../../catalogue/index.html">Surgical Mall of India (SMPL)</a></li>
-<li><a href="../../catalogue/index.html">MediAid Patient Care</a></li>
-<li><a href="../../catalogue/index.html">Orbit Mahajan Diagnostics</a></li>
-</ul>
-</div>
-<!-- Col 3: Product Catalogue -->
-<div class="apple-footer-col">
-<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Product Catalogue</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../../catalogue/beds/index.html">Hospital &amp; ICU Beds</a></li>
-<li><a href="../../catalogue/modular-ot/index.html">Modular OT Suites</a></li>
-<li><a href="../../catalogue/patient-monitor/index.html">Critical Care &amp; Monitors</a></li>
-<li><a href="../../catalogue/ventilators/index.html">ICU Ventilators</a></li>
-<li><a href="../../catalogue/index.html">Full 50+ Categories</a></li>
-</ul>
-</div>
-<!-- Col 4: Global Directory -->
-<div class="apple-footer-col">
-<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Global Presence</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../../contact-form/index.html">New Delhi Head Office (India)</a></li>
-<li><a href="../../contact-form/index.html">Jhajjar Manufacturing Plant</a></li>
-<li><a href="../../contact-form/index.html">Sharjah Overseas Office (UAE)</a></li>
-<li><a href="../../contact-form/index.html">Kenya &amp; Nigeria Desks</a></li>
-<li><a href="../../contact-form/index.html">Patna, Kolkata, Varanasi Marts</a></li>
-</ul>
-</div>
-<!-- Col 5: Compliance & Values -->
-<div class="apple-footer-col">
-<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Corporate &amp; Quality</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../../about-us/index.html">About 60+ Years Heritage</a></li>
-<li><a href="../../mission-values/index.html">Mission &amp; Values</a></li>
-<li><a href="../../about-us/index.html">Executive Leadership</a></li>
-<li><a href="../../privacy.html">Privacy Policy</a></li>
-<li><a href="../../terms.html">Terms of Service</a></li>
-</ul>
-</div>
-</div>
-<!-- Footer Bottom Legal, Direct Connect & Country Positioned in Correct Order -->
-<div class="apple-footer-bottom">
-<div class="apple-footer-top-row">
-<div class="apple-footer-country">
-<a class="apple-footer-country-badge" href="../../contact-form/index.html" title="Region &amp; Language">
-<i class="bi bi-globe me-1"></i> India (English)
+        </ol>
+      </div>
+
+      <!-- Directory Columns (Mobile Collapsible Accordions) -->
+      <div class="apple-footer-directory">
+
+        <!-- Col 1: Turnkey Solutions (Active by default on mobile) -->
+        <div class="apple-footer-col active">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="true">
+            <h4 class="apple-footer-col-title">Turnkey Solutions</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../../turnkey-projects/index.html">500-Bedded Hospital Setup</a></li>
+            <li><a href="../../catalogue/modular-ot/index.html">Modular OT Construction</a></li>
+            <li><a href="../../turnkey-projects/index.html">Medical Gas Pipeline (MGPS)</a></li>
+            <li><a href="../../turnkey-projects/index.html">Hospital Architecture &amp; MEP</a></li>
+            <li><a href="../../turnkey-projects/index.html">Government &amp; Global Tenders</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 2: Group Ecosystem -->
+        <div class="apple-footer-col">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Group Ecosystem</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../../about-us/index.html">Dr. Smith Healthcare</a></li>
+            <li><a href="../../catalogue/index.html">Surgihub Surgical Devices</a></li>
+            <li><a href="../../catalogue/index.html">Surgical Mall of India (SMPL)</a></li>
+            <li><a href="../../catalogue/index.html">MediAid Patient Care</a></li>
+            <li><a href="../../catalogue/index.html">Orbit Mahajan Diagnostics</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Product Catalogue -->
+        <div class="apple-footer-col">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Product Catalogue</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../../catalogue/beds/index.html">Hospital &amp; ICU Beds</a></li>
+            <li><a href="../../catalogue/modular-ot/index.html">Modular OT Suites</a></li>
+            <li><a href="../../catalogue/patient-monitor/index.html">Critical Care &amp; Monitors</a></li>
+            <li><a href="../../catalogue/ventilators/index.html">ICU Ventilators</a></li>
+            <li><a href="../../catalogue/index.html">Full 50+ Categories</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Global Directory -->
+        <div class="apple-footer-col">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Global Presence</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../../contact-form/index.html">New Delhi Head Office (India)</a></li>
+            <li><a href="../../contact-form/index.html">Jhajjar Manufacturing Plant</a></li>
+            <li><a href="../../contact-form/index.html">Sharjah Overseas Office (UAE)</a></li>
+            <li><a href="../../contact-form/index.html">Kenya &amp; Nigeria Desks</a></li>
+            <li><a href="../../contact-form/index.html">Patna, Kolkata, Varanasi Marts</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Compliance & Values -->
+        <div class="apple-footer-col">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Corporate &amp; Quality</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../../about-us/index.html">About 60+ Years Heritage</a></li>
+            <li><a href="../../mission-values/index.html">Mission &amp; Values</a></li>
+            <li><a href="../../about-us/index.html">Executive Leadership</a></li>
+            <li><a href="../../privacy.html">Privacy Policy</a></li>
+            <li><a href="../../terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Legal, Direct Connect & Country Positioned in Correct Order -->
+      <div class="apple-footer-bottom">
+        <div class="apple-footer-top-row">
+          <div class="apple-footer-country">
+            <a href="../../contact-form/index.html" class="apple-footer-country-badge" title="Region &amp; Language">
+              <i class="bi bi-globe me-1"></i> India (English)
             </a>
-</div>
-<div class="apple-footer-quicklinks">
-<a class="apple-footer-badge-link" href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." rel="noopener noreferrer" target="_blank" title="Direct WhatsApp Assistance (+91 95990 81020)">
-<i class="fa-brands fa-whatsapp text-success me-1"></i> WhatsApp Desk
+          </div>
+          <div class="apple-footer-quicklinks">
+            <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." target="_blank" rel="noopener noreferrer"
+              class="apple-footer-badge-link" title="Direct WhatsApp Assistance (+91 95990 81020)">
+              <i class="fa-brands fa-whatsapp text-success me-1"></i> WhatsApp Desk
             </a>
-</div>
-</div>
-<div class="apple-footer-divider"></div>
-<div class="apple-footer-meta-row">
-<div class="apple-footer-legal-links">
-<a href="../../privacy.html">Privacy Policy</a>
-<span class="legal-dot">•</span>
-<a href="../../terms.html">Terms of Use</a>
-<span class="legal-dot">•</span>
-<a href="../../contact-form/index.html">Sales Policy</a>
-<span class="legal-dot">•</span>
-<a href="../../contact-form/index.html">Legal</a>
-<span class="legal-dot">•</span>
-<a href="../../catalogue/index.html">Site Map</a>
-</div>
-<div class="apple-footer-copyright">
-            Copyright © 2026 Dr. Smith Healthcare Solutions (Surgical Wholesale Mart Pvt. Ltd.). All rights
+          </div>
+        </div>
+
+        <div class="apple-footer-divider"></div>
+
+        <div class="apple-footer-meta-row">
+          <div class="apple-footer-legal-links">
+            <a href="../../privacy.html">Privacy Policy</a>
+            <span class="legal-dot">•</span>
+            <a href="../../terms.html">Terms of Use</a>
+            <span class="legal-dot">•</span>
+            <a href="../../contact-form/index.html">Sales Policy</a>
+            <span class="legal-dot">•</span>
+            <a href="../../contact-form/index.html">Legal</a>
+            <span class="legal-dot">•</span>
+            <a href="../../catalogue/index.html">Site Map</a>
+          </div>
+          <div class="apple-footer-copyright">
+            Copyright &copy; 2026 Dr. Smith Healthcare Solutions (Surgical Wholesale Mart Pvt. Ltd.). All rights
             reserved. An ISO 9001:2015, ISO 13485:2016, CE &amp; FDA Certified Company.
           </div>
-</div>
-</div>
-</div>
-</footer>
-<!-- Drawer Modal -->
-<div class="apple-drawer-overlay" id="apple-drawer-overlay" onclick="if(event.target===this) closeAppleDrawer();">
-<div class="apple-drawer-content">
-<button aria-label="Close" class="apple-drawer-close" onclick="closeAppleDrawer();" type="button">
-<i class="bi bi-x-lg"></i>
-</button>
-<div style="text-align: center; margin-bottom: 24px;">
-<span class="apple-shelf-badge">Dr. Smith Turnkey &amp; Procurement Desk</span>
-<h3 style="font-size: 24px; font-weight: 700; margin-top: 8px;">Request Project Consultation</h3>
-<p style="font-size: 14px; color: var(--apple-text-secondary); margin: 0;">Speak directly with our healthcare architects &amp; hospital engineering experts.</p>
-</div>
-<form class="apple-drawer-form" onsubmit="handleAppleQuoteSubmit(event);">
-<div class="form-group">
-<label>Scope of Interest</label>
-<input id="drawer-product-name" readonly="" style="background: rgba(255,255,255,0.08); font-weight: 600;" type="text" value="Turnkey Hospital Setup"/>
-</div>
-<div class="row g-2">
-<div class="col-md-6 form-group">
-<label>Your Full Name *</label>
-<input placeholder="Dr. / Mr. / Ms." required="" type="text"/>
-</div>
-<div class="col-md-6 form-group">
-<label>Hospital / Institution Name *</label>
-<input placeholder="Hospital / Organization Name" required="" type="text"/>
-</div>
-</div>
-<div class="row g-2">
-<div class="col-md-6 form-group">
-<label>Official Email *</label>
-<input placeholder="name@hospital.com" required="" type="email"/>
-</div>
-<div class="col-md-6 form-group">
-<label>Phone / WhatsApp *</label>
-<input placeholder="+91 99999 99999" required="" type="tel"/>
-</div>
-</div>
-<div class="form-group">
-<label>Project Scope &amp; Requirements</label>
-<textarea placeholder="Specify turnkey bed capacity, modular OT requirement, MGPS pipeline, or equipment procurement details..." rows="3"></textarea>
-</div>
-<button class="apple-btn-pill w-100 mt-2" style="padding: 14px;" type="submit">Submit Consultation Request</button>
-</form>
-</div>
-</div>
-<script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
-<a aria-label="Scroll to top" class="scroll-top d-flex align-items-center justify-content-center" href="#" id="scroll-top">
-<i class="bi bi-arrow-up-short"></i>
-</a>
-<script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="../../assets/js/main.js?v=94.0"></script>
-<script src="../../assets/js/global-search.js?v=42.0"></script>
-</div></body>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Drawer Modal -->
+  <div class="apple-drawer-overlay" id="apple-drawer-overlay" onclick="if(event.target===this) closeAppleDrawer();">
+    <div class="apple-drawer-content">
+      <button type="button" class="apple-drawer-close" onclick="closeAppleDrawer();" aria-label="Close">
+        <i class="bi bi-x-lg"></i>
+      </button>
+      
+      <div style="text-align: center; margin-bottom: 24px;">
+        <span class="apple-shelf-badge">Dr. Smith Turnkey &amp; Procurement Desk</span>
+        <h3 style="font-size: 24px; font-weight: 700; margin-top: 8px;">Request Project Consultation</h3>
+        <p style="font-size: 14px; color: var(--apple-text-secondary); margin: 0;">Speak directly with our healthcare architects &amp; hospital engineering experts.</p>
+      </div>
+
+      <form class="apple-drawer-form" onsubmit="handleAppleQuoteSubmit(event);">
+        <div class="form-group">
+          <label>Scope of Interest</label>
+          <input type="text" id="drawer-product-name" value="Turnkey Hospital Setup" readonly style="background: rgba(255,255,255,0.08); font-weight: 600;">
+        </div>
+
+        <div class="row g-2">
+          <div class="col-md-6 form-group">
+            <label>Your Full Name *</label>
+            <input type="text" placeholder="Dr. / Mr. / Ms." required>
+          </div>
+          <div class="col-md-6 form-group">
+            <label>Hospital / Institution Name *</label>
+            <input type="text" placeholder="Hospital / Organization Name" required>
+          </div>
+        </div>
+
+        <div class="row g-2">
+          <div class="col-md-6 form-group">
+            <label>Official Email *</label>
+            <input type="email" placeholder="name@hospital.com" required>
+          </div>
+          <div class="col-md-6 form-group">
+            <label>Phone / WhatsApp *</label>
+            <input type="tel" placeholder="+91 99999 99999" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Project Scope &amp; Requirements</label>
+          <textarea rows="3" placeholder="Specify turnkey bed capacity, modular OT requirement, MGPS pipeline, or equipment procurement details..."></textarea>
+        </div>
+
+        <button type="submit" class="apple-btn-pill w-100 mt-2" style="padding: 14px;">Submit Consultation Request</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  
+
+
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to top">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/main.js?v=94.0"></script>
+  <script src="../../assets/js/global-search.js?v=42.0"></script>
+</body>
+
 </html>

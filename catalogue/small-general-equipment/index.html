@@ -1,581 +1,739 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Browse Dr. Smith's Small General Equipment range for hospitals, ICUs and clinics." name="description"/>
-<meta content="#030712" name="theme-color"/>
-<title>Small General Equipment | Dr. Smith Catalogue</title>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&amp;family=Open+Sans:wght@300;400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-<link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
-<link href="../../assets/img/favicon.png" rel="icon" type="image/png"/>
-<link href="../../assets/img/apple-touch-icon.png" rel="apple-touch-icon"/>
-<link href="../css/catalogue.css?v=47.0" rel="stylesheet"/>
-<link href="../../assets/css/apple-theme.css?v=106.0" rel="stylesheet"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse Dr. Smith's Small General Equipment range for hospitals, ICUs and clinics.">
+    <meta name="theme-color" content="#030712">
+    <title>Small General Equipment | Dr. Smith Catalogue</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+
+    <link href="../css/catalogue.css?v=47.0" rel="stylesheet">
+  <link href="../../assets/css/apple-theme.css?v=106.0" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body class="apple-body catalogue-page">
-<!-- ============================================================
+  <!-- ============================================================
        1. GLOBAL NAVIGATION HEADER
        ============================================================ -->
-<nav aria-label="Global" class="apple-globalnav">
-<div class="apple-globalnav-inner">
-<!-- Brand & Corporate Identity -->
-<a aria-label="Dr. Smith Hospital Solutions" class="apple-nav-brand" href="../../index.html">
-<div class="brand-asterisk-icon">
-<img alt="Dr. Smith Emblem Logo" class="apple-nav-logo-img" decoding="async" height="36" loading="eager" src="../../assets/img/logo.png?v=11.0" width="36"/>
+  <nav class="apple-globalnav" aria-label="Global">
+    <div class="apple-globalnav-inner">
+      
+      <!-- Brand & Corporate Identity -->
+      <a href="../../index.html" class="apple-nav-brand" aria-label="Dr. Smith Hospital Solutions">
+        <div class="brand-asterisk-icon">
+          <img src="../../assets/img/logo.png?v=11.0" alt="Dr. Smith Emblem Logo" class="apple-nav-logo-img" width="36" height="36" decoding="async" loading="eager">
+        </div>
+        <div class="apple-nav-brand-text">
+          <span class="apple-nav-brand-title">Dr. Smith</span>
+          <span class="apple-nav-brand-subtitle">HOSPITAL SOLUTIONS</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="apple-nav-links">
+        <li class="apple-nav-item">
+          <a href="../../index.html" class="apple-nav-link">Home</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../../catalogue/index.html" class="apple-nav-link nav-active">Products</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../../turnkey-projects/index.html" class="apple-nav-link">Turnkey Solutions</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../../about-us/index.html" class="apple-nav-link">About Us</a>
+        </li>
+        <li class="apple-nav-item">
+          <a href="../../contact-form/index.html" class="apple-nav-link">Contact</a>
+        </li>
+      </ul>
+
+                  <!-- Action Utilities -->
+      <div class="apple-nav-actions">
+        <!-- Contact / Mail Form Button -->
+        <a href="../../contact-form/index.html" class="apple-nav-circle-btn apple-nav-circle-mail"
+          aria-label="Send Enquiry &amp; Contact Us" title="Send Enquiry / Request Quotation (BOM &amp; Consultation)">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+
+        <!-- WhatsApp Circle Button -->
+        <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions."
+          class="apple-nav-circle-btn apple-nav-circle-whatsapp" target="_blank"
+          rel="noopener noreferrer" aria-label="Chat with Dr. Smith Healthcare on WhatsApp (+91 95990 81020)"
+          title="WhatsApp Direct (+91 95990 81020) • 24/7 Fast Inquiry">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <!-- Menu Toggle Button -->
+        <button type="button" class="apple-nav-circle-btn" id="apple-mobile-menu-btn"
+          aria-label="Toggle Navigation Menu" title="Menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+    <!-- Mobile Menu Drawer Backdrop Overlay -->
+  <div class="apple-mobile-backdrop" id="appleMobileBackdrop"></div>
+
+  <!-- Mobile Menu Drawer Overlay -->
+  <div class="apple-mobile-drawer" id="apple-mobile-drawer">
+    <div class="apple-mobile-drawer-header">
+      <span class="apple-mobile-drawer-tag"><i class="bi bi-hospital"></i> Dr. Smith Quick Menu</span>
+      <button type="button" class="apple-mobile-drawer-close" id="appleMobileDrawerClose" aria-label="Close Navigation Menu">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
+    <div class="apple-mobile-grid">
+      <a href="../../index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-house-door-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Home</span>
+          <span class="apple-mobile-tile-sub">Overview</span>
+        </div>
+      </a>
+      <a href="../../catalogue/index.html" class="apple-mobile-tile active">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-grid-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Catalogue</span>
+          <span class="apple-mobile-tile-sub">50+ Categories</span>
+        </div>
+      </a>
+      <a href="../../turnkey-projects/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-hospital-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Turnkey Setup</span>
+          <span class="apple-mobile-tile-sub">50–500 Beds</span>
+        </div>
+      </a>
+      <a href="../../catalogue/modular-ot/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-activity"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Modular OT</span>
+          <span class="apple-mobile-tile-sub">Cleanrooms</span>
+        </div>
+      </a>
+      <a href="../../about-us/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-shield-check"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">About Us</span>
+          <span class="apple-mobile-tile-sub">Heritage</span>
+        </div>
+      </a>
+      <a href="../../contact-form/index.html" class="apple-mobile-tile">
+        <div class="apple-mobile-tile-icon"><i class="bi bi-envelope-fill"></i></div>
+        <div class="apple-mobile-tile-content">
+          <span class="apple-mobile-tile-title">Contact</span>
+          <span class="apple-mobile-tile-sub">Global Offices</span>
+        </div>
+      </a>
+    </div>
+    
+    <div class="apple-mobile-cta-box">
+      <a href="../../contact-form/index.html" class="apple-mobile-btn-consultation">
+        <i class="bi bi-building-check me-2"></i> Request Project Consultation <i class="bi bi-arrow-right ms-auto"></i>
+      </a>
+
+      <div class="apple-mobile-contact-grid">
+        <a href="tel:18008917466" class="apple-mobile-contact-pill apple-mobile-pill-tel">
+          <i class="bi bi-telephone-fill"></i>
+          <span>1800 891 7466<small>National Toll-Free</small></span>
+        </a>
+        <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." target="_blank" rel="noopener noreferrer" class="apple-mobile-contact-pill apple-mobile-pill-wa">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>WhatsApp Desk<small>24/7 Fast Inquiry</small></span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+      
+
+    <main>
+        <section class="catalogue-hero catalogue-hero--compact">
+            <div class="container">
+                <nav class="catalogue-breadcrumb" aria-label="Breadcrumb">
+                    <a href="../../index.html">Home</a>
+                    <i class="bi bi-chevron-right"></i>
+                    <a href="../index.html#catalogue">Catalogue</a>
+                    <i class="bi bi-chevron-right"></i>
+                    <span aria-current="page">Small General Equipment</span>
+                </nav>
+                <div class="row align-items-center">
+                    <div class="col-lg-9">
+                        <span class="catalogue-eyebrow">General medical equipment</span>
+                        <h1>Small General Equipment</h1>
+                        <p>Diagnostic imaging scanners, oxygen concentrators, jaundice bilirubinometers, video laryngoscopes, and surgical operating microscopes.</p>
+                        <a class="catalogue-button catalogue-button--ghost" href="../index.html#catalogue">
+                            <i class="bi bi-arrow-left"></i> Back to full catalogue
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalogue-section">
+            <div class="container">
+                  
+                <p class="catalogue-count">Showing <strong>14</strong> products</p>
+
+                <div class="category-search-wrapper mb-4" style="max-width: 500px;">
+                    <div class="input-group">
+                        <span class="input-group-text bg-white border-end-0"><i class="bi bi-search text-muted"></i></span>
+                        <input type="text" id="categoryProductSearch" class="form-control border-start-0 ps-0" placeholder="Filter small general equipment..." aria-label="Filter products">
+                    </div>
+                </div>
+                <script src="../../assets/js/catalogue-filters.js?v=1.0"></script>
+                <div class="row g-4" id="products-grid">
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="medical computed tomography (c.t) scan machine" data-badge="radiology ct">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Medical Computed Tomography (C.T) Scan Machine on Instagram" title="View on Instagram">
+                                    <img src="ct-scan-machine.png" alt="Medical Computed Tomography (C.T) Scan Machine" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Radiology CT</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">General medical equipment</span>
+                                <h3>C.T Scan Machine (New &amp; Pre-Owned) (SWM 11096)</h3>
+                                <p>Multi-slice diagnostic CT scanner providing sub-millimetre isotropic spatial resolution, fast gantry rotation and low-dose imaging.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Multi-detector helical CT acquisition for whole-body scanning</li>
+                                <li>Advanced iterative dose reconstruction algorithms</li>
+                                <li>High-speed patient couch with laser alignment markers</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Medical%20Computed%20Tomography%20%28C.T%29%20Scan%20Machine">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="diagnostic magnetic resonance imaging (m.r.i.) scanner" data-badge="radiology mri">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Diagnostic Magnetic Resonance Imaging (M.R.I.) Scanner on Instagram" title="View on Instagram">
+                                    <img src="mri-scan-machine.png" alt="Diagnostic Magnetic Resonance Imaging (M.R.I.) Scanner" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Radiology MRI</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">General medical equipment</span>
+                                <h3>M.R.I. Scan Machine (New &amp; Pre-Owned) (SWM 11097)</h3>
+                                <p>High-field superconducting MRI scanner delivering exceptional soft-tissue contrast for neurological, orthopedic and body imaging.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Superconducting magnet technology with high magnetic field homogeneity</li>
+                                <li>Dedicated multi-channel phased array RF receiver coils</li>
+                                <li>Quiet scan acoustic noise reduction sequences</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Diagnostic%20Magnetic%20Resonance%20Imaging%20%28M.R.I.%29%20Scanner">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="medical high frequency x-ray scan system" data-badge="radiology x-ray">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Medical High Frequency X-Ray Scan System on Instagram" title="View on Instagram">
+                                    <img src="x-ray-scan-machine.png" alt="Medical High Frequency X-Ray Scan System" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Radiology X-Ray</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">General medical equipment</span>
+                                <h3>X-Ray Scan System (New &amp; Pre-Owned) (SWM 11098)</h3>
+                                <p>Floor-to-ceiling high frequency radiographic X-ray machine with four-way floating tabletop and motorized bucky stand.</p>
+                                <ul class="catalogue-card__details">
+                                <li>High-frequency 300mA / 500mA X-ray generator with micro-focus tube</li>
+                                <li>Four-way floating radiographic examination table</li>
+                                <li>Vertical chest bucky stand with counterbalanced motion</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Medical%20High%20Frequency%20X-Ray%20Scan%20System">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="digital computed radiography (cr) system" data-badge="digital cr">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Digital Computed Radiography (CR) System on Instagram" title="View on Instagram">
+                                    <img src="cr-system.png" alt="Digital Computed Radiography (CR) System" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Digital CR</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">General medical equipment</span>
+                                <h3>C.R System (New &amp; Pre-Owned) (SWM 11099)</h3>
+                                <p>Compact laser computed radiography scanner providing fast digitisation of medical X-ray imaging plates.</p>
+                                <ul class="catalogue-card__details">
+                                <li>High throughput: scans up to 70 phosphor plates per hour</li>
+                                <li>Sub-100 micron high spatial resolution for fine bone detail</li>
+                                <li>Includes DICOM viewing workstation and patient archive software</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Digital%20Computed%20Radiography%20%28CR%29%20System">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="medical grade oxygen concentrator (5l / 10l)" data-badge="oxygen therapy">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Medical Grade Oxygen Concentrator (5L / 10L) on Instagram" title="View on Instagram">
+                                    <img src="oxygen-concentrator.png" alt="Medical Grade Oxygen Concentrator (5L / 10L)" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Oxygen Therapy</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">General medical equipment</span>
+                                <h3>Oxygen Concentrator 5L / 10L (SWM 11095)</h3>
+                                <p>Continuous-flow medical oxygen generator delivering 93% ± 3% purity oxygen using high-efficiency PSA molecular sieves.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Dual-flow capability with flow output: 0.5 to 10 Litres/min</li>
+                                <li>Purity sensor with low oxygen alarm and power failure alert</li>
+                                <li>Quiet compressor on mobile castors with humidification bottle</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Medical%20Grade%20Oxygen%20Concentrator%20%285L%20/%2010L%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="transcutaneous jaundice bilirubinometer" data-badge="bilirubinometer">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Transcutaneous Jaundice Bilirubinometer on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-transcutaneous-bilirubinometer-dock.png" alt="Transcutaneous Jaundice Bilirubinometer" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Bilirubinometer</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">General medical equipment</span>
+                                <h3>Bilirubinometer Transcutaneous (SWM 11131)</h3>
+                                <p>Non-invasive handheld transcutaneous bilirubinometer assessing neonatal jaundice instantly without blood draws.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Instant non-invasive optical measurement at forehead or sternum</li>
+                                <li>Dual-wavelength measurement eliminating melanin and skin interference</li>
+                                <li>Rechargeable dock with storage for over 100 patient readings</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Transcutaneous%20Jaundice%20Bilirubinometer">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="digital video laryngoscope" data-badge="video laryngoscope">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Digital Video Laryngoscope on Instagram" title="View on Instagram">
+                                    <img src="video-laryngoscope.png" alt="Digital Video Laryngoscope" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Video Laryngoscope</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">General medical equipment</span>
+                                <h3>Video Laryngoscope (SWM 11132)</h3>
+                                <p>Portable video laryngoscope with high-resolution LCD display and anti-fog camera blades for difficult airway intubation.</p>
+                                <ul class="catalogue-card__details">
+                                <li>High-resolution 3.5" colour monitor with real-time video recording</li>
+                                <li>Medical-grade reusable and disposable anti-fog blades (Mac 1-4)</li>
+                                <li>High-luminance LED illumination with rechargeable lithium battery</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Digital%20Video%20Laryngoscope">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="e.n.t & neuro surgical operating microscope" data-badge="surgical microscope">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View E.N.T & Neuro Surgical Operating Microscope on Instagram" title="View on Instagram">
+                                    <img src="ent-neuro-microscope.png" alt="E.N.T & Neuro Surgical Operating Microscope" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Surgical Microscope</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">General medical equipment</span>
+                                <h3>E.N.T &amp; Neuro Operating Microscope (SWM 11139)</h3>
+                                <p>Floor-standing precision optical operating microscope equipped with coaxial cold LED illumination and counterbalanced arm.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Multi-step optical magnification drum with fine focusing objective</li>
+                                <li>Coaxial cold daylight illumination through fiber optic cable</li>
+                                <li>Counterbalanced articulated suspension arm on mobile castor base</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=E.N.T%20%26%20Neuro%20Surgical%20Operating%20Microscope">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith digital automatic blood pressure monitor acmnp-1" data-badge="digital nibp">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Digital Automatic Blood Pressure Monitor on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-digital-blood-pressure-monitor-acmnp1.png" alt="Dr. Smith Digital Automatic Blood Pressure Monitor" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Digital NIBP &bull; ACMNP-1</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Diagnostic Screening</span>
+                                <h3>Digital Automatic Blood Pressure Monitor</h3>
+                                <p>Microprocessor-controlled digital oscillometric blood pressure monitor with wide-range adult arm cuff, one-touch inflation, and color WHO hypertension indicator.</p>
+                                <ul class="catalogue-card__details">
+                                <li>High-contrast LCD digital screen displaying systolic, diastolic, and pulse rate</li>
+                                <li>WHO color-coded hypertension risk scale for immediate risk triage</li>
+                                <li>Memory recall for 2 x 99 clinical measurement readings with date and timestamp</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Digital%20Automatic%20Blood%20Pressure%20Monitor">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith electrical needle syringe destroyer" data-badge="biohazard safety">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Electrical Needle Syringe Destroyer on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-needle-syringe-destroyer-electrical.png" alt="Dr. Smith Electrical Needle Syringe Destroyer" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Biohazard Safety &bull; Dr. Smith</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Biomedical Waste Safety</span>
+                                <h3>Dr. Smith Electrical Needle &amp; Syringe Destroyer</h3>
+                                <p>Authentic Dr. Smith heavy-duty tabletop electric needle burner and mechanical syringe hub cutter engineered to prevent accidental needle-stick injuries and reuse.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Instant electric thermal arc incinerates needles up to 18G within seconds</li>
+                                <li>High-grade alloy cutting blade shears syringe nozzles cleanly</li>
+                                <li>Removable drawer tray collecting sterilized metal ash safely</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Electrical%20Needle%20Syringe%20Destroyer">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith macintosh laryngoscope set 4 blades" data-badge="airway management">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Macintosh Laryngoscope Set on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-macintosh-laryngoscope-set-4-blades.png" alt="Dr. Smith Macintosh Laryngoscope Set" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Airway Management &bull; 4-Blade</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Anesthesia & Resuscitation</span>
+                                <h3>Dr. Smith Macintosh Laryngoscope Set (4 Blades)</h3>
+                                <p>Surgical-grade stainless steel laryngoscope set complete with diamond knurled anti-slip handle and 4 curved Macintosh blades for pediatric to adult endotracheal intubation.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Includes 4 interchangeable curved Macintosh blades (Sizes 1, 2, 3, 4)</li>
+                                <li>High-luminosity halogen / LED cool light illumination avoiding tissue burns</li>
+                                <li>Autoclavable stainless steel construction tested up to 134°C sterilization</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Macintosh%20Laryngoscope%20Set%204%20Blades">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith compressor nebulizer machine aerosol therapy" data-badge="respiratory therapy">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Compressor Nebulizer Machine on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-compressor-nebulizer-machine.png" alt="Dr. Smith Compressor Nebulizer Machine" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Respiratory Therapy &bull; Dr. Smith</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Pulmonary Drug Delivery</span>
+                                <h3>Dr. Smith Compressor Nebulizer Machine</h3>
+                                <p>Authentic Dr. Smith high-efficiency piston-pump compressor nebulizer converting liquid medication into ultra-fine breathable aerosol particles for asthma and COPD care.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Mass Median Aerodynamic Diameter (MMAD) &lt; 3.0 &mu;m for deep lung penetration</li>
+                                <li>Powerful oil-free heavy-duty piston motor designed for continuous hospital ward duty</li>
+                                <li>Integrated carrying handle, quiet &lt; 55dB sound level, and modular air filter cap</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Compressor%20Nebulizer%20Machine">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="contec sp80b digital portable spirometer pulmonary function" data-badge="contec sp80b">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Contec SP80B Digital Portable Spirometer on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-contec-sp80b-digital-spirometer.png" alt="Contec SP80B Digital Portable Spirometer" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Pulmonary Diagnostics &bull; SP80B</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">Pulmonology Testing</span>
+                                <h3>Contec SP80B Digital Portable Spirometer</h3>
+                                <p>Handheld pulmonary function testing device measuring Forced Vital Capacity (FVC), FEV1, PEF, and displaying flow-volume loops on vibrant color screen.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Measures FVC, FEV1, FEV1/FVC, PEF, FEF25, FEF75, and FEF2575 parameters</li>
+                                <li>High-resolution color LCD showing real-time respiratory flow curves and loops</li>
+                                <li>Wireless Bluetooth and USB data transfer for computer report generation</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Contec%20SP80B%20Digital%20Portable%20Spirometer">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith digital clinical thermometer fast readout" data-badge="digital diagnostic">
+                        <article class="catalogue-card">
+                            <div class="catalogue-card__image catalogue-card__image--photo">
+                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Digital Clinical Thermometer on Instagram" title="View on Instagram">
+                                    <img src="dr-smith-digital-clinical-thermometer.png" alt="Dr. Smith Digital Clinical Thermometer" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                            <span class="catalogue-card__badge">Digital Diagnostic &bull; Dr. Smith</span>
+                            <div class="catalogue-card__body">
+                                <span class="catalogue-card__category">General Diagnostics</span>
+                                <h3>Dr. Smith Digital Clinical Thermometer</h3>
+                                <p>Authentic Dr. Smith high-accuracy electronic clinical fever thermometer offering rapid 10-second temperature sensing, fever alarm beep, and waterproof tip.</p>
+                                <ul class="catalogue-card__details">
+                                <li>Accuracy &plusmn;0.1&deg;C with clear digital liquid crystal display (LCD)</li>
+                                <li>Automatic fever alert beeper sound and last measurement memory recall</li>
+                                <li>Waterproof flexible tip for safe oral, axillary, or rectal clinical reading</li>
+                                </ul>
+                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Digital%20Clinical%20Thermometer">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
 </div>
-<div class="apple-nav-brand-text">
-<span class="apple-nav-brand-title">Dr. Smith</span>
-<span class="apple-nav-brand-subtitle">HOSPITAL SOLUTIONS</span>
-</div>
-</a>
-<!-- Navigation Links -->
-<ul class="apple-nav-links"><li class="apple-nav-item"><a class="apple-nav-link" href="../../index.html">Home</a></li><li class="apple-nav-item"><a class="apple-nav-link nav-active" href="../index.html">Products</a></li><li class="apple-nav-item"><a class="apple-nav-link" href="../../about-us/index.html">About us</a></li><li class="apple-nav-item"><a class="apple-nav-link" href="../../turnkey-projects/index.html">turnkey project</a></li><li class="apple-nav-item"><a class="apple-nav-link" href="../../contact-form/index.html">Contact Us</a></li></ul><!-- Action Utilities -->
-<div class="apple-nav-actions">
-<!-- Contact / Mail Form Button -->
-<a aria-label="Send Enquiry &amp; Contact Us" class="apple-nav-circle-btn apple-nav-circle-mail" href="../../contact-form/index.html" title="Send Enquiry / Request Quotation (BOM &amp; Consultation)">
-<i class="fa-solid fa-envelope"></i>
-</a>
-<!-- WhatsApp Circle Button -->
-<a aria-label="Chat with Dr. Smith Healthcare on WhatsApp (+91 95990 81020)" class="apple-nav-circle-btn apple-nav-circle-whatsapp" href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." rel="noopener noreferrer" target="_blank" title="WhatsApp Direct (+91 95990 81020) • 24/7 Fast Inquiry">
-<i class="fa-brands fa-whatsapp"></i>
-</a>
-<!-- Menu Toggle Button -->
-<button aria-label="Toggle Navigation Menu" class="apple-nav-circle-btn" id="apple-mobile-menu-btn" title="Menu" type="button">
-<i class="bi bi-list"></i>
-</button>
-</div>
-</div>
-</nav>
-<!-- Mobile Menu Drawer Backdrop Overlay -->
-<div class="apple-mobile-backdrop" id="appleMobileBackdrop"></div>
-<!-- Mobile Menu Drawer Overlay -->
-<div class="apple-mobile-drawer" id="apple-mobile-drawer">
-<div class="apple-mobile-drawer-header">
-<span class="apple-mobile-drawer-tag"><i class="bi bi-hospital"></i> Dr. Smith Quick Menu</span>
-<button aria-label="Close Navigation Menu" class="apple-mobile-drawer-close" id="appleMobileDrawerClose" type="button">
-<i class="bi bi-x-lg"></i>
-</button>
-</div>
-<div class="apple-mobile-grid"><a class="apple-mobile-tile" href="../../index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-house-door-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">Home</span><span class="apple-mobile-tile-sub">Overview</span></div></a><a class="apple-mobile-tile active" href="../index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-grid-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">Products</span><span class="apple-mobile-tile-sub">Browse categories</span></div></a><a class="apple-mobile-tile" href="../../about-us/index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-shield-check"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">About us</span><span class="apple-mobile-tile-sub">Our story</span></div></a><a class="apple-mobile-tile" href="../../turnkey-projects/index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-hospital-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">turnkey project</span><span class="apple-mobile-tile-sub">Setup solutions</span></div></a><a class="apple-mobile-tile" href="../../contact-form/index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-envelope-paper-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">Contact Us</span><span class="apple-mobile-tile-sub">Get in touch</span></div></a></div>
-<section class="catalogue-section">
-<div class="container">
-<p class="catalogue-count">Showing <strong>14</strong> products</p>
-<div class="category-search-wrapper mb-4" style="max-width: 500px;">
-<div class="input-group">
-<span class="input-group-text bg-white border-end-0"><i class="bi bi-search text-muted"></i></span>
-<input aria-label="Filter products" class="form-control border-start-0 ps-0" id="categoryProductSearch" placeholder="Filter small general equipment..." type="text"/>
-</div>
-</div>
-<script src="../../assets/js/catalogue-filters.js?v=1.0"></script>
-<div class="row g-4" id="products-grid">
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="radiology ct" data-title="medical computed tomography (c.t) scan machine">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Medical Computed Tomography (C.T) Scan Machine on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Medical Computed Tomography (C.T) Scan Machine" decoding="async" loading="lazy" src="ct-scan-machine.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Radiology CT</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">General medical equipment</span>
-<h3>C.T Scan Machine (New &amp; Pre-Owned) (SWM 11096)</h3>
-<p>Multi-slice diagnostic CT scanner providing sub-millimetre isotropic spatial resolution, fast gantry rotation and low-dose imaging.</p>
-<ul class="catalogue-card__details">
-<li>Multi-detector helical CT acquisition for whole-body scanning</li>
-<li>Advanced iterative dose reconstruction algorithms</li>
-<li>High-speed patient couch with laser alignment markers</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Medical%20Computed%20Tomography%20%28C.T%29%20Scan%20Machine">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="radiology mri" data-title="diagnostic magnetic resonance imaging (m.r.i.) scanner">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Diagnostic Magnetic Resonance Imaging (M.R.I.) Scanner on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Diagnostic Magnetic Resonance Imaging (M.R.I.) Scanner" decoding="async" loading="lazy" src="mri-scan-machine.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Radiology MRI</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">General medical equipment</span>
-<h3>M.R.I. Scan Machine (New &amp; Pre-Owned) (SWM 11097)</h3>
-<p>High-field superconducting MRI scanner delivering exceptional soft-tissue contrast for neurological, orthopedic and body imaging.</p>
-<ul class="catalogue-card__details">
-<li>Superconducting magnet technology with high magnetic field homogeneity</li>
-<li>Dedicated multi-channel phased array RF receiver coils</li>
-<li>Quiet scan acoustic noise reduction sequences</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Diagnostic%20Magnetic%20Resonance%20Imaging%20%28M.R.I.%29%20Scanner">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="radiology x-ray" data-title="medical high frequency x-ray scan system">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Medical High Frequency X-Ray Scan System on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Medical High Frequency X-Ray Scan System" decoding="async" loading="lazy" src="x-ray-scan-machine.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Radiology X-Ray</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">General medical equipment</span>
-<h3>X-Ray Scan System (New &amp; Pre-Owned) (SWM 11098)</h3>
-<p>Floor-to-ceiling high frequency radiographic X-ray machine with four-way floating tabletop and motorized bucky stand.</p>
-<ul class="catalogue-card__details">
-<li>High-frequency 300mA / 500mA X-ray generator with micro-focus tube</li>
-<li>Four-way floating radiographic examination table</li>
-<li>Vertical chest bucky stand with counterbalanced motion</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Medical%20High%20Frequency%20X-Ray%20Scan%20System">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="digital cr" data-title="digital computed radiography (cr) system">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Digital Computed Radiography (CR) System on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Digital Computed Radiography (CR) System" decoding="async" loading="lazy" src="cr-system.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Digital CR</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">General medical equipment</span>
-<h3>C.R System (New &amp; Pre-Owned) (SWM 11099)</h3>
-<p>Compact laser computed radiography scanner providing fast digitisation of medical X-ray imaging plates.</p>
-<ul class="catalogue-card__details">
-<li>High throughput: scans up to 70 phosphor plates per hour</li>
-<li>Sub-100 micron high spatial resolution for fine bone detail</li>
-<li>Includes DICOM viewing workstation and patient archive software</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Digital%20Computed%20Radiography%20%28CR%29%20System">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="oxygen therapy" data-title="medical grade oxygen concentrator (5l / 10l)">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Medical Grade Oxygen Concentrator (5L / 10L) on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Medical Grade Oxygen Concentrator (5L / 10L)" decoding="async" loading="lazy" src="oxygen-concentrator.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Oxygen Therapy</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">General medical equipment</span>
-<h3>Oxygen Concentrator 5L / 10L (SWM 11095)</h3>
-<p>Continuous-flow medical oxygen generator delivering 93% ± 3% purity oxygen using high-efficiency PSA molecular sieves.</p>
-<ul class="catalogue-card__details">
-<li>Dual-flow capability with flow output: 0.5 to 10 Litres/min</li>
-<li>Purity sensor with low oxygen alarm and power failure alert</li>
-<li>Quiet compressor on mobile castors with humidification bottle</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Medical%20Grade%20Oxygen%20Concentrator%20%285L%20/%2010L%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="bilirubinometer" data-title="transcutaneous jaundice bilirubinometer">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Transcutaneous Jaundice Bilirubinometer on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Transcutaneous Jaundice Bilirubinometer" decoding="async" loading="lazy" src="dr-smith-transcutaneous-bilirubinometer-dock.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Bilirubinometer</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">General medical equipment</span>
-<h3>Bilirubinometer Transcutaneous (SWM 11131)</h3>
-<p>Non-invasive handheld transcutaneous bilirubinometer assessing neonatal jaundice instantly without blood draws.</p>
-<ul class="catalogue-card__details">
-<li>Instant non-invasive optical measurement at forehead or sternum</li>
-<li>Dual-wavelength measurement eliminating melanin and skin interference</li>
-<li>Rechargeable dock with storage for over 100 patient readings</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Transcutaneous%20Jaundice%20Bilirubinometer">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="video laryngoscope" data-title="digital video laryngoscope">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Digital Video Laryngoscope on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Digital Video Laryngoscope" decoding="async" loading="lazy" src="video-laryngoscope.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Video Laryngoscope</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">General medical equipment</span>
-<h3>Video Laryngoscope (SWM 11132)</h3>
-<p>Portable video laryngoscope with high-resolution LCD display and anti-fog camera blades for difficult airway intubation.</p>
-<ul class="catalogue-card__details">
-<li>High-resolution 3.5" colour monitor with real-time video recording</li>
-<li>Medical-grade reusable and disposable anti-fog blades (Mac 1-4)</li>
-<li>High-luminance LED illumination with rechargeable lithium battery</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Digital%20Video%20Laryngoscope">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="surgical microscope" data-title="e.n.t &amp; neuro surgical operating microscope">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View E.N.T &amp; Neuro Surgical Operating Microscope on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="E.N.T &amp; Neuro Surgical Operating Microscope" decoding="async" loading="lazy" src="ent-neuro-microscope.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Surgical Microscope</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">General medical equipment</span>
-<h3>E.N.T &amp; Neuro Operating Microscope (SWM 11139)</h3>
-<p>Floor-standing precision optical operating microscope equipped with coaxial cold LED illumination and counterbalanced arm.</p>
-<ul class="catalogue-card__details">
-<li>Multi-step optical magnification drum with fine focusing objective</li>
-<li>Coaxial cold daylight illumination through fiber optic cable</li>
-<li>Counterbalanced articulated suspension arm on mobile castor base</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=E.N.T%20%26%20Neuro%20Surgical%20Operating%20Microscope">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="digital nibp" data-title="dr. smith digital automatic blood pressure monitor acmnp-1">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Digital Automatic Blood Pressure Monitor on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Digital Automatic Blood Pressure Monitor" decoding="async" loading="lazy" src="dr-smith-digital-blood-pressure-monitor-acmnp1.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Digital NIBP • ACMNP-1</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Diagnostic Screening</span>
-<h3>Digital Automatic Blood Pressure Monitor</h3>
-<p>Microprocessor-controlled digital oscillometric blood pressure monitor with wide-range adult arm cuff, one-touch inflation, and color WHO hypertension indicator.</p>
-<ul class="catalogue-card__details">
-<li>High-contrast LCD digital screen displaying systolic, diastolic, and pulse rate</li>
-<li>WHO color-coded hypertension risk scale for immediate risk triage</li>
-<li>Memory recall for 2 x 99 clinical measurement readings with date and timestamp</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Digital%20Automatic%20Blood%20Pressure%20Monitor">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="biohazard safety" data-title="dr. smith electrical needle syringe destroyer">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Electrical Needle Syringe Destroyer on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Electrical Needle Syringe Destroyer" decoding="async" loading="lazy" src="dr-smith-needle-syringe-destroyer-electrical.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Biohazard Safety • Dr. Smith</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Biomedical Waste Safety</span>
-<h3>Dr. Smith Electrical Needle &amp; Syringe Destroyer</h3>
-<p>Authentic Dr. Smith heavy-duty tabletop electric needle burner and mechanical syringe hub cutter engineered to prevent accidental needle-stick injuries and reuse.</p>
-<ul class="catalogue-card__details">
-<li>Instant electric thermal arc incinerates needles up to 18G within seconds</li>
-<li>High-grade alloy cutting blade shears syringe nozzles cleanly</li>
-<li>Removable drawer tray collecting sterilized metal ash safely</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Electrical%20Needle%20Syringe%20Destroyer">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="airway management" data-title="dr. smith macintosh laryngoscope set 4 blades">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Macintosh Laryngoscope Set on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Macintosh Laryngoscope Set" decoding="async" loading="lazy" src="dr-smith-macintosh-laryngoscope-set-4-blades.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Airway Management • 4-Blade</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Anesthesia &amp; Resuscitation</span>
-<h3>Dr. Smith Macintosh Laryngoscope Set (4 Blades)</h3>
-<p>Surgical-grade stainless steel laryngoscope set complete with diamond knurled anti-slip handle and 4 curved Macintosh blades for pediatric to adult endotracheal intubation.</p>
-<ul class="catalogue-card__details">
-<li>Includes 4 interchangeable curved Macintosh blades (Sizes 1, 2, 3, 4)</li>
-<li>High-luminosity halogen / LED cool light illumination avoiding tissue burns</li>
-<li>Autoclavable stainless steel construction tested up to 134°C sterilization</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Macintosh%20Laryngoscope%20Set%204%20Blades">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="respiratory therapy" data-title="dr. smith compressor nebulizer machine aerosol therapy">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Compressor Nebulizer Machine on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Compressor Nebulizer Machine" decoding="async" loading="lazy" src="dr-smith-compressor-nebulizer-machine.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Respiratory Therapy • Dr. Smith</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Pulmonary Drug Delivery</span>
-<h3>Dr. Smith Compressor Nebulizer Machine</h3>
-<p>Authentic Dr. Smith high-efficiency piston-pump compressor nebulizer converting liquid medication into ultra-fine breathable aerosol particles for asthma and COPD care.</p>
-<ul class="catalogue-card__details">
-<li>Mass Median Aerodynamic Diameter (MMAD) &lt; 3.0 μm for deep lung penetration</li>
-<li>Powerful oil-free heavy-duty piston motor designed for continuous hospital ward duty</li>
-<li>Integrated carrying handle, quiet &lt; 55dB sound level, and modular air filter cap</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Compressor%20Nebulizer%20Machine">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="contec sp80b" data-title="contec sp80b digital portable spirometer pulmonary function">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Contec SP80B Digital Portable Spirometer on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Contec SP80B Digital Portable Spirometer" decoding="async" loading="lazy" src="dr-smith-contec-sp80b-digital-spirometer.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Pulmonary Diagnostics • SP80B</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">Pulmonology Testing</span>
-<h3>Contec SP80B Digital Portable Spirometer</h3>
-<p>Handheld pulmonary function testing device measuring Forced Vital Capacity (FVC), FEV1, PEF, and displaying flow-volume loops on vibrant color screen.</p>
-<ul class="catalogue-card__details">
-<li>Measures FVC, FEV1, FEV1/FVC, PEF, FEF25, FEF75, and FEF2575 parameters</li>
-<li>High-resolution color LCD showing real-time respiratory flow curves and loops</li>
-<li>Wireless Bluetooth and USB data transfer for computer report generation</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Contec%20SP80B%20Digital%20Portable%20Spirometer">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="digital diagnostic" data-title="dr. smith digital clinical thermometer fast readout">
-<article class="catalogue-card">
-<div class="catalogue-card__image catalogue-card__image--photo">
-<a aria-label="View Dr. Smith Digital Clinical Thermometer on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
-<img alt="Dr. Smith Digital Clinical Thermometer" decoding="async" loading="lazy" src="dr-smith-digital-clinical-thermometer.png"/>
-</a>
-</div>
-<span class="catalogue-card__badge">Digital Diagnostic • Dr. Smith</span>
-<div class="catalogue-card__body">
-<span class="catalogue-card__category">General Diagnostics</span>
-<h3>Dr. Smith Digital Clinical Thermometer</h3>
-<p>Authentic Dr. Smith high-accuracy electronic clinical fever thermometer offering rapid 10-second temperature sensing, fever alarm beep, and waterproof tip.</p>
-<ul class="catalogue-card__details">
-<li>Accuracy ±0.1°C with clear digital liquid crystal display (LCD)</li>
-<li>Automatic fever alert beeper sound and last measurement memory recall</li>
-<li>Waterproof flexible tip for safe oral, axillary, or rectal clinical reading</li>
-</ul>
-<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Digital%20Clinical%20Thermometer">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-</div>
-</article>
-</div>
-</div>
-</div>
-</section>
-<section class="catalogue-section">
-<div class="container">
-<div class="catalogue-cta d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4">
-<div>
-<h2>Can't find what you're looking for?</h2>
-<p>Share your requirements and our team will recommend the best fit from our full range.</p>
-</div>
-<a class="catalogue-button flex-shrink-0" href="../../contact-form/index.html">
+
+            </div>
+        </section>
+
+        <section class="catalogue-section">
+            <div class="container">
+                <div class="catalogue-cta d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4">
+                    <div>
+                        <h2>Can't find what you're looking for?</h2>
+                        <p>Share your requirements and our team will recommend the best fit from our full range.</p>
+                    </div>
+                    <a class="catalogue-button flex-shrink-0" href="../../contact-form/index.html">
                         Contact our team <i class="bi bi-arrow-right"></i>
-</a>
-</div>
-</div>
-</section>
-<!-- ============================================================
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+      <!-- ============================================================
        GLOBAL DIRECTORY FOOTER
        ============================================================ -->
-<!-- Drawer Modal -->
-<!-- ============================================================
+  
+
+  <!-- Drawer Modal -->
+    <!-- ============================================================
        GLOBAL DIRECTORY FOOTER
        ============================================================ -->
-<footer class="apple-globalfooter">
-<div class="apple-footer-inner">
-<!-- Footer Brand Header & Fast Back-To-Top -->
-<div class="apple-footer-brand-header">
-<div class="apple-footer-brand-left">
-<img alt="Dr. Smith Emblem Logo" class="apple-footer-brand-logo" decoding="async" height="32" loading="lazy" src="../../assets/img/logo.png?v=11.0" width="32"/>
-<div>
-<div class="apple-footer-brand-title">Dr. Smith</div>
-<span class="apple-footer-brand-subtitle">HOSPITAL SOLUTIONS</span>
-</div>
-</div>
-<a aria-label="Scroll back to top" class="apple-footer-backtotop-btn" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">
-<span>Top</span> <i class="bi bi-chevron-up"></i>
-</a>
-</div>
-<!-- Notes / Footnotes -->
-<div class="apple-footer-notes">
-<ol>
-<li>Medical equipment specifications, turnkey timelines, and compliance standards (ISO 9001:2015, ISO
+  <footer class="apple-globalfooter">
+    <div class="apple-footer-inner">
+
+      <!-- Footer Brand Header & Fast Back-To-Top -->
+      <div class="apple-footer-brand-header">
+        <div class="apple-footer-brand-left">
+          <img src="../../assets/img/logo.png?v=11.0" alt="Dr. Smith Emblem Logo" class="apple-footer-brand-logo" width="32"
+            height="32" decoding="async" loading="lazy">
+          <div>
+            <div class="apple-footer-brand-title">Dr. Smith</div>
+            <span class="apple-footer-brand-subtitle">HOSPITAL SOLUTIONS</span>
+          </div>
+        </div>
+        <a href="#top" class="apple-footer-backtotop-btn"
+          onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;" aria-label="Scroll back to top">
+          <span>Top</span> <i class="bi bi-chevron-up"></i>
+        </a>
+      </div>
+
+      <!-- Notes / Footnotes -->
+      <div class="apple-footer-notes">
+        <ol>
+          <li>Medical equipment specifications, turnkey timelines, and compliance standards (ISO 9001:2015, ISO
             13485:2016, CE, FDA) depend on specific project scopes and customized clinical configurations.</li>
-<li>Turnkey hospital infrastructure engineering timelines depend on architectural blueprints, local regulatory
+          <li>Turnkey hospital infrastructure engineering timelines depend on architectural blueprints, local regulatory
             clearances, and civil site readiness.</li>
-<li>Principal Global Head Office located at Kapashera Border, New Delhi; Manufacturing Plant at METL, Jhajjar,
+          <li>Principal Global Head Office located at Kapashera Border, New Delhi; Manufacturing Plant at METL, Jhajjar,
             Haryana; Overseas Head Office at SAIF Zone, Sharjah, UAE.</li>
-</ol>
-</div>
-<!-- Directory Columns (Mobile Collapsible Accordions) -->
-<div class="apple-footer-directory">
-<!-- Col 1: Turnkey Solutions (Active by default on mobile) -->
-<div class="apple-footer-col active">
-<button aria-expanded="true" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Turnkey Solutions</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../../turnkey-projects/index.html">500-Bedded Hospital Setup</a></li>
-<li><a href="../../catalogue/modular-ot/index.html">Modular OT Construction</a></li>
-<li><a href="../../turnkey-projects/index.html">Medical Gas Pipeline (MGPS)</a></li>
-<li><a href="../../turnkey-projects/index.html">Hospital Architecture &amp; MEP</a></li>
-<li><a href="../../turnkey-projects/index.html">Government &amp; Global Tenders</a></li>
-</ul>
-</div>
-<!-- Col 2: Group Ecosystem -->
-<div class="apple-footer-col">
-<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Group Ecosystem</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../../about-us/index.html">Dr. Smith Healthcare</a></li>
-<li><a href="../../catalogue/index.html">Surgihub Surgical Devices</a></li>
-<li><a href="../../catalogue/index.html">Surgical Mall of India (SMPL)</a></li>
-<li><a href="../../catalogue/index.html">MediAid Patient Care</a></li>
-<li><a href="../../catalogue/index.html">Orbit Mahajan Diagnostics</a></li>
-</ul>
-</div>
-<!-- Col 3: Product Catalogue -->
-<div class="apple-footer-col">
-<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Product Catalogue</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../../catalogue/beds/index.html">Hospital &amp; ICU Beds</a></li>
-<li><a href="../../catalogue/modular-ot/index.html">Modular OT Suites</a></li>
-<li><a href="../../catalogue/patient-monitor/index.html">Critical Care &amp; Monitors</a></li>
-<li><a href="../../catalogue/ventilators/index.html">ICU Ventilators</a></li>
-<li><a href="../../catalogue/index.html">Full 50+ Categories</a></li>
-</ul>
-</div>
-<!-- Col 4: Global Directory -->
-<div class="apple-footer-col">
-<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Global Presence</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../../contact-form/index.html">New Delhi Head Office (India)</a></li>
-<li><a href="../../contact-form/index.html">Jhajjar Manufacturing Plant</a></li>
-<li><a href="../../contact-form/index.html">Sharjah Overseas Office (UAE)</a></li>
-<li><a href="../../contact-form/index.html">Kenya &amp; Nigeria Desks</a></li>
-<li><a href="../../contact-form/index.html">Patna, Kolkata, Varanasi Marts</a></li>
-</ul>
-</div>
-<!-- Col 5: Compliance & Values -->
-<div class="apple-footer-col">
-<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
-<h4 class="apple-footer-col-title">Corporate &amp; Quality</h4>
-<i class="bi bi-chevron-down apple-footer-col-icon"></i>
-</button>
-<ul class="apple-footer-col-list">
-<li><a href="../../about-us/index.html">About 60+ Years Heritage</a></li>
-<li><a href="../../mission-values/index.html">Mission &amp; Values</a></li>
-<li><a href="../../about-us/index.html">Executive Leadership</a></li>
-<li><a href="../../privacy.html">Privacy Policy</a></li>
-<li><a href="../../terms.html">Terms of Service</a></li>
-</ul>
-</div>
-</div>
-<!-- Footer Bottom Legal, Direct Connect & Country Positioned in Correct Order -->
-<div class="apple-footer-bottom">
-<div class="apple-footer-top-row">
-<div class="apple-footer-country">
-<a class="apple-footer-country-badge" href="../../contact-form/index.html" title="Region &amp; Language">
-<i class="bi bi-globe me-1"></i> India (English)
+        </ol>
+      </div>
+
+      <!-- Directory Columns (Mobile Collapsible Accordions) -->
+      <div class="apple-footer-directory">
+
+        <!-- Col 1: Turnkey Solutions (Active by default on mobile) -->
+        <div class="apple-footer-col active">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="true">
+            <h4 class="apple-footer-col-title">Turnkey Solutions</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../../turnkey-projects/index.html">500-Bedded Hospital Setup</a></li>
+            <li><a href="../../catalogue/modular-ot/index.html">Modular OT Construction</a></li>
+            <li><a href="../../turnkey-projects/index.html">Medical Gas Pipeline (MGPS)</a></li>
+            <li><a href="../../turnkey-projects/index.html">Hospital Architecture &amp; MEP</a></li>
+            <li><a href="../../turnkey-projects/index.html">Government &amp; Global Tenders</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 2: Group Ecosystem -->
+        <div class="apple-footer-col">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Group Ecosystem</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../../about-us/index.html">Dr. Smith Healthcare</a></li>
+            <li><a href="../../catalogue/index.html">Surgihub Surgical Devices</a></li>
+            <li><a href="../../catalogue/index.html">Surgical Mall of India (SMPL)</a></li>
+            <li><a href="../../catalogue/index.html">MediAid Patient Care</a></li>
+            <li><a href="../../catalogue/index.html">Orbit Mahajan Diagnostics</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Product Catalogue -->
+        <div class="apple-footer-col">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Product Catalogue</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../../catalogue/beds/index.html">Hospital &amp; ICU Beds</a></li>
+            <li><a href="../../catalogue/modular-ot/index.html">Modular OT Suites</a></li>
+            <li><a href="../../catalogue/patient-monitor/index.html">Critical Care &amp; Monitors</a></li>
+            <li><a href="../../catalogue/ventilators/index.html">ICU Ventilators</a></li>
+            <li><a href="../../catalogue/index.html">Full 50+ Categories</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Global Directory -->
+        <div class="apple-footer-col">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Global Presence</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../../contact-form/index.html">New Delhi Head Office (India)</a></li>
+            <li><a href="../../contact-form/index.html">Jhajjar Manufacturing Plant</a></li>
+            <li><a href="../../contact-form/index.html">Sharjah Overseas Office (UAE)</a></li>
+            <li><a href="../../contact-form/index.html">Kenya &amp; Nigeria Desks</a></li>
+            <li><a href="../../contact-form/index.html">Patna, Kolkata, Varanasi Marts</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Compliance & Values -->
+        <div class="apple-footer-col">
+          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
+            <h4 class="apple-footer-col-title">Corporate &amp; Quality</h4>
+            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
+          </button>
+          <ul class="apple-footer-col-list">
+            <li><a href="../../about-us/index.html">About 60+ Years Heritage</a></li>
+            <li><a href="../../mission-values/index.html">Mission &amp; Values</a></li>
+            <li><a href="../../about-us/index.html">Executive Leadership</a></li>
+            <li><a href="../../privacy.html">Privacy Policy</a></li>
+            <li><a href="../../terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Legal, Direct Connect & Country Positioned in Correct Order -->
+      <div class="apple-footer-bottom">
+        <div class="apple-footer-top-row">
+          <div class="apple-footer-country">
+            <a href="../../contact-form/index.html" class="apple-footer-country-badge" title="Region &amp; Language">
+              <i class="bi bi-globe me-1"></i> India (English)
             </a>
-</div>
-<div class="apple-footer-quicklinks">
-<a class="apple-footer-badge-link" href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." rel="noopener noreferrer" target="_blank" title="Direct WhatsApp Assistance (+91 95990 81020)">
-<i class="fa-brands fa-whatsapp text-success me-1"></i> WhatsApp Desk
+          </div>
+          <div class="apple-footer-quicklinks">
+            <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." target="_blank" rel="noopener noreferrer"
+              class="apple-footer-badge-link" title="Direct WhatsApp Assistance (+91 95990 81020)">
+              <i class="fa-brands fa-whatsapp text-success me-1"></i> WhatsApp Desk
             </a>
-</div>
-</div>
-<div class="apple-footer-divider"></div>
-<div class="apple-footer-meta-row">
-<div class="apple-footer-legal-links">
-<a href="../../privacy.html">Privacy Policy</a>
-<span class="legal-dot">•</span>
-<a href="../../terms.html">Terms of Use</a>
-<span class="legal-dot">•</span>
-<a href="../../contact-form/index.html">Sales Policy</a>
-<span class="legal-dot">•</span>
-<a href="../../contact-form/index.html">Legal</a>
-<span class="legal-dot">•</span>
-<a href="../../catalogue/index.html">Site Map</a>
-</div>
-<div class="apple-footer-copyright">
-            Copyright © 2026 Dr. Smith Healthcare Solutions (Surgical Wholesale Mart Pvt. Ltd.). All rights
+          </div>
+        </div>
+
+        <div class="apple-footer-divider"></div>
+
+        <div class="apple-footer-meta-row">
+          <div class="apple-footer-legal-links">
+            <a href="../../privacy.html">Privacy Policy</a>
+            <span class="legal-dot">•</span>
+            <a href="../../terms.html">Terms of Use</a>
+            <span class="legal-dot">•</span>
+            <a href="../../contact-form/index.html">Sales Policy</a>
+            <span class="legal-dot">•</span>
+            <a href="../../contact-form/index.html">Legal</a>
+            <span class="legal-dot">•</span>
+            <a href="../../catalogue/index.html">Site Map</a>
+          </div>
+          <div class="apple-footer-copyright">
+            Copyright &copy; 2026 Dr. Smith Healthcare Solutions (Surgical Wholesale Mart Pvt. Ltd.). All rights
             reserved. An ISO 9001:2015, ISO 13485:2016, CE &amp; FDA Certified Company.
           </div>
-</div>
-</div>
-</div>
-</footer>
-<!-- Drawer Modal -->
-<div class="apple-drawer-overlay" id="apple-drawer-overlay" onclick="if(event.target===this) closeAppleDrawer();">
-<div class="apple-drawer-content">
-<button aria-label="Close" class="apple-drawer-close" onclick="closeAppleDrawer();" type="button">
-<i class="bi bi-x-lg"></i>
-</button>
-<div style="text-align: center; margin-bottom: 24px;">
-<span class="apple-shelf-badge">Dr. Smith Turnkey &amp; Procurement Desk</span>
-<h3 style="font-size: 24px; font-weight: 700; margin-top: 8px;">Request Project Consultation</h3>
-<p style="font-size: 14px; color: var(--apple-text-secondary); margin: 0;">Speak directly with our healthcare architects &amp; hospital engineering experts.</p>
-</div>
-<form class="apple-drawer-form" onsubmit="handleAppleQuoteSubmit(event);">
-<div class="form-group">
-<label>Scope of Interest</label>
-<input id="drawer-product-name" readonly="" style="background: rgba(255,255,255,0.08); font-weight: 600;" type="text" value="Turnkey Hospital Setup"/>
-</div>
-<div class="row g-2">
-<div class="col-md-6 form-group">
-<label>Your Full Name *</label>
-<input placeholder="Dr. / Mr. / Ms." required="" type="text"/>
-</div>
-<div class="col-md-6 form-group">
-<label>Hospital / Institution Name *</label>
-<input placeholder="Hospital / Organization Name" required="" type="text"/>
-</div>
-</div>
-<div class="row g-2">
-<div class="col-md-6 form-group">
-<label>Official Email *</label>
-<input placeholder="name@hospital.com" required="" type="email"/>
-</div>
-<div class="col-md-6 form-group">
-<label>Phone / WhatsApp *</label>
-<input placeholder="+91 99999 99999" required="" type="tel"/>
-</div>
-</div>
-<div class="form-group">
-<label>Project Scope &amp; Requirements</label>
-<textarea placeholder="Specify turnkey bed capacity, modular OT requirement, MGPS pipeline, or equipment procurement details..." rows="3"></textarea>
-</div>
-<button class="apple-btn-pill w-100 mt-2" style="padding: 14px;" type="submit">Submit Consultation Request</button>
-</form>
-</div>
-</div>
-<script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
-<a aria-label="Scroll to top" class="scroll-top d-flex align-items-center justify-content-center" href="#" id="scroll-top">
-<i class="bi bi-arrow-up-short"></i>
-</a>
-<script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="../../assets/js/main.js?v=94.0"></script>
-<script src="../../assets/js/global-search.js?v=42.0"></script>
-</div></body>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Drawer Modal -->
+  <div class="apple-drawer-overlay" id="apple-drawer-overlay" onclick="if(event.target===this) closeAppleDrawer();">
+    <div class="apple-drawer-content">
+      <button type="button" class="apple-drawer-close" onclick="closeAppleDrawer();" aria-label="Close">
+        <i class="bi bi-x-lg"></i>
+      </button>
+      
+      <div style="text-align: center; margin-bottom: 24px;">
+        <span class="apple-shelf-badge">Dr. Smith Turnkey &amp; Procurement Desk</span>
+        <h3 style="font-size: 24px; font-weight: 700; margin-top: 8px;">Request Project Consultation</h3>
+        <p style="font-size: 14px; color: var(--apple-text-secondary); margin: 0;">Speak directly with our healthcare architects &amp; hospital engineering experts.</p>
+      </div>
+
+      <form class="apple-drawer-form" onsubmit="handleAppleQuoteSubmit(event);">
+        <div class="form-group">
+          <label>Scope of Interest</label>
+          <input type="text" id="drawer-product-name" value="Turnkey Hospital Setup" readonly style="background: rgba(255,255,255,0.08); font-weight: 600;">
+        </div>
+
+        <div class="row g-2">
+          <div class="col-md-6 form-group">
+            <label>Your Full Name *</label>
+            <input type="text" placeholder="Dr. / Mr. / Ms." required>
+          </div>
+          <div class="col-md-6 form-group">
+            <label>Hospital / Institution Name *</label>
+            <input type="text" placeholder="Hospital / Organization Name" required>
+          </div>
+        </div>
+
+        <div class="row g-2">
+          <div class="col-md-6 form-group">
+            <label>Official Email *</label>
+            <input type="email" placeholder="name@hospital.com" required>
+          </div>
+          <div class="col-md-6 form-group">
+            <label>Phone / WhatsApp *</label>
+            <input type="tel" placeholder="+91 99999 99999" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Project Scope &amp; Requirements</label>
+          <textarea rows="3" placeholder="Specify turnkey bed capacity, modular OT requirement, MGPS pipeline, or equipment procurement details..."></textarea>
+        </div>
+
+        <button type="submit" class="apple-btn-pill w-100 mt-2" style="padding: 14px;">Submit Consultation Request</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  
+
+
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to top">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/main.js?v=94.0"></script>
+  <script src="../../assets/js/global-search.js?v=42.0"></script>
+</body>
+
 </html>
