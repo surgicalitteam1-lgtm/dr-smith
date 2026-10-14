@@ -1,511 +1,427 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Browse Dr. Smith's Defibrillator & AED range for hospitals, ICUs and clinics.">
-    <meta name="theme-color" content="#030712">
-    <title>Defibrillator & AED | Dr. Smith Catalogue</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
-    <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
-
-    <link href="../css/catalogue.css?v=47.0" rel="stylesheet">
-  <link href="../../assets/css/apple-theme.css?v=106.0" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Browse Dr. Smith's Defibrillator &amp; AED range for hospitals, ICUs and clinics." name="description"/>
+<meta content="#030712" name="theme-color"/>
+<title>Defibrillator &amp; AED | Dr. Smith Catalogue</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&amp;family=Open+Sans:wght@300;400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
+<link href="../../assets/img/favicon.png" rel="icon" type="image/png"/>
+<link href="../../assets/img/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="../css/catalogue.css?v=47.0" rel="stylesheet"/>
+<link href="../../assets/css/apple-theme.css?v=106.0" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
 </head>
-
 <body class="apple-body catalogue-page">
-  <!-- ============================================================
+<!-- ============================================================
        1. GLOBAL NAVIGATION HEADER
        ============================================================ -->
-  <nav class="apple-globalnav" aria-label="Global">
-    <div class="apple-globalnav-inner">
-      
-      <!-- Brand & Corporate Identity -->
-      <a href="../../index.html" class="apple-nav-brand" aria-label="Dr. Smith Hospital Solutions">
-        <div class="brand-asterisk-icon">
-          <img src="../../assets/img/logo.png?v=11.0" alt="Dr. Smith Emblem Logo" class="apple-nav-logo-img" width="36" height="36" decoding="async" loading="eager">
-        </div>
-        <div class="apple-nav-brand-text">
-          <span class="apple-nav-brand-title">Dr. Smith</span>
-          <span class="apple-nav-brand-subtitle">HOSPITAL SOLUTIONS</span>
-        </div>
-      </a>
-
-      <!-- Navigation Links -->
-      <ul class="apple-nav-links">
-  <li class="apple-nav-item">
-    <a href="../../index.html" class="apple-nav-link">Home</a>
-  </li>
-  <li class="apple-nav-item">
-    <a href="../index.html" class="apple-nav-link nav-active">Products</a>
-  </li>
-  <li class="apple-nav-item">
-    <a href="../../about-us/index.html" class="apple-nav-link">About us</a>
-  </li>
-  <li class="apple-nav-item">
-    <a href="../../turnkey-projects/index.html" class="apple-nav-link">turnkey project</a>
-  </li>
-  <li class="apple-nav-item">
-    <a href="../../contact-form/index.html" class="apple-nav-link">Contact Us</a>
-  </li>
-</ul><!-- Action Utilities -->
-      <div class="apple-nav-actions">
-        <!-- Contact / Mail Form Button -->
-        <a href="../../contact-form/index.html" class="apple-nav-circle-btn apple-nav-circle-mail"
-          aria-label="Send Enquiry &amp; Contact Us" title="Send Enquiry / Request Quotation (BOM &amp; Consultation)">
-          <i class="fa-solid fa-envelope"></i>
-        </a>
-
-        <!-- WhatsApp Circle Button -->
-        <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions."
-          class="apple-nav-circle-btn apple-nav-circle-whatsapp" target="_blank"
-          rel="noopener noreferrer" aria-label="Chat with Dr. Smith Healthcare on WhatsApp (+91 95990 81020)"
-          title="WhatsApp Direct (+91 95990 81020) • 24/7 Fast Inquiry">
-          <i class="fa-brands fa-whatsapp"></i>
-        </a>
-
-        <!-- Menu Toggle Button -->
-        <button type="button" class="apple-nav-circle-btn" id="apple-mobile-menu-btn"
-          aria-label="Toggle Navigation Menu" title="Menu">
-          <i class="bi bi-list"></i>
-        </button>
-      </div>
-
-    </div>
-  </nav>
-
-    <!-- Mobile Menu Drawer Backdrop Overlay -->
-  <div class="apple-mobile-backdrop" id="appleMobileBackdrop"></div>
-
-  <!-- Mobile Menu Drawer Overlay -->
-  <div class="apple-mobile-drawer" id="apple-mobile-drawer">
-    <div class="apple-mobile-drawer-header">
-      <span class="apple-mobile-drawer-tag"><i class="bi bi-hospital"></i> Dr. Smith Quick Menu</span>
-      <button type="button" class="apple-mobile-drawer-close" id="appleMobileDrawerClose" aria-label="Close Navigation Menu">
-        <i class="bi bi-x-lg"></i>
-      </button>
-    </div>
-
-    <div class="apple-mobile-grid">
-      <a href="../../index.html" class="apple-mobile-tile">
-        <div class="apple-mobile-tile-icon"><i class="bi bi-house-door-fill"></i></div></nav>
-                <div class="row align-items-center">
-                    <div class="col-lg-9">
-                        <span class="catalogue-eyebrow">Emergency & resuscitation</span>
-                        <h1>Defibrillator & AED</h1>
-                        <p>Automated External Defibrillators (AED), biphasic manual defibrillators with multi-parameter ECG monitors, and pacing units.</p>
-                        <a class="catalogue-button catalogue-button--ghost" href="../index.html#catalogue">
-                            <i class="bi bi-arrow-left"></i> Back to full catalogue
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="catalogue-section">
-            <div class="container">
-                  
-                <p class="catalogue-count">Showing <strong>7</strong> products</p>
-
-                <div class="row g-4" id="products-grid">
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="automatic external defibrillator (aed)" data-badge="aed public access">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Automatic External Defibrillator (AED) on Instagram" title="View on Instagram">
-                                    <img src="aed-defibrillator.png" alt="Automatic External Defibrillator (AED)" loading="lazy" decoding="async">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">AED Public Access</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Emergency Resuscitation &bull; SWM 11089</span>
-                                <h3>Automatic External Defibrillator AED (SWM 11089)</h3>
-                                <p>Lightweight, voice-guided portable AED designed for rapid cardiac emergency response by first responders and healthcare staff.</p>
-                                <ul class="catalogue-card__details">
-                                <li>Clear bilingual voice and visual prompt guidance</li>
-                                <li>Automated daily self-testing of battery and internal circuitry</li>
-                                <li>Pre-connected adult/paediatric smart electrode pads</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Automatic%20External%20Defibrillator%20%28AED%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="hospital biphasic defibrillator" data-badge="biphasic defib">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Hospital Biphasic Defibrillator on Instagram" title="View on Instagram">
-                                    <img src="biphasic-defibrillator.png" alt="Hospital Biphasic Defibrillator" loading="lazy" decoding="async">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Biphasic Defib</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Emergency Resuscitation &bull; SWM 11136</span>
-                                <h3>Hospital Biphasic Defibrillator (SWM 11136)</h3>
-                                <p>Emergency biphasic defibrillator with manual energy selection, synchronized cardioversion, and vital signs monitoring.</p>
-                                <ul class="catalogue-card__details">
-                                <li>Biphasic truncated exponential waveform up to 360 Joules</li>
-                                <li>Integrated multi-lead ECG monitoring and thermal recorder</li>
-                                <li>External adult paddles with integrated paediatric slide-off plates</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Hospital%20Biphasic%20Defibrillator">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="emergency defibrillator & monitor pro" data-badge="critical care">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Emergency Defibrillator & Monitor Pro on Instagram" title="View on Instagram">
-                                    <img src="defibrillator-monitor-pro.png" alt="Emergency Defibrillator & Monitor Pro" loading="lazy" decoding="async">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Critical Care</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Emergency Resuscitation &bull; SWM 11090</span>
-                                <h3>Emergency Defibrillator &amp; Monitor Pro (SWM 11090)</h3>
-                                <p>Heavy-duty resuscitation defibrillator monitor with fast charging cycle, high-visibility colour screen and compact carry handle.</p>
-                                <ul class="catalogue-card__details">
-                                <li>Fast energy charging to 200J in less than 5 seconds</li>
-                                <li>Clear colour display with selectable energy and audio alarms</li>
-                                <li>Rechargeable battery providing over 100 maximum energy shocks</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Emergency%20Defibrillator%20%26%20Monitor%20Pro">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith illuminated voice-prompt automated external defibrillator" data-badge="voice guided aed">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Illuminated Voice Prompt AED on Instagram" title="View on Instagram">
-                                    <img src="dr-smith-biphasic-voice-aed.png" alt="Dr. Smith Illuminated Voice-Prompt Automated External Defibrillator" loading="lazy" decoding="async">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Voice Guided AED</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Emergency Resuscitation &bull; Dr. Smith Voice AED</span>
-                                <h3>Dr. Smith Illuminated Voice-Prompt Automated External Defibrillator</h3>
-                                <p>High-visibility emergency AED featuring step-by-step visual pictorial guidance, spoken voice coaching, and one-touch adult/paediatric shock energy delivery.</p>
-                                <ul class="catalogue-card__details">
-                                <li>Illuminated CPR sequence guide with metronome rhythm assistance</li>
-                                <li>Instant toggle switch between adult (150-200J) and child (50-70J) energy settings</li>
-                                <li>Automated impedance analysis ensuring safe discharge only when shockable rhythm detected</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Illuminated%20Voice-Prompt%20AED">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith portable lcd color screen defibrillator aed" data-badge="color lcd screen">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Portable LCD Color Screen AED on Instagram" title="View on Instagram">
-                                    <img src="dr-smith-lcd-screen-portable-aed.png" alt="Dr. Smith Portable LCD Color Screen Defibrillator AED" loading="lazy" decoding="async">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Color LCD Screen</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Emergency Resuscitation &bull; Dr. Smith Pro AED</span>
-                                <h3>Dr. Smith Portable LCD Color Screen Defibrillator AED</h3>
-                                <p>Professional emergency response defibrillator equipped with a high-contrast widescreen LCD, live ECG waveform tracking, and integrated molded ergonomic carry handle.</p>
-                                <ul class="catalogue-card__details">
-                                <li>Large color screen displaying patient rhythm, elapsed rescue time, and shock counter</li>
-                                <li>Rapid plug-in multi-pin electrode connector with pad contact monitoring</li>
-                                <li>Lightweight, drop-resistant ABS polymer casing with IP55 dust and moisture rating</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Portable%20LCD%20Color%20Screen%20AED">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith emergency aed defibrillation electrode pad & battery pack kit" data-badge="pads & battery kit">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith AED Pad & Battery Kit on Instagram" title="View on Instagram">
-                                    <img src="dr-smith-aed-defibrillation-pads-battery-kit.png" alt="Dr. Smith Emergency AED Defibrillation Electrode Pad & Battery Pack Kit" loading="lazy" decoding="async">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Pads &amp; Battery Kit</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">AED Accessories &bull; Replacement Kit</span>
-                                <h3>Dr. Smith Emergency AED Defibrillation Pad &amp; Battery Pack Kit</h3>
-                                <p>Comprehensive field readiness maintenance kit including pre-gelled, pre-connected defibrillation pads, high-flexibility cable assembly, and long-life lithium battery pack.</p>
-                                <ul class="catalogue-card__details">
-                                <li>Universal adult/paediatric hydrogel conductive electrode pads</li>
-                                <li>Heavy-duty connector cable with gold-plated pins for zero signal impedance</li>
-                                <li>Hermetically sealed replacement kit ensuring 5-year standby shelf life</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Emergency%20AED%20Pad%20and%20Battery%20Kit">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith hospital biphasic defibrillator with sternum and apex hard paddles" data-badge="hospital crash cart defib">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Hospital Biphasic Defibrillator with Hard Paddles on Instagram" title="View on Instagram">
-                                    <img src="dr-smith-hospital-biphasic-defibrillator-paddles.png" alt="Dr. Smith Hospital Biphasic Defibrillator with Sternum & Apex Hard Paddles" loading="lazy" decoding="async">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Crash Cart Defib</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Emergency Resuscitation &bull; Clinical Biphasic</span>
-                                <h3>Dr. Smith Hospital Biphasic Defibrillator with Hard Paddles</h3>
-                                <p>ICU and trauma bay biphasic defibrillator featuring heavy-duty Sternum & Apex hard paddles, coiled cables, multi-parameter monitoring screen, and crash-cart mount.</p>
-                                <ul class="catalogue-card__details">
-                                <li>Dual Sternum & Apex external paddles with integrated paddle-charge and discharge buttons</li>
-                                <li>Selectable energy ladder from 2J to 360J with rapid charge under 4.5 seconds</li>
-                                <li>Synchronized cardioversion mode for atrial fibrillation and ventricular tachycardia</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Hospital%20Biphasic%20Defibrillator%20with%20Hard%20Paddles">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="catalogue-section">
-            <div class="container">
-                <div class="catalogue-cta d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4">
-                    <div>
-                        <h2>Can't find what you're looking for?</h2>
-                        <p>Share your requirements and our team will recommend the best fit from our full range.</p>
-                    </div>
-                    <a class="catalogue-button flex-shrink-0" href="../../contact-form/index.html">
+<nav aria-label="Global" class="apple-globalnav">
+<div class="apple-globalnav-inner">
+<!-- Brand & Corporate Identity -->
+<a aria-label="Dr. Smith Hospital Solutions" class="apple-nav-brand" href="../../index.html">
+<div class="brand-asterisk-icon">
+<img alt="Dr. Smith Emblem Logo" class="apple-nav-logo-img" decoding="async" height="36" loading="eager" src="../../assets/img/logo.png?v=11.0" width="36"/>
+</div>
+<div class="apple-nav-brand-text">
+<span class="apple-nav-brand-title">Dr. Smith</span>
+<span class="apple-nav-brand-subtitle">HOSPITAL SOLUTIONS</span>
+</div>
+</a>
+<!-- Navigation Links -->
+<ul class="apple-nav-links"><li class="apple-nav-item"><a class="apple-nav-link" href="../../index.html">Home</a></li><li class="apple-nav-item"><a class="apple-nav-link nav-active" href="../index.html">Products</a></li><li class="apple-nav-item"><a class="apple-nav-link" href="../../about-us/index.html">About us</a></li><li class="apple-nav-item"><a class="apple-nav-link" href="../../turnkey-projects/index.html">turnkey project</a></li><li class="apple-nav-item"><a class="apple-nav-link" href="../../contact-form/index.html">Contact Us</a></li></ul><!-- Action Utilities -->
+<div class="apple-nav-actions">
+<!-- Contact / Mail Form Button -->
+<a aria-label="Send Enquiry &amp; Contact Us" class="apple-nav-circle-btn apple-nav-circle-mail" href="../../contact-form/index.html" title="Send Enquiry / Request Quotation (BOM &amp; Consultation)">
+<i class="fa-solid fa-envelope"></i>
+</a>
+<!-- WhatsApp Circle Button -->
+<a aria-label="Chat with Dr. Smith Healthcare on WhatsApp (+91 95990 81020)" class="apple-nav-circle-btn apple-nav-circle-whatsapp" href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." rel="noopener noreferrer" target="_blank" title="WhatsApp Direct (+91 95990 81020) • 24/7 Fast Inquiry">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+<!-- Menu Toggle Button -->
+<button aria-label="Toggle Navigation Menu" class="apple-nav-circle-btn" id="apple-mobile-menu-btn" title="Menu" type="button">
+<i class="bi bi-list"></i>
+</button>
+</div>
+</div>
+</nav>
+<!-- Mobile Menu Drawer Backdrop Overlay -->
+<div class="apple-mobile-backdrop" id="appleMobileBackdrop"></div>
+<!-- Mobile Menu Drawer Overlay -->
+<div class="apple-mobile-drawer" id="apple-mobile-drawer">
+<div class="apple-mobile-drawer-header">
+<span class="apple-mobile-drawer-tag"><i class="bi bi-hospital"></i> Dr. Smith Quick Menu</span>
+<button aria-label="Close Navigation Menu" class="apple-mobile-drawer-close" id="appleMobileDrawerClose" type="button">
+<i class="bi bi-x-lg"></i>
+</button>
+</div>
+<div class="apple-mobile-grid"><a class="apple-mobile-tile" href="index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-house-door-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">Home</span><span class="apple-mobile-tile-sub">Overview</span></div></a><a class="apple-mobile-tile active" href="catalogue/index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-grid-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">Products</span><span class="apple-mobile-tile-sub">Browse categories</span></div></a><a class="apple-mobile-tile" href="about-us/index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-shield-check"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">About us</span><span class="apple-mobile-tile-sub">Our story</span></div></a><a class="apple-mobile-tile" href="turnkey-projects/index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-hospital-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">turnkey project</span><span class="apple-mobile-tile-sub">Setup solutions</span></div></a><a class="apple-mobile-tile" href="contact-form/index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-envelope-paper-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">Contact Us</span><span class="apple-mobile-tile-sub">Get in touch</span></div></a></div>
+<section class="catalogue-section">
+<div class="container">
+<p class="catalogue-count">Showing <strong>7</strong> products</p>
+<div class="row g-4" id="products-grid">
+<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="aed public access" data-title="automatic external defibrillator (aed)">
+<article class="catalogue-card">
+<div class="catalogue-card__image catalogue-card__image--photo">
+<a aria-label="View Automatic External Defibrillator (AED) on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
+<img alt="Automatic External Defibrillator (AED)" decoding="async" loading="lazy" src="aed-defibrillator.png"/>
+</a>
+</div>
+<span class="catalogue-card__badge">AED Public Access</span>
+<div class="catalogue-card__body">
+<span class="catalogue-card__category">Emergency Resuscitation • SWM 11089</span>
+<h3>Automatic External Defibrillator AED (SWM 11089)</h3>
+<p>Lightweight, voice-guided portable AED designed for rapid cardiac emergency response by first responders and healthcare staff.</p>
+<ul class="catalogue-card__details">
+<li>Clear bilingual voice and visual prompt guidance</li>
+<li>Automated daily self-testing of battery and internal circuitry</li>
+<li>Pre-connected adult/paediatric smart electrode pads</li>
+</ul>
+<a class="catalogue-card__link" href="../../contact-form/index.html?product=Automatic%20External%20Defibrillator%20%28AED%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+</div>
+</article>
+</div>
+<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="biphasic defib" data-title="hospital biphasic defibrillator">
+<article class="catalogue-card">
+<div class="catalogue-card__image catalogue-card__image--photo">
+<a aria-label="View Hospital Biphasic Defibrillator on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
+<img alt="Hospital Biphasic Defibrillator" decoding="async" loading="lazy" src="biphasic-defibrillator.png"/>
+</a>
+</div>
+<span class="catalogue-card__badge">Biphasic Defib</span>
+<div class="catalogue-card__body">
+<span class="catalogue-card__category">Emergency Resuscitation • SWM 11136</span>
+<h3>Hospital Biphasic Defibrillator (SWM 11136)</h3>
+<p>Emergency biphasic defibrillator with manual energy selection, synchronized cardioversion, and vital signs monitoring.</p>
+<ul class="catalogue-card__details">
+<li>Biphasic truncated exponential waveform up to 360 Joules</li>
+<li>Integrated multi-lead ECG monitoring and thermal recorder</li>
+<li>External adult paddles with integrated paediatric slide-off plates</li>
+</ul>
+<a class="catalogue-card__link" href="../../contact-form/index.html?product=Hospital%20Biphasic%20Defibrillator">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+</div>
+</article>
+</div>
+<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="critical care" data-title="emergency defibrillator &amp; monitor pro">
+<article class="catalogue-card">
+<div class="catalogue-card__image catalogue-card__image--photo">
+<a aria-label="View Emergency Defibrillator &amp; Monitor Pro on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
+<img alt="Emergency Defibrillator &amp; Monitor Pro" decoding="async" loading="lazy" src="defibrillator-monitor-pro.png"/>
+</a>
+</div>
+<span class="catalogue-card__badge">Critical Care</span>
+<div class="catalogue-card__body">
+<span class="catalogue-card__category">Emergency Resuscitation • SWM 11090</span>
+<h3>Emergency Defibrillator &amp; Monitor Pro (SWM 11090)</h3>
+<p>Heavy-duty resuscitation defibrillator monitor with fast charging cycle, high-visibility colour screen and compact carry handle.</p>
+<ul class="catalogue-card__details">
+<li>Fast energy charging to 200J in less than 5 seconds</li>
+<li>Clear colour display with selectable energy and audio alarms</li>
+<li>Rechargeable battery providing over 100 maximum energy shocks</li>
+</ul>
+<a class="catalogue-card__link" href="../../contact-form/index.html?product=Emergency%20Defibrillator%20%26%20Monitor%20Pro">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+</div>
+</article>
+</div>
+<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="voice guided aed" data-title="dr. smith illuminated voice-prompt automated external defibrillator">
+<article class="catalogue-card">
+<div class="catalogue-card__image catalogue-card__image--photo">
+<a aria-label="View Dr. Smith Illuminated Voice Prompt AED on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
+<img alt="Dr. Smith Illuminated Voice-Prompt Automated External Defibrillator" decoding="async" loading="lazy" src="dr-smith-biphasic-voice-aed.png"/>
+</a>
+</div>
+<span class="catalogue-card__badge">Voice Guided AED</span>
+<div class="catalogue-card__body">
+<span class="catalogue-card__category">Emergency Resuscitation • Dr. Smith Voice AED</span>
+<h3>Dr. Smith Illuminated Voice-Prompt Automated External Defibrillator</h3>
+<p>High-visibility emergency AED featuring step-by-step visual pictorial guidance, spoken voice coaching, and one-touch adult/paediatric shock energy delivery.</p>
+<ul class="catalogue-card__details">
+<li>Illuminated CPR sequence guide with metronome rhythm assistance</li>
+<li>Instant toggle switch between adult (150-200J) and child (50-70J) energy settings</li>
+<li>Automated impedance analysis ensuring safe discharge only when shockable rhythm detected</li>
+</ul>
+<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Illuminated%20Voice-Prompt%20AED">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+</div>
+</article>
+</div>
+<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="color lcd screen" data-title="dr. smith portable lcd color screen defibrillator aed">
+<article class="catalogue-card">
+<div class="catalogue-card__image catalogue-card__image--photo">
+<a aria-label="View Dr. Smith Portable LCD Color Screen AED on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
+<img alt="Dr. Smith Portable LCD Color Screen Defibrillator AED" decoding="async" loading="lazy" src="dr-smith-lcd-screen-portable-aed.png"/>
+</a>
+</div>
+<span class="catalogue-card__badge">Color LCD Screen</span>
+<div class="catalogue-card__body">
+<span class="catalogue-card__category">Emergency Resuscitation • Dr. Smith Pro AED</span>
+<h3>Dr. Smith Portable LCD Color Screen Defibrillator AED</h3>
+<p>Professional emergency response defibrillator equipped with a high-contrast widescreen LCD, live ECG waveform tracking, and integrated molded ergonomic carry handle.</p>
+<ul class="catalogue-card__details">
+<li>Large color screen displaying patient rhythm, elapsed rescue time, and shock counter</li>
+<li>Rapid plug-in multi-pin electrode connector with pad contact monitoring</li>
+<li>Lightweight, drop-resistant ABS polymer casing with IP55 dust and moisture rating</li>
+</ul>
+<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Portable%20LCD%20Color%20Screen%20AED">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+</div>
+</article>
+</div>
+<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="pads &amp; battery kit" data-title="dr. smith emergency aed defibrillation electrode pad &amp; battery pack kit">
+<article class="catalogue-card">
+<div class="catalogue-card__image catalogue-card__image--photo">
+<a aria-label="View Dr. Smith AED Pad &amp; Battery Kit on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
+<img alt="Dr. Smith Emergency AED Defibrillation Electrode Pad &amp; Battery Pack Kit" decoding="async" loading="lazy" src="dr-smith-aed-defibrillation-pads-battery-kit.png"/>
+</a>
+</div>
+<span class="catalogue-card__badge">Pads &amp; Battery Kit</span>
+<div class="catalogue-card__body">
+<span class="catalogue-card__category">AED Accessories • Replacement Kit</span>
+<h3>Dr. Smith Emergency AED Defibrillation Pad &amp; Battery Pack Kit</h3>
+<p>Comprehensive field readiness maintenance kit including pre-gelled, pre-connected defibrillation pads, high-flexibility cable assembly, and long-life lithium battery pack.</p>
+<ul class="catalogue-card__details">
+<li>Universal adult/paediatric hydrogel conductive electrode pads</li>
+<li>Heavy-duty connector cable with gold-plated pins for zero signal impedance</li>
+<li>Hermetically sealed replacement kit ensuring 5-year standby shelf life</li>
+</ul>
+<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Emergency%20AED%20Pad%20and%20Battery%20Kit">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+</div>
+</article>
+</div>
+<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="hospital crash cart defib" data-title="dr. smith hospital biphasic defibrillator with sternum and apex hard paddles">
+<article class="catalogue-card">
+<div class="catalogue-card__image catalogue-card__image--photo">
+<a aria-label="View Dr. Smith Hospital Biphasic Defibrillator with Hard Paddles on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
+<img alt="Dr. Smith Hospital Biphasic Defibrillator with Sternum &amp; Apex Hard Paddles" decoding="async" loading="lazy" src="dr-smith-hospital-biphasic-defibrillator-paddles.png"/>
+</a>
+</div>
+<span class="catalogue-card__badge">Crash Cart Defib</span>
+<div class="catalogue-card__body">
+<span class="catalogue-card__category">Emergency Resuscitation • Clinical Biphasic</span>
+<h3>Dr. Smith Hospital Biphasic Defibrillator with Hard Paddles</h3>
+<p>ICU and trauma bay biphasic defibrillator featuring heavy-duty Sternum &amp; Apex hard paddles, coiled cables, multi-parameter monitoring screen, and crash-cart mount.</p>
+<ul class="catalogue-card__details">
+<li>Dual Sternum &amp; Apex external paddles with integrated paddle-charge and discharge buttons</li>
+<li>Selectable energy ladder from 2J to 360J with rapid charge under 4.5 seconds</li>
+<li>Synchronized cardioversion mode for atrial fibrillation and ventricular tachycardia</li>
+</ul>
+<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Hospital%20Biphasic%20Defibrillator%20with%20Hard%20Paddles">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+</div>
+</article>
+</div>
+</div>
+</div>
+</section>
+<section class="catalogue-section">
+<div class="container">
+<div class="catalogue-cta d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4">
+<div>
+<h2>Can't find what you're looking for?</h2>
+<p>Share your requirements and our team will recommend the best fit from our full range.</p>
+</div>
+<a class="catalogue-button flex-shrink-0" href="../../contact-form/index.html">
                         Contact our team <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-      <!-- ============================================================
+</a>
+</div>
+</div>
+</section>
+<!-- ============================================================
        GLOBAL DIRECTORY FOOTER
        ============================================================ -->
-  
-
-  <!-- Drawer Modal -->
-    <!-- ============================================================
+<!-- Drawer Modal -->
+<!-- ============================================================
        GLOBAL DIRECTORY FOOTER
        ============================================================ -->
-  <footer class="apple-globalfooter">
-    <div class="apple-footer-inner">
-
-      <!-- Footer Brand Header & Fast Back-To-Top -->
-      <div class="apple-footer-brand-header">
-        <div class="apple-footer-brand-left">
-          <img src="../../assets/img/logo.png?v=11.0" alt="Dr. Smith Emblem Logo" class="apple-footer-brand-logo" width="32"
-            height="32" decoding="async" loading="lazy">
-          <div>
-            <div class="apple-footer-brand-title">Dr. Smith</div>
-            <span class="apple-footer-brand-subtitle">HOSPITAL SOLUTIONS</span>
-          </div>
-        </div>
-        <a href="#top" class="apple-footer-backtotop-btn"
-          onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;" aria-label="Scroll back to top">
-          <span>Top</span> <i class="bi bi-chevron-up"></i>
-        </a>
-      </div>
-
-      <!-- Notes / Footnotes -->
-      <div class="apple-footer-notes">
-        <ol>
-          <li>Medical equipment specifications, turnkey timelines, and compliance standards (ISO 9001:2015, ISO
+<footer class="apple-globalfooter">
+<div class="apple-footer-inner">
+<!-- Footer Brand Header & Fast Back-To-Top -->
+<div class="apple-footer-brand-header">
+<div class="apple-footer-brand-left">
+<img alt="Dr. Smith Emblem Logo" class="apple-footer-brand-logo" decoding="async" height="32" loading="lazy" src="../../assets/img/logo.png?v=11.0" width="32"/>
+<div>
+<div class="apple-footer-brand-title">Dr. Smith</div>
+<span class="apple-footer-brand-subtitle">HOSPITAL SOLUTIONS</span>
+</div>
+</div>
+<a aria-label="Scroll back to top" class="apple-footer-backtotop-btn" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">
+<span>Top</span> <i class="bi bi-chevron-up"></i>
+</a>
+</div>
+<!-- Notes / Footnotes -->
+<div class="apple-footer-notes">
+<ol>
+<li>Medical equipment specifications, turnkey timelines, and compliance standards (ISO 9001:2015, ISO
             13485:2016, CE, FDA) depend on specific project scopes and customized clinical configurations.</li>
-          <li>Turnkey hospital infrastructure engineering timelines depend on architectural blueprints, local regulatory
+<li>Turnkey hospital infrastructure engineering timelines depend on architectural blueprints, local regulatory
             clearances, and civil site readiness.</li>
-          <li>Principal Global Head Office located at Kapashera Border, New Delhi; Manufacturing Plant at METL, Jhajjar,
+<li>Principal Global Head Office located at Kapashera Border, New Delhi; Manufacturing Plant at METL, Jhajjar,
             Haryana; Overseas Head Office at SAIF Zone, Sharjah, UAE.</li>
-        </ol>
-      </div>
-
-      <!-- Directory Columns (Mobile Collapsible Accordions) -->
-      <div class="apple-footer-directory">
-
-        <!-- Col 1: Turnkey Solutions (Active by default on mobile) -->
-        <div class="apple-footer-col active">
-          <button type="button" class="apple-footer-col-trigger" aria-expanded="true">
-            <h4 class="apple-footer-col-title">Turnkey Solutions</h4>
-            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
-          </button>
-          <ul class="apple-footer-col-list">
-            <li><a href="../../turnkey-projects/index.html">500-Bedded Hospital Setup</a></li>
-            <li><a href="../../catalogue/modular-ot/index.html">Modular OT Construction</a></li>
-            <li><a href="../../turnkey-projects/index.html">Medical Gas Pipeline (MGPS)</a></li>
-            <li><a href="../../turnkey-projects/index.html">Hospital Architecture &amp; MEP</a></li>
-            <li><a href="../../turnkey-projects/index.html">Government &amp; Global Tenders</a></li>
-          </ul>
-        </div>
-
-        <!-- Col 2: Group Ecosystem -->
-        <div class="apple-footer-col">
-          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
-            <h4 class="apple-footer-col-title">Group Ecosystem</h4>
-            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
-          </button>
-          <ul class="apple-footer-col-list">
-            <li><a href="../../about-us/index.html">Dr. Smith Healthcare</a></li>
-            <li><a href="../../catalogue/index.html">Surgihub Surgical Devices</a></li>
-            <li><a href="../../catalogue/index.html">Surgical Mall of India (SMPL)</a></li>
-            <li><a href="../../catalogue/index.html">MediAid Patient Care</a></li>
-            <li><a href="../../catalogue/index.html">Orbit Mahajan Diagnostics</a></li>
-          </ul>
-        </div>
-
-        <!-- Col 3: Product Catalogue -->
-        <div class="apple-footer-col">
-          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
-            <h4 class="apple-footer-col-title">Product Catalogue</h4>
-            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
-          </button>
-          <ul class="apple-footer-col-list">
-            <li><a href="../../catalogue/beds/index.html">Hospital &amp; ICU Beds</a></li>
-            <li><a href="../../catalogue/modular-ot/index.html">Modular OT Suites</a></li>
-            <li><a href="../../catalogue/patient-monitor/index.html">Critical Care &amp; Monitors</a></li>
-            <li><a href="../../catalogue/ventilators/index.html">ICU Ventilators</a></li>
-            <li><a href="../../catalogue/index.html">Full 50+ Categories</a></li>
-          </ul>
-        </div>
-
-        <!-- Col 4: Global Directory -->
-        <div class="apple-footer-col">
-          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
-            <h4 class="apple-footer-col-title">Global Presence</h4>
-            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
-          </button>
-          <ul class="apple-footer-col-list">
-            <li><a href="../../contact-form/index.html">New Delhi Head Office (India)</a></li>
-            <li><a href="../../contact-form/index.html">Jhajjar Manufacturing Plant</a></li>
-            <li><a href="../../contact-form/index.html">Sharjah Overseas Office (UAE)</a></li>
-            <li><a href="../../contact-form/index.html">Kenya &amp; Nigeria Desks</a></li>
-            <li><a href="../../contact-form/index.html">Patna, Kolkata, Varanasi Marts</a></li>
-          </ul>
-        </div>
-
-        <!-- Col 5: Compliance & Values -->
-        <div class="apple-footer-col">
-          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
-            <h4 class="apple-footer-col-title">Corporate &amp; Quality</h4>
-            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
-          </button>
-          <ul class="apple-footer-col-list">
-            <li><a href="../../about-us/index.html">About 60+ Years Heritage</a></li>
-            <li><a href="../../mission-values/index.html">Mission &amp; Values</a></li>
-            <li><a href="../../about-us/index.html">Executive Leadership</a></li>
-            <li><a href="../../privacy.html">Privacy Policy</a></li>
-            <li><a href="../../terms.html">Terms of Service</a></li>
-          </ul>
-        </div>
-
-      </div>
-
-      <!-- Footer Bottom Legal, Direct Connect & Country Positioned in Correct Order -->
-      <div class="apple-footer-bottom">
-        <div class="apple-footer-top-row">
-          <div class="apple-footer-country">
-            <a href="../../contact-form/index.html" class="apple-footer-country-badge" title="Region &amp; Language">
-              <i class="bi bi-globe me-1"></i> India (English)
+</ol>
+</div>
+<!-- Directory Columns (Mobile Collapsible Accordions) -->
+<div class="apple-footer-directory">
+<!-- Col 1: Turnkey Solutions (Active by default on mobile) -->
+<div class="apple-footer-col active">
+<button aria-expanded="true" class="apple-footer-col-trigger" type="button">
+<h4 class="apple-footer-col-title">Turnkey Solutions</h4>
+<i class="bi bi-chevron-down apple-footer-col-icon"></i>
+</button>
+<ul class="apple-footer-col-list">
+<li><a href="../../turnkey-projects/index.html">500-Bedded Hospital Setup</a></li>
+<li><a href="../../catalogue/modular-ot/index.html">Modular OT Construction</a></li>
+<li><a href="../../turnkey-projects/index.html">Medical Gas Pipeline (MGPS)</a></li>
+<li><a href="../../turnkey-projects/index.html">Hospital Architecture &amp; MEP</a></li>
+<li><a href="../../turnkey-projects/index.html">Government &amp; Global Tenders</a></li>
+</ul>
+</div>
+<!-- Col 2: Group Ecosystem -->
+<div class="apple-footer-col">
+<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
+<h4 class="apple-footer-col-title">Group Ecosystem</h4>
+<i class="bi bi-chevron-down apple-footer-col-icon"></i>
+</button>
+<ul class="apple-footer-col-list">
+<li><a href="../../about-us/index.html">Dr. Smith Healthcare</a></li>
+<li><a href="../../catalogue/index.html">Surgihub Surgical Devices</a></li>
+<li><a href="../../catalogue/index.html">Surgical Mall of India (SMPL)</a></li>
+<li><a href="../../catalogue/index.html">MediAid Patient Care</a></li>
+<li><a href="../../catalogue/index.html">Orbit Mahajan Diagnostics</a></li>
+</ul>
+</div>
+<!-- Col 3: Product Catalogue -->
+<div class="apple-footer-col">
+<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
+<h4 class="apple-footer-col-title">Product Catalogue</h4>
+<i class="bi bi-chevron-down apple-footer-col-icon"></i>
+</button>
+<ul class="apple-footer-col-list">
+<li><a href="../../catalogue/beds/index.html">Hospital &amp; ICU Beds</a></li>
+<li><a href="../../catalogue/modular-ot/index.html">Modular OT Suites</a></li>
+<li><a href="../../catalogue/patient-monitor/index.html">Critical Care &amp; Monitors</a></li>
+<li><a href="../../catalogue/ventilators/index.html">ICU Ventilators</a></li>
+<li><a href="../../catalogue/index.html">Full 50+ Categories</a></li>
+</ul>
+</div>
+<!-- Col 4: Global Directory -->
+<div class="apple-footer-col">
+<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
+<h4 class="apple-footer-col-title">Global Presence</h4>
+<i class="bi bi-chevron-down apple-footer-col-icon"></i>
+</button>
+<ul class="apple-footer-col-list">
+<li><a href="../../contact-form/index.html">New Delhi Head Office (India)</a></li>
+<li><a href="../../contact-form/index.html">Jhajjar Manufacturing Plant</a></li>
+<li><a href="../../contact-form/index.html">Sharjah Overseas Office (UAE)</a></li>
+<li><a href="../../contact-form/index.html">Kenya &amp; Nigeria Desks</a></li>
+<li><a href="../../contact-form/index.html">Patna, Kolkata, Varanasi Marts</a></li>
+</ul>
+</div>
+<!-- Col 5: Compliance & Values -->
+<div class="apple-footer-col">
+<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
+<h4 class="apple-footer-col-title">Corporate &amp; Quality</h4>
+<i class="bi bi-chevron-down apple-footer-col-icon"></i>
+</button>
+<ul class="apple-footer-col-list">
+<li><a href="../../about-us/index.html">About 60+ Years Heritage</a></li>
+<li><a href="../../mission-values/index.html">Mission &amp; Values</a></li>
+<li><a href="../../about-us/index.html">Executive Leadership</a></li>
+<li><a href="../../privacy.html">Privacy Policy</a></li>
+<li><a href="../../terms.html">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<!-- Footer Bottom Legal, Direct Connect & Country Positioned in Correct Order -->
+<div class="apple-footer-bottom">
+<div class="apple-footer-top-row">
+<div class="apple-footer-country">
+<a class="apple-footer-country-badge" href="../../contact-form/index.html" title="Region &amp; Language">
+<i class="bi bi-globe me-1"></i> India (English)
             </a>
-          </div>
-          <div class="apple-footer-quicklinks">
-            <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." target="_blank" rel="noopener noreferrer"
-              class="apple-footer-badge-link" title="Direct WhatsApp Assistance (+91 95990 81020)">
-              <i class="fa-brands fa-whatsapp text-success me-1"></i> WhatsApp Desk
+</div>
+<div class="apple-footer-quicklinks">
+<a class="apple-footer-badge-link" href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." rel="noopener noreferrer" target="_blank" title="Direct WhatsApp Assistance (+91 95990 81020)">
+<i class="fa-brands fa-whatsapp text-success me-1"></i> WhatsApp Desk
             </a>
-          </div>
-        </div>
-
-        <div class="apple-footer-divider"></div>
-
-        <div class="apple-footer-meta-row">
-          <div class="apple-footer-legal-links">
-            <a href="../../privacy.html">Privacy Policy</a>
-            <span class="legal-dot">•</span>
-            <a href="../../terms.html">Terms of Use</a>
-            <span class="legal-dot">•</span>
-            <a href="../../contact-form/index.html">Sales Policy</a>
-            <span class="legal-dot">•</span>
-            <a href="../../contact-form/index.html">Legal</a>
-            <span class="legal-dot">•</span>
-            <a href="../../catalogue/index.html">Site Map</a>
-          </div>
-          <div class="apple-footer-copyright">
-            Copyright &copy; 2026 Dr. Smith Healthcare Solutions (Surgical Wholesale Mart Pvt. Ltd.). All rights
+</div>
+</div>
+<div class="apple-footer-divider"></div>
+<div class="apple-footer-meta-row">
+<div class="apple-footer-legal-links">
+<a href="../../privacy.html">Privacy Policy</a>
+<span class="legal-dot">•</span>
+<a href="../../terms.html">Terms of Use</a>
+<span class="legal-dot">•</span>
+<a href="../../contact-form/index.html">Sales Policy</a>
+<span class="legal-dot">•</span>
+<a href="../../contact-form/index.html">Legal</a>
+<span class="legal-dot">•</span>
+<a href="../../catalogue/index.html">Site Map</a>
+</div>
+<div class="apple-footer-copyright">
+            Copyright © 2026 Dr. Smith Healthcare Solutions (Surgical Wholesale Mart Pvt. Ltd.). All rights
             reserved. An ISO 9001:2015, ISO 13485:2016, CE &amp; FDA Certified Company.
           </div>
-        </div>
-      </div>
-
-    </div>
-  </footer>
-
-  <!-- Drawer Modal -->
-  <div class="apple-drawer-overlay" id="apple-drawer-overlay" onclick="if(event.target===this) closeAppleDrawer();">
-    <div class="apple-drawer-content">
-      <button type="button" class="apple-drawer-close" onclick="closeAppleDrawer();" aria-label="Close">
-        <i class="bi bi-x-lg"></i>
-      </button>
-      
-      <div style="text-align: center; margin-bottom: 24px;">
-        <span class="apple-shelf-badge">Dr. Smith Turnkey &amp; Procurement Desk</span>
-        <h3 style="font-size: 24px; font-weight: 700; margin-top: 8px;">Request Project Consultation</h3>
-        <p style="font-size: 14px; color: var(--apple-text-secondary); margin: 0;">Speak directly with our healthcare architects &amp; hospital engineering experts.</p>
-      </div>
-
-      <form class="apple-drawer-form" onsubmit="handleAppleQuoteSubmit(event);">
-        <div class="form-group">
-          <label>Scope of Interest</label>
-          <input type="text" id="drawer-product-name" value="Turnkey Hospital Setup" readonly style="background: rgba(255,255,255,0.08); font-weight: 600;">
-        </div>
-
-        <div class="row g-2">
-          <div class="col-md-6 form-group">
-            <label>Your Full Name *</label>
-            <input type="text" placeholder="Dr. / Mr. / Ms." required>
-          </div>
-          <div class="col-md-6 form-group">
-            <label>Hospital / Institution Name *</label>
-            <input type="text" placeholder="Hospital / Organization Name" required>
-          </div>
-        </div>
-
-        <div class="row g-2">
-          <div class="col-md-6 form-group">
-            <label>Official Email *</label>
-            <input type="email" placeholder="name@hospital.com" required>
-          </div>
-          <div class="col-md-6 form-group">
-            <label>Phone / WhatsApp *</label>
-            <input type="tel" placeholder="+91 99999 99999" required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label>Project Scope &amp; Requirements</label>
-          <textarea rows="3" placeholder="Specify turnkey bed capacity, modular OT requirement, MGPS pipeline, or equipment procurement details..."></textarea>
-        </div>
-
-        <button type="submit" class="apple-btn-pill w-100 mt-2" style="padding: 14px;">Submit Consultation Request</button>
-      </form>
-    </div>
-  </div>
-
-  <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
-  
-
-
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to top">
-        <i class="bi bi-arrow-up-short"></i>
-    </a>
-
-    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../../assets/js/main.js?v=94.0"></script>
-  <script src="../../assets/js/global-search.js?v=42.0"></script>
-</body>
-
+</div>
+</div>
+</div>
+</footer>
+<!-- Drawer Modal -->
+<div class="apple-drawer-overlay" id="apple-drawer-overlay" onclick="if(event.target===this) closeAppleDrawer();">
+<div class="apple-drawer-content">
+<button aria-label="Close" class="apple-drawer-close" onclick="closeAppleDrawer();" type="button">
+<i class="bi bi-x-lg"></i>
+</button>
+<div style="text-align: center; margin-bottom: 24px;">
+<span class="apple-shelf-badge">Dr. Smith Turnkey &amp; Procurement Desk</span>
+<h3 style="font-size: 24px; font-weight: 700; margin-top: 8px;">Request Project Consultation</h3>
+<p style="font-size: 14px; color: var(--apple-text-secondary); margin: 0;">Speak directly with our healthcare architects &amp; hospital engineering experts.</p>
+</div>
+<form class="apple-drawer-form" onsubmit="handleAppleQuoteSubmit(event);">
+<div class="form-group">
+<label>Scope of Interest</label>
+<input id="drawer-product-name" readonly="" style="background: rgba(255,255,255,0.08); font-weight: 600;" type="text" value="Turnkey Hospital Setup"/>
+</div>
+<div class="row g-2">
+<div class="col-md-6 form-group">
+<label>Your Full Name *</label>
+<input placeholder="Dr. / Mr. / Ms." required="" type="text"/>
+</div>
+<div class="col-md-6 form-group">
+<label>Hospital / Institution Name *</label>
+<input placeholder="Hospital / Organization Name" required="" type="text"/>
+</div>
+</div>
+<div class="row g-2">
+<div class="col-md-6 form-group">
+<label>Official Email *</label>
+<input placeholder="name@hospital.com" required="" type="email"/>
+</div>
+<div class="col-md-6 form-group">
+<label>Phone / WhatsApp *</label>
+<input placeholder="+91 99999 99999" required="" type="tel"/>
+</div>
+</div>
+<div class="form-group">
+<label>Project Scope &amp; Requirements</label>
+<textarea placeholder="Specify turnkey bed capacity, modular OT requirement, MGPS pipeline, or equipment procurement details..." rows="3"></textarea>
+</div>
+<button class="apple-btn-pill w-100 mt-2" style="padding: 14px;" type="submit">Submit Consultation Request</button>
+</form>
+</div>
+</div>
+<script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+<a aria-label="Scroll to top" class="scroll-top d-flex align-items-center justify-content-center" href="#" id="scroll-top">
+<i class="bi bi-arrow-up-short"></i>
+</a>
+<script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../../assets/js/main.js?v=94.0"></script>
+<script src="../../assets/js/global-search.js?v=42.0"></script>
+</div></body>
 </html>

@@ -1,833 +1,749 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Browse Dr. Smith's Examination & Gynecology range for hospitals, ICUs and clinics.">
-    <meta name="theme-color" content="#030712">
-    <title>Examination & Gynecology | Dr. Smith Catalogue</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
-    <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
-
-    <link href="../css/catalogue.css?v=47.0" rel="stylesheet">
-  <link href="../../assets/css/apple-theme.css?v=106.0" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Browse Dr. Smith's Examination &amp; Gynecology range for hospitals, ICUs and clinics." name="description"/>
+<meta content="#030712" name="theme-color"/>
+<title>Examination &amp; Gynecology | Dr. Smith Catalogue</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&amp;family=Open+Sans:wght@300;400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
+<link href="../../assets/img/favicon.png" rel="icon" type="image/png"/>
+<link href="../../assets/img/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="../css/catalogue.css?v=47.0" rel="stylesheet"/>
+<link href="../../assets/css/apple-theme.css?v=106.0" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
 </head>
-
 <body class="apple-body catalogue-page">
-  <!-- ============================================================
+<!-- ============================================================
        1. GLOBAL NAVIGATION HEADER
        ============================================================ -->
-  <nav class="apple-globalnav" aria-label="Global">
-    <div class="apple-globalnav-inner">
-      
-      <!-- Brand & Corporate Identity -->
-      <a href="../../index.html" class="apple-nav-brand" aria-label="Dr. Smith Hospital Solutions">
-        <div class="brand-asterisk-icon">
-          <img src="../../assets/img/logo.png?v=11.0" alt="Dr. Smith Emblem Logo" class="apple-nav-logo-img" width="36" height="36" decoding="async" loading="eager">
-        </div>
-        <div class="apple-nav-brand-text">
-          <span class="apple-nav-brand-title">Dr. Smith</span>
-          <span class="apple-nav-brand-subtitle">HOSPITAL SOLUTIONS</span>
-        </div>
-      </a>
-
-      <!-- Navigation Links -->
-      <ul class="apple-nav-links">
-  <li class="apple-nav-item">
-    <a href="../../index.html" class="apple-nav-link">Home</a>
-  </li>
-  <li class="apple-nav-item">
-    <a href="../index.html" class="apple-nav-link nav-active">Products</a>
-  </li>
-  <li class="apple-nav-item">
-    <a href="../../about-us/index.html" class="apple-nav-link">About us</a>
-  </li>
-  <li class="apple-nav-item">
-    <a href="../../turnkey-projects/index.html" class="apple-nav-link">turnkey project</a>
-  </li>
-  <li class="apple-nav-item">
-    <a href="../../contact-form/index.html" class="apple-nav-link">Contact Us</a>
-  </li>
-</ul><!-- Action Utilities -->
-      <div class="apple-nav-actions">
-        <!-- Contact / Mail Form Button -->
-        <a href="../../contact-form/index.html" class="apple-nav-circle-btn apple-nav-circle-mail"
-          aria-label="Send Enquiry &amp; Contact Us" title="Send Enquiry / Request Quotation (BOM &amp; Consultation)">
-          <i class="fa-solid fa-envelope"></i>
-        </a>
-
-        <!-- WhatsApp Circle Button -->
-        <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions."
-          class="apple-nav-circle-btn apple-nav-circle-whatsapp" target="_blank"
-          rel="noopener noreferrer" aria-label="Chat with Dr. Smith Healthcare on WhatsApp (+91 95990 81020)"
-          title="WhatsApp Direct (+91 95990 81020) • 24/7 Fast Inquiry">
-          <i class="fa-brands fa-whatsapp"></i>
-        </a>
-
-        <!-- Menu Toggle Button -->
-        <button type="button" class="apple-nav-circle-btn" id="apple-mobile-menu-btn"
-          aria-label="Toggle Navigation Menu" title="Menu">
-          <i class="bi bi-list"></i>
-        </button>
-      </div>
-
-    </div>
-  </nav>
-
-    <!-- Mobile Menu Drawer Backdrop Overlay -->
-  <div class="apple-mobile-backdrop" id="appleMobileBackdrop"></div>
-
-  <!-- Mobile Menu Drawer Overlay -->
-  <div class="apple-mobile-drawer" id="apple-mobile-drawer">
-    <div class="apple-mobile-drawer-header">
-      <span class="apple-mobile-drawer-tag"><i class="bi bi-hospital"></i> Dr. Smith Quick Menu</span>
-      <button type="button" class="apple-mobile-drawer-close" id="appleMobileDrawerClose" aria-label="Close Navigation Menu">
-        <i class="bi bi-x-lg"></i>
-      </button>
-    </div>
-
-    <div class="apple-mobile-grid">
-      <a href="../../index.html" class="apple-mobile-tile">
-        <div class="apple-mobile-tile-icon"><i class="bi bi-house-door-fill"></i></div></nav>
-                <div class="row align-items-center">
-                    <div class="col-lg-9">
-                        <span class="catalogue-eyebrow">Obstetrics & gynecology</span>
-                        <h1>Examination & Gynecology</h1>
-                        <p>Obstetric delivery tables, hydraulic labour beds, telescopic delivery couches, gynecological examination tables, and digital colposcopes.</p>
-                        <a class="catalogue-button catalogue-button--ghost" href="../index.html#catalogue">
-                            <i class="bi bi-arrow-left"></i> Back to full catalogue
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="catalogue-section">
-            <div class="container">
-                  
-                <p class="catalogue-count">Showing <strong>22</strong> products</p>
-
-                <div class="category-search-wrapper mb-4" style="max-width: 500px;">
-                    <div class="input-group">
-                        <span class="input-group-text bg-white border-end-0"><i class="bi bi-search text-muted"></i></span>
-                        <input type="text" id="categoryProductSearch" class="form-control border-start-0 ps-0" placeholder="Filter examination & gynecology..." aria-label="Filter products">
-                    </div>
-                </div>
-                <script src="../../assets/js/catalogue-filters.js?v=1.0"></script>
-                <div class="row g-4" id="products-grid">
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="examination delivery table (swm 11034)" data-badge="standard delivery">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Examination Delivery Table on Instagram" title="View on Instagram">
-                                    <img src="examination-delivery-table.png" alt="Examination Delivery Table" loading="lazy" decoding="async">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Standard Delivery</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Obstetrics & Gynecology • SWM 11034</span>
-                                <h3>Examination Delivery Table (SWM 11034)</h3>
-                                <p>Versatile two-section labour and examination table equipped with padded upholstered top and adjustable lithotomy leg crutches.</p>
-                                <ul class="catalogue-card__details">
-                                    <li>Dimensions: 187 L x 51 W x 81 H cm</li>
-                                    <li>Hand-adjustable ratchet backrest positioning</li>
-                                    <li>Epoxy powder coated tubular frame with lithotomy poles</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Examination%20Delivery%20Table">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="delivery table three fold (swm 11035)" data-badge="three fold">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Delivery Table Three Fold on Instagram" title="View on Instagram">
-                                    <img src="dr-smith-delivery-table-three-fold.png" alt="Delivery Table Three Fold" loading="lazy" decoding="async">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Three Fold</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Obstetrics & Gynecology • SWM 11035</span>
-                                <h3>Delivery Table Three Fold (SWM 11035)</h3>
-                                <p>Three-fold obstetric delivery table with lever-operated backrest and leg rest tilting for comprehensive gynecological care.</p>
-                                <ul class="catalogue-card__details">
-                                    <li>Three-section cushioned top with perineal cut</li>
-                                    <li>Lever-operated multi-angle pelvic inclination</li>
-                                    <li>Epoxy coated tubular steel frame with SS bowl</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Delivery%20Table%20Three%20Fold">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="telescopic table ms & ss (swm 11036)" data-badge="telescopic">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Telescopic Delivery Table (MS & SS) on Instagram" title="View on Instagram">
-                                    <img src="telescopic-table-ms-ss.png" alt="Telescopic Delivery Table (MS & SS)" loading="lazy" decoding="async">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Telescopic</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Obstetrics & Gynecology • SWM 11036</span>
-                                <h3>Telescopic Table MS & SS (SWM 11036)</h3>
-                                <p>Telescopic delivery table featuring sliding leg section that stows completely under the main frame during examination.</p>
-                                <ul class="catalogue-card__details">
-                                    <li>Dimensions: 72" L x 27" W x 24-32" H</li>
-                                    <li>Pneumatic gas-spring Trendelenburg positioning</li>
-                                    <li>Hydraulic height adjustment via side foot pedal</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Telescopic%20Delivery%20Table%20%28MS%20%26%20SS%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="delivery table electric + manual (swm 11037)" data-badge="electric + manual">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Delivery Table Electric + Manual on Instagram" title="View on Instagram">
-                                    <img src="dr-smith-delivery-table-electric-manual.png" alt="Delivery Table Electric + Manual" loading="lazy" decoding="async">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Electric + Manual</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Obstetrics & Gynecology • SWM 11037</span>
-                                <h3>Delivery Table Electric + Manual (SWM 11037)</h3>
-                                <p>Motorized obstetric table with dual electric and manual controls, reversible positioning, and padded leg supports.</p>
-                                <ul class="catalogue-card__details">
-                                    <li>Motorized backrest up/down and Trendelenburg tilts</li>
-                                    <li>Main framework crafted with heavy-gauge stainless steel</li>
-                                    <li>Supplied with canvas strap leg holders and grip handles</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Delivery%20Table%20Electric%20%2B%20Manual">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="delivery table hydraulic deluxe (swm 11038)" data-badge="hydraulic deluxe">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Delivery Table Hydraulic Deluxe on Instagram" title="View on Instagram">
-                                    <img src="dr-smith-delivery-table-hydraulic-deluxe.png" alt="Delivery Table Hydraulic Deluxe" loading="lazy" decoding="async">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Hydraulic Deluxe</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Obstetrics & Gynecology • SWM 11038</span>
-                                <h3>Delivery Table Hydraulic Deluxe (SWM 11038)</h3>
-                                <p>Deluxe hydraulic maternity table featuring a three-sectional stainless steel top with U-cut and pneumatic pump system.</p>
-                                <ul class="catalogue-card__details">
-                                    <li>3-sectional SS top with U-cut middle section</li>
-                                    <li>Pneumatic pump Trendelenburg positioning system</li>
-                                    <li>Head & side safety rails with ergonomic SS handgrips</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Delivery%20Table%20Hydraulic%20Deluxe">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="delivery bed electric & manual (swm 11039)" data-badge="maternity bed">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Delivery Bed Electric & Manual on Instagram" title="View on Instagram">
-                                    <img src="dr-smith-delivery-bed-electric-manual.png" alt="Delivery Bed Electric & Manual" loading="lazy" decoding="async">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Maternity Bed</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Obstetrics & Gynecology • SWM 11039</span>
-                                <h3>Delivery Bed Electric & Manual (SWM 11039)</h3>
-                                <p>All-in-one labour, delivery and recovery (LDR) bed mounted on 125mm castors with integrated electric actuator tilt.</p>
-                                <ul class="catalogue-card__details">
-                                    <li>Tubular frame on 125mm diameter castors with brakes</li>
-                                    <li>Three-section top with high-density fixed cushion mattress</li>
-                                    <li>Sliding leg section with telescopic SS IV rod</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Delivery%20Bed%20Electric%20%26%20Manual">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="examination couch deluxe" data-badge="clinical couch">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Examination Couch Deluxe on Instagram" title="View on Instagram">
-                                    <img src="examination-couch-deluxe.png" alt="Examination Couch Deluxe" loading="lazy" decoding="async">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Clinical Couch</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Obstetrics & Gynecology</span>
-                                <h3>Examination Couch Deluxe</h3>
-                                <p>Deluxe medical consultation examination couch featuring multi-drawer storage, sliding foot step and adjustable headrest.</p>
-                                <ul class="catalogue-card__details">
-                                    <li>Thick padded vinyl upholstery easy to sanitize</li>
-                                    <li>Built-in utility storage drawers and side cabinet</li>
-                                    <li>Integrated pull-out patient footstep</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Examination%20Couch%20Deluxe">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="digital video colposcope workstation" data-badge="video colposcope">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Digital Video Colposcope Workstation on Instagram" title="View on Instagram">
-                                    <img src="colposcope.png" alt="Digital Video Colposcope Workstation" loading="lazy" decoding="async">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Video Colposcope</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Obstetrics & Gynecology</span>
-                                <h3>Digital Video Colposcope Workstation</h3>
-                                <p>High-resolution digital optical video colposcope workstation for gynecological cervical examination and pathology documentation.</p>
-                                <ul class="catalogue-card__details">
-                                    <li>High-definition Sony CCD camera with continuous optical & digital zoom</li>
-                                    <li>Bright circular multi-point LED cold light source with green filter</li>
-                                    <li>Mounted on adjustable articulated balance arm and mobile stand</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Digital%20Video%20Colposcope%20Workstation">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dual fetal monitor ctg workstation" data-badge="fetal monitor">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dual Fetal Monitor CTG Workstation on Instagram" title="View on Instagram">
-                                    <img src="fetal-monitor-ctg.png" alt="Dual Fetal Monitor CTG Workstation" loading="lazy" decoding="async">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Fetal Monitor</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Obstetrics & Gynecology</span>
-                                <h3>Dual Fetal Monitor CTG Workstation</h3>
-                                <p>Advanced cardiotocography (CTG) fetal monitor for antepartum and intrapartum continuous maternal-fetal surveillance.</p>
-                                <ul class="catalogue-card__details">
-                                    <li>12.1-inch color TFT tiltable screen displaying FHR, TOCO, and AFM</li>
-                                    <li>High-sensitivity 12-crystal pulsed Doppler transducer</li>
-                                    <li>Built-in high-speed thermal recorder with automatic baseline analysis</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dual%20Fetal%20Monitor%20CTG%20Workstation">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="comprehensive gynaecology surgical instrument set" data-badge="instrument set">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Comprehensive Gynecological & Obstetrics Surgical Instrument Set on Instagram" title="View on Instagram">
-                                    <img src="gyne-instruments-set.png" alt="Comprehensive Gynecological & Obstetrics Surgical Instrument Set" loading="lazy" decoding="async">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Instrument Set</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Obstetrics & Gynecology</span>
-                                <h3>Comprehensive Gynaecology Surgical Instrument Set</h3>
-                                <p>Complete premium German-grade surgical stainless steel set for cesarean section, D&C, and general obstetric procedures.</p>
-                                <ul class="catalogue-card__details">
-                                    <li>Includes Sims specula, Hegar dilators, ovum forceps, and Green Armytage</li>
-                                    <li>High-grade medical passivated stainless steel with satin finish</li>
-                                    <li>Autoclavable heavy-gauge perforated sterilization container</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Comprehensive%20Gynaecology%20Surgical%20Instrument%20Set">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith 3-section folding examination & delivery table" data-badge="3-section folding">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith 3-Section Folding Examination & Delivery Table - Blue on Instagram" title="View on Instagram">
-                                    <img src="dr-smith-three-section-folding-examination-table-blue.png" alt="Dr. Smith 3-Section Folding Examination & Delivery Table - Blue" loading="lazy" decoding="async">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">3-Section Folding</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Maternity & Clinical Examination</span>
-                                <h3>Dr. Smith 3-Section Folding Examination & Delivery Table</h3>
-                                <p>Multifunctional three-section examination table featuring ratcheting headrest, perineal cut, and drop-down footrest.</p>
-                                <ul class="catalogue-card__details">
-                                    <li>Tri-fold padded top with waterproof medical-grade vinyl upholstery</li>
-                                    <li>Independent multi-position ratchet elevation on head and leg sections</li>
-                                    <li>Heavy-gauge tubular steel base coated in anti-microbial epoxy</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%203-Section%20Folding%20Examination%20%26%20Delivery%20Table">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith full stainless steel z-frame gynecological couch" data-badge="full ss z-frame">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Full Stainless Steel Z-Frame Gynecological Couch on Instagram" title="View on Instagram">
-                                    <img src="dr-smith-full-ss-z-frame-gynae-couch.png" alt="Dr. Smith Full Stainless Steel Z-Frame Gynecological Couch" loading="lazy" decoding="async">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Full SS Z-Frame</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Obstetrics & Gynecology</span>
-                                <h3>Dr. Smith Full Stainless Steel Z-Frame Gynecological Couch</h3>
-                                <p>High-stability Z-frame delivery couch manufactured entirely in surgical-grade stainless steel with padded lithotomy stirrups.</p>
-                                <ul class="catalogue-card__details">
-                                    <li>Rust-proof 304-grade stainless steel angular Z-truss architecture</li>
-                                    <li>Adjustable lithotomy leg crutches with quick-locking thumb clamps</li>
-                                    <li>Integrated stainless steel waste basin swing ring bracket</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Full%20Stainless%20Steel%20Z-Frame%20Gynecological%20Couch">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith multi-drawer consultation examination couch" data-badge="cabinet examination">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Multi-Drawer Consultation Examination Couch - Blue & White on Instagram" title="View on Instagram">
-                                    <img src="dr-smith-gynae-exam-couch-cabinet-blue.png" alt="Dr. Smith Multi-Drawer Consultation Examination Couch - Blue & White" loading="lazy" decoding="async">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Cabinet Examination</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Outpatient Clinical Suite</span>
-                                <h3>Dr. Smith Multi-Drawer Consultation Examination Couch</h3>
-                                <p>Dual-tone outpatient consultation table featuring 3 utility drawers, side storage cabinet, slide-out step stool, and gas-spring headrest.</p>
-                                <ul class="catalogue-card__details">
-                                    <li>Integrated lockable drawers and spacious double-door storage cabinet</li>
-                                    <li>Concealed pull-out step stool with anti-skid rubber tread</li>
-                                    <li>Ergonomic backrest tilting with perineal cut-out mattress</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Multi-Drawer%20Consultation%20Examination%20Couch">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith 2-section perineal cut examination table" data-badge="2-section table">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith 2-Section Perineal Cut Gynae Examination Table on Instagram" title="View on Instagram">
-                                    <img src="dr-smith-two-section-perineal-cut-exam-table.png" alt="Dr. Smith 2-Section Perineal Cut Gynae Examination Table" loading="lazy" decoding="async">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">2-Section Table</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Clinical Examination</span>
-                                <h3>Dr. Smith 2-Section Perineal Cut Examination Table</h3>
-                                <p>Durable clinical examination table with ratcheted backrest, U-cut perineal profile, and sturdy powder-coated framework.</p>
-                                <ul class="catalogue-card__details">
-                                    <li>Ergonomic headrest adjustable from 0 to 70 degrees</li>
-                                    <li>High-density foam mattress with fluid-resistant vinyl covering</li>
-                                    <li>Cross-braced tubular steel frame ensuring 200 kg patient capacity</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%202-Section%20Perineal%20Cut%20Examination%20Table">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith luxury electric ldr labour & delivery bed" data-badge="luxury electric ldr">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Luxury Electric LDR Labour Bed with ABS Railings on Instagram" title="View on Instagram">
-                                    <img src="dr-smith-luxury-electric-ldr-bed-abs-rails.png" alt="Dr. Smith Luxury Electric LDR Labour Bed with ABS Railings" loading="lazy" decoding="async">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Luxury Electric LDR</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Labour & Delivery Infrastructure</span>
-                                <h3>Dr. Smith Luxury Electric LDR Labour & Delivery Bed</h3>
-                                <p>Premium motorized obstetric suite supporting full labour, child delivery, and post-partum recovery with tuck-away leg section.</p>
-                                <ul class="catalogue-card__details">
-                                    <li>Motorized height elevation, backrest articulation, and pelvic tilt</li>
-                                    <li>Molded ABS fold-down side safety rails with patient call controls</li>
-                                    <li>Removable or storable telescopic leg section with padded lithotomy stirrups</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Luxury%20Electric%20LDR%20Labour%20%26%20Delivery%20Bed">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith prestige motorized obstetric delivery table" data-badge="prestige motorized">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Prestige Motorized Obstetric Delivery Table on Instagram" title="View on Instagram">
-                                    <img src="dr-smith-prestige-motorized-electric-delivery-table.png" alt="Dr. Smith Prestige Motorized Obstetric Delivery Table" loading="lazy" decoding="async">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Prestige Motorized</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Advanced Maternity Care</span>
-                                <h3>Dr. Smith Prestige Motorized Obstetric Delivery Table</h3>
-                                <p>Flagship Dr. Smith branded electro-hydraulic maternity table with hand remote pendant, column controls, and stainless steel chassis.</p>
-                                <ul class="catalogue-card__details">
-                                    <li>Dr. Smith laser-marked heavy stainless steel base with central brake</li>
-                                    <li>Motorized Trendelenburg, reverse tilt, and smooth vertical elevation</li>
-                                    <li>Adjustable ergonomic stainless steel pull handles and padded calf supports</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Prestige%20Motorized%20Obstetric%20Delivery%20Table">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith telescopic gynaecological table (high backrest)" data-badge="telescopic gynae">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Telescopic Gynaecological Table with Gas-Spring Backrest on Instagram" title="View on Instagram">
-                                    <img src="dr-smith-telescopic-delivery-table-high-backrest.png" alt="Dr. Smith Telescopic Gynaecological Table with Gas-Spring Backrest" loading="lazy" decoding="async">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Telescopic Gynae</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Obstetrics & Gynecology</span>
-                                <h3>Dr. Smith Telescopic Gynaecological Table (High Backrest)</h3>
-                                <p>Full stainless steel delivery table with telescoping foot section, gas-spring assisted high backrest, and perineal cut.</p>
-                                <ul class="catalogue-card__details">
-                                    <li>Stepless gas-spring backrest articulation up to 80 degrees</li>
-                                    <li>Full 304-grade stainless steel welded structure for maximum hygiene</li>
-                                    <li>Retractable foot section allowing effortless conversion to exam chair</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Telescopic%20Gynaecological%20Table%20%28High%20Backrest%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith electric gynecological & delivery suite" data-badge="electric maternity">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Electric Gynecological & Delivery Table - Pink Suite on Instagram" title="View on Instagram">
-                                    <img src="dr-smith-prestige-electric-gynae-bed-pink.png" alt="Dr. Smith Electric Gynecological & Delivery Table - Pink Suite" loading="lazy" decoding="async">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Electric Maternity</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Maternity & Surgical Infrastructure</span>
-                                <h3>Dr. Smith Electric Gynecological & Delivery Suite</h3>
-                                <p>Complete motorized delivery suite with multi-position electric actuators, side rails, IV pole mounts, and central locking.</p>
-                                <ul class="catalogue-card__details">
-                                    <li>Full motorized control via handheld pendant and base console</li>
-                                    <li>Ergonomic padded stirrups with multi-directional ball joints</li>
-                                    <li>Anti-bacterial flame-retardant seamless cushioned mattress</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Electric%20Gynecological%20%26%20Delivery%20Suite">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith advanced mobile ldr obstetric bed" data-badge="mobile ldr bed">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Advanced Mobile LDR Obstetric Bed with Gas Struts on Instagram" title="View on Instagram">
-                                    <img src="dr-smith-advanced-ldr-obstetric-bed-mobile.png" alt="Dr. Smith Advanced Mobile LDR Obstetric Bed with Gas Struts" loading="lazy" decoding="async">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Mobile LDR Bed</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Labour & Delivery Infrastructure</span>
-                                <h3>Dr. Smith Advanced Mobile LDR Obstetric Bed</h3>
-                                <p>Mobile LDR bed featuring gas-spring back elevation, integrated lower oxygen tank shelf, central steering castor, and ABS rails.</p>
-                                <ul class="catalogue-card__details">
-                                    <li>Gas-strut assisted backrest and pelvic elevation mechanisms</li>
-                                    <li>Molded ABS headboard and collapsible side safety panels</li>
-                                    <li>Base shelf accommodating oxygen cylinders and emergency resuscitation kits</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Advanced%20Mobile%20LDR%20Obstetric%20Bed">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith hydraulic heavy-duty delivery table" data-badge="hydraulic maternity">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Hydraulic Heavy-Duty Delivery Table with Waste Basin on Instagram" title="View on Instagram">
-                                    <img src="dr-smith-hydraulic-heavy-duty-delivery-table-pink.png" alt="Dr. Smith Hydraulic Heavy-Duty Delivery Table with Waste Basin" loading="lazy" decoding="async">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Hydraulic Maternity</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Obstetrics & Gynecology</span>
-                                <h3>Dr. Smith Hydraulic Heavy-Duty Delivery Table</h3>
-                                <p>Sealed hydraulic foot-pump delivery table featuring adjustable lithotomy stirrups, stainless steel column, and sliding fluid basin.</p>
-                                <ul class="catalogue-card__details">
-                                    <li>Smooth foot-pedal hydraulic height elevation</li>
-                                    <li>Detachable/sliding stainless steel basin on guided tracks</li>
-                                    <li>Ergonomic handgrips and multi-position Trendelenburg tilt</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Hydraulic%20Heavy-Duty%20Delivery%20Table">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith consultation examination couch (orange cabinets)" data-badge="cabinet examination">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Consultation Examination Couch with Orange Storage Cabinets on Instagram" title="View on Instagram">
-                                    <img src="dr-smith-gynae-consultation-couch-orange-cabinets.png" alt="Dr. Smith Consultation Examination Couch with Orange Storage Cabinets" loading="lazy" decoding="async">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Cabinet Examination</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Outpatient Clinical Suite</span>
-                                <h3>Dr. Smith Consultation Examination Couch (Orange Cabinets)</h3>
-                                <p>Heavy-duty consultation and examination couch with 3 utility top drawers, 3 lower storage cabinets, and pull-out patient footstep.</p>
-                                <ul class="catalogue-card__details">
-                                    <li>High-grade CRCA steel cabinet body finished with vibrant orange epoxy</li>
-                                    <li>Integrated sliding step stool with anti-skid surface</li>
-                                    <li>Padded reclining backrest supported by multi-stop mechanical gear</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Consultation%20Examination%20Couch%20%28Orange%20Cabinets%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 catalogue-grid-item" data-title="dr. smith full stainless steel delivery table (safety rails)" data-badge="full ss delivery">
-                        <article class="catalogue-card">
-                            <div class="catalogue-card__image catalogue-card__image--photo">
-                                <a href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="catalogue-card__image-link" aria-label="View Dr. Smith Full Stainless Steel Delivery Table with Safety Rails on Instagram" title="View on Instagram">
-                                    <img src="dr-smith-ss-obstetric-delivery-table-side-rails.png" alt="Dr. Smith Full Stainless Steel Delivery Table with Safety Rails" loading="lazy" decoding="async">
-                                </a>
-                            </div>
-                            <span class="catalogue-card__badge">Full SS Delivery</span>
-                            <div class="catalogue-card__body">
-                                <span class="catalogue-card__category">Obstetrics & Gynecology</span>
-                                <h3>Dr. Smith Full Stainless Steel Delivery Table (Safety Rails)</h3>
-                                <p>All-stainless steel labor and delivery table fitted with foldable patient side safety railings and telescopic leg section.</p>
-                                <ul class="catalogue-card__details">
-                                    <li>Foldable stainless steel safety side rails for patient protection</li>
-                                    <li>Telescoping sliding foot extension with manual lock</li>
-                                    <li>Padded lithotomy crutches and stainless steel fluid drainage basin</li>
-                                </ul>
-                                <a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Full%20Stainless%20Steel%20Delivery%20Table%20%28Safety%20Rails%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="catalogue-section">
-            <div class="container">
-                <div class="catalogue-cta d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4">
-                    <div>
-                        <h2>Can't find what you're looking for?</h2>
-                        <p>Share your requirements and our team will recommend the best fit from our full range.</p>
-                    </div>
-                    <a class="catalogue-button flex-shrink-0" href="../../contact-form/index.html">
+<nav aria-label="Global" class="apple-globalnav">
+<div class="apple-globalnav-inner">
+<!-- Brand & Corporate Identity -->
+<a aria-label="Dr. Smith Hospital Solutions" class="apple-nav-brand" href="../../index.html">
+<div class="brand-asterisk-icon">
+<img alt="Dr. Smith Emblem Logo" class="apple-nav-logo-img" decoding="async" height="36" loading="eager" src="../../assets/img/logo.png?v=11.0" width="36"/>
+</div>
+<div class="apple-nav-brand-text">
+<span class="apple-nav-brand-title">Dr. Smith</span>
+<span class="apple-nav-brand-subtitle">HOSPITAL SOLUTIONS</span>
+</div>
+</a>
+<!-- Navigation Links -->
+<ul class="apple-nav-links"><li class="apple-nav-item"><a class="apple-nav-link" href="../../index.html">Home</a></li><li class="apple-nav-item"><a class="apple-nav-link nav-active" href="../index.html">Products</a></li><li class="apple-nav-item"><a class="apple-nav-link" href="../../about-us/index.html">About us</a></li><li class="apple-nav-item"><a class="apple-nav-link" href="../../turnkey-projects/index.html">turnkey project</a></li><li class="apple-nav-item"><a class="apple-nav-link" href="../../contact-form/index.html">Contact Us</a></li></ul><!-- Action Utilities -->
+<div class="apple-nav-actions">
+<!-- Contact / Mail Form Button -->
+<a aria-label="Send Enquiry &amp; Contact Us" class="apple-nav-circle-btn apple-nav-circle-mail" href="../../contact-form/index.html" title="Send Enquiry / Request Quotation (BOM &amp; Consultation)">
+<i class="fa-solid fa-envelope"></i>
+</a>
+<!-- WhatsApp Circle Button -->
+<a aria-label="Chat with Dr. Smith Healthcare on WhatsApp (+91 95990 81020)" class="apple-nav-circle-btn apple-nav-circle-whatsapp" href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." rel="noopener noreferrer" target="_blank" title="WhatsApp Direct (+91 95990 81020) • 24/7 Fast Inquiry">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+<!-- Menu Toggle Button -->
+<button aria-label="Toggle Navigation Menu" class="apple-nav-circle-btn" id="apple-mobile-menu-btn" title="Menu" type="button">
+<i class="bi bi-list"></i>
+</button>
+</div>
+</div>
+</nav>
+<!-- Mobile Menu Drawer Backdrop Overlay -->
+<div class="apple-mobile-backdrop" id="appleMobileBackdrop"></div>
+<!-- Mobile Menu Drawer Overlay -->
+<div class="apple-mobile-drawer" id="apple-mobile-drawer">
+<div class="apple-mobile-drawer-header">
+<span class="apple-mobile-drawer-tag"><i class="bi bi-hospital"></i> Dr. Smith Quick Menu</span>
+<button aria-label="Close Navigation Menu" class="apple-mobile-drawer-close" id="appleMobileDrawerClose" type="button">
+<i class="bi bi-x-lg"></i>
+</button>
+</div>
+<div class="apple-mobile-grid"><a class="apple-mobile-tile" href="index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-house-door-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">Home</span><span class="apple-mobile-tile-sub">Overview</span></div></a><a class="apple-mobile-tile active" href="catalogue/index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-grid-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">Products</span><span class="apple-mobile-tile-sub">Browse categories</span></div></a><a class="apple-mobile-tile" href="about-us/index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-shield-check"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">About us</span><span class="apple-mobile-tile-sub">Our story</span></div></a><a class="apple-mobile-tile" href="turnkey-projects/index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-hospital-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">turnkey project</span><span class="apple-mobile-tile-sub">Setup solutions</span></div></a><a class="apple-mobile-tile" href="contact-form/index.html"><div class="apple-mobile-tile-icon"><i class="bi bi-envelope-paper-fill"></i></div><div class="apple-mobile-tile-content"><span class="apple-mobile-tile-title">Contact Us</span><span class="apple-mobile-tile-sub">Get in touch</span></div></a></div>
+<section class="catalogue-section">
+<div class="container">
+<p class="catalogue-count">Showing <strong>22</strong> products</p>
+<div class="category-search-wrapper mb-4" style="max-width: 500px;">
+<div class="input-group">
+<span class="input-group-text bg-white border-end-0"><i class="bi bi-search text-muted"></i></span>
+<input aria-label="Filter products" class="form-control border-start-0 ps-0" id="categoryProductSearch" placeholder="Filter examination &amp; gynecology..." type="text"/>
+</div>
+</div>
+<script src="../../assets/js/catalogue-filters.js?v=1.0"></script>
+<div class="row g-4" id="products-grid">
+<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="standard delivery" data-title="examination delivery table (swm 11034)">
+<article class="catalogue-card">
+<div class="catalogue-card__image catalogue-card__image--photo">
+<a aria-label="View Examination Delivery Table on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
+<img alt="Examination Delivery Table" decoding="async" loading="lazy" src="examination-delivery-table.png"/>
+</a>
+</div>
+<span class="catalogue-card__badge">Standard Delivery</span>
+<div class="catalogue-card__body">
+<span class="catalogue-card__category">Obstetrics &amp; Gynecology • SWM 11034</span>
+<h3>Examination Delivery Table (SWM 11034)</h3>
+<p>Versatile two-section labour and examination table equipped with padded upholstered top and adjustable lithotomy leg crutches.</p>
+<ul class="catalogue-card__details">
+<li>Dimensions: 187 L x 51 W x 81 H cm</li>
+<li>Hand-adjustable ratchet backrest positioning</li>
+<li>Epoxy powder coated tubular frame with lithotomy poles</li>
+</ul>
+<a class="catalogue-card__link" href="../../contact-form/index.html?product=Examination%20Delivery%20Table">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+</div>
+</article>
+</div>
+<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="three fold" data-title="delivery table three fold (swm 11035)">
+<article class="catalogue-card">
+<div class="catalogue-card__image catalogue-card__image--photo">
+<a aria-label="View Delivery Table Three Fold on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
+<img alt="Delivery Table Three Fold" decoding="async" loading="lazy" src="dr-smith-delivery-table-three-fold.png"/>
+</a>
+</div>
+<span class="catalogue-card__badge">Three Fold</span>
+<div class="catalogue-card__body">
+<span class="catalogue-card__category">Obstetrics &amp; Gynecology • SWM 11035</span>
+<h3>Delivery Table Three Fold (SWM 11035)</h3>
+<p>Three-fold obstetric delivery table with lever-operated backrest and leg rest tilting for comprehensive gynecological care.</p>
+<ul class="catalogue-card__details">
+<li>Three-section cushioned top with perineal cut</li>
+<li>Lever-operated multi-angle pelvic inclination</li>
+<li>Epoxy coated tubular steel frame with SS bowl</li>
+</ul>
+<a class="catalogue-card__link" href="../../contact-form/index.html?product=Delivery%20Table%20Three%20Fold">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+</div>
+</article>
+</div>
+<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="telescopic" data-title="telescopic table ms &amp; ss (swm 11036)">
+<article class="catalogue-card">
+<div class="catalogue-card__image catalogue-card__image--photo">
+<a aria-label="View Telescopic Delivery Table (MS &amp; SS) on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
+<img alt="Telescopic Delivery Table (MS &amp; SS)" decoding="async" loading="lazy" src="telescopic-table-ms-ss.png"/>
+</a>
+</div>
+<span class="catalogue-card__badge">Telescopic</span>
+<div class="catalogue-card__body">
+<span class="catalogue-card__category">Obstetrics &amp; Gynecology • SWM 11036</span>
+<h3>Telescopic Table MS &amp; SS (SWM 11036)</h3>
+<p>Telescopic delivery table featuring sliding leg section that stows completely under the main frame during examination.</p>
+<ul class="catalogue-card__details">
+<li>Dimensions: 72" L x 27" W x 24-32" H</li>
+<li>Pneumatic gas-spring Trendelenburg positioning</li>
+<li>Hydraulic height adjustment via side foot pedal</li>
+</ul>
+<a class="catalogue-card__link" href="../../contact-form/index.html?product=Telescopic%20Delivery%20Table%20%28MS%20%26%20SS%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+</div>
+</article>
+</div>
+<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="electric + manual" data-title="delivery table electric + manual (swm 11037)">
+<article class="catalogue-card">
+<div class="catalogue-card__image catalogue-card__image--photo">
+<a aria-label="View Delivery Table Electric + Manual on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
+<img alt="Delivery Table Electric + Manual" decoding="async" loading="lazy" src="dr-smith-delivery-table-electric-manual.png"/>
+</a>
+</div>
+<span class="catalogue-card__badge">Electric + Manual</span>
+<div class="catalogue-card__body">
+<span class="catalogue-card__category">Obstetrics &amp; Gynecology • SWM 11037</span>
+<h3>Delivery Table Electric + Manual (SWM 11037)</h3>
+<p>Motorized obstetric table with dual electric and manual controls, reversible positioning, and padded leg supports.</p>
+<ul class="catalogue-card__details">
+<li>Motorized backrest up/down and Trendelenburg tilts</li>
+<li>Main framework crafted with heavy-gauge stainless steel</li>
+<li>Supplied with canvas strap leg holders and grip handles</li>
+</ul>
+<a class="catalogue-card__link" href="../../contact-form/index.html?product=Delivery%20Table%20Electric%20%2B%20Manual">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+</div>
+</article>
+</div>
+<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="hydraulic deluxe" data-title="delivery table hydraulic deluxe (swm 11038)">
+<article class="catalogue-card">
+<div class="catalogue-card__image catalogue-card__image--photo">
+<a aria-label="View Delivery Table Hydraulic Deluxe on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
+<img alt="Delivery Table Hydraulic Deluxe" decoding="async" loading="lazy" src="dr-smith-delivery-table-hydraulic-deluxe.png"/>
+</a>
+</div>
+<span class="catalogue-card__badge">Hydraulic Deluxe</span>
+<div class="catalogue-card__body">
+<span class="catalogue-card__category">Obstetrics &amp; Gynecology • SWM 11038</span>
+<h3>Delivery Table Hydraulic Deluxe (SWM 11038)</h3>
+<p>Deluxe hydraulic maternity table featuring a three-sectional stainless steel top with U-cut and pneumatic pump system.</p>
+<ul class="catalogue-card__details">
+<li>3-sectional SS top with U-cut middle section</li>
+<li>Pneumatic pump Trendelenburg positioning system</li>
+<li>Head &amp; side safety rails with ergonomic SS handgrips</li>
+</ul>
+<a class="catalogue-card__link" href="../../contact-form/index.html?product=Delivery%20Table%20Hydraulic%20Deluxe">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+</div>
+</article>
+</div>
+<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="maternity bed" data-title="delivery bed electric &amp; manual (swm 11039)">
+<article class="catalogue-card">
+<div class="catalogue-card__image catalogue-card__image--photo">
+<a aria-label="View Delivery Bed Electric &amp; Manual on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
+<img alt="Delivery Bed Electric &amp; Manual" decoding="async" loading="lazy" src="dr-smith-delivery-bed-electric-manual.png"/>
+</a>
+</div>
+<span class="catalogue-card__badge">Maternity Bed</span>
+<div class="catalogue-card__body">
+<span class="catalogue-card__category">Obstetrics &amp; Gynecology • SWM 11039</span>
+<h3>Delivery Bed Electric &amp; Manual (SWM 11039)</h3>
+<p>All-in-one labour, delivery and recovery (LDR) bed mounted on 125mm castors with integrated electric actuator tilt.</p>
+<ul class="catalogue-card__details">
+<li>Tubular frame on 125mm diameter castors with brakes</li>
+<li>Three-section top with high-density fixed cushion mattress</li>
+<li>Sliding leg section with telescopic SS IV rod</li>
+</ul>
+<a class="catalogue-card__link" href="../../contact-form/index.html?product=Delivery%20Bed%20Electric%20%26%20Manual">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+</div>
+</article>
+</div>
+<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="clinical couch" data-title="examination couch deluxe">
+<article class="catalogue-card">
+<div class="catalogue-card__image catalogue-card__image--photo">
+<a aria-label="View Examination Couch Deluxe on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
+<img alt="Examination Couch Deluxe" decoding="async" loading="lazy" src="examination-couch-deluxe.png"/>
+</a>
+</div>
+<span class="catalogue-card__badge">Clinical Couch</span>
+<div class="catalogue-card__body">
+<span class="catalogue-card__category">Obstetrics &amp; Gynecology</span>
+<h3>Examination Couch Deluxe</h3>
+<p>Deluxe medical consultation examination couch featuring multi-drawer storage, sliding foot step and adjustable headrest.</p>
+<ul class="catalogue-card__details">
+<li>Thick padded vinyl upholstery easy to sanitize</li>
+<li>Built-in utility storage drawers and side cabinet</li>
+<li>Integrated pull-out patient footstep</li>
+</ul>
+<a class="catalogue-card__link" href="../../contact-form/index.html?product=Examination%20Couch%20Deluxe">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+</div>
+</article>
+</div>
+<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="video colposcope" data-title="digital video colposcope workstation">
+<article class="catalogue-card">
+<div class="catalogue-card__image catalogue-card__image--photo">
+<a aria-label="View Digital Video Colposcope Workstation on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
+<img alt="Digital Video Colposcope Workstation" decoding="async" loading="lazy" src="colposcope.png"/>
+</a>
+</div>
+<span class="catalogue-card__badge">Video Colposcope</span>
+<div class="catalogue-card__body">
+<span class="catalogue-card__category">Obstetrics &amp; Gynecology</span>
+<h3>Digital Video Colposcope Workstation</h3>
+<p>High-resolution digital optical video colposcope workstation for gynecological cervical examination and pathology documentation.</p>
+<ul class="catalogue-card__details">
+<li>High-definition Sony CCD camera with continuous optical &amp; digital zoom</li>
+<li>Bright circular multi-point LED cold light source with green filter</li>
+<li>Mounted on adjustable articulated balance arm and mobile stand</li>
+</ul>
+<a class="catalogue-card__link" href="../../contact-form/index.html?product=Digital%20Video%20Colposcope%20Workstation">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+</div>
+</article>
+</div>
+<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="fetal monitor" data-title="dual fetal monitor ctg workstation">
+<article class="catalogue-card">
+<div class="catalogue-card__image catalogue-card__image--photo">
+<a aria-label="View Dual Fetal Monitor CTG Workstation on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
+<img alt="Dual Fetal Monitor CTG Workstation" decoding="async" loading="lazy" src="fetal-monitor-ctg.png"/>
+</a>
+</div>
+<span class="catalogue-card__badge">Fetal Monitor</span>
+<div class="catalogue-card__body">
+<span class="catalogue-card__category">Obstetrics &amp; Gynecology</span>
+<h3>Dual Fetal Monitor CTG Workstation</h3>
+<p>Advanced cardiotocography (CTG) fetal monitor for antepartum and intrapartum continuous maternal-fetal surveillance.</p>
+<ul class="catalogue-card__details">
+<li>12.1-inch color TFT tiltable screen displaying FHR, TOCO, and AFM</li>
+<li>High-sensitivity 12-crystal pulsed Doppler transducer</li>
+<li>Built-in high-speed thermal recorder with automatic baseline analysis</li>
+</ul>
+<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dual%20Fetal%20Monitor%20CTG%20Workstation">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+</div>
+</article>
+</div>
+<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="instrument set" data-title="comprehensive gynaecology surgical instrument set">
+<article class="catalogue-card">
+<div class="catalogue-card__image catalogue-card__image--photo">
+<a aria-label="View Comprehensive Gynecological &amp; Obstetrics Surgical Instrument Set on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
+<img alt="Comprehensive Gynecological &amp; Obstetrics Surgical Instrument Set" decoding="async" loading="lazy" src="gyne-instruments-set.png"/>
+</a>
+</div>
+<span class="catalogue-card__badge">Instrument Set</span>
+<div class="catalogue-card__body">
+<span class="catalogue-card__category">Obstetrics &amp; Gynecology</span>
+<h3>Comprehensive Gynaecology Surgical Instrument Set</h3>
+<p>Complete premium German-grade surgical stainless steel set for cesarean section, D&amp;C, and general obstetric procedures.</p>
+<ul class="catalogue-card__details">
+<li>Includes Sims specula, Hegar dilators, ovum forceps, and Green Armytage</li>
+<li>High-grade medical passivated stainless steel with satin finish</li>
+<li>Autoclavable heavy-gauge perforated sterilization container</li>
+</ul>
+<a class="catalogue-card__link" href="../../contact-form/index.html?product=Comprehensive%20Gynaecology%20Surgical%20Instrument%20Set">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+</div>
+</article>
+</div>
+<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="3-section folding" data-title="dr. smith 3-section folding examination &amp; delivery table">
+<article class="catalogue-card">
+<div class="catalogue-card__image catalogue-card__image--photo">
+<a aria-label="View Dr. Smith 3-Section Folding Examination &amp; Delivery Table - Blue on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
+<img alt="Dr. Smith 3-Section Folding Examination &amp; Delivery Table - Blue" decoding="async" loading="lazy" src="dr-smith-three-section-folding-examination-table-blue.png"/>
+</a>
+</div>
+<span class="catalogue-card__badge">3-Section Folding</span>
+<div class="catalogue-card__body">
+<span class="catalogue-card__category">Maternity &amp; Clinical Examination</span>
+<h3>Dr. Smith 3-Section Folding Examination &amp; Delivery Table</h3>
+<p>Multifunctional three-section examination table featuring ratcheting headrest, perineal cut, and drop-down footrest.</p>
+<ul class="catalogue-card__details">
+<li>Tri-fold padded top with waterproof medical-grade vinyl upholstery</li>
+<li>Independent multi-position ratchet elevation on head and leg sections</li>
+<li>Heavy-gauge tubular steel base coated in anti-microbial epoxy</li>
+</ul>
+<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%203-Section%20Folding%20Examination%20%26%20Delivery%20Table">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+</div>
+</article>
+</div>
+<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="full ss z-frame" data-title="dr. smith full stainless steel z-frame gynecological couch">
+<article class="catalogue-card">
+<div class="catalogue-card__image catalogue-card__image--photo">
+<a aria-label="View Dr. Smith Full Stainless Steel Z-Frame Gynecological Couch on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
+<img alt="Dr. Smith Full Stainless Steel Z-Frame Gynecological Couch" decoding="async" loading="lazy" src="dr-smith-full-ss-z-frame-gynae-couch.png"/>
+</a>
+</div>
+<span class="catalogue-card__badge">Full SS Z-Frame</span>
+<div class="catalogue-card__body">
+<span class="catalogue-card__category">Obstetrics &amp; Gynecology</span>
+<h3>Dr. Smith Full Stainless Steel Z-Frame Gynecological Couch</h3>
+<p>High-stability Z-frame delivery couch manufactured entirely in surgical-grade stainless steel with padded lithotomy stirrups.</p>
+<ul class="catalogue-card__details">
+<li>Rust-proof 304-grade stainless steel angular Z-truss architecture</li>
+<li>Adjustable lithotomy leg crutches with quick-locking thumb clamps</li>
+<li>Integrated stainless steel waste basin swing ring bracket</li>
+</ul>
+<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Full%20Stainless%20Steel%20Z-Frame%20Gynecological%20Couch">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+</div>
+</article>
+</div>
+<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="cabinet examination" data-title="dr. smith multi-drawer consultation examination couch">
+<article class="catalogue-card">
+<div class="catalogue-card__image catalogue-card__image--photo">
+<a aria-label="View Dr. Smith Multi-Drawer Consultation Examination Couch - Blue &amp; White on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
+<img alt="Dr. Smith Multi-Drawer Consultation Examination Couch - Blue &amp; White" decoding="async" loading="lazy" src="dr-smith-gynae-exam-couch-cabinet-blue.png"/>
+</a>
+</div>
+<span class="catalogue-card__badge">Cabinet Examination</span>
+<div class="catalogue-card__body">
+<span class="catalogue-card__category">Outpatient Clinical Suite</span>
+<h3>Dr. Smith Multi-Drawer Consultation Examination Couch</h3>
+<p>Dual-tone outpatient consultation table featuring 3 utility drawers, side storage cabinet, slide-out step stool, and gas-spring headrest.</p>
+<ul class="catalogue-card__details">
+<li>Integrated lockable drawers and spacious double-door storage cabinet</li>
+<li>Concealed pull-out step stool with anti-skid rubber tread</li>
+<li>Ergonomic backrest tilting with perineal cut-out mattress</li>
+</ul>
+<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Multi-Drawer%20Consultation%20Examination%20Couch">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+</div>
+</article>
+</div>
+<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="2-section table" data-title="dr. smith 2-section perineal cut examination table">
+<article class="catalogue-card">
+<div class="catalogue-card__image catalogue-card__image--photo">
+<a aria-label="View Dr. Smith 2-Section Perineal Cut Gynae Examination Table on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
+<img alt="Dr. Smith 2-Section Perineal Cut Gynae Examination Table" decoding="async" loading="lazy" src="dr-smith-two-section-perineal-cut-exam-table.png"/>
+</a>
+</div>
+<span class="catalogue-card__badge">2-Section Table</span>
+<div class="catalogue-card__body">
+<span class="catalogue-card__category">Clinical Examination</span>
+<h3>Dr. Smith 2-Section Perineal Cut Examination Table</h3>
+<p>Durable clinical examination table with ratcheted backrest, U-cut perineal profile, and sturdy powder-coated framework.</p>
+<ul class="catalogue-card__details">
+<li>Ergonomic headrest adjustable from 0 to 70 degrees</li>
+<li>High-density foam mattress with fluid-resistant vinyl covering</li>
+<li>Cross-braced tubular steel frame ensuring 200 kg patient capacity</li>
+</ul>
+<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%202-Section%20Perineal%20Cut%20Examination%20Table">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+</div>
+</article>
+</div>
+<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="luxury electric ldr" data-title="dr. smith luxury electric ldr labour &amp; delivery bed">
+<article class="catalogue-card">
+<div class="catalogue-card__image catalogue-card__image--photo">
+<a aria-label="View Dr. Smith Luxury Electric LDR Labour Bed with ABS Railings on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
+<img alt="Dr. Smith Luxury Electric LDR Labour Bed with ABS Railings" decoding="async" loading="lazy" src="dr-smith-luxury-electric-ldr-bed-abs-rails.png"/>
+</a>
+</div>
+<span class="catalogue-card__badge">Luxury Electric LDR</span>
+<div class="catalogue-card__body">
+<span class="catalogue-card__category">Labour &amp; Delivery Infrastructure</span>
+<h3>Dr. Smith Luxury Electric LDR Labour &amp; Delivery Bed</h3>
+<p>Premium motorized obstetric suite supporting full labour, child delivery, and post-partum recovery with tuck-away leg section.</p>
+<ul class="catalogue-card__details">
+<li>Motorized height elevation, backrest articulation, and pelvic tilt</li>
+<li>Molded ABS fold-down side safety rails with patient call controls</li>
+<li>Removable or storable telescopic leg section with padded lithotomy stirrups</li>
+</ul>
+<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Luxury%20Electric%20LDR%20Labour%20%26%20Delivery%20Bed">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+</div>
+</article>
+</div>
+<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="prestige motorized" data-title="dr. smith prestige motorized obstetric delivery table">
+<article class="catalogue-card">
+<div class="catalogue-card__image catalogue-card__image--photo">
+<a aria-label="View Dr. Smith Prestige Motorized Obstetric Delivery Table on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
+<img alt="Dr. Smith Prestige Motorized Obstetric Delivery Table" decoding="async" loading="lazy" src="dr-smith-prestige-motorized-electric-delivery-table.png"/>
+</a>
+</div>
+<span class="catalogue-card__badge">Prestige Motorized</span>
+<div class="catalogue-card__body">
+<span class="catalogue-card__category">Advanced Maternity Care</span>
+<h3>Dr. Smith Prestige Motorized Obstetric Delivery Table</h3>
+<p>Flagship Dr. Smith branded electro-hydraulic maternity table with hand remote pendant, column controls, and stainless steel chassis.</p>
+<ul class="catalogue-card__details">
+<li>Dr. Smith laser-marked heavy stainless steel base with central brake</li>
+<li>Motorized Trendelenburg, reverse tilt, and smooth vertical elevation</li>
+<li>Adjustable ergonomic stainless steel pull handles and padded calf supports</li>
+</ul>
+<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Prestige%20Motorized%20Obstetric%20Delivery%20Table">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+</div>
+</article>
+</div>
+<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="telescopic gynae" data-title="dr. smith telescopic gynaecological table (high backrest)">
+<article class="catalogue-card">
+<div class="catalogue-card__image catalogue-card__image--photo">
+<a aria-label="View Dr. Smith Telescopic Gynaecological Table with Gas-Spring Backrest on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
+<img alt="Dr. Smith Telescopic Gynaecological Table with Gas-Spring Backrest" decoding="async" loading="lazy" src="dr-smith-telescopic-delivery-table-high-backrest.png"/>
+</a>
+</div>
+<span class="catalogue-card__badge">Telescopic Gynae</span>
+<div class="catalogue-card__body">
+<span class="catalogue-card__category">Obstetrics &amp; Gynecology</span>
+<h3>Dr. Smith Telescopic Gynaecological Table (High Backrest)</h3>
+<p>Full stainless steel delivery table with telescoping foot section, gas-spring assisted high backrest, and perineal cut.</p>
+<ul class="catalogue-card__details">
+<li>Stepless gas-spring backrest articulation up to 80 degrees</li>
+<li>Full 304-grade stainless steel welded structure for maximum hygiene</li>
+<li>Retractable foot section allowing effortless conversion to exam chair</li>
+</ul>
+<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Telescopic%20Gynaecological%20Table%20%28High%20Backrest%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+</div>
+</article>
+</div>
+<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="electric maternity" data-title="dr. smith electric gynecological &amp; delivery suite">
+<article class="catalogue-card">
+<div class="catalogue-card__image catalogue-card__image--photo">
+<a aria-label="View Dr. Smith Electric Gynecological &amp; Delivery Table - Pink Suite on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
+<img alt="Dr. Smith Electric Gynecological &amp; Delivery Table - Pink Suite" decoding="async" loading="lazy" src="dr-smith-prestige-electric-gynae-bed-pink.png"/>
+</a>
+</div>
+<span class="catalogue-card__badge">Electric Maternity</span>
+<div class="catalogue-card__body">
+<span class="catalogue-card__category">Maternity &amp; Surgical Infrastructure</span>
+<h3>Dr. Smith Electric Gynecological &amp; Delivery Suite</h3>
+<p>Complete motorized delivery suite with multi-position electric actuators, side rails, IV pole mounts, and central locking.</p>
+<ul class="catalogue-card__details">
+<li>Full motorized control via handheld pendant and base console</li>
+<li>Ergonomic padded stirrups with multi-directional ball joints</li>
+<li>Anti-bacterial flame-retardant seamless cushioned mattress</li>
+</ul>
+<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Electric%20Gynecological%20%26%20Delivery%20Suite">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+</div>
+</article>
+</div>
+<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="mobile ldr bed" data-title="dr. smith advanced mobile ldr obstetric bed">
+<article class="catalogue-card">
+<div class="catalogue-card__image catalogue-card__image--photo">
+<a aria-label="View Dr. Smith Advanced Mobile LDR Obstetric Bed with Gas Struts on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
+<img alt="Dr. Smith Advanced Mobile LDR Obstetric Bed with Gas Struts" decoding="async" loading="lazy" src="dr-smith-advanced-ldr-obstetric-bed-mobile.png"/>
+</a>
+</div>
+<span class="catalogue-card__badge">Mobile LDR Bed</span>
+<div class="catalogue-card__body">
+<span class="catalogue-card__category">Labour &amp; Delivery Infrastructure</span>
+<h3>Dr. Smith Advanced Mobile LDR Obstetric Bed</h3>
+<p>Mobile LDR bed featuring gas-spring back elevation, integrated lower oxygen tank shelf, central steering castor, and ABS rails.</p>
+<ul class="catalogue-card__details">
+<li>Gas-strut assisted backrest and pelvic elevation mechanisms</li>
+<li>Molded ABS headboard and collapsible side safety panels</li>
+<li>Base shelf accommodating oxygen cylinders and emergency resuscitation kits</li>
+</ul>
+<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Advanced%20Mobile%20LDR%20Obstetric%20Bed">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+</div>
+</article>
+</div>
+<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="hydraulic maternity" data-title="dr. smith hydraulic heavy-duty delivery table">
+<article class="catalogue-card">
+<div class="catalogue-card__image catalogue-card__image--photo">
+<a aria-label="View Dr. Smith Hydraulic Heavy-Duty Delivery Table with Waste Basin on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
+<img alt="Dr. Smith Hydraulic Heavy-Duty Delivery Table with Waste Basin" decoding="async" loading="lazy" src="dr-smith-hydraulic-heavy-duty-delivery-table-pink.png"/>
+</a>
+</div>
+<span class="catalogue-card__badge">Hydraulic Maternity</span>
+<div class="catalogue-card__body">
+<span class="catalogue-card__category">Obstetrics &amp; Gynecology</span>
+<h3>Dr. Smith Hydraulic Heavy-Duty Delivery Table</h3>
+<p>Sealed hydraulic foot-pump delivery table featuring adjustable lithotomy stirrups, stainless steel column, and sliding fluid basin.</p>
+<ul class="catalogue-card__details">
+<li>Smooth foot-pedal hydraulic height elevation</li>
+<li>Detachable/sliding stainless steel basin on guided tracks</li>
+<li>Ergonomic handgrips and multi-position Trendelenburg tilt</li>
+</ul>
+<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Hydraulic%20Heavy-Duty%20Delivery%20Table">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+</div>
+</article>
+</div>
+<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="cabinet examination" data-title="dr. smith consultation examination couch (orange cabinets)">
+<article class="catalogue-card">
+<div class="catalogue-card__image catalogue-card__image--photo">
+<a aria-label="View Dr. Smith Consultation Examination Couch with Orange Storage Cabinets on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
+<img alt="Dr. Smith Consultation Examination Couch with Orange Storage Cabinets" decoding="async" loading="lazy" src="dr-smith-gynae-consultation-couch-orange-cabinets.png"/>
+</a>
+</div>
+<span class="catalogue-card__badge">Cabinet Examination</span>
+<div class="catalogue-card__body">
+<span class="catalogue-card__category">Outpatient Clinical Suite</span>
+<h3>Dr. Smith Consultation Examination Couch (Orange Cabinets)</h3>
+<p>Heavy-duty consultation and examination couch with 3 utility top drawers, 3 lower storage cabinets, and pull-out patient footstep.</p>
+<ul class="catalogue-card__details">
+<li>High-grade CRCA steel cabinet body finished with vibrant orange epoxy</li>
+<li>Integrated sliding step stool with anti-skid surface</li>
+<li>Padded reclining backrest supported by multi-stop mechanical gear</li>
+</ul>
+<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Consultation%20Examination%20Couch%20%28Orange%20Cabinets%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+</div>
+</article>
+</div>
+<div class="col-sm-6 col-lg-4 catalogue-grid-item" data-badge="full ss delivery" data-title="dr. smith full stainless steel delivery table (safety rails)">
+<article class="catalogue-card">
+<div class="catalogue-card__image catalogue-card__image--photo">
+<a aria-label="View Dr. Smith Full Stainless Steel Delivery Table with Safety Rails on Instagram" class="catalogue-card__image-link" href="https://www.instagram.com/surgicalwholesalemartpvt.ltd?utm_source=ig_web_button_share_sheet&amp;stkn=ZDNlZDc0MzIxNw==" rel="noopener noreferrer" target="_blank" title="View on Instagram">
+<img alt="Dr. Smith Full Stainless Steel Delivery Table with Safety Rails" decoding="async" loading="lazy" src="dr-smith-ss-obstetric-delivery-table-side-rails.png"/>
+</a>
+</div>
+<span class="catalogue-card__badge">Full SS Delivery</span>
+<div class="catalogue-card__body">
+<span class="catalogue-card__category">Obstetrics &amp; Gynecology</span>
+<h3>Dr. Smith Full Stainless Steel Delivery Table (Safety Rails)</h3>
+<p>All-stainless steel labor and delivery table fitted with foldable patient side safety railings and telescopic leg section.</p>
+<ul class="catalogue-card__details">
+<li>Foldable stainless steel safety side rails for patient protection</li>
+<li>Telescoping sliding foot extension with manual lock</li>
+<li>Padded lithotomy crutches and stainless steel fluid drainage basin</li>
+</ul>
+<a class="catalogue-card__link" href="../../contact-form/index.html?product=Dr.%20Smith%20Full%20Stainless%20Steel%20Delivery%20Table%20%28Safety%20Rails%29">Enquire about this product <i class="bi bi-arrow-right"></i></a>
+</div>
+</article>
+</div>
+</div>
+</div>
+</section>
+<section class="catalogue-section">
+<div class="container">
+<div class="catalogue-cta d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4">
+<div>
+<h2>Can't find what you're looking for?</h2>
+<p>Share your requirements and our team will recommend the best fit from our full range.</p>
+</div>
+<a class="catalogue-button flex-shrink-0" href="../../contact-form/index.html">
                         Contact our team <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-      <!-- ============================================================
+</a>
+</div>
+</div>
+</section>
+<!-- ============================================================
        GLOBAL DIRECTORY FOOTER
        ============================================================ -->
-  
-
-  <!-- Drawer Modal -->
-    <!-- ============================================================
+<!-- Drawer Modal -->
+<!-- ============================================================
        GLOBAL DIRECTORY FOOTER
        ============================================================ -->
-  <footer class="apple-globalfooter">
-    <div class="apple-footer-inner">
-
-      <!-- Footer Brand Header & Fast Back-To-Top -->
-      <div class="apple-footer-brand-header">
-        <div class="apple-footer-brand-left">
-          <img src="../../assets/img/logo.png?v=11.0" alt="Dr. Smith Emblem Logo" class="apple-footer-brand-logo" width="32"
-            height="32" decoding="async" loading="lazy">
-          <div>
-            <div class="apple-footer-brand-title">Dr. Smith</div>
-            <span class="apple-footer-brand-subtitle">HOSPITAL SOLUTIONS</span>
-          </div>
-        </div>
-        <a href="#top" class="apple-footer-backtotop-btn"
-          onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;" aria-label="Scroll back to top">
-          <span>Top</span> <i class="bi bi-chevron-up"></i>
-        </a>
-      </div>
-
-      <!-- Notes / Footnotes -->
-      <div class="apple-footer-notes">
-        <ol>
-          <li>Medical equipment specifications, turnkey timelines, and compliance standards (ISO 9001:2015, ISO
+<footer class="apple-globalfooter">
+<div class="apple-footer-inner">
+<!-- Footer Brand Header & Fast Back-To-Top -->
+<div class="apple-footer-brand-header">
+<div class="apple-footer-brand-left">
+<img alt="Dr. Smith Emblem Logo" class="apple-footer-brand-logo" decoding="async" height="32" loading="lazy" src="../../assets/img/logo.png?v=11.0" width="32"/>
+<div>
+<div class="apple-footer-brand-title">Dr. Smith</div>
+<span class="apple-footer-brand-subtitle">HOSPITAL SOLUTIONS</span>
+</div>
+</div>
+<a aria-label="Scroll back to top" class="apple-footer-backtotop-btn" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">
+<span>Top</span> <i class="bi bi-chevron-up"></i>
+</a>
+</div>
+<!-- Notes / Footnotes -->
+<div class="apple-footer-notes">
+<ol>
+<li>Medical equipment specifications, turnkey timelines, and compliance standards (ISO 9001:2015, ISO
             13485:2016, CE, FDA) depend on specific project scopes and customized clinical configurations.</li>
-          <li>Turnkey hospital infrastructure engineering timelines depend on architectural blueprints, local regulatory
+<li>Turnkey hospital infrastructure engineering timelines depend on architectural blueprints, local regulatory
             clearances, and civil site readiness.</li>
-          <li>Principal Global Head Office located at Kapashera Border, New Delhi; Manufacturing Plant at METL, Jhajjar,
+<li>Principal Global Head Office located at Kapashera Border, New Delhi; Manufacturing Plant at METL, Jhajjar,
             Haryana; Overseas Head Office at SAIF Zone, Sharjah, UAE.</li>
-        </ol>
-      </div>
-
-      <!-- Directory Columns (Mobile Collapsible Accordions) -->
-      <div class="apple-footer-directory">
-
-        <!-- Col 1: Turnkey Solutions (Active by default on mobile) -->
-        <div class="apple-footer-col active">
-          <button type="button" class="apple-footer-col-trigger" aria-expanded="true">
-            <h4 class="apple-footer-col-title">Turnkey Solutions</h4>
-            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
-          </button>
-          <ul class="apple-footer-col-list">
-            <li><a href="../../turnkey-projects/index.html">500-Bedded Hospital Setup</a></li>
-            <li><a href="../../catalogue/modular-ot/index.html">Modular OT Construction</a></li>
-            <li><a href="../../turnkey-projects/index.html">Medical Gas Pipeline (MGPS)</a></li>
-            <li><a href="../../turnkey-projects/index.html">Hospital Architecture &amp; MEP</a></li>
-            <li><a href="../../turnkey-projects/index.html">Government &amp; Global Tenders</a></li>
-          </ul>
-        </div>
-
-        <!-- Col 2: Group Ecosystem -->
-        <div class="apple-footer-col">
-          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
-            <h4 class="apple-footer-col-title">Group Ecosystem</h4>
-            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
-          </button>
-          <ul class="apple-footer-col-list">
-            <li><a href="../../about-us/index.html">Dr. Smith Healthcare</a></li>
-            <li><a href="../../catalogue/index.html">Surgihub Surgical Devices</a></li>
-            <li><a href="../../catalogue/index.html">Surgical Mall of India (SMPL)</a></li>
-            <li><a href="../../catalogue/index.html">MediAid Patient Care</a></li>
-            <li><a href="../../catalogue/index.html">Orbit Mahajan Diagnostics</a></li>
-          </ul>
-        </div>
-
-        <!-- Col 3: Product Catalogue -->
-        <div class="apple-footer-col">
-          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
-            <h4 class="apple-footer-col-title">Product Catalogue</h4>
-            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
-          </button>
-          <ul class="apple-footer-col-list">
-            <li><a href="../../catalogue/beds/index.html">Hospital &amp; ICU Beds</a></li>
-            <li><a href="../../catalogue/modular-ot/index.html">Modular OT Suites</a></li>
-            <li><a href="../../catalogue/patient-monitor/index.html">Critical Care &amp; Monitors</a></li>
-            <li><a href="../../catalogue/ventilators/index.html">ICU Ventilators</a></li>
-            <li><a href="../../catalogue/index.html">Full 50+ Categories</a></li>
-          </ul>
-        </div>
-
-        <!-- Col 4: Global Directory -->
-        <div class="apple-footer-col">
-          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
-            <h4 class="apple-footer-col-title">Global Presence</h4>
-            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
-          </button>
-          <ul class="apple-footer-col-list">
-            <li><a href="../../contact-form/index.html">New Delhi Head Office (India)</a></li>
-            <li><a href="../../contact-form/index.html">Jhajjar Manufacturing Plant</a></li>
-            <li><a href="../../contact-form/index.html">Sharjah Overseas Office (UAE)</a></li>
-            <li><a href="../../contact-form/index.html">Kenya &amp; Nigeria Desks</a></li>
-            <li><a href="../../contact-form/index.html">Patna, Kolkata, Varanasi Marts</a></li>
-          </ul>
-        </div>
-
-        <!-- Col 5: Compliance & Values -->
-        <div class="apple-footer-col">
-          <button type="button" class="apple-footer-col-trigger" aria-expanded="false">
-            <h4 class="apple-footer-col-title">Corporate &amp; Quality</h4>
-            <i class="bi bi-chevron-down apple-footer-col-icon"></i>
-          </button>
-          <ul class="apple-footer-col-list">
-            <li><a href="../../about-us/index.html">About 60+ Years Heritage</a></li>
-            <li><a href="../../mission-values/index.html">Mission &amp; Values</a></li>
-            <li><a href="../../about-us/index.html">Executive Leadership</a></li>
-            <li><a href="../../privacy.html">Privacy Policy</a></li>
-            <li><a href="../../terms.html">Terms of Service</a></li>
-          </ul>
-        </div>
-
-      </div>
-
-      <!-- Footer Bottom Legal, Direct Connect & Country Positioned in Correct Order -->
-      <div class="apple-footer-bottom">
-        <div class="apple-footer-top-row">
-          <div class="apple-footer-country">
-            <a href="../../contact-form/index.html" class="apple-footer-country-badge" title="Region &amp; Language">
-              <i class="bi bi-globe me-1"></i> India (English)
+</ol>
+</div>
+<!-- Directory Columns (Mobile Collapsible Accordions) -->
+<div class="apple-footer-directory">
+<!-- Col 1: Turnkey Solutions (Active by default on mobile) -->
+<div class="apple-footer-col active">
+<button aria-expanded="true" class="apple-footer-col-trigger" type="button">
+<h4 class="apple-footer-col-title">Turnkey Solutions</h4>
+<i class="bi bi-chevron-down apple-footer-col-icon"></i>
+</button>
+<ul class="apple-footer-col-list">
+<li><a href="../../turnkey-projects/index.html">500-Bedded Hospital Setup</a></li>
+<li><a href="../../catalogue/modular-ot/index.html">Modular OT Construction</a></li>
+<li><a href="../../turnkey-projects/index.html">Medical Gas Pipeline (MGPS)</a></li>
+<li><a href="../../turnkey-projects/index.html">Hospital Architecture &amp; MEP</a></li>
+<li><a href="../../turnkey-projects/index.html">Government &amp; Global Tenders</a></li>
+</ul>
+</div>
+<!-- Col 2: Group Ecosystem -->
+<div class="apple-footer-col">
+<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
+<h4 class="apple-footer-col-title">Group Ecosystem</h4>
+<i class="bi bi-chevron-down apple-footer-col-icon"></i>
+</button>
+<ul class="apple-footer-col-list">
+<li><a href="../../about-us/index.html">Dr. Smith Healthcare</a></li>
+<li><a href="../../catalogue/index.html">Surgihub Surgical Devices</a></li>
+<li><a href="../../catalogue/index.html">Surgical Mall of India (SMPL)</a></li>
+<li><a href="../../catalogue/index.html">MediAid Patient Care</a></li>
+<li><a href="../../catalogue/index.html">Orbit Mahajan Diagnostics</a></li>
+</ul>
+</div>
+<!-- Col 3: Product Catalogue -->
+<div class="apple-footer-col">
+<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
+<h4 class="apple-footer-col-title">Product Catalogue</h4>
+<i class="bi bi-chevron-down apple-footer-col-icon"></i>
+</button>
+<ul class="apple-footer-col-list">
+<li><a href="../../catalogue/beds/index.html">Hospital &amp; ICU Beds</a></li>
+<li><a href="../../catalogue/modular-ot/index.html">Modular OT Suites</a></li>
+<li><a href="../../catalogue/patient-monitor/index.html">Critical Care &amp; Monitors</a></li>
+<li><a href="../../catalogue/ventilators/index.html">ICU Ventilators</a></li>
+<li><a href="../../catalogue/index.html">Full 50+ Categories</a></li>
+</ul>
+</div>
+<!-- Col 4: Global Directory -->
+<div class="apple-footer-col">
+<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
+<h4 class="apple-footer-col-title">Global Presence</h4>
+<i class="bi bi-chevron-down apple-footer-col-icon"></i>
+</button>
+<ul class="apple-footer-col-list">
+<li><a href="../../contact-form/index.html">New Delhi Head Office (India)</a></li>
+<li><a href="../../contact-form/index.html">Jhajjar Manufacturing Plant</a></li>
+<li><a href="../../contact-form/index.html">Sharjah Overseas Office (UAE)</a></li>
+<li><a href="../../contact-form/index.html">Kenya &amp; Nigeria Desks</a></li>
+<li><a href="../../contact-form/index.html">Patna, Kolkata, Varanasi Marts</a></li>
+</ul>
+</div>
+<!-- Col 5: Compliance & Values -->
+<div class="apple-footer-col">
+<button aria-expanded="false" class="apple-footer-col-trigger" type="button">
+<h4 class="apple-footer-col-title">Corporate &amp; Quality</h4>
+<i class="bi bi-chevron-down apple-footer-col-icon"></i>
+</button>
+<ul class="apple-footer-col-list">
+<li><a href="../../about-us/index.html">About 60+ Years Heritage</a></li>
+<li><a href="../../mission-values/index.html">Mission &amp; Values</a></li>
+<li><a href="../../about-us/index.html">Executive Leadership</a></li>
+<li><a href="../../privacy.html">Privacy Policy</a></li>
+<li><a href="../../terms.html">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<!-- Footer Bottom Legal, Direct Connect & Country Positioned in Correct Order -->
+<div class="apple-footer-bottom">
+<div class="apple-footer-top-row">
+<div class="apple-footer-country">
+<a class="apple-footer-country-badge" href="../../contact-form/index.html" title="Region &amp; Language">
+<i class="bi bi-globe me-1"></i> India (English)
             </a>
-          </div>
-          <div class="apple-footer-quicklinks">
-            <a href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." target="_blank" rel="noopener noreferrer"
-              class="apple-footer-badge-link" title="Direct WhatsApp Assistance (+91 95990 81020)">
-              <i class="fa-brands fa-whatsapp text-success me-1"></i> WhatsApp Desk
+</div>
+<div class="apple-footer-quicklinks">
+<a class="apple-footer-badge-link" href="https://wa.me/919599081020?text=Hello%20Dr.%20Smith%20Healthcare,%20I%20would%20like%20to%20inquire%20about%20your%20hospital%20solutions." rel="noopener noreferrer" target="_blank" title="Direct WhatsApp Assistance (+91 95990 81020)">
+<i class="fa-brands fa-whatsapp text-success me-1"></i> WhatsApp Desk
             </a>
-          </div>
-        </div>
-
-        <div class="apple-footer-divider"></div>
-
-        <div class="apple-footer-meta-row">
-          <div class="apple-footer-legal-links">
-            <a href="../../privacy.html">Privacy Policy</a>
-            <span class="legal-dot">•</span>
-            <a href="../../terms.html">Terms of Use</a>
-            <span class="legal-dot">•</span>
-            <a href="../../contact-form/index.html">Sales Policy</a>
-            <span class="legal-dot">•</span>
-            <a href="../../contact-form/index.html">Legal</a>
-            <span class="legal-dot">•</span>
-            <a href="../../catalogue/index.html">Site Map</a>
-          </div>
-          <div class="apple-footer-copyright">
-            Copyright &copy; 2026 Dr. Smith Healthcare Solutions (Surgical Wholesale Mart Pvt. Ltd.). All rights
+</div>
+</div>
+<div class="apple-footer-divider"></div>
+<div class="apple-footer-meta-row">
+<div class="apple-footer-legal-links">
+<a href="../../privacy.html">Privacy Policy</a>
+<span class="legal-dot">•</span>
+<a href="../../terms.html">Terms of Use</a>
+<span class="legal-dot">•</span>
+<a href="../../contact-form/index.html">Sales Policy</a>
+<span class="legal-dot">•</span>
+<a href="../../contact-form/index.html">Legal</a>
+<span class="legal-dot">•</span>
+<a href="../../catalogue/index.html">Site Map</a>
+</div>
+<div class="apple-footer-copyright">
+            Copyright © 2026 Dr. Smith Healthcare Solutions (Surgical Wholesale Mart Pvt. Ltd.). All rights
             reserved. An ISO 9001:2015, ISO 13485:2016, CE &amp; FDA Certified Company.
           </div>
-        </div>
-      </div>
-
-    </div>
-  </footer>
-
-  <!-- Drawer Modal -->
-  <div class="apple-drawer-overlay" id="apple-drawer-overlay" onclick="if(event.target===this) closeAppleDrawer();">
-    <div class="apple-drawer-content">
-      <button type="button" class="apple-drawer-close" onclick="closeAppleDrawer();" aria-label="Close">
-        <i class="bi bi-x-lg"></i>
-      </button>
-      
-      <div style="text-align: center; margin-bottom: 24px;">
-        <span class="apple-shelf-badge">Dr. Smith Turnkey &amp; Procurement Desk</span>
-        <h3 style="font-size: 24px; font-weight: 700; margin-top: 8px;">Request Project Consultation</h3>
-        <p style="font-size: 14px; color: var(--apple-text-secondary); margin: 0;">Speak directly with our healthcare architects &amp; hospital engineering experts.</p>
-      </div>
-
-      <form class="apple-drawer-form" onsubmit="handleAppleQuoteSubmit(event);">
-        <div class="form-group">
-          <label>Scope of Interest</label>
-          <input type="text" id="drawer-product-name" value="Turnkey Hospital Setup" readonly style="background: rgba(255,255,255,0.08); font-weight: 600;">
-        </div>
-
-        <div class="row g-2">
-          <div class="col-md-6 form-group">
-            <label>Your Full Name *</label>
-            <input type="text" placeholder="Dr. / Mr. / Ms." required>
-          </div>
-          <div class="col-md-6 form-group">
-            <label>Hospital / Institution Name *</label>
-            <input type="text" placeholder="Hospital / Organization Name" required>
-          </div>
-        </div>
-
-        <div class="row g-2">
-          <div class="col-md-6 form-group">
-            <label>Official Email *</label>
-            <input type="email" placeholder="name@hospital.com" required>
-          </div>
-          <div class="col-md-6 form-group">
-            <label>Phone / WhatsApp *</label>
-            <input type="tel" placeholder="+91 99999 99999" required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label>Project Scope &amp; Requirements</label>
-          <textarea rows="3" placeholder="Specify turnkey bed capacity, modular OT requirement, MGPS pipeline, or equipment procurement details..."></textarea>
-        </div>
-
-        <button type="submit" class="apple-btn-pill w-100 mt-2" style="padding: 14px;">Submit Consultation Request</button>
-      </form>
-    </div>
-  </div>
-
-  <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
-  
-
-
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to top">
-        <i class="bi bi-arrow-up-short"></i>
-    </a>
-
-    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../../assets/js/main.js?v=94.0"></script>
-  <script src="../../assets/js/global-search.js?v=42.0"></script>
-</body>
-
+</div>
+</div>
+</div>
+</footer>
+<!-- Drawer Modal -->
+<div class="apple-drawer-overlay" id="apple-drawer-overlay" onclick="if(event.target===this) closeAppleDrawer();">
+<div class="apple-drawer-content">
+<button aria-label="Close" class="apple-drawer-close" onclick="closeAppleDrawer();" type="button">
+<i class="bi bi-x-lg"></i>
+</button>
+<div style="text-align: center; margin-bottom: 24px;">
+<span class="apple-shelf-badge">Dr. Smith Turnkey &amp; Procurement Desk</span>
+<h3 style="font-size: 24px; font-weight: 700; margin-top: 8px;">Request Project Consultation</h3>
+<p style="font-size: 14px; color: var(--apple-text-secondary); margin: 0;">Speak directly with our healthcare architects &amp; hospital engineering experts.</p>
+</div>
+<form class="apple-drawer-form" onsubmit="handleAppleQuoteSubmit(event);">
+<div class="form-group">
+<label>Scope of Interest</label>
+<input id="drawer-product-name" readonly="" style="background: rgba(255,255,255,0.08); font-weight: 600;" type="text" value="Turnkey Hospital Setup"/>
+</div>
+<div class="row g-2">
+<div class="col-md-6 form-group">
+<label>Your Full Name *</label>
+<input placeholder="Dr. / Mr. / Ms." required="" type="text"/>
+</div>
+<div class="col-md-6 form-group">
+<label>Hospital / Institution Name *</label>
+<input placeholder="Hospital / Organization Name" required="" type="text"/>
+</div>
+</div>
+<div class="row g-2">
+<div class="col-md-6 form-group">
+<label>Official Email *</label>
+<input placeholder="name@hospital.com" required="" type="email"/>
+</div>
+<div class="col-md-6 form-group">
+<label>Phone / WhatsApp *</label>
+<input placeholder="+91 99999 99999" required="" type="tel"/>
+</div>
+</div>
+<div class="form-group">
+<label>Project Scope &amp; Requirements</label>
+<textarea placeholder="Specify turnkey bed capacity, modular OT requirement, MGPS pipeline, or equipment procurement details..." rows="3"></textarea>
+</div>
+<button class="apple-btn-pill w-100 mt-2" style="padding: 14px;" type="submit">Submit Consultation Request</button>
+</form>
+</div>
+</div>
+<script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+<a aria-label="Scroll to top" class="scroll-top d-flex align-items-center justify-content-center" href="#" id="scroll-top">
+<i class="bi bi-arrow-up-short"></i>
+</a>
+<script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../../assets/js/main.js?v=94.0"></script>
+<script src="../../assets/js/global-search.js?v=42.0"></script>
+</div></body>
 </html>
