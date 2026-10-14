@@ -1233,6 +1233,117 @@ body.swm-exact-ui {
   }
 }
 
+@media (min-width: 1280px) and (max-width: 1599.98px) {
+  .swm-navbar > .container-fluid {
+    padding-right: 12px !important;
+    padding-left: 12px !important;
+  }
+
+  .swm-navbar .container-fluid > .d-flex {
+    flex-wrap: nowrap;
+    gap: 8px;
+  }
+
+  .swm-navbar .swm-brand {
+    flex-shrink: 0;
+    gap: 6px;
+  }
+
+  .swm-navbar .swm-brand-primary {
+    gap: 5px;
+  }
+
+  .swm-navbar .swm-brand-logo-wrap {
+    width: 42px;
+    height: 42px;
+  }
+
+  .swm-navbar .swm-brand-logo {
+    max-width: 42px;
+    max-height: 42px;
+  }
+
+  .swm-navbar .swm-brand-title {
+    font-size: clamp(1rem, 1.1vw, 1.2rem);
+  }
+
+  .swm-navbar .swm-brand-divider {
+    display: block;
+    height: 36px;
+  }
+
+  .swm-navbar .swm-wholesale-wordmark {
+    display: flex;
+    min-width: clamp(96px, 7vw, 112px);
+    padding: 2px 0;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .swm-navbar .swm-wholesale-name {
+    font-size: clamp(0.62rem, 0.68vw, 0.7rem);
+  }
+
+  .swm-navbar .swm-wholesale-highlight {
+    font-size: clamp(0.55rem, 0.6vw, 0.63rem);
+  }
+
+  .swm-navbar .swm-wholesale-subtitle {
+    align-self: center;
+    font-size: 0.45rem;
+  }
+
+  .swm-navbar .swm-desktop-links {
+    display: flex !important;
+    flex: 1 1 auto;
+    justify-content: center;
+    gap: 4px clamp(3px, 0.32vw, 5px);
+  }
+
+  .swm-navbar .swm-nav-link {
+    font-size: clamp(0.62rem, 0.72vw, 0.76rem);
+  }
+
+  .swm-navbar .swm-header-actions {
+    flex-shrink: 0;
+    gap: 4px !important;
+    margin-right: 3px;
+  }
+
+  .swm-navbar .swm-header-actions .btn-swm-orange,
+  .swm-navbar .swm-header-actions .btn-swm-green {
+    gap: 6px;
+    padding: 9px clamp(8px, 0.65vw, 11px);
+    font-size: clamp(0.68rem, 0.78vw, 0.82rem);
+  }
+
+  .swm-navbar .swm-header-actions .btn-swm-orange > .fa-arrow-right,
+  .swm-navbar .swm-header-actions .btn-swm-green > .fa-arrow-right {
+    display: none;
+  }
+
+  .swm-navbar .swm-menu-toggle {
+    display: none !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1279.98px) {
+  .swm-navbar .container-fluid > .d-flex {
+    flex-wrap: nowrap;
+  }
+
+  .swm-navbar .swm-desktop-links {
+    display: none !important;
+  }
+
+  #swmMainNavbar .swm-header-actions .swm-menu-toggle {
+    display: inline-flex !important;
+  }
+}
+
 @media (min-width: 1280px) and (max-width: 1499.98px) {
   .swm-navbar .container-fluid.px-xl-5 {
     padding-right: 1rem !important;
@@ -2663,39 +2774,49 @@ body.swm-exact-ui {
   }
 }
 
-@media (min-width: 992px) and (max-width: 1899.98px) {
+@media (min-width: 1600px) {
+  .swm-navbar > .container-fluid {
+    padding-right: clamp(12px, 1.4vw, 24px) !important;
+    padding-left: clamp(12px, 1.4vw, 24px) !important;
+  }
+
   .swm-navbar .container-fluid > .d-flex {
-    flex-wrap: wrap;
-    row-gap: 0;
-    padding-bottom: 4px;
+    flex-wrap: nowrap;
+    gap: clamp(10px, 1vw, 18px);
   }
 
   .swm-navbar .swm-brand {
-    order: 1;
+    flex-shrink: 0;
+    gap: clamp(8px, 0.6vw, 12px);
   }
 
-  .swm-navbar .swm-header-actions {
-    order: 2;
+  .swm-navbar .swm-brand-divider {
+    display: block;
+  }
+
+  .swm-navbar .swm-wholesale-wordmark {
+    display: flex;
   }
 
   .swm-navbar .swm-desktop-links {
-    display: flex !important;
-    order: 3;
-    flex: 1 0 100%;
+    flex: 1 1 auto;
     justify-content: center;
-    align-items: center;
-    gap: 6px clamp(14px, 2vw, 28px);
+    gap: clamp(8px, 0.75vw, 14px);
   }
 
-  .swm-navbar .swm-desktop-links .swm-nav-link {
-    display: inline-flex;
-    align-items: center;
-    min-height: 36px;
-    padding-top: 0;
-    padding-bottom: 0;
+  .swm-navbar .swm-nav-link {
+    font-size: clamp(0.66rem, 0.72vw, 0.82rem);
   }
 
-  .swm-navbar .swm-menu-toggle {
-    display: none !important;
+  .swm-navbar .swm-header-actions {
+    flex-shrink: 0;
+    gap: clamp(4px, 0.5vw, 9px) !important;
+    margin-right: clamp(4px, 0.5vw, 10px);
+  }
+
+  .swm-navbar .swm-header-actions .btn-swm-orange,
+  .swm-navbar .swm-header-actions .btn-swm-green {
+    padding: clamp(9px, 0.6vw, 12px) clamp(10px, 0.85vw, 16px);
+    font-size: clamp(0.72rem, 0.78vw, 0.9rem);
   }
 }
