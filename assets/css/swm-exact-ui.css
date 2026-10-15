@@ -2150,21 +2150,6 @@ body.swm-exact-ui {
   background: #03172f;
 }
 
-.swm-hero-media img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 58%;
-  opacity: 0;
-  transition: opacity 700ms ease;
-}
-
-.swm-hero-media img.active {
-  opacity: 1;
-}
-
 .swm-hero-section > .container-fluid {
   z-index: 2;
 }
@@ -2958,6 +2943,10 @@ body.swm-exact-ui {
 
 .swm-hero-media {
   background-color: #020917;
+  background-image: url("../Modular OT/updated.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .swm-hero-content {
@@ -2995,23 +2984,6 @@ body.swm-exact-ui {
     inset: 0;
     width: 100%;
     z-index: 0;
-  }
-
-  .swm-hero-media img {
-    position: absolute;
-    inset: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    opacity: 0 !important;
-    filter: none !important;
-    transition: opacity 700ms ease;
-  }
-
-  .swm-hero-media img.active {
-    opacity: 1 !important;
   }
 
   .swm-hero-section::before {
@@ -3076,12 +3048,4 @@ body.swm-exact-ui {
 .swm-hero-section::after {
   display: none !important;
   background-image: none !important;
-}
-
-.swm-hero-media {
-  background-image: none !important;
-}
-
-.swm-hero-media img {
-  filter: none !important;
 }
