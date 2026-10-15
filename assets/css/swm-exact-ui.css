@@ -3071,3 +3071,17 @@ body.swm-exact-ui {
     font-size: 0.7rem;
   }
 }
+
+.swm-hero-section::before,
+.swm-hero-section::after {
+  display: none !important;
+  background-image: none !important;
+}
+
+.swm-hero-media {
+  background-image: none !important;
+}
+
+.swm-hero-media img {
+  filter: none !important;
+}
